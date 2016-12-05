@@ -1,3 +1,6 @@
 [submodule "Data"]
 	path = Data
 	url = https://github.com/subdiox/Data.git
+[submodule "BMData"]
+	path = BMData
+	url = https://github.com/BlitzModder/BMData.git
