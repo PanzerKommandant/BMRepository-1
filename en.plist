@@ -7,177 +7,181 @@
 		<key>Mod Pack:modpack</key>
 		<dict>
 			<key>Projekt GuP:projekt_gup</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Reticle:reticle</key>
 		<dict>
 			<key>AuC GunSight:auc_gunsight</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>M4 GunSight:m4_gunsight</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>M4 GunSight (No Shadow):m4_gunsight_no_shadow</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>No HUD:no_hud</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>kAEdE Type 1:kaede1</key>
-			<string></string>
+			<string>3.4.1</string>
 			<key>kAEdE Type 2:kaede2</key>
-			<string></string>
+			<string>3.4.1</string>
 			<key>kAEdE Type 3:kaede3</key>
-			<string></string>
+			<string>3.4.1</string>
 			<key>Deegies Sight:deegies</key>
-			<string></string>
+			<string>3.4.1</string>
 		</dict>
 		<key>Tank Skin:tank_skin</key>
 		<dict>
 			<key>Girls und Panzer:gup</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Pravda Winter:pravda_winter</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>BelTrup (Skelton Skin):beltrup</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Tank Camouflage:tank_camouflage</key>
 		<dict>
 			<key>Transparent Camouflage:transparent</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Minimap:minimap</key>
 		<dict>
 			<key>Visible Range (Middle Tier):visiblerange_middle</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Visible Range (High Tier):visiblerange_high</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>NeXT VisibleRange (Middle Tier):next_visiblerange_middle</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>NeXT VisibleRange (High Tier):next_visiblerange_high</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Color Minimap:color_minimap</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Hangar Skin:hangar</key>
 		<dict>
 			<key>Gfx Mod Pack Hangar Skin:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Tier Icon / Vehicle Icon:icon</key>
 		<dict>
 			<key>Colored Tier Icon:color_tier</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Colored and Numeric Tier Icon:color_numeric_tier</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Colored and Numeric Tier Icon (Skull):color_numeric_tier_skull</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Ikon ver1:ikon1</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Ikon ver2:ikon2</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Ikon ver3:ikon3</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Ikon ver4:ikon4</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Mini3D:mini3d</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Drive Arrow:drive_arrow</key>
 		<dict>
 			<key>Transparent Rate 50%:transparent50</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Transparent Rate 75%:transparent75</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Transparent Rate 100%:transparent100</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Tracer:tracer</key>
 		<dict>
 			<key>Gfx Mod Pack Ballistic Skin:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Black:lazer_black</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Blue:lazer_blue</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Green:lazer_green</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Orange:lazer_orange</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Pink:lazer_pink</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Potato:lazer_potato</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Purple:lazer_purple</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Rainbow1:lazer_rainbow1</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Rainbow2:lazer_rainbow2</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Red:lazer_red</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer White:lazer_white</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lazer Yellow:lazer_yellow</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Sixth Sense:sixth_sense</key>
 		<dict>
 			<key>Evangelion:evangelion</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>KanColle Bismark:kancolle_bismark</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Miho:miho</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>SAO Klein:sao_klein</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Quickybaby:quickybaby</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Danger Close:danger_close</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Admiral Ackbar:admiral_ackbar</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Exhaust Smoke:exhaust_smoke</key>
 		<dict>
 			<key>Flower(April Fool Joke):april_flower</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>IS-3D Electricity:defender_electricity</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Tankenstein Fire:tanken_fire</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Login Keyart:login_keyart</key>
 		<dict>
 			<key>GuP All Schools:gup_all</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Anko Team Pz.IV:gup_anko</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Anzio Girls:gup_anzio</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Kuro Mori Mine Girls:gup_kuro</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Pravda 1:gup_pravda1</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Pravda 2:gup_pravda2</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP St.Gloriana Girls 1:gup_gloriana1</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP St.Gloriana Girls 2:gup_gloriana2</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Others:others</key>
 		<dict>
 			<key>Enemy Shelling Direction Marker:damage_direction</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Enemy Direction Marker:enemy_direction</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Old Type Joystick:old_joystick</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Flat UI Buttons:flat_button</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Colored Ammunition:color_ammo</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Circle type loading gauge:circle_loading</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Battle Loading Screen:gup_battle_loading</key>
-			<string></string>
+			<string>3.4.2</string>
+			<key>Advanced Filter:advanced_filter</key>
+			<string>3.4.2</string>
+			<key>Advanced Filter (No France):advanced_filter_no_france</key>
+			<string>3.4.2</string>
 		</dict>
 	</dict>
 	<key>Sfx Mods:sfx</key>
@@ -185,177 +189,177 @@
 		<key>Mod Pack:modpack</key>
 		<dict>
 			<key>GUI-Sfx Mod:gui_sfx</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Gun Sound:gun</key>
 		<dict>
 			<key>Sfx Mod Pack Gun Sound:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>War Thunder Gun Sound:warthunder</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Old PC Gun Sound:pc_old</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>New PC Gun Sound (9.14):pc_914</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>New PC Gun Sound (9.16):pc_916</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Real Cannons (HQ):realcannons_hq</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Real Cannons (LQ):realcannons_lq</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Hit Sound:hit</key>
 		<dict>
 			<key>Sfx Mod Pack Hit Sound:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Old PC Hit Sound:pc_old</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Engine Sound:engine</key>
 		<dict>
 			<key>Sfx Mod Pack Engine Sound:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Sound Effect:effect</key>
 		<dict>
 			<key>Sfx Mod Pack Sound Effect:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Hangar Environmental Sound:hangar</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Lightweight Environmental Sound:lightweight</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Real GUI:realgui</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Voice (for English settings):voice_en</key>
 		<dict>
 			<key>Sfx Mod Pack Voice:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>War Thunder Voice:warthunder</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Battle Field 4 Voice:bf4</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Voice (Japanese):pc_ja</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Voice (American English):pc_en</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Voice (British English):pc_uk</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Voice (Russian):pc_ru</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Voice (German):pc_de</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Miho Voice:miho</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Yukari Voice:yukari</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Saori Voice:saori</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Hana Voice:hana</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Mako Voice:mako</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Nonna Voice:nonna</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Katyusha Voice:katyusha</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Nonna and Katyusha Voice:nonna_katyusha</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Maho Voice:maho</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Nishi Voice:nishi</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Nishi Voice (Modified):nishi_modified</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Anko Team Voice:anko</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Ahirusan Team Voice:ahirusan</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Kabasan Team Voice:kabasan</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Keizoku High School Voice:keizoku</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Pravda Voice (CV Tetsuo):pravda_tetsuo</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>E401 Voice:e401</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Mikakunin De Sinkoukei Voice:mikakunin</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Yuru Yuri Voice:yuruyuri</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Tomori Nao Voice:tomori_nao</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Eila-nya Voice:eila-nya</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Sixth Sense:sixth_sense</key>
 		<dict>
 			<key>Keizoku Spot Timer:keizoku</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>E401 Spot Timer:e401</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Bell Angel Spot Timer:bell_angel</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Inori Minase Spot Timer:inori_minase</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Metal Gear Sixth Sense:metal_gear</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>BGM:bgm</key>
 		<dict>
 			<key>Sfx Mod Pack BGM:modpack</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>PC Music:pc_music</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>GuP Movie BGM:gup_movie</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Blue Steel BGM:blue_steel</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sakkijarven polkka Garage BGM:sakkijarven_polkka</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sakkijarven polkka (Remix) Garage BGM:sakkijarven_polkka_remix</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Projekt GuP Extra Garage Music:projekt_gup_extra</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 		<key>Loading Completion Sound:loaded</key>
 		<dict>
 			<key>Sound Type 1:sound1</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 2:sound2</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 3:sound3</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 4:sound4</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 5:sound5</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 6:sound6</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 7:sound7</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 8:sound8</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 9:sound9</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound Type 10:sound10</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound and Voice (Japanese):sound_voice_ja</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound and Voice (English):sound_voice_en</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound and Voice (Russian):sound_voice_ru</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Sound and Voice (German):sound_voice_de</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Voice (Japanese):voice_ja</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Voice (English):voice_en</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Voice (Russian):voice_ru</key>
-			<string></string>
+			<string>3.4.2</string>
 			<key>Voice (German):voice_de</key>
-			<string></string>
+			<string>3.4.2</string>
 		</dict>
 	</dict>
 </dict>
