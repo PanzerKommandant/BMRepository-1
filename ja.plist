@@ -7,188 +7,188 @@
 		<key>Modパック:modpack</key>
 		<dict>
 			<key>Projekt GuP:projekt_gup</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>レティクル:reticle</key>
 		<dict>
 			<key>AuC GunSight:auc_gunsight</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>M4 GunSight:m4_gunsight</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>M4 GunSight (影なし):m4_gunsight_no_shadow</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>No HUD:no_hud</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>kAEdE タイプ1:kaede1</key>
-			<string>3.4.1</string>
+			<string>3.4.1:iawm</string>
 			<key>kAEdE タイプ2:kaede2</key>
-			<string>3.4.1</string>
+			<string>3.4.1:iawm</string>
 			<key>kAEdE タイプ3:kaede3</key>
-			<string>3.4.1</string>
+			<string>3.4.1:iawm</string>
 			<key>Deegies Sight:deegies</key>
-			<string>3.4.1</string>
+			<string>3.4.1:iawm</string>
 		</dict>
 		<key>戦車スキン:tank_skin</key>
 		<dict>
 			<key>痛戦車スキン:itasensha</key>
-			<string>3.4.1</string>
+			<string>3.4.1:iawm</string>
 			<key>ガルパンスキン:gup</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>冬のプラウダスキン:pravda_winter</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>白骨化スキン:beltrup</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>戦車迷彩:tank_camouflage</key>
 		<dict>
 			<key>透明迷彩:transparent</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>ミニマップ:minimap</key>
 		<dict>
 			<key>視界範囲円 (中Tier):visiblerange_middle</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>視界範囲円 (高Tier):visiblerange_high</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>NeXT VisibleRange (中Tier):next_visiblerange_middle</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>NeXT VisibleRange (高Tier):next_visiblerange_high</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カラーミニマップ:color_minimap</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>ハンガースキン:hangar</key>
 		<dict>
 			<key>Gfx Mod Pack ハンガースキン:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tierアイコン / 戦車アイコン:icon</key>
 		<dict>
 			<key>カラーTierアイコン:color_tier</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カラー数字表記Tierアイコン:color_numeric_tier</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カラー数字表記Tierアイコン(骸骨):color_numeric_tier_skull</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Ikon ver1:ikon1</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Ikon ver2:ikon2</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Ikon ver3:ikon3</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Ikon ver4:ikon4</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Mini3D:mini3d</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>進行方向矢印:drive_arrow</key>
 		<dict>
 			<key>透過度50%:transparent50</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>透過度75%:transparent75</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>透過度100%:transparent100</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>トレーサー:tracer</key>
 		<dict>
 			<key>Gfx Mod Pack 弾道表示スキン:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー黒:lazer_black</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー青:lazer_blue</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー緑:lazer_green</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー橙:lazer_orange</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー桃:lazer_pink</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー茶:lazer_potato</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー紫:lazer_purple</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー虹1:lazer_rainbow1</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー虹2:lazer_rainbow2</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー赤:lazer_red</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー白:lazer_white</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>レーザー黄:lazer_yellow</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>第六感:sixth_sense</key>
 		<dict>
 			<key>エヴァンゲリオン:evangelion</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>艦これ ビスマルク:kancolle_bismark</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>みほ:miho</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>SAO クライン:sao_klein</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Quickybaby:quickybaby</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Danger Close:danger_close</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>アクバー提督:admiral_ackbar</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>排気煙:exhaust_smoke</key>
 		<dict>
 			<key>花(エイプリルフールネタ):april_flower</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>IS-3Dの電気:defender_electricity</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Tankensteinの炎:tanken_fire</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>フォント(日本語設定用):font</key>
 		<dict>
 			<key>日本語＆英語Mix:ja_en_mix</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>ログイン画面キーアート:login_keyart</key>
 		<dict>
 			<key>ガルパン 全校:gup_all</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン あんこうチーム Pz.IV:gup_anko</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン アンツィオ高校:gup_anzio</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン 黒森峰女学園:gup_kuro</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン プラウダ高校 1:gup_pravda1</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン プラウダ高校 2:gup_pravda2</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン 聖グロリアーナ女学院 1:gup_gloriana1</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン 聖グロリアーナ女学院 2:gup_gloriana2</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>その他:others</key>
 		<dict>
 			<key>敵攻撃方向マーカー:damage_direction</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>敵方向マーカー:enemy_direction</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>旧タイプジョイスティック:old_joystick</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>フラットUIボタン:flat_button</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カラー弾種変更:color_ammo</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>円形装填ゲージ:circle_loading</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン戦闘読み込み画面:gup_battle_loading</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>追加国籍フィルタ:advanced_filter</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>追加国籍フィルタ (フランスなし):advanced_filter_no_france</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
 	<key>Sfx Mod:sfx</key>
@@ -196,177 +196,177 @@
 		<key>Modパック:modpack</key>
 		<dict>
 			<key>GUI-Sfx Mod:gui_sfx</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>砲撃音:gun</key>
 		<dict>
 			<key>Sfx Mod Pack 砲撃音:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>War Thunder 砲撃音:warthunder</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>PC版 旧砲撃音:pc_old</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>PC版 新砲撃音 (9.14):pc_914</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>PC版 新砲撃音 (9.16):pc_916</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>リアル砲撃音 (HQ):realcannons_hq</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>リアル砲撃音 (LQ):realcannons_lq</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>被弾音:hit</key>
 		<dict>
 			<key>Sfx Mod Pack 被弾音:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>PC版 旧被弾音:pc_old</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>エンジン音:engine</key>
 		<dict>
 			<key>Sfx Mod Pack エンジン音:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>効果音:effect</key>
 		<dict>
 			<key>Sfx Mod Pack 効果音:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ハンガー環境音:hangar</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>軽量環境音:lightweight</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>GUI無線ボイス:realgui</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>ボイス (日本語設定用):voice_ja</key>
 		<dict>
 			<key>Sfx Mod Pack ボイス:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>War Thunder ボイス:warthunder</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Battle Field 4 ボイス:bf4</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家ボイス(日本語):pc_ja</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家ボイス(アメリカ英語):pc_en</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家ボイス(イギリス英語):pc_uk</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家ボイス(ロシア語):pc_ru</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家ボイス(ドイツ語):pc_de</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>みほボイス:miho</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ゆかりボイス:yukari</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>さおりボイス:saori</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>はなボイス:hana</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>まこボイス:mako</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ノンナボイス:nonna</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カチューシャボイス:katyusha</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ノンナ&amp;カチューシャボイス:nonna_katyusha</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>まほボイス:maho</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>西隊長ボイス:nishi</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>西隊長ボイス (修正版):nishi_modified</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>あんこうチームボイス:anko</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>アヒルさんチームボイス:ahirusan</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>カバさんチームボイス:kabasan</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>継続高校ボイス:keizoku</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>プラウダ高校ボイス (CV てつお):pravda_tetsuo</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>イ401ボイス:e401</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>未確認で進行形ボイス:mikakunin</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ゆるゆりボイス:yuruyuri</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>友利奈緒ボイス:tomori_nao</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>エイラーニャボイス:eila-nya</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>第六感:sixth_sense</key>
 		<dict>
 			<key>継続高校スポットタイマー:keizoku</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>イ401スポットタイマー:e401</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ベルエンジェルスポットタイマー:bell_angel</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>水瀬いのりスポットタイマー:inori_minase</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>メタルギア:metal_gear</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>BGM:bgm</key>
 		<dict>
 			<key>Sfx Mod Pack BGM:modpack</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>本家BGM:pc_music</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ガルパン映画 BGM:gup_movie</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Blue Steel BGM:blue_steel</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Sakkijarven polkka ガレージBGM:sakkijarven_polkka</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Sakkijarven polkka (Remix) ガレージBGM:sakkijarven_polkka_remix</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>Projekt GuP ガレージBGM:projekt_gup_extra</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>装填完了音:loaded</key>
 		<dict>
 			<key>音 タイプ1:sound1</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ2:sound2</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ3:sound3</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ4:sound4</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ5:sound5</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ6:sound6</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ7:sound7</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ8:sound8</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ9:sound9</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音 タイプ10:sound10</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音＆ボイス (日本語):sound_voice_ja</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音＆ボイス (英語):sound_voice_en</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音＆ボイス (ロシア語):sound_voice_ru</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>音＆ボイス (ドイツ語):sound_voice_de</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ボイス (日本語):voice_ja</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ボイス (英語):voice_en</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ボイス (ロシア語):voice_ru</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 			<key>ボイス (ドイツ語):voice_de</key>
-			<string>3.4.2</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
 </dict>
