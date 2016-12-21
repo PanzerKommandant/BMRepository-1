@@ -17,6 +17,8 @@
 			<string>3.4.2:iawm</string>
 			<key>M4 GunSight (影なし):m4_gunsight_no_shadow</key>
 			<string>3.4.2:iawm</string>
+			<key>WGL GunSight:wgl_gunsight</key>
+			<string>3.4.2:</string>
 			<key>No HUD:no_hud</key>
 			<string>3.4.2:iawm</string>
 			<key>kAEdE タイプ1:kaede1</key>
