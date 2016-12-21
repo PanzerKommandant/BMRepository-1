@@ -187,6 +187,8 @@
 			<string>3.4.2:iawm</string>
 			<key>ガルパン戦闘読み込み画面:gup_battle_loading</key>
 			<string>3.4.2:iawm</string>
+			<key>PC版戦闘読み込み画面:pc_battle_loading</key>
+			<string></string>
 			<key>追加国籍フィルタ:advanced_filter</key>
 			<string>3.4.2:iawm</string>
 			<key>追加国籍フィルタ (フランスなし):advanced_filter_no_france</key>
