@@ -148,7 +148,7 @@
 		<key>フォント(日本語設定用):font</key>
 		<dict>
 			<key>日本語＆英語Mix:ja_en_mix</key>
-			<string>3.4.2:iawm</string>
+			<string>3.4.2:awm</string>
 		</dict>
 		<key>ログイン画面キーアート:login_keyart</key>
 		<dict>
