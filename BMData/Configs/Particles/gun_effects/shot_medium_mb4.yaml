@@ -1,0 +1,91 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 20.000000
+    emissionVector: [1.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "smoke_sparks"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.121400, 0.551100, 0.205300, 0.240900, 0.990000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    blending: 1
+    colorOverLife: [174.000000, 183.000000, 189.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    force0: [16.000000, 0.000000, 1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 0.020000, 0.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 4.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke_sparks1"
+    number: 300.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    sizeOverLifeXY: [0.000000, [1.500000, 1.500000], 1.000000, [4.000000, 4.000000]]
+    spin: 10.000000
+    spinVariation: 10.000000
+    sprite: "../../../Gfx/Particles/alpha/explosion_smoke_white"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.500000
+    velocityOverLife: [0.000000, 1.000000, 0.180700, 0.124100, 0.996500, 0.000000]
+    velocityVariation: 6.000000
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    alphaOverLife: 0.300000
+    blending: 3
+    colorOverLife: [247.000000, 158.000000, 146.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: true
+    isLooped: false
+    layerType: "particles"
+    life: 0.100000
+    loopEndTime: 4.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke_sparks1"
+    number: 700.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.400000
+    scaleVelocityFactor: 0.400000
+    size: [0.005000, 0.025000]
+    sizeVariation: [0.025000, 0.025000]
+    sprite: "../../../Gfx/Particles/alpha/Iskr"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 20.000000
+    velocityVariation: 1.000000

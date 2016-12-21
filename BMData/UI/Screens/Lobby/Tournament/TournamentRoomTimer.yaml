@@ -1,0 +1,92 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "TournamentTimer"
+    size: [65.000000, 23.000000]
+    noInput: true
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            rightAnchorEnabled: true
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    children:
+    -   class: "UIControl"
+        name: "Shadow"
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -10.000000
+                rightAnchorEnabled: true
+                rightAnchor: -10.000000
+                topAnchorEnabled: true
+                topAnchor: -10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -10.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/TextShadow"
+    -   class: "UIControl"
+        name: "Icon"
+        size: [16.000000, 16.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/timer_icon"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Spacer"
+        size: [5.000000, 5.000000]
+        noInput: true
+    -   class: "UIControl"
+        name: "Timer"
+        size: [44.000000, 23.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                skipInvisible: false
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   class: "UIStaticText"
+            name: "Minutes"
+            position: [0.000000, 0.000000]
+            size: [19.000000, 23.000000]
+            classes: "text2"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            text: "11"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+        -   class: "UIStaticText"
+            name: "ColonMS"
+            position: [19.000000, 0.000000]
+            size: [6.000000, 23.000000]
+            classes: "text2"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+            text: ":"
+        -   class: "UIStaticText"
+            name: "Seconds"
+            position: [25.000000, 0.000000]
+            size: [19.000000, 23.000000]
+            classes: "text2"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+            textalign: ["LEFT", "VCENTER"]
+            text: "47"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"

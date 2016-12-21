@@ -1,0 +1,199 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/BaseShopTab.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/LoadingControl.yaml"
+- "~res:/UI/Screens/Lobby/Shop/ShopItemCell.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".packages.Desktop"
+    properties:
+        flowLayout-enabled: true
+        linearLayout-enabled: false
+        sizePolicy-horizontalPolicy: "PercentOfParent"
+        sizePolicy-verticalPolicy: "PercentOfChildrenSum"
+-   selector: ".packages"
+    properties:
+        flowLayout-enabled: false
+        linearLayout-enabled: true
+        sizePolicy-horizontalPolicy: "PercentOfChildrenSum"
+        sizePolicy-verticalPolicy: "PercentOfParent"
+-   selector: ".description.Desktop"
+    properties:
+        visible: true
+-   selector: ".description.Desktop.invisible"
+    properties:
+        visible: false
+-   selector: ".description"
+    properties:
+        visible: false
+-   selector: ".footer.Desktop"
+    properties:
+        visible: false
+-   selector: ".footer"
+    properties:
+        visible: true
+-   selector: ".footer.invisible"
+    properties:
+        visible: false
+Controls:
+-   prototype: "BaseShopTab/Tab"
+    name: "Tab"
+    children:
+    -   path: "Footer"
+        classes: ""
+        children:
+        -   class: "UIStaticText"
+            name: "PriceLabel"
+            position: [502.000000, 12.000000]
+            size: [236.000000, 30.000000]
+            noInput: true
+            textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#common:Cost"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 286.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -20.000000
+                Background:
+                    align: ["RIGHT", "VCENTER"]
+        -   class: "UIStaticText"
+            name: "PriceText"
+            position: [452.000000, 47.000000]
+            size: [286.000000, 30.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "0"
+            font: "WarHeliosCondC_Bold_25"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 286.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   prototype: "StyledButton/StyledButton"
+            name: "BuyButton"
+            size: [250.000000, 70.000000]
+            classes: "button button-color-green"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                text: "shop/Buy"
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "ShopContent"
+            size: [1024.000000, 523.000000]
+            noInput: true
+            components:
+                LinearLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "PackagesContent"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "ConstrainedContent"
+                    classes: "limited-width"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIScrollView"
+                        name: "Packages"
+                        autoUpdate: true
+                        centerContent: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                        children:
+                        -   class: "UIScrollViewContainer"
+                            name: "scrollContainerControl"
+                            classes: "packages"
+                            components:
+                                LinearLayout: {}
+                                FlowLayout:
+                                    hDynamicPadding: true
+                                    useRtl: true
+                                SizePolicy: {}
+                    -   prototype: "Common/VerticalScrollBar"
+                        name: "VerticalScrollBar"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                    -   prototype: "Common/HorizontalScrollBar"
+                        name: "HorizontalScrollBar"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                bottomAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "NotAvailErrorText"
+            position: [0.000000, 235.500000]
+            size: [1024.000000, 52.000000]
+            visible: false
+            noInput: true
+            textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            text: "shop/Error/NotAvailable"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+    -   prototype: "LoadingControl/LoadingControl"
+        name: "LoadingControl"
+        children:
+        -   path: "FadeBackground"
+            position: [0.000000, 0.000000]
+        -   path: "DescriptionControl"
+            visible: true

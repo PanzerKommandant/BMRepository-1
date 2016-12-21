@@ -1,0 +1,646 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
+StyleSheets:
+-   selector: ".number-param-prototype.up ? ? #deltaValueUpDown, .number-param-prototype.down ? ? #deltaValueUpDown"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Hangar/CharacterArrow"
+        visible: true
+-   selector: ".number-param-prototype.up.worse ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 1
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".number-param-prototype.down.worse ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 1
+-   selector: ".number-param-prototype.up.better ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 0
+        bg-spriteModification: []
+-   selector: ".number-param-prototype.down.better ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 0
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".number-param-prototype.worse ? ? #deltaValue"
+    properties:
+        text-textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".number-param-prototype.better ? ? #deltaValue"
+    properties:
+        text-textColor: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selector: ".number-param-prototype.down, .number-param-prototype.up"
+    properties:
+        visible: true
+-   selector: ".number-param-prototype"
+    properties:
+        visible: false
+-   selector: ".number-param-prototype.visible"
+    properties:
+        visible: true
+-   selector: ".number-param-prototype.invisible"
+    properties:
+        visible: false
+Controls:
+-   class: "UIControl"
+    customClass: "UIHangarParamsTable"
+    name: "VehicleCharacteristicsInfluence"
+    size: [250.000000, 280.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalValue: 50.000000
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "DetalesParam"
+        size: [250.000000, 120.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicSpacing: true
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "ProtectabilityParams"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderStrength"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   path: "bg/title"
+                    text: "tank detail protectability"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "Strength"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr strength"
+                    components:
+                        Anchor:
+                            leftAnchor: 7.000000
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "HeaderHullArmor"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr hull armor"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "PrimaryArmorFront"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    position: [7.000000, 0.000000]
+                    text: "tank descr armor front"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "PrimaryArmorSide"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "tank descr armor side"
+                -   path: "TextContainer/ValueContainer/deltaValueUpDown"
+                    visible: false
+                    classes: ""
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "PrimaryArmorRear"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "tank descr armor rear"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "HeaderTurredArmor"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr turret armor"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "TurredArmorFront"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "tank descr armor front"
+                -   path: "TextContainer/ValueContainer/deltaValueUpDown"
+                    visible: false
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "TurredArmorSide"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "tank descr armor side"
+                -   path: "TextContainer/ValueContainer/deltaValueUpDown"
+                    visible: false
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "TurredArmorRear"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "tank descr armor rear"
+        -   class: "UIControl"
+            name: "MobilityParams"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderMobility"
+                children:
+                -   path: "bg/title"
+                    text: "tank detail mobility"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "Weight"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr weight"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "EnginePower"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr engine power"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "SpeedLimits"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    position: [7.000000, 0.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr spedLimits"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ChassiRotationSpeed"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr chassi rotation speed"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "TurretRotationSpeed"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr turret rotation speed"
+        -   class: "UIControl"
+            name: "GunParams"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderDetaleGun"
+                children:
+                -   path: "bg/title"
+                    text: "tank detail gun"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ShellDamage"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer"
+                    position: [0.000000, 7.000000]
+                    children: []
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr shell damage"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ShellPiercingPower"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    position: [7.000000, 0.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr shell piercing power"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfContent"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "FireRate"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr fire rate"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfContent"
+                -   path: "TextContainer/ValueContainer"
+                    position: [189.000000, 26.000000]
+                    children: []
+                -   path: "TextContainer/ValueContainer/value"
+                    position: [17.000000, 0.000000]
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "AmoingTime"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun aiming time"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "GunShotDipersionAngle"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun shot dispersion angle"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "CircularVisionRadius"
+                children:
+                -   path: "Spacer"
+                    size: [250.000000, 7.000000]
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "tank descr circular vision radius"
+    -   class: "UIControl"
+        name: "ModulesParam"
+        size: [250.000000, 160.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Gun"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 44.000000
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderGun"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   path: "bg/title"
+                    text: "tank gun params"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunFireRate"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun fire rate"
+                -   path: "TextContainer/ValueContainer"
+                    classes: "down"
+                    children: []
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunShellsCount"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun shells count"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunShellReloadingTime"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun shell reloading time"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleReloadMagazineTime"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun reload magazine time"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleHeaderGunPiercingPower"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun piercing power"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesPiercingPower_1"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesPiercingPower_2"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesPiercingPower_3"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleHeaderGunDamage"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun damage"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesDamage_1"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesDamage_2"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleShellTypesDamage_3"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    tag: 0
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunShotDispersionAngle"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun shot dispersion angle"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunAimingTime"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun aiming time"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleGunWeight"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "gun weight"
+        -   class: "UIControl"
+            name: "Engine"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 44.000000
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderEngine"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   path: "bg/title"
+                    text: "tank engine params"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleEnginePower"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "engine power"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleEngineFireStartingChance"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "engine fire starting chance"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleEngineWeight"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "engine weight"
+        -   class: "UIControl"
+            name: "Turret"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 44.000000
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderTurret"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   path: "bg/title"
+                    text: "tank turret params"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleHeaderTurretArmor"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "turret armor"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretArmorFront"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "turret armor front"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretArmorSide"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "turret armor side"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretArmorRear"
+                children:
+                -   path: "TextContainer"
+                    components:
+                        Anchor:
+                            leftAnchor: 10.000000
+                    children: []
+                -   path: "TextContainer/name"
+                    text: "turret armor rear"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretRotationSpeed"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "turret rotation speed"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretCircularVisionRadius"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "turret circular vision radius"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleTurretWeight"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "turret weight"
+        -   class: "UIControl"
+            name: "Chassi"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 44.000000
+            children:
+            -   prototype: "ParamsPrototype/HeaderPrototype"
+                name: "HeaderChassi"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   path: "bg/title"
+                    text: "tank chassi params"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleChassiMaxLoad"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "chassi max load"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleChassiRotationSpeed"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "chassi rotation speed"
+            -   prototype: "ParamsPrototype/NumberParamPrototype"
+                name: "ModuleChassiWeight"
+                children:
+                -   path: "TextContainer/name"
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "chassi weight"

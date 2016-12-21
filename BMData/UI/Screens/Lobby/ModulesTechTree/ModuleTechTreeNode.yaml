@@ -1,0 +1,214 @@
+Header:
+    version: "2"
+StyleSheets:
+-   selector: ".button"
+    properties: {}
+-   selector: ".button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+Controls:
+-   class: "UIControl"
+    customClass: "UIModuleTechTreeNode"
+    name: "ModuleTechTreeNode"
+    size: [74.000000, 64.000000]
+    classes: "button"
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        position: [-13.000000, -18.000000]
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
+                frame: 2
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Content"
+        size: [74.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "ModuleIcon"
+            position: [7.000000, 2.000000]
+            size: [60.000000, 60.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/ModulesTechTree/vehicleEngine"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    align: ["RIGHT", "BOTTOM"]
+        -   class: "UIControl"
+            name: "LevelIcon"
+            position: [2.000000, 1.000000]
+            size: [38.000000, 28.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    topAnchorEnabled: true
+                    topAnchor: 1.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Price"
+            position: [0.000000, 36.000000]
+            size: [74.000000, 25.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 3.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                size: [46.000000, 25.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                font: "WarHeliosCondC_19_modules"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 28.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "Currency"
+                position: [46.000000, 2.000000]
+                size: [25.000000, 24.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: -1.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                        frame: 3
+    -   class: "UIControl"
+        name: "Foreground"
+        position: [-13.000000, -18.000000]
+        size: [100.000000, 100.000000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "Selection"
+            size: [100.000000, 100.000000]
+            visible: true
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
+                    frame: 3
+        -   class: "UIControl"
+            name: "highlight"
+            position: [50.000000, 50.000000]
+            size: [94.000000, 84.000000]
+            pivot: [0.500000, 0.500000]
+            visible: false
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                    leftRightStretchCap: 15.000000
+                    topBottomStretchCap: 15.000000
+        -   class: "UIControl"
+            name: "CheckMark"
+            size: [100.000000, 100.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
+                    frame: 5
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "DrumAmmo"
+            size: [100.000000, 100.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
+                    frame: 4
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

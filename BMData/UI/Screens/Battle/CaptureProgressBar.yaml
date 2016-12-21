@@ -1,0 +1,92 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".allies #Outline #Container #Bar"
+    properties:
+        bg-color: [0.000000, 0.600000, 0.000000, 1.000000]
+-   selector: ".enemies #Outline #Container #Bar"
+    properties:
+        bg-color: [0.600000, 0.000000, 0.000000, 1.000000]
+-   selector: ".supremacy #PercentValue"
+    properties:
+        visible: false
+-   selector: ".locked #Label, .locked #PercentValue"
+    properties:
+        visible: false
+-   selector: ".allies.observer #Outline #Container #Bar"
+    properties:
+        bg-color: [1.000000, 0.109804, 0.278431, 1.000000]
+-   selector: ".enemies.observer #Outline #Container #Bar"
+    properties:
+        bg-color: [0.145098, 0.415686, 0.976471, 1.000000]
+Controls:
+-   class: "UIControl"
+    name: "CaptureProgressBar"
+    size: [400.000000, 64.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            spacing: 5.000000
+            skipInvisible: false
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+    children:
+    -   class: "UIStaticText"
+        name: "Label"
+        classes: "header3"
+        textalign: ["HCENTER", "BOTTOM"]
+        text: "BASE_CAPTURE"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 24.000000
+    -   class: "UIControl"
+        name: "Outline"
+        size: [400.000000, 6.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 6.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.500000]
+        children:
+        -   class: "UIControl"
+            name: "Container"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 1.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 1.000000
+                    topAnchorEnabled: true
+                    topAnchor: 1.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 1.000000
+            children:
+            -   class: "UIControl"
+                name: "Bar"
+                size: [398.000000, 4.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "PercentValue"
+        classes: "header3"
+        textalign: ["HCENTER", "TOP"]
+        text: "100"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 24.000000

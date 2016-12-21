@@ -1,0 +1,175 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, 0.000000, 0.500000]
+    emissionVectorInverted: true
+    name: "debris"
+    shortEffect: false
+    size: [8.000000, 0.000000, 4.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [156.000000, 133.000000, 95.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood"
+    number: 60.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.750000, 0.400000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/fragment_car_three"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.010000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [132.723724, 139.307388, 103.392998, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood2"
+    number: 30.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.300000, 0.300000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/fragment_car_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.100000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+layer2:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [124.000000, 104.000000, 70.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 15.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood3"
+    number: 60.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/fragments"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+layer3:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [195.000000, 183.000000, 115.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 26.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood4"
+    number: 30.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.250000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/fragments_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]

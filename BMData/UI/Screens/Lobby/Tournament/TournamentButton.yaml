@@ -1,0 +1,23 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   prototype: "StyledButton/StyledButton"
+    name: "Button"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            vCenterAnchorEnabled: true
+        Background:
+            drawType: "DRAW_TILED_MULTILAYER"
+            sprite: ""
+            mask: "~res:/Gfx/UI/LobbyCommon/Button/white_mask"
+            detail: "~res:/Gfx/UI/LobbyCommon/Button/white_detail"
+            gradient: "~res:/Gfx/UI/LobbyCommon/Button/white_gradient"
+            contour: "~res:/Gfx/UI/LobbyCommon/Button/white_contour"
+            gradientMode: "Overlay"
+    children:
+    -   path: "Caption"
+        text: "Button"

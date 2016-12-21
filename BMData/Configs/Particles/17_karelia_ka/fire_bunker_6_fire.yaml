@@ -1,0 +1,8 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "fire"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"

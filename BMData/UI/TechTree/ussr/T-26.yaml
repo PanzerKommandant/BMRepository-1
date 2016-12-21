@@ -1,0 +1,18 @@
+modules:
+    "#vehicle:T-46":
+        position: [3, 2]
+    "#vehicleChassis:T-26":
+        position: [1, 5]
+    "#vehicleEngine:T-26F":
+        position: [1, 4]
+    "#vehicleGun:_23mm_VJA":
+        position: [2, 1]
+    "#vehicleGun:_37mm_B-3":
+        position: [1, 2]
+    "#vehicleGun:_45mm_20K":
+        position: [2, 2]
+    "#vehicleTurret:T-26_conic":
+        position: [2, 3]
+    "#vehicleTurret:T-26_cylindrical":
+        position: [1, 3]
+

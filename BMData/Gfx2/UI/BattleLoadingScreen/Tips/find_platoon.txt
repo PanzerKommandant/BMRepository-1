@@ -1,0 +1,5 @@
+1
+find_platoon0.tex
+508 320
+1
+0 0 210 174 148 76 0 frame0

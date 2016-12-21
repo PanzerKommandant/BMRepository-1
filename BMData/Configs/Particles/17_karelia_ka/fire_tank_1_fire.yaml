@@ -1,0 +1,93 @@
+emitter:
+    emissionAngle: 90.000000
+    emissionRange: 40.000000
+    emissionVector: [0.000000, [-0.000000, -0.000000, 2.000000], 57.005501, [0.000000, 0.000000, 2.000000], 99.449997, [0.000000, 0.000000, 0.500000]]
+    emissionVectorInverted: true
+    name: "fire"
+    radius: 0.200000
+    shortEffect: false
+    size: [0.000000, [0.000000, 1.000000, 0.000000], 99.589996, [0.000000, 0.200000, 0.000000]]
+    type: "oncircle"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.400000, 0.990000, 0.000000]
+    blending: 3
+    colorOverLife: [0.000000, [251.793793, 189.000000, 113.011703, 255.000000], 0.995900, [216.762604, 67.754898, 25.451401, 255.000000]]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: true
+    endTime: 50.000000
+    force0: [0.000000, 0.090000, 2.300000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 129.347794, 20.831200]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 16.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 0.500000, 42.544701, 0.500000, 49.700001, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire1"
+    number: [0.000000, 7.000000, 44.234600, 7.000000, 46.620300, 0.000000, 49.799999, 0.000000]
+    numberVariation: [0.000000, 10.000000, 44.334000, 10.000000, 46.520901, 0.000000, 49.900002, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/alpha/o2_fire_anim"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.200000
+layer1:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.098100, 0.004300, 0.228100, 0.926000, 0.522900, 0.683700, 0.990000, 0.000000]
+    angle: 60.000000
+    blending: 3
+    colorOverLife: [0.000000, [248.712097, 152.509705, 44.630299, 255.000000], 0.995900, [135.844299, 17.579800, 0.000000, 255.000000]]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 50.000000
+    force0: [0.500000, 0.050000, 0.100000]
+    force1: [0.000000, [0.000000, 0.000000, 10.047400], 11.764700, [0.000000, 0.000000, 10.047400], 34.967300, [0.000000, 0.000000, 5.200700], 99.509804, [0.000000, 0.000000, 1.726200]]
+    forceCount: 2
+    forceOverLife0: [0.000000, 1.000000, 75.672096, 2.147000]
+    forceOverLife1: [0.000000, 0.070000, 0.482000, 0.094500, 1.000000, 0.515200]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 0.600000, 41.749500, 0.599100, 49.799999, 0.000000]
+    lifeVariation: [0.000000, 0.400000, 26.441401, 0.400000, 41.749500, 0.400000, 49.700001, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "fire2"
+    number: [0.000000, 5.000000, 40.954300, 5.000000, 43.936401, 0.000000, 49.700001, 0.000000]
+    numberVariation: [0.000000, 2.000000, 41.153099, 2.000000, 43.936401, 0.000000, 49.900002, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.800000, 0.800000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/fog"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.200000

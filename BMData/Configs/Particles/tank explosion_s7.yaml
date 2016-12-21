@@ -1,0 +1,53 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 90.0000
+    emissionVector: [0.0000, 0.0000, 0.5000]
+    emissionVectorInverted: "true"
+    life: 10.0000
+    shortEffect: "false"
+    size: [0.0000, 0.0000, 0.0000]
+    type: "point"
+
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 1.0000, 1.0000, 0.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 0.2000
+    force0: [0.0000, 0.0000, -10.0000]
+    forceCount: 1
+    forceOverLife0: [0.0000, 1.0000, 1.0000, 0.4000]
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 6.0000
+    inheritPosition: "false"
+    innerEmitterPath: "tank explosion_s7_1.yaml"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "superEmitter"
+    life: 20.0000
+    loopEndTime: 10.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "fire_debris_spawn"
+    number: 15.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "false"
+    scaleVelocityBase: 0.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.5000, 0.5000]
+    sizeVariation: [1.0000, 1.0000]
+    sprite: ""
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 15.0000
+    velocityOverLife: [0.0000, 1.0000, 1.0000, 0.3000]
+    velocityVariation: 15.0000
+

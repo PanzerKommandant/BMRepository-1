@@ -1,0 +1,49 @@
+emitter:
+    emissionAngle: 90.000000
+    emissionRange: 5.000000
+    emissionVector: [-0.000000, -0.000000, 2.000000]
+    emissionVectorInverted: true
+    name: "fountain"
+    radius: 1.000000
+    shortEffect: false
+    size: [0.000000, 1.200000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.502203, 1.000000, 0.990000, 0.000000]
+    blending: 1
+    colorOverLife: [151.369644, 184.167313, 167.766525, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    force0: [0.000000, 0.000000, -5.068700]
+    forceCount: 1
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 1.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "1"
+    number: 40.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.100000, 0.100000]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [11.503397, 60.000000], 6.631300, [25.046000, 25.046000], 100.000000, [35.817402, 35.817402]]
+    sprite: "../../../Gfx/Particles/alpha/water"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.565400
+    velocityVariation: 0.500000

@@ -1,0 +1,82 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "exp"
+    shortEffect: true
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: 0.300000
+    angle: 90.000000
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 100.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 0.300000
+    loopEndTime: 4.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "bigbubbles1"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.000000, 2.000000]
+    sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [1.600000, 1.600000]]
+    sprite: "../../../../Gfx/Particles/1AP/bubbles"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 50.000000
+    velocityOverLife: [0.000000, 1.000000, 0.430000, 0.000000]
+layer1:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.793258, 0.003942, 0.862921, 0.988029]
+    angle: 90.000000
+    blending: 3
+    colorOverLife: [185.272369, 187.595322, 255.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 100.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 0.350000
+    loopEndTime: 4.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "bigbubbles1"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.300000, 2.300000]
+    sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [2.000000, 2.000000]]
+    sprite: "../../../../Gfx/Particles/alpha/glow_low2"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 50.000000
+    velocityOverLife: [0.000000, 1.000000, 0.430000, 0.000000]

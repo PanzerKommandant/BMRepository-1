@@ -1,0 +1,77 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/UIStrangeHMTimer.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIShopExpireTimer"
+    name: "ExpireTimer"
+    size: [58.000000, 23.000000]
+    noInput: true
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    children:
+    -   class: "UIControl"
+        name: "Shadow"
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -10.000000
+                rightAnchorEnabled: true
+                rightAnchor: -10.000000
+                topAnchorEnabled: true
+                topAnchor: -10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -10.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/TextShadow"
+    -   class: "UIControl"
+        name: "Icon"
+        size: [16.000000, 16.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/timer_icon"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Spacer"
+        size: [5.000000, 5.000000]
+        noInput: true
+    -   prototype: "UIStrangeHMTimer/Timer"
+        name: "Timer"
+        visible: false
+        components:
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   path: "Hours"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+        -   path: "ColonHM"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+        -   path: "Minutes"
+            textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+    -   class: "UIStaticText"
+        name: "Label"
+        size: [37.000000, 23.000000]
+        visible: true
+        textalign: ["LEFT", "VCENTER"]
+        text: "15 д."
+        font: "WarHeliosCondC_19"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"

@@ -1,0 +1,45 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "tutorialDamagedModulesIntro"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIStaticText"
+        name: "engineNotification"
+        position: [0.000000, 513.000000]
+        size: [1024.000000, 55.000000]
+        noInput: true
+        textColor: [1.000000, 0.502000, 0.251000, 1.000000]
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        text: "engine_damaged"
+        font: "Font_18_bold"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 200.000000
+    -   class: "UIStaticText"
+        name: "driverNotification"
+        position: [0.000000, 538.000000]
+        size: [1024.000000, 55.000000]
+        noInput: true
+        textColor: [1.000000, 0.502000, 0.251000, 1.000000]
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        text: "driver_contused"
+        font: "Font_18_bold"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 175.000000

@@ -1,0 +1,41 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyHeaderLight.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyHeaderLight/Header"
+        name: "Header"
+        children:
+        -   path: "Layout/menuButton/icon"
+            components:
+                Background:
+                    frame: 30
+        -   path: "Layout/menuButton/UnreadNews"
+            visible: false
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 80.000000]
+        size: [1024.000000, 688.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                bottomAnchorEnabled: true
+        children:
+        -   prototype: "LobbyCommon/ScreenBackground"
+            name: "Background"

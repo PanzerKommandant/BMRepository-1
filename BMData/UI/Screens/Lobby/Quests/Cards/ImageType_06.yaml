@@ -1,0 +1,60 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Exploration/card_exploration"
+        children:
+        -   class: "UIParticles"
+            name: "Birds"
+            size: [10.000000, 10.000000]
+            noInput: true
+            rightAlignEnabled: true
+            topAlignEnabled: true
+            topAlign: 20.000000
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_exploration/birds.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Glow"
+            position: [65.000000, 50.000000]
+            size: [10.000000, 10.000000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_exploration/glow.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Exploration/card_exploration"
+        children:
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [106.000000, 244.000000]
+            size: [10.000000, 10.000000]
+            noInput: true
+            bottomAlignEnabled: true
+            hcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_exploration/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            size: [10.000000, 10.000000]
+            noInput: true
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_exploration/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            size: [10.000000, 10.000000]
+            noInput: true
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_exploration/sparks_front.sc2"
+            autoStart: true

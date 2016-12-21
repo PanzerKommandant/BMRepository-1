@@ -1,0 +1,32 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "WaitScreen"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "UIStaticText1"
+        position: [0.000000, 399.000000]
+        size: [1024.000000, 60.000000]
+        pivot: [-0.000000, 0.500000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "Please wait"
+        font: "Font_8D81019B"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 15.000000
+            Background:
+                align: ["LEFT", "TOP"]

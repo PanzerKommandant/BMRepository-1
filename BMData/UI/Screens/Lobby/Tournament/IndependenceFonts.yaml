@@ -1,0 +1,75 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".lang_independece.text1"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21"
+-   selector: ".lang_independece.text1.ar"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_ar"
+-   selector: ".lang_independece.text1.ko"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_ko"
+-   selector: ".lang_independece.text1.th"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_th"
+-   selector: ".lang_independece.text1.vi"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_vi"
+-   selector: ".lang_independece.text1.zh-Hans"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_zh_hans"
+-   selector: ".lang_independece.text1.zh-Hant"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_zh_hant"
+-   selector: ".lang_independece.text1.ja"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_21_ja"
+-   selector: ".lang_independece.header1"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25"
+-   selector: ".lang_independece.header1.ar"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_ar"
+-   selector: ".lang_independece.header1.ko"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_ko"
+-   selector: ".lang_independece.header1.th"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_th"
+-   selector: ".lang_independece.header1.vi"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_vi"
+-   selector: ".lang_independece.header1.zh-Hans"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_zh_hans"
+-   selector: ".lang_independece.header1.ja"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_ja"
+-   selector: ".lang_independece.header1.zh-Hant"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_25_zh_hant"
+-   selector: ".lang_independece.header3"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21"
+-   selector: ".lang_independece.header3.th"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_th"
+-   selector: ".lang_independece.header3.ko"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_ko"
+-   selector: ".lang_independece.header3.vi"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_vi"
+-   selector: ".lang_independece.header3.zh-Hant"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_zh_hant"
+-   selector: ".lang_independece.header3.ja"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_ja"
+-   selector: ".lang_independece.header3.zh-Hans"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_zh_hans"
+-   selector: ".lang_independece.header3.ar"
+    properties:
+        text-font: "Lang_Independence_WarHeliosCondC_Bold_21_ar"

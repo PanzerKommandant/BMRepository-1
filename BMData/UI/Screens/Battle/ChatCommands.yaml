@@ -1,0 +1,153 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".chat-command.point-a"
+    properties:
+        bg-frame: 10
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-a:selected"
+    properties:
+        bg-frame: 11
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-attack #addImage"
+    properties:
+        bg-frame: 14
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-attack:selected #addImage"
+    properties:
+        bg-frame: 15
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.reloading"
+    properties:
+        bg-frame: 8
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.attack-enemy"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.help-me:selected"
+    properties:
+        bg-frame: 11
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.negative"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsInnerSectorIcons.txt"
+-   selector: ".chat-command.reloading:selected"
+    properties:
+        bg-frame: 9
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.attack-base:selected"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.attack"
+    properties:
+        bg-frame: 6
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.positive:selected"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsInnerSectorIcons.txt"
+-   selector: ".chat-command.protect-base:selected"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.protect-base"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.attack-base"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.attack:selected"
+    properties:
+        bg-frame: 7
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.help-me"
+    properties:
+        bg-frame: 10
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.negative:selected"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsInnerSectorIcons.txt"
+-   selector: ".chat-command.positive"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsInnerSectorIcons.txt"
+-   selector: ".chat-command.attack-enemy:selected"
+    properties:
+        bg-frame: 5
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIcons.txt"
+-   selector: ".chat-command.point-b"
+    properties:
+        bg-frame: 8
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-b:selected"
+    properties:
+        bg-frame: 9
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-c"
+    properties:
+        bg-frame: 6
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-c:selected"
+    properties:
+        bg-frame: 7
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-d"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-d:selected"
+    properties:
+        bg-frame: 5
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-e"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-e:selected"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-f"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-f:selected"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-defend #addImage"
+    properties:
+        bg-frame: 12
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".chat-command.point-defend:selected #addImage"
+    properties:
+        bg-frame: 13
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommandsOuterSectorIconsBase.txt"
+-   selector: ".animating ? ? .chat-animated, .animating ? .chat-animated"
+    properties:
+        bg-colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   selector: ".idle ? ? .chat-animated, .idle ? .chat-animated"
+    properties:
+        bg-colorInherit: "COLOR_IGNORE_PARENT"
+Controls:
+-   class: "UIControl"
+    name: "ChatCommandImage"
+    size: [48.000000, 48.000000]
+    noInput: true
+    classes: "chat-animated chat-command command-image-1=stub"
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "addImage"
+        size: [48.000000, 48.000000]
+        noInput: true
+        classes: "chat-animated"

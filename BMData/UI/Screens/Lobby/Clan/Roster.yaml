@@ -1,0 +1,330 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIClanRoster"
+    name: "Roster"
+    size: [1024.000000, 688.000000]
+    classes: "limited-width"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "VerticalBox"
+        classes: "limited-width"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   prototype: "ClanCommon/ContentSection"
+            name: "ApplicationsSectionHeader"
+            visible: false
+            children:
+            -   path: "messagesCount"
+                visible: false
+                components:
+                    Background:
+                        color: [0.768627, 0.023529, 0.043137, 1.000000]
+            -   path: "title/text"
+                text: "#clans:StaffScreen/Title/Requests"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: false
+        -   class: "UIControl"
+            customClass: "UITable"
+            name: "ApplicationsTable"
+            size: [1024.000000, 0.000000]
+            visible: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Header"
+                size: [1024.000000, 60.000000]
+                components:
+                    LinearLayout: {}
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+            -   class: "UIScrollView"
+                name: "Content"
+                size: [1024.000000, -60.000000]
+                autoUpdate: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIScrollViewContainer"
+                    name: "scrollContainerControl"
+                    size: [1024.000000, 0.000000]
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfChildrenSum"
+            -   prototype: "Common/VerticalScrollBar"
+                name: "ScrollBar"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                        bottomAnchorEnabled: true
+        -   prototype: "ClanCommon/ContentSection"
+            name: "MembersSectionHeader"
+            visible: false
+            children:
+            -   path: "messagesCount"
+                visible: false
+            -   path: "title/text"
+                text: "#clans:StaffScreen/Title/Staff"
+        -   class: "UIControl"
+            customClass: "UITable"
+            name: "MembersTable"
+            size: [1024.000000, 0.000000]
+            visible: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Header"
+                size: [1024.000000, 60.000000]
+                components:
+                    LinearLayout: {}
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+            -   class: "UIScrollView"
+                name: "Content"
+                size: [1024.000000, -60.000000]
+                autoUpdate: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIScrollViewContainer"
+                    name: "scrollContainerControl"
+                    size: [1024.000000, 0.000000]
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfChildrenSum"
+            -   prototype: "Common/VerticalScrollBar"
+                name: "ScrollBar"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                        bottomAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UIClanCommanderActionsPopup"
+    name: "CommanderActionsPopup"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "Common/PopUp"
+        name: "Popup"
+        size: [320.000000, 256.000000]
+        pivot: [1.000000, 0.500000]
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   path: "Arrow"
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            angle: 90.000000
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 176.000000
+                    topAnchorEnabled: false
+                    vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "VerticalBox"
+            size: [320.000000, 256.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "GiveCommandButton"
+                size: [320.000000, 60.000000]
+                classes: "button"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [320.000000, 32.000000]
+                    classes: "header3 text-color-white"
+                    text: "#clans:StaffScreen/ChangeRoles/GiveCommand"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                -   prototype: "Common/PopupMenuSeparator"
+                    name: "PopupMenuSeparator"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "PromoteButton"
+                position: [0.000000, 64.000000]
+                size: [320.000000, 64.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [320.000000, 32.000000]
+                    classes: "header3 text-color-white"
+                    text: "#clans:StaffScreen/ChangeRoles/Raise"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                -   prototype: "Common/PopupMenuSeparator"
+                    name: "PopupMenuSeparator"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "AbaseButton"
+                position: [0.000000, 128.000000]
+                size: [320.000000, 64.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [320.000000, 32.000000]
+                    classes: "header3 text-color-white"
+                    text: "#clans:StaffScreen/ChangeRoles/Abase"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                -   prototype: "Common/PopupMenuSeparator"
+                    name: "PopupMenuSeparator"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "ExcludeButton"
+                position: [0.000000, 192.000000]
+                size: [320.000000, 64.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [320.000000, 32.000000]
+                    classes: "header3 text-color-white"
+                    text: "#clans:StaffScreen/ChangeRoles/Dismiss"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UIClanRosterHeader"
+    name: "HeaderRight"
+    size: [300.000000, 80.000000]
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "StyledButton/StyledButton"
+        name: "RecruitingButton"
+        classes: "button button-color-gray"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            classes: "header1 hacked-font text-color-white"
+            text: "#clans:StaffScreen/RecruitingButton"
+-   class: "UIControl"
+    name: "CommanderActionsPopupButton"
+    size: [200.000000, 60.000000]
+    classes: "button"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [200.000000, 32.000000]
+        classes: "header3 text-color-white"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true

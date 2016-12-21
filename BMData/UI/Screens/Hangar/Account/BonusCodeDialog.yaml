@@ -1,0 +1,97 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "DialogBackground"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.125490, 0.160784, 0.894118]
+    children:
+    -   class: "UIScrollView"
+        name: "Scroll"
+        size: [500.000000, 768.000000]
+        pivot: [0.500000, 0.000000]
+        autoUpdate: true
+        centerContent: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            size: [500.000000, 190.000000]
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   prototype: "Common/ResizableDialog"
+                name: "Dialog"
+                size: [500.000000, 190.000000]
+                children:
+                -   path: "Top"
+                    visible: false
+                    children: []
+                -   path: "Middle/VerticalBox"
+                    children:
+                    -   prototype: "LoginCommon/LoginTextField"
+                        name: "CodeTextField"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                        children:
+                        -   path: "VerticalBox/Background/TextField/Hint"
+                            text: "#bonus_code:Dialog_Add/Description"
+                    -   class: "UIControl"
+                        name: "Buttons"
+                        size: [460.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                        children:
+                        -   prototype: "Common/PopUpButton"
+                            name: "CancelButton"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: -10.000000
+                                    topAnchorEnabled: true
+                                NormalText:
+                                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+                                    text: "#bonus_code:Dialog_Add/Cancel"
+                        -   prototype: "Common/PopUpButton"
+                            name: "ActivateButton"
+                            debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 10.000000
+                                    rightAnchorEnabled: true
+                                    topAnchorEnabled: true
+                                Normal:
+                                    frame: 1
+                                    color: [1.000000, 1.000000, 1.000000, 1.000000]
+                                PressedInside:
+                                    frame: 1
+                                NormalText:
+                                    text: "#bonus_code:Dialog_Add/Ok"
+                                DisabledText:
+                                    text: "#bonus_code:Dialog_Add/Ok"

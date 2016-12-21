@@ -1,0 +1,93 @@
+Header:
+    version: "4"
+Controls:
+-   class: "UIControl"
+    name: "Lobby"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "SceneLayer"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UI3DView"
+            customClass: "UIHangar3dView"
+            name: "HangarScene"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "HangarScreenshot"
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIParticles"
+                name: "ParticleEffect"
+                position: [462.000000, 250.000000]
+                size: [100.000000, 30.000000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/waiting/glow_flow.sc2"
+                autoStart: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 250.000000
+    -   class: "UIControl"
+        name: "ContentLayer"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "NotificationLayer"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "TutorialLayer"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "DialogLayer"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true

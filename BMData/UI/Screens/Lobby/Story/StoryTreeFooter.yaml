@@ -1,0 +1,373 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Lobby/Common/BaseFooter.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
+- "~res:/UI/Screens/Common/IconButton.yaml"
+StyleSheets:
+-   selector: ".story_footer.enough #Caption #General #Label #Enough, .story_footer.not_enough #Caption #General #Label #NotEnough, .story_footer.enough_many #Caption #General #Label #EnoughMany"
+    properties:
+        visible: true
+-   selector: ".story_footer.inactive #Caption, .story_footer.enough #Caption #General #Currencies, .story_footer.enough #Caption #Buy, .story_footer #Caption #General #Label ?, .story_footer.enough_many #Caption #General #Currencies, .story_footer.enough_many #Caption #Buy"
+    properties:
+        visible: false
+-   selector: ".info_footer.no_selection #InfoContainer #Label #NoSelection, .info_footer.step_completed #InfoContainer #Label #StepCompleted, .info_footer.selected.process #InfoContainer #Label #SelectedProcess, .info_footer.selected.buy #InfoContainer #Label #SelectedBuy, .info_footer.selected #InfoContainer #CurrencyBarsContainer"
+    properties:
+        visible: true
+-   selector: ".info_footer.step_completed #InfoContainer #CurrencyBarsContainer, .info_footer.no_selection #InfoButton, .info_footer #InfoContainer #Label ?, .info_footer #InfoContainer #CurrencyBarsContainer, .info_footer.step_completed #InfoButton"
+    properties:
+        visible: false
+Controls:
+-   class: "UIStaticText"
+    name: "InfoLabel"
+    classes: "text-color-blue text1"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    shadowoffset: [0.000000, 1.000000]
+    textalign: ["RIGHT", "VCENTER"]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+-   prototype: "BaseFooter/BaseFooter"
+    name: "StoryTreeFooter"
+    classes: "story_footer"
+    children:
+    -   prototype: "IconButton/IconButton"
+        name: "InfoButton"
+        size: [70.000000, 70.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 20.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "icon"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 26
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   prototype: "StyledButton/StyledButton"
+        name: "Button"
+        size: [250.000000, 70.000000]
+        classes: "button mode=button-payment"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 20.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            text: "#common:DialogButton/Complete"
+    -   class: "UIControl"
+        name: "Caption"
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 286.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "General"
+            noInput: true
+            components:
+                LinearLayout:
+                    spacing: 20.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "Label"
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   prototype: "InfoLabel"
+                    name: "Enough"
+                    text: "template_event/ProgressStage/EnoughCurrenciesToCompleteStep"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfParent"
+                -   prototype: "InfoLabel"
+                    name: "EnoughMany"
+                    text: "template_event/ProgressStage/EnoughCurrenciesToCompleteSteps"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfParent"
+                -   prototype: "InfoLabel"
+                    name: "NotEnough"
+                    text: "template_event/ProgressStage/LackingCurrency"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "Currencies"
+                noInput: true
+                components:
+                    LinearLayout:
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Buy"
+            noInput: true
+            components:
+                LinearLayout:
+                    spacing: 20.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    rightAnchorEnabled: true
+            children:
+            -   prototype: "InfoLabel"
+                name: "Label"
+                text: "#common:Cost"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfParent"
+            -   prototype: "StoryCurrencyControl/CurrencyItem"
+                name: "Gold"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   path: "Icon"
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                            frame: 0
+-   prototype: "StoryCurrencyControl/CurrencyItem"
+    name: "CurrencyItem"
+-   prototype: "BaseFooter/BaseFooter"
+    name: "InfoFooter"
+    classes: "info_footer"
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/Story/Footer"
+            color: [1.000000, 1.000000, 1.000000, 1.000000]
+    children:
+    -   class: "UIControl"
+        name: "InfoContainer"
+        size: [944.000000, 0.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 40.000000
+                rightAnchorEnabled: true
+                rightAnchor: 40.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Label"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    horizontalValue: 100.000000
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   prototype: "InfoLabel"
+                name: "NoSelection"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "template_event/ProgressStage/StepTree/Hint"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   prototype: "InfoLabel"
+                name: "StepCompleted"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "template_event/ProgressStage/Hint/StepCompleted"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   prototype: "InfoLabel"
+                name: "SelectedBuy"
+                position: [0.000000, 0.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "template_event/FinalStage/Hint/BuyCurrenciesForGold"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   prototype: "InfoLabel"
+                name: "SelectedProcess"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "template_event/ProgressStage/Hint/Currency"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "CurrencyBarsContainer"
+            components:
+                LinearLayout:
+                    dynamicPadding: true
+                    spacing: 40.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfMaxChild"
+    -   class: "UIControl"
+        name: "InfoButton"
+        size: [1024.000000, 70.000000]
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 70.000000
+        children:
+        -   class: "UIControl"
+            name: "InfoIcon"
+            position: [1024.000000, 0.000000]
+            size: [64.000000, 64.000000]
+            scale: [0.500000, 0.500000]
+            pivot: [1.000000, 0.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 26
+-   class: "UIControl"
+    name: "CurrencyBar"
+    size: [320.000000, 33.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalMax: 320.000000
+            verticalPolicy: "PercentOfChildrenSum"
+    children:
+    -   class: "UIControl"
+        name: "Bar"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 10.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.584314, 0.580392, 0.576471, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "Overlay"
+            size: [320.000000, 10.000000]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.960000, 0.650000, 0.140000, 1.000000]
+    -   class: "UIControl"
+        name: "Caption"
+        size: [85.000000, 23.000000]
+        components:
+            LinearLayout:
+                spacing: 2.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "CurrentAmount"
+            classes: "text2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "0"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "Delimiter"
+            classes: "text2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "/"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "MaxAmount"
+            classes: "text2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "1000"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Spacer"
+            size: [2.000000, 0.000000]
+            visible: true
+            noInput: true
+        -   prototype: "StoryCurrencyControl/CurrencySmallIcon"
+            name: "Icon"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true

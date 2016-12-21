@@ -1,0 +1,188 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".red-mark"
+    properties:
+        bg-frame: 1
+-   selector: ".queue #ListLine"
+    properties:
+        visible: false
+-   selector: ".queue #LeftLine"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: ".right-red-icon #icon"
+    properties:
+        bg-frame: 2
+        scale: [1.000000, 1.000000]
+-   selector: "#VehicleName"
+    properties:
+        text-textalign: ["LEFT", "TOP"]
+-   selector: ".ready:pressed_inside #back"
+    properties:
+        bg-color: [0.200000, 0.321569, 0.274510, 0.686275]
+-   selector: ".selected #bottomSelector"
+    properties:
+        sizePolicy-verticalValue: 2.000000
+-   selector: ".right-to-left ? #VehicleName"
+    properties:
+        text-textalign: ["RIGHT", "TOP"]
+-   selector: ".left-red-icon #icon"
+    properties:
+        bg-frame: 2
+        scale: [-1.000000, 1.000000]
+-   selector: ".queue #InviteButton"
+    properties:
+        visible: false
+-   selector: ".right-to-left ? #VehicleLevel"
+    properties:
+        text-textalign: ["LEFT", "TOP"]
+-   selector: ".queue #RightLine"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: "#bottomSelector"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.141176]
+        sizePolicy-verticalValue: 1.000000
+-   selector: ".selected .selector"
+    properties:
+        bg-color: [0.960784, 0.650980, 0.133333, 1.000000]
+        visible: true
+-   selector: ".queue-invite #TraineeList"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".queue-invite #InviteButton"
+    properties:
+        visible: true
+-   selector: ".selector"
+    properties:
+        visible: false
+-   selector: ".ready #back"
+    properties:
+        bg-color: [0.200000, 0.321569, 0.274510, 1.000000]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".map-specific"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+        bg-drawType: "DRAW_SCALE_TO_RECT"
+-   selector: ".right-green-icon #icon"
+    properties:
+        bg-frame: 3
+        scale: [-1.000000, 1.000000]
+-   selector: ".offline"
+    properties:
+        text-textColor: [0.996078, 0.000000, 0.000000, 1.000000]
+-   selector: ".right-to-left"
+    properties:
+        linearLayout-orientation: "RightToLeft"
+-   selector: ".right-to-left #Header"
+    properties: {}
+-   selector: ".map-random"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.862745]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".green-mark"
+    properties:
+        bg-frame: 0
+-   selector: ".queue-invite #ListLine"
+    properties:
+        visible: true
+-   selector: ".left-green-icon #icon"
+    properties:
+        bg-frame: 3
+        scale: [1.000000, 1.000000]
+-   selector: ".left-to-right ? #Camera"
+    properties:
+        bg-spriteModification: ["FLIP_HORIZONTAL"]
+-   selector: ".set-vertical-size"
+    properties:
+        sizePolicy-verticalPolicy: "FixedSize"
+        sizePolicy-verticalValue: 64.000000
+-   selector: ".queue-invite #LeftLine"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".queue #TraineeList"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: ".right-to-left ? #MouseIcon"
+    properties:
+        anchor-leftAnchorEnabled: true
+        anchor-rightAnchorEnabled: false
+-   selector: ".button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+        bg-frame: 0
+-   selector: ".right-to-left ? #ObserverMode"
+    properties:
+        anchor-leftAnchorEnabled: true
+        anchor-rightAnchorEnabled: false
+-   selector: ".observer-team #ObserverModeWrapper, .observer-both #ObserverModeWrapper, .observer-none #VehicleIconWrapper"
+    properties:
+        visible: true
+-   selector: "#VehicleLevel"
+    properties:
+        anchor-leftAnchor: -20.000000
+        anchor-topAnchor: 5.000000
+        text-textalign: ["RIGHT", "TOP"]
+-   selector: ".right-to-left ? #TraineeName #spacer"
+    properties:
+        visible: true
+-   selector: ".down"
+    properties:
+        scale: [1.000000, -1.000000]
+-   selector: "#MouseIcon"
+    properties:
+        anchor-bottomAnchor: 4.000000
+        anchor-bottomAnchorEnabled: true
+        anchor-rightAnchor: -4.000000
+        anchor-rightAnchorEnabled: true
+-   selector: ".not-ready:pressed_inside #back"
+    properties:
+        bg-color: [0.000000, 0.000000, 0.000000, 0.098039]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".observer-none ? #ObserverMode"
+    properties:
+        visible: false
+-   selector: ".observer-team #VehicleIconWrapper, .observer-both #VehicleIconWrapper, .observer-none #ObserverModeWrapper"
+    properties:
+        visible: false
+-   selector: "#TraineeName #spacer"
+    properties:
+        visible: false
+-   selector: "#VehicleIcon"
+    properties:
+        anchor-leftAnchor: 0.000000
+        anchor-leftAnchorEnabled: false
+        anchor-rightAnchor: 0.000000
+        anchor-rightAnchorEnabled: true
+        scale: [1.000000, 1.000000]
+-   selector: ".trainee-entry:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.392157]
+-   selector: ".right-to-left ? #VehicleIcon"
+    properties:
+        anchor-leftAnchor: 0.000000
+        anchor-leftAnchorEnabled: true
+        anchor-rightAnchor: 0.000000
+        anchor-rightAnchorEnabled: false
+        scale: [1.000000, 1.000000]
+-   selector: ".queue-invite #RightLine"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".observer-button-team #mode, .observer-team ? #ObserverMode"
+    properties:
+        bg-frame: 1
+-   selector: ".observer-button-both #mode, .observer-both ? #ObserverMode"
+    properties:
+        bg-frame: 0
+-   selector: ".not-ready #VehicleName"
+    properties:
+        text-textColor: [0.627451, 0.600000, 0.800000, 0.941176]
+-   selector: ".left-to-right ? #ObserverMode"
+    properties:
+        anchor-leftAnchorEnabled: false
+        anchor-rightAnchorEnabled: true
+-   selector: ".map-white-back"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.600000]
+        bg-drawType: "DRAW_FILL"
+        bg-colorInherit: "COLOR_ADD_TO_PARENT"

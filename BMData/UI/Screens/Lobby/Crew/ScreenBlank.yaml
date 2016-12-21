@@ -1,0 +1,40 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 688.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 85.000000
+    -   class: "UIControl"
+        name: "Footer"
+        position: [0.000000, 603.000000]
+        size: [1024.000000, 85.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.502000]

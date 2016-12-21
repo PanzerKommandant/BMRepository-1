@@ -1,0 +1,57 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/DestroyEnemy/card_destroy_the_enemy"
+        children:
+        -   class: "UIParticles"
+            name: "Smoldering"
+            position: [180.000000, 150.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/smoldering.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GunM1"
+            position: [150.000000, 85.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/gunM1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Explosion"
+            position: [180.000000, 120.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/explosion.sc2"
+            autoStart: true
+            startDelay: 0.500000
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/DestroyEnemy/card_destroy_the_enemy"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [12.000000, 250.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [15.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [80.000000, 125.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_destroy_the_enemy/dust.sc2"
+            autoStart: true

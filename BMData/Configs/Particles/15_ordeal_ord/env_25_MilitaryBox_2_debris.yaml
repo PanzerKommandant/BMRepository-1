@@ -1,0 +1,179 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "debris"
+    shortEffect: false
+    size: [5.000000, 5.000000, 4.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [178.000000, 165.000000, 100.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood"
+    number: 60.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.500000, 0.100000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 2.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 2.000000
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [178.000000, 171.000000, 88.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood2"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 0.100000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 3.000000
+layer2:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [124.000000, 116.000000, 60.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 15.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood3"
+    number: 40.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.250000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 4.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 2.000000
+layer3:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [178.000000, 158.000000, 89.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 26.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris_wood4"
+    number: 40.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.250000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 3.000000

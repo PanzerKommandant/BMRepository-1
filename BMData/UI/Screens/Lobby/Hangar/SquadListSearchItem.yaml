@@ -1,0 +1,41 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "SquadListSearchItem"
+    size: [400.000000, 200.000000]
+    children:
+    -   class: "UIControl"
+        name: "root"
+        size: [400.000000, 200.000000]
+        noInput: true
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            position: [0.000000, 53.000000]
+            size: [400.000000, 64.000000]
+            noInput: true
+            leftAlignEnabled: true
+            leftAlign: 0.000000
+            rightAlignEnabled: true
+            rightAlign: 0.000000
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 18
+        -   class: "UIStaticText"
+            name: "UIStaticText1"
+            position: [0.000000, 112.000000]
+            size: [400.000000, 30.000000]
+            noInput: true
+            leftAlignEnabled: true
+            leftAlign: 0.000000
+            rightAlignEnabled: true
+            rightAlign: 0.000000
+            vcenterAlignEnabled: true
+            vcenterAlign: 27.000000
+            text: "SQUAD_INVITE_LIST_SEARCH"
+            font: "WarHeliosCondC_17"
+            textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"

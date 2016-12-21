@@ -1,0 +1,164 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "ErrorDialogNoButton"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        ModalInput: {}
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.113725, 0.784314]
+    children:
+    -   prototype: "Common/Dialog"
+        name: "Dialog"
+        size: [500.000000, 370.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Middle"
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+            children:
+            -   class: "UIStaticText"
+                name: "DialogText"
+                classes: "text1 text-color-white"
+                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 90.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 40.000000
+        -   path: "Top/TitleText"
+            classes: "header1 text-color-white"
+            text: "Error"
+-   prototype: "ErrorDialogNoButton"
+    name: "ErrorDialog"
+    children:
+    -   path: "Dialog/Middle"
+        children:
+        -   class: "UIControl"
+            name: "ButtonHolder"
+            components:
+                LinearLayout:
+                    orientation: "RightToLeft"
+                    padding: 20.000000
+                    spacing: 20.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 20.000000
+            children:
+            -   prototype: "StyledButton/Button"
+                name: "OkButton"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Background:
+                        frame: 2
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/OK"
+    -   path: "Dialog/Middle/DialogText"
+        components:
+            Anchor:
+                topAnchor: 70.000000
+                bottomAnchor: 100.000000
+-   prototype: "ErrorDialog"
+    name: "ErrorDialogWithoutCaption"
+    children:
+    -   path: "Dialog"
+        size: [500.000000, 300.000000]
+        children: []
+    -   path: "Dialog/Middle/DialogText"
+        components:
+            Anchor:
+                topAnchor: 10.000000
+    -   path: "Dialog/Top"
+        visible: false
+        children: []
+-   prototype: "ErrorDialog"
+    name: "WarningDialog"
+    children:
+    -   path: "Dialog/Middle/ButtonHolder"
+        children:
+        -   prototype: "StyledButton/Button"
+            name: "CancelButton"
+            visible: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+            children:
+            -   path: "Caption"
+                text: "#common:DialogButton/Cancel"
+    -   path: "Dialog/Top/TitleText"
+        text: "Warning"
+-   prototype: "WarningDialog"
+    name: "WarningDialogWithoutCaption"
+    children:
+    -   path: "Dialog"
+        size: [500.000000, 300.000000]
+        children: []
+    -   path: "Dialog/Middle/DialogText"
+        components:
+            Anchor:
+                topAnchor: 10.000000
+    -   path: "Dialog/Top"
+        visible: false
+        components:
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+        children: []
+-   prototype: "ErrorDialog"
+    name: "ConnectionWarningDialog"
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+    children:
+    -   prototype: "Common/ButtonSmall"
+        name: "CancelButton"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 3
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   prototype: "ErrorDialog"
+    name: "NotificationDialog"
+    children:
+    -   path: "Dialog/Top/TitleText"
+        text: "Warning"

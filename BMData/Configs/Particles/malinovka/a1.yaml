@@ -1,0 +1,40 @@
+emitter:
+    emissionRange: 0.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: true
+    name: "a1"
+    shortEffect: false
+    type: "point"
+layer0:
+    activeLODS: [1, 0, 0, 0]
+    alphaOverLife: 0.2000
+    degradeStrategy: 0
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.0200
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.0000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 2.0000
+    loopEndTime: 100.0000
+    loopSpriteAnimation: true
+    loopVariation: 0.0000
+    name: "a1"
+    particleOrientation: 4
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [2.0000, 1.0000]
+    sprite: "../../../Gfx/Particles/malinovka/foto"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"

@@ -1,0 +1,96 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 80.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 10.0000
+    radius: 1.0000
+    shortEffect: "false"
+    size: [0.0000, 0.0000, 0.0000]
+    type: "oncircle_edges"
+
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    alignToMotion: 0.0000
+    colorOverLife: [53.0000, 47.0000, 43.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 0.1000
+    force0: [0.0000, 0.0000, -30.0000]
+    forceCount: 1
+    forceOverLife0: [0.0000, 0.0000, 1.0000, 1.0000]
+    frameOverLifeEnabled: "true"
+    frameOverLifeFPS: 20.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "particles"
+    life: 3.0000
+    loopEndTime: 10.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "debris"
+    number: 50.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "true"
+    randomSpinDirection: "true"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.1000, 0.1000]
+    sizeVariation: [0.2000, 0.2000]
+    spin: 90.0000
+    spinVariation: 90.0000
+    sprite: "../../Gfx/Particles/fragment_car_one"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 5.0000
+    velocityVariation: 5.0000
+
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    alignToMotion: 0.0000
+    colorOverLife: [75.0000, 66.0000, 60.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 0.1000
+    force0: [0.0000, 0.0000, -30.0000]
+    forceCount: 1
+    forceOverLife0: [0.0000, 0.0000, 1.0000, 1.0000]
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 20.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "particles"
+    life: 3.0000
+    loopEndTime: 10.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "debris1"
+    number: 50.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "true"
+    scaleVelocityBase: 0.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.0500, 0.0500]
+    sizeVariation: [0.4000, 0.4000]
+    spin: 200.0000
+    spinVariation: 20.0000
+    sprite: "../../Gfx/Particles/fragment_car_three"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 3.0000
+    velocityVariation: 5.0000
+

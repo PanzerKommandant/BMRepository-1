@@ -1,0 +1,21 @@
+﻿fmod_projects:
+ -
+  "~res:/Sfx/guns.fev"
+ -
+  "~res:/Sfx/hits.fev"
+ -
+  "~res:/Sfx/ingame_voice.fev"
+ -
+  "~res:/Sfx/objects.fev"
+ -
+  "~res:/Sfx/tanks.fev"
+ -
+  "~res:/Sfx/GUI.fev"
+ -
+  "~res:/Sfx/tank_physics.fev"
+ -
+  "~res:/Sfx/hangar.fev"
+ -
+  "~res:/Sfx/ambient.fev"
+ -
+  "~res:/Sfx/combat_atmosphere.fev"

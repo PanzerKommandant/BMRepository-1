@@ -1,0 +1,21 @@
+vehicle_unlocks:
+    ussr:
+        turret: "T-18_mod"
+        gun: "_23mm_VJA"
+        vehicle: "T-26"
+    germany:
+        turret: "Verbesserteturm"
+        gun: "_20mm_Breda"
+        vehicle:  "PzII"
+    usa:
+        turret: "Cunningham_D2"
+        gun: "_20mm_Hispano_Suiza_Birgikt_gun"
+        vehicle: "T2_med"
+    uk:
+        turret: "Turret_2_GB01_Medium_Mark_I"
+        gun: "QF_6_pounder_8cwt_Mk_II"
+        vehicle: "GB05_Vickers_Medium_Mk_II"
+    japan:
+        turret: "Turret_2_NC27"
+        gun: "_13.2mm_Type93"
+        vehicle: "Chi_Ni"

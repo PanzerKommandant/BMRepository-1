@@ -1,0 +1,79 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Esport/card_esport"
+        children:
+        -   class: "UIParticles"
+            name: "dust1.4"
+            position: [5.000000, 45.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.656250, 1.906250]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/dust1.4.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "fire1.5"
+            position: [62.000000, 110.000000]
+            size: [32.000000, 32.000000]
+            pivot: [2.437500, 3.937500]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/fire_big1.5.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Esport/card_esport"
+        children:
+        -   class: "UIParticles"
+            name: "dust2.1"
+            position: [3.000000, 125.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.593750, 4.406250]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/dust2.1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "gun"
+            position: [74.000000, 84.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/gunM1.sc2"
+            autoStart: true
+    -   class: "UIControl"
+        name: "Layer2"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Esport/card_esport"
+                frame: 2
+        children:
+        -   class: "UIParticles"
+            name: "dust3.1"
+            position: [4.000000, 204.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.625000, 6.875000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/dust3.1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "sparks3.3"
+            position: [3.000000, 249.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.593750, 8.281250]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_esport/sparks3.3.sc2"
+            autoStart: true

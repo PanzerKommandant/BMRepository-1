@@ -1,0 +1,46 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Recovery/card_recovery"
+        children:
+        -   class: "UIParticles"
+            name: "SparksBehind"
+            position: [150.000000, 80.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_recovery/sparks_behind.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [150.000000, 80.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_recovery/glow_behind.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Recovery/card_recovery"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_recovery/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_recovery/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Fog"
+            position: [140.000000, 175.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_recovery/fog.sc2"
+            autoStart: true

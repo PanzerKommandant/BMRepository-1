@@ -1,0 +1,29 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common/LoadingControl.yaml"
+- "~res:/UI/Screens/Common/AOGASControl.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+Controls:
+-   prototype: "LoadingControl/LoadingControl"
+    name: "ConnectingScreen"
+    visible: true
+    children:
+    -   path: "FadeBackground"
+        visible: false
+    -   prototype: "AOGASControl/AOGASControl"
+        name: "AOGASControl"
+    -   prototype: "LoginCommon/RegionSelector"
+        name: "RegionSelector"
+        position: [368.000000, 693.000000]
+        visible: false
+        enabled: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 5.000000
+        children:
+        -   path: "RegionButton"
+            enabled: false
+            children: []

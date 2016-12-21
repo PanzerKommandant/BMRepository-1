@@ -1,0 +1,134 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "fire_plume3"
+    shortEffect: false
+    size: [500.000000, 0.000000, 0.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.002000, 0.000000, 0.464646, 0.389360, 1.000000, 0.000000]
+    angle: 80.000000
+    angleVariation: 360.000000
+    colorOverLife: [0.000000, [255.000000, 109.171204, 11.953307, 255.000000], 0.998410, [255.000000, 150.910507, 65.743187, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 5.000000
+    force0: [-150.000000, 0.000000, 0.000000]
+    forceCount: 1
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 10.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.500000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire1 Clone"
+    number: 600.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [60.000000, 60.000000]
+    sizeVariation: [40.000000, 40.000000]
+    sprite: "../../../../../Gfx/Particles/UI/smoke"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 100.000000
+    velocityVariation: 15.000000
+layer1:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.002000, 0.000000, 0.444444, 0.393059, 0.845118, 0.000000, 1.000000, 0.000000]
+    angle: 150.000000
+    angleVariation: 360.000000
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 5.000000
+    force0: [-30.000000, 0.000000, 0.000000]
+    forceCount: 1
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 10.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.500000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire1"
+    number: 300.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [60.000000, 60.000000]
+    sizeVariation: [40.000000, 40.000000]
+    sprite: "../../../../../Gfx/Particles/UI/fire"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 15.000000
+    velocityVariation: 15.000000
+layer2:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.002000, 0.000000, 0.144781, 0.762617, 0.845118, 0.000000, 1.000000, 0.000000]
+    angle: 0.000000
+    angleVariation: 360.000000
+    colorOverLife: [255.000000, 151.408554, 47.813229, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: false
+    endTime: 2.000000
+    force0: [-150.000000, 0.000000, 0.000000]
+    forceCount: 1
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire1 Clone Clone"
+    number: 300.000000
+    particleOrientation: 1
+    pivotPoint: [10.000000, 10.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeVariation: [4.000000, 4.000000]
+    spin: 300.000000
+    sprite: "../../../../../Gfx/Particles/UI/o2_expGlowB"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 100.000000
+    velocityVariation: 15.000000

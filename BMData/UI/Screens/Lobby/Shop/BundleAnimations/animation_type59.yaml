@@ -1,0 +1,117 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "Image"
+    size: [240.000000, 274.000000]
+    noInput: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/type59_giftshop/type_card"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "CropArea"
+        size: [234.000000, 265.000000]
+        clip: true
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Layer0"
+            noInput: true
+            children:
+            -   class: "UIParticles"
+                name: "4_glow"
+                position: [-23.000000, -17.500000]
+                size: [20.000000, 20.000000]
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/4_glow.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "12_glow_flag"
+                position: [219.000000, 119.500000]
+                size: [40.000000, 40.000000]
+                pivot: [0.500000, 0.500000]
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/12_glow_flag.sc2"
+                autoStart: true
+        -   class: "UIControl"
+            name: "Layer1"
+            size: [240.000000, 274.000000]
+            clip: true
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/ShopScreen/type59_giftshop/type_card"
+                    frame: 1
+            children:
+            -   class: "UIParticles"
+                name: "3_anim_track"
+                position: [120.000000, 137.000000]
+                size: [20.000000, 20.000000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/3_anim_track.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "6_glow_tank"
+                position: [205.000000, 132.500000]
+                size: [20.000000, 20.000000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/6_glow_tank.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "7_gunM1"
+                position: [179.000000, 70.500000]
+                size: [20.000000, 20.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/7_gunM1.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "8_sparks_front"
+                position: [-23.142855, 214.642548]
+                size: [20.000000, 20.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/8_sparks_front.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "9_track"
+                position: [59.000000, 172.500000]
+                size: [40.000000, 40.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/9_track.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "10_track"
+                position: [205.000000, 179.500000]
+                size: [40.000000, 40.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/10_track.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "5_dust"
+                position: [243.000000, 234.500000]
+                size: [20.000000, 20.000000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/5_dust.sc2"
+                autoStart: true
+            -   class: "UIParticles"
+                name: "11_glow_low"
+                position: [62.000000, 111.500000]
+                size: [40.000000, 40.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Shop/type59_giftshop/11_glow_low.sc2"
+                autoStart: true

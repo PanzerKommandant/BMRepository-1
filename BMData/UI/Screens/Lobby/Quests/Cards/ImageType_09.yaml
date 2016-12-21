@@ -1,0 +1,70 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Research/card_research"
+        children:
+        -   class: "UIParticles"
+            name: "HorizTrail1"
+            position: [0.000000, 55.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail.sc2"
+            autoStart: true
+            startDelay: 0.000000
+        -   class: "UIParticles"
+            name: "HorizTrail2"
+            position: [0.000000, 202.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail.sc2"
+            autoStart: true
+            startDelay: 0.200000
+        -   class: "UIParticles"
+            name: "VertTrail1"
+            position: [15.000000, 252.000000]
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail_full.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "VertTrail2"
+            position: [65.000000, 252.000000]
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail_full.sc2"
+            autoStart: true
+            startDelay: 0.200000
+        -   class: "UIParticles"
+            name: "VertTrail3"
+            position: [115.000000, 252.000000]
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail_full.sc2"
+            autoStart: true
+            startDelay: 0.600000
+        -   class: "UIParticles"
+            name: "VertTrail4"
+            position: [162.000000, 252.000000]
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/trail_full.sc2"
+            autoStart: true
+            startDelay: 0.400000
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Research/card_research"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_research/glow_flow.sc2"
+            autoStart: true

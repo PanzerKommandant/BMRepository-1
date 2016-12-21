@@ -1,0 +1,77 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/Lobby/Story/StoryCurrencyIconsStyles.yaml"
+- "~res:/UI/Screens/Lobby/Quests/QuestRewardImages.yaml"
+- "~res:/UI/Styles/Lobby/Storage/StorageStyles.yaml"
+Controls:
+-   class: "UIControl"
+    name: "RewardItemIcon"
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 32.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 32.000000
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "RewardItemIcon"
+    name: "RewardItemSmallIcon"
+-   prototype: "RewardItemIcon"
+    name: "RewardItemBigIcon"
+    components:
+        SizePolicy:
+            horizontalValue: 48.000000
+            verticalValue: 48.000000
+-   class: "UIControl"
+    name: "RewardItem"
+    size: [87.000000, 32.000000]
+    pivot: [0.000000, 0.500000]
+    noInput: true
+    classes: "item"
+    components:
+        LinearLayout:
+            spacing: 5.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            vCenterAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "Value"
+        pivot: [0.000000, 0.500000]
+        classes: "header1"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        textalign: ["RIGHT", "VCENTER"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "1234"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "Grade"
+        size: [32.000000, 32.000000]
+        pivot: [0.500000, 0.500000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                sprite: "~res:/Gfx/UI/Storage/Items_back"
+        children:
+        -   prototype: "RewardItemSmallIcon"
+            name: "Icon"

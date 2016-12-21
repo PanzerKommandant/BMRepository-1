@@ -1,0 +1,279 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/BattleResults/DetailsRewardSubpage.yaml"
+- "~res:/UI/Screens/Lobby/BattleResults/BattleResultsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "CreditsRewardRow"
+    size: [740.000000, 32.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "LabelContainer"
+        size: [228.000000, 32.000000]
+        components:
+            LinearLayout:
+                spacing: 5.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Label"
+            size: [134.000000, 32.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#battle_results:DetailsPage/CreditsExperiencePage/Repair_Tank"
+            font: "WarHeliosCondC_21"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+        -   class: "UIControl"
+            name: "ClanSupplyDiscount"
+            size: [89.000000, 35.000000]
+            visible: true
+            components:
+                LinearLayout:
+                    spacing: 4.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                size: [35.000000, 33.000000]
+                textalign: ["RIGHT", "VCENTER"]
+                text: "-2%"
+                font: "WarHeliosCondC_Bold_21"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "Icon"
+                size: [50.000000, 30.000000]
+                noInput: true
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/DiscountClanSmall"
+    -   class: "UIControl"
+        name: "VerticalBox"
+        position: [555.000000, 0.000000]
+        size: [370.000000, 0.000000]
+        pivot: [0.500000, 0.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+    -   class: "UIControl"
+        name: "Splitter"
+        position: [0.000000, 31.000000]
+        size: [740.000000, 1.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "DetailsRewardSubpage/Page"
+    name: "Page"
+    children:
+    -   path: "Content"
+        components:
+            Background:
+                color: [0.000000, 0.000000, 0.498039, 1.000000]
+        children: []
+    -   path: "Content/UIScrollView/scrollContainerControl/Container"
+        components:
+            LinearLayout:
+                dynamicPadding: true
+        children:
+        -   class: "UIControl"
+            name: "ClanSupplyDiscount"
+            size: [740.000000, 32.000000]
+            noInput: true
+            children:
+            -   class: "UIControl"
+                name: "LabelContainer"
+                size: [370.000000, 32.000000]
+                components:
+                    LinearLayout:
+                        spacing: 5.000000
+                    Anchor:
+                        leftAnchorEnabled: true
+                        hCenterAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Label"
+                    size: [182.000000, 32.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "#battle_results:DetailsPage/CreditsExperiencePage/SupplyBonus"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [50.000000, 30.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/DiscountClanSmall"
+            -   class: "UIControl"
+                name: "VerticalBox"
+                position: [555.000000, 0.000000]
+                size: [370.000000, 0.000000]
+                pivot: [0.500000, 0.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+            -   class: "UIControl"
+                name: "Splitter"
+                position: [0.000000, 31.000000]
+                size: [740.000000, 1.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "Content/UIScrollView/scrollContainerControl/Container/Table"
+        children:
+        -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "Earned"
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Earned"
+            -   class: "UIStaticText"
+                name: "LabelXpFactor"
+                position: [185.000000, 0.000000]
+                size: [370.000000, 32.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                font: "WarHeliosCondC_21"
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+        -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "HeroReward"
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/heroReward"
+        -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "QuestsReward"
+            position: [0.000000, 64.000000]
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Quest_Reward"
+        -   prototype: "CreditsRewardRow"
+            name: "AutoRepair"
+        -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "AutoLoad"
+            position: [0.000000, 128.000000]
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Ammo"
+        -   prototype: "CreditsRewardRow"
+            name: "AutoConsumables"
+            children:
+            -   path: "LabelContainer/Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Equipment"
+            -   path: "LabelContainer/ClanSupplyDiscount"
+                visible: false
+                children: []
+            -   path: "LabelContainer/ClanSupplyDiscount/Value"
+                visible: false
+        -   prototype: "CreditsRewardRow"
+            name: "AutoProvisions"
+            children:
+            -   path: "LabelContainer/Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Provisions"
+            -   path: "LabelContainer/ClanSupplyDiscount"
+                visible: false
+                children: []
+            -   path: "LabelContainer/ClanSupplyDiscount/Value"
+                visible: false
+        -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "AutoCamo"
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Camouflage"
+    -   path: "Content/UIScrollView/scrollContainerControl/Container/Total/Label"
+        textalign: ["LEFT", "VCENTER"]
+    -   class: "UIControl"
+        name: "TrainingNoteContainer"
+        size: [1024.000000, 50.000000]
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   prototype: "BattleResultsCommon/TrainingNote"
+            name: "TrainingNote"
+            debugDraw: false
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "Ignore"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+-   prototype: "DetailsRewardSubpage/RewardCell"
+    name: "RewardCell"

@@ -1,0 +1,247 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Styles/Lobby/Inventory/InventoryNormalStyles.yaml"
+StyleSheets:
+-   selector: ".supply-bonus:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".small-container"
+    properties:
+        linearLayout-spacing: 2.000000
+-   selector: ".small-bonus-item"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+        sizePolicy-horizontalPolicy: "FixedSize"
+        sizePolicy-horizontalValue: 32.000000
+        sizePolicy-verticalPolicy: "FixedSize"
+        sizePolicy-verticalValue: 32.000000
+-   selector: ".small-bonus-item #BigIconFrame .border-change-size"
+    properties:
+        sizePolicy-horizontalPolicy: "FixedSize"
+        sizePolicy-horizontalValue: 1.000000
+        sizePolicy-verticalPolicy: "FixedSize"
+        sizePolicy-verticalValue: 1.000000
+-   selector: ".clan_discount.tank #icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".clan_discount.repair #icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+-   selector: ".clan_discount.optional_device #icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+-   selector: ".clan_discount.slot #icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+-   selector: ".equipment_sizePolicy #icon"
+    properties:
+        sizePolicy-horizontalMax: 48.000000
+        sizePolicy-horizontalMin: 32.000000
+        sizePolicy-horizontalValue: 75.000000
+        sizePolicy-verticalMax: 48.000000
+        sizePolicy-verticalMin: 32.000000
+        sizePolicy-verticalValue: 75.000000
+-   selector: ".clan_discount_sizePolicy #icon"
+    properties:
+        sizePolicy-horizontalMax: 64.000000
+        sizePolicy-horizontalMin: 32.000000
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalMax: 64.000000
+        sizePolicy-verticalMin: 32.000000
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".clan_discount.camouflage #icon"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".clan_discount.clan-camouflage #icon"
+    properties:
+        bg-frame: 5
+        bg-sprite: "~res:/Gfx/UI/Clan/SupplyDiscounts"
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 100.000000
+Controls:
+-   class: "UIControl"
+    name: "BonusIcon"
+    size: [64.000000, 64.000000]
+    noInput: true
+    components:
+        SizePolicy: {}
+    children:
+    -   prototype: "ClanCommon/BigIconFrame"
+        name: "BigIconFrame"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   path: "BorderRight"
+            size: [1.000000, 64.000000]
+            classes: "border-change-size"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "Ignore"
+        -   path: "BorderTop"
+            size: [64.000000, 1.000000]
+            classes: "border-change-size"
+            components:
+                SizePolicy:
+                    verticalPolicy: "Ignore"
+        -   path: "BorderBottom"
+            size: [64.000000, 1.000000]
+            classes: "border-change-size"
+            components:
+                SizePolicy:
+                    verticalPolicy: "Ignore"
+        -   path: "BorderLeft"
+            size: [1.000000, 64.000000]
+            classes: "border-change-size"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "Ignore"
+    -   class: "UIControl"
+        name: "icon"
+        size: [64.000000, 64.000000]
+        noInput: true
+        classes: "small"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+-   class: "UIControl"
+    name: "BonusBigIcons"
+    size: [0.000000, 20.000000]
+    noInput: true
+    components:
+        FlowLayout:
+            hDynamicPadding: true
+            hDynamicInLinePadding: true
+            hSpacing: 10.000000
+            vPadding: 10.000000
+            vSpacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfChildrenSum"
+-   class: "UIControl"
+    name: "BonusItemDetailed"
+    size: [200.000000, 128.000000]
+    classes: ""
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            spacing: 2.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/Clan/back_clan_stat"
+            leftRightStretchCap: 7.000000
+            topBottomStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "Gap"
+        size: [0.000000, 18.000000]
+    -   prototype: "BonusIcon"
+        name: "BonusIcon"
+        size: [70.000000, 70.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 20.000000
+    -   class: "UIStaticText"
+        name: "Value"
+        size: [140.000000, 34.000000]
+        font: "WarHeliosCondC_Bold_30"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 92.000000
+    -   class: "UIControl"
+        name: "DescriptionWrap"
+        position: [0.000000, 128.000000]
+        size: [200.000000, 0.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 130.000000
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Description"
+            size: [200.000000, 0.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "VCENTER"]
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "SlotUsage"
+            classes: "text2 text-color-light-beige"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+-   class: "UIControl"
+    name: "BonusGrid"
+    components:
+        FlowLayout:
+            hSpacing: 20.000000
+            vPadding: 20.000000
+            vSpacing: 20.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            horizontalMax: 900.000000
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "Control"
+    size: [300.000000, 60.000000]
+    noInput: true
+    children:
+    -   prototype: "BonusBigIcons"
+        name: "BonusBigIcons"
+        children:
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"
+        -   prototype: "BonusIcon"
+            name: "BonusIcon"

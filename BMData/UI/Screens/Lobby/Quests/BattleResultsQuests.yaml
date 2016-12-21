@@ -1,0 +1,84 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/QuestSlot.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIBattleResultsQuests"
+    name: "View"
+    size: [960.000000, 640.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   prototype: "LobbyCommon/ScreenBackground"
+        name: "Background"
+        size: [960.000000, 640.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/DarkBackground"
+    -   class: "UIControl"
+        name: "BagBg"
+        position: [800.000000, 300.000000]
+        size: [91.000000, 126.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/bag_animation"
+                frame: 9
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   class: "UIControl"
+        name: "BagFg"
+        position: [800.000000, 300.000000]
+        size: [91.000000, 126.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/bag_animation"
+                frame: 10
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "BagFgAnim"
+            position: [0.000000, 0.000000]
+            size: [91.000000, 126.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bag_animation"
+                    frame: 9
+                    color: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   class: "UIControl"
+        name: "QuestsContainer"
+        size: [880.000000, 400.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                rightAnchor: 40.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -20.000000
+        children:
+        -   class: "UIControl"
+            name: "Quests"
+            size: [0.000000, 400.000000]
+            visible: true
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "LeftToRight"
+                    spacing: 50.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true

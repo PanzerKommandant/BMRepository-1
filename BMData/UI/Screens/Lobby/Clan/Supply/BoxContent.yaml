@@ -1,0 +1,41 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Supply.yaml"
+Controls:
+-   class: "UIControl"
+    name: "BoxContent"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIScrollView"
+        name: "Scroll"
+        autoUpdate: true
+        centerContent: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+    -   prototype: "Common/VerticalScrollBar"
+        name: "ScrollBar"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "Supply/HeaderRight"
+    name: "HeaderRight"

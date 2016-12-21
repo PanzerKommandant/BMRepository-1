@@ -1,0 +1,948 @@
+<root>
+	<blitz>
+		<smallIconPath>~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/ussr-T-150</smallIconPath>
+		<bigIconPath>~res:/Gfx/UI/BigTankIcons/ussr-T150</bigIconPath>
+		<blitzModelPath>Tanks/USSR/T150.sc2</blitzModelPath>
+		<blitzDestructedModelPath>Tanks/USSR/T150_crash.sc2</blitzDestructedModelPath>
+		<engineSoundPC>tanks/pc/engine/ussr/ht</engineSoundPC>
+		<engineSoundNPC>tanks/npc/engine/ussr/ht</engineSoundNPC>
+		<smokeEffectPath>FX/smoke_tank_type_black_new_2.sc2</smokeEffectPath>
+		<fireEffectPathAlive>FX/SmokeFire_tank_movement_new.sc2</fireEffectPathAlive>
+		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
+		<collisionMesh>CollisionMeshes/ussr-T150.sc2</collisionMesh>
+		<exclusionMask>Camouflages/ussr/CamouflageMasks/T150_CM.tex</exclusionMask>
+	</blitz>
+	<crew>
+		<commander/>
+		<gunner/>
+		<radioman/>
+		<driver/>
+		<loader/>
+	</crew>
+	<speedLimits>
+		<forward>35</forward>
+		<backward>11</backward>
+	</speedLimits>
+	<invisibility>
+		<camouflageNetBonus>0.05</camouflageNetBonus>
+		</invisibility>
+	<repairCost>4.9</repairCost>
+	<crewXpFactor>1.0</crewXpFactor>
+	<effects>
+		<destruction>mediumDestruction</destruction>
+		<explosion>mediumExplosion</explosion>
+		<flaming>largeFlaming</flaming>
+		<collision/>
+	</effects>
+	<camouflage>
+		<priceFactor>1.2</priceFactor>
+		<tiling>1 1 0 0</tiling>
+		<exclusionMask>vehicles/russian/R72_T150/T150_CM.dds</exclusionMask>
+	</camouflage>
+	<emblems>
+		<default>ussr_star</default>
+		<lodDist>MEDIUM</lodDist>
+		<alpha>0.84</alpha>
+	</emblems>
+	<horns>
+		<priceFactor>1</priceFactor>
+		<distanceFactor>1</distanceFactor>
+		<volumeFactor>1</volumeFactor>
+	</horns>
+	<hull>
+		<blitz>
+			<averageThickness>
+				<turret_01>103.007645</turret_01>
+				<turret_02>104.221855</turret_02>
+			</averageThickness>
+			<blitzPartName>hull</blitzPartName>
+			<bbox>
+				<min>-0.938604 -3.299757 -0.551675</min>
+				<max>0.938603 3.218220 0.844321</max>
+			</bbox>
+			<points>
+				<normal>0.000000 0.000000 -0.946521</normal>
+				<crash>0.001558 0.000216 -0.945583</crash>
+			</points>
+		</blitz>
+		<models>
+			<undamaged>vehicles/russian/R72_T150/normal/lod0/Hull.model</undamaged>
+			<destroyed>vehicles/russian/R72_T150/crash/lod0/Hull.model</destroyed>
+			<exploded>vehicles/russian/R72_T150/crash/lod0/Hull.model</exploded>
+		</models>
+		<swinging>
+			<lodDist>FAR</lodDist>
+			<pitchParams>0.26 36.00 0.48 1.00 0.05 0.32</pitchParams>
+			<rollParams>1.00 0.26 36.00 0.48 1.00 0.05 0.32</rollParams>
+			<sensitivityToImpulse>0.28</sensitivityToImpulse>
+		</swinging>
+		<exhaust>
+			<pixie>particles/Tank/engine_exit_gass.xml</pixie>
+			<nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
+			<rates>5.0 10.0 25.0</rates>
+		</exhaust>
+		<turretPositions>
+			<turret>0.000000 0.755679 0.472252</turret>
+		</turretPositions>
+		<hitTester>
+			<collisionModel>vehicles/russian/R72_T150/collision/Hull.model</collisionModel>
+		</hitTester>
+		<armor>
+			<armor_1>90</armor_1>
+			<armor_2>75</armor_2>
+			<armor_3>90</armor_3>
+			<armor_4>75</armor_4>
+			<armor_5>120</armor_5>
+			<armor_6>40</armor_6>
+			<armor_7>30</armor_7>
+			<armor_8>40</armor_8>
+			<armor_9>30</armor_9>
+			<armor_10>0</armor_10>
+			<armor_11>100</armor_11>
+			<armor_12>60</armor_12>
+			<armor_13>30</armor_13>
+		</armor>
+		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+		<weight>30200</weight>
+		<maxHealth>736</maxHealth>
+		<ammoBayHealth>
+			<maxHealth>160</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</ammoBayHealth>
+		<emblemSlots>
+			<clan>
+				<rayStart>0.441166 0.294245 2.80989</rayStart>
+				<rayEnd>0.441166 0.104903 2.74547</rayEnd>
+				<rayUp>0.000000 0.000000 -1</rayUp>
+				<size>0.32</size>
+				<hideIfDamaged>false</hideIfDamaged>
+			</clan>
+		</emblemSlots>
+	</hull>
+	<chassis>
+		<Chassis_T150>
+			<blitz>
+				<blitzPartName>chassis</blitzPartName>
+				<bbox>
+					<min>-1.656130 -3.238430 0.000000</min>
+					<max>1.656130 3.417620 1.220490</max>
+				</bbox>
+				<points>
+					<normal>0.000000 0.011661 0.009814</normal>
+					<crash>0.0 0.0 0.0</crash>
+				</points>
+				<soundPC>tanks/pc/treads/ht</soundPC>
+				<soundNPC>tanks/npc/treads/ht</soundNPC>
+			</blitz>
+			<userString>#ussr_vehicles:Chassis_T150</userString>
+			<description>#ussr_vehicles:Chassis_T150_descr</description>
+			<tags/>
+			<level>5</level>
+			<price>0</price>
+			<unlocks>
+				<chassis>Chassis_T150_2<cost>6030</cost>
+				</chassis>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/russian/R72_T150/normal/lod0/Chassis.model</undamaged>
+				<destroyed>vehicles/russian/R72_T150/crash/lod0/Chassis.model</destroyed>
+				<exploded>vehicles/russian/R72_T150/crash/lod0/Chassis.model</exploded>
+			</models>
+			<traces>
+				<lodDist>FAR</lodDist>
+				<bufferPrefs>mediumTank</bufferPrefs>
+				<textureSet>ussr_01</textureSet>
+				<size>0.73 0.73</size>
+			</traces>
+			<tracks>
+				<lodDist>MEDIUM</lodDist>
+				<leftMaterial>track_mat_L_skinned</leftMaterial>
+				<rightMaterial>track_mat_R_skinned</rightMaterial>
+				<textureScale>-0.69</textureScale>
+			</tracks>
+			<wheels>
+				<lodDist>MEDIUM</lodDist>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R0</name>
+					<radius>0.341589</radius>
+				</wheel>
+				<group>
+					<isLeft>false</isLeft>
+					<template>WD_R</template>
+					<radius>0.20648</radius>
+					<startIndex>1</startIndex>
+					<count>3</count>
+				</group>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R4</name>
+					<radius>0.456921</radius>
+				</wheel>
+				<group>
+					<isLeft>false</isLeft>
+					<template>W_R</template>
+					<radius>0.302502</radius>
+					<startIndex>0</startIndex>
+					<count>6</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L0</name>
+					<radius>0.341589</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>WD_L</template>
+					<radius>0.20648</radius>
+					<startIndex>1</startIndex>
+					<count>3</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L4</name>
+					<radius>0.456921</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>W_L</template>
+					<radius>0.302502</radius>
+					<startIndex>0</startIndex>
+					<count>6</count>
+				</group>
+			</wheels>
+			<drivingWheels>WD_L0 WD_L4</drivingWheels>
+			<effects>
+				<lodDist>MEDIUM</lodDist>
+				<dust>mediumTankDust</dust>
+				<mud>mediumTankMud</mud>
+			</effects>
+			<sound>/vehicles/tanks/treads/treads_3</sound>
+			<hullPosition>0.000000 0.945632 0.000000</hullPosition>
+			<hitTester>
+				<collisionModel>vehicles/russian/R72_T150/collision/Chassis.model</collisionModel>
+			</hitTester>
+			<armor>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
+			</armor>
+			<topRightCarryingPoint>1.3143 2.26729</topRightCarryingPoint>
+			<maxClimbAngle>25</maxClimbAngle>
+			<navmeshGirth>6.0</navmeshGirth>
+			<weight>10600</weight>
+			<maxLoad>58800</maxLoad>
+			<terrainResistance>1.4 1.8 2.3</terrainResistance>
+			<brakeForce>45500</brakeForce>
+			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationSpeed>15</rotationSpeed>
+			<shotDispersionFactors>
+				<vehicleMovement>0.27</vehicleMovement>
+				<vehicleRotation>0.27</vehicleRotation>
+			</shotDispersionFactors>
+			<bulkHealthFactor>3.0</bulkHealthFactor>
+			<maxHealth>130</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>5.0</repairCost>
+			</Chassis_T150>
+		<Chassis_T150_2>
+			<blitz>
+				<blitzPartName>chassis</blitzPartName>
+				<bbox>
+					<min>-1.656130 -3.238430 0.000000</min>
+					<max>1.656130 3.417620 1.220490</max>
+				</bbox>
+				<points>
+					<normal>0.000000 0.011661 0.009814</normal>
+					<crash>0.0 0.0 0.0</crash>
+				</points>
+				<soundPC>tanks/pc/treads/ht</soundPC>
+				<soundNPC>tanks/npc/treads/ht</soundNPC>
+			</blitz>
+			<userString>#ussr_vehicles:Chassis_T150_2</userString>
+			<description>#ussr_vehicles:Chassis_T150_2_descr</description>
+			<tags/>
+			<level>6</level>
+			<price>0</price>
+			<models>
+				<undamaged>vehicles/russian/R72_T150/normal/lod0/Chassis.model</undamaged>
+				<destroyed>vehicles/russian/R72_T150/crash/lod0/Chassis.model</destroyed>
+				<exploded>vehicles/russian/R72_T150/crash/lod0/Chassis.model</exploded>
+			</models>
+			<traces>
+				<lodDist>FAR</lodDist>
+				<bufferPrefs>mediumTank</bufferPrefs>
+				<textureSet>germany_01</textureSet>
+				<size>0.73 0.73</size>
+			</traces>
+			<tracks>
+				<lodDist>MEDIUM</lodDist>
+				<leftMaterial>track_mat_L_skinned</leftMaterial>
+				<rightMaterial>track_mat_R_skinned</rightMaterial>
+				<textureScale>-0.569</textureScale>
+			</tracks>
+			<wheels>
+				<lodDist>MEDIUM</lodDist>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R0</name>
+					<radius>0.341589</radius>
+				</wheel>
+				<group>
+					<isLeft>false</isLeft>
+					<template>WD_R</template>
+					<radius>0.20648</radius>
+					<startIndex>1</startIndex>
+					<count>3</count>
+				</group>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R4</name>
+					<radius>0.456921</radius>
+				</wheel>
+				<group>
+					<isLeft>false</isLeft>
+					<template>W_R</template>
+					<radius>0.302502</radius>
+					<startIndex>0</startIndex>
+					<count>6</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L0</name>
+					<radius>0.341589</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>WD_L</template>
+					<radius>0.20648</radius>
+					<startIndex>1</startIndex>
+					<count>3</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L4</name>
+					<radius>0.456921</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>W_L</template>
+					<radius>0.302502</radius>
+					<startIndex>0</startIndex>
+					<count>6</count>
+				</group>
+			</wheels>
+			<drivingWheels>WD_L0 WD_L4</drivingWheels>
+			<effects>
+				<lodDist>MEDIUM</lodDist>
+				<dust>mediumTankDust</dust>
+				<mud>mediumTankMud</mud>
+			</effects>
+			<sound>/vehicles/tanks/treads/treads_3</sound>
+			<hullPosition>0.000000 0.945632 0.000000</hullPosition>
+			<hitTester>
+				<collisionModel>vehicles/russian/R72_T150/collision/Chassis.model</collisionModel>
+			</hitTester>
+			<armor>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
+			</armor>
+			<topRightCarryingPoint>1.3143 2.26729</topRightCarryingPoint>
+			<maxClimbAngle>25</maxClimbAngle>
+			<navmeshGirth>6.0</navmeshGirth>
+			<weight>10600</weight>
+			<maxLoad>58800</maxLoad>
+			<terrainResistance>1.2 1.5 2.1</terrainResistance>
+			<brakeForce>45500</brakeForce>
+			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationSpeed>16</rotationSpeed>
+			<shotDispersionFactors>
+				<vehicleMovement>0.25</vehicleMovement>
+				<vehicleRotation>0.25</vehicleRotation>
+			</shotDispersionFactors>
+			<bulkHealthFactor>3.0</bulkHealthFactor>
+			<maxHealth>140</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>5.0</repairCost>
+			</Chassis_T150_2>
+	</chassis>
+	<turrets0>
+		<Turret_1_T150>
+			<blitz>
+				<blitzPartName>turret_01</blitzPartName>
+				<bbox>
+					<min>-0.946323 -1.646354 -0.358735</min>
+					<max>0.943187 1.119056 1.239886</max>
+				</bbox>
+				<points>
+					<normal>0.000000 -0.472251 -1.701312</normal>
+					<crash>0.000000 -0.472251 -1.700692</crash>
+				</points>
+			</blitz>
+			<userString>#ussr_vehicles:Turret_1_T150</userString>
+			<description>#ussr_vehicles:Turret_1_T150_descr</description>
+			<tags/>
+			<level>5</level>
+			<price>0</price>
+			<models>
+				<undamaged>vehicles/russian/R72_T150/normal/lod0/Turret_01.model</undamaged>
+				<destroyed>vehicles/russian/R72_T150/crash/lod0/Turret_01.model</destroyed>
+				<exploded>vehicles/russian/R72_T150/crash/lod0/Turret_01.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/russian/R72_T150/collision/Turret_01.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>0.000446 0.388759 0.814459</gunPosition>
+			<armor>
+				<armor_1>90</armor_1>
+				<armor_2>90</armor_2>
+				<armor_3>90</armor_3>
+				<armor_4>90</armor_4>
+				<armor_5>30</armor_5>
+				<armor_6>80</armor_6>
+				<armor_7>30</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>10</armor_9>
+				<armor_10>30</armor_10>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>7150</weight>
+			<maxHealth>184</maxHealth>
+			<rotationSpeed>20</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>130</maxHealth>
+				<maxRegenHealth>65</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>230</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>80</maxHealth>
+				<maxRegenHealth>40</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<guns>
+				<_76mm_ZiS-5>shared<blitz>
+						<blitzPartName>gun_01</blitzPartName>
+						<bbox>
+							<min>-0.376826 -0.584577 -0.311265</min>
+							<max>0.331029 2.277847 0.390260</max>
+						</bbox>
+						<points>
+							<normal>-0.000446 -1.286710 -2.090071</normal>
+							<crash>-0.000446 -1.286710 -2.090070</crash>
+						</points>
+					</blitz>
+					<maxAmmo>111</maxAmmo>
+					<pitchLimits>-25 7</pitchLimits>
+					<unlocks>
+						<gun>_57mm_413<cost>2710</cost>
+						</gun>
+						<gun>_122mm_cannon_U-11<cost>4430</cost>
+						</gun>
+						<gun>_85mm_S-31<cost>5130</cost>
+						</gun>
+					</unlocks>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_01.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_01.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_01.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_01.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>20</gun>
+					</armor>
+					<shotDispersionRadius>0.46</shotDispersionRadius>
+					<reloadTime>7.3469387755102</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.14</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
+				</_76mm_ZiS-5>
+				<_57mm_413>shared<blitz>
+						<blitzPartName>gun_02</blitzPartName>
+						<bbox>
+							<min>-0.376826 -0.584577 -0.311265</min>
+							<max>0.331029 3.378256 0.390260</max>
+						</bbox>
+						<points>
+							<normal>-0.000446 -1.286711 -2.090071</normal>
+							<crash>-0.000446 -1.286711 -2.090070</crash>
+						</points>
+					</blitz>
+					<maxAmmo>166</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_02.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_02.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_02.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_02.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.34</shotDispersionRadius>
+					<reloadTime>2.9529829010719</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.14</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					<pitchLimits>-25 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+				</_57mm_413>
+				<_122mm_cannon_U-11>shared<blitz>
+						<blitzPartName>gun_04</blitzPartName>
+						<bbox>
+							<min>-0.376826 -0.761253 -0.311265</min>
+							<max>0.331029 1.706178 0.390260</max>
+						</bbox>
+						<points>
+							<normal>-0.000446 -1.286711 -2.090071</normal>
+							<crash>-0.000446 -1.286711 -2.090070</crash>
+						</points>
+					</blitz>
+					<maxAmmo>48</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_04.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_04.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_04.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_04.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>40</gun>
+					</armor>
+					<shotDispersionRadius>0.57</shotDispersionRadius>
+					<reloadTime>13.2815533980583</reloadTime>
+					<aimingTime>2.9</aimingTime>
+					<pitchLimits>-25 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+				</_122mm_cannon_U-11>
+				<_85mm_S-31>shared<blitz>
+						<blitzPartName>gun_05</blitzPartName>
+						<bbox>
+							<min>-0.376826 -1.031314 -0.311265</min>
+							<max>0.331029 3.369802 0.390260</max>
+						</bbox>
+						<points>
+							<normal>-0.000446 -1.286710 -2.090071</normal>
+							<crash>-0.000446 -1.286710 -2.090070</crash>
+						</points>
+					</blitz>
+					<maxAmmo>70</maxAmmo>
+					<unlocks>
+						<turret>Turret_2_T150<cost>4650</cost>
+						</turret>
+					</unlocks>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_05.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_05.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_05.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_05.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>30</gun>
+					</armor>
+					<shotDispersionRadius>0.42</shotDispersionRadius>
+					<reloadTime>7.82608695652174</reloadTime>
+					<aimingTime>2.9</aimingTime>
+					<pitchLimits>-25 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+				</_85mm_S-31>
+			</guns>
+			<emblemSlots>
+				<player>
+					<rayStart>-0.84912 0.481011 0.421221</rayStart>
+					<rayEnd>-0.657892 0.4321 0.388975</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.32</size>
+					<hideIfDamaged>false</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>0.84912 0.481011 0.421221</rayStart>
+					<rayEnd>0.657892 0.4321 0.388975</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.32</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<inscription>
+					<rayStart>0.860866 0.518857 -0.800853</rayStart>
+					<rayEnd>0.668611 0.464843 -0.789884</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.78</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</inscription>
+				<inscription>
+					<rayStart>-0.860866 0.518857 -0.800853</rayStart>
+					<rayEnd>-0.668611 0.464843 -0.789884</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.78</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</inscription>
+			</emblemSlots>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</Turret_1_T150>
+		<Turret_2_T150>
+			<blitz>
+				<blitzPartName>turret_02</blitzPartName>
+				<bbox>
+					<min>-0.980634 -1.851948 -0.265356</min>
+					<max>0.982000 1.553795 1.283957</max>
+				</bbox>
+				<points>
+					<normal>-0.000000 -0.475101 -1.701311</normal>
+					<crash>-0.000103 -0.472143 -1.701163</crash>
+				</points>
+			</blitz>
+			<userString>#ussr_vehicles:Turret_2_T150</userString>
+			<description>#ussr_vehicles:Turret_2_T150_descr</description>
+			<tags/>
+			<level>6</level>
+			<price>0</price>
+			<unlocks>
+				<gun>_107mm_ZiS-6<cost>16990</cost>
+				</gun>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/russian/R72_T150/normal/lod0/Turret_02.model</undamaged>
+				<destroyed>vehicles/russian/R72_T150/crash/lod0/Turret_02.model</destroyed>
+				<exploded>vehicles/russian/R72_T150/crash/lod0/Turret_02.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/russian/R72_T150/collision/Turret_02.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>0.005134 0.477452 1.10886</gunPosition>
+			<armor>
+				<armor_1>100</armor_1>
+				<armor_2>100</armor_2>
+				<armor_3>100</armor_3>
+				<armor_4>75</armor_4>
+				<armor_5>30</armor_5>
+				<armor_6>75</armor_6>
+				<armor_7>75</armor_7>
+				<armor_8>30</armor_8>
+				<armor_9>0</armor_9>
+				<armor_10>30</armor_10>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>10000</weight>
+			<maxHealth>214</maxHealth>
+			<rotationSpeed>20</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>130</maxHealth>
+				<maxRegenHealth>65</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>230</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>80</maxHealth>
+				<maxRegenHealth>40</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<invisibilityFactor>0.914</invisibilityFactor>
+			<guns>
+				<_76mm_ZiS-5>shared<blitz>
+						<blitzPartName>gun_06</blitzPartName>
+						<bbox>
+							<min>-0.365945 -1.325710 -0.397525</min>
+							<max>0.372207 2.409827 0.353780</max>
+						</bbox>
+						<points>
+							<normal>-0.005134 -1.581108 -2.178763</normal>
+							<crash>-0.005134 -1.581107 -2.178763</crash>
+						</points>
+					</blitz>
+					<maxAmmo>121</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_06.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_06.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_06.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_06.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>20</gun>
+					</armor>
+					<shotDispersionRadius>0.46</shotDispersionRadius>
+					<reloadTime>7.3469387755102</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.14</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					<pitchLimits>-20 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+				</_76mm_ZiS-5>
+				<_57mm_413>shared<blitz>
+						<blitzPartName>gun_07</blitzPartName>
+						<bbox>
+							<min>-0.365945 -0.878973 -0.393699</min>
+							<max>0.372207 3.539356 0.353780</max>
+						</bbox>
+						<points>
+							<normal>-0.005134 -1.581108 -2.178763</normal>
+							<crash>-0.005134 -1.581108 -2.178763</crash>
+						</points>
+					</blitz>
+					<maxAmmo>184</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_07.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_07.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_07.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_07.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.34</shotDispersionRadius>
+					<reloadTime>2.9529829010719</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.14</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					<pitchLimits>-20 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+				</_57mm_413>
+				<_122mm_cannon_U-11>shared<blitz>
+						<blitzPartName>gun_09</blitzPartName>
+						<bbox>
+							<min>-0.371240 -1.055649 -0.395985</min>
+							<max>0.377501 1.875025 0.353780</max>
+						</bbox>
+						<points>
+							<normal>-0.005134 -1.581106 -2.178763</normal>
+							<crash>-0.005134 -1.581106 -2.178763</crash>
+						</points>
+					</blitz>
+					<maxAmmo>70</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_09.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_09.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_09.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_09.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>40</gun>
+					</armor>
+					<shotDispersionRadius>0.57</shotDispersionRadius>
+					<reloadTime>12.8036951501155</reloadTime>
+					<aimingTime>2.9</aimingTime>
+					<pitchLimits>-20 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+				</_122mm_cannon_U-11>
+				<_85mm_S-31>shared<blitz>
+						<blitzPartName>gun_10</blitzPartName>
+						<bbox>
+							<min>-0.360335 -1.325710 -0.395986</min>
+							<max>0.363678 3.501452 0.351219</max>
+						</bbox>
+						<points>
+							<normal>-0.005134 -1.581108 -2.178763</normal>
+							<crash>-0.005134 -1.581108 -2.178763</crash>
+						</points>
+					</blitz>
+					<maxAmmo>91</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_10.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_10.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_10.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_10.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>30</gun>
+					</armor>
+					<shotDispersionRadius>0.42</shotDispersionRadius>
+					<reloadTime>7.5</reloadTime>
+					<aimingTime>2.9</aimingTime>
+					<pitchLimits>-20 7</pitchLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+				</_85mm_S-31>
+				<_107mm_ZiS-6>shared<blitz>
+						<blitzPartName>gun_11</blitzPartName>
+						<bbox>
+							<min>-0.368271 -1.055649 -0.395985</min>
+							<max>0.374532 3.969094 0.349726</max>
+						</bbox>
+						<points>
+							<normal>-0.005134 -1.581108 -2.178763</normal>
+							<crash>-0.005134 -1.576352 -2.178763</crash>
+						</points>
+					</blitz>
+					<maxAmmo>54</maxAmmo>
+					<models>
+						<undamaged>vehicles/russian/R72_T150/normal/lod0/Gun_11.model</undamaged>
+						<destroyed>vehicles/russian/R72_T150/crash/lod0/Gun_11.model</destroyed>
+						<exploded>vehicles/russian/R72_T150/crash/lod0/Gun_11.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/russian/R72_T150/collision/Gun_11.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>80<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>90<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>60<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_3>
+						<gun>30</gun>
+					</armor>
+					<shotDispersionRadius>0.45</shotDispersionRadius>
+					<reloadTime>13.7085258294834</reloadTime>
+					<aimingTime>3.4</aimingTime>
+					<pitchLimits>-20 7</pitchLimits>
+					<shotDispersionFactors>
+						<turretRotation>0.2</turretRotation>
+						<afterShot>4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
+				</_107mm_ZiS-6>
+			</guns>
+			<emblemSlots>
+				<player>
+					<rayStart>-1.0145 0.517307 -0.562874</rayStart>
+					<rayEnd>-0.817182 0.517307 -0.530244</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.32</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>1.0145 0.517307 -0.562874</rayStart>
+					<rayEnd>0.817182 0.517307 -0.530244</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.32</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<inscription>
+					<rayStart>0.899913 0.534582 -1.25582</rayStart>
+					<rayEnd>0.702593 0.534582 -1.22319</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.78</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</inscription>
+				<inscription>
+					<rayStart>-0.899913 0.534582 -1.25582</rayStart>
+					<rayEnd>-0.702593 0.534582 -1.22319</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.78</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</inscription>
+			</emblemSlots>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</Turret_2_T150>
+	</turrets0>
+	<engines>
+		<V-2K>shared<unlocks>
+				<engine>V-5<cost>6490</cost>
+				</engine>
+			</unlocks>
+		</V-2K>
+		<V-5>shared<unlocks>
+				<engine>V-5F<cost>10030</cost>
+				</engine>
+			</unlocks>
+		</V-5>
+		<V-5F>shared<unlocks>
+				<vehicle>KV-3<cost>40120</cost>
+				</vehicle>
+			</unlocks>
+		</V-5F>
+	</engines>
+	<fuelTanks>
+		<Average>shared</Average></fuelTanks>
+	<radios>
+		<_10R>shared</_10R>
+	</radios>
+</root>

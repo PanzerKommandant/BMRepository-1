@@ -1,0 +1,652 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+StyleSheets:
+-   selector: ".arrow-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".blue-button-like:pressed_inside"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.501961]
+        bg-drawType: "DRAW_FILL"
+        exclusiveInput: true
+-   selector: ".blue-button-like"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 1.000000]
+        bg-drawType: "DRAW_FILL"
+        exclusiveInput: true
+-   selector: ".blue-button-like-light"
+    properties:
+        bg-color: [0.254902, 0.313726, 0.364706, 1.000000]
+        bg-drawType: "DRAW_FILL"
+        exclusiveInput: true
+-   selector: ".leaderboard-background"
+    properties:
+        bg-color: [0.207843, 0.274510, 0.325490, 0.501961]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".blue-header-info"
+    properties:
+        bg-color: [0.207843, 0.274510, 0.325490, 1.000000]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".transparent-separator-hor"
+    properties:
+        bg-drawType: "DRAW_ALIGNED"
+-   selector: ".transparent-separator-vertical"
+    properties:
+        anchor-bottomAnchor: 0.000000
+        anchor-bottomAnchorEnabled: true
+        anchor-topAnchor: 0.000000
+        anchor-topAnchorEnabled: true
+        bg-drawType: "DRAW_ALIGNED"
+-   selector: ".local-button"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+        exclusiveInput: true
+-   selector: ".local-button:pressed_inside"
+    properties:
+        bg-sprite: ""
+Controls:
+-   class: "UIControl"
+    customClass: "UIPlayerStatsTableHeaderColumn"
+    name: "MemberTableHeaderNameColumn"
+    size: [120.000000, 60.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.278431, 0.372549, 0.435294, 1.000000]
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [42.000000, 42.000000]
+        classes: "text-color-blue"
+        textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["LEFT", "VCENTER"]
+        text: ""
+        font: "WarHeliosCondC_17_clan"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 60.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "SortDirImage"
+        position: [101.000000, 22.000000]
+        size: [16.000000, 16.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 3.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Clan/sort_icon"
+                frame: 0
+    -   prototype: "Common/WhiteLine"
+        name: "Line"
+        size: [1.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 1.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                color: [0.000000, 0.000000, 0.000000, 0.301961]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    customClass: "UIPlayerStatsTableHeaderColumn"
+    name: "MemberTableHeaderColumn"
+    size: [120.000000, 60.000000]
+    components:
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.278431, 0.372549, 0.435294, 1.000000]
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [91.000000, 42.000000]
+        classes: "text-color-blue"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        text: ""
+        font: "WarHeliosCondC_17_clan"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 12.000000
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                rightAnchor: 17.000000
+                vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "SortDirImage"
+        position: [102.000000, 22.000000]
+        size: [16.000000, 16.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 2.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Clan/sort_icon"
+                frame: 0
+    -   prototype: "Common/WhiteLine"
+        name: "Line"
+        size: [1.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 1.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                color: [0.000000, 0.000000, 0.000000, 0.301961]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "Common/WhiteLine"
+    name: "ListLine"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            color: [1.000000, 1.000000, 1.000000, 0.141176]
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "MemberTableCellName"
+    size: [120.000000, 64.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "RoleIcon"
+        size: [40.000000, 40.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Clan/clan_online"
+                frame: 2
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [60.000000, 26.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["POINTS"]
+        textalign: ["LEFT", "VCENTER"]
+        text: ""
+        font: "WarHeliosCondC_Bold_21"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 60.000000
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -13.000000
+    -   class: "UIStaticText"
+        name: "Role"
+        size: [60.000000, 26.000000]
+        textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["POINTS"]
+        textalign: ["LEFT", "VCENTER"]
+        text: ""
+        font: "WarHeliosCondC_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 60.000000
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 13.000000
+    -   prototype: "ListLine"
+        name: "ListLine"
+-   class: "UIControl"
+    name: "MemberTableCellText"
+    size: [120.000000, 64.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [120.000000, 26.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: ""
+        font: "WarHeliosCondC_Bold_21"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+    -   prototype: "ListLine"
+        name: "ListLine"
+-   class: "UIControl"
+    name: "MemberTableCellRole"
+    size: [120.000000, 64.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "ChangeRoleButton"
+        size: [120.000000, 64.000000]
+        classes: "button"
+        children:
+        -   class: "UIStaticText"
+            name: "Caption"
+            size: [120.000000, 64.000000]
+            classes: "text2-small text-color-blue"
+            text: "#clans:StaffScreen/ChangeRoles/MakeChange"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   prototype: "ListLine"
+        name: "ListLineBottom"
+    -   prototype: "ListLine"
+        name: "ListLineLeft"
+        size: [1.000000, 64.000000]
+        components:
+            Anchor:
+                leftAnchor: -2.000000
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+    -   class: "UIControl"
+        name: "InputBlocker"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "MemberTableCellApplication"
+    size: [120.000000, 64.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "DeclineButton"
+        size: [59.000000, 64.000000]
+        classes: "local-button"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                hCenterAnchor: -1.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                frame: 5
+    -   class: "UIControl"
+        name: "AcceptButton"
+        size: [59.000000, 64.000000]
+        classes: "local-button"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 1.000000
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                frame: 6
+    -   prototype: "ListLine"
+        name: "ListLineLeft"
+        size: [1.000000, 64.000000]
+        components:
+            Anchor:
+                leftAnchor: -2.000000
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+    -   prototype: "ListLine"
+        name: "ListLineBottom"
+    -   prototype: "ListLine"
+        name: "ListLineMiddle"
+        size: [1.000000, 64.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+-   class: "UIControl"
+    name: "ContentSection"
+    size: [1024.000000, 50.000000]
+    clip: true
+    debugDraw: false
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            leftRightStretchCap: 9.000000
+            margins: [-3.000000, -3.000000, -3.000000, 0.000000]
+    children:
+    -   prototype: "UnreadIcon/UnreadIcon"
+        name: "messagesCount"
+        size: [33.000000, 33.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 15.000000
+                vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "title"
+        size: [40.000000, 50.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "text"
+            classes: "header4 text-color-white"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "arrow"
+            size: [30.000000, 50.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
+-   class: "UIControl"
+    customClass: "UIClanEmblemView"
+    name: "ClanEmblem"
+    noInput: true
+    components:
+        Background:
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "BorderTop"
+        position: [-1.000000, -1.000000]
+        size: [2.000000, 1.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderBottom"
+        size: [2.000000, 1.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderLeft"
+        size: [1.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderRight"
+        size: [1.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "MemberTableRow"
+    size: [200.000000, 60.000000]
+    exclusiveInput: true
+    classes: "panel-background"
+    components:
+        LinearLayout: {}
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+-   class: "UIControl"
+    name: "MemberTableRowSelf"
+    size: [200.000000, 60.000000]
+    exclusiveInput: true
+    classes: "panel-background_self"
+    components:
+        LinearLayout: {}
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+-   class: "UIControl"
+    customClass: "UIClanControllerTitle"
+    name: "HeaderTitle"
+    size: [400.000000, 76.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Center"
+        size: [233.000000, 76.000000]
+        classes: "arrow-button"
+        components:
+            LinearLayout:
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Vertical"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Title"
+                classes: "header1 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "#clans:ProfileScreen/Header"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "SubTitle"
+                visible: true
+                textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: ""
+                font: "WarHeliosCondC_Bold_19"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Button"
+            size: [45.000000, 45.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/ButtonPopUp"
+                    frame: 0
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    leftRightStretchCap: 4.000000
+                    topBottomStretchCap: 4.000000
+            children:
+            -   class: "UIControl"
+                name: "Arrow"
+                size: [30.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "BigIconFrame"
+    size: [64.000000, 64.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "BorderRight"
+        size: [2.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderTop"
+        size: [64.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderBottom"
+        size: [64.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: false
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderLeft"
+        size: [2.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

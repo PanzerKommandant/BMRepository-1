@@ -1,0 +1,145 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "DigitContentControl"
+    pivot: [0.000000, 0.500000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 51.000000
+        Background:
+            sprite: "~res:/Gfx/UI/LobbyCommon/AnalogCounter/numbers"
+-   class: "UIControl"
+    customClass: "UIAnalogDigit"
+    name: "AnalogDigit"
+    size: [55.000000, 116.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+        Background:
+            sprite: "~res:/Gfx/UI/LobbyCommon/AnalogCounter/number_middle"
+    children:
+    -   class: "UIControl"
+        name: "NumbersContainer"
+        position: [0.000000, 5.000000]
+        size: [55.000000, 80.000000]
+        clip: true
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 80.000000
+            Anchor:
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+        children:
+        -   prototype: "DigitContentControl"
+            name: "upper"
+        -   prototype: "DigitContentControl"
+            name: "middle"
+        -   prototype: "DigitContentControl"
+            name: "lower"
+-   class: "UIControl"
+    name: "RemainingTanksCounter"
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 40.000000
+            rightAnchorEnabled: true
+            rightAnchor: 40.000000
+    children:
+    -   class: "UIControl"
+        name: "AnalogCounter"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfFirstChild"
+        children:
+        -   class: "UIControl"
+            name: "Digits"
+            noInput: true
+            components:
+                LinearLayout:
+                    enabled: true
+                    padding: 6.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfFirstChild"
+                Anchor: {}
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.207843, 0.184314, 0.149020, 1.000000]
+            children:
+            -   prototype: "AnalogDigit"
+                name: "Digit4"
+            -   prototype: "AnalogDigit"
+                name: "Digit3"
+            -   prototype: "AnalogDigit"
+                name: "Digit2"
+            -   prototype: "AnalogDigit"
+                name: "Digit1"
+            -   prototype: "AnalogDigit"
+                name: "Digit0"
+        -   class: "UIControl"
+            name: "Background"
+            noInput: true
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfFirstChild"
+            children:
+            -   class: "UIControl"
+                name: "Left"
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/AnalogCounter/left_timer"
+            -   class: "UIControl"
+                name: "Middle"
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfContent"
+                    Background:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/AnalogCounter/middle_timer"
+            -   class: "UIControl"
+                name: "Right"
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/AnalogCounter/right_timer"
+        -   class: "UIStaticText"
+            name: "Text"
+            classes: "text2 text-color-blue"
+            text: "#quests:DescrScreen/StageQuests/VehiclesLeft"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 31.000000
+                Anchor:
+                    bottomAnchorEnabled: true

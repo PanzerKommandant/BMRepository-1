@@ -1,0 +1,15 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+StyleSheets:
+-   selector: ".unread-red"
+    properties:
+        color: [0.768627, 0.023529, 0.043137, 1.000000]
+Controls:
+-   prototype: "UnreadIcon/UnreadIcon"
+    name: "UnreadNotifications"
+    size: [33.000000, 33.000000]
+    classes: "header3 unread-red"
+    text: "!"

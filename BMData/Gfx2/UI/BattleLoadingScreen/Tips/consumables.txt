@@ -1,0 +1,5 @@
+1
+consumables0.tex
+508 320
+1
+0 0 508 237 0 83 0 frame0

@@ -1,0 +1,12 @@
+2
+texture0.tex
+texture1.tex
+104 74
+7
+82 69 88 66 8 2 1 frame0
+170 0 88 66 8 2 1 frame1
+83 137 88 66 8 2 1 frame2
+80 0 88 67 8 1 1 frame3
+172 69 88 66 8 2 1 frame4
+1896 298 96 66 8 2 0 frame5
+260 0 88 66 8 2 1 frame6

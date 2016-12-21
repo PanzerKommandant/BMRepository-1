@@ -1,0 +1,75 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "tutorialIntro"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            color: [0.000000, 0.000000, 0.000000, 0.698000]
+    children:
+    -   class: "UIStaticText"
+        name: "text"
+        position: [0.000000, 170.000000]
+        size: [1024.000000, 100.000000]
+        noInput: true
+        textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["HCENTER", "TOP"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "#battle_tutorial:welcome/comment"
+        font: "WarHeliosCondC_Bold_21_tutorial"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 170.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "title"
+        position: [0.000000, 140.000000]
+        size: [1024.000000, 30.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["HCENTER", "BOTTOM"]
+        textUseRtlAlign: "DONT_USE"
+        text: "#battle_tutorial:welcome/header"
+        font: "WarHeliosCondC_Bold_25"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 140.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "tapToContinue"
+        position: [0.000000, 688.000000]
+        size: [1024.000000, 40.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        multiline: "MULTILINE_ENABLED"
+        text: "#battle_tutorial:welcome/tap_hint"
+        font: "WarHeliosCondC_21_tf"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 40.000000
+            Background:
+                align: ["LEFT", "TOP"]

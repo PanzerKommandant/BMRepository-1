@@ -1,0 +1,5 @@
+1
+japan-Chi_Nu_Kai0.tex
+160 100
+1
+0 0 148 100 10 0 0 frame0

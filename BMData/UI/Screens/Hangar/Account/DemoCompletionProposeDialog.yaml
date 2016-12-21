@@ -1,0 +1,24 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   prototype: "Dialogs/WarningDialog"
+    name: "DialogBackground"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        size: [460.000000, 150.000000]
+        bottomAlign: 90.000000
+        topAlign: 60.000000
+        text: "#demo_restriction:Profile_Update_Dialog/Description"
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   path: "Dialog/Middle/ButtonHolder/OkButton"
+        components:
+            NormalText:
+                text: "#demo_restriction:Profile_Update_Dialog/Ok"
+    -   path: "Dialog/Middle/ButtonHolder/CancelButton"
+        components:
+            NormalText:
+                text: "#demo_restriction:Profile_Update_Dialog/Cancel"
+    -   path: "Dialog/Top/TitleText"
+        text: "#demo_restriction:Profile_Update_Dialog/Title"

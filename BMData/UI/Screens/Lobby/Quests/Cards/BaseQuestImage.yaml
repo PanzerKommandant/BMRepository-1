@@ -1,0 +1,34 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "QuestImage"
+    size: [220.000000, 252.000000]
+    clip: true
+    noInput: true
+    components:
+        Background:
+            colorInherit: "COLOR_IGNORE_PARENT"
+    children:
+    -   class: "UIControl"
+        name: "Layer1"
+        noInput: true
+        leftAlignEnabled: true
+        rightAlignEnabled: true
+        bottomAlignEnabled: true
+        topAlignEnabled: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Exploration/card_exploration"
+    -   class: "UIControl"
+        name: "Layer0"
+        noInput: true
+        leftAlignEnabled: true
+        rightAlignEnabled: true
+        bottomAlignEnabled: true
+        topAlignEnabled: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Exploration/card_exploration"
+                frame: 1

@@ -1,0 +1,5 @@
+1
+camouflage_auto0.tex
+508 320
+1
+0 0 355 262 76 29 0 frame0

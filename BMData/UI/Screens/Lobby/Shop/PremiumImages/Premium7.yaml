@@ -1,0 +1,11 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/PremiumImages/PremiumStatic.yaml"
+Controls:
+-   prototype: "PremiumStatic/Image"
+    name: "Image"
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/ImagePremium7"

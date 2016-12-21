@@ -1,0 +1,48 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Football/card_football"
+        children:
+        -   class: "UIParticles"
+            name: "Confetti1"
+            position: [100.000000, 0.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_football/confetti1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "gunM1"
+            position: [27.000015, 32.199986]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_football/gunM1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "explosion"
+            position: [10.200019, 68.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_football/explosion.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Football/card_football"
+        children:
+        -   class: "UIParticles"
+            name: "Confetti2"
+            position: [100.000000, 0.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_football/confetti2.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "dust"
+            position: [0.200019, 212.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_football/dust.sc2"
+            autoStart: true

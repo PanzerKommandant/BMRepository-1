@@ -1,0 +1,97 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Battle/HotKey.yaml"
+- "~res:/UI/Screens/Battle/ChatButton.yaml"
+StyleSheets:
+-   selector: ".chat_dialog"
+    properties:
+        linearLayout-padding: 20.000000
+        sizePolicy-verticalValue: 90.000000
+-   selector: ".chat_dialog.Desktop"
+    properties:
+        linearLayout-padding: 10.000000
+        sizePolicy-verticalValue: 70.000000
+-   selector: ".chat_message"
+    properties:
+        sizePolicy-verticalValue: 44.000000
+-   selector: ".chat_message.Desktop"
+    properties:
+        sizePolicy-verticalValue: 50.000000
+Controls:
+-   class: "UIControl"
+    name: "ChatDialog"
+    size: [1200.000000, 70.000000]
+    children:
+    -   class: "UIControl"
+        name: "chatDialog"
+        position: [0.000000, -20.000000]
+        size: [1200.000000, 90.000000]
+        classes: "chat_dialog"
+        components:
+            LinearLayout:
+                dynamicPadding: true
+                spacing: 10.000000
+            SizePolicy:
+                verticalPolicy: "FixedSize"
+            Anchor:
+                hCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/TextChatBg"
+                leftRightStretchCap: 5.000000
+                topBottomStretchCap: 5.000000
+        children:
+        -   class: "UITextField"
+            name: "chatMessage"
+            position: [20.000000, 23.000000]
+            size: [860.000000, 44.000000]
+            classes: "chat_message"
+            font: "Font_18_bold"
+            textcolor: [0.129400, 0.149000, 0.207800, 1.000000]
+            startEditPolicy: "WhenFocused"
+            stopEditPolicy: "WhenFocusLost"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Focus: {}
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.921600, 0.964700, 1.000000, 0.588200]
+        -   prototype: "ChatButton/ChatButton"
+            name: "sendSquad"
+            position: [890.000000, 10.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    topBottomStretchCap: 9.000000
+            children:
+            -   path: "icon"
+                components:
+                    Background:
+                        frame: 2
+        -   prototype: "ChatButton/ChatButton"
+            name: "sendTeam"
+            position: [990.000000, 10.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    topBottomStretchCap: 9.000000
+            children:
+            -   path: "icon"
+                components:
+                    Background:
+                        frame: 1
+        -   prototype: "ChatButton/ChatButton"
+            name: "sendAll"
+            position: [1090.000000, 10.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    topBottomStretchCap: 9.000000

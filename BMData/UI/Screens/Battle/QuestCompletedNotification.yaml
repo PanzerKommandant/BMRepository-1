@@ -1,0 +1,68 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    customClass: "UIQuestCompletedNotificationControl"
+    name: "QuestCompletedNotification"
+    size: [420.000000, 78.000000]
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/back_quest"
+            leftRightStretchCap: 5.000000
+            topBottomStretchCap: 5.000000
+    children:
+    -   class: "UIControl"
+        name: "Bag"
+        size: [60.000000, 60.000000]
+        leftAlignEnabled: true
+        vcenterAlignEnabled: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/bagstyle"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Mark"
+        size: [70.000000, 70.000000]
+        rightAlignEnabled: true
+        vcenterAlignEnabled: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/icon_complete"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "TextHolder"
+        leftAlignEnabled: true
+        leftAlign: 60.000000
+        rightAlignEnabled: true
+        rightAlign: 70.000000
+        bottomAlignEnabled: true
+        topAlignEnabled: true
+        components:
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            size: [290.000000, 39.000000]
+            leftAlignEnabled: true
+            rightAlignEnabled: true
+            topAlignEnabled: true
+            text: "#quests:BattleScreen/completeNotification/Title"
+            font: "WarHeliosCondC_Bold_25"
+            textalign: ["LEFT", "BOTTOM"]
+            textUseRtlAlign: USE_BY_CONTENT
+        -   class: "UIStaticText"
+            name: "Name"
+            leftAlignEnabled: true
+            rightAlignEnabled: true
+            bottomAlignEnabled: true
+            topAlignEnabled: true
+            topAlign: 39.000000
+            font: "WarHeliosCondC_21"
+            textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+            textalign: ["LEFT", "TOP"]
+            textUseRtlAlign: USE_BY_CONTENT

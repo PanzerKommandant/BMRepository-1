@@ -1,0 +1,73 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/Lobby/Story/StoryCurrencyIconsStyles.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryRewardPrototypes.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Content"
+    size: [1027.000000, 768.000000]
+    components:
+        LinearLayout:
+            enabled: false
+            orientation: "TopDown"
+            spacing: 10.000000
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        ModalInput: {}
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.125490, 0.160784, 0.921569]
+    children:
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "BackButton"
+    -   prototype: "StoryRewardPrototypes/StepScrollView"
+        name: "StepScrollView"
+        position: [0.000021, 0.000006]
+        size: [1027.000000, 768.000000]
+        centerContent: true
+        children:
+        -   path: "scrollContainerControl"
+            position: [0.000000, 337.000000]
+            children:
+            -   class: "UIControl"
+                name: "CongratsContainer"
+                size: [473.000000, 54.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "CongratsHeader"
+                    size: [162.000000, 31.000000]
+                    classes: "header1"
+                    text: "template_event/CompleteStep/Congratulation/Header"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "CongratsText"
+                    size: [311.000000, 23.000000]
+                    classes: "text2 text-color-blue"
+                    text: "template_event/CompleteStep/Congratulation/Descr"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+            -   prototype: "StoryRewardPrototypes/Rewards"
+                name: "Rewards"

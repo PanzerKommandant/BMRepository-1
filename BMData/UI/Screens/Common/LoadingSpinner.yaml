@@ -1,0 +1,65 @@
+Header:
+    version: "1"
+StyleSheets:
+-   selector: ".loadingSpinner #Background"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/CommonUIElements/LoadingProcessLogo"
+-   selector: ".loadingSpinner #Spinner"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/CommonUIElements/LoadingProcessLogo"
+-   selector: ".loadingSpinner #Background.halloween"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/CommonUIElementsOverride/Halloween/LoadingProcess"
+-   selector: ".loadingSpinner #Fade.halloween"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/CommonUIElementsOverride/Halloween/LoadingProcess"
+-   selector: ".loadingSpinner #Spinner.halloween"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/CommonUIElementsOverride/Halloween/LoadingProcess"
+Controls:
+-   class: "UIControl"
+    customClass: "UILoadingSpinner"
+    name: "LoadingSpinner"
+    size: [40.000000, 40.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    classes: "loadingSpinner"
+    children:
+    -   class: "UIControl"
+        name: "Spinner"
+        size: [40.000000, 40.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Background"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Fade"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

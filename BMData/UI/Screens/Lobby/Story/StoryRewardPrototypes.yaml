@@ -1,0 +1,390 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/Lobby/Story/StoryRewardsStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".bonusItem #CompletedIcon"
+    properties:
+        visible: false
+-   selector: ".bonusItem #EyeIcon"
+    properties:
+        visible: false
+-   selector: ".bonusItem.eye #EyeIcon"
+    properties:
+        visible: true
+-   selector: ".bonusItem.completed #CompletedIcon"
+    properties:
+        visible: true
+-   selector: ".bonusItem.completed.eye"
+    properties:
+        noInput: true
+-   selector: ".bonusItem.completed.eye #EyeIcon"
+    properties:
+        visible: false
+-   selector: ".bonusItem #TankDescription"
+    properties:
+        visible: false
+-   selector: ".bonusItem.is-tank #TankDescription"
+    properties:
+        visible: true
+-   selector: ".bonusItem.rare #BonusIcon #Grade"
+    properties:
+        bg-color: [0.141176, 0.349020, 0.941176, 1.000000]
+        visible: true
+-   selector: ".bonusItem.unique #BonusIcon #Grade"
+    properties:
+        bg-color: [0.549020, 0.023529, 0.803922, 1.000000]
+        visible: true
+-   selector: ".bonusItem.legendary #BonusIcon #Grade"
+    properties:
+        bg-color: [1.000000, 0.752941, 0.000000, 1.000000]
+        visible: true
+-   selector: ".bonusItem.common #BonusIcon #Grade"
+    properties:
+        visible: true
+        bg-color: [0.517647, 0.521569, 0.525490, 1.000000]
+-   selector: ".bonusItem #BonusIcon #Grade"
+    properties:
+        visible: false
+-   selector: ".bonusItem #ItemCount"
+    properties:
+        visible: false
+-   selector: ".bonusItem.has-count #ItemCount"
+    properties:
+        visible: true
+Controls:
+-   class: "UIControl"
+    name: "BonusIcon"
+    size: [98.000000, 98.000000]
+    noInput: true
+    components:
+        SizePolicy: {}
+    children:
+    -   class: "UIControl"
+        name: "Grade"
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Storage/Items_back"
+    -   class: "UIControl"
+        name: "icon"
+        size: [98.000000, 98.000000]
+        noInput: true
+        classes: "small reward_icon"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   class: "UIControl"
+    name: "BonusItemDetailed"
+    size: [200.000000, 200.000000]
+    classes: "bonusItem"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            spacing: 2.000000
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/Clan/back_clan_stat"
+            leftRightStretchCap: 7.000000
+            topBottomStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "Gap"
+        size: [0.000000, 18.000000]
+    -   class: "UIControl"
+        name: "infoNotification"
+        size: [21.000000, 21.000000]
+        visible: false
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Story/info_icon"
+                color: [0.450980, 0.462745, 0.486275, 1.000000]
+    -   prototype: "BonusIcon"
+        name: "BonusIcon"
+        pivot: [0.500000, 0.500000]
+        angle: 0.000000
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 20.000000
+    -   class: "UIStaticText"
+        name: "Value"
+        size: [190.000000, 0.000000]
+        classes: "header1"
+        fitting: ["POINTS"]
+        font: "WarHeliosCondC_Bold_25"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 92.000000
+    -   class: "UIControl"
+        name: "DescriptionWrap"
+        position: [0.000000, 122.000000]
+        size: [200.000000, 47.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 130.000000
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Description"
+            position: [5.000000, 0.000000]
+            size: [190.000000, 47.000000]
+            clip: true
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "TOP"]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 5.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+        -   class: "UIStaticText"
+            name: "SlotUsage"
+            classes: "text2"
+            textColor: [0.811765, 0.760784, 0.686275, 1.000000]
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+    -   class: "UIControl"
+        name: "CompletedIcon"
+        position: [175.000000, 25.000000]
+        size: [0.000000, 0.000000]
+        scale: [0.700000, 0.700000]
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                enabled: true
+                rightAnchorEnabled: true
+                rightAnchor: 25.000000
+                topAnchorEnabled: true
+                topAnchor: 25.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/stamp"
+                frame: 2
+    -   class: "UIControl"
+        name: "EyeIcon"
+        size: [64.000000, 32.000000]
+        noInput: true
+        components:
+            IgnoreLayout:
+                enabled: true
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: false
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/eyeIcon"
+    -   class: "UIControl"
+        name: "TankDescription"
+        position: [5.000000, 9.000000]
+        size: [70.000000, 32.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                spacing: -4.000000
+            IgnoreLayout: {}
+        children:
+        -   class: "UIControl"
+            name: "TankClass"
+            size: [36.000000, 32.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                    frame: 0
+            children:
+            -   class: "UIControl"
+                name: "Elite"
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+        -   class: "UIControl"
+            name: "Level"
+            size: [38.000000, 32.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                    frame: 16
+    -   class: "UIControl"
+        name: "ItemCount"
+        position: [5.000000, 5.000000]
+        size: [17.000000, 21.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                padding: 4.000000
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                horizontalValue: 100.000000
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.262745, 0.392157, 0.341176, 1.000000]
+        children:
+        -   class: "UIStaticText"
+            name: "Label"
+            size: [9.000000, 21.000000]
+            classes: "text2-small text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            text: "0"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "BonusBigIcons"
+    size: [0.000000, 0.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            dynamicPadding: false
+            spacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            vCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "BonusGrid"
+    components:
+        FlowLayout:
+            hSpacing: 20.000000
+            vPadding: 20.000000
+            vSpacing: 20.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            horizontalMax: 900.000000
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true
+-   class: "UIScrollView"
+    name: "StepScrollView"
+    size: [1027.000000, 768.000000]
+    autoUpdate: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIScrollViewContainer"
+        name: "scrollContainerControl"
+        position: [0.000000, 0.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIScrollBar"
+        name: "VerticalScrollbar"
+        size: [10.000000, 758.000000]
+        noInput: true
+        orientation: "ORIENTATION_VERTICAL"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+        children:
+        -   class: "UIControl"
+            name: "slider"
+            size: [10.000000, 20.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_VERTICAL"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                    topBottomStretchCap: 10.000000
+    -   class: "UIScrollBar"
+        name: "HorizontalScrollbar"
+        position: [10.000000, 758.000000]
+        size: [1017.000000, 10.000000]
+        noInput: true
+        orientation: "ORIENTATION_HORIZONTAL"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "slider"
+            size: [20.000000, 10.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/HorizontalScroll"
+                    leftRightStretchCap: 10.000000
+-   class: "UIControl"
+    name: "Rewards"
+    position: [188.500000, 54.000000]
+    size: [650.000000, 40.000000]
+    components:
+        FlowLayout:
+            hDynamicInLinePadding: true
+            hSpacing: 20.000000
+            vPadding: 20.000000
+            vSpacing: 20.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true

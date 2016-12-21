@@ -1,0 +1,21 @@
+<root>
+	<ids>
+		<SCR_528A>20</SCR_528A>
+	</ids>
+	<shared>
+		<SCR_528A>
+			<userString>#france_vehicles:SCR_528</userString>
+			<description>#france_vehicles:SCR_528_descr</description>
+			<tags>
+      </tags>
+			<level>10</level>
+			<price>54000</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>750</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+			</SCR_528A>
+	</shared>
+</root>

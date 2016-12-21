@@ -1,0 +1,24 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/IconButton.yaml"
+Controls:
+-   prototype: "IconButton/IconButton"
+    name: "StyledBackButton"
+    size: [92.000000, 76.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            topAnchorEnabled: true
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+            leftRightStretchCap: 0.000000
+            topBottomStretchCap: 0.000000
+    children:
+    -   path: "icon"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                frame: 3
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

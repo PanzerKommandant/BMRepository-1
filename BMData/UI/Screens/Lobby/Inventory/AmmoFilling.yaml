@@ -1,0 +1,75 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".segment"
+    properties:
+        bg-color: [0.282353, 0.298039, 0.298039, 1.000000]
+-   selector: ".segment.ap"
+    properties:
+        bg-color: [0.580392, 0.031373, 0.000000, 1.000000]
+-   selector: ".segment.ap_premium"
+    properties:
+        bg-color: [0.650980, 0.156863, 0.117647, 1.000000]
+-   selector: ".segment.ap_cr"
+    properties:
+        bg-color: [0.168627, 0.349020, 0.388235, 1.000000]
+-   selector: ".segment.he"
+    properties:
+        bg-color: [0.549020, 0.262745, 0.078431, 1.000000]
+-   selector: ".segment.he_premium"
+    properties:
+        bg-color: [0.549020, 0.262745, 0.078431, 1.000000]
+-   selector: ".segment.hc"
+    properties:
+        bg-color: [0.713726, 0.431373, 0.164706, 1.000000]
+Controls:
+-   class: "UIControl"
+    name: "Segment"
+    classes: "segment"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+-   class: "UIControl"
+    customClass: "UIAmmoFilling"
+    name: "AmmoFilling"
+    size: [200.000000, 60.000000]
+    visible: true
+    noInput: true
+    components:
+        IgnoreLayout: {}
+        Anchor:
+            hCenterAnchorEnabled: true
+            hCenterAnchor: -110.000000
+            vCenterAnchorEnabled: true
+            vCenterAnchor: 0.000000
+    children:
+    -   class: "UIStaticText"
+        name: "Label"
+        size: [200.000000, 30.000000]
+        noInput: true
+        textColor: [0.866700, 0.866700, 0.866700, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, -2.000000]
+        fitting: ["REDUCE"]
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        font: "Font_8A88A947"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "Bar"
+        position: [0.000000, 37.000000]
+        size: [200.000000, 15.000000]
+        components:
+            LinearLayout: {}

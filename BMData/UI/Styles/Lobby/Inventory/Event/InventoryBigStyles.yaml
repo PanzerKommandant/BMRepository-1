@@ -1,0 +1,6 @@
+Header:
+    version: "1"
+StyleSheets:
+-   selector: ".1st_april.equipment_item.largeRepairkit ? #icon, .1st_april.equipment_item.largeRepairkit #icon"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Big/Event/largeRepairkit_apr.txt"

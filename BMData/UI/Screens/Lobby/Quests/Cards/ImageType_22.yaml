@@ -1,0 +1,49 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Supremacy/leadership"
+        children:
+        -   class: "UIParticles"
+            name: "fire_big1.5"
+            position: [73.000000, 138.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_leadership/fire_big1.5.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "sparks1.5"
+            position: [0.000000, 156.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_leadership/sparks1.5.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Supremacy/leadership"
+        children:
+        -   class: "UIParticles"
+            name: "dust"
+            position: [0.000000, 173.000000]
+            size: [0.000000, 0.000000]
+            angle: 0.000000
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_leadership/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "sparks2.5"
+            position: [0.000000, 241.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_leadership/sparks2.5.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "glow"
+            position: [77.000000, 72.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_leadership/glow2.5.sc2"
+            autoStart: true

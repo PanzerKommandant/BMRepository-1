@@ -1,0 +1,44 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "bat"
+    radius: 150.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "shockwave"
+layer0:
+    activeLODS: [1, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.107100, 1.000000, 0.480000, 1.000000, 0.888000, 1.000000, 0.996700, 0.000000]
+    blending: 1
+    colorOverLife: [77.000000, 77.000000, 90.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 5.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: true
+    isLooped: false
+    layerType: "single"
+    life: 50.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "bat"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.700000, 0.400000]
+    sprite: "../../../Gfx/Particles/22_italy_it_night/bat_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: -6.000000
+    velocityVariation: -0.400000

@@ -1,0 +1,529 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Lobby/Hangar/HangarTankCell.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledMenuButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "BasePopup"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyCommon/DialogBackground"
+        name: "DialogBackground"
+        components:
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 0.937255]
+        children:
+        -   path: "Darkness"
+            noInput: true
+    -   prototype: "StyledMenuButton/StyledMenuButton"
+        name: "MenuButton"
+        classes: "button button-color-gray"
+        children:
+        -   path: "icon"
+            components:
+                Background:
+                    frame: 3
+    -   class: "UIControl"
+        name: "Content"
+        noInput: true
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                bottomAnchorEnabled: true
+-   prototype: "BasePopup"
+    name: "PremiumBase"
+    children:
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "ContainerAlign"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                    verticalMax: 600.000000
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "body"
+                size: [600.000000, 300.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 223.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "descr"
+                    size: [440.000000, 287.000000]
+                    debugDraw: false
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "TOP"]
+                    text: "shop/Congrats/Description"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 160.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 13.000000
+                            bottomAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "iconPlaceholder"
+                    size: [140.000000, 155.000000]
+                    noInput: true
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            hCenterAnchorEnabled: false
+                            hCenterAnchor: -300.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                -   class: "UIStaticText"
+                    name: "congrats"
+                    size: [500.000000, 60.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    text: "shop/Congrats/Title"
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -150.000000
+                -   class: "UIStaticText"
+                    name: "titleDesc"
+                    size: [700.000000, 30.000000]
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    text: "shop/Congrats/Description"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: -100.000000
+-   prototype: "PremiumBase"
+    name: "PremiumBought"
+    noInput: true
+    children:
+    -   path: "Content/ContainerAlign"
+        noInput: true
+        children: []
+    -   path: "Content/ContainerAlign/body/descr"
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "shop/Congrats/Premium"
+    -   path: "Content/ContainerAlign/body/iconPlaceholder"
+        children:
+        -   class: "UIControl"
+            name: "premiumIcon"
+            size: [140.000000, 155.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/icon_premium"
+                    frame: 9
+-   prototype: "PremiumBase"
+    name: "PremiumVehicle"
+    noInput: true
+    children:
+    -   path: "Content/ContainerAlign"
+        noInput: true
+        children: []
+    -   path: "Content/ContainerAlign/body/descr"
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "shop/Congrats/PremiumVehicle/Description"
+        components:
+            Anchor:
+                topAnchor: 0.000000
+    -   path: "Content/ContainerAlign/body/iconPlaceholder"
+        children:
+        -   prototype: "HangarTankCell/HangarTankCell"
+            name: "HangarTankCell"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: -40.000000
+            children:
+            -   path: "bg"
+                components:
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+            -   path: "squadMatch"
+                visible: false
+            -   path: "x2"
+                visible: false
+                children: []
+            -   path: "favorite"
+                visible: false
+            -   path: "fade"
+                visible: false
+                noInput: true
+-   prototype: "BasePopup"
+    name: "HangarTutorialComplete"
+    children:
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "body"
+            size: [1024.000000, 588.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    vCenterAnchorEnabled: false
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 100.000000
+            children:
+            -   class: "UIStaticText"
+                name: "descr"
+                size: [1024.000000, 30.000000]
+                debugDraw: false
+                debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "#hangar_tutorial:hangar/x2/hint3"
+                font: "WarHeliosCondC_21"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: false
+                        topAnchor: 13.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+            -   class: "UIControl"
+                name: "iconPlaceholder"
+                size: [240.000000, 270.000000]
+                noInput: true
+                debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: false
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: false
+                        topAnchor: 100.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -20.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/HangarTutorial/ImageGold05"
+            -   class: "UIStaticText"
+                name: "congrats"
+                size: [500.000000, 60.000000]
+                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                text: "#hangar_tutorial:hangar/congrats/header"
+                font: "WarHeliosCondC_Bold_25"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -250.000000
+            -   class: "UIStaticText"
+                name: "titleDesc"
+                size: [700.000000, 60.000000]
+                debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                text: "#hangar_tutorial:hangar/congrats/descr"
+                font: "WarHeliosCondC_21"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -200.000000
+            -   class: "UIControl"
+                name: "PriceLabel"
+                position: [0.000000, 492.000000]
+                size: [1024.000000, -76.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: false
+                        topAnchor: 370.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 160.000000
+                        bottomAnchorEnabled: false
+                        bottomAnchor: -26.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "reward"
+                    size: [1024.000000, -76.000000]
+                    debugDraw: false
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["HCENTER", "VCENTER"]
+                    text: "#hangar_tutorial:hangar/task_reward"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                -   class: "UIControl"
+                    name: "Image"
+                    position: [984.000000, 0.000000]
+                    size: [40.000000, -76.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: false
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_ALIGNED"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                            frame: 0
+        -   prototype: "Common/DefaultButton"
+            name: "QuestsButton"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+                Normal:
+                    frame: 0
+                PressedInside:
+                    frame: 0
+                NormalText:
+                    text: "#quests:Hangar/ButtonTitle"
+                DisabledText:
+                    text: "#quests:Hangar/ButtonTitle"
+-   prototype: "BasePopup"
+    name: "TankBirthday"
+    children:
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "DecoratedResizableDialog"
+            position: [0.000000, 0.000000]
+            size: [1024.000000, 688.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    color: [0.070588, 0.090196, 0.113725, 0.784314]
+            children:
+            -   class: "UIControl"
+                name: "Dialog"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfFirstChild"
+                        verticalPolicy: "PercentOfFirstChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -40.000000
+                children:
+                -   class: "UIControl"
+                    name: "Content"
+                    size: [500.000000, 401.000000]
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            padding: 20.000000
+                            spacing: 10.000000
+                        SizePolicy:
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+                            leftRightStretchCap: 4.000000
+                            topBottomStretchCap: 4.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "Padding"
+                        size: [0.000000, 80.000000]
+                    -   class: "UIStaticText"
+                        name: "Title"
+                        classes: "header1"
+                        text: "#vehicle_birthday:Congratulations/Title"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "DescriptionContainer"
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfMaxChild"
+                                verticalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "DescriptionPrefix"
+                            size: [450.000000, 92.000000]
+                            classes: "text2 text-color-blue"
+                            multiline: "MULTILINE_ENABLED"
+                            text: "#vehicle_birthday:Congratulations/ListOfVehicles"
+                            components:
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                        -   class: "UIStaticText"
+                            name: "DescriptionList"
+                            size: [450.000000, 0.000000]
+                            classes: "header3"
+                            multiline: "MULTILINE_ENABLED"
+                            fitting: ["REDUCE"]
+                            components:
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfContent"
+                                    verticalMax: 150.000000
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                        -   class: "UIStaticText"
+                            name: "DescriptionPostfix"
+                            size: [450.000000, 0.000000]
+                            classes: "text2 text-color-blue"
+                            multiline: "MULTILINE_ENABLED"
+                            components:
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "BonusContainer"
+                        size: [150.000000, 48.000000]
+                        components:
+                            SizePolicy:
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIControl"
+                            name: "Money"
+                            size: [48.000000, 48.000000]
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 25.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+                                    frame: 1
+                            children:
+                            -   class: "UIStaticText"
+                                name: "Label"
+                                classes: "header1"
+                                text: "x5"
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        rightAnchor: -7.000000
+                                        vCenterAnchorEnabled: true
+                        -   class: "UIControl"
+                            name: "Exp"
+                            position: [0.000000, 0.000000]
+                            size: [48.000000, 48.000000]
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+                                    frame: 3
+                            children:
+                            -   class: "UIStaticText"
+                                name: "Label"
+                                classes: "header1"
+                                text: "x5"
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        rightAnchor: -7.000000
+                                        vCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "ButtonHolder"
+                        components:
+                            LinearLayout:
+                                orientation: "RightToLeft"
+                                padding: 20.000000
+                                spacing: 20.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 20.000000
+                        children:
+                        -   prototype: "StyledButton/Button"
+                            name: "OkButton"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                Background:
+                                    frame: 2
+                            children:
+                            -   path: "Caption"
+                                text: "#common:DialogButton/OK"
+                -   class: "UIParticles"
+                    name: "GlowEffect"
+                    position: [250.000000, 25.000000]
+                    size: [0.000000, 0.000000]
+                    effectPath: "~res:/3d/FX/UI/Birthday/glow.sc2"
+                    autoStart: true
+                -   class: "UIControl"
+                    name: "Decoration"
+                    position: [162.500000, -70.000000]
+                    size: [175.000000, 190.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            topAnchor: -70.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/Happy_B_big"
+                            frame: 0

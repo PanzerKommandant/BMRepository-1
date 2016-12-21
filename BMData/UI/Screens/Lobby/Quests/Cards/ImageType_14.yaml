@@ -1,0 +1,42 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/M6A2E1/card_M6A2E1"
+        children:
+        -   class: "UIParticles"
+            name: "FireTank"
+            position: [194.000000, 120.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_M6A2E1/fire_tank.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/M6A2E1/card_M6A2E1"
+        children:
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [110.000000, 100.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_M6A2E1/glow_behind.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 240.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_M6A2E1/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 140.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_M6A2E1/sparks_front.sc2"
+            autoStart: true

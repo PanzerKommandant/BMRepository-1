@@ -1,0 +1,365 @@
+Header:
+    version: "3"
+ImportedPackages:
+- "~res:/UI/Screens/Battle/Tips.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Dialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "back"
+        position: [0.000000, 0.000000]
+        size: [1024.000000, 768.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.900000]
+                colorInherit: "COLOR_IGNORE_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "MapNameLeftBg"
+            size: [512.000000, 193.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/plashka"
+                    align: ["RIGHT", "BOTTOM"]
+        -   class: "UIControl"
+            name: "MapNameRightBg"
+            position: [512.000000, 0.000000]
+            size: [512.000000, 193.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/plashka"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    align: ["LEFT", "BOTTOM"]
+        -   class: "UIControl"
+            name: "mapLogo"
+            position: [464.500000, 23.000000]
+            size: [95.000000, 85.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/GameplayIcon"
+                    frame: 2
+                    align: ["HCENTER", "TOP"]
+        -   prototype: "Tips/hint"
+            name: "hint"
+        -   prototype: "Common/DefaultButton"
+            name: "OkButton"
+            size: [80.000000, 71.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    topAnchorEnabled: true
+                    topAnchor: 20.000000
+                NormalText:
+                    text: "Back"
+        -   prototype: "Common/DefaultButton"
+            name: "NextTipButton"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 180.000000
+                NormalText:
+                    text: "Next Tip"
+        -   class: "UIControl"
+            name: "SupremacyBattles"
+            position: [15.000000, 240.000000]
+            size: [994.000000, 60.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 15.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 15.000000
+                    topAnchorEnabled: true
+                    topAnchor: 240.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/BottomLayer"
+                    leftRightStretchCap: 5.000000
+                    topBottomStretchCap: 5.000000
+            children:
+            -   class: "UISlider"
+                name: "Slider"
+                position: [50.000000, 7.000000]
+                size: [894.000000, 47.000000]
+                minValue: 0.000000
+                maxValue: 100.000000
+                value: 50.000000
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 50.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 50.000000
+                        topAnchorEnabled: false
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 6.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                    min:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                        frame: 1
+                        leftRightStretchCap: 20.000000
+                    max:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                        leftRightStretchCap: 20.000000
+                        topBottomStretchCap: 0.000000
+                children:
+                -   class: "UIControl"
+                    name: "thumbSpriteControl"
+                    position: [447.000000, 23.500000]
+                    size: [38.000000, 47.000000]
+                    pivot: [0.500000, 0.500000]
+                    noInput: true
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/QueueScreen/SlideBarButton"
+                            frame: 0
+            -   class: "UIStaticText"
+                name: "MaxValue"
+                position: [939.000000, 15.000000]
+                size: [55.000000, 30.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Max"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "MinValue"
+                position: [0.000000, 15.000000]
+                size: [55.000000, 30.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Min"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "CurrValue"
+                position: [467.000000, 0.000000]
+                size: [60.000000, 30.000000]
+                pivot: [0.000000, 1.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Curr"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "Hint"
+                position: [0.000000, 0.000000]
+                size: [497.000000, 30.000000]
+                pivot: [0.000000, 1.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                text: "SupremacyBattlesCount"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Battles"
+            position: [15.000000, 140.000000]
+            size: [994.000000, 60.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 15.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 15.000000
+                    topAnchorEnabled: true
+                    topAnchor: 140.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/BottomLayer"
+                    leftRightStretchCap: 5.000000
+                    topBottomStretchCap: 5.000000
+            children:
+            -   class: "UISlider"
+                name: "Slider"
+                position: [50.000000, 7.000000]
+                size: [894.000000, 47.000000]
+                minValue: 0.000000
+                maxValue: 100.000000
+                value: 50.000000
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 50.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 50.000000
+                        topAnchorEnabled: false
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 6.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                    min:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                        frame: 1
+                        leftRightStretchCap: 20.000000
+                    max:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
+                        leftRightStretchCap: 20.000000
+                        topBottomStretchCap: 0.000000
+                children:
+                -   class: "UIControl"
+                    name: "thumbSpriteControl"
+                    position: [447.000000, 23.500000]
+                    size: [38.000000, 47.000000]
+                    pivot: [0.500000, 0.500000]
+                    noInput: true
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/QueueScreen/SlideBarButton"
+                            frame: 0
+            -   class: "UIStaticText"
+                name: "MaxValue"
+                position: [939.000000, 15.000000]
+                size: [55.000000, 30.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Max"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "MinValue"
+                position: [0.000000, 15.000000]
+                size: [55.000000, 30.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Min"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "CurrValue"
+                position: [467.000000, 0.000000]
+                size: [60.000000, 30.000000]
+                pivot: [0.000000, 1.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Curr"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "Hint"
+                position: [0.000000, 0.000000]
+                size: [497.000000, 30.000000]
+                pivot: [0.000000, 1.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                text: "BattlesCount"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+            name: "GameplayMode"
+            position: [15.000000, 320.000000]
+            size: [270.000000, 80.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 15.000000
+                    rightAnchorEnabled: false
+                    topAnchorEnabled: true
+                    topAnchor: 320.000000
+            children:
+            -   path: "GroupCaption"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "Supremacy Mode"
+                font: "WarHeliosCondC_Bold_19"

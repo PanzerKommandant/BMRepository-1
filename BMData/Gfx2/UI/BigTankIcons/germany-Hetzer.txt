@@ -1,0 +1,5 @@
+1
+germany-Hetzer0.tex
+320 200
+1
+0 0 280 200 17 0 0 frame0

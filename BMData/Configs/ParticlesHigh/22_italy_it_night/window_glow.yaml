@@ -1,0 +1,76 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [1.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "window_glow"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.213611, 0.292694, 1.000000, 0.000000]
+    blending: 3
+    colorOverLife: [255.000000, 249.221786, 168.338516, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 100.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "window_glow Clone"
+    number: 3.000000
+    particleOrientation: 4
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.000000, 2.000000]
+    sprite: "../../../Gfx/Particles/alpha/blursnow"
+    startTime: 0.000000
+    type: "layer"
+layer1:
+    activeLODS: [0, 0, 0, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.213611, 0.292694, 1.000000, 0.000000]
+    blending: 3
+    colorOverLife: [255.000000, 249.221786, 168.338516, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 100.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "window_glow Clone Clone"
+    number: 3.000000
+    particleOrientation: 4
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [4.000000, 4.000000]
+    sprite: "../../../Gfx/Particles/alpha/blursnow"
+    startTime: 0.000000
+    type: "layer"

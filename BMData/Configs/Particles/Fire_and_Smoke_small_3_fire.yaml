@@ -1,0 +1,53 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "fire"
+    radius: 0.500000
+    shortEffect: false
+    size: [0.200000, 0.500000, 0.000000]
+    type: "rect"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.080800, 1.000000, 0.735700, 1.000000, 1.000000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    colorOverLife: [0.000000, [242.015594, 167.961105, 19.852100, 255.000000], 0.136700, [242.015594, 110.926102, 45.377399, 255.000000], 0.666100, [161.735397, 51.614799, 4.424100, 255.000000]]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: true
+    endTime: 1000.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 1.000000
+    lifeVariation: 1.500000
+    loopEndTime: 6.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire"
+    number: [0.000000, 10.000000, 30.000000, 10.000000, 200.000000, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [4.000000, 4.000000]]
+    spin: 5.000000
+    spinVariation: 10.000000
+    sprite: "../../Gfx/Particles/smoke"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.100000
+    velocityVariation: 0.500000

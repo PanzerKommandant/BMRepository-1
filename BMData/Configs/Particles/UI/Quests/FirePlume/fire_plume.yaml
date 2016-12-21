@@ -1,0 +1,43 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "fire_plume1"
+    shortEffect: false
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.466330, 0.826011, 1.000000, 0.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 5.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: true
+    isLong: true
+    isLooped: false
+    layerType: "particles"
+    life: 0.500000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire2 Clone"
+    number: 3.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [600.000000, 100.000000]
+    sizeVariation: [10.000000, 10.000000]
+    sprite: "../../../../../Gfx/Particles/UI/fire_line"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.100000

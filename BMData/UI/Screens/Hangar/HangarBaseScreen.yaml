@@ -1,0 +1,50 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Hangar/StatsInfo.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyHeader/Header"
+        name: "Header"
+        children:
+        -   path: "menuButton/icon"
+            components:
+                Background:
+                    frame: 30
+        -   path: "menuButton/UnreadNews"
+            visible: false
+        -   path: "Layout/leftContent"
+            visible: true
+            children: []
+        -   path: "Layout/rightContent"
+            children:
+            -   prototype: "StatsInfo/CurrencyPanel"
+                name: "CurrencyPanel"
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 80.000000]
+        size: [1024.000000, 688.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                bottomAnchorEnabled: true
+        children:
+        -   prototype: "LobbyCommon/ScreenBackground"
+            name: "Background"

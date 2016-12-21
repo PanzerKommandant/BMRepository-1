@@ -1,0 +1,63 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 0.000000
+    emissionVector:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, [1.000000, 0.000000, 1.000000], 1.000000, [1.000000, 1.000000, 1.000000]]
+        value_line: [0.000000, -1.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "fire"
+    radius: 0.300000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "oncircle"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.080800, 1.000000, 0.703371, 0.985402, 1.000000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    animSpeedOverLife:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 0.990000, 0.000000]
+    blending: 3
+    colorOverLife: [0.000000, [242.015594, 150.190704, 64.287903, 255.000000], 0.271900, [161.735397, 51.614799, 4.424100, 255.000000], 0.996800, [0.000000, 0.000000, 0.000000, 255.000000]]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 1000.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 0.990000, 0.500000]
+        value_line: 1.500000
+    loopEndTime: 6.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire"
+    number:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 0.990000, 3.000000]
+        value_line: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [4.000000, 4.000000]]
+    spin: 5.000000
+    spinVariation: 10.000000
+    sprite: "../../Gfx/Particles/animation/smoke"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.100000
+    velocityVariation: 1.000000

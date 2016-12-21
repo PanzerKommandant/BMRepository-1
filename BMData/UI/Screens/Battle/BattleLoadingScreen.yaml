@@ -1,0 +1,403 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Battle/Tips.yaml"
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+StyleSheets:
+-   selector: "#BattleLoadingScreen #back #mapLogo"
+    properties:
+        bg-frame: 2
+-   selector: "#BattleLoadingScreen.supremacy #back #mapLogo"
+    properties:
+        bg-frame: 4
+-   selector: "#BattleLoadingScreen.tutorial #back #mapLogo"
+    properties:
+        bg-frame: 0
+-   selector: "#BattleLoadingScreen.tutorial #back #tableLeftBg, #BattleLoadingScreen.tutorial #back #tableRightBg, #BattleLoadingScreen.tutorial #back #MapNameLeftBg, #BattleLoadingScreen.tutorial #back #MapNameRightBg"
+    properties:
+        visible: false
+-   selector: ".cell.player"
+    properties:
+        bg-align: ["RIGHT", "VCENTER"]
+        bg-sprite: "~res:/Gfx/UI/BattleLoadingScreen/YourTank"
+-   selector: ".cell #tankNameColumn, .cell #nameColumn"
+    properties:
+        text-textColor: [0.859000, 0.945000, 0.973000, 1.000000]
+-   selector: ".cell.ready #tankNameColumn, .cell.ready #nameColumn"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".cell #tankIconColumn"
+    properties:
+        bg-frame: 0
+-   selector: ".cell.alive #tankIconColumn"
+    properties:
+        bg-frame: 1
+-   selector: ".text-loading-small"
+    properties:
+        text-font: "WarHeliosCondC_14"
+-   selector: ".bold-text-loading-small"
+    properties:
+        text-font: "WarHeliosCondC_Bold_14"
+Controls:
+-   class: "UIControl"
+    name: "squadColumn"
+    position: [0.000000, 0.000000]
+    size: [35.000000, 25.000000]
+    noInput: true
+    components:
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+        Background:
+            sprite: "~res:/Gfx/UI/BattleLoadingScreen/vzvods"
+    children:
+    -   class: "UIStaticText"
+        name: "squadNum"
+        position: [0.000000, 0.000000]
+        size: [35.000000, 21.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["HCENTER", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        text: "1"
+        font: "WarHeliosCondC_Bold_13"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 4.000000
+-   class: "UIControl"
+    name: "allyTableCellPrototype"
+    size: [442.000000, 27.000000]
+    noInput: true
+    classes: "cell player"
+    children:
+    -   prototype: "squadColumn"
+        name: "squadColumn"
+    -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+        name: "nameColumn"
+        position: [45.000000, 0.000000]
+        size: [181.000000, 26.000000]
+        components:
+            SizePolicy:
+                horizontalValue: 181.000000
+        children:
+        -   path: "spacer"
+            visible: false
+        -   path: "name"
+            classes: "text-loading-small"
+        -   path: "tag"
+            classes: "text-loading-small clan-tag"
+            textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+            text: "[TAG]"
+    -   class: "UIStaticText"
+        name: "tankNameColumn"
+        position: [235.000000, 0.000000]
+        size: [120.000000, 25.000000]
+        noInput: true
+        classes: "bold-text-loading-small"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["REDUCE"]
+        textalign: ["RIGHT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        text: "G.W. Panther"
+        components:
+            Background:
+                align: ["RIGHT", "VCENTER"]
+    -   class: "UIControl"
+        name: "tankIconColumn"
+        position: [365.000000, 0.000000]
+        size: [76.000000, 25.000000]
+        noInput: true
+        components:
+            Background:
+                align: ["LEFT", "VCENTER"]
+    -   class: "UIControl"
+        name: "tankLevelColumn"
+        position: [365.000000, 4.000000]
+        size: [76.000000, 15.000000]
+        noInput: true
+        components:
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    name: "enemyTableCellPrototype"
+    size: [442.000000, 27.000000]
+    noInput: true
+    classes: "cell"
+    children:
+    -   class: "UIControl"
+        name: "tankIconColumn"
+        size: [76.000000, 25.000000]
+        noInput: true
+        components:
+            Background:
+                spriteModification: ["FLIP_HORIZONTAL"]
+                align: ["RIGHT", "VCENTER"]
+    -   class: "UIControl"
+        name: "tankLevelColumn"
+        position: [0.000000, 4.000000]
+        size: [76.000000, 15.000000]
+        noInput: true
+        components:
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                align: ["RIGHT", "TOP"]
+    -   class: "UIStaticText"
+        name: "tankNameColumn"
+        position: [87.000000, 0.000000]
+        size: [120.000000, 25.000000]
+        noInput: true
+        classes: "bold-text-loading-small"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["REDUCE"]
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        text: "G.W. Panther"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 235.000000
+            Background:
+                align: ["LEFT", "VCENTER"]
+    -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+        name: "nameColumn"
+        position: [221.000000, 0.000000]
+        size: [181.000000, 26.000000]
+        components:
+            SizePolicy:
+                horizontalValue: 181.000000
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 40.000000
+        children:
+        -   path: "spacer"
+            visible: true
+        -   path: "name"
+            classes: "text-loading-small"
+        -   path: "tag"
+            classes: "text-loading-small clan-tag"
+            textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   prototype: "squadColumn"
+        name: "squadColumn"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+        children:
+        -   path: "squadNum"
+            text: "2"
+-   class: "UIControl"
+    name: "BattleLoadingScreen"
+    size: [1024.000000, 768.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            dynamicSpacing: true
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+    children:
+    -   class: "UIControl"
+        name: "Spacer"
+    -   class: "UIControl"
+        name: "back"
+        size: [1024.000000, 450.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "MapNameLeftBg"
+            size: [512.000000, 193.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/plashka"
+                    align: ["RIGHT", "BOTTOM"]
+        -   class: "UIControl"
+            name: "MapNameRightBg"
+            position: [512.000000, 0.000000]
+            size: [512.000000, 193.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/plashka"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    align: ["LEFT", "BOTTOM"]
+        -   class: "UIControl"
+            name: "mapLogo"
+            position: [464.500000, 23.000000]
+            size: [95.000000, 85.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/GameplayIcon"
+                    align: ["HCENTER", "TOP"]
+        -   class: "UIStaticText"
+            name: "mapName"
+            position: [0.000000, 120.000000]
+            size: [1024.000000, 40.000000]
+            noInput: true
+            classes: "header0"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            text: "Map Name"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "battleType"
+            position: [0.000000, 160.000000]
+            size: [1024.000000, 30.000000]
+            noInput: true
+            classes: "header3"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            text: "Battle type"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "tableLeftBg"
+            position: [32.000000, 190.000000]
+            size: [480.000000, 400.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -240.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/TableBackground"
+                    align: ["HCENTER", "TOP"]
+            children:
+            -   class: "UIStaticText"
+                name: "title"
+                position: [110.000000, 3.000000]
+                size: [370.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "TeamAlly"
+                components:
+                    Background:
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "Table"
+                position: [480.000000, 63.000000]
+                size: [0.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 63.000000
+        -   class: "UIControl"
+            name: "tableRightBg"
+            position: [512.000000, 190.000000]
+            size: [480.000000, 400.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 240.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleLoadingScreen/TableBackground"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    align: ["HCENTER", "TOP"]
+            children:
+            -   class: "UIStaticText"
+                name: "title"
+                position: [0.000000, 3.000000]
+                size: [370.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "TeamEnemy"
+                components:
+                    Background:
+                        align: ["RIGHT", "VCENTER"]
+            -   class: "UIControl"
+                name: "Table"
+                position: [0.000000, 63.000000]
+                size: [0.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 63.000000
+    -   prototype: "Tips/hint"
+        name: "hint"
+        components:
+            IgnoreLayout: {}
+            Background:
+                color: [0.290196, 0.407843, 0.505882, 0.298039]
+    -   class: "UIControl"
+        name: "progressPlaceholder"
+        size: [2.000000, 2.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 170.000000
+        children:
+        -   prototype: "LoadingSpinner/LoadingSpinner"
+            name: "LoadingSpinner"
+            pivot: [0.500000, 0.500000]
+    -   class: "UIControl"
+        name: "hintSpacer"
+        position: [0.000000, 608.000000]
+        size: [1024.000000, 160.000000]
+        visible: true

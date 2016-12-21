@@ -1,0 +1,82 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   class: "UIControl"
+    name: "SubmenuListItem"
+    size: [400.000000, 77.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "cell"
+        noInput: true
+        classes: "button-cell"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            customClass: "ListItemsDivider"
+            name: "divider"
+            position: [0.000000, 75.000000]
+            size: [400.000000, 2.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/GradientDivider"
+        -   class: "UIStaticText"
+            name: "title"
+            position: [86.000000, 23.500000]
+            size: [250.000000, 30.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "HANGAR"
+            font: "Font_18_bold"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 86.000000
+                    rightAnchorEnabled: false
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "service_logo"
+            position: [11.000000, 6.500000]
+            size: [64.000000, 64.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/social_icon"
+                    frame: 0
+        -   class: "UIControl"
+            name: "icon"
+            position: [336.000000, 6.500000]
+            size: [64.000000, 64.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/icon_sharing_soc"
+                    frame: 0

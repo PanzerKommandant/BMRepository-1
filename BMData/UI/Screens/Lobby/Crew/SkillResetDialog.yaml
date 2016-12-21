@@ -1,0 +1,13 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   prototype: "Dialogs/WarningDialog"
+    name: "SkillResetDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+        text: "#crew:skills/resetSkill/desc"
+    -   path: "Dialog/Top/TitleText"
+        text: "#crew:skills/resetSkill/header"

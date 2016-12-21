@@ -1,0 +1,27 @@
+modules:
+    '#vehicle:IS':
+        position: [4, 3]
+    '#vehicle:T-43':
+        position: [3, 1]
+    '#vehicleChassis:Chassis_KV-13':
+        position: [1, 5]
+    '#vehicleChassis:Chassis_KV-13_2':
+        position: [2, 5]
+    '#vehicleEngine:V-2IS':
+        position: [2, 4]
+    '#vehicleEngine:V-2K':
+        position: [1, 4]
+    '#vehicleGun:_122mm_cannon_U-11':
+        position: [3, 3]
+    '#vehicleGun:_76mm_S-54':
+        position: [2, 1]
+    '#vehicleGun:_76mm_ZiS-5':
+        position: [1, 1]
+    '#vehicleGun:_85mm_D-5T':
+        position: [3, 2]
+    '#vehicleGun:_85mm_D5T-85BM':
+        position: [4, 2]
+    '#vehicleTurret:Turret_1_KV-13':
+        position: [1, 2]
+    '#vehicleTurret:Turret_2_KV-13':
+        position: [2, 2]

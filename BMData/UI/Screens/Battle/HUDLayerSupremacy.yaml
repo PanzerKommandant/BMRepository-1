@@ -1,0 +1,434 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".ally-current"
+    properties:
+        bg-color: [0.541176, 1.000000, 0.000000, 1.000000]
+-   selector: ".neutral-current.light-neutral"
+    properties:
+        bg-color: [0.662745, 0.745098, 0.839216, 1.000000]
+-   selector: ".neutral-current.dark-neutral"
+    properties:
+        bg-color: [0.600000, 0.682353, 0.741176, 1.000000]
+-   selector: ".enemy-current"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".flip-on-owned"
+    properties: {}
+-   selector: ".enemy-current .flip-on-owned"
+    properties:
+        bg-spriteModification: ["FLIP_HORIZONTAL"]
+-   selector: ".ally-progress #Progress"
+    properties:
+        bg-color: [0.541176, 1.000000, 0.000000, 1.000000]
+-   selector: ".enemy-progress #Progress"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".owned-idle .change-sprite-on-owned"
+    properties:
+        bg-frame: 1
+-   selector: ".owned-idle .hide-on-owned"
+    properties:
+        visible: false
+-   selector: "#AnimatedFlag"
+    properties:
+        visible: false
+-   selector: ".owned-idle #AnimatedFlag"
+    properties:
+        visible: true
+-   selector: ".ally-current.observer"
+    properties:
+        bg-color: [1.000000, 0.109804, 0.278431, 1.000000]
+-   selector: ".enemy-current.observer"
+    properties:
+        bg-color: [0.145098, 0.415686, 0.976471, 1.000000]
+-   selector: ".ally-progress.observer #Progress"
+    properties:
+        bg-color: [1.000000, 0.109804, 0.278431, 1.000000]
+-   selector: ".enemy-progress.observer #Progress"
+    properties:
+        bg-color: [0.145098, 0.415686, 0.976471, 1.000000]
+-   selector: ".ally-current.observer"
+    properties:
+        bg-color: [1.000000, 0.109804, 0.278431, 1.000000]
+-   selector: ".progress-bar"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar_fill"
+-   selector: ".progress-bar.observer"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/BattleScreenHUD/observer_base_status_bar_fill.txt"
+Controls:
+-   class: "UIControl"
+    customClass: "UIAnalogDigit"
+    name: "AnalogDigit"
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+            verticalPolicy: "PercentOfFirstChild"
+        Background:
+            colorInherit: "COLOR_REPLACE_TO_PARENT"
+    children:
+    -   class: "UIControl"
+        name: "NumbersContainer"
+        clip: true
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfFirstChild"
+                verticalPolicy: "PercentOfFirstChild"
+                verticalValue: 100.000000
+            Background:
+                colorInherit: "COLOR_REPLACE_TO_PARENT"
+        children:
+        -   class: "UIStaticText"
+            name: "upper"
+            size: [9.000000, 19.000000]
+            pivot: [0.000000, 0.500000]
+            classes: "battle-points"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.003922, 0.003922, 0.003922, 0.196078]
+            text: "0"
+        -   class: "UIStaticText"
+            name: "middle"
+            size: [9.000000, 19.000000]
+            pivot: [0.000000, 0.500000]
+            classes: "battle-points"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.003922, 0.003922, 0.003922, 0.196078]
+            text: "0"
+        -   class: "UIStaticText"
+            name: "lower"
+            size: [9.000000, 19.000000]
+            pivot: [0.000000, 0.500000]
+            classes: "battle-points"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.003922, 0.003922, 0.003922, 0.196078]
+            text: "0"
+-   class: "UIControl"
+    name: "UISupremacyPointsStatus"
+    size: [352.000000, 19.000000]
+    noInput: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: true
+            topAnchor: 26.000000
+    children:
+    -   class: "UIControl"
+        name: "AllyPoints"
+        position: [0.000000, 0.000000]
+        size: [176.000000, 19.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+                spriteModification: ["FLIP_HORIZONTAL"]
+        children:
+        -   class: "UIControl"
+            name: "PaleProgressBar"
+            position: [2.000000, 0.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar_fill"
+                    frame: 0
+                    color: [1.000000, 1.000000, 1.000000, 0.250000]
+        -   class: "UIControl"
+            name: "ProgressBar"
+            position: [2.000000, 0.000000]
+            size: [172.000000, 19.000000]
+            noInput: true
+            classes: "progress-bar"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    frame: 0
+                    color: [0.000000, 0.000000, 0.000000, 1.000000]
+        -   class: "UIControl"
+            name: "Separators"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+                    frame: 1
+                    spriteModification: ["FLIP_HORIZONTAL"]
+        -   class: "UIStaticText"
+            name: "Points"
+            position: [131.000000, 0.000000]
+            size: [44.000000, 16.000000]
+            classes: "battle-points"
+            text: "1000"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 1.000000
+    -   class: "UIControl"
+        name: "EnemyPoints"
+        position: [176.000000, 0.000000]
+        size: [176.000000, 19.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+        children:
+        -   class: "UIControl"
+            name: "PaleProgressBar"
+            noInput: true
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 2.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar_fill"
+                    frame: 1
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    color: [1.000000, 1.000000, 1.000000, 0.250000]
+        -   class: "UIControl"
+            name: "ProgressBar"
+            size: [172.000000, 19.000000]
+            noInput: true
+            classes: "progress-bar"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 2.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    frame: 1
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    color: [0.000000, 0.000000, 0.000000, 1.000000]
+        -   class: "UIControl"
+            name: "Separators"
+            size: [176.000000, 19.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+                    frame: 1
+        -   class: "UIStaticText"
+            name: "Points"
+            position: [1.000000, 0.500000]
+            size: [44.000000, 16.000000]
+            classes: "battle-points"
+            text: "1000"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 1.000000
+-   class: "UIControl"
+    customClass: "UICaptureState"
+    name: "MinimapCaptureState"
+    size: [20.000000, 20.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    classes: "light-neutral"
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        size: [20.000000, 20.000000]
+        noInput: true
+        classes: "flip-on-owned change-sprite-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapBaseIcon"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "Progress"
+        size: [20.000000, 20.000000]
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapBaseIcon"
+                align: ["RIGHT", "VCENTER"]
+    -   class: "UIStaticText"
+        name: "Letter"
+        visible: true
+        classes: "battle-base-letter-minimap"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "A"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.500000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+-   class: "UIControl"
+    customClass: "UICaptureState"
+    name: "TopHUDCaptureState"
+    size: [36.000000, 36.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    classes: "dark-neutral"
+    components:
+        Anchor:
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "ProgressBackground"
+        size: [36.000000, 36.000000]
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/BaseIcon"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "Progress"
+        size: [36.000000, 36.000000]
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/BaseIcon"
+                frame: 0
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "Decor"
+        size: [36.000000, 36.000000]
+        visible: false
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/BaseIcon"
+                frame: 1
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "AnimatedFlag"
+        size: [36.000000, 36.000000]
+        noInput: true
+        classes: "flip-on-owned"
+        components:
+            SizePolicy: {}
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/top_anim"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIStaticText"
+        name: "Letter"
+        visible: true
+        classes: "battle-base-letter-hud"
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "A"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.500000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+-   class: "UIControl"
+    customClass: "UICaptureState"
+    name: "SceneCaptureState"
+    size: [38.000000, 38.000000]
+    pivot: [0.500000, 1.000000]
+    noInput: true
+    classes: "dark-neutral"
+    children:
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "ProgressBackground"
+        size: [38.000000, 38.000000]
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/BaseIconMap"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        customClass: "UIPieClippableControl"
+        name: "Progress"
+        size: [38.000000, 38.000000]
+        noInput: true
+        classes: "hide-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/BaseIconMap"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "AnimatedFlag"
+        position: [0.000000, 0.000000]
+        size: [38.000000, 38.000000]
+        noInput: true
+        classes: "flip-on-owned"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/map_anim"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIStaticText"
+        name: "Letter"
+        visible: true
+        classes: "battle-base-letter-hud"
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "A"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.500000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+-   class: "UIControl"
+    name: "TopHUDCapturePanel"
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+            verticalValue: 110.000000
+        Anchor:
+            hCenterAnchorEnabled: true

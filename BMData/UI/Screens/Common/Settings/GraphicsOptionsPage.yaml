@@ -1,0 +1,92 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/Settings/Settings.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIScrollView"
+        name: "ScrollView"
+        clip: true
+        noInput: true
+        autoUpdate: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                color: [0.192200, 0.192200, 0.192200, 1.000000]
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 2.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   prototype: "SettingsCommon/Row"
+                name: "Row"
+                components:
+                    Anchor:
+                        leftAnchor: 5.000000
+                        rightAnchor: 5.000000
+                        topAnchorEnabled: true
+                children:
+                -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
+                    name: "Quality"
+                    classes: "background-light"
+                    children:
+                    -   path: "GroupCaption"
+                        text: "#settings:Graphics/Quality/Title"
+                    -   path: "Description"
+                        text: "#settings:Graphics/Quality/Comment"
+                    -   path: "Tabs"
+                        size: [720.000000, 60.000000]
+                    -   class: "UIControl"
+                        name: "EditMark"
+                        size: [10.000000, 10.000000]
+                        pivot: [0.500000, 0.500000]
+                        visible: false
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/SettingsScreen/dot"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "VerticalScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+-   prototype: "Dialogs/ErrorDialogWithoutCaption"
+    name: "PleaseRebootDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        text: "#settings:Graphics/Quality/Reboot/Notification"
+    -   path: "Dialog/Middle/ButtonHolder/OkButton/Caption"
+        text: "#settings:Graphics/Quality/Reboot/Notification/OK"

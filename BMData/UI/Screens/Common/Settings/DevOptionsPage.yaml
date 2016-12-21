@@ -1,0 +1,113 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/Settings/Settings.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1025.000000, 688.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIScrollView"
+        name: "ScrollView"
+        size: [1025.000000, 688.000000]
+        clip: true
+        noInput: true
+        autoUpdate: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                color: [0.192200, 0.192200, 0.192200, 1.000000]
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            size: [1025.000000, 688.000000]
+            components:
+                LinearLayout:
+                    orientation: "Vertical"
+                    spacing: 2.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+            children:
+            -   prototype: "SettingsCommon/Button"
+                name: "GraphicsOptionsButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "GRAPHICS OPTIONS"
+            -   prototype: "SettingsCommon/Button"
+                name: "DevFunctionsButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "DEV FUNCTIONS"
+            -   prototype: "SettingsCommon/Button"
+                name: "DevOptionsButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "DEV OPTIONS"
+            -   prototype: "SettingsCommon/Button"
+                name: "DevConsoleButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "DEV CONSOLE"
+            -   prototype: "SettingsCommon/Button"
+                name: "TutorialStepButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "TUTORIAL STEP"
+            -   prototype: "SettingsCommon/Button"
+                name: "EnqueueInTutorialButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "ENQUEUE IN TUTORIAL"
+            -   prototype: "SettingsCommon/Button"
+                name: "TipsViewButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "TIPS VIEW"
+            -   prototype: "SettingsCommon/Button"
+                name: "CrashAppButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "CRASH APP"
+            -   prototype: "SettingsCommon/Button"
+                name: "ActivateLiveTileButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "ACTIVATE LIVE TILE"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "VerticalScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

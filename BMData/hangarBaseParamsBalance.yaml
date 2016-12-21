@@ -1,0 +1,67 @@
+keyedArchive:
+    averageThicknessWeight:
+        float: 0.6
+    maxHealthWeight:
+        float: 0.4
+    shotAccuracyWeight:
+        float: 0.4
+    piercingPowerWeight:
+        float: 0.6
+    chassisRotationSpeedWeight:
+        float: 0.35
+    enginePowerPerTonWeight:
+        float: 0.5
+    maxSpeedWeight:
+        float: 0.15
+    averageThicknessMin:
+        float: 9.033815 # GB01_Medium_Mark_I
+    averageThicknessMax:
+        float: 232.935898 # ST_I
+    chassisRotationSpeedMin:
+        float: 0.261799 # KV4
+    chassisRotationSpeedMax:
+        float: 0.977384 # T62A
+    enginePowerPerTonMin:
+        float: 3687.346924 # T95
+    enginePowerPerTonMax:
+        float: 28764.177734 # BT-2
+    firePowerMin:
+        float: 370.000000 # GB01_Medium_Mark_I
+    firePowerMax:
+        float: 3209.076172 # GB22_Comet
+    maxHealthMin:
+        float: 140.000000 # MS-1
+    maxHealthMax:
+        float: 2500.000000 # Maus
+    maxSpeedMin:
+        float: 3.611140 # T95
+    maxSpeedMax:
+        float: 20.000160 # T2_lt
+    mobilityMin:
+        float: -1.0 # T95
+    mobilityMax:
+        float: 86.072395 # T2_lt
+    piercingPowerMin:
+        float: 23.000000 # Pz35t
+    piercingPowerMax:
+        float: 303.000000 # Object268
+    protectabilityMin:
+        float: -2.2 # T1_Cunningham
+    protectabilityMax:
+        float: 96.818832 # Maus
+    shotDamageMin:
+        float: 8.000000 # BT-2
+    shotDamageMax:
+        float: 800.000000 # JagdPz_E100
+    shotDispersionAngleMin:
+        float: 0.003000 # E-50
+    shotDispersionAngleMax:
+        float: 0.005900 # Pz35t
+    shotEfficiencyMin:
+        float: -0.9 # Pz35t
+    shotEfficiencyMax:
+        float: 95.862076 # Object268
+    shotsPerMinuteMin:
+        float: 2.859375 # KV-1s
+    shotsPerMinuteMax:
+        float: 127.208481 # Pz38_NA

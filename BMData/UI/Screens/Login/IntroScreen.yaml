@@ -1,0 +1,92 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Common/AOGASControl.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   prototype: "LoginCommon/ScreenBlank"
+    name: "Screen"
+    children:
+    -   path: "Background"
+        components:
+            Focus: {}
+        children:
+        -   class: "UIControl"
+            name: "Logo"
+            size: [380.000000, 290.000000]
+            noInput: true
+            debugDraw: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 65.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/BlitzLogo"
+        -   class: "UIStaticText"
+            name: "TooltipLabel"
+            size: [1024.000000, 30.000000]
+            classes: "text1 text-color-white"
+            text: "#intro:tip"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 250.000000
+        -   class: "UIControl"
+            name: "EntryButtonBg"
+            size: [185.000000, 72.000000]
+            tag: 128
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    topAnchorEnabled: true
+            children:
+            -   prototype: "StyledButton/DefaultStyledButton"
+                name: "EntryButton"
+                size: [182.000000, 70.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "Text"
+                    classes: "header1 text-color-white"
+                    debugDraw: false
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    text: "#intro:button"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 50.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [50.000000, 50.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 8.000000
+                            vCenterAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                            frame: 19
+                            color: [1.000000, 1.000000, 1.000000, 1.000000]
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   prototype: "AOGASControl/AOGASControl"
+            name: "AOGASControl"
+    -   path: "Background/BackButton"
+        visible: false
+        children: []
+    -   path: "Background/RegionSelector"
+        visible: false
+        children: []

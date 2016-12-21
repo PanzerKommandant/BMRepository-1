@@ -1,0 +1,42 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/GuP/card_gufp_pz4"
+        children:
+        -   class: "UIParticles"
+            name: "SmokeTank"
+            position: [67.000000, 93.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_gufp_pz4/smoke_tank.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/GuP/card_gufp_pz4"
+        children:
+        -   class: "UIParticles"
+            name: "Fog"
+            position: [99.000000, 231.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_gufp_pz4/fog.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Sparks"
+            position: [2.000000, 227.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_gufp_pz4/sparks.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [3.000000, 227.000000]
+            size: [20.000000, 20.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_gufp_pz4/sparks_front.sc2"
+            autoStart: true

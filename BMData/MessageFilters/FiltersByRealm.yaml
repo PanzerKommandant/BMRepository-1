@@ -1,0 +1,13 @@
+ru:
+    - "~res:/MessageFilters/RU_messenger_oldictionary.yaml"
+    - "~res:/MessageFilters/EU_messenger_oldictionary.yaml"
+    - "~res:/MessageFilters/US_messenger_oldictionary.yaml"
+eu:
+    - "~res:/MessageFilters/EU_messenger_oldictionary.yaml"
+us:
+    - "~res:/MessageFilters/US_messenger_oldictionary.yaml"
+sg:
+    - "~res:/MessageFilters/SG_ASIA_messenger_oldictionary.yaml"
+    - "~res:/MessageFilters/KR_messenger_oldictionary.yaml"
+kr:
+    - "~res:/MessageFilters/KR_messenger_oldictionary.yaml"

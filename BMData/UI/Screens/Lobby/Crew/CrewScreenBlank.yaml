@@ -1,0 +1,163 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Crew/ScreenBlank.yaml"
+- "~res:/UI/Screens/Lobby/Common/CrewParamsTable.yaml"
+Controls:
+-   prototype: "ScreenBlank/Screen"
+    name: "Screen"
+    children:
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "Title"
+            size: [1024.000000, 54.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/CrewSkills/plashka"
+            children:
+            -   class: "UIControl"
+                name: "WhiteLine"
+                size: [1024.000000, 1.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 1.000000, 1.000000, 0.300000]
+        -   class: "UIControl"
+            name: "LeftPart"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    rightAnchor: 450.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "Title"
+                size: [574.000000, 54.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [92.000000, 54.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/CrewSkills/skillsIcons"
+                -   class: "UIStaticText"
+                    name: "Label"
+                    classes: "header1 text-color-blue"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "Abirvalg"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 92.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "Content"
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 54.000000
+                        bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Splitter"
+            size: [1.000000, 603.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 450.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.300000]
+        -   class: "UIControl"
+            name: "RightPart"
+            size: [450.000000, 603.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "Title"
+                size: [450.000000, 54.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Label"
+                    classes: "header1 text-color-blue"
+                    textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "Abirvalg"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 20.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            align: ["HCENTER", "VCENTER"]
+            -   class: "UIControl"
+                name: "Content"
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 54.000000
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Darkness"
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [0.086300, 0.121600, 0.156900, 0.847100]

@@ -1,0 +1,48 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "TankHistogramBar"
+    size: [30.000000, 0.000000]
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "value"
+        size: [100.000000, 30.000000]
+        classes: "text2-small text-color-white"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -30.000000
+    -   class: "UIControl"
+        name: "bar"
+        size: [12.000000, 1.000000]
+        components:
+            SizePolicy: {}
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 0.400000, 0.000000, 1.000000]
+    -   class: "UIControl"
+        name: "icon"
+        size: [30.000000, 30.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: -30.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconsBattlesStats"
+                frame: 10

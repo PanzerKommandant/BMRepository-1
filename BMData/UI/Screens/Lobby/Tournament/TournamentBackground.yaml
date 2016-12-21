@@ -1,0 +1,157 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledSmallButton.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+StyleSheets:
+-   selector: ".registration-from #Before"
+    properties:
+        visible: true
+-   selector: ".registration-from #Till"
+    properties:
+        visible: false
+-   selector: ".registration-till #Before"
+    properties:
+        visible: false
+-   selector: ".registration-till #Till"
+    properties:
+        visible: true
+-   selector: ".back-image-placeholder"
+    properties:
+        bg-drawType: "DRAW_SCALE_TO_RECT"
+-   selector: ".registration-invisible #Before"
+    properties:
+        visible: false
+-   selector: ".registration-invisible #Till"
+    properties:
+        visible: false
+-   selector: ".back-image-crop"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+Controls:
+-   class: "UIControl"
+    name: "EffectsContainer"
+    size: [1024.000000, 768.000000]
+    clip: true
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/Tournament/tile"
+    children:
+    -   class: "UIParticles"
+        name: "Left5"
+        position: [30.000000, 389.000000]
+        size: [32.000000, 32.000000]
+        noInput: true
+        effectPath: "~res:/3d/FX/UI/Tournaments/glow_left.sc2"
+        autoStart: true
+    -   class: "UIParticles"
+        name: "Right5"
+        position: [909.000000, 31.000000]
+        size: [32.000000, 32.000000]
+        clip: false
+        noInput: true
+        effectPath: "~res:/3d/FX/UI/Tournaments/glow_right.sc2"
+        autoStart: true
+    -   class: "UIControl"
+        name: "LeftTopCorner"
+        size: [270.000000, 384.000000]
+        clip: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Tournament/redback"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_DISABLED"
+                align: ["LEFT", "TOP"]
+        children:
+        -   class: "UIParticles"
+            name: "Left1"
+            position: [-84.000000, 384.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_left1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Left2"
+            position: [-31.000000, 368.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_left2.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Left3"
+            position: [-26.000000, 384.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_left3.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Left4"
+            position: [-47.000000, 234.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_left4.sc2"
+            autoStart: true
+    -   class: "UIControl"
+        name: "RightBottomCorner"
+        size: [270.000000, 384.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Tournament/blueback"
+                align: ["RIGHT", "BOTTOM"]
+        children:
+        -   class: "UIParticles"
+            name: "Right1"
+            position: [127.000000, 382.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_right1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Right2"
+            position: [135.000000, 382.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_right2.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Right3"
+            position: [199.000000, 382.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_right3.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Right4"
+            position: [119.000000, 398.000000]
+            size: [32.000000, 32.000000]
+            clip: false
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Tournaments/sparks_right4.sc2"
+            autoStart: true

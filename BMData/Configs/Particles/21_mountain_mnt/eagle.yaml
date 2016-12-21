@@ -1,0 +1,47 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 0.000000
+    emissionVector: [-1.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "eagle"
+    radius: 20.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.003800, 0.556200, 0.743100, 0.559500, 1.000000, 0.000000]
+    angle: 90.000000
+    blending: 1
+    colorOverLife: [203.000000, 182.000000, 133.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 10000.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 40.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "eagle"
+    number: 1.000000
+    particleOrientation: 8
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 1.000000]
+    sprite: "../../../Gfx/Particles/21_mountain_mnt/eagle"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 2.000000
+    velocityVariation: 1.000000

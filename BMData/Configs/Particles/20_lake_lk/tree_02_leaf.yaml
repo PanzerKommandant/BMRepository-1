@@ -1,0 +1,55 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 90.000000
+    emissionVector: [0.000000, 0.000000, -1.000000]
+    emissionVectorInverted: true
+    name: "leaf"
+    shortEffect: false
+    size: [0.000000, 0.200000, 2.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.793500, 1.000000, 0.990000, 0.000000]
+    angle: 1.000000
+    angleVariation: 360.000000
+    blending: 1
+    colorOverLife: [116.000000, 134.000000, 56.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.050000
+    force0: [0.000000, 0.000000, -3.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 3.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 5.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "leaf"
+    number: 800.000000
+    particleOrientation: 1
+    pivotPoint: [20.000000, 20.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.100000, 0.100000]
+    sizeVariation: [0.050000, 0.050000]
+    spin: 100.000000
+    spinOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    spinVariation: 100.000000
+    sprite: "../../../Gfx/Particles/alpha/leaf_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 10.000000
+    velocityOverLife: [0.000000, 1.000000, 0.030000, 0.100000]
+    velocityVariation: 10.000000

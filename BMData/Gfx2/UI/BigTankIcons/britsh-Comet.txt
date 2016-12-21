@@ -1,0 +1,5 @@
+1
+britsh-Comet0.tex
+320 200
+1
+0 0 315 200 2 0 0 frame0

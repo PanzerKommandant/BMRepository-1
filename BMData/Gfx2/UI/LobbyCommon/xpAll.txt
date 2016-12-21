@@ -1,0 +1,7 @@
+2
+texture0.tex
+texture1.tex
+110 52
+2
+1942 76 102 44 4 4 0 frame0
+1357 149 42 44 14 2 1 frame1

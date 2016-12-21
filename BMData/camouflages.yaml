@@ -1,0 +1,2300 @@
+ancient_castle:
+    alpha: 0.630694
+    override:
+        uk:
+            alpha: 0.7
+    scale: [0.461426, 0.461426]
+    texture: "uk/uk_d_01"
+beast_plains:
+    alpha: 0.599985
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                M6:
+                    scale: [0.617285, 0.634593]
+                M8A1:
+                    scale: [0.721154, 0.657692]
+                Pershing:
+                    scale: [0.663935, 0.634593]
+                Ram-II:
+                    scale: [0.652532, 0.634593]
+                Sherman_Jumbo:
+                    scale: [0.657692, 0.634593]
+                T110:
+                    scale: [0.605521, 0.634367]
+                T110E3:
+                    scale: [0.675, 0.582692]
+                T110E4:
+                    scale: [0.594231, 0.634593]
+                T14:
+                    scale: [0.674977, 0.599977]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    alpha: 0.592067
+                    scale: [1.0, 0.5]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T95:
+                    scale: [0.628846, 0.640385]
+    scale: [0.651901, 0.634593]
+    texture: "usa/usa_s_02"
+believe_in_yourself:
+    alpha: 0.666
+    override:
+        germany:
+            override:
+                B-1bis_captured:
+                    scale: [0.58, 0.58]
+                DW_II:
+                    scale: [0.53, 0.53]
+                DickerMax:
+                    scale: [0.58, 0.58]
+                E-100:
+                    scale: [0.4, 0.4]
+                E-25:
+                    scale: [0.6, 0.3]
+                E-50:
+                    alpha: 0.58
+                    scale: [0.395, 0.395]
+                E-75:
+                    scale: [0.41, 0.41]
+                E50_Ausf_M:
+                    alpha: 0.72
+                    scale: [0.33, 0.33]
+                Ferdinand:
+                    scale: [0.39, 0.39]
+                G20_Marder_II:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                H39_captured:
+                    alpha: 0.63
+                    scale: [0.86, 0.43]
+                Hetzer:
+                    alpha: 0.6
+                    scale: [0.52, 0.52]
+                Indien_Panzer:
+                    scale: [0.46, 0.46]
+                JagdPanther:
+                    alpha: 0.65
+                    scale: [0.47, 0.47]
+                JagdPantherII:
+                    alpha: 0.619231
+                    scale: [0.45, 0.45]
+                JagdPzIV:
+                    alpha: 0.6
+                    scale: [0.52, 0.52]
+                JagdPz_E100:
+                    alpha: 0.623077
+                    scale: [0.35, 0.35]
+                JagdTiger:
+                    alpha: 0.607692
+                    scale: [0.32, 0.32]
+                JagdTiger_SdKfz_185:
+                    alpha: 0.634615
+                    scale: [0.36, 0.36]
+                Leopard1:
+                    scale: [0.45, 0.45]
+                Lowe:
+                    alpha: 0.62
+                    scale: [0.41, 0.41]
+                Ltraktor:
+                    alpha: 0.603846
+                    scale: [0.53, 0.53]
+                Maus:
+                    alpha: 0.6
+                    scale: [0.37, 0.37]
+                Panther_II:
+                    alpha: 0.55
+                    scale: [0.41, 0.409615]
+                Panther_M10:
+                    alpha: 0.6
+                    scale: [0.48, 0.48]
+                PanzerJager_I:
+                    alpha: 0.61
+                    scale: [0.51, 0.51]
+                Pro_Ag_A:
+                    scale: [0.45, 0.45]
+                Pz35t:
+                    alpha: 0.55
+                    scale: [0.9, 0.45]
+                Pz38_NA:
+                    alpha: 0.55
+                    scale: [0.58, 0.58]
+                Pz38t:
+                    alpha: 0.61
+                    scale: [0.76, 0.38]
+                PzII:
+                    alpha: 0.6
+                    scale: [0.44, 0.44]
+                PzIII:
+                    alpha: 0.59
+                    scale: [0.45, 0.45]
+                PzIII_A:
+                    alpha: 0.59
+                    scale: [0.49, 0.49]
+                PzIII_IV:
+                    alpha: 0.59
+                    scale: [0.43, 0.43]
+                PzII_J:
+                    alpha: 0.59
+                    scale: [0.47, 0.47]
+                PzIV:
+                    alpha: 0.62
+                    scale: [0.48, 0.48]
+                PzIV_Hydro:
+                    alpha: 0.58
+                    scale: [0.42, 0.42]
+                PzV:
+                    alpha: 0.61
+                    scale: [0.42, 0.42]
+                PzVI:
+                    alpha: 0.65
+                    scale: [0.415, 0.415]
+                PzVIB_Tiger_II:
+                    alpha: 0.6
+                    scale: [0.42, 0.42]
+                PzVI_Tiger_P:
+                    alpha: 0.603846
+                    scale: [0.43, 0.43]
+                PzV_PzIV:
+                    alpha: 0.58
+                    scale: [0.41, 0.41]
+                Pz_II_AusfG:
+                    alpha: 0.6
+                    scale: [0.44, 0.44]
+                Pz_IV_AusfA:
+                    alpha: 0.58
+                    scale: [0.45, 0.45]
+                Pz_IV_AusfD:
+                    alpha: 0.6
+                    scale: [0.48, 0.48]
+                S35_captured:
+                    alpha: 0.603846
+                    scale: [0.48, 0.48]
+                StuGIII:
+                    scale: [0.8, 0.4]
+                T-15:
+                    alpha: 0.58
+                    scale: [0.43, 0.215]
+                T-25:
+                    scale: [0.6, 0.3]
+                VK1602:
+                    alpha: 0.59
+                    scale: [0.52, 0.52]
+                VK2801:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                VK3001H:
+                    alpha: 0.6
+                    scale: [0.45, 0.45]
+                VK3001P:
+                    alpha: 0.58
+                    scale: [0.49, 0.49]
+                VK3002DB:
+                    alpha: 0.59
+                    scale: [0.44, 0.44]
+                VK3002DB_V1:
+                    alpha: 0.59
+                    scale: [0.51, 0.51]
+                VK3002M:
+                    alpha: 0.59
+                    scale: [0.46, 0.46]
+                VK3601H:
+                    alpha: 0.59
+                    scale: [0.47, 0.47]
+                VK4502A:
+                    alpha: 0.585
+                    scale: [0.365, 0.365]
+                VK4502P:
+                    alpha: 0.6
+                    scale: [0.4, 0.4]
+    scale: [0.6, 0.6]
+    texture: "germany/ger_w_01"
+cedar_undergrowth:
+    alpha: 0.672746
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.8, 0.4]
+                H39_captured:
+                    scale: [0.9, 0.45]
+                Pz35t:
+                    scale: [0.9, 0.45]
+                Pz38t:
+                    scale: [0.9, 0.45]
+                StuGIII:
+                    scale: [0.8, 0.4]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    scale: [0.9, 0.45]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    scale: [0.9, 0.45]
+        uk:
+            alpha: 0.8
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.8, 0.4]
+                M6:
+                    scale: [0.421154, 0.438439]
+                M8A1:
+                    scale: [0.45, 0.438439]
+                Pershing:
+                    scale: [0.438935, 0.467781]
+                Sherman_Jumbo:
+                    scale: [0.467308, 0.449752]
+                T110:
+                    scale: [0.449752, 0.420906]
+                T110E3:
+                    alpha: 0.7
+                    scale: [0.496154, 0.496154]
+                T110E4:
+                    scale: [0.45, 0.525]
+                T14:
+                    scale: [0.617285, 0.438439]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.9, 0.45]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T1_hvy:
+                    scale: [0.501923, 0.473077]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T95:
+                    alpha: 0.661538
+                    scale: [0.513462, 0.421154]
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [0.9, 0.45]
+                MS-1:
+                    scale: [0.7, 0.35]
+                T-127:
+                    scale: [0.7, 0.35]
+                T-26:
+                    scale: [0.9, 0.45]
+                Tetrarch_LL:
+                    scale: [0.6, 0.3]
+            specularity: 0.5
+    scale: [0.438439, 0.438439]
+    texture: "common/summer/c_s_01"
+centennial_oak:
+    alpha: 0.699925
+    override:
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [0.9, 0.45]
+                MS-1:
+                    scale: [0.8, 0.4]
+                T-127:
+                    scale: [0.8, 0.4]
+                T-26:
+                    scale: [0.9, 0.45]
+                Tetrarch_LL:
+                    scale: [0.7, 0.35]
+            specularity: 0.5
+    scale: [0.455657, 0.455657]
+    texture: "ussr/ussr_s_02"
+china_ancient_bamboo:
+    alpha: 0.922455
+    scale: [0.50829, 0.513627]
+    texture: "china/china_s_03"
+china_golden_phoenix:
+    alpha: 0.918896
+    scale: [0.492277, 0.50829]
+    texture: "china/china_d_03"
+china_ice_kirin:
+    alpha: 0.947365
+    override:
+        china:
+            override:
+                Ch01_Type59:
+                    alpha: 0.926014
+                    scale: [0.486939, 0.486939]
+    scale: [0.497614, 0.502952]
+    texture: "china/china_w_01"
+china_snow_pands:
+    alpha: 0.901104
+    override:
+        china:
+            override:
+                Ch01_Type59:
+                    alpha: 0.933131
+    scale: [0.492277, 0.497614]
+    texture: "china/china_w_03"
+china_water_dragon:
+    alpha: 0.926014
+    scale: [0.513627, 0.513627]
+    texture: "china/china_s_14"
+china_wise_turtle:
+    alpha: 0.918896
+    scale: [0.518965, 0.529641]
+    texture: "china/china_d_02"
+christmas2017:
+    scale: [0.518222, 0.513637]
+    texture: "common/christmas2017"
+clan_9:
+    scale: [0.467285, 0.484593]
+    texture: "common/clan_9"
+desert_fox:
+    alpha: 0.719156
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.888, 0.382]
+                T18:
+                    scale: [0.87, 0.456]
+                T1_Cunningham:
+                    scale: [0.998077, 0.501923]
+                T1_E6:
+                    scale: [1.003846, 0.455769]
+                T2_lt:
+                    scale: [0.894231, 0.455769]
+    scale: [0.455769, 0.455769]
+    texture: "usa/usa_d_01Ivozima"
+desert_oasis:
+    alpha: 0.649925
+    override:
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [0.888, 0.444]
+                MS-1:
+                    scale: [0.888462, 0.444]
+                T-127:
+                    scale: [0.888, 0.444]
+                T-26:
+                    scale: [0.865385, 0.444118]
+                Tetrarch_LL:
+                    scale: [0.888, 0.444]
+            specularity: 0.5
+    scale: [0.444118, 0.444118]
+    texture: "ussr/ussr_d_01"
+desert_tan:
+    alpha: 0.66
+    override:
+        germany:
+            override:
+                DW_II:
+                    scale: [0.535, 0.535]
+                DickerMax:
+                    scale: [0.575, 0.575]
+                E-25:
+                    scale: [1.17, 0.585]
+                G113_SP_I_C:
+                    alpha: 0.59
+                    scale: [0.64, 0.709615]
+                H39_captured:
+                    scale: [1.085, 0.585]
+                Leopard1:
+                    scale: [0.525, 0.565]
+                Pz35t:
+                    scale: [1.17, 0.585]
+                Pz38t:
+                    scale: [1.17, 0.585]
+                StuGIII:
+                    alpha: 0.615
+                    scale: [1.17, 0.585]
+                T-15:
+                    scale: [1.1, 0.58]
+                T-25:
+                    scale: [1.16, 0.585]
+                VK4502A:
+                    scale: [0.61, 0.588]
+                VK4502P:
+                    scale: [0.595, 0.585]
+        japan:
+            override:
+                Ke_Ho:
+                    alpha: 0.761538
+                    scale: [1.125, 0.57]
+                NC27:
+                    scale: [1.145, 0.585]
+        uk:
+            alpha: 0.7
+        usa:
+            override:
+                M2_lt:
+                    scale: [1.05, 0.585]
+                T18:
+                    scale: [1.142308, 0.585]
+                T1_Cunningham:
+                    scale: [1.159615, 0.585]
+                T1_E6:
+                    scale: [1.113461, 0.585]
+                T2_lt:
+                    scale: [1.148077, 0.585]
+        ussr:
+            alpha: 0.8
+            override:
+                BT-2:
+                    scale: [1.125, 0.594231]
+                MS-1:
+                    scale: [1.107692, 0.585]
+                T-127:
+                    scale: [1.17, 0.585]
+                T-26:
+                    scale: [1.084615, 0.623077]
+                Tetrarch_LL:
+                    alpha: 0.62
+                    scale: [1.13, 0.585]
+            specularity: 0.5
+    scale: [0.585, 0.585]
+    texture: "common/desert/c_d_02"
+dirty_weather:
+    alpha: 0.623002
+    override:
+        uk:
+            alpha: 0.7
+    scale: [0.415272, 0.415272]
+    texture: "uk/uk_w_01"
+dry_fallen_trees:
+    alpha: 0.6
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [1.0, 0.5]
+                H39_captured:
+                    scale: [0.9, 0.45]
+                Pz35t:
+                    scale: [0.9, 0.45]
+                Pz38t:
+                    scale: [0.9, 0.45]
+                StuGIII:
+                    scale: [0.9, 0.45]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    scale: [0.9, 0.45]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    scale: [0.9, 0.45]
+        uk:
+            alpha: 0.7
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                M6:
+                    scale: [0.576923, 0.6]
+                M60:
+                    alpha: 0.603846
+                M8A1:
+                    scale: [0.651923, 0.628846]
+                Pershing:
+                    scale: [0.594231, 0.6]
+                Ram-II:
+                    scale: [0.588462, 0.605769]
+                Sherman_Jumbo:
+                    scale: [0.61706, 0.576675]
+                T110:
+                    scale: [0.645906, 0.6]
+                T110E3:
+                    scale: [0.623077, 0.640385]
+                T110E4:
+                    scale: [0.617308, 0.617308]
+                T14:
+                    alpha: 0.588462
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.9, 0.45]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T95:
+                    alpha: 0.584615
+        ussr:
+            alpha: 0.8
+            override:
+                BT-2:
+                    scale: [1.0, 0.5]
+                MS-1:
+                    scale: [0.8, 0.4]
+                T-127:
+                    scale: [0.7, 0.35]
+                T-26:
+                    scale: [1.0, 0.5]
+                Tetrarch_LL:
+                    scale: [0.72, 0.36]
+            specularity: 0.5
+    scale: [0.6, 0.6]
+    texture: "common/summer/c_s_03"
+esport_asia:
+    scale: [0.421131, 0.398054]
+    texture: "common/esport_jap"
+esport_eu:
+    scale: [0.461516, 0.473054]
+    texture: "common/esport_eu"
+esport_event:
+    override:
+        germany:
+            override:
+                E50_Ausf_M:
+                    alpha: 0.85
+                    scale: [0.398077, 0.403846]
+    scale: [0.444, 0.444]
+    specularity: 0.312
+    texture: "common/esport"
+esport_ru:
+    scale: [0.501901, 0.484593]
+    texture: "common/esport_ru"
+esport_usa:
+    scale: [0.363439, 0.374977]
+    texture: "common/esport_usa"
+euro_ole_ole:
+    alpha: 0.85
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.8, 0.4]
+                H39_captured:
+                    scale: [0.8, 0.4]
+                Pz35t:
+                    scale: [0.8, 0.4]
+                StuGIII:
+                    scale: [0.8, 0.4]
+                T-15:
+                    scale: [0.8, 0.4]
+                T-25:
+                    scale: [0.8, 0.4]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.8, 0.4]
+                NC27:
+                    scale: [0.8, 0.4]
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.8, 0.4]
+                T18:
+                    scale: [0.8, 0.4]
+                T1_E6:
+                    scale: [0.8, 0.4]
+                T2_lt:
+                    scale: [0.8, 0.4]
+        ussr:
+            override:
+                BT-2:
+                    scale: [0.7, 0.4]
+                MS-1:
+                    scale: [0.8, 0.4]
+                T-127:
+                    scale: [0.8, 0.4]
+                T-26:
+                    scale: [0.8, 0.4]
+                T-34:
+                    scale: [0.5, 0.5]
+                Tetrarch_LL:
+                    scale: [0.8, 0.4]
+    scale: [0.4, 0.4]
+    specularity: 0.4
+    texture: "common/ole-ole"
+flight_of_the_butterfly:
+    alpha: 0.59976
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.806, 0.403]
+                NC27:
+                    scale: [0.806, 0.403]
+    scale: [0.403486, 0.403486]
+    texture: "japan/jp_d_02"
+foggy_albion:
+    alpha: 0.799925
+    override:
+        uk:
+            alpha: 0.8
+    scale: [0.449887, 0.461426]
+    texture: "uk/uk_w_02"
+forest_of_thousand_souls:
+    alpha: 0.653681
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    scale: [0.9, 0.45]
+    scale: [0.495906, 0.495906]
+    texture: "japan/jp_s_01"
+gold_cheap:
+    alpha: 0.9
+    scale: [0.28, 0.28]
+    texture: "common/gold_cheap"
+gold_lighting:
+    scale: [0.3, 0.3]
+    texture: "common/lighting"
+green_clover:
+    alpha: 0.684285
+    override:
+        uk:
+            alpha: 0.7
+    scale: [0.507196, 0.507196]
+    texture: "uk/uk_s_01"
+green_tundra:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.940385, 0.462]
+                H39_captured:
+                    scale: [0.946, 0.461538]
+                Pz35t:
+                    scale: [0.859615, 0.409615]
+                Pz38t:
+                    scale: [0.94, 0.462]
+                StuGIII:
+                    scale: [0.853846, 0.461538]
+                T-15:
+                    scale: [0.95, 0.462]
+                T-25:
+                    scale: [0.94, 0.462]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.94, 0.462]
+                NC27:
+                    alpha: 0.684615
+                    scale: [1.015385, 0.496154]
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.888462, 0.444231]
+                T18:
+                    scale: [0.923077, 0.461538]
+                T1_Cunningham:
+                    scale: [1.003846, 0.461538]
+                T1_E6:
+                    scale: [0.951923, 0.461538]
+                T2_lt:
+                    scale: [0.911538, 0.456]
+        ussr:
+            alpha: 0.85
+            override:
+                BT-2:
+                    scale: [0.934615, 0.461538]
+                MS-1:
+                    scale: [0.92, 0.462]
+                T-127:
+                    scale: [0.94, 0.462]
+                T-26:
+                    scale: [0.911538, 0.462]
+                Tetrarch_LL:
+                    scale: [0.940385, 0.444231]
+            specularity: 0.5
+    scale: [0.461538, 0.461538]
+    texture: "common/common_02"
+hidden_tiger:
+    alpha: 0.699835
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    alpha: 0.711538
+                    scale: [0.9, 0.45]
+    scale: [0.449752, 0.449752]
+    texture: "japan/jp_d_01"
+ice_cougar:
+    alpha: 0.8
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.8, 0.4]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.8, 0.4]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T7_Combat_Car:
+                    scale: [0.5, 0.5]
+    scale: [0.496154, 0.496154]
+    texture: "usa/usa_w_01"
+ice_shatters:
+    scale: [0.4, 0.4]
+    texture: "common/iceShatters"
+ice_storm:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                B-1bis_captured:
+                    scale: [0.65, 0.65]
+                DW_II:
+                    scale: [0.5, 0.5]
+                DickerMax:
+                    scale: [0.65, 0.65]
+                E-100:
+                    scale: [0.5, 0.5]
+                E-25:
+                    alpha: 0.8
+                    scale: [0.8, 0.4]
+                E-50:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                E50_Ausf_M:
+                    alpha: 0.85
+                Ferdinand:
+                    scale: [0.55, 0.55]
+                G20_Marder_II:
+                    alpha: 0.6
+                H39_captured:
+                    alpha: 0.65
+                    scale: [1.1, 0.55]
+                Hetzer:
+                    alpha: 0.65
+                    scale: [0.65, 0.65]
+                JagdPanther:
+                    scale: [0.58, 0.58]
+                JagdPantherII:
+                    scale: [0.55, 0.55]
+                JagdPzIV:
+                    alpha: 0.65
+                    scale: [0.58, 0.58]
+                JagdPz_E100:
+                    scale: [0.45, 0.45]
+                JagdTiger:
+                    scale: [0.5, 0.5]
+                JagdTiger_SdKfz_185:
+                    scale: [0.5, 0.5]
+                Leopard1:
+                    scale: [0.7, 0.7]
+                Lowe:
+                    scale: [0.61, 0.61]
+                Ltraktor:
+                    alpha: 0.55
+                Maus:
+                    scale: [0.45, 0.45]
+                Panther_II:
+                    scale: [0.62, 0.62]
+                Panther_M10:
+                    scale: [0.65, 0.65]
+                PanzerJager_I:
+                    alpha: 0.65
+                Pro_Ag_A:
+                    scale: [0.62, 0.62]
+                Pz35t:
+                    scale: [1.0, 0.5]
+                Pz38_NA:
+                    scale: [0.7, 0.7]
+                Pz38t:
+                    scale: [1.2, 0.6]
+                PzII:
+                    scale: [0.75, 0.75]
+                PzIII_A:
+                    scale: [0.65, 0.65]
+                PzIII_IV:
+                    alpha: 0.6
+                    scale: [0.65, 0.65]
+                PzII_J:
+                    scale: [0.7, 0.7]
+                PzIV:
+                    scale: [0.62, 0.62]
+                PzIV_Hydro:
+                    scale: [0.7, 0.7]
+                PzV:
+                    alpha: 0.45
+                    scale: [0.5, 0.5]
+                PzVI:
+                    alpha: 0.5
+                    scale: [0.65, 0.65]
+                PzVIB_Tiger_II:
+                    alpha: 0.65
+                    scale: [0.5, 0.5]
+                PzVI_Tiger_P:
+                    scale: [0.65, 0.65]
+                PzV_PzIV:
+                    scale: [0.5, 0.5]
+                Pz_II_AusfG:
+                    scale: [0.75, 0.75]
+                Pz_IV_AusfA:
+                    scale: [0.7, 0.7]
+                Pz_IV_AusfD:
+                    scale: [0.65, 0.65]
+                S35_captured:
+                    alpha: 0.6
+                    scale: [0.65, 0.65]
+                StuGIII:
+                    alpha: 0.6
+                    scale: [0.9, 0.45]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    alpha: 0.6
+                    scale: [0.8, 0.4]
+                VK1602:
+                    scale: [0.65, 0.65]
+                VK2801:
+                    alpha: 0.6
+                VK3001H:
+                    alpha: 0.65
+                    scale: [0.65, 0.65]
+                VK3001P:
+                    alpha: 0.65
+                    scale: [0.55, 0.55]
+                VK3002DB:
+                    alpha: 0.65
+                    scale: [0.65, 0.65]
+                VK3002DB_V1:
+                    alpha: 0.6
+                    scale: [0.7, 0.7]
+                VK3002M:
+                    alpha: 0.6
+                    scale: [0.65, 0.65]
+                VK3601H:
+                    alpha: 0.65
+                    scale: [0.65, 0.65]
+                VK4502A:
+                    alpha: 0.6
+                    scale: [0.7, 0.7]
+                VK4502P:
+                    alpha: 0.65
+                    scale: [0.65, 0.65]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [1.0, 0.5]
+                NC27:
+                    scale: [1.0, 0.5]
+        uk:
+            alpha: 0.75
+        usa:
+            override:
+                M2_lt:
+                    scale: [1.0, 0.5]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [1.0, 0.5]
+                T1_E6:
+                    scale: [1.0, 0.5]
+                T2_lt:
+                    scale: [0.9, 0.45]
+        ussr:
+            alpha: 0.85
+            override:
+                A-20:
+                    scale: [0.55, 0.55]
+                A-32:
+                    scale: [0.65, 0.65]
+                AT-1:
+                    scale: [0.75, 0.75]
+                BT-2:
+                    scale: [0.7, 0.35]
+                BT-7:
+                    alpha: 0.75
+                    scale: [0.75, 0.75]
+                BT-SV:
+                    alpha: 0.7
+                    scale: [0.62, 0.62]
+                Churchill_LL:
+                    scale: [0.55, 0.55]
+                IS:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                IS-3:
+                    alpha: 0.7
+                IS-4:
+                    alpha: 0.7
+                    scale: [0.55, 0.55]
+                IS-7:
+                    scale: [0.65, 0.65]
+                IS8:
+                    scale: [0.57, 0.57]
+                ISU-152:
+                    scale: [0.7, 0.7]
+                KV-13:
+                    scale: [0.7, 0.7]
+                KV-1s:
+                    scale: [0.65, 0.65]
+                KV-220:
+                    scale: [0.55, 0.55]
+                KV-3:
+                    scale: [0.5, 0.5]
+                KV-5:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                KV1:
+                    scale: [0.55, 0.55]
+                KV2:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                KV4:
+                    alpha: 0.7
+                    scale: [0.55, 0.55]
+                LTP:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                M3_Stuart_LL:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                MS-1:
+                    scale: [1.4, 0.7]
+                Matilda_II_LL:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                Object263:
+                    scale: [0.65, 0.65]
+                Object268:
+                    alpha: 0.75
+                    scale: [0.7, 0.7]
+                Object_140:
+                    scale: [0.75, 0.75]
+                Object_704:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                ST_I:
+                    alpha: 0.7
+                    scale: [0.65, 0.65]
+                SU-101:
+                    scale: [0.7, 0.7]
+                SU-152:
+                    scale: [0.7, 0.7]
+                T-127:
+                    scale: [1.2, 0.6]
+                T-26:
+                    scale: [1.0, 0.5]
+                Tetrarch_LL:
+                    scale: [1.0, 0.5]
+            specularity: 0.5
+    scale: [0.6, 0.6]
+    texture: "common/winter/c_w_05"
+icy_calm:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                B-1bis_captured:
+                    scale: [0.69, 0.69]
+                DW_II:
+                    scale: [0.53, 0.53]
+                DickerMax:
+                    scale: [0.6, 0.6]
+                E-100:
+                    scale: [0.4, 0.4]
+                E-25:
+                    scale: [0.7, 0.35]
+                E-50:
+                    alpha: 0.69
+                    scale: [0.41, 0.41]
+                E-75:
+                    alpha: 0.72
+                    scale: [0.41, 0.41]
+                E50_Ausf_M:
+                    alpha: 0.82
+                    scale: [0.35, 0.35]
+                Ferdinand:
+                    scale: [0.36, 0.36]
+                G20_Marder_II:
+                    alpha: 0.69
+                    scale: [0.55, 0.55]
+                H39_captured:
+                    scale: [0.82, 0.41]
+                Hetzer:
+                    scale: [0.5, 0.5]
+                Indien_Panzer:
+                    scale: [0.49, 0.49]
+                JagdPanther:
+                    scale: [0.47, 0.47]
+                JagdPzIV:
+                    alpha: 0.69
+                    scale: [0.52, 0.52]
+                JagdPz_E100:
+                    scale: [0.38, 0.38]
+                JagdTiger:
+                    alpha: 0.69
+                    scale: [0.44, 0.44]
+                JagdTiger_SdKfz_185:
+                    scale: [0.41, 0.41]
+                Leopard1:
+                    alpha: 0.69
+                    scale: [0.48, 0.48]
+                Lowe:
+                    scale: [0.42, 0.42]
+                Ltraktor:
+                    alpha: 0.69
+                    scale: [0.46, 0.46]
+                Maus:
+                    scale: [0.36, 0.36]
+                Panther_II:
+                    scale: [0.47, 0.47]
+                Panther_M10:
+                    alpha: 0.8
+                    scale: [0.48, 0.48]
+                PanzerJager_I:
+                    alpha: 0.74
+                    scale: [0.44, 0.44]
+                Pro_Ag_A:
+                    alpha: 0.68
+                    scale: [0.46, 0.46]
+                Pz35t:
+                    alpha: 0.72
+                    scale: [0.9, 0.45]
+                Pz38_NA:
+                    alpha: 0.71
+                    scale: [0.52, 0.52]
+                Pz38t:
+                    scale: [1.0, 0.5]
+                PzII:
+                    alpha: 0.72
+                    scale: [0.55, 0.55]
+                PzIII_IV:
+                    alpha: 0.69
+                    scale: [0.43, 0.43]
+                PzII_J:
+                    alpha: 0.68
+                    scale: [0.46, 0.46]
+                PzIV:
+                    scale: [0.44, 0.44]
+                PzIV_Hydro:
+                    alpha: 0.69
+                    scale: [0.42, 0.42]
+                PzV:
+                    alpha: 0.67
+                    scale: [0.42, 0.42]
+                PzVI:
+                    scale: [0.44, 0.44]
+                PzVIB_Tiger_II:
+                    alpha: 0.68
+                    scale: [0.31, 0.31]
+                PzVI_Tiger_P:
+                    scale: [0.415, 0.415]
+                PzV_PzIV:
+                    scale: [0.4, 0.4]
+                Pz_II_AusfG:
+                    scale: [0.58, 0.58]
+                Pz_IV_AusfD:
+                    alpha: 0.73
+                    scale: [0.49, 0.49]
+                S35_captured:
+                    scale: [0.43, 0.43]
+                StuGIII:
+                    alpha: 0.69
+                    scale: [0.7, 0.35]
+                T-15:
+                    scale: [0.82, 0.41]
+                T-25:
+                    scale: [0.72, 0.36]
+                VK1602:
+                    scale: [0.43, 0.43]
+                VK2801:
+                    alpha: 0.68
+                    scale: [0.37, 0.37]
+                VK3001H:
+                    scale: [0.54, 0.54]
+                VK3001P:
+                    alpha: 0.68
+                    scale: [0.46, 0.46]
+                VK3002DB:
+                    scale: [0.36, 0.36]
+                VK3002DB_V1:
+                    alpha: 0.69
+                VK3002M:
+                    scale: [0.41, 0.41]
+                VK3601H:
+                    alpha: 0.69
+                    scale: [0.56, 0.56]
+                VK4502A:
+                    alpha: 0.68
+                    scale: [0.46, 0.46]
+                VK4502P:
+                    alpha: 0.68
+                    scale: [0.4, 0.4]
+    scale: [0.45, 0.45]
+    texture: "germany/ger_w_02"
+inferno:
+    override:
+        germany:
+            override:
+                PzIII:
+                    scale: [0.288439, 0.063439]
+    scale: [0.38, 0.37]
+    texture: "common/inferno"
+loyalty:
+    alpha: 0.799985
+    override:
+        ussr:
+            override:
+                IS-3:
+                    scale: [0.519231, 0.513462]
+    scale: [0.513439, 0.392285]
+    specularity: 0.40097
+    texture: "common/loyalty"
+olympic:
+    scale: [0.4, 0.4]
+    texture: "common/olympic"
+power_of_will:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.8, 0.4]
+                H39_captured:
+                    scale: [0.9, 0.45]
+                Pz35t:
+                    scale: [0.9, 0.45]
+                Pz38t:
+                    scale: [0.8, 0.4]
+                StuGIII:
+                    scale: [0.8, 0.4]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    scale: [0.8, 0.4]
+    scale: [0.5, 0.5]
+    texture: "germany/ger_s_01"
+premium_acc:
+    scale: [0.5, 0.5]
+    texture: "common/premium_acc"
+pride_of_the_nation:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.8, 0.4]
+                H39_captured:
+                    scale: [0.9, 0.45]
+                Pz35t:
+                    scale: [0.9, 0.45]
+                Pz38t:
+                    scale: [0.9, 0.45]
+                StuGIII:
+                    scale: [0.8, 0.4]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    scale: [0.9, 0.45]
+    scale: [0.438462, 0.438462]
+    texture: "germany/ger_s_02"
+royal_ribbon:
+    alpha: 0.661463
+    override:
+        uk:
+            alpha: 0.7
+    scale: [0.403733, 0.403733]
+    texture: "uk/uk_d_02"
+sandy_snake:
+    alpha: 0.699925
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.98, 0.462]
+                T18:
+                    scale: [0.842308, 0.484503]
+                T1_Cunningham:
+                    scale: [1.003846, 0.484503]
+                T1_E6:
+                    alpha: 0.723077
+                    scale: [1.044231, 0.530769]
+                T2_lt:
+                    scale: [0.951923, 0.484503]
+    scale: [0.484503, 0.484503]
+    texture: "usa/usa_d_02"
+scottish_mountain:
+    alpha: 0.70006
+    override:
+        uk:
+            alpha: 0.7
+    scale: [0.403936, 0.403936]
+    texture: "uk/uk_s_02"
+skin_IS-7_legendary:
+    override:
+        ussr:
+            override:
+                IS-7:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/ussr-IS-7_skin.tex"
+                    preset: "legendary"
+    type: 1
+skin_armored_persona:
+    override:
+        japan:
+            override:
+                STA_1:
+                    preset: "Armored_persona"
+                    shortUserString: "#japan_vehicles:STA_1_Rin"
+                    userString: "#japan_vehicles:STA_1_Rin"
+    type: 1
+skin_cromwell_berlin:
+    override:
+        uk:
+            override:
+                GB85_Cromwell_Berlin:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/britsh-Cromwell_BerlinSigns.tex"
+                    preset: "Berlin"
+    type: 1
+skin_dragon:
+    iconBig: "~res:/Gfx/UI/BigTankIcons/china-Type62_dragon.tex"
+    preset: "Type62_dragon"
+    shortUserString: "#china_vehicles:Ch02_Type62_Dragon"
+    type: 1
+    userString: "#china_vehicles:Ch02_Type62_Dragon"
+skin_e25:
+    iconBig: "~res:/Gfx/UI/BigTankIcons/germany-E-25_N1.tex"
+    preset: "E_25_N1"
+    shortUserString: "#germany_vehicles:E-25_Custom"
+    type: 1
+    userString: "#germany_vehicles:E-25_Custom"
+skin_fury_bear:
+    override:
+        ussr:
+            override:
+                KV-1s:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/ussr-KV1s_bear.tex"
+                    preset: "Bear"
+                    shortUserString: "#ussr_vehicles:KV1s_bear_short"
+                    userString: "#ussr_vehicles:KV1s_bear"
+    type: 1
+skin_fwhite:
+    override:
+        france:
+            override:
+                FCM_50t:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/FCM_50t_football_white.tex"
+                    preset: "Football_white"
+                    shortUserString: "#france_vehicles:FCM50t_fwhite_short"
+                    userString: "#france_vehicles:FCM50t_fwhite"
+    type: 1
+skin_gamescom:
+    override:
+        germany:
+            override:
+                PzVI:
+                    preset: "PzVI_Tiger_Gamescom_event"
+                    shortUserString: "#germany_vehicles:PzVI_skin_gamescom_short"
+                    userString: "#germany_vehicles:PzVI_skin_gamescom"
+    type: 1
+skin_gup_ha_go:
+    override:
+        japan:
+            override:
+                Ha_Go:
+                    preset: "GuP"
+                    shortUserString: "#japan_vehicles:Type95_skin_GUP_short"
+                    userString: "#japan_vehicles:Type95_skin_GUP"
+    type: 1
+skin_iceclaw:
+    override:
+        ussr:
+            override:
+                SU76I:
+                    preset: "SU76I_Custom_Skin"
+                    shortUserString: "#ussr_vehicles:SU76I_skin_iceclaw_short"
+                    userString: "#ussr_vehicles:SU76I_skin_iceclaw"
+    type: 1
+skin_impetuous_lion:
+    override:
+        uk:
+            override:
+                GB21_Cromwell:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/britsh-Cromwell_lion.tex"
+                    preset: "Lion"
+                    shortUserString: "#gb_vehicles:Cromwell_lion_short"
+                    userString: "#gb_vehicles:Cromwell_lion"
+    type: 1
+skin_is2_berlin:
+    override:
+        ussr:
+            override:
+                R71_IS_2B:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/ussr-IS_2_Berlin.tex"
+                    preset: "Berlin"
+    type: 1
+skin_liliam:
+    override:
+        france:
+            override:
+                FCM_50t:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/france-FCM_50t_football.tex"
+                    preset: "Football"
+                    shortUserString: "#france_vehicles:FCM50t_liliam_short"
+                    userString: "#france_vehicles:FCM50t_liliam"
+    type: 1
+skin_nomad:
+    override:
+        usa:
+            override:
+                T23E3:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/usa-T23E3_Nomad.tex"
+                    preset: "Nomad"
+                    shortUserString: "#usa_vehicles:T23E3_nomad_short"
+                    userString: "#usa_vehicles:T23E3_nomad"
+    type: 1
+skin_schmalturm:
+    iconBig: "~res:/Gfx/UI/BigTankIcons/germany-PzIV_Schmalturm_Custom.tex"
+    preset: "Schmalturm_custom"
+    shortUserString: "#germany_vehicles:PzIV_schmalturm_Custom_short"
+    type: 1
+    userString: "#germany_vehicles:PzIV_schmalturm_Custom"
+skin_shinobi:
+    iconBig: "~res:/Gfx/UI/BigTankIcons/japan-Chi_Nu_Kai_Ninjia.tex"
+    preset: "Shinobi"
+    shortUserString: "#japan_vehicles:J12_Shinobi_short"
+    type: 1
+    userString: "#japan_vehicles:J12_Shinobi"
+skin_victory_tank:
+    override:
+        germany:
+            override:
+                VK3601H:
+                    iconBig: "~res:/Gfx/UI/BigTankIcons/germany-VK3601H_victory.tex"
+                    preset: "Victory"
+                    shortUserString: "#german_vehicles:VK36.01H_victory_short"
+                    userString: "#german_vehicles:VK36.01H_victory"
+    type: 1
+skin_volar:
+    override:
+        usa:
+            override:
+                M36_Slagger:
+                    preset: "M36_Slagger_Taiwanese"
+                    shortUserString: "#usa_vehicles:M36_Slagger_skin_volar_short"
+                    userString: "#usa_vehicles:M36_Slagger_skin_volar"
+    type: 1
+slush:
+    alpha: 0.85
+    override:
+        germany:
+            override:
+                B-1bis_captured:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                DW_II:
+                    scale: [0.55, 0.55]
+                DickerMax:
+                    scale: [0.55, 0.55]
+                E-100:
+                    alpha: 0.8
+                    scale: [0.45, 0.45]
+                E-25:
+                    scale: [0.8, 0.4]
+                E-50:
+                    alpha: 0.65
+                    scale: [0.55, 0.55]
+                E50_Ausf_M:
+                    scale: [0.55, 0.55]
+                Ferdinand:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                G20_Marder_II:
+                    alpha: 0.7
+                    scale: [0.6, 0.6]
+                H39_captured:
+                    alpha: 0.75
+                    scale: [1.0, 0.5]
+                Hetzer:
+                    alpha: 0.75
+                    scale: [0.52, 0.52]
+                JagdPanther:
+                    scale: [0.6, 0.6]
+                JagdPantherII:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                JagdPzIV:
+                    alpha: 0.7
+                    scale: [0.55, 0.55]
+                JagdPz_E100:
+                    scale: [0.37, 0.37]
+                JagdTiger:
+                    alpha: 0.8
+                    scale: [0.45, 0.45]
+                JagdTiger_SdKfz_185:
+                    scale: [0.45, 0.45]
+                Leopard1:
+                    scale: [0.55, 0.55]
+                Lowe:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                Ltraktor:
+                    alpha: 0.72
+                    scale: [0.58, 0.58]
+                Maus:
+                    alpha: 0.7
+                Panther_II:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                Panther_M10:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                PanzerJager_I:
+                    alpha: 0.7
+                    scale: [0.68, 0.68]
+                Pro_Ag_A:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                Pz35t:
+                    alpha: 0.75
+                    scale: [1.0, 0.5]
+                Pz38_NA:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                Pz38t:
+                    alpha: 0.75
+                    scale: [1.0, 0.5]
+                PzII:
+                    alpha: 0.8
+                    scale: [0.65, 0.65]
+                PzIII:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                PzIII_A:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                PzIII_IV:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                PzII_J:
+                    alpha: 0.75
+                    scale: [0.65, 0.65]
+                PzIV:
+                    scale: [0.6, 0.6]
+                PzIV_Hydro:
+                    alpha: 0.75
+                    scale: [0.65, 0.65]
+                PzV:
+                    alpha: 0.6
+                PzVI:
+                    alpha: 0.55
+                PzVIB_Tiger_II:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                PzVI_Tiger_P:
+                    alpha: 0.65
+                    scale: [0.55, 0.55]
+                PzV_PzIV:
+                    alpha: 0.8
+                    scale: [0.45, 0.45]
+                Pz_II_AusfG:
+                    scale: [0.7, 0.7]
+                Pz_IV_AusfA:
+                    scale: [0.6, 0.6]
+                Pz_IV_AusfD:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                S35_captured:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                StuGIII:
+                    alpha: 0.7
+                    scale: [0.8, 0.4]
+                T-15:
+                    alpha: 0.75
+                    scale: [0.8, 0.4]
+                T-25:
+                    alpha: 0.7
+                    scale: [0.8, 0.4]
+                VK1602:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                VK2801:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                VK3001H:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                VK3001P:
+                    alpha: 0.75
+                    scale: [0.45, 0.45]
+                VK3002DB:
+                    alpha: 0.7
+                VK3002DB_V1:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                VK3002M:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                VK3601H:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                VK4502A:
+                    alpha: 0.75
+                    scale: [0.6, 0.6]
+                VK4502P:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    alpha: 0.75
+                    scale: [0.9, 0.45]
+        uk:
+            alpha: 0.9
+        usa:
+            override:
+                M2_lt:
+                    alpha: 0.75
+                    scale: [0.8, 0.4]
+                T18:
+                    alpha: 0.75
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    alpha: 0.75
+                    scale: [0.9, 0.45]
+                T1_E6:
+                    alpha: 0.75
+                    scale: [0.8, 0.4]
+                T2_lt:
+                    alpha: 0.75
+                    scale: [0.9, 0.45]
+                T7_Combat_Car:
+                    alpha: 0.75
+        ussr:
+            alpha: 0.9
+            override:
+                A-20:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                A-32:
+                    alpha: 0.65
+                    scale: [0.55, 0.55]
+                AT-1:
+                    scale: [0.65, 0.65]
+                BT-2:
+                    scale: [0.8, 0.4]
+                BT-7:
+                    alpha: 0.75
+                    scale: [0.65, 0.65]
+                BT-SV:
+                    scale: [0.58, 0.58]
+                Churchill_LL:
+                    scale: [0.65, 0.65]
+                IS:
+                    scale: [0.55, 0.55]
+                IS-3:
+                    scale: [0.65, 0.65]
+                IS-4:
+                    scale: [0.5, 0.5]
+                IS-7:
+                    scale: [0.57, 0.57]
+                IS8:
+                    scale: [0.65, 0.65]
+                ISU-152:
+                    scale: [0.55, 0.55]
+                KV-13:
+                    scale: [0.65, 0.65]
+                KV-1s:
+                    scale: [0.65, 0.65]
+                KV-220:
+                    scale: [0.57, 0.57]
+                KV-3:
+                    scale: [0.5, 0.5]
+                KV-5:
+                    scale: [0.55, 0.55]
+                KV1:
+                    scale: [0.52, 0.52]
+                KV2:
+                    scale: [0.55, 0.55]
+                KV4:
+                    scale: [0.55, 0.55]
+                LTP:
+                    alpha: 0.75
+                    scale: [0.65, 0.65]
+                M3_Stuart_LL:
+                    scale: [0.5, 0.5]
+                MS-1:
+                    scale: [1.0, 0.5]
+                Matilda_II_LL:
+                    scale: [0.5, 0.5]
+                Object263:
+                    scale: [0.55, 0.55]
+                Object268:
+                    scale: [0.65, 0.65]
+                Object_140:
+                    scale: [0.75, 0.75]
+                Object_704:
+                    scale: [0.55, 0.55]
+                ST_I:
+                    scale: [0.65, 0.65]
+                T-127:
+                    scale: [1.0, 0.5]
+                T-26:
+                    scale: [0.9, 0.45]
+                Tetrarch_LL:
+                    scale: [0.9, 0.45]
+            scale: [0.6, 0.6]
+            specularity: 0.5
+    scale: [0.5, 0.5]
+    texture: "common/winter/c_w_04"
+snow_boar:
+    alpha: 0.7
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.8, 0.4]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T7_Combat_Car:
+                    scale: [0.55, 0.55]
+    scale: [0.542308, 0.542308]
+    texture: "usa/usa_w_02"
+snowy_forest:
+    alpha: 0.7
+    override:
+        ussr:
+            alpha: 0.85
+            specularity: 0.499985
+    scale: [0.45, 0.45]
+    texture: "ussr/ussr_w_02"
+steam:
+    scale: [0.680747, 0.680747]
+    specularity: 0.438447
+    texture: "common/steam"
+steel_diligence:
+    alpha: 0.75
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [1.16, 0.56]
+                H39_captured:
+                    scale: [1.12, 0.56]
+                Leopard1:
+                    alpha: 0.715385
+                Pz35t:
+                    scale: [1.12, 0.56]
+                Pz38t:
+                    scale: [1.12, 0.56]
+                StuGIII:
+                    alpha: 0.7
+                    scale: [1.12, 0.56]
+                T-15:
+                    scale: [1.12, 0.56]
+                T-25:
+                    scale: [1.12, 0.56]
+    scale: [0.56, 0.56]
+    texture: "germany/ger_d_01"
+steppe_taiga:
+    alpha: 0.699925
+    override:
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [0.9, 0.45]
+                MS-1:
+                    scale: [0.7, 0.35]
+                T-127:
+                    scale: [0.9, 0.45]
+                T-26:
+                    scale: [0.9, 0.45]
+                Tetrarch_LL:
+                    scale: [0.646154, 0.323]
+            specularity: 0.5
+    scale: [0.490272, 0.490272]
+    texture: "ussr/ussr_s_01"
+swamp_alligator:
+    alpha: 0.649985
+    override:
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                M6:
+                    scale: [0.565362, 0.478824]
+                M8A1:
+                    scale: [0.530769, 0.513462]
+                Pershing:
+                    alpha: 0.623317
+                    scale: [0.542781, 0.513822]
+                Ram-II:
+                    alpha: 0.646394
+                    scale: [0.508301, 0.51407]
+                Sherman_Jumbo:
+                    scale: [0.576923, 0.490385]
+                T110:
+                    scale: [0.553598, 0.50767]
+                T110E3:
+                    scale: [0.623077, 0.634615]
+                T110E4:
+                    scale: [0.501923, 0.686538]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    alpha: 0.634375
+                    scale: [1.0, 0.5]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [1.0, 0.5]
+                T95:
+                    alpha: 0.630619
+                    scale: [0.501698, 0.501698]
+    scale: [0.571131, 0.50767]
+    texture: "usa/usa_s_01"
+swamp_moss:
+    alpha: 0.684285
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [0.8, 0.4]
+                H39_captured:
+                    scale: [0.9, 0.45]
+                Pz35t:
+                    scale: [0.9, 0.45]
+                Pz38t:
+                    scale: [0.9, 0.45]
+                StuGIII:
+                    scale: [0.9, 0.45]
+                T-15:
+                    scale: [0.9, 0.45]
+                T-25:
+                    scale: [0.9, 0.45]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    scale: [0.9, 0.45]
+        uk:
+            alpha: 0.75
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                M6:
+                    scale: [0.484615, 0.501923]
+                M8A1:
+                    scale: [0.507692, 0.507692]
+                Pershing:
+                    scale: [0.501923, 0.542533]
+                Ram-II:
+                    scale: [0.507692, 0.501923]
+                Sherman_Jumbo:
+                    scale: [0.547829, 0.553598]
+                T110:
+                    scale: [0.530521, 0.484367]
+                T110E3:
+                    scale: [0.525, 0.536538]
+                T110E4:
+                    scale: [0.501923, 0.513462]
+                T14:
+                    scale: [0.490385, 0.501923]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.9, 0.45]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T1_hvy:
+                    scale: [0.490385, 0.565385]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T95:
+                    alpha: 0.646154
+                    scale: [0.536538, 0.501923]
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [1.0, 0.5]
+                MS-1:
+                    scale: [0.7, 0.35]
+                T-127:
+                    scale: [0.7, 0.35]
+                T-26:
+                    scale: [1.0, 0.5]
+                Tetrarch_LL:
+                    scale: [0.8, 0.4]
+            specularity: 0.5
+    scale: [0.501923, 0.501923]
+    texture: "common/summer/c_s_02"
+the_january_ice:
+    alpha: 0.75
+    override:
+        ussr:
+            alpha: 0.899985
+            specularity: 0.499985
+    scale: [0.6, 0.6]
+    texture: "ussr/ussr_w_01"
+the_silence_of_the_mountains:
+    alpha: 0.699835
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.8, 0.4]
+                NC27:
+                    scale: [0.8, 0.4]
+    scale: [0.599977, 0.599977]
+    texture: "japan/jp_w_02"
+the_stony_soil:
+    alpha: 0.703846
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [1.004, 0.502]
+                H39_captured:
+                    scale: [1.004, 0.502]
+                Pz35t:
+                    scale: [1.004, 0.502]
+                Pz38t:
+                    scale: [1.004, 0.502]
+                StuGIII:
+                    scale: [1.004, 0.502]
+                T-15:
+                    scale: [1.004, 0.502]
+                T-25:
+                    scale: [1.004, 0.502]
+        japan:
+            override:
+                Ke_Ho:
+                    alpha: 0.753846
+                    scale: [1.004, 0.502]
+                NC27:
+                    scale: [0.963462, 0.530769]
+        uk:
+            alpha: 0.7
+        usa:
+            override:
+                M2_lt:
+                    scale: [1.015385, 0.502]
+                T18:
+                    scale: [1.004, 0.502]
+                T1_Cunningham:
+                    scale: [1.004, 0.548077]
+                T1_E6:
+                    scale: [1.004, 0.502]
+                T2_lt:
+                    scale: [1.004, 0.502]
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [1.01, 0.558]
+                MS-1:
+                    scale: [0.992308, 0.519231]
+                T-127:
+                    scale: [1.009615, 0.501923]
+                T-26:
+                    scale: [1.004, 0.502]
+                Tetrarch_LL:
+                    scale: [1.004, 0.502]
+            specularity: 0.5
+    scale: [0.501923, 0.501923]
+    texture: "common/common_01"
+the_top_of_the_mountain:
+    alpha: 0.7
+    override:
+        germany:
+            override:
+                DW_II:
+                    alpha: 0.8
+                DickerMax:
+                    alpha: 0.75
+                E-100:
+                    alpha: 0.8
+                    scale: [0.45, 0.45]
+                E-25:
+                    alpha: 0.75
+                    scale: [0.8, 0.4]
+                E-50:
+                    alpha: 0.6
+                    scale: [0.49, 0.49]
+                E50_Ausf_M:
+                    scale: [0.53, 0.53]
+                Ferdinand:
+                    scale: [0.55, 0.55]
+                G20_Marder_II:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                H39_captured:
+                    alpha: 0.65
+                    scale: [0.9, 0.45]
+                Hetzer:
+                    alpha: 0.6
+                    scale: [0.52, 0.52]
+                Indien_Panzer:
+                    alpha: 0.75
+                JagdPanther:
+                    alpha: 0.75
+                    scale: [0.55, 0.55]
+                JagdPantherII:
+                    alpha: 0.75
+                    scale: [0.45, 0.45]
+                JagdPzIV:
+                    scale: [0.45, 0.45]
+                JagdPz_E100:
+                    alpha: 0.75
+                    scale: [0.37, 0.37]
+                JagdTiger:
+                    scale: [0.4, 0.4]
+                JagdTiger_SdKfz_185:
+                    scale: [0.45, 0.45]
+                Leopard1:
+                    scale: [0.55, 0.55]
+                Lowe:
+                    scale: [0.53, 0.53]
+                Ltraktor:
+                    alpha: 0.6
+                    scale: [0.56, 0.56]
+                Maus:
+                    scale: [0.35, 0.35]
+                Panther_II:
+                    alpha: 0.75
+                    scale: [0.46, 0.46]
+                Panther_M10:
+                    alpha: 0.8
+                    scale: [0.55, 0.55]
+                PanzerJager_I:
+                    scale: [0.6, 0.6]
+                Pro_Ag_A:
+                    scale: [0.55, 0.55]
+                Pz35t:
+                    scale: [1.0, 0.5]
+                Pz38_NA:
+                    scale: [0.6, 0.6]
+                Pz38t:
+                    scale: [0.9, 0.45]
+                PzII:
+                    scale: [0.6, 0.6]
+                PzIII:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                PzIII_A:
+                    scale: [0.55, 0.55]
+                PzIII_IV:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                PzII_J:
+                    alpha: 0.6
+                    scale: [0.6, 0.6]
+                PzIV:
+                    alpha: 0.75
+                    scale: [0.65, 0.65]
+                PzIV_Hydro:
+                    scale: [0.6, 0.6]
+                PzV:
+                    alpha: 0.5
+                PzVI:
+                    alpha: 0.55
+                PzVIB_Tiger_II:
+                    alpha: 0.65
+                    scale: [0.35, 0.35]
+                PzVI_Tiger_P:
+                    alpha: 0.65
+                PzV_PzIV:
+                    scale: [0.45, 0.45]
+                Pz_II_AusfG:
+                    scale: [0.6, 0.6]
+                Pz_IV_AusfA:
+                    scale: [0.58, 0.58]
+                Pz_IV_AusfD:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                S35_captured:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                StuGIII:
+                    alpha: 0.6
+                    scale: [0.8, 0.4]
+                T-15:
+                    scale: [0.8, 0.4]
+                T-25:
+                    scale: [0.8, 0.4]
+                VK1602:
+                    scale: [0.55, 0.55]
+                VK2801:
+                    alpha: 0.55
+                    scale: [0.6, 0.6]
+                VK3001H:
+                    alpha: 0.68
+                    scale: [0.5, 0.55]
+                VK3001P:
+                    alpha: 0.65
+                    scale: [0.45, 0.45]
+                VK3002DB:
+                    alpha: 0.65
+                    scale: [0.55, 0.55]
+                VK3002DB_V1:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                VK3002M:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                VK3601H:
+                    alpha: 0.6
+                    scale: [0.55, 0.55]
+                VK4502A:
+                    alpha: 0.65
+                    scale: [0.6, 0.6]
+                VK4502P:
+                    alpha: 0.65
+                    scale: [0.45, 0.45]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.8, 0.4]
+                NC27:
+                    scale: [0.8, 0.4]
+        usa:
+            override:
+                M2_lt:
+                    scale: [0.9, 0.45]
+                T18:
+                    scale: [0.9, 0.45]
+                T1_Cunningham:
+                    scale: [0.9, 0.45]
+                T1_E6:
+                    scale: [0.9, 0.45]
+                T2_lt:
+                    scale: [0.9, 0.45]
+                T7_Combat_Car:
+                    scale: [0.45, 0.45]
+        ussr:
+            alpha: 0.8
+            specularity: 0.5
+    scale: [0.5, 0.5]
+    texture: "common/winter/c_w_01"
+the_undeniable_courage:
+    alpha: 0.76
+    override:
+        germany:
+            override:
+                E-25:
+                    scale: [1.1, 0.55]
+                H39_captured:
+                    scale: [1.1, 0.55]
+                Leopard1:
+                    alpha: 0.72
+                    scale: [0.6, 0.6]
+                Pz35t:
+                    scale: [1.1, 0.55]
+                Pz38t:
+                    scale: [1.1, 0.55]
+                StuGIII:
+                    alpha: 0.7
+                    scale: [1.1, 0.55]
+                T-15:
+                    scale: [1.1, 0.55]
+                T-25:
+                    scale: [1.1, 0.55]
+    scale: [0.55, 0.55]
+    texture: "germany/ger_d_02"
+user_made:
+    scale: [0.55, 0.55]
+    texture: "common/user_made"
+voices_of_cicadas:
+    alpha: 0.749835
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.45]
+                NC27:
+                    scale: [0.9, 0.45]
+    scale: [0.438214, 0.438214]
+    texture: "japan/jp_s_02"
+white_cherry:
+    alpha: 0.56537
+    override:
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [0.9, 0.4]
+                NC27:
+                    scale: [0.8, 0.4]
+    scale: [0.449977, 0.449977]
+    texture: "japan/jp_w_01"
+white_sands:
+    alpha: 0.72
+    override:
+        germany:
+            override:
+                DickerMax:
+                    scale: [0.64, 0.64]
+                E-25:
+                    scale: [1.16, 0.58]
+                H39_captured:
+                    scale: [1.16, 0.58]
+                Leopard1:
+                    scale: [0.58, 0.57]
+                Pz35t:
+                    scale: [1.07, 0.56]
+                Pz38t:
+                    scale: [1.16, 0.58]
+                StuGIII:
+                    alpha: 0.515385
+                    scale: [1.16, 0.58]
+                T-15:
+                    scale: [1.16, 0.58]
+                T-25:
+                    scale: [1.16, 0.58]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [1.159615, 0.58]
+                NC27:
+                    alpha: 0.707692
+                    scale: [1.16, 0.58]
+        uk:
+            alpha: 0.7
+        usa:
+            override:
+                M2_lt:
+                    scale: [1.113461, 0.58]
+                T18:
+                    scale: [1.101923, 0.58]
+                T1_Cunningham:
+                    scale: [1.16, 0.58]
+                T1_E6:
+                    scale: [1.090385, 0.58]
+                T2_lt:
+                    scale: [1.096154, 0.58]
+        ussr:
+            alpha: 0.9
+            override:
+                BT-2:
+                    scale: [1.16, 0.58]
+                MS-1:
+                    alpha: 0.7
+                    scale: [1.16, 0.58]
+                T-127:
+                    alpha: 0.58
+                    scale: [1.148, 0.58]
+                T-26:
+                    scale: [1.16, 0.58]
+                Tetrarch_LL:
+                    alpha: 0.62
+                    scale: [1.159615, 0.58]
+            specularity: 0.5
+    scale: [0.58, 0.58]
+    texture: "common/desert/c_d_01"
+wild_dunes:
+    alpha: 0.72
+    override:
+        germany:
+            override:
+                DW_II:
+                    alpha: 0.73
+                DickerMax:
+                    alpha: 0.85
+                    scale: [0.615, 0.615]
+                E-25:
+                    alpha: 0.61
+                    scale: [1.02, 0.51]
+                G113_SP_I_C:
+                    alpha: 0.68
+                    scale: [0.53, 0.52]
+                H39_captured:
+                    scale: [1.02, 0.51]
+                JagdTiger:
+                    scale: [0.51, 0.485]
+                Leopard1:
+                    alpha: 0.630769
+                    scale: [0.6, 0.61]
+                Pz35t:
+                    scale: [1.1, 0.51]
+                Pz38t:
+                    scale: [1.02, 0.51]
+                StuGIII:
+                    alpha: 0.63
+                    scale: [1.02, 0.51]
+                T-15:
+                    scale: [1.02, 0.51]
+                T-25:
+                    scale: [1.02, 0.51]
+        japan:
+            override:
+                Ke_Ho:
+                    scale: [1.02, 0.51]
+                NC27:
+                    scale: [1.02, 0.51]
+        uk:
+            alpha: 0.7
+        usa:
+            override:
+                M2_lt:
+                    scale: [1.02, 0.628846]
+                T18:
+                    scale: [1.02, 0.51]
+                T1_Cunningham:
+                    alpha: 0.78
+                    scale: [1.02, 0.51]
+                T1_E6:
+                    scale: [1.02, 0.51]
+                T2_lt:
+                    scale: [1.015385, 0.51]
+        ussr:
+            alpha: 0.95
+            override:
+                BT-2:
+                    scale: [1.02, 0.51]
+                MS-1:
+                    scale: [1.02, 0.51]
+                T-127:
+                    alpha: 0.62
+                    scale: [1.02, 0.51]
+                T-26:
+                    alpha: 0.7
+                    scale: [1.02, 0.51]
+                Tetrarch_LL:
+                    scale: [1.02, 0.51]
+            specularity: 0.5
+    scale: [0.51, 0.51]
+    texture: "common/desert/c_d_03"
+wild_savannah:
+    alpha: 0.599925
+    override:
+        ussr:
+            alpha: 0.75
+            override:
+                BT-2:
+                    scale: [0.825, 0.461538]
+                MS-1:
+                    scale: [0.951923, 0.452]
+                T-127:
+                    scale: [0.865385, 0.42681]
+                T-26:
+                    scale: [0.940385, 0.432692]
+                Tetrarch_LL:
+                    alpha: 0.47
+                    scale: [0.864, 0.444231]
+            specularity: 0.5
+    scale: [0.42681, 0.42681]
+    texture: "ussr/ussr_d_02"

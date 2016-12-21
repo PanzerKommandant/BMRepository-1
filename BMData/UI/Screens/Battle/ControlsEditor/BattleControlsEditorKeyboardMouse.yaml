@@ -1,0 +1,298 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Battle/HUDLayer.yaml"
+- "~res:/UI/Screens/Battle/ControlsEditor/BattleControlsEditorCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "BattleControlsEditor"
+    size: [1024.000000, 768.000000]
+    children:
+    -   class: "UIControl"
+        name: "content"
+        size: [1024.000000, 768.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            customClass: "UIFreeCameraZone"
+            name: "freeCameraArea"
+            position: [642.000000, 686.000000]
+            size: [322.000000, 82.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 60.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/FreeCameraZoneBg"
+                    color: [1.000000, 1.000000, 1.000000, 0.470600]
+        -   class: "UIControl"
+            name: "leftArea"
+            position: [0.000000, 180.000000]
+            size: [300.000000, 588.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 180.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.698000, 1.000000, 0.796100, 0.470600]
+        -   class: "UIControl"
+            name: "rightArea"
+            position: [300.000000, 0.000000]
+            size: [724.000000, 768.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.756900, 0.835300, 1.000000, 0.470600]
+        -   prototype: "BattleControlsEditorCommon/Shoot"
+            name: "rightShoot"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 129.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 211.000000
+        -   class: "UIControl"
+            name: "zoomButton"
+            position: [842.000000, 582.000000]
+            size: [85.000000, 85.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 97.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 101.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/SmartZoomButton"
+        -   prototype: "BattleControlsEditorCommon/Shoot"
+            name: "leftShoot"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 159.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 260.000000
+        -   class: "UIControl"
+            name: "joypad"
+            position: [20.000000, 516.000000]
+            size: [233.000000, 216.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 36.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/Joypad"
+            children:
+            -   class: "UIControl"
+                name: "joypad1"
+                position: [78.500000, 70.000000]
+                size: [76.000000, 76.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Joypad"
+                        frame: 1
+        -   class: "UIControl"
+            name: "tankDirection"
+            position: [452.000000, 558.000000]
+            size: [120.000000, 80.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 130.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/EditorControlsScreen/TankDirection"
+                    frame: 0
+        -   class: "UIControl"
+            name: "consumablesPanel"
+            position: [1024.000000, 524.000000]
+            size: [64.000000, 220.000000]
+            pivot: [1.000000, 0.500000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 140.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/EditorControlsScreen/Panel"
+        -   class: "UIControl"
+            name: "ammo"
+            position: [960.000000, 154.000000]
+            size: [64.000000, 220.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -120.000000
+                    bottomAnchorEnabled: false
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 0.949020, 0.352941, 1.000000]
+        -   class: "UIControl"
+            name: "obstacleModules"
+            position: [329.500000, 683.000000]
+            size: [365.000000, 85.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    color: [1.000000, 0.188200, 0.188200, 0.470600]
+            children:
+            -   class: "UIControl"
+                name: "damageCrew"
+                position: [2.500000, 24.000000]
+                size: [360.000000, 25.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 36.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesDamageCrewBg"
+            -   class: "UIControl"
+                name: "damageTankParts"
+                position: [2.500000, 46.000000]
+                size: [360.000000, 39.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesDamageTankBg"
+            -   class: "UIControl"
+                name: "healthBar"
+                position: [4.500000, 0.000000]
+                size: [356.000000, 21.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 64.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Health"
+        -   class: "UIControl"
+            name: "obstacleChatCommands"
+            position: [934.000000, 678.000000]
+            size: [90.000000, 90.000000]
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    color: [1.000000, 0.188200, 0.188200, 0.470600]
+            children:
+            -   class: "UIControl"
+                customClass: "UIChatCommands"
+                name: "chatCommands"
+                position: [-1.000000, -1.000000]
+                size: [91.000000, 91.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatCommands"
+        -   class: "UIControl"
+            name: "followAimSwitch"
+            position: [41.000000, 423.000000]
+            size: [60.000000, 60.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 41.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 285.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/FollowAim"
+                    frame: 2
+        -   class: "UIControl"
+            name: "provisionsPanel"
+            position: [450.000000, 642.000000]
+            size: [124.000000, 41.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 85.000000
+            children:
+            -   class: "UIControl"
+                name: "equipment1"
+                size: [40.000000, 40.000000]
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
+            -   class: "UIControl"
+                name: "equipment3"
+                position: [84.000000, 0.000000]
+                size: [40.000000, 40.000000]
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
+            -   class: "UIControl"
+                name: "equipment2"
+                position: [42.000000, 0.000000]
+                size: [40.000000, 40.000000]
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"

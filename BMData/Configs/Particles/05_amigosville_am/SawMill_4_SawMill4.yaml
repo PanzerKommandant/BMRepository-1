@@ -1,0 +1,46 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 1.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "SawMill4"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: 0.340800
+    angle: 180.000000
+    angleVariation: 180.000000
+    blending: 1
+    colorOverLife: [97.000000, 97.000000, 97.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 100.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 1.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "spin"
+    number: 10.000000
+    particleOrientation: 2
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.000000, 2.000000]
+    spin: 1200.000000
+    sprite: "../../../Gfx/Particles/alpha/R_dust_density"
+    startTime: 0.000000
+    type: "layer"

@@ -1,0 +1,1540 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Battle/HotKey.yaml"
+- "~res:/UI/Styles/Lobby/Inventory/InventoryNormalStyles.yaml"
+- "~res:/UI/Styles/Battle/EquipmentItem.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+- "~res:/UI/Screens/Battle/CaptureProgressBar.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/Battle/BattleAmmoItem.yaml"
+- "~res:/UI/Screens/Battle/VehicleDestroyTimer.yaml"
+- "~res:/UI/Styles/Battle/BattleHUD.yaml"
+StyleSheets:
+-   selector: ".postHeader"
+    properties:
+        text-font: "WarHeliosCondC_Bold_21"
+        text-shadowoffset: [1.000000, 1.000000]
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".postText"
+    properties:
+        text-font: "WarHeliosCondC_19"
+        text-shadowoffset: [1.000000, 1.000000]
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".intersecting_with_chat_commands:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".right-to-left .name-with-tag #spacer"
+    properties:
+        visible: true
+-   selector: "#CaptureState.neutral_current"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: "#CaptureState.enemy_current"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: "#CaptureState.ally_current"
+    properties:
+        bg-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selector: "#CaptureState.enemy_progress #Progress"
+    properties:
+        bg-color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: "#CaptureState.ally_progress #Progress"
+    properties:
+        bg-color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selector: ".hud-scale.Phone"
+    properties:
+        scale: [1.500000, 1.500000]
+        sizePolicy-verticalValue: 150.000000
+-   selector: ".hud-scale"
+    properties:
+        scale: [1.000000, 1.000000]
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".bg-hud-scale.Phone"
+    properties:
+        sizePolicy-horizontalValue: 150.000000
+        sizePolicy-verticalValue: 150.000000
+-   selector: ".bg-hud-scale"
+    properties:
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".damaged-module-scale"
+    properties:
+        sizePolicy-horizontalValue: 38.000000
+        sizePolicy-verticalValue: 26.000000
+-   selector: ".damaged-module-scale.Phone"
+    properties:
+        sizePolicy-horizontalValue: 57.000000
+        sizePolicy-verticalValue: 39.000000
+-   selector: ".health-size"
+    properties:
+        sizePolicy-horizontalValue: 254.000000
+        sizePolicy-verticalValue: 16.000000
+-   selector: ".health-size.Phone"
+    properties:
+        sizePolicy-horizontalValue: 381.000000
+        sizePolicy-verticalValue: 24.000000
+-   selector: ".health-font"
+    properties:
+        text-font: "WarHeliosCondC_Bold_13"
+-   selector: ".health-font.Phone"
+    properties:
+        text-font: "WarHeliosCondC_Bold_19"
+-   selector: ".damaged-module-scaling"
+    properties:
+        sizePolicy-horizontalValue: 100.000000
+        sizePolicy-verticalValue: 100.000000
+-   selector: ".damaged-module-scaling.Phone"
+    properties:
+        sizePolicy-horizontalValue: 150.000000
+        sizePolicy-verticalValue: 150.000000
+-   selector: ".tutorial-size"
+    properties:
+        sizePolicy-verticalValue: 32.000000
+-   selector: ".have-chat-command #ChatCommand"
+    properties:
+        bg-color:
+            value: [1.000000, 1.000000, 1.000000, 1.000000]
+            transitionTime: 0.200000
+            transitionFunction: "LINEAR"
+-   selector: "#ChatCommand"
+    properties:
+        bg-color:
+            value: [0.000000, 0.000000, 0.000000, 0.000000]
+            transitionTime: 0.200000
+            transitionFunction: "LINEAR"
+-   selector: ".chat-command-base-a #BaseName"
+    properties:
+        bg-frame: 2
+-   selector: ".chat-command-base-b #BaseName"
+    properties:
+        bg-frame: 3
+-   selector: ".chat-command-base-c #BaseName"
+    properties:
+        bg-frame: 4
+-   selector: ".chat-command-base-d #BaseName"
+    properties:
+        bg-frame: 5
+-   selector: ".chat-command-base-e #BaseName"
+    properties:
+        bg-frame: 6
+-   selector: ".chat-command-base-f #BaseName"
+    properties:
+        bg-frame: 7
+Controls:
+-   class: "UIControl"
+    name: "PanelsContainer"
+    size: [0.000000, 194.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            spacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Top"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfFirstChild"
+                verticalPolicy: "PercentOfFirstChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Content"
+            size: [0.000000, 0.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 2.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+    -   class: "UIControl"
+        name: "Center"
+        size: [0.000000, 184.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "BottomUp"
+                dynamicSpacing: true
+                skipInvisible: false
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "FixedSize"
+                verticalValue: 184.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+-   prototype: "StyledButton/DefaultStyledButton"
+    name: "SpectatePlayerButton"
+    size: [140.000000, 70.000000]
+    children:
+    -   class: "UIControl"
+        name: "IconPrev"
+        size: [140.000000, 70.000000]
+        pivot: [0.000000, 0.000000]
+        enabled: true
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/NextAndPreviousTankButtons"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    customClass: "BattleStatusControl"
+    name: "BattleStatusControl"
+    size: [374.000000, 24.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    classes: "hud-scale"
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: false
+    children:
+    -   class: "UIControl"
+        name: "ScoreBg"
+        size: [374.000000, 24.000000]
+        visible: true
+        noInput: true
+        debugDrawColor: [0.000000, 1.000000, 0.000000, 1.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+                topAnchorEnabled: false
+                bottomAnchorEnabled: false
+        children:
+        -   class: "UIControl"
+            name: "left"
+            size: [187.000000, 24.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: false
+                    topAnchorEnabled: false
+                    vCenterAnchorEnabled: false
+                    bottomAnchorEnabled: false
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/TanksBackground"
+            children:
+            -   class: "UIControl"
+                customClass: "ShortTeamPanel"
+                name: "allyPanel"
+                size: [0.000000, 24.000000]
+                pivot: [1.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        orientation: "RightToLeft"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: false
+                        hCenterAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 52.000000
+                        topAnchorEnabled: true
+        -   class: "UIControl"
+            name: "right"
+            size: [187.000000, 24.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: false
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: false
+                    vCenterAnchorEnabled: false
+                    bottomAnchorEnabled: false
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/TanksBackground"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+            children:
+            -   class: "UIControl"
+                customClass: "ShortTeamPanel"
+                name: "enemyPanel"
+                size: [0.000000, 24.000000]
+                pivot: [0.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        orientation: "LeftToRight"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 52.000000
+                        topAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "allyScore"
+        position: [134.500000, -1.000000]
+        size: [25.000000, 24.000000]
+        classes: "ally-color"
+        shadowoffset: [1.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+        textalign: ["HCENTER", "VCENTER"]
+        text: "8"
+        font: "WarHeliosCondC_Bold_21"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: -40.000000
+    -   class: "UIStaticText"
+        name: "enemyScore"
+        position: [214.500000, -1.000000]
+        size: [25.000000, 24.000000]
+        classes: "enemy-color"
+        shadowoffset: [1.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+        textalign: ["HCENTER", "VCENTER"]
+        text: "8"
+        font: "WarHeliosCondC_Bold_21"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 40.000000
+    -   class: "UIControl"
+        name: "LayoutGuard"
+        size: [56.000000, 24.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            customClass: "UIBattleTimer"
+            name: "UIBattleTimer"
+            size: [56.000000, 24.000000]
+            pivot: [0.500000, 0.500000]
+            debugDraw: false
+            debugDrawColor: [0.000000, 0.000000, 1.000000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+            text: "7:00"
+            font: "arialmb_16"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UITeamPanel"
+    name: "UITeamPanel"
+    size: [305.000000, 26.000000]
+    children:
+    -   class: "UIControl"
+        name: "arrow"
+        position: [301.000000, 0.000000]
+        size: [18.000000, 26.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/Arrow"
+    -   class: "UIControl"
+        customClass: "UITankPanel"
+        name: "UITankPanel"
+        size: [305.000000, 26.000000]
+        components:
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/TankIconBG"
+                frame: 0
+        children:
+        -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+            name: "playerName"
+            size: [90.000000, 26.000000]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 90.000000
+            children:
+            -   path: "name"
+                font: "WarHeliosCondC_14"
+            -   path: "tag"
+                position: [65.000000, 0.000000]
+                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                font: "WarHeliosCondC_14"
+        -   class: "UIStaticText"
+            name: "tankName"
+            size: [70.000000, 26.000000]
+            noInput: true
+            fitting: ["POINTS"]
+            textalign: ["HCENTER", "VCENTER"]
+            text: "Tank"
+            font: "WarHeliosCondC_Bold_14"
+        -   class: "UIControl"
+            name: "tankIcon"
+            size: [65.000000, 26.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                    align: ["HCENTER", "BOTTOM"]
+        -   class: "UIStaticText"
+            name: "kills"
+            size: [20.000000, 26.000000]
+            noInput: true
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+            fitting: ["POINTS"]
+            textalign: ["HCENTER", "VCENTER"]
+            text: "0"
+            font: "WarHeliosCondC_Bold_17"
+        -   class: "UIControl"
+            name: "level"
+            size: [17.000000, 18.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/Levels"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "squadNumberBg"
+            size: [29.000000, 25.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/vzvods"
+            children:
+            -   class: "UIStaticText"
+                name: "squadNumberValue"
+                position: [1.000000, -2.000000]
+                size: [29.000000, 25.000000]
+                noInput: true
+                shadowoffset: [1.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+                fitting: ["POINTS"]
+                textalign: ["HCENTER", "VCENTER"]
+                text: ""
+                font: "WarHeliosCondC_Bold_13"
+        -   class: "UIControl"
+            name: "ChatCommand"
+            position: [261.000000, -3.000000]
+            size: [32.000000, 32.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: false
+                    rightAnchorEnabled: false
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "CommandsBack"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/back_comands_icon"
+                        frame: 0
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "CommandsIcon"
+                position: [5.000000, 0.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/comands_icon"
+                        frame: 0
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "BaseName"
+                position: [5.000000, 0.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/comands_icon"
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    customClass: "UIMinimap"
+    name: "miniMapControl"
+    size: [163.000000, 163.000000]
+    pivot: [0.000000, 0.000000]
+    noInput: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/minimap/amigosville/MiniMapSmall"
+    children:
+    -   class: "UIControl"
+        name: "avatarViewDirection"
+        size: [25.000000, 23.000000]
+        pivot: [0.500000, 1.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapLookDirection"
+    -   class: "UIControl"
+        name: "playerChatCommandAnimationContainer"
+        noInput: true
+        tag: 1
+    -   class: "UIControl"
+        name: "avatarControl"
+        size: [15.000000, 11.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapPlayer"
+    -   class: "UIControl"
+        name: "markerPrototype"
+        size: [14.000000, 14.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        tag: 1
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapTank"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        customClass: "FirstEncounterAnimation"
+        name: "firstEncounterAnimationControl"
+        position: [81.500000, 81.500000]
+        size: [30.000000, 30.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapFirstEncounterAnimation"
+    -   class: "UIControl"
+        name: "MinimapSpawnAreaAllyProto"
+        size: [28.000000, 28.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        classes: "ally-color-bg"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapRespawn"
+    -   class: "UIControl"
+        name: "MinimapSpawnAreaEnemyProto"
+        size: [0.500000, 0.500000]
+        noInput: true
+        classes: "enemy-color-bg"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapRespawn"
+-   class: "UIControl"
+    name: "BattleAmmoIcon"
+    size: [48.000000, 48.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    classes: "ammo_icon small"
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoType"
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "PostMortemButtons"
+    position: [300.000000, -50.000000]
+    size: [600.000000, 100.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    classes: "hud-scale"
+    components:
+        LinearLayout:
+            padding: 30.000000
+            dynamicSpacing: true
+        Anchor:
+            hCenterAnchorEnabled: true
+            bottomAnchorEnabled: true
+            bottomAnchor: 50.000000
+    children:
+    -   prototype: "SpectatePlayerButton"
+        name: "PrevPlayerButton"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+    -   prototype: "StyledButton/StyledButton"
+        name: "BackToGarageButton"
+        size: [240.000000, 70.000000]
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            text: "Exit to Hangar"
+    -   prototype: "SpectatePlayerButton"
+        name: "NextPlayerButton"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "IconPrev"
+            components:
+                Background:
+                    spriteModification: ["FLIP_HORIZONTAL"]
+-   class: "UIControl"
+    name: "PostMortemCaption"
+    size: [1000.000000, 100.000000]
+    scale: [1.000000, 1.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIStaticText"
+        name: "modeText"
+        position: [200.000000, 0.000000]
+        size: [600.000000, 30.000000]
+        noInput: true
+        classes: "postHeader"
+        text: "#postbattle:SpectatorMode/Header"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "hintText"
+        position: [200.000000, 35.000000]
+        size: [600.000000, 55.000000]
+        noInput: true
+        classes: "postText"
+        multiline: "MULTILINE_ENABLED"
+        text: "#postbattle:SpectatorMode/Comment"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UIEquipmentItemControl"
+    name: "EquipmentItemControl"
+    size: [63.000000, 63.000000]
+    pivot: [0.500000, 0.500000]
+    classes: "equipment_item equipment_state=not_available in_cooldown=in_cooldown_no blink=blink_no ability=ability_enabled pulse=pulse_no"
+    components:
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/EquipmentKeys"
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   class: "UIControl"
+        name: "pulsation"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/EquipmentKeys"
+                frame: 8
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "cooldownFill"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/EquipmentKeys"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "clipRect"
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 6.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 6.000000
+                    topAnchorEnabled: true
+                    topAnchor: 7.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 8.000000
+    -   class: "UIControl"
+        name: "icon"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        classes: "small"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 8.000000
+                rightAnchorEnabled: true
+                rightAnchor: 8.000000
+                topAnchorEnabled: true
+                topAnchor: 8.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 8.000000
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIStaticText"
+        name: "label"
+        pivot: [0.500000, 0.500000]
+        shadowoffset: [1.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.498039]
+        font: "WarHeliosCondC_Bold_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "blinkLayer"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/EquipmentBlinkAnimation"
+                frame: 0
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   prototype: "EquipmentItemControl"
+    name: "ProvisionItemControl"
+    size: [45.000000, 46.000000]
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
+-   class: "UIControl"
+    name: "consumablesPanel"
+    size: [64.000000, 260.000000]
+    pivot: [1.000000, 0.500000]
+    noInput: true
+    classes: "intersecting_with_chat_commands"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   class: "UIControl"
+        name: "scalableContent"
+        size: [64.000000, 220.000000]
+        pivot: [1.000000, 0.500000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                padding: 12.000000
+                dynamicSpacing: true
+                skipInvisible: false
+            Anchor:
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   prototype: "EquipmentItemControl"
+            name: "equipment0"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+        -   prototype: "EquipmentItemControl"
+            name: "equipment1"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+        -   prototype: "EquipmentItemControl"
+            name: "equipment2"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+    -   class: "UIControl"
+        name: "background"
+        size: [64.000000, 260.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoPlashka"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "provisionsPanel"
+    size: [135.000000, 56.000000]
+    pivot: [0.500000, 0.500000]
+    components:
+        LinearLayout: {}
+        Background:
+            color: [1.000000, 1.000000, 1.000000, 1.000000]
+    children:
+    -   prototype: "ProvisionItemControl"
+        name: "equipment3"
+        noInput: true
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   prototype: "ProvisionItemControl"
+        name: "equipment4"
+        noInput: true
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   prototype: "ProvisionItemControl"
+        name: "equipment5"
+        noInput: true
+        classes: "equipment_item equipment_state=not_available in_cooldown=in_cooldown_no blink=blink_no ability=ability_enabled pulse=pulse_no"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "iconNotificationsPanel"
+    size: [0.000000, 56.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "iconNotificationPrototype"
+    size: [45.000000, 56.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "Spacer"
+    tag: 1
+    components:
+        SizePolicy:
+            verticalPolicy: "FixedSize"
+            verticalValue: 10.000000
+-   class: "UIControl"
+    name: "BottomHUD"
+    pivot: [0.500000, 1.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+            verticalPolicy: "PercentOfFirstChild"
+        Anchor:
+            hCenterAnchorEnabled: true
+            hCenterAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+        Background:
+            color: [1.000000, 0.188200, 0.188200, 0.470600]
+    children:
+    -   class: "UIControl"
+        name: "VerticalContainer"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "FixedSize"
+                verticalValue: 191.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "TextNotifications"
+            size: [10.000000, 120.000000]
+            pivot: [0.500000, 1.000000]
+            noInput: true
+            tag: 1
+            components:
+                LinearLayout:
+                    orientation: "BottomUp"
+                    padding: 10.000000
+                    spacing: 5.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Message"
+                visible: false
+                classes: "header4"
+                shadowoffset: [1.000000, 1.000000]
+                fitting: ["ENLARGE"]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "IconPanel"
+            position: [127.000000, 25.000000]
+            size: [135.000000, 56.000000]
+            pivot: [0.500000, 0.000000]
+            noInput: true
+            tag: 1
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   prototype: "provisionsPanel"
+                name: "ProvisionsPanel"
+                pivot: [0.500000, 1.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+            -   prototype: "iconNotificationsPanel"
+                name: "iconNotificationsPanel"
+                visible: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "HealthBarControl"
+            pivot: [0.500000, 1.000000]
+            noInput: true
+            tag: 1
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "HealthBg"
+                noInput: true
+                classes: "health-size"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        verticalPolicy: "FixedSize"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Health"
+                        colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                children:
+                -   class: "UIControl"
+                    name: "HealthRayClipper"
+                    clip: true
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfMaxChild"
+                        Background:
+                            colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    children:
+                    -   class: "UIControl"
+                        name: "HealthRay"
+                        noInput: true
+                        classes: "health-size"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                verticalPolicy: "FixedSize"
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/Health"
+                                frame: 1
+                                color: [1.000000, 0.000000, 0.000000, 1.000000]
+                                colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "HealthBarClipper"
+                    clip: true
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfMaxChild"
+                        Background:
+                            colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    children:
+                    -   class: "UIControl"
+                        name: "HealthBar"
+                        noInput: true
+                        classes: "health-size"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "FixedSize"
+                                verticalPolicy: "FixedSize"
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/Health"
+                                frame: 1
+                                color: [0.000000, 1.000000, 0.000000, 1.000000]
+                                colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                                align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "HealthValueControl"
+                    noInput: true
+                    classes: "health-font health-size"
+                    textcolorInheritType: "COLOR_REPLACE_ALPHA_ONLY"
+                    shadowoffset: [1.000000, 1.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            verticalPolicy: "FixedSize"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: -1.000000
+        -   prototype: "Spacer"
+            name: "Spacer"
+            noInput: true
+        -   class: "UIControl"
+            name: "DamageCrewContainer"
+            pivot: [0.500000, 0.000000]
+            visible: false
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfLastChild"
+                    verticalPolicy: "PercentOfFirstChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "Bg"
+                pivot: [0.500000, 0.000000]
+                noInput: true
+                classes: "bg-hud-scale"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesDamageCrewBg"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "DamageCrew"
+                pivot: [0.500000, 0.000000]
+                visible: true
+                noInput: true
+                components:
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "DamageTankPartsContainer"
+            pivot: [0.500000, 0.000000]
+            visible: false
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfLastChild"
+                    verticalPolicy: "PercentOfFirstChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "Bg"
+                pivot: [0.500000, 0.000000]
+                noInput: true
+                classes: "bg-hud-scale"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesDamageTankBg"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "DamageTankParts"
+                pivot: [0.500000, 0.000000]
+                visible: true
+                noInput: true
+                components:
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Speedometer"
+        pivot: [0.000000, 1.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 250.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 21.000000
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: -250.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+        children:
+        -   class: "UIStaticText"
+            name: "SpeedValueControl"
+            size: [250.000000, 21.000000]
+            classes: "header5"
+            textColor: [1.000000, 1.000000, 1.000000, 0.901961]
+            textcolorInheritType: "COLOR_REPLACE_ALPHA_ONLY"
+            shadowoffset: [1.000000, 1.000000]
+            text: "no_speed!"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+    -   class: "UIControl"
+        name: "DamagedPartsAnim"
+        pivot: [0.500000, 1.000000]
+        visible: false
+        noInput: true
+        classes: "bg-hud-scale"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/Tutorial/glow_DamagedModules_2"
+-   prototype: "CaptureProgressBar/CaptureProgressBar"
+    name: "CaptureProgressBar"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        Anchor:
+            hCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "HUDLayer"
+    name: "HUDLayer"
+    size: [960.000000, 640.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "UITeamPanel"
+        name: "AllyTeamPanel"
+    -   prototype: "UITeamPanel"
+        name: "EnemyTeamPanel"
+        position: [651.500000, 0.000000]
+    -   class: "UIControl"
+        customClass: "UIFreeCameraZone"
+        name: "FreeCameraArea"
+        position: [503.000000, 538.000000]
+        size: [297.000000, 62.000000]
+        noInput: true
+    -   prototype: "PanelsContainer"
+        name: "PanelsContainer"
+        position: [280.000000, 0.000000]
+        children:
+        -   path: "Top/Content"
+            children:
+            -   prototype: "BattleStatusControl"
+                name: "BattleStatusControl"
+        -   path: "Center"
+            children:
+            -   prototype: "CaptureProgressBar"
+                name: "CaptureProgressBar"
+            -   class: "UIControl"
+                customClass: "UIBattleNotifications"
+                name: "BattleNotifications"
+                size: [32.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+    -   prototype: "miniMapControl"
+        name: "MiniMapControl"
+        position: [305.000000, 242.500000]
+    -   prototype: "BottomHUD"
+        name: "BottomHUD"
+        position: [480.000000, 640.000000]
+    -   class: "UIControl"
+        customClass: "UIFireIcon"
+        name: "FireIcon"
+        position: [430.000000, 272.500000]
+        size: [100.000000, 95.000000]
+        visible: false
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesdmFire"
+                frame: 1
+        children:
+        -   class: "UIControl"
+            name: "ExtingisherIcon"
+            position: [76.500000, 74.000000]
+            size: [53.000000, 53.000000]
+            pivot: [1.000000, 1.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/DamagedModulesExtinguisher"
+    -   class: "UIControl"
+        customClass: "UIDestroyTimer"
+        name: "DestroyTimer"
+        position: [480.000000, 320.000000]
+        size: [130.000000, 130.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/WaterIndicator"
+        children:
+        -   prototype: "VehicleDestroyTimer/VehicleDestroyTimer"
+            name: "VehicleDestroyTimer"
+    -   class: "UIControl"
+        customClass: "UILamp"
+        name: "Lamp"
+        position: [480.000000, 320.000000]
+        size: [100.000000, 100.000000]
+        pivot: [0.500000, 0.500000]
+        visible: false
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/SixSense"
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            size: [100.000000, 100.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/SixSense"
+                    frame: 1
+    -   class: "UIStaticText"
+        name: "MapSquare"
+        position: [0.000000, 566.000000]
+        size: [320.000000, 24.000000]
+        classes: "text2-small text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["LEFT", "VCENTER"]
+        text: "Text1"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 50.000000
+    -   class: "UIControl"
+        customClass: "UIShellSelectorControl"
+        name: "Ammo"
+        position: [876.000000, 216.500000]
+        size: [63.000000, 63.000000]
+        noInput: true
+        children:
+        -   class: "UIControl"
+            customClass: "UIShellItemControl"
+            name: "currentItem"
+            size: [63.000000, 63.000000]
+            classes: "ammo_item"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoKeys"
+            children:
+            -   class: "UIControl"
+                name: "iconBg"
+                position: [31.500000, 31.500000]
+                size: [48.000000, 48.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                classes: "ammo_bg small"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: false
+                        vCenterAnchorEnabled: false
+            -   class: "UIControl"
+                name: "overlay"
+                size: [63.000000, 63.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: false
+                        rightAnchorEnabled: false
+                        topAnchorEnabled: false
+                        bottomAnchorEnabled: false
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoKeys"
+            -   prototype: "BattleAmmoIcon"
+                name: "icon"
+                position: [31.500000, 31.500000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: false
+                        vCenterAnchorEnabled: false
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+            -   class: "UIControl"
+                name: "altIcon"
+                position: [31.500000, 31.500000]
+                size: [48.000000, 48.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: false
+                        vCenterAnchorEnabled: false
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoKeys"
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIStaticText"
+                name: "typeLabel"
+                position: [10.500000, 7.500000]
+                size: [0.000000, 15.000000]
+                shadowoffset: [1.000000, 1.000000]
+                textalign: ["LEFT", "TOP"]
+                font: "WarHeliosCondC_Bold_13_shells"
+            -   class: "UIControl"
+                name: "countBg"
+                size: [0.000000, 15.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 11.500000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 11.500000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/CounterAmmo"
+                children:
+                -   class: "UIStaticText"
+                    name: "countLabel"
+                    size: [0.000000, 15.000000]
+                    shadowoffset: [1.000000, 1.000000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    font: "WarHeliosCondC_Bold_13_shells"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -2.000000
+            -   prototype: "HotKey/HotKey"
+                name: "HotKey"
+                visible: false
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: -4.000000
+                    Background:
+                        colorInherit: "COLOR_IGNORE_PARENT"
+    -   prototype: "consumablesPanel"
+        name: "ConsumablesPanel"
+        position: [940.000000, 414.500000]
+        children:
+        -   path: "background"
+            position: [32.000000, 130.000000]
+    -   class: "UIControl"
+        customClass: "UIFollowAimSwitchButton"
+        name: "FollowAimSwitch"
+        position: [50.000000, 412.000000]
+        size: [32.000000, 32.000000]
+        exclusiveInput: false
+    -   class: "UIControl"
+        name: "PostMortemButtons"
+        position: [480.000000, 490.000000]
+        size: [600.000000, 100.000000]
+        pivot: [0.500000, 0.000000]
+        noInput: true
+        classes: "hud-scale"
+        components:
+            LinearLayout:
+                padding: 30.000000
+                dynamicSpacing: true
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 50.000000
+        children:
+        -   prototype: "SpectatePlayerButton"
+            name: "PrevPlayerButton"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   prototype: "StyledButton/StyledButton"
+            name: "BackToGarageButton"
+            size: [240.000000, 70.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                text: "Exit to Hangar"
+        -   prototype: "SpectatePlayerButton"
+            name: "NextPlayerButton"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "IconPrev"
+                components:
+                    Background:
+                        spriteModification: ["FLIP_HORIZONTAL"]
+    -   class: "UIControl"
+        name: "PostMortemCaption"
+        size: [1000.000000, 100.000000]
+        scale: [1.000000, 1.000000]
+        pivot: [0.500000, 0.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "modeText"
+            position: [200.000000, 0.000000]
+            size: [600.000000, 30.000000]
+            noInput: true
+            classes: "postHeader"
+            text: "#postbattle:SpectatorMode/Header"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "hintText"
+            position: [200.000000, 35.000000]
+            size: [600.000000, 55.000000]
+            noInput: true
+            classes: "postText"
+            multiline: "MULTILINE_ENABLED"
+            text: "#postbattle:SpectatorMode/Comment"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "FpsHolder"
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "FpsText"
+            position: [25.000000, 70.000000]
+            size: [75.000000, 30.000000]
+            classes: "text2-small text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["RIGHT", "VCENTER"]
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "PingHolder"
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "PingText"
+            position: [0.000000, 70.000000]
+            size: [75.000000, 30.000000]
+            classes: "text2-small text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["HCENTER", "VCENTER"]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    bottomAnchorEnabled: true

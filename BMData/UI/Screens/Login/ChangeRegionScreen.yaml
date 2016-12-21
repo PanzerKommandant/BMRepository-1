@@ -1,0 +1,167 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+Controls:
+-   prototype: "LoginCommon/ScreenBlank"
+    name: "Screen"
+    children:
+    -   path: "Background"
+        children:
+        -   prototype: "Common/ResizableDialog"
+            name: "Dialog"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -30.000000
+            children:
+            -   path: "Top/TitleText"
+                text: "#region:dialog/header"
+            -   path: "Middle/VerticalBox"
+                children:
+                -   class: "UIStaticText"
+                    name: "DescriptionText"
+                    size: [460.000000, 70.000000]
+                    classes: "text1 text-color-blue"
+                    debugDraw: false
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["HCENTER", "VCENTER"]
+                    text: "#region:dialog/description"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: false
+                            topAnchor: 10.000000
+                -   class: "UIControl"
+                    name: "ListContainer"
+                    size: [460.000000, 314.000000]
+                    debugDraw: false
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIList"
+                        name: "RegionsList"
+                        clip: true
+                        debugDraw: false
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                    -   prototype: "Common/VerticalScrollBar"
+                        name: "RegionsScrollBar"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: -5.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+            -   class: "UIStaticText"
+                name: "WarningText"
+                size: [500.000000, 100.000000]
+                debugDraw: false
+                debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                textColor: [1.000000, 0.913725, 0.756863, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "TOP"]
+                text: "#region:dialog/warning"
+                font: "WarHeliosCondC_21_warning"
+                components:
+                    IgnoreLayout: {}
+                    Anchor:
+                        leftAnchorEnabled: true
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 515.000000
+    -   path: "Background/RegionSelector"
+        visible: false
+        children: []
+    -   path: "Background/EULANotice"
+        visible: false
+-   class: "UIListCell"
+    name: "RegionCell"
+    size: [458.000000, 70.000000]
+    components:
+        Normal:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            leftRightStretchCap: 9.000000
+        PressedInside:
+            color: [1.000000, 1.000000, 1.000000, 0.500000]
+    children:
+    -   class: "UIControl"
+        name: "RegionIcon"
+        size: [52.000000, 40.000000]
+        noInput: true
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 20.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconRegion"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIStaticText"
+        name: "RegionName"
+        debugDraw: false
+        textalign: ["LEFT", "VCENTER"]
+        text: ""
+        font: "WarHeliosCondC_21"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 85.000000
+                rightAnchorEnabled: true
+                rightAnchor: 40.000000
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+    -   class: "UIControl"
+        name: "Selection"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -3.000000
+                rightAnchorEnabled: true
+                rightAnchor: -3.000000
+                topAnchorEnabled: true
+                topAnchor: -3.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -3.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/LobbyCommon/ButtonDefaultSelector"
+                leftRightStretchCap: 10.000000
+                topBottomStretchCap: 10.000000
+    -   class: "UIControl"
+        customClass: "UIPingIndicator"
+        name: "Ping"
+        size: [22.000000, 22.000000]
+        noInput: true
+        debugDraw: false
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 20.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/CommonUIElements/PingIndicator"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

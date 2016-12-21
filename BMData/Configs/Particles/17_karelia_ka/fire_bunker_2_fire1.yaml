@@ -1,0 +1,9 @@
+emitter:
+    emissionRange: 10.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "fire1"
+    radius: 1.200000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "oncircle"

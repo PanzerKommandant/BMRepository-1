@@ -1,0 +1,41 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, -0.500000, 0.000000]
+    emissionVectorInverted: true
+    name: "ghost"
+    shortEffect: false
+    size: [150.000000, 0.000000, 0.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    innerEmitterPath: "ghost1.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 10.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "ghost"
+    number: 2.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 40.000000

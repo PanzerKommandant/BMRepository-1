@@ -1,0 +1,2743 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+- "~res:/UI/Screens/Lobby/Hangar/SquadDialog.yaml"
+- "~res:/UI/Screens/Hangar/XpBonusResetTimer.yaml"
+- "~res:/UI/Screens/Lobby/Common/FlagButton.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Styles/Lobby/Inventory/InventoryBigStyles.yaml"
+- "~res:/UI/Screens/Common/IconButton.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/FontsExceptions.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/IndependenceFonts.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentRoomTimer.yaml"
+- "~res:/UI/Screens/Common/BattleButton.yaml"
+StyleSheets:
+-   selector: ".low-tanks-counter"
+    properties:
+        bg-color: [1.000000, 0.125490, 0.125490, 1.000000]
+-   selector: ".slot_empty"
+    properties:
+        bg-frame: 0
+-   selector: ".slot_empty #icon"
+    properties:
+        visible: false
+-   selector: ".slot_filled"
+    properties:
+        bg-frame: 1
+-   selector: ".slot_empty.shell_item"
+    properties:
+        bg-frame: 1
+-   selector: ".tank-inventory-panel:pressed_inside .inventory-slot, .tank-inventory-panel:disabled .inventory-slot"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".tank-inventory-panel .inventory-slot #count #countText"
+    properties:
+        text-textcolorInheritType: "COLOR_IGNORE_PARENT"
+-   selector: ".tank-inventory-panel:disabled .inventory-slot #count #countText"
+    properties:
+        text-textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   selector: ".tank-camouflages #badge"
+    properties:
+        visible: false
+-   selector: ".tank-camouflages.have-badge #badge"
+    properties:
+        visible: true
+-   selector: ".level-button"
+    properties:
+        bg-frame: 0
+-   selector: ".level-button:selected"
+    properties:
+        bg-frame: 1
+-   selector: ".filter-reset-button"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".filter-reset-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".filter-reset-button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.400000]
+-   selector: ".menu-button"
+    properties:
+        bg-frame: 1
+-   selector: ".menu-button:pressed_inside"
+    properties:
+        bg-frame: 2
+-   selector: ".setting-button"
+    properties:
+        bg-frame: 0
+-   selector: ".setting-button:pressed_inside"
+    properties:
+        bg-frame: 2
+-   selector: ".battle-button"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".battle-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".storage-button.have-badge #Badge"
+    properties:
+        visible: true
+-   selector: ".storage-button #Badge"
+    properties:
+        visible: false
+Controls:
+-   class: "UIStaticText"
+    name: "SlotLabel"
+    position: [0.000000, -24.000000]
+    size: [154.000000, 20.000000]
+    noInput: true
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    shadowoffset: [0.000000, 1.000000]
+    shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+    multiline: "MULTILINE_ENABLED"
+    text: ""
+    font: "WarHeliosCondC_17"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: -24.000000
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            align: ["LEFT", "BOTTOM"]
+-   class: "UIControl"
+    name: "InventorySlot"
+    size: [50.000000, 50.000000]
+    noInput: true
+    classes: "inventory-slot slot_state=slot_empty button"
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+        Background:
+            sprite: "~res:/Gfx/UI/Hangar/ItemButton"
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        size: [50.000000, 50.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   prototype: "InventorySlot"
+    name: "InventoryAmmoSlot"
+    classes: "ammo_item inventory-slot slot_state=slot_filled item_type=shell_item item_name=ar"
+    children:
+    -   path: "icon"
+        visible: true
+        classes: "ammo_bg"
+    -   class: "UIControl"
+        name: "count"
+        position: [21.000000, 29.000000]
+        size: [25.000000, 18.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 4.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 3.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/Hangar/CounterAmmo"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                align: ["RIGHT", "VCENTER"]
+        children:
+        -   class: "UIStaticText"
+            name: "countText"
+            position: [0.000000, -0.500000]
+            size: [25.000000, 19.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            shadowoffset: [1.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            font: "Font_9CB07A1B"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["RIGHT", "BOTTOM"]
+-   class: "UIControl"
+    name: "TankAmmoInventory"
+    size: [960.000000, 85.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 85.000000
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 25.000000]
+        size: [960.000000, 60.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                dynamicPadding: true
+                spacing: 14.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 60.000000
+            Anchor:
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "bg"
+            size: [960.000000, 60.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "bgLeft"
+                size: [480.000000, 60.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "bgRight"
+                position: [480.000000, 0.000000]
+                size: [480.000000, 60.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                        spriteModification: ["FLIP_HORIZONTAL"]
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "HangarMenu"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "menu"
+        position: [0.000000, 76.000000]
+        size: [330.000000, 692.000000]
+        components:
+            Anchor:
+                topAnchorEnabled: true
+                topAnchor: 76.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.113700, 0.113700, 0.113700, 1.000000]
+        children:
+        -   class: "UIList"
+            name: "menuList"
+            size: [330.000000, 507.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 185.000000
+                Background:
+                    color: [0.113700, 0.113700, 0.113700, 1.000000]
+        -   class: "UIList"
+            name: "squadInvitesList"
+            position: [330.000000, 0.000000]
+            size: [400.000000, 692.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            aggregatorPath: "~res:/UI/Screens/Lobby/Hangar/SquadInviteListItem.yaml"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 330.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.070600, 0.125500, 0.160800, 0.847100]
+        -   class: "UIList"
+            name: "submenuList"
+            position: [330.000000, 0.000000]
+            size: [400.000000, 692.000000]
+            visible: false
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 330.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.070600, 0.125500, 0.160800, 0.847100]
+        -   class: "UIControl"
+            name: "gradient"
+            position: [330.000000, 0.000000]
+            size: [20.000000, 692.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 330.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarShadowTile"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+        -   class: "UIStaticText"
+            name: "playersOnlineCaption"
+            position: [167.000000, 662.000000]
+            size: [48.000000, 30.000000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#hangar:regionInfo/playersOnline"
+            font: "Font_Menu"
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "playersOnline"
+            position: [220.000000, 662.000000]
+            size: [110.000000, 30.000000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "250 000 / 999 999"
+            font: "Font_Menu"
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "serverNameCaption"
+            position: [5.000000, 662.000000]
+            size: [50.000000, 30.000000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#hangar:regionInfo/serverName"
+            font: "Font_Menu"
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "serverName"
+            position: [60.000000, 662.000000]
+            size: [103.000000, 30.000000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "serverNameDebug"
+            font: "Font_Menu"
+            components:
+                Anchor:
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    name: "TanksPanel"
+    position: [0.000000, 0.000000]
+    size: [1024.000000, 390.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "tanksList"
+        size: [1024.000000, 126.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "tanksBg"
+            size: [1024.000000, 126.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/FooterTile"
+                    align: ["HCENTER", "BOTTOM"]
+        -   class: "UIList"
+            name: "list"
+            position: [92.000000, 0.000000]
+            size: [840.000000, 126.000000]
+            clip: true
+            orientation: "ORIENTATION_HORIZONTAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 92.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 92.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+        -   class: "UIControl"
+            name: "shadow-left"
+            position: [93.000000, 0.000000]
+            size: [60.000000, 126.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 93.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/TanksList_shadows"
+        -   class: "UIControl"
+            name: "shadow-right"
+            position: [871.000000, 0.000000]
+            size: [60.000000, 126.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 93.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/TanksList_shadows"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+        -   class: "UIStaticText"
+            name: "empty"
+            size: [1024.000000, 126.000000]
+            noInput: true
+            text: "hangar tanks list empty"
+            font: ""
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIScrollBar"
+            name: "scroll"
+            position: [96.000000, 120.000000]
+            size: [832.000000, 6.000000]
+            noInput: true
+            orientation: "ORIENTATION_HORIZONTAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 96.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 96.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [50.000000, 6.000000]
+                noInput: true
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/HorizontalScroll"
+                        leftRightStretchCap: 10.000000
+        -   class: "UIControl"
+            name: "highlight"
+            position: [513.000061, 63.000000]
+            size: [1031.000000, 138.000000]
+            pivot: [0.500485, 0.500000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: -3.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: -4.000000
+                    topAnchorEnabled: true
+                    topAnchor: -6.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: -6.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                    leftRightStretchCap: 15.000000
+                    topBottomStretchCap: 15.000000
+    -   class: "UIControl"
+        name: "filter"
+        position: [0.000000, 126.000000]
+        size: [1024.000000, 264.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.176500, 0.196100, 0.227500, 0.900000]
+        children:
+        -   class: "UIControl"
+            name: "topRow"
+            position: [55.000000, 32.000000]
+            size: [914.000000, 82.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 150.000000
+            children:
+            -   class: "UIControl"
+                name: "levelsBg"
+                size: [730.000000, 82.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "filterTitle"
+                    position: [315.000000, -30.000000]
+                    size: [100.000000, 30.000000]
+                    noInput: true
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    text: "hangar filter level"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    customClass: "UICategoryFilter"
+                    name: "levelFilter"
+                    size: [730.000000, 82.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                            leftRightStretchCap: 10.000000
+                            topBottomStretchCap: 10.000000
+            -   class: "UIControl"
+                name: "favoriteFilter"
+                position: [832.000000, 0.000000]
+                size: [82.000000, 82.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                        leftRightStretchCap: 6.000000
+                        topBottomStretchCap: 6.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "filterTitle"
+                    position: [-9.000000, -30.000000]
+                    size: [100.000000, 30.000000]
+                    noInput: true
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    text: "hangar filter favorite"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "bottomRow"
+            position: [55.000000, 149.000000]
+            size: [914.000000, 82.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 33.000000
+            children:
+            -   class: "UIControl"
+                name: "classesBg"
+                size: [298.000000, 82.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "filterTitle"
+                    position: [99.000000, -30.000000]
+                    size: [100.000000, 30.000000]
+                    noInput: true
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    text: "hangar filter type"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    customClass: "UICategoryFilter"
+                    name: "classFilter"
+                    size: [298.000000, 82.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                            leftRightStretchCap: 10.000000
+                            topBottomStretchCap: 10.000000
+            -   class: "UIControl"
+                name: "nationsBg"
+                position: [314.000000, 0.000000]
+                size: [500.000000, 82.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 314.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "filterTitle"
+                    position: [200.000000, -30.000000]
+                    size: [100.000000, 30.000000]
+                    noInput: true
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    text: "hangar filter nation"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    customClass: "UICategoryFilter"
+                    name: "nationsFilter"
+                    size: [20.000000, 82.000000]
+                    components:
+                        LinearLayout:
+                            padding: 10.000000
+                            spacing: 6.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 82.000000
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                            leftRightStretchCap: 10.000000
+                            topBottomStretchCap: 10.000000
+-   class: "UIControl"
+    name: "LevelButton"
+    size: [62.000000, 62.000000]
+    classes: "level-button"
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/Hangar/buttonfilter"
+            leftRightStretchCap: 5.000000
+            topBottomStretchCap: 5.000000
+    children:
+    -   class: "UIControl"
+        name: "img"
+        size: [62.000000, 62.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/FilterIcons"
+-   class: "UIControl"
+    name: "FilterReset"
+    size: [66.000000, 66.000000]
+    classes: "filter-reset-button"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 8.000000
+            rightAnchorEnabled: true
+            rightAnchor: 8.000000
+            topAnchorEnabled: true
+            topAnchor: 8.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 8.000000
+        Background:
+            sprite: "~res:/Gfx/UI/Hangar/redbutton"
+-   class: "UIControl"
+    name: "InventoryPanel"
+    size: [150.000000, 60.000000]
+    exclusiveInput: true
+    classes: "tank-inventory-panel"
+    components:
+        LinearLayout: {}
+    children:
+    -   class: "UIStaticText"
+        name: "SlotLabel"
+        size: [150.000000, 20.000000]
+        classes: "text2-small text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.745098]
+        multiline: "MULTILINE_ENABLED"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -24.000000
+-   prototype: "StyledButton/StyledButton"
+    name: "battleButton"
+    size: [200.000000, 74.000000]
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/Hangar/PlayButton"
+            frame: 1
+    children:
+    -   path: "Caption"
+        shadowoffset: [0.000000, -1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749020]
+        text: "BATTLE"
+        font: "Font_31B01A4C"
+-   class: "UIControl"
+    name: "TankCamouflages"
+    size: [50.000000, 60.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    classes: "tank-camouflages have-badge slot-empty"
+    children:
+    -   prototype: "SlotLabel"
+        name: "SlotLabel"
+        pivot: [0.500000, 0.000000]
+        text: "#camouflages:Shop/Title"
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+    -   prototype: "InventorySlot"
+        name: "Button"
+        enabled: true
+        noInput: false
+        children:
+        -   path: "icon"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/IconCamouflage"
+    -   class: "UIControl"
+        name: "badge"
+        position: [38.000000, -4.000000]
+        size: [16.000000, 16.000000]
+        scale: [1.000000, 1.000000]
+        noInput: true
+        components:
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"
+                color: [1.000000, 0.000000, 0.015686, 1.000000]
+-   prototype: "StyledButton/DefaultStyledButton"
+    name: "HangarButton"
+    size: [88.000000, 72.000000]
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+            frame: 0
+    children:
+    -   class: "UIStaticText"
+        name: "text"
+        size: [100.000000, 20.000000]
+        noInput: true
+        classes: "text2-small text-color-white"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "icon"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                frame: 0
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyHeader/Header"
+        name: "header"
+        size: [1024.000000, 80.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+        children:
+        -   path: "menuButton"
+            components:
+                Background:
+                    frame: 0
+            children: []
+    -   class: "UIControl"
+        name: "mainControls"
+        position: [0.000000, 80.000000]
+        size: [1024.000000, 562.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 126.000000
+        children:
+        -   class: "UIControl"
+            name: "topPanel"
+            size: [1024.000000, 80.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "bgLeft"
+                size: [512.000000, 80.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+            -   class: "UIControl"
+                name: "bgRight"
+                position: [512.000000, 0.000000]
+                size: [512.000000, 80.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                        spriteModification: ["FLIP_HORIZONTAL"]
+            -   class: "UIControl"
+                name: "questsAndPing"
+                position: [1.000000, 4.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIControl"
+                    name: "questsContainer"
+                    size: [100.000000, 90.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 5.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_SCALE_PROPORTIONAL"
+                            align: ["HCENTER", "BOTTOM"]
+                    children:
+                    -   class: "UIControl"
+                        customClass: "UIHangarQuestsButton"
+                        name: "questsButton"
+                        position: [0.000000, 0.000000]
+                        size: [80.000000, 72.000000]
+                        classes: "button"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: false
+                                topAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                                frame: 0
+                        children:
+                        -   class: "UIControl"
+                            name: "icon"
+                            size: [80.000000, 72.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/bagstyle"
+                                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        -   prototype: "UnreadIcon/UnreadIcon"
+                            name: "Indicator"
+                            size: [33.000000, 33.000000]
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: -6.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: -2.000000
+                    -   class: "UIStaticText"
+                        name: "questsLabel"
+                        position: [0.000000, 70.000000]
+                        size: [100.000000, 20.000000]
+                        noInput: true
+                        classes: "text2-small text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                        textalign: ["LEFT", "VCENTER"]
+                        text: "#quests:Hangar/ButtonTitle"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                -   class: "UIControl"
+                    name: "StoryContainer"
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 5.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "Spacing"
+                        size: [0.000000, 30.000000]
+                        noInput: true
+                    -   class: "UIControl"
+                        name: "Buttons"
+                        size: [0.000000, 0.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                                spacing: 30.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfFirstChild"
+                                verticalPolicy: "PercentOfChildrenSum"
+                    -   class: "UIControl"
+                        name: "Spacing"
+                        size: [0.000000, 10.000000]
+                        noInput: true
+                -   class: "UIControl"
+                    name: "ping"
+                    size: [62.000000, 22.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 5.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/PingBack"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [5.000000, 0.000000]
+                        size: [52.000000, 22.000000]
+                        noInput: true
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "PING"
+                        font: "WarHeliosCondC_17"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 5.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 5.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        customClass: "UIPingIndicator"
+                        name: "pingCircle"
+                        position: [40.000000, 0.000000]
+                        size: [22.000000, 22.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/CommonUIElements/PingIndicator"
+                                frame: 0
+            -   class: "UIControl"
+                name: "crewContainer"
+                position: [112.000000, 4.000000]
+                size: [300.000000, 72.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -250.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                children:
+                -   prototype: "StyledButton/StyledButton"
+                    name: "crewButton"
+                    size: [88.000000, 72.000000]
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_ALIGNED"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                            frame: 0
+                    children:
+                    -   class: "UIControl"
+                        name: "icon"
+                        size: [88.000000, 72.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                                frame: 24
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIStaticText"
+                    name: "crewLabel"
+                    position: [5.000000, 40.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "hangar button crew"
+                    font: "WarHeliosCondC_17"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 95.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 14.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "crewMastery"
+                    position: [5.000000, 11.000000]
+                    size: [200.000000, 30.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "100%"
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 95.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -10.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "modulesContainer"
+                position: [612.000000, 4.000000]
+                size: [300.000000, 72.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 250.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                children:
+                -   prototype: "StyledButton/StyledButton"
+                    name: "modulesTreeButton"
+                    size: [88.000000, 72.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_ALIGNED"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                            frame: 0
+                    children:
+                    -   class: "UIControl"
+                        name: "icon"
+                        size: [88.000000, 72.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                                frame: 25
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIStaticText"
+                    name: "tankXp"
+                    position: [95.000000, 11.000000]
+                    size: [200.000000, 30.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "2 0356"
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 95.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -10.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                    children:
+                    -   class: "UIControl"
+                        name: "star"
+                        position: [80.000000, 0.000000]
+                        size: [30.000000, 30.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                                frame: 3
+                -   class: "UIStaticText"
+                    name: "modulesLabel"
+                    position: [95.000000, 40.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "hangar button upgrade"
+                    font: "WarHeliosCondC_17"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 95.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 14.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   prototype: "BattleButton/battleButton"
+                name: "battleButton"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: false
+                        rightAnchor: 0.000000
+            -   prototype: "battleButton"
+                name: "disabledBattleButton"
+                classes: ""
+                children:
+                -   path: "Caption"
+                    classes: "header1 hacked-font"
+                    textColor: [1.000000, 1.000000, 1.000000, 0.501961]
+            -   prototype: "battleButton"
+                name: "repairButton"
+                children:
+                -   path: "Caption"
+                    text: "hangar repair button"
+            -   class: "UIControl"
+                name: "rightContainter"
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 15.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        enabled: true
+                        rightAnchorEnabled: true
+                        rightAnchor: 2.000000
+                        topAnchorEnabled: true
+                        topAnchor: 4.000000
+                children:
+                -   class: "UIControl"
+                    name: "StorageContainer"
+                    size: [91.000000, 93.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "StorageButton"
+                        size: [86.000000, 72.000000]
+                        classes: "button storage-button"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 1.000000
+                                topAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                                frame: 0
+                        children:
+                        -   class: "UIControl"
+                            name: "Icon"
+                            size: [86.000000, 72.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/storage_icon"
+                                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        -   class: "UIControl"
+                            name: "Badge"
+                            size: [16.000000, 16.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 5.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 5.000000
+                                Background:
+                                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"
+                                    color: [1.000000, 0.000000, 0.000000, 1.000000]
+                    -   class: "UIStaticText"
+                        name: "StorageLabel"
+                        classes: "text2-small text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                        textalign: ["RIGHT", "VCENTER"]
+                        text: "storage/Title"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 3.000000
+                -   class: "UIControl"
+                    name: "BonusTimerContainer"
+                    size: [130.000000, 32.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "Ignore"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    children:
+                    -   prototype: "XpBonusResetTimer/XpBonusResetTimer"
+                        name: "xpBonusResetTimer"
+                        size: [124.000000, 32.000000]
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 4.000000
+        -   class: "UIStaticText"
+            name: "repairText"
+            position: [280.000000, 160.000000]
+            size: [464.000000, 30.000000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+            text: "LOCK_IS_BROKEN"
+            font: "Font_8A88A947"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   prototype: "TankAmmoInventory"
+            name: "tankInventory"
+            position: [0.000000, 477.000000]
+            size: [1024.000000, 85.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   path: "Content"
+                children:
+                -   prototype: "TankCamouflages"
+                    name: "TankCamouflages"
+                -   class: "UIControl"
+                    name: "Spacer"
+                -   prototype: "InventoryPanel"
+                    name: "TankConsumables"
+                    children:
+                    -   path: "SlotLabel"
+                        text: "#lobby:MainScreen/Consumables/Title"
+                    -   prototype: "InventorySlot"
+                        name: "Slot0"
+                    -   prototype: "InventorySlot"
+                        name: "Slot1"
+                    -   prototype: "InventorySlot"
+                        name: "Slot2"
+                -   prototype: "InventoryPanel"
+                    name: "TankProvisions"
+                    children:
+                    -   path: "SlotLabel"
+                        text: "#lobby:MainScreen/Provisions/Title"
+                    -   prototype: "InventorySlot"
+                        name: "Slot0"
+                    -   prototype: "InventorySlot"
+                        name: "Slot1"
+                    -   prototype: "InventorySlot"
+                        name: "Slot2"
+                -   prototype: "InventoryPanel"
+                    name: "TankAmmunition"
+                    children:
+                    -   path: "SlotLabel"
+                        text: "#lobby:MainScreen/Ammunition/Title"
+                    -   prototype: "InventoryAmmoSlot"
+                        name: "Slot0"
+                    -   prototype: "InventoryAmmoSlot"
+                        name: "Slot1"
+                    -   prototype: "InventoryAmmoSlot"
+                        name: "Slot2"
+                    -   class: "UIControl"
+                        name: "AmmoGlowBg"
+                        size: [154.000000, 60.000000]
+                        noInput: true
+                        components:
+                            LinearLayout: {}
+                            IgnoreLayout: {}
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                        children:
+                        -   prototype: "InventorySlot"
+                            name: "Slotbg0"
+                            components:
+                                Background:
+                                    drawType: "DRAW_SCALE_TO_RECT"
+                                    sprite: "~res:/Gfx/UI/Hangar/AmmoGlow"
+                        -   prototype: "InventorySlot"
+                            name: "Slotbg1"
+                            components:
+                                Background:
+                                    drawType: "DRAW_SCALE_TO_RECT"
+                                    sprite: "~res:/Gfx/UI/Hangar/AmmoGlow"
+                        -   prototype: "InventorySlot"
+                            name: "Slotbg2"
+                            components:
+                                Background:
+                                    drawType: "DRAW_SCALE_TO_RECT"
+                                    sprite: "~res:/Gfx/UI/Hangar/AmmoGlow"
+                -   prototype: "InventoryPanel"
+                    name: "TankOptionalDevices"
+                    children:
+                    -   path: "SlotLabel"
+                        text: "#lobby:MainScreen/Equipment/Title"
+                    -   prototype: "InventorySlot"
+                        name: "Slot0"
+                    -   prototype: "InventorySlot"
+                        name: "Slot1"
+                    -   prototype: "InventorySlot"
+                        name: "Slot2"
+        -   class: "UIControl"
+            name: "additionInfo"
+            size: [1024.000000, 65.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    dynamicPadding: true
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 80.000000
+            children:
+            -   class: "UIStaticText"
+                name: "smartDLCState"
+                visible: false
+                text: "Download_in_progress"
+                font: "Font_18_bold_chat"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "tutorialObjective"
+                position: [0.000000, 0.000000]
+                size: [1024.000000, 65.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfMaxChild"
+                children:
+                -   class: "UIControl"
+                    name: "bgRight"
+                    position: [512.000000, 0.000000]
+                    size: [512.000000, 65.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                            spriteModification: ["FLIP_HORIZONTAL"]
+                -   class: "UIControl"
+                    name: "bgLeft"
+                    size: [512.000000, 65.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                -   class: "UIControl"
+                    customClass: "UITutorialObjectiveControl"
+                    name: "task"
+                    position: [512.000000, 32.500000]
+                    size: [450.000000, 65.000000]
+                    pivot: [0.500000, 0.500000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "questIcon"
+                        size: [38.000000, 65.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/bagstyle"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIStaticText"
+                        name: "title"
+                        position: [45.000000, 9.000000]
+                        size: [405.000000, 22.000000]
+                        noInput: true
+                        textalign: ["LEFT", "BOTTOM"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "#hangar_tutorial:task/turret_unlock"
+                        font: "WarHeliosCondC_Bold_21"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 45.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 9.000000
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIControl"
+                        name: "reward"
+                        position: [45.000000, 31.000000]
+                        size: [405.000000, 22.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 45.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 12.000000
+                        children:
+                        -   class: "UIStaticText"
+                            name: "text"
+                            size: [405.000000, 22.000000]
+                            noInput: true
+                            textalign: ["LEFT", "VCENTER"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "#hangar_tutorial:hangar/task_reward"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                        -   class: "UIControl"
+                            name: "value"
+                            position: [293.000000, 0.000000]
+                            size: [110.500000, 22.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                            children:
+                            -   class: "UIStaticText"
+                                name: "text"
+                                size: [110.500000, 22.000000]
+                                noInput: true
+                                textalign: ["LEFT", "VCENTER"]
+                                textUseRtlAlign: "DONT_USE"
+                                text: "100 500"
+                                font: "WarHeliosCondC_Bold_21"
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                            -   class: "UIControl"
+                                name: "icon"
+                                position: [65.000000, 2.000000]
+                                size: [22.000000, 22.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        vCenterAnchorEnabled: true
+                                        vCenterAnchor: 2.000000
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   prototype: "HangarButton"
+            name: "AchievementsButton"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 5.000000
+            children:
+            -   path: "text"
+                text: "#hangar:button/Achievements"
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: -22.000000
+            -   path: "icon"
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                        frame: 3
+            -   class: "UIControl"
+                name: "highlight"
+                pivot: [0.500000, 0.500000]
+                visible: false
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -8.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: -8.000000
+                        topAnchorEnabled: true
+                        topAnchor: -8.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: -8.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                        leftRightStretchCap: 15.000000
+                        topBottomStretchCap: 15.000000
+        -   prototype: "HangarButton"
+            name: "chatButton"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 2.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 5.000000
+            children:
+            -   path: "text"
+                text: "hangar button chat"
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: -22.000000
+            -   path: "icon"
+                components:
+                    Background:
+                        frame: 27
+            -   class: "UIStaticText"
+                customClass: "ExternalChatAlertIcon"
+                name: "unreadCount"
+                position: [56.000000, -7.000000]
+                size: [30.000000, 32.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                fitting: ["REDUCE"]
+                text: "99"
+                font: "WarHeliosCondC_Bold_21"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 2.000000
+                        topAnchorEnabled: true
+                        topAnchor: -7.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"
+                        color: [0.768600, 0.023500, 0.043100, 1.000000]
+            -   class: "UIControl"
+                name: "highlight"
+                pivot: [0.500000, 0.500000]
+                visible: false
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                        leftRightStretchCap: 15.000000
+                        topBottomStretchCap: 15.000000
+                        margins: [-8.000000, -8.000000, -8.000000, -8.000000]
+        -   class: "UIControl"
+            name: "Special"
+            noInput: true
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "devInfo"
+                size: [140.000000, 150.000000]
+                noInput: true
+                children:
+                -   class: "UIStaticText"
+                    name: "tutorialQueue"
+                    position: [-60.000000, 0.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "fps"
+                    position: [-60.000000, 25.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "graphicsSettingsLevel"
+                    position: [-60.000000, 50.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 50.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "accountEntityId"
+                    position: [-60.000000, 75.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 75.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "accountDbId"
+                    position: [-60.000000, 100.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 100.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "accountClanId"
+                    position: [-60.000000, 125.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 125.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "serverUTCTime"
+                    position: [-60.000000, 150.000000]
+                    size: [200.000000, 20.000000]
+                    noInput: true
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: ""
+                    font: "Font_9CB07A1B"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 150.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "VerticalContainer"
+                size: [82.000000, 152.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        dynamicPadding: true
+                        spacing: 20.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   prototype: "IconButton/IconButton"
+                    name: "ShowLimitedTimeOffer"
+                    position: [0.000000, 0.000000]
+                    size: [82.000000, 66.000000]
+                    components:
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "icon"
+                        size: [80.000000, 64.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 1.000000
+                                hCenterAnchorEnabled: false
+                                rightAnchorEnabled: true
+                                rightAnchor: 1.000000
+                                topAnchorEnabled: true
+                                topAnchor: 1.000000
+                                vCenterAnchorEnabled: false
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 1.000000
+                            Background:
+                                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   prototype: "ExpireTimer/ExpireTimer"
+                        name: "Timer"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 5.000000
+                -   prototype: "IconButton/IconButton"
+                    name: "VideoAds"
+                    position: [0.000000, 86.000000]
+                    size: [82.000000, 66.000000]
+                    components:
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "icon"
+                        size: [0.000000, 0.000000]
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Hangar/ads_icon"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIControl"
+                        name: "reward_icon"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 22.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 15.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/Hangar/ads_gold"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "TrainingControls"
+            position: [0.000000, 0.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   prototype: "StyledButton/StyledButton"
+                name: "TrainingRoomButton"
+                size: [400.000000, 70.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 110.000000
+                    Background:
+                        frame: 0
+                children:
+                -   path: "Caption"
+                    text: "hangar button training"
+            -   class: "UIStaticText"
+                name: "InTrainingRoomNote"
+                position: [259.500000, 100.000000]
+                size: [505.000000, 22.000000]
+                noInput: true
+                classes: "header3"
+                textalign: ["HCENTER", "BOTTOM"]
+                textUseRtlAlign: "DONT_USE"
+                text: "hangar comment in training"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 100.000000
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "TournamentControls"
+            position: [0.000000, 80.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 80.000000
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "ShadowContainer"
+                classes: ""
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        padding: 10.000000
+                        spacing: 10.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "bgLeft"
+                    noInput: true
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                -   class: "UIControl"
+                    name: "bgRight"
+                    position: [512.000000, 0.000000]
+                    noInput: true
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                            spriteModification: ["FLIP_HORIZONTAL"]
+                -   class: "UIControl"
+                    name: "TitleContainer"
+                    classes: ""
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            padding: 0.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            leftAnchorEnabled: false
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "TournamentTitle"
+                        classes: "header2 lang_independece"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "TimeContainer"
+                        size: [175.000000, 23.000000]
+                        classes: "textType=registration-invisible"
+                        components:
+                            LinearLayout:
+                                spacing: 5.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "StageTitle"
+                            position: [0.000000, 0.000000]
+                            classes: "text2-small lang_independece"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                        -   class: "UIStaticText"
+                            name: "RoundTitle"
+                            position: [5.000000, 0.000000]
+                            classes: "text2-small"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                        -   class: "UIStaticText"
+                            name: "BeforeTimeTitle"
+                            position: [10.000000, 0.000000]
+                            classes: "text2-small"
+                            text: "#lobby:MainScreen/Tournament/Start"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                        -   prototype: "TournamentRoomTimer/TournamentTimer"
+                            name: "TournamentTimer"
+                -   prototype: "StyledButton/DefaultStyledButton"
+                    name: "TournamentRoomButton"
+                    size: [220.000000, 68.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                            frame: 2
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Caption"
+                        size: [220.000000, 68.000000]
+                        classes: "header4 text-color-white"
+                        fitting: ["REDUCE"]
+                        text: "tournaments/Button/ToTournamentRoom"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+    -   prototype: "SquadDialog/SquadDialog"
+        name: "squadDialogAggregator"
+        position: [0.000000, 160.000000]
+        size: [1024.000000, 397.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   path: "bg/Container/Player/Box/ReadyButton"
+            enabled: true
+            children: []
+    -   class: "UIControl"
+        name: "fade"
+        size: [1024.000000, 768.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/DarkBackground"
+    -   prototype: "TanksPanel"
+        name: "TanksPanel"
+        position: [0.000000, 378.000000]
+        components:
+            Anchor:
+                bottomAnchorEnabled: true
+        children:
+        -   path: "tanksList"
+            children:
+            -   prototype: "StyledButton/StyledButton"
+                name: "FilterOnOff"
+                size: [94.000000, 126.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/Hangar/FilterHideButton"
+                        frame: 0
+                        align: ["HCENTER", "BOTTOM"]
+                children:
+                -   path: "Caption"
+                    visible: false
+                    font: "WarHeliosCondC_14"
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [64.000000, 64.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                            frame: 8
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIStaticText"
+                    name: "FilterTitle"
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752941]
+                    text: "hangar filter"
+                    font: "WarHeliosCondC_17_filter"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 12.000000
+                -   class: "UIStaticText"
+                    name: "FilterOnOffText"
+                    position: [-3.000000, 82.000000]
+                    size: [100.000000, 30.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752941]
+                    text: "hangar filter on"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 34.000000
+            -   prototype: "StyledButton/StyledButton"
+                name: "TanksTreeButton"
+                size: [94.000000, 126.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: -1.000000
+                        topAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/Hangar/FilterHideButton"
+                        frame: 0
+                        align: ["HCENTER", "BOTTOM"]
+                children:
+                -   path: "Caption"
+                    visible: true
+                    classes: "text2-small hacked-font text-color-white"
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752941]
+                    multiline: "MULTILINE_ENABLED"
+                    fitting: ["REDUCE"]
+                    textalign: ["HCENTER", "TOP"]
+                    text: "hangar button tech tree"
+                    components:
+                        Anchor:
+                            leftAnchor: 5.000000
+                            rightAnchor: 5.000000
+                            topAnchorEnabled: false
+                            vCenterAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [64.000000, 64.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                            frame: 4
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "filter/topRow"
+            noInput: false
+            children:
+            -   class: "UIControl"
+                name: "x2Filter"
+                size: [82.000000, 82.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 92.000000
+                        topAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                        leftRightStretchCap: 6.000000
+                        topBottomStretchCap: 6.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "FilterTitle"
+                    size: [100.000000, 30.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752941]
+                    text: "hangar filter xp"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   prototype: "LevelButton"
+                    name: "x2Button"
+                    children:
+                    -   path: "img"
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/xpAll"
+                                frame: 1
+                        children:
+                        -   class: "UIStaticText"
+                            name: "label"
+                            text: "x2"
+                            font: "Font_8A88A947"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: -2.000000
+                                    rightAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: -2.000000
+        -   path: "filter/topRow/levelsBg/levelFilter"
+            components:
+                LinearLayout:
+                    padding: 10.000000
+                    dynamicSpacing: true
+            children:
+            -   prototype: "LevelButton"
+                name: "Level1"
+            -   prototype: "LevelButton"
+                name: "Level2"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 1
+            -   prototype: "LevelButton"
+                name: "Level3"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 2
+            -   prototype: "LevelButton"
+                name: "Level4"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 3
+            -   prototype: "LevelButton"
+                name: "Level5"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 4
+            -   prototype: "LevelButton"
+                name: "Level6"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 5
+            -   prototype: "LevelButton"
+                name: "Level7"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 6
+            -   prototype: "LevelButton"
+                name: "Level8"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 7
+            -   prototype: "LevelButton"
+                name: "Level9"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 8
+            -   prototype: "LevelButton"
+                name: "Level10"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 9
+        -   path: "filter/topRow/favoriteFilter"
+            children:
+            -   prototype: "LevelButton"
+                name: "FavoriteButton"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 14
+        -   path: "filter/bottomRow"
+            children:
+            -   class: "UIControl"
+                name: "filterResetCont"
+                position: [832.000000, 0.000000]
+                size: [82.000000, 82.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/Hangar/sectionfilter"
+                        leftRightStretchCap: 6.000000
+                        topBottomStretchCap: 6.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "filterTitle"
+                    position: [-9.000000, -30.000000]
+                    size: [100.000000, 30.000000]
+                    noInput: true
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    text: "hangar filter clear"
+                    font: "WarHeliosCondC_Bold_14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: -30.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   prototype: "FilterReset"
+                    name: "FilterReset"
+        -   path: "filter/bottomRow/classesBg/classFilter"
+            components:
+                LinearLayout:
+                    padding: 10.000000
+                    dynamicSpacing: true
+            children:
+            -   prototype: "LevelButton"
+                name: "ClassLight"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/FilterIcons"
+                            frame: 10
+            -   prototype: "LevelButton"
+                name: "ClassMedium"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 11
+            -   prototype: "LevelButton"
+                name: "ClassHeavy"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 12
+            -   prototype: "LevelButton"
+                name: "ClassAtSpg"
+                children:
+                -   path: "img"
+                    components:
+                        Background:
+                            frame: 13
+        -   path: "filter/bottomRow/nationsBg/nationsFilter"
+            children:
+            -   prototype: "FlagButton/FlagButton"
+                name: "usaButton"
+                classes: "flag-button usa"
+            -   prototype: "FlagButton/FlagButton"
+                name: "ussrButton"
+                classes: "flag-button ussr"
+            -   prototype: "FlagButton/FlagButton"
+                name: "germanyButton"
+                classes: "flag-button germany"
+            -   prototype: "FlagButton/FlagButton"
+                name: "ukButton"
+                classes: "flag-button uk"
+            -   prototype: "FlagButton/FlagButton"
+                name: "japanButton"
+                classes: "flag-button japan"
+            -   prototype: "FlagButton/FlagButton"
+                name: "chinaButton"
+                visible: false
+                classes: "flag-button china"
+            -   prototype: "FlagButton/FlagButton"
+                name: "franceButton"
+                visible: false
+                classes: "flag-button france"
+            -   prototype: "FlagButton/FlagButton"
+                name: "otherButton"
+                visible: false
+                classes: "flag-button other"
+    -   prototype: "HangarMenu"
+        name: "hangarMenu"
+        children:
+        -   path: "menu"
+            children:
+            -   prototype: "StyledButton/StyledButton"
+                name: "LogoutButton"
+                size: [330.000000, 86.000000]
+                classes: "menu-button"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 97.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Hangar/SidebarButtons"
+                children:
+                -   path: "Caption"
+                    position: [86.000000, 0.000000]
+                    size: [244.000000, 86.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "hangar menu logout"
+                    font: "Font_18_bold"
+                    components:
+                        Anchor:
+                            leftAnchor: 86.000000
+                -   class: "UIControl"
+                    name: "Icon"
+                    position: [11.000000, 11.000000]
+                    size: [64.000000, 64.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 11.000000
+                            vCenterAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                            frame: 6
+            -   prototype: "StyledButton/StyledButton"
+                name: "SettingsButton"
+                size: [330.000000, 86.000000]
+                classes: "setting-button"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 20.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Hangar/SidebarButtons"
+                children:
+                -   path: "Caption"
+                    position: [86.000000, 0.000000]
+                    size: [244.000000, 86.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "hangar menu settings"
+                    font: "Font_18_bold"
+                    components:
+                        Anchor:
+                            leftAnchor: 86.000000
+                -   class: "UIControl"
+                    name: "Icon"
+                    position: [11.000000, 11.000000]
+                    size: [64.000000, 64.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 11.000000
+                            vCenterAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                            frame: 7
+        -   path: "menu/menuList"
+            position: [0.000000, 0.000000]

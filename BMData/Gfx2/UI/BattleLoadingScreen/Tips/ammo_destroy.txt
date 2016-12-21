@@ -1,0 +1,5 @@
+1
+ammo_destroy0.tex
+508 320
+1
+0 0 508 280 0 40 0 frame0

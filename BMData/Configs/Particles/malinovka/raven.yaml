@@ -1,0 +1,43 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "raven"
+    radius: 30.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "shockwave"
+layer0:
+    activeLODS: [1, 0, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.107100, 1.000000, 0.480000, 1.000000, 0.888000, 1.000000, 0.996700, 0.000000]
+    blending: 1
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 5.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: true
+    isLooped: false
+    layerType: "single"
+    life: 20.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "raven"
+    particleOrientation: 8
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.600000, 0.600000]
+    sprite: "../../../Gfx/Particles/malinovka/raven"
+    startTime: 0.000000
+    type: "layer"
+    velocity: -3.000000
+    velocityVariation: -0.200000

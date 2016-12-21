@@ -1,0 +1,183 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "debris2"
+    shortEffect: false
+    size: [1.300000, 1.300000, 4.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [211.000000, 151.000000, 93.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris"
+    number: 40.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.050000, 0.050000]
+    sizeVariation: [0.150000, 0.150000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/white_debris_anim"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 2.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 2.000000
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [211.000000, 151.000000, 93.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 20.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris2"
+    number: 50.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.050000, 0.050000]
+    sizeVariation: [0.100000, 0.100000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/white_debris_anim_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 3.000000
+layer2:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [211.000000, 151.000000, 93.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 15.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris3"
+    number: 50.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.025000, 0.025000]
+    sizeVariation: [0.050000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/white_debris_anim_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 4.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 2.000000
+layer3:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [211.000000, 151.000000, 93.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 26.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris4"
+    number: 50.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.025000, 0.025000]
+    sizeVariation: [0.050000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/white_debris_anim_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 3.000000

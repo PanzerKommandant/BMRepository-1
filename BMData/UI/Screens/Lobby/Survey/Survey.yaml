@@ -1,0 +1,27 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/HangarBaseScreen.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   prototype: "HangarBaseScreen/Screen"
+    name: "Screen"
+    children:
+    -   path: "Content"
+        position: [0.000000, 80.000000]
+        children:
+        -   class: "UIWebView"
+            name: "webView"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   path: "Content/Background"
+        components:
+            Background:
+                drawType: "DRAW_FILL"
+                sprite: ""

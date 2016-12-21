@@ -1,0 +1,152 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Styles/Lobby/Inventory/Event/InventoryNormalStyles.yaml"
+StyleSheets:
+-   selector: ".equipment_item.teapudding ? #icon.small, .equipment_item.teapudding #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/teapudding.txt"
+-   selector: ".equipment_item.ration_other ? #icon.small, .equipment_item.ration_other #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/other_big-food.txt"
+-   selector: ".equipment_item.regular_ration_other ? #icon.small, .equipment_item.regular_ration_other #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/other_small-food.txt"
+-   selector: ".equipment_item.largeRecoverkit ? #icon.small, .equipment_item.largeRecoverkit #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/largeRecoverkit.txt"
+-   selector: ".equipment_item.berserk ? #icon.small, .equipment_item.berserk #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/berserk.txt"
+-   selector: ".equipment_item.afterburning ? #icon.small, .equipment_item.afterburning #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/afterburning.txt"
+-   selector: ".equipment_item.onigiri ? #icon.small, .equipment_item.onigiri #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/onigiri.txt"
+-   selector: ".equipment_item.chinafood ? #icon.small, .equipment_item.chinafood #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/chinafood.txt"
+-   selector: ".equipment_item.autofire ? #icon.small, .equipment_item.autofire #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/autofire.txt"
+-   selector: ".equipment_item.russ-food ? #icon.small, .equipment_item.russ-food #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/russ-food.txt"
+-   selector: ".equipment_item.chocolate ? #icon.small, .equipment_item.chocolate #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/chocolate.txt"
+-   selector: ".equipment_item.cocacola ? #icon.small, .equipment_item.cocacola #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/cocacola.txt"
+-   selector: ".equipment_item.largeRepairkit ? #icon.small, .equipment_item.largeRepairkit #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/largeRepairkit.txt"
+-   selector: ".equipment_item.smallRepairkit ? #icon.small, .equipment_item.smallRepairkit #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/smallRepairkit.txt"
+-   selector: ".equipment_item.largeMedkit ? #icon.small, .equipment_item.largeMedkit #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/largeMedkit.txt"
+-   selector: ".equipment_item.autoExtinguishers ? #icon.small, .equipment_item.autoExtinguishers #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Consumables/autoExtinguishers.txt"
+-   selector: ".equipment_item.hot_coffee ? #icon.small, .equipment_item.hot_coffee #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/hot_coffee.txt"
+-   selector: ".equipment_item.chocolate_bar ? #icon.small, .equipment_item.chocolate_bar #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/chocolate_bar.txt"
+-   selector: ".equipment_item.cocacola_can ? #icon.small, .equipment_item.cocacola_can #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/cocacola_can.txt"
+-   selector: ".equipment_item.condensed_milk ? #icon.small, .equipment_item.condensed_milk #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/condensed_milk.txt"
+-   selector: ".equipment_item.black_tea ? #icon.small, .equipment_item.black_tea #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/black_tea.txt"
+-   selector: ".equipment_item.white_rice ? #icon.small, .equipment_item.white_rice #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/white_rice.txt"
+-   selector: ".equipment_item.regular_ration ? #icon.small, .equipment_item.regular_ration #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/regular_ration.txt"
+-   selector: ".equipment_item.pasty ? #icon.small, .equipment_item.pasty #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/pasty.txt"
+-   selector: ".equipment_item.regular_fuel ? #icon.small, .equipment_item.regular_fuel #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/regular_fuel.txt"
+-   selector: ".equipment_item.improved_fuel ? #icon.small, .equipment_item.improved_fuel #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/improved_fuel.txt"
+-   selector: ".equipment_item.safety_set ? #icon.small, .equipment_item.safety_set #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Provisions/safety_set.txt"
+-   selector: ".optional_device_item.steelRollers ? #icon.small, .optional_device_item.steelRollers #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/steelRollers.txt"
+-   selector: ".optional_device_item.camouflageNet ? #icon.small, .optional_device_item.camouflageNet #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/camouflageNet.txt"
+-   selector: ".optional_device_item.coatedOptics ? #icon.small, .optional_device_item.coatedOptics #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/coatedOptics.txt"
+-   selector: ".optional_device_item.stereoscope ? #icon.small, .optional_device_item.stereoscope #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/stereoscope.txt"
+-   selector: ".optional_device_item.antifragmentationLining ? #icon.small, .optional_device_item.antifragmentationLining #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/antifragmentationLining.txt"
+-   selector: ".optional_device_item.toolbox ? #icon.small, .optional_device_item.toolbox #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/toolbox.txt"
+-   selector: ".optional_device_item.aimingStabilizer ? #icon.small, .optional_device_item.aimingStabilizer #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/aimingStabilizer.txt"
+-   selector: ".optional_device_item.filterCyclone ? #icon.small, .optional_device_item.filterCyclone #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/filterCyclone.txt"
+-   selector: ".optional_device_item.carbonDioxide ? #icon.small, .optional_device_item.carbonDioxide #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/carbonDioxide.txt"
+-   selector: ".optional_device_item.wetCombatPack ? #icon.small, .optional_device_item.wetCombatPack #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/wetCombatPack.txt"
+-   selector: ".optional_device_item.enhancedAimDrives ? #icon.small, .optional_device_item.enhancedAimDrives #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/enhancedAimDrives.txt"
+-   selector: ".optional_device_item.rammer ? #icon.small, .optional_device_item.rammer #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/rammer.txt"
+-   selector: ".optional_device_item.grousers ? #icon.small, .optional_device_item.grousers #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/grousers.txt"
+-   selector: ".optional_device_item.improvedVentilation ? #icon.small, .optional_device_item.improvedVentilation #icon.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/OptionalDevices/improvedVentilation.txt"
+-   selector: ".ammo_item.full .ammo_bg.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Ammunition/ammo"
+-   selector: ".ammo_item.empty .ammo_bg.small"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryIcons/Normal/Ammunition/ammo_no"
+-   selector: ".ammo_item.ap .ammo_icon.small, .ammo_item.ap .ammo_bg.small"
+    properties:
+        bg-frame: 0
+-   selector: ".ammo_item.ap_premium .ammo_icon.small, .ammo_item.ap_premium .ammo_bg.small"
+    properties:
+        bg-frame: 1
+-   selector: ".ammo_item.ap_cr .ammo_icon.small, .ammo_item.ap_cr .ammo_bg.small"
+    properties:
+        bg-frame: 2
+-   selector: ".ammo_item.he .ammo_icon.small, .ammo_item.he .ammo_bg.small"
+    properties:
+        bg-frame: 3
+-   selector: ".ammo_item.he_premium .ammo_icon.small, .ammo_item.he_premium .ammo_bg.small"
+    properties:
+        bg-frame: 4
+-   selector: ".ammo_item.hc .ammo_icon.small, .ammo_item.hc .ammo_bg.small"
+    properties:
+        bg-frame: 5

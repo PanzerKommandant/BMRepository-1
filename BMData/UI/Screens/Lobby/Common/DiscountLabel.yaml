@@ -1,0 +1,76 @@
+Header:
+    version: "2"
+StyleSheets:
+-   selector: ".discount-label.clan-supply"
+    properties:
+        sizePolicy-horizontalPolicy: "PercentOfChildrenSum"
+-   selector: ".discount-label.clan-supply #Image"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/DiscountClanSmall.txt"
+-   selector: ".discount-label.clan-supply #Value"
+    properties:
+        sizePolicy-horizontalPolicy: "PercentOfContent"
+        text-font: "WarHeliosCondC_Bold_25"
+        text-shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text-shadowoffset: [0.000000, 1.000000]
+-   selector: ".discount-label.action"
+    properties:
+        linearLayout-enabled: false
+        sizePolicy-horizontalPolicy: "PercentOfFirstChild"
+-   selector: ".discount-label.action #Image"
+    properties:
+        anchor-hCenterAnchor: 2.000000
+        anchor-vCenterAnchor: -1.000000
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/DiscountSmall"
+-   selector: ".discount-label.action #Value"
+    properties:
+        anchor-hCenterAnchor: 2.000000
+        anchor-vCenterAnchor: -3.000000
+        sizePolicy-horizontalPolicy: "PercentOfParent"
+        text-font: "WarHeliosCondC_Bold_19"
+        text-shadowcolor: [0.000000, 0.000000, 0.000000, 0.247059]
+        text-shadowoffset: [0.000000, 1.000000]
+        text-textColor: [1.000000, 0.835294, 0.011765, 1.000000]
+-   selector: ".discount-label.action.big #Image"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/DiscountBig.txt"
+-   selector: ".discount-label.action.big #Value"
+    properties:
+        text-font: "WarHeliosCondC_Bold_25"
+Controls:
+-   class: "UIControl"
+    customClass: "UIDiscountLabel"
+    name: "DiscountLabel"
+    noInput: true
+    classes: "discount-label type=action"
+    components:
+        LinearLayout:
+            orientation: "RightToLeft"
+            spacing: 5.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfFirstChild"
+        Anchor: {}
+    children:
+    -   class: "UIControl"
+        name: "Image"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIStaticText"
+        name: "Value"
+        text: "-ERR%"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                align: ["LEFT", "TOP"]

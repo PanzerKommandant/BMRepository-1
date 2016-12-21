@@ -1,0 +1,153 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/Settings/Settings.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "KeyboardMouseControlOptionsPage"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIScrollView"
+        name: "ScrollView"
+        position: [0.000000, 0.000000]
+        clip: true
+        noInput: true
+        autoUpdate: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                color: [0.192200, 0.192200, 0.192200, 1.000000]
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 2.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   prototype: "SettingsCommon/SliderWithCaption"
+                name: "MouseSensitivity"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+                children:
+                -   path: "ValueAndCaption/GroupCaption"
+                    position: [0.000000, 0.000000]
+                    text: "#settings:Controls/MouseSensitivity/Title"
+            -   prototype: "SettingsCommon/SliderWithCaption"
+                name: "MouseSensitivityInSnipperMode"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+                children:
+                -   path: "ValueAndCaption/GroupCaption"
+                    position: [0.000000, 0.000000]
+                    text: "#settings:Controls/MouseSensitivityInSnipperMode/Title"
+            -   class: "UIControl"
+                name: "InvertedGroup"
+                size: [1024.000000, 80.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                children:
+                -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                    name: "InvertedMouse"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: false
+                            leftAnchor: 5.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 1.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 5.000000
+                    children:
+                    -   path: "GroupCaption"
+                        textalign: ["LEFT", "VCENTER"]
+                        text: "#settings:Controls/InvertedMouse/Title"
+                -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                    name: "InvertedZoom"
+                    position: [5.000000, 0.000000]
+                    size: [506.000000, 80.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 5.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: -1.000000
+                            rightAnchorEnabled: false
+                            rightAnchor: 5.000000
+                    children:
+                    -   path: "GroupCaption"
+                        textalign: ["LEFT", "VCENTER"]
+                        text: "#settings:Other/InvertedZoom/Title"
+                    -   path: "Description"
+                        text: ""
+            -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                name: "SmartZoom"
+                size: [507.000000, 80.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        hCenterAnchorEnabled: true
+                children:
+                -   path: "GroupCaption"
+                    text: "SmartZoom"
+                -   path: "Description"
+                    text: "Use smartZoom in sniper mode"
+            -   class: "UIControl"
+                name: "KeyBindings"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 2.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+        -   prototype: "Common/VerticalScrollBar"
+            name: "VerticalScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

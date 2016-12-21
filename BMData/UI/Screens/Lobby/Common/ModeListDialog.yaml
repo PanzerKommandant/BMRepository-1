@@ -1,0 +1,168 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common.yaml"
+StyleSheets:
+-   selector: ".unavailable #Box"
+    properties:
+        bg-color: [0.000000, 0.000000, 0.000000, 0.501961]
+-   selector: ".available #Box"
+    properties:
+        bg-color: [0.000000, 0.000000, 0.000000, 0.000000]
+-   selector: ".unavailable #Lock, .unavailable #Box #Unavailable"
+    properties:
+        visible: true
+-   selector: ".available #Lock, .available #Box #Unavailable"
+    properties:
+        visible: false
+-   selector: ".unavailable #Box #ModeName"
+    properties:
+        text-textColor: [0.411765, 0.431373, 0.443137, 1.000000]
+Controls:
+-   prototype: "Dialogs/WarningDialog"
+    name: "ModeListDialog"
+    children:
+    -   path: "Dialog"
+        position: [262.000000, 191.000000]
+        size: [500.000000, 386.000000]
+        children: []
+    -   path: "Dialog/Middle"
+        position: [0.000000, 0.000000]
+        size: [500.000000, 386.000000]
+        children:
+        -   class: "UIList"
+            name: "ModesList"
+            position: [2.000000, 55.000000]
+            size: [496.000000, 219.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 2.000000
+                    topAnchorEnabled: true
+                    topAnchor: 55.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 112.000000
+            children:
+            -   class: "UIControl"
+                name: "CellPrototype"
+                size: [496.000000, 70.000000]
+                noInput: true
+                classes: "avail"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Box"
+                    visible: true
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            padding: 30.000000
+                            useRtl: true
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_FILL"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "ModeName"
+                        classes: "header3"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        textalign: ["LEFT", "VCENTER"]
+                        text: "##Случайный режим##"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                topAnchorEnabled: true
+                                topAnchor: 10.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 10.000000
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                    -   class: "UIStaticText"
+                        name: "Unavailable"
+                        classes: "text2 text-color-blue"
+                        debugDraw: false
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        textalign: ["LEFT", "VCENTER"]
+                        text: "#training_rooms:ModeScreen/Notification/ModeUnavailable"
+                        font: "WarHeliosCondC_19"
+                        forceBiDiSupport: true
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                topAnchorEnabled: true
+                                topAnchor: 10.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 10.000000
+                -   class: "UIControl"
+                    name: "Selection"
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: -5.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: -5.000000
+                            topAnchorEnabled: true
+                            topAnchor: -5.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: -5.000000
+                        Background:
+                            drawType: "DRAW_STRETCH_BOTH"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/ButtonDefaultSelector"
+                            leftRightStretchCap: 10.000000
+                            topBottomStretchCap: 10.000000
+                -   class: "UIControl"
+                    name: "botomLine"
+                    position: [2.000000, 69.000000]
+                    size: [492.000000, 1.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 2.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 2.000000
+                            topAnchorEnabled: false
+                            bottomAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [1.000000, 1.000000, 1.000000, 0.141176]
+                            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                -   class: "UIControl"
+                    name: "Lock"
+                    position: [10.799965, 9.000004]
+                    size: [32.000000, 32.000000]
+                    scale: [0.500000, 0.500000]
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/CamouflagesShop/lock"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "ScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 100.000000
+    -   path: "Dialog/Middle/DialogText"
+        visible: false
+    -   path: "Dialog/Top/TitleText"
+        text: "#training_rooms:ModeScreen/Title"

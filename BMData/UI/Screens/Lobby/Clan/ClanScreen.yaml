@@ -1,0 +1,40 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/HangarBaseScreen.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+StyleSheets: []
+Controls:
+-   prototype: "HangarBaseScreen/Screen"
+    name: "Screen"
+    children:
+    -   path: "Header/Layout"
+        components:
+            Anchor:
+                leftAnchor: 200.000000
+        children: []
+    -   path: "Header/Layout/leftContent"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 100.000000
+        children: []
+    -   path: "Header/Layout/leftContent/label"
+        size: [500.000000, 76.000000]
+        visible: true
+        textalign: ["HCENTER", "VCENTER"]
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+    -   path: "Header/Layout/rightContent"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 200.000000
+        children: []
+    -   path: "Header/Layout/rightContent/CurrencyPanel"
+        visible: false
+        children: []

@@ -1,0 +1,21 @@
+modules:
+    "#vehicle:T18":
+        position: [3, 1]
+    "#vehicle:M2_lt":
+        position: [3, 2]		
+    "#vehicle:T2_med":
+        position: [3, 3]
+    "#vehicleChassis:Cunningham_E2":
+        position: [1, 5]
+    "#vehicleEngine:Cunningham_type_3":
+        position: [1, 4]
+    "#vehicleGun:_20mm_Hispano_Suiza_Birgikt_gun":
+        position: [2, 3]
+    "#vehicleGun:_37mm_Browning_semiautomatic_gun":
+        position: [2, 1]
+    "#vehicleGun:_37mm_Gun_M1916":
+        position: [1, 1]
+    "#vehicleTurret:Cunningham_D1":
+        position: [1, 2]
+    "#vehicleTurret:Cunningham_D2":
+        position: [2, 2]

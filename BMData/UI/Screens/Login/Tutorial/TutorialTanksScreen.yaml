@@ -1,0 +1,728 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+StyleSheets:
+-   selector: ".text1.ar"
+    properties:
+        text-font: "WarHeliosCondC_17"
+-   selector: ".text1.th"
+    properties:
+        text-font: "WarHeliosCondC_21"
+-   selector: ".text1.vi"
+    properties:
+        text-font: "WarHeliosCondC_17"
+-   selector: "UIControl.china_region #Flag"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/TankSlotFlags"
+-   selector: "UIControl #Flag"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/TankSlotFlags"
+-   selector: ".germany #Flag"
+    properties:
+        bg-frame: 1
+-   selector: ".japan #Flag"
+    properties:
+        bg-frame: 4
+-   selector: ".ussr #Flag"
+    properties:
+        bg-frame: 2
+-   selector: ".usa #Flag"
+    properties:
+        bg-frame: 0
+-   selector: ".china #Flag"
+    properties:
+        bg-frame: 5
+-   selector: ".uk #Flag"
+    properties:
+        bg-frame: 3
+-   selector: ".france #Flag"
+    properties:
+        bg-frame: 6
+-   selector: ".other #Flag"
+    properties:
+        bg-frame: 7
+Controls:
+-   class: "UIControl"
+    name: "NationCell"
+    size: [88.000000, 90.000000]
+    children:
+    -   class: "UIControl"
+        name: "Flag"
+        size: [86.000000, 58.000000]
+        noInput: true
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 1.000000
+                rightAnchorEnabled: true
+                rightAnchor: 1.000000
+                topAnchorEnabled: true
+                topAnchor: 1.000000
+                bottomAnchorEnabled: false
+                bottomAnchor: 8.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+                leftRightStretchCap: 0.000000
+    -   class: "UIControl"
+        name: "Selection"
+        position: [0.000000, 0.000000]
+        size: [88.000000, 58.000000]
+        pivot: [0.000000, 0.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: false
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/LobbyCommon/selectbuttonfilter"
+                frame: 1
+                leftRightStretchCap: 3.000000
+                topBottomStretchCap: 3.000000
+    -   class: "UIStaticText"
+        name: "nationName"
+        position: [-41.000000, 60.000000]
+        size: [170.000000, 30.000000]
+        classes: "text1"
+        textColor: [0.913725, 0.839216, 0.631373, 1.000000]
+        text: "ussr"
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+    -   class: "UIControl"
+        customClass: "UIScalableKeyArt"
+        name: "TankContainerHolder"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 120.000000
+        children:
+        -   class: "UIControl"
+            customClass: "UIParallaxSelector"
+            name: "Holder"
+            size: [1024.000000, 648.000000]
+            pivot: [0.500000, 0.500000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_ALIGNED"
+            children:
+            -   class: "UIControl"
+                name: "parBg"
+                size: [1024.000000, 384.000000]
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: false
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane"
+                        align: ["LEFT", "TOP"]
+                children:
+                -   class: "UIParticles"
+                    name: "heaven_glow1"
+                    position: [800.000000, 180.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/heaven_glow1.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "heaven_glow2"
+                    position: [200.000000, 100.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/heaven_glow2.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "house_smoke_sky"
+                    position: [500.000000, 270.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/house_smoke_sky.sc2"
+                    autoStart: true
+                -   class: "UIControl"
+                    name: "parBg2"
+                    size: [1024.000000, 384.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane"
+                            frame: 1
+                            align: ["LEFT", "TOP"]
+                    children:
+                    -   class: "UIParticles"
+                        name: "fire1"
+                        position: [660.000000, 270.000000]
+                        effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/fire1.sc2"
+                        autoStart: true
+                    -   class: "UIParticles"
+                        name: "explosion"
+                        position: [400.000000, 290.000000]
+                        effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/explosion.sc2"
+                        autoStart: true
+                -   class: "UIControl"
+                    name: "parBg3"
+                    size: [1024.000000, 384.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane"
+                            frame: 2
+                            align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "parTile"
+                    position: [1024.000000, 0.000000]
+                    size: [1024.000000, 384.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane_tile"
+                            align: ["LEFT", "TOP"]
+                    children:
+                    -   class: "UIControl"
+                        name: "parTileLay1"
+                        position: [0.000000, 0.000000]
+                        size: [1024.000000, 384.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: false
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane_tile"
+                                frame: 1
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "parTile2"
+                    position: [-50.000000, 0.000000]
+                    size: [50.000000, 384.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/far_plane_left_tile"
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "parMiddle"
+                size: [2048.000000, 768.000000]
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                children:
+                -   class: "UIParticles"
+                    name: "fire2"
+                    position: [190.000000, 290.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/fire2.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "fire3"
+                    position: [920.000000, 330.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/fire3.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "glow1"
+                    position: [100.000000, 315.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow1.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "glow1"
+                    position: [800.000000, 330.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow1.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "smoldering"
+                    position: [710.000000, 330.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/smoldering.sc2"
+                    autoStart: true
+                -   class: "UIControl"
+                    name: "p1"
+                    size: [1024.000000, 506.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/middle_plane_1"
+                -   class: "UIControl"
+                    name: "p2"
+                    position: [1024.000000, 0.000000]
+                    size: [1024.000000, 506.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/middle_plane_2"
+                -   class: "UIControl"
+                    name: "p3"
+                    position: [-50.000000, 0.000000]
+                    size: [50.000000, 506.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/middle_plane_1_tile"
+                -   class: "UIControl"
+                    name: "p4"
+                    position: [2048.000000, 0.000000]
+                    size: [1024.000000, 506.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/middle_plane_1"
+            -   class: "UIControl"
+                name: "parGround"
+                position: [0.000000, 330.000000]
+                size: [1024.000000, 250.000000]
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 330.000000
+                        bottomAnchorEnabled: false
+                children:
+                -   class: "UIControl"
+                    name: "parGround"
+                    position: [-1024.000000, 0.000000]
+                    size: [6800.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: false
+                            topAnchor: 330.000000
+                            bottomAnchorEnabled: false
+                        Background:
+                            drawType: "DRAW_TILED"
+                            sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/ground_tile"
+            -   class: "UIControl"
+                name: "ground"
+                size: [10.000000, 10.000000]
+                children:
+                -   class: "UIParticles"
+                    name: "burned_paper"
+                    position: [1200.000000, 300.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/burned_paper.sc2"
+                    autoStart: true
+                -   class: "UIParticles"
+                    name: "ground"
+                    position: [1000.000000, 400.000000]
+                    effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/ground.sc2"
+                    autoStart: true
+            -   class: "UIControl"
+                name: "parMain"
+                size: [1024.000000, 400.000000]
+                tag: 1
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 150.000000
+                        bottomAnchorEnabled: false
+                    Background:
+                        sprite: ""
+                children:
+                -   class: "UIControl"
+                    name: "ussr"
+                    size: [1024.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: ""
+                            color: [1.000000, 1.000000, 1.000000, 1.000000]
+                            align: ["HCENTER", "VCENTER"]
+                    children:
+                    -   class: "UIControl"
+                        name: "ussr"
+                        size: [1024.000000, 400.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/tank_ussr"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        children:
+                        -   class: "UIParticles"
+                            name: "glow_tank_ussr"
+                            position: [180.000000, 87.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank_ussr.sc2"
+                            autoStart: true
+                -   class: "UIControl"
+                    name: "usa"
+                    size: [1024.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: ""
+                    children:
+                    -   class: "UIControl"
+                        name: "usa"
+                        size: [1024.000000, 400.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/tank_usa"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        children:
+                        -   class: "UIParticles"
+                            name: "glow_tank_usa"
+                            position: [180.000000, 90.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank_usa.sc2"
+                            autoStart: true
+                -   class: "UIControl"
+                    name: "germany"
+                    size: [1024.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: ""
+                    children:
+                    -   class: "UIControl"
+                        name: "germany"
+                        size: [1024.000000, 400.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/tank_ger"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        children:
+                        -   class: "UIParticles"
+                            name: "glow_tank"
+                            position: [200.000000, 72.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank.sc2"
+                            autoStart: true
+                -   class: "UIControl"
+                    name: "uk"
+                    size: [1024.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: ""
+                    children:
+                    -   class: "UIControl"
+                        name: "uk"
+                        size: [1024.000000, 400.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/tank_uk"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        children:
+                        -   class: "UIParticles"
+                            name: "glow_tank_uk"
+                            position: [170.000000, 79.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank_uk.sc2"
+                            autoStart: true
+                -   class: "UIControl"
+                    name: "japan"
+                    size: [1024.000000, 400.000000]
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: ""
+                    children:
+                    -   class: "UIControl"
+                        name: "japan"
+                        size: [1024.000000, 400.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Tutorial/Tanks_select/tank_japan"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        children:
+                        -   class: "UIParticles"
+                            name: "glow_tank"
+                            position: [185.000000, 66.000000]
+                            size: [20.000000, 20.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank_japan.sc2"
+                            autoStart: true
+                        -   class: "UIParticles"
+                            name: "glow_tank1"
+                            position: [395.000000, 108.000000]
+                            size: [20.000000, 20.000000]
+                            effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/glow_tank_japan1.sc2"
+                            autoStart: true
+    -   class: "UIParticles"
+        name: "big_smoke"
+        position: [1200.000000, 400.000000]
+        effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/big_smoke.sc2"
+        autoStart: true
+    -   class: "UIParticles"
+        name: "sparks"
+        position: [1200.000000, 700.000000]
+        effectPath: "~res:/3d/FX/UI/Tutorial/Tanks_select/sparks.sc2"
+        autoStart: true
+    -   class: "UIStaticText"
+        name: "Title"
+        position: [262.000000, 47.000000]
+        size: [500.000000, 30.000000]
+        classes: "header1 text-color-white"
+        text: "#select_tank:header"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "tankName"
+        position: [312.000000, 438.000000]
+        size: [400.000000, 30.000000]
+        classes: "header1 text-color-white"
+        text: "#germany_vehicles:Ltraktor"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 300.000000
+    -   class: "UIStaticText"
+        name: "tankDesc"
+        position: [312.000000, 468.000000]
+        size: [400.000000, 30.000000]
+        classes: "text1"
+        textColor: [0.913725, 0.839216, 0.631373, 1.000000]
+        text: "#select_tank:tank/type"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 270.000000
+    -   class: "UIControl"
+        name: "Nations"
+        size: [720.000000, 63.000000]
+        debugDraw: false
+        components:
+            LinearLayout:
+                spacing: 70.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 175.000000
+        children:
+        -   prototype: "NationCell"
+            name: "ussr"
+            classes: "nation=ussr"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+            children:
+            -   path: "nationName"
+                text: "ussr"
+        -   prototype: "NationCell"
+            name: "usa"
+            classes: "nation=usa"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 160.000000
+            children:
+            -   path: "nationName"
+                text: "usa"
+        -   prototype: "NationCell"
+            name: "germany"
+            classes: "nation=germany"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 320.000000
+                    rightAnchorEnabled: false
+                    rightAnchor: 107.000000
+            children:
+            -   path: "nationName"
+                text: "germany"
+        -   prototype: "NationCell"
+            name: "uk"
+            classes: "nation=uk"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 480.000000
+            children:
+            -   path: "nationName"
+                text: "uk"
+        -   prototype: "NationCell"
+            name: "japan"
+            classes: "nation=japan"
+            children:
+            -   path: "nationName"
+                text: "japan"
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "ButtonBack"
+    -   class: "UIControl"
+        name: "Footer"
+        size: [1024.000000, 120.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.333333]
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "StartBtn"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 40.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    frame: 2
+            children:
+            -   path: "Caption"
+                text: "#select_tank:start"
+        -   class: "UIStaticText"
+            name: "NationDescription"
+            size: [685.000000, 70.000000]
+            classes: "text1 text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "#select_tank:nation/usa/descr"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 37.000000
+                    hCenterAnchorEnabled: false
+                    rightAnchorEnabled: true
+                    rightAnchor: 302.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    color: [1.000000, 1.000000, 1.000000, 1.000000]
+        -   class: "UIControl"
+            name: "WhiteLine"
+            size: [1024.000000, 1.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: false
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.300000]
+-   prototype: "Dialogs/ErrorDialogNoButton"
+    name: "ControlTypeSelectDialog"
+    children:
+    -   path: "Dialog"
+        size: [440.000000, 240.000000]
+        children: []
+    -   path: "Dialog/Middle"
+        children:
+        -   class: "UIControl"
+            name: "ButtonHolder"
+            size: [400.000000, 180.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                    spacing: 10.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                    bottomAnchorEnabled: true
+            children:
+            -   prototype: "StyledButton/Button"
+                name: "OkButton"
+                position: [0.000000, 10.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                children:
+                -   path: "Caption"
+                    text: "#settings:Controls/ControlType/MouseKeyboard"
+            -   prototype: "StyledButton/Button"
+                name: "CancelButton"
+                position: [0.000000, 90.000000]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                children:
+                -   path: "Caption"
+                    position: [0.000000, 0.000000]
+                    text: "#settings:Controls/ControlType/Touch"
+    -   path: "Dialog/Middle/DialogText"
+        size: [400.000000, 70.000000]
+        text: "#settings:Controls/ControlType/Comment"
+        components:
+            Anchor:
+                topAnchor: 0.000000
+                bottomAnchorEnabled: false
+    -   path: "Dialog/Top"
+        visible: false
+        children: []
+    -   path: "Dialog/Top/TitleText"
+        text: ""

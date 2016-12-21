@@ -1,0 +1,132 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "TabControl"
+    size: [120.000000, 77.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "selected"
+        size: [120.000000, 77.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_HORIZONTAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/TabActiveTile"
+        children:
+        -   class: "UIStaticText"
+            name: "text"
+            size: [120.000000, 77.000000]
+            noInput: true
+            textalign: ["HCENTER", "BOTTOM"]
+            textUseRtlAlign: "DONT_USE"
+            font: "Font_18_bold_tabs"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    frame: 2
+                    align: ["HCENTER", "TOP"]
+    -   class: "UIStaticText"
+        name: "unselected"
+        size: [120.000000, 77.000000]
+        noInput: true
+        textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+        textalign: ["HCENTER", "BOTTOM"]
+        textUseRtlAlign: "DONT_USE"
+        font: "Font_18_bold_tabs"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 2
+                color: [0.745100, 0.800000, 0.807800, 1.000000]
+                align: ["HCENTER", "TOP"]
+-   class: "UIControl"
+    customClass: "UITabSwitcher"
+    name: "TabsPanel"
+    position: [0.000000, 0.000000]
+    size: [480.000000, 77.000000]
+    components:
+        LinearLayout:
+            spacing: 2.000000
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+    children:
+    -   prototype: "TabControl"
+        name: "PersonalTab"
+        children:
+        -   path: "selected/text"
+            text: "#battle_results:PersonalPage"
+        -   path: "unselected"
+            text: "#battle_results:PersonalPage"
+    -   prototype: "TabControl"
+        name: "TeamTab"
+        position: [120.500000, 0.000000]
+        tag: 1
+        children:
+        -   path: "selected/text"
+            text: "#battle_results:TeamPage"
+            components:
+                Background:
+                    frame: 13
+        -   path: "unselected"
+            text: "#battle_results:TeamPage"
+            components:
+                Background:
+                    frame: 13
+    -   prototype: "TabControl"
+        name: "DetailsTab"
+        position: [241.000000, 0.000000]
+        tag: 2
+        children:
+        -   path: "selected/text"
+            text: "#battle_results:DetailsPage"
+            components:
+                Background:
+                    frame: 4
+        -   path: "unselected"
+            text: "#battle_results:DetailsPage"
+            components:
+                Background:
+                    frame: 4
+    -   prototype: "TabControl"
+        name: "AchivmentTab"
+        position: [361.500000, 0.000000]
+        tag: 3
+        children:
+        -   path: "selected/text"
+            text: "#battle_results:AchivmientsPage"
+            components:
+                Background:
+                    frame: 3
+        -   path: "unselected"
+            text: "#battle_results:AchivmientsPage"
+            components:
+                Background:
+                    frame: 3

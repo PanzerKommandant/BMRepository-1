@@ -1,0 +1,147 @@
+emitter:
+    emissionAngle: 1.000000
+    emissionRange: 30.000000
+    emissionVector: [0.000000, -0.000000, 0.500000]
+    emissionVectorInverted: true
+    name: "fog"
+    radius: 0.200000
+    shortEffect: false
+    size: [0.000000, 1.200000, 0.000000]
+    type: "oncircle"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.078300, 0.000000, 0.186700, 1.000000, 0.645400, 0.492700, 0.980000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [122.000000, 126.000000, 134.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 50.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    force1: [1.000000, 0.000000, 0.000000]
+    forceCount: 2
+    forceOverLife0: [0.000000, 1.000000, 0.990000, 0.800000]
+    forceOverLife1: [0.000000, 0.000000, 0.323100, 0.042700, 0.489000, 0.131500, 0.581500, 0.347600, 0.699000, 0.590300, 0.800300, 0.779700, 0.888400, 0.930700, 0.960400, 1.031300, 1.000000, 1.055000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 6.000000, 26.640200, 6.000000, 49.900002, 0.000000]
+    lifeVariation: [0.000000, 2.000000, 26.938400, 2.000000, 49.900002, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke1"
+    number: [0.000000, 4.000000, 26.938400, 4.000000, 49.799999, 0.000000]
+    numberVariation: [0.000000, 3.000000, 26.839001, 3.000000, 49.900002, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.000000, [1.000000, 1.000000], 28.628201, [1.000000, 1.000000], 49.799999, [0.000000, 0.000000]]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [3.163000, 3.163000]]
+    sizeVariation: [0.000000, [2.000000, 2.000000], 27.833000, [2.000000, 2.000000], 49.700001, [0.000000, 0.000000]]
+    spinVariation: -8.000000
+    sprite: "../../../Gfx/Particles/alpha/Fx_DustSpray_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 0.800000, 25.049700, 0.800000, 49.799999, 0.000000]
+    velocityVariation: [0.000000, 0.400000, 24.950300, 0.400000, 49.599998, 0.000000]
+layer1:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.120500, 0.491800, 1.000000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [129.000000, 132.000000, 138.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 50.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 0.800000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 5.000000, 25.745501, 5.000000, 49.700001, 0.000000]
+    lifeVariation: [0.000000, 2.000000, 26.938400, 2.000000, 49.700001, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke2"
+    number: [0.000000, 2.000000, 27.435400, 2.000000, 49.799999, 0.000000]
+    numberVariation: [0.000000, 2.000000, 27.435400, 2.000000, 49.599998, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.000000, [1.000000, 1.000000], 27.336000, [0.992700, 0.992700], 49.900002, [0.000000, 0.000000]]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.257500, [0.135800, 0.135800], 1.000000, [3.200100, 3.200100]]
+    sizeVariation: [0.000000, [2.000000, 2.000000], 27.733601, [2.000000, 2.000000], 49.700001, [0.000000, 0.000000]]
+    spinVariation: -10.000000
+    sprite: "../../../Gfx/Particles/alpha/R_dust_density"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 0.600000, 25.149099, 0.600000, 49.599998, 0.000000]
+    velocityVariation: [0.000000, 0.400000, 25.248501, 0.400000, 49.799999, 0.000000]
+layer2:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.040700, 0.138800, 0.088900, 0.224800, 0.135600, 0.274800, 0.339900, 0.311500, 0.588600, 0.211400, 0.877500, 0.029200, 1.000000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [120.000000, 124.000000, 129.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: true
+    endTime: 50.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 0.800000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 3.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 2.000000, 26.739599, 2.000000, 49.799999, 0.000000]
+    lifeVariation: [0.000000, 2.000000, 26.540800, 2.000000, 49.900002, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "smoke3"
+    number: [0.000000, 8.000000, 26.043699, 8.000000, 49.900002, 0.000000]
+    numberVariation: [0.000000, 5.000000, 26.242500, 5.000000, 49.599998, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.000000, [1.000000, 1.000000], 26.640200, [1.000000, 1.000000], 49.799999, [0.000000, 0.000000]]
+    sizeOverLifeXY: [0.001500, [0.299700, 0.299700], 0.191300, [0.457100, 0.457100], 1.000000, [0.978300, 0.978300]]
+    sizeVariation: [0.000000, [1.000000, 1.000000], 27.534800, [1.000000, 1.000000], 49.799999, [0.000000, 0.000000]]
+    sprite: "../../../Gfx/Particles/alpha/dum_anim_white"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 0.712100, 27.634199, 0.712100, 49.799999, 0.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.530500, 0.801500, 1.000000, 0.607300, 26.790001, 0.000000, 99.469498, 0.024500]
+    velocityVariation: [0.000000, 0.010000, 25.149099, 0.010000]

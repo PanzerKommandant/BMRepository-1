@@ -1,0 +1,36 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/TeamInteraction/card_team_interaction"
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/TeamInteraction/card_team_interaction"
+        children:
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [0.000000, 130.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_team_interaction/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_team_interaction/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_team_interaction/sparks_front.sc2"
+            autoStart: true

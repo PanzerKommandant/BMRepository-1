@@ -1,0 +1,50 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Button"
+    position: [0.000000, 0.000000]
+    size: [352.000000, 97.000000]
+    components:
+        IgnoreLayout: {}
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -2.000000
+            topAnchorEnabled: true
+            topAnchor: 20.000000
+        Background:
+            sprite: "~res:/Gfx/UI/BattleResultsScreen/offerPremium"
+    children:
+    -   class: "UIStaticText"
+        name: "increaseReward"
+        position: [80.000000, 44.000000]
+        size: [226.000000, 45.000000]
+        noInput: true
+        classes: "text2"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        text: "#battle_results:Excellent_Battle/increase_reward"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 80.000000
+    -   class: "UIStaticText"
+        name: "title"
+        position: [80.000000, 11.000000]
+        size: [226.000000, 30.000000]
+        noInput: true
+        classes: "header1"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        text: "#battle_results:Excellent_Battle/title"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 80.000000

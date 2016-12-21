@@ -1,0 +1,2845 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".header-button"
+    properties:
+        bg-color: [0.627451, 0.725490, 0.803922, 1.000000]
+-   selector: ".header-button:selected"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+Controls:
+-   class: "UIControl"
+    name: "line"
+    size: [100.000000, 1.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: -10.000000
+            rightAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.647059, 0.725490, 0.803922, 0.235294]
+-   class: "UIControl"
+    name: "tab"
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "selected"
+        size: [0.000000, 0.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/TabActiveTile"
+                frame: 0
+        children:
+        -   class: "UIStaticText"
+            name: "text"
+            size: [0.000000, 0.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["HCENTER", "BOTTOM"]
+            textUseRtlAlign: "DONT_USE"
+            font: "Font_profile_tabs"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/ProfileScreen/tab-profile"
+                    align: ["HCENTER", "TOP"]
+    -   class: "UIStaticText"
+        name: "unselected"
+        size: [0.000000, 0.000000]
+        noInput: true
+        textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["HCENTER", "BOTTOM"]
+        textUseRtlAlign: "DONT_USE"
+        font: "Font_profile_tabs"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/ProfileScreen/tab-profile"
+                color: [0.745100, 0.800000, 0.807800, 1.000000]
+                align: ["HCENTER", "TOP"]
+-   class: "UIControl"
+    name: "spacer"
+    size: [100.000000, 15.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 15.000000
+-   class: "UIControl"
+    name: "Cell"
+    size: [100.000000, 28.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            dynamicPadding: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfChildrenSum"
+            verticalMax: 80.000000
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "spacer"
+        size: [100.000000, 5.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 5.000000
+    -   class: "UIControl"
+        name: "horizontalAlign"
+        noInput: true
+        components:
+            LinearLayout:
+                padding: 15.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfMaxChild"
+                verticalMax: 80.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "text"
+            position: [15.000000, 7.500000]
+            size: [0.000000, 0.000000]
+            noInput: true
+            textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_21"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   prototype: "spacer"
+            name: "spacer"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 50.000000
+        -   class: "UIStaticText"
+            name: "value"
+            position: [65.000000, 7.500000]
+            size: [100.000000, 0.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_Bold_21"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    horizontalMin: 100.000000
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 15.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   prototype: "spacer"
+            name: "spacer"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 0.000000
+        -   class: "UIStaticText"
+            name: "percent"
+            position: [85.000000, -7.500000]
+            size: [60.000000, 30.000000]
+            visible: false
+            noInput: true
+            textColor: [1.000000, 0.819600, 0.000000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "spacer"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 7.000000
+    -   prototype: "line"
+        name: "line"
+        noInput: true
+-   class: "UIControl"
+    name: "Title"
+    size: [0.000000, 30.000000]
+    clip: true
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "background"
+        position: [-304.000000, 0.000000]
+        size: [608.000000, 30.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                align: ["LEFT", "VCENTER"]
+    -   class: "UIStaticText"
+        name: "title"
+        size: [518.000000, 30.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+        textUseRtlAlign: "DONT_USE"
+        font: "WarHeliosCondC_Bold_21"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    name: "HistogramElement"
+    size: [0.000000, 285.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+        Anchor:
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "BarsContainer"
+        components:
+            LinearLayout:
+                orientation: "LeftToRight"
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                topAnchorEnabled: true
+                topAnchor: 30.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 65.000000
+    -   class: "UIControl"
+        name: "line"
+        position: [0.000000, 233.000000]
+        size: [0.000000, 22.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+            Anchor:
+                bottomAnchorEnabled: true
+                bottomAnchor: 30.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/ProfileScreen/GraphLineTile"
+                leftRightStretchCap: 12.000000
+    -   class: "UIStaticText"
+        name: "label"
+        position: [0.000000, 250.000000]
+        size: [0.000000, 35.000000]
+        noInput: true
+        textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        font: "WarHeliosCondC_21"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+            Anchor:
+                bottomAnchorEnabled: true
+-   prototype: "StyledButton/StyledButton"
+    name: "PlayerActionsButton"
+    size: [250.000000, 72.000000]
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+    children:
+    -   path: "Caption"
+        size: [250.000000, 72.000000]
+        font: "WarHeliosCondC_Bold_21"
+-   class: "UIControl"
+    name: "ElementSort"
+    position: [2.000000, 0.000000]
+    size: [68.000000, 64.000000]
+    selected: false
+    noInput: false
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 1.000000]
+    children:
+    -   class: "UIControl"
+        name: "ElementSortContainer"
+        size: [68.000000, 64.000000]
+        selected: false
+        classes: "header-button"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconTabs"
+                frame: 1
+        children:
+        -   class: "UIControl"
+            name: "sortDirImage"
+            position: [26.500000, 46.000000]
+            size: [15.000000, 15.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 3.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyHeader/Header"
+        name: "Header"
+        size: [1024.000000, 80.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+    -   class: "UIControl"
+        customClass: "UITabSwitcher"
+        name: "Tabs"
+        position: [424.000000, 0.000000]
+        size: [600.000000, 78.000000]
+        components:
+            LinearLayout:
+                spacing: 2.000000
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+        children:
+        -   prototype: "tab"
+            name: "briefTab"
+            children:
+            -   path: "selected/text"
+                text: "#achievementScreen:Header/Brief"
+            -   path: "unselected"
+                text: "#achievementScreen:Header/Brief"
+        -   prototype: "tab"
+            name: "medalsTab"
+            tag: 1
+            children:
+            -   path: "selected"
+                components:
+                    Background:
+                        frame: 0
+                children: []
+            -   path: "selected/text"
+                text: "#achievementScreen:Header/Medals"
+                components:
+                    Background:
+                        frame: 1
+            -   path: "unselected"
+                text: "#achievementScreen:Header/Medals"
+                components:
+                    Background:
+                        frame: 1
+        -   prototype: "tab"
+            name: "statsTab"
+            tag: 2
+            children:
+            -   path: "selected"
+                components:
+                    Background:
+                        frame: 0
+                children: []
+            -   path: "selected/text"
+                text: "#achievementScreen:Header/Statistics"
+                components:
+                    Background:
+                        frame: 2
+            -   path: "unselected"
+                text: "#achievementScreen:Header/Statistics"
+                components:
+                    Background:
+                        frame: 2
+        -   prototype: "tab"
+            name: "tanksTab"
+            tag: 3
+            children:
+            -   path: "selected"
+                components:
+                    Background:
+                        frame: 0
+                children: []
+            -   path: "selected/text"
+                text: "#achievementScreen:Header/Tanks"
+                components:
+                    Background:
+                        frame: 3
+            -   path: "unselected"
+                text: "#achievementScreen:Header/Tanks"
+                components:
+                    Background:
+                        frame: 3
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 80.000000]
+        size: [1024.000000, 688.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "tabBrief"
+            size: [1024.000000, 688.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    dynamicPadding: true
+                    dynamicSpacing: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.070600, 0.125500, 0.160800, 0.847100]
+            children:
+            -   class: "UIControl"
+                name: "Body"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 1100.000000
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Body"
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            dynamicPadding: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalMax: 1100.000000
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "batlleEfficiencyHeader"
+                        position: [0.000000, 0.000000]
+                        size: [1024.000000, 30.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 5.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "batlleEfficiencyLabel"
+                            size: [1024.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Brief/BattleEfficience"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "stats"
+                        position: [12.000000, 30.000000]
+                        size: [1000.000000, 202.000000]
+                        components:
+                            LinearLayout:
+                                orientation: "LeftToRight"
+                                dynamicSpacing: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 12.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 12.000000
+                                topAnchorEnabled: true
+                                topAnchor: 45.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "group1"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    dynamicPadding: true
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                name: "battlesCount"
+                                size: [200.000000, 101.000000]
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [160.000000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [160.000000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/Battles"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                            -   class: "UIControl"
+                                name: "averageDamage"
+                                position: [0.000000, 101.000000]
+                                size: [200.000000, 101.000000]
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        vCenterAnchorEnabled: true
+                                        vCenterAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [160.000000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [160.000000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/AverageDamage"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 4
+                        -   class: "UIControl"
+                            name: "group2"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                                Anchor:
+                                    rightAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                name: "wins"
+                                position: [0.000000, 0.000000]
+                                size: [215.500000, 101.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        topAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [175.500000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [175.500000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/Wins"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 1
+                            -   class: "UIControl"
+                                name: "hits"
+                                position: [0.000000, 101.000000]
+                                size: [215.500000, 101.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [175.500000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [175.500000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/Hits"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 5
+                        -   class: "UIControl"
+                            name: "rating"
+                            position: [431.000000, 0.000000]
+                            size: [138.000000, 202.000000]
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfMaxChild"
+                                    verticalPolicy: "PercentOfParent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                name: "image"
+                                position: [22.000000, 8.000000]
+                                size: [94.000000, 116.000000]
+                                components:
+                                    Anchor:
+                                        hCenterAnchorEnabled: true
+                                        hCenterAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 8.000000
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/ProfileScreen/BlitzPennant"
+                            -   class: "UIStaticText"
+                                name: "label"
+                                position: [-10.000000, 162.000000]
+                                size: [158.000000, 25.000000]
+                                noInput: true
+                                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                shadowoffset: [0.000000, 1.000000]
+                                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                textalign: ["HCENTER", "TOP"]
+                                textUseRtlAlign: "DONT_USE"
+                                text: "#achievementScreen:Brief/Rating"
+                                font: "WarHeliosCondC_21"
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfContent"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: -10.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: -10.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 15.000000
+                                    Background:
+                                        align: ["LEFT", "TOP"]
+                            -   class: "UIStaticText"
+                                name: "value"
+                                position: [0.000000, 127.000000]
+                                size: [138.000000, 35.000000]
+                                noInput: true
+                                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                shadowoffset: [0.000000, 1.000000]
+                                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                text: "0"
+                                font: "Font_3234CE22"
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfContent"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 40.000000
+                                    Background:
+                                        align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "group3"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                                Anchor: {}
+                            children:
+                            -   class: "UIControl"
+                                name: "averageXP"
+                                position: [0.000000, 0.000000]
+                                size: [215.500000, 101.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        topAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [175.500000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [175.500000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/AverageExp"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 2
+                            -   class: "UIControl"
+                                name: "maxFrags"
+                                position: [0.000000, 101.000000]
+                                size: [215.500000, 101.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfParent"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        bottomAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [175.500000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [175.500000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/MaximumDestroyed"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 6
+                        -   class: "UIControl"
+                            name: "group4"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                                Anchor: {}
+                            children:
+                            -   class: "UIControl"
+                                name: "maxXP"
+                                position: [10.500000, 0.000000]
+                                size: [205.000000, 101.000000]
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        topAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [165.000000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [165.000000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/MaximumExp"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 3
+                            -   class: "UIControl"
+                                name: "badges"
+                                position: [10.500000, 101.000000]
+                                size: [205.000000, 101.000000]
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        bottomAnchorEnabled: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "value"
+                                    position: [40.000000, 0.000000]
+                                    size: [165.000000, 40.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    font: "WarHeliosCondC_Bold_25"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIStaticText"
+                                    name: "label"
+                                    position: [40.000000, 35.000000]
+                                    size: [165.000000, 66.000000]
+                                    noInput: true
+                                    textColor: [0.647100, 0.725500, 0.803900, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                                    multiline: "MULTILINE_ENABLED"
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#achievementScreen:Brief/Mastery"
+                                    font: "Font_profile_brief"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 40.000000
+                                            rightAnchorEnabled: true
+                                            topAnchorEnabled: true
+                                            topAnchor: 35.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            align: ["LEFT", "TOP"]
+                                -   class: "UIControl"
+                                    name: "icon"
+                                    size: [40.000000, 40.000000]
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/ProfileScreen/IconsStats"
+                                            frame: 7
+                    -   class: "UIControl"
+                        name: "battleMedalsHeader"
+                        position: [0.000000, 232.000000]
+                        size: [1024.000000, 30.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 258.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "battleMedalsLabel"
+                            size: [1024.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Brief/NotableAchievements"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "battleMedals"
+                        position: [0.000000, 262.000000]
+                        size: [1024.000000, 109.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "list"
+                            position: [512.000000, 0.000000]
+                            size: [0.000000, 109.000000]
+                            components:
+                                LinearLayout: {}
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfChildrenSum"
+                                    verticalPolicy: "PercentOfMaxChild"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    color: [1.000000, 0.125000, 0.160300, 1.000000]
+                        -   class: "UIStaticText"
+                            name: "noMedalsLabel"
+                            position: [312.000000, 39.500000]
+                            size: [400.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Brief/NoNotableAchievements"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "comingSoonMedalsHeader"
+                        position: [0.000000, 371.000000]
+                        size: [1024.000000, 30.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "histTitle"
+                            size: [1024.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Brief/ComingSoon"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "comingSoonMedals"
+                        position: [0.000000, 401.000000]
+                        size: [1024.000000, 120.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "list"
+                            position: [512.000000, 0.000000]
+                            size: [0.000000, 0.000000]
+                            components:
+                                LinearLayout:
+                                    spacing: 20.000000
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfChildrenSum"
+                                    verticalPolicy: "PercentOfMaxChild"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                    -   class: "UIStaticText"
+                        name: "createdAtText"
+                        position: [262.000000, 521.000000]
+                        size: [500.000000, 30.000000]
+                        noInput: true
+                        textColor: [0.647059, 0.725490, 0.803922, 0.784314]
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        font: "WarHeliosCondC_19"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+            -   class: "UIControl"
+                name: "PlayerActions"
+                position: [0.000000, 594.000000]
+                size: [1024.000000, 94.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+                children:
+                -   class: "UIStaticText"
+                    name: "InviteSent"
+                    position: [312.000000, 27.000000]
+                    size: [400.000000, 40.000000]
+                    visible: false
+                    noInput: true
+                    textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                    text: "#achievementScreen:InviteToClan/Invited"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   prototype: "PlayerActionsButton"
+                    name: "MessageButton"
+                    visible: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 15.000000
+                    children:
+                    -   path: "Caption"
+                        text: "#achievementScreen:SendMessage/Button"
+                -   prototype: "PlayerActionsButton"
+                    name: "ViewClanButton"
+                    visible: false
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   path: "Caption"
+                        text: "#achievementScreen:ClanInfo/Button"
+                -   prototype: "PlayerActionsButton"
+                    name: "InviteToClanButton"
+                    visible: false
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "Caption"
+                        text: "#achievementScreen:InviteToClan/Button"
+                -   prototype: "PlayerActionsButton"
+                    name: "AddFriendButton"
+                    visible: false
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 15.000000
+                    children:
+                    -   path: "Caption"
+                        text: "#achievementScreen:SendRequest/Button"
+                -   prototype: "PlayerActionsButton"
+                    name: "RemoveFriendButton"
+                    visible: false
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 15.000000
+                    children:
+                    -   path: "Caption"
+                        text: "#achievementScreen:DeleteFriend/Button"
+            -   prototype: "StyledButton/StyledButton"
+                name: "externalAchievementsButton"
+                size: [245.000000, 70.000000]
+                visible: false
+                components:
+                    IgnoreLayout: {}
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 2.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 2.000000
+                children:
+                -   path: "Caption"
+                    text: "EXTERNAL_ACHIEVEMENTS"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        Anchor:
+                            leftAnchor: 70.000000
+                            rightAnchor: 5.000000
+                -   class: "UIControl"
+                    name: "icon"
+                    position: [8.000000, 5.000000]
+                    size: [60.000000, 60.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 8.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/ProfileScreen/GooglePlayGames"
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "tabMedals"
+            size: [1024.000000, 688.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 10.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.070600, 0.125500, 0.160800, 0.847100]
+            children:
+            -   class: "UIControl"
+                name: "switchContainer"
+                position: [381.000000, 0.000000]
+                size: [262.000000, 110.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        padding: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Spacer"
+                    size: [20.000000, 20.000000]
+                -   class: "UIControl"
+                    name: "switchContainer"
+                    position: [0.000000, 30.000000]
+                    size: [262.000000, 70.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        size: [20.000000, 20.000000]
+                    -   class: "UISwitch"
+                        name: "switch"
+                        size: [262.000000, 70.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/FrameMedium"
+                        children:
+                        -   class: "UIButton"
+                            name: "buttonLeft"
+                            size: [131.000000, 70.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Normal:
+                                    align: ["RIGHT", "TOP"]
+                                NormalText:
+                                    textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, -1.000000]
+                                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.313700]
+                                    font: "WarHeliosCondC_Bold_21"
+                        -   class: "UIButton"
+                            name: "buttonRight"
+                            position: [263.000000, 0.000000]
+                            size: [129.000000, 70.000000]
+                            pivot: [1.023256, -0.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 2.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Normal:
+                                    align: ["LEFT", "TOP"]
+                                NormalText:
+                                    textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    font: "WarHeliosCondC_Bold_21"
+                        -   class: "UIButton"
+                            name: "buttonToggle"
+                            size: [131.000000, 70.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: false
+                                    leftAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Normal:
+                                    drawType: "DRAW_TILED"
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+                                    frame: 0
+                                    spriteModification: []
+                                    align: ["HCENTER", "TOP"]
+                                    leftRightStretchCap: 9.000000
+                                NormalText:
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    font: "WarHeliosCondC_Bold_21"
+                    -   class: "UIStaticText"
+                        name: "labelOwned"
+                        size: [131.000000, 70.000000]
+                        noInput: true
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        text: "#achievementScreen:MyAchievements"
+                        font: "WarHeliosCondC_Bold_21"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                    -   class: "UIStaticText"
+                        name: "labelAll"
+                        position: [131.000000, 0.000000]
+                        size: [131.000000, 70.000000]
+                        noInput: true
+                        textColor: [0.647100, 0.725500, 0.800000, 1.000000]
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        text: "#achievementScreen:AllAchievements"
+                        font: "WarHeliosCondC_Bold_21"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+            -   class: "UIControl"
+                name: "Medals"
+                size: [1024.000000, 568.000000]
+                noInput: true
+                classes: "limited-width"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIScrollView"
+                    name: "medalsView"
+                    position: [0.000000, 0.000000]
+                    size: [1024.000000, 568.000000]
+                    clip: true
+                    noInput: true
+                    autoUpdate: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIScrollViewContainer"
+                        name: "scrollContainerControl"
+                        size: [1024.000000, 0.000000]
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfFirstChild"
+                -   class: "UIScrollBar"
+                    name: "scrollBar"
+                    position: [1020.000000, 0.000000]
+                    size: [4.000000, 568.000000]
+                    noInput: true
+                    orientation: "ORIENTATION_VERTICAL"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIControl"
+                        name: "slider"
+                        size: [4.000000, 8.000000]
+                        noInput: true
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_VERTICAL"
+                                sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                                topBottomStretchCap: 2.000000
+        -   class: "UIControl"
+            name: "tabStats"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.070600, 0.125500, 0.160800, 0.847100]
+            children:
+            -   class: "UIControl"
+                name: "tabStatsInside"
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        dynamicSpacing: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 1100.000000
+                        verticalPolicy: "PercentOfParent"
+                        verticalMax: 800.000000
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Top"
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalMax: 1100.000000
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "battleStatsHeader"
+                        position: [0.000000, 0.000000]
+                        size: [1024.000000, 26.000000]
+                        noInput: true
+                        components:
+                            SizePolicy:
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "battleStatsTitle"
+                            size: [1024.000000, 26.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Stats/BattleStats"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "spacer"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 20.000000
+                            Anchor:
+                                topAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "stats"
+                        position: [0.000000, 46.000000]
+                        size: [1024.000000, 248.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 20.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                horizontalMax: 1100.000000
+                                verticalPolicy: "PercentOfMaxChild"
+                                verticalMax: 1100.000000
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                        children:
+                        -   class: "UIControl"
+                            name: "Left"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    dynamicSpacing: true
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    horizontalValue: 100.000000
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    topAnchorEnabled: true
+                                    bottomAnchorEnabled: true
+                            children:
+                            -   prototype: "line"
+                                name: "line"
+                                components:
+                                    Anchor:
+                                        leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "destroyedEnemies"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/DestroedEnimies"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "destroyedByEnemy"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/WasDestroyed"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "destructionCoeff"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/DestructionCoefficient"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "damageDealt"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/DamageDealt"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "damageReceived"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/DamageReceived"
+                                -   path: "line"
+                                    visible: true
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "damageCoeff"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/DamageCoefficient"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                        -   class: "UIControl"
+                            name: "Right"
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    dynamicSpacing: true
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    horizontalValue: 100.000000
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    topAnchorEnabled: true
+                                    bottomAnchorEnabled: true
+                            children:
+                            -   prototype: "line"
+                                name: "line"
+                                components:
+                                    Anchor:
+                                        leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "avgDestroyedVehicles"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/AvgDestroyed"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "maxFrags"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/MaxDestroyed"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "avgDamageDealt"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/AvgDamageDealt"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "avgDamageReceived"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/AvgDamageReceived"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                            -   prototype: "Cell"
+                                name: "avgDetected"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Stats/AvgSpotted"
+                                -   path: "line"
+                                    components:
+                                        Anchor:
+                                            leftAnchor: 0.000000
+                    -   class: "UIControl"
+                        name: "spacer"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 20.000000
+                -   class: "UIControl"
+                    name: "histograms"
+                    position: [0.000000, 314.000000]
+                    size: [1024.000000, 374.000000]
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalMax: 1100.000000
+                            verticalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "histHeader"
+                        position: [0.000000, 0.000000]
+                        size: [1024.000000, 30.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/ProfileScreen/TextHeaderGrad"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "histTitle"
+                            size: [1024.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "#achievementScreen:Stats/BattlesOnVehicles"
+                            font: "Font_890C7D29"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "HistogramContainer"
+                        components:
+                            LinearLayout:
+                                dynamicPadding: true
+                                dynamicSpacing: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                horizontalMax: 1100.000000
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 30.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                        children:
+                        -   prototype: "HistogramElement"
+                            name: "type"
+                            children:
+                            -   path: "label"
+                                text: "#achievementScreen:Stats/ByClass"
+                        -   prototype: "HistogramElement"
+                            name: "nation"
+                            children:
+                            -   path: "label"
+                                text: "#achievementScreen:Stats/ByNation"
+                        -   prototype: "HistogramElement"
+                            name: "level"
+                            children:
+                            -   path: "label"
+                                text: "#achievementScreen:Stats/ByLevel"
+        -   class: "UIControl"
+            name: "tabTanks"
+            size: [1024.000000, 688.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "right"
+                position: [476.000000, 0.000000]
+                size: [548.000000, 688.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 476.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.070600, 0.125500, 0.160800, 0.847100]
+                children:
+                -   class: "UIControl"
+                    name: "rightInside"
+                    position: [0.000000, 64.000000]
+                    size: [548.000000, 624.000000]
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalMax: 800.000000
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 64.000000
+                            bottomAnchorEnabled: true
+                    children:
+                    -   class: "UIScrollBar"
+                        name: "scrollBar"
+                        position: [544.000000, 0.000000]
+                        size: [4.000000, 624.000000]
+                        orientation: "ORIENTATION_VERTICAL"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   class: "UIControl"
+                            name: "slider"
+                            size: [4.000000, 8.000000]
+                            noInput: true
+                            components:
+                                Background:
+                                    drawType: "DRAW_STRETCH_VERTICAL"
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                                    topBottomStretchCap: 2.000000
+                    -   class: "UIScrollView"
+                        name: "scrollView"
+                        position: [0.000000, 0.000000]
+                        size: [548.000000, 624.000000]
+                        clip: true
+                        noInput: true
+                        autoUpdate: true
+                        centerContent: false
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   class: "UIScrollViewContainer"
+                            name: "scrollContainerControl"
+                            size: [548.000000, 0.000000]
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfFirstChild"
+                    -   class: "UIControl"
+                        name: "tankStats"
+                        size: [538.000000, 712.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                            SizePolicy:
+                                verticalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 10.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                            Background:
+                                color: [0.000000, 0.000000, 0.000000, 0.000000]
+                        children:
+                        -   class: "UIControl"
+                            name: "general"
+                            position: [0.000000, 0.000000]
+                            size: [538.000000, 266.000000]
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    padding: 5.000000
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                            children:
+                            -   prototype: "Title"
+                                name: "Title"
+                                children:
+                                -   path: "title"
+                                    text: "#achievementScreen:Tanks/GeneralResults"
+                            -   class: "UIControl"
+                                name: "spacer"
+                                size: [538.000000, 10.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "FixedSize"
+                                        verticalValue: 10.000000
+                            -   prototype: "line"
+                                name: "line"
+                                components:
+                                    Anchor:
+                                        topAnchorEnabled: true
+                                        topAnchor: 10.000000
+                            -   prototype: "Cell"
+                                name: "battlesCount"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/Battles"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "wins"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/Wins"
+                                -   path: "horizontalAlign/spacer"
+                                    components:
+                                        SizePolicy:
+                                            horizontalValue: 20.000000
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "losses"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/Losses"
+                                -   path: "horizontalAlign/spacer"
+                                    components:
+                                        SizePolicy:
+                                            horizontalValue: 20.000000
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "survivedBattles"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/Survived"
+                                -   path: "horizontalAlign/spacer"
+                                    components:
+                                        SizePolicy:
+                                            horizontalValue: 20.000000
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "accuracy"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/Accuracy"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                        -   class: "UIControl"
+                            name: "experience"
+                            position: [0.000000, 266.000000]
+                            size: [538.000000, 223.000000]
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    padding: 5.000000
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 375.000000
+                            children:
+                            -   prototype: "Title"
+                                name: "Title"
+                                children:
+                                -   path: "title"
+                                    text: "#achievementScreen:Tanks/Experience"
+                            -   class: "UIControl"
+                                name: "spacer"
+                                size: [538.000000, 10.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "FixedSize"
+                                        verticalValue: 10.000000
+                            -   prototype: "line"
+                                name: "line"
+                                components:
+                                    Anchor:
+                                        topAnchorEnabled: true
+                                        topAnchor: 10.000000
+                            -   prototype: "Cell"
+                                name: "averageXP"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/AverageExperience"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "averageDamage"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/AverageDamage"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "avgFrags"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/AverageFrags"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "avgSpots"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/AverageSpots"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                        -   class: "UIControl"
+                            name: "battleEffectiveness"
+                            position: [0.000000, 489.000000]
+                            size: [538.000000, 223.000000]
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                    padding: 5.000000
+                                SizePolicy:
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 200.000000
+                            children:
+                            -   prototype: "Title"
+                                name: "Title"
+                                children:
+                                -   path: "title"
+                                    text: "#achievementScreen:Tanks/BattlesEfficiency"
+                            -   class: "UIControl"
+                                name: "spacer"
+                                size: [538.000000, 10.000000]
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "FixedSize"
+                                        verticalValue: 10.000000
+                            -   prototype: "line"
+                                name: "line"
+                                components:
+                                    Anchor:
+                                        topAnchorEnabled: true
+                                        topAnchor: 10.000000
+                            -   prototype: "Cell"
+                                name: "frags"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/DestroyedEnemies"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "maxFrags"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/MaxDestroyed"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "maxXP"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/MaxExp"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                            -   prototype: "Cell"
+                                name: "damageDealt"
+                                children:
+                                -   path: "horizontalAlign/text"
+                                    text: "#achievementScreen:Tanks/DamageDealt"
+                                -   path: "horizontalAlign/value"
+                                    components:
+                                        Anchor:
+                                            rightAnchor: 75.000000
+                                -   path: "horizontalAlign/percent"
+                                    visible: true
+                    -   class: "UIControl"
+                        name: "tankAchievements"
+                        size: [548.000000, 500.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                -   class: "UIControl"
+                    customClass: "UITabSwitcher"
+                    name: "header"
+                    size: [548.000000, 64.000000]
+                    clip: true
+                    components:
+                        LinearLayout:
+                            spacing: 2.000000
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "stats"
+                        size: [273.000000, 64.000000]
+                        noInput: true
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                            Anchor:
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "selected"
+                            size: [273.000000, 64.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                            text: "#achievementScreen:TanksList/Header/Stats"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    color: [1.000000, 1.000000, 1.000000, 0.000000]
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIStaticText"
+                            name: "unselected"
+                            size: [273.000000, 64.000000]
+                            noInput: true
+                            textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                            text: "#achievementScreen:TanksList/Header/Stats"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [0.000000, 0.000000, 0.000000, 1.000000]
+                                    align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "achievements"
+                        position: [275.000000, 0.000000]
+                        size: [273.000000, 64.000000]
+                        noInput: true
+                        tag: 1
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                            Anchor:
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "selected"
+                            size: [273.000000, 64.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                            text: "#achievementScreen:TanksList/Header/Achievements"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    color: [1.000000, 1.000000, 1.000000, 0.000000]
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIStaticText"
+                            name: "unselected"
+                            size: [273.000000, 64.000000]
+                            noInput: true
+                            textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+                            text: "#achievementScreen:TanksList/Header/Achievements"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [0.000000, 0.000000, 0.000000, 1.000000]
+                                    align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "left"
+                size: [476.000000, 688.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.070600, 0.125500, 0.160800, 0.945100]
+                children:
+                -   class: "UIControl"
+                    name: "tableHeader"
+                    size: [476.000000, 64.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            padding: 2.000000
+                            spacing: 4.000000
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [0.070600, 0.125500, 0.160800, 0.950000]
+                    children:
+                    -   prototype: "ElementSort"
+                        name: "sortByLevelBack"
+                        selected: false
+                        components:
+                            Background:
+                                frame: 0
+                        children:
+                        -   path: "ElementSortContainer"
+                            position: [0.000000, 0.000000]
+                            components:
+                                Background:
+                                    frame: 1
+                            children: []
+                    -   prototype: "ElementSort"
+                        name: "sortByClassBack"
+                        children:
+                        -   path: "ElementSortContainer"
+                            components:
+                                Background:
+                                    frame: 3
+                            children: []
+                    -   prototype: "ElementSort"
+                        name: "sortByNationBack"
+                        children:
+                        -   path: "ElementSortContainer"
+                            components:
+                                Background:
+                                    frame: 5
+                            children: []
+                    -   prototype: "ElementSort"
+                        name: "sortByBattlesLevelBack"
+                        children:
+                        -   path: "ElementSortContainer"
+                            components:
+                                Background:
+                                    frame: 7
+                            children: []
+                    -   prototype: "ElementSort"
+                        name: "sortByVictoriesLevelBack"
+                        children:
+                        -   path: "ElementSortContainer"
+                            components:
+                                Background:
+                                    frame: 9
+                            children: []
+                    -   prototype: "ElementSort"
+                        name: "sortByExperienceBack"
+                        children:
+                        -   path: "ElementSortContainer"
+                            components:
+                                Background:
+                                    frame: 11
+                            children: []
+                -   class: "UIControl"
+                    name: "listBackground"
+                    position: [0.000000, 64.000000]
+                    size: [476.000000, 530.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 64.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 94.000000
+                        Background:
+                            color: [0.070600, 0.125500, 0.160800, 0.945100]
+                    children:
+                    -   class: "UIList"
+                        name: "list"
+                        size: [497.000000, 530.000000]
+                        clip: true
+                        orientation: "ORIENTATION_VERTICAL"
+                        aggregatorPath: "~res:/UI/Screens/Lobby/Profile/ProfileTankListCell.yaml"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: -21.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                color: [0.070600, 0.125500, 0.160800, 0.949000]
+                    -   class: "UIScrollBar"
+                        name: "scrollBar"
+                        position: [472.000000, 0.000000]
+                        size: [4.000000, 530.000000]
+                        noInput: true
+                        orientation: "ORIENTATION_VERTICAL"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   class: "UIControl"
+                            name: "slider"
+                            size: [4.000000, 8.000000]
+                            noInput: true
+                            components:
+                                Background:
+                                    drawType: "DRAW_STRETCH_VERTICAL"
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                                    topBottomStretchCap: 2.000000
+                -   class: "UIControl"
+                    name: "footer"
+                    position: [0.000000, 594.000000]
+                    size: [476.000000, 94.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_STRETCH_HORIZONTAL"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+                            color: [1.000000, 1.000000, 1.000000, 0.502000]
+                    children:
+                    -   class: "UIControl"
+                        name: "showHangarOnlyCheckbox"
+                        size: [476.000000, 94.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                        children:
+                        -   class: "UIStaticText"
+                            name: "checkboxText"
+                            position: [85.000000, 27.000000]
+                            size: [391.000000, 40.000000]
+                            noInput: true
+                            textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            textalign: ["LEFT", "VCENTER"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "#achievementScreen:Tanks/GarageOnly"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 85.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "checkboxBtn"
+                            position: [5.000000, 11.000000]
+                            size: [72.000000, 72.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 5.000000
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/ButtonCheckBox"

@@ -1,0 +1,770 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/LobbyStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Lobby/Common/FooterPriceControl.yaml"
+- "~res:/UI/Screens/Lobby/Storage/RewardItemControl.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryRewardPrototypes.yaml"
+StyleSheets:
+-   selector: ".germany #ImageNation"
+    properties:
+        bg-frame: 1
+-   selector: ".ussr #ImageNation"
+    properties:
+        bg-frame: 2
+-   selector: ".usa #ImageNation"
+    properties:
+        bg-frame: 0
+-   selector: ".uk #ImageNation"
+    properties:
+        bg-frame: 3
+-   selector: ".china #ImageNation"
+    properties:
+        bg-frame: 5
+-   selector: ".japan #ImageNation"
+    properties:
+        bg-frame: 4
+-   selector: ".france #ImageNation"
+    properties:
+        bg-frame: 6
+-   selector: ".other #ImageNation"
+    properties:
+        bg-frame: 7
+-   selector: "UIControl.china_region #ImageNation"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/IconsBattlesStatsNation"
+-   selector: "UIControl #ImageNation"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/IconsBattlesStatsNation"
+-   selector: ".button-check-box"
+    properties:
+        bg-frame: 0
+-   selector: ".button-check-box:selected"
+    properties:
+        bg-frame: 1
+Controls:
+-   class: "UIControl"
+    name: "VerticalSpacing"
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 20.000000
+-   class: "UIControl"
+    name: "QuestDescription"
+    size: [1024.000000, 688.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Reward"
+        size: [1024.000000, 70.000000]
+        clip: true
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "Left"
+            position: [0.000000, 0.000000]
+            size: [512.000000, 70.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+                    align: ["RIGHT", "VCENTER"]
+        -   class: "UIControl"
+            name: "Right"
+            position: [512.000000, 0.000000]
+            size: [512.000000, 70.000000]
+            noInput: true
+            debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+                    align: ["LEFT", "VCENTER"]
+        -   class: "UIControl"
+            name: "Content"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Header"
+                size: [1024.000000, 70.000000]
+                classes: "header1 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "#quests:DescrScreen/NewRewards"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "Content"
+        noInput: true
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 70.000000
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIScrollView"
+            name: "Scroll"
+            classes: "limited-width"
+            autoUpdate: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                components:
+                    LinearLayout:
+                        enabled: true
+                        orientation: "TopDown"
+                        padding: 20.000000
+                        spacing: 20.000000
+                        skipInvisible: true
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                children:
+                -   prototype: "StoryRewardPrototypes/Rewards"
+                    name: "Rewards"
+                -   class: "UIControl"
+                    name: "Description"
+                    position: [40.000000, 80.000000]
+                    size: [944.000000, 145.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            spacing: 15.000000
+                        SizePolicy:
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 40.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 40.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "ConditionsHeader"
+                        position: [-8.000000, 0.000000]
+                        size: [960.000000, 50.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIControl"
+                            name: "Left"
+                            size: [480.000000, 50.000000]
+                            components:
+                                Background:
+                                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                        -   class: "UIControl"
+                            name: "Right"
+                            position: [480.000000, 0.000000]
+                            size: [480.000000, 50.000000]
+                            components:
+                                Background:
+                                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                                    spriteModification: ["FLIP_HORIZONTAL"]
+                        -   class: "UIStaticText"
+                            name: ""
+                            size: [313.000000, 31.000000]
+                            classes: "header1"
+                            text: "#quests:DescrScreen/ConditionsForRewards"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                    -   class: "UIStaticText"
+                        name: "Text"
+                        size: [944.000000, 26.000000]
+                        classes: "text1"
+                        multiline: "MULTILINE_ENABLED"
+                        textalign: ["LEFT", "TOP"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "bla bla bla"
+                        font: "WarHeliosCondC_21"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "ProgressBar"
+                        position: [0.000000, 106.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                                spacing: 5.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIControl"
+                            name: "ProgressBar"
+                            position: [0.000000, 0.000000]
+                            size: [944.000000, 8.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfMaxChild"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                customClass: "UIHangarTankBaseParamBar"
+                                name: "Bar"
+                                size: [400.000000, 8.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        hCenterAnchorEnabled: true
+                                    Background:
+                                        drawType: "DRAW_FILL"
+                                        color: [1.000000, 1.000000, 1.000000, 1.000000]
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            size: [944.000000, 26.000000]
+                            classes: "text1"
+                            text: "Progress Value"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Conditions"
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 40.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 40.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "Tanks"
+                        size: [944.000000, 130.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfChildrenSum"
+                            Background:
+                                color: [1.000000, 1.000000, 1.000000, 1.000000]
+                        children:
+                        -   class: "UIControl"
+                            name: "ConditionsHeader"
+                            position: [-8.000000, 0.000000]
+                            size: [960.000000, 50.000000]
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                name: "Left"
+                                size: [480.000000, 50.000000]
+                                components:
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/Clan/back_title"
+                            -   class: "UIControl"
+                                name: "Right"
+                                position: [480.000000, 0.000000]
+                                size: [480.000000, 50.000000]
+                                components:
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/Clan/back_title"
+                                        spriteModification: ["FLIP_HORIZONTAL"]
+                            -   class: "UIStaticText"
+                                name: ""
+                                size: [262.000000, 31.000000]
+                                classes: "header1"
+                                text: "#quests:DescrScreen/VehiclesForQuest"
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfContent"
+                                        verticalPolicy: "PercentOfContent"
+                                    Anchor:
+                                        hCenterAnchorEnabled: true
+                                        vCenterAnchorEnabled: true
+                        -   class: "UIControl"
+                            name: "ConditionFilter"
+                            size: [944.000000, 80.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfMaxChild"
+                            children:
+                            -   class: "UIControl"
+                                name: "InHangarCheck"
+                                noInput: true
+                                components:
+                                    LinearLayout:
+                                        spacing: 10.000000
+                                        useRtl: true
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfChildrenSum"
+                                        verticalPolicy: "PercentOfMaxChild"
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        useRtl: true
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "InHangarCaptionTitle"
+                                    size: [250.000000, 25.000000]
+                                    classes: "header3"
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_SYSTEM"
+                                    text: "#quests:DescrScreen/TanksinHangar"
+                                    components:
+                                        Anchor:
+                                            vCenterAnchorEnabled: true
+                                -   class: "UIControl"
+                                    name: "InHangar"
+                                    size: [63.000000, 80.000000]
+                                    exclusiveInput: true
+                                    classes: "button-check-box"
+                                    components:
+                                        Anchor:
+                                            vCenterAnchorEnabled: true
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonCheckBox"
+                            -   class: "UIStaticText"
+                                name: "InHangarCaptionMatch"
+                                size: [414.000000, 25.000000]
+                                classes: "text1"
+                                textalign: ["LEFT", "VCENTER"]
+                                textUseRtlAlign: "USE_BY_SYSTEM"
+                                text: "#quests:DescrScreen/TanksMatch"
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfContent"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        vCenterAnchorEnabled: true
+                                        useRtl: true
+                    -   class: "UIControl"
+                        customClass: "UITable"
+                        name: "TanksTable"
+                        size: [944.000000, 52.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfChildrenSum"
+                        children:
+                        -   prototype: "Common/BlueBoldLine"
+                            name: "TopBlueBoldLine"
+                            size: [944.000000, 2.000000]
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    rightAnchorEnabled: true
+                                    topAnchorEnabled: true
+                                    topAnchor: -2.000000
+                        -   class: "UIControl"
+                            name: "Header"
+                            size: [944.000000, 48.000000]
+                            noInput: true
+                            components:
+                                LinearLayout: {}
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    rightAnchorEnabled: true
+                        -   class: "UIScrollView"
+                            name: "Content"
+                            size: [944.000000, 0.000000]
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfFirstChild"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    rightAnchorEnabled: true
+                                    topAnchorEnabled: true
+                                    topAnchor: 48.000000
+                            children:
+                            -   class: "UIScrollViewContainer"
+                                name: "scrollContainerControl"
+                                size: [944.000000, 0.000000]
+                                components:
+                                    LinearLayout:
+                                        orientation: "TopDown"
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfParent"
+                                        verticalPolicy: "PercentOfChildrenSum"
+                        -   prototype: "Common/BlueBoldLine"
+                            name: "BottomBlueBoldLine"
+                            size: [944.000000, 2.000000]
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    rightAnchorEnabled: true
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: -2.000000
+        -   prototype: "Common/VerticalScrollBar"
+            name: "VerticalScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UIQuestTableHeaderColumn"
+    name: "TableHeaderColumn"
+    size: [150.000000, 48.000000]
+    noInput: false
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 1.000000]
+    children:
+    -   class: "UIControl"
+        name: "Icon"
+        size: [150.000000, 48.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/icons_tab"
+                frame: 2
+                spriteModification: []
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "SortDirImage"
+        position: [67.500000, 30.000000]
+        size: [15.000000, 15.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 3.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/icons_tab"
+                frame: 4
+-   class: "UIControl"
+    name: "TableCell"
+    size: [150.000000, 48.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+-   prototype: "TableHeaderColumn"
+    name: "TableHeaderNation"
+    children:
+    -   path: "Icon"
+        noInput: true
+        components:
+            Background:
+                frame: 1
+-   prototype: "TableHeaderColumn"
+    name: "TableHeaderClass"
+    children:
+    -   path: "Icon"
+        components:
+            Background:
+                frame: 0
+-   prototype: "TableHeaderColumn"
+    name: "TableHeaderLevel"
+    children:
+    -   path: "Icon"
+        components:
+            Background:
+                frame: 2
+-   prototype: "TableHeaderColumn"
+    name: "TableHeaderVehicle"
+    children:
+    -   path: "Icon"
+        components:
+            Background:
+                frame: 3
+-   prototype: "TableCell"
+    name: "TableCellClass"
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "Image"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconsBattlesStats"
+                frame: 10
+-   prototype: "TableCell"
+    name: "TableCellNation"
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "ImageNation"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "TableCell"
+    name: "TableCellLevel"
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "Image"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/IconsBattlesStats"
+                frame: 0
+-   prototype: "TableCell"
+    name: "TableCellVehicle"
+    noInput: true
+    children:
+    -   class: "UIStaticText"
+        name: "Caption"
+        noInput: true
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "123"
+        font: "WarHeliosCondC_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "Dialogs/WarningDialogWithoutCaption"
+    name: "SkipDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        text: "#quests:DescrScreen/SkipDialog/Descr1"
+-   class: "UIControl"
+    name: "HangarParamsTable"
+    size: [311.000000, 340.000000]
+    children:
+    -   class: "UIScrollView"
+        name: "scroll"
+        size: [311.000000, 340.000000]
+        clip: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            size: [311.000000, 340.000000]
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "NumberParamPrototype"
+                position: [0.000000, 101.000000]
+                size: [311.000000, 32.000000]
+                noInput: true
+                components:
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                children:
+                -   class: "UIStaticText"
+                    name: "name"
+                    position: [10.000000, 0.000000]
+                    size: [299.000000, 32.000000]
+                    noInput: true
+                    textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        Background:
+                            color: [0.752900, 0.752900, 0.752900, 1.000000]
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "value"
+                    position: [99.000000, 0.000000]
+                    size: [207.000000, 32.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                            align: ["LEFT", "TOP"]
+                    children:
+                    -   class: "UIStaticText"
+                        name: "deltaValue"
+                        position: [7.000000, 0.000000]
+                        size: [100.000000, 32.000000]
+                        noInput: true
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        font: "WarHeliosCondC_Bold_21"
+                        components:
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "deltaValueUpDown"
+                        position: [105.000000, 10.000000]
+                        size: [22.000000, 12.000000]
+                        noInput: true
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Hangar/CharacterArrow"
+    -   class: "UIScrollBar"
+        name: "scrollBar"
+        position: [305.000000, 0.000000]
+        size: [6.000000, 340.000000]
+        noInput: true
+        orientation: "ORIENTATION_VERTICAL"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "slider"
+            size: [6.000000, 50.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_VERTICAL"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    topBottomStretchCap: 4.000000
+-   class: "UIControl"
+    name: "TableRow"
+    noInput: false
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfLastChild"
+    children:
+    -   prototype: "Common/WhiteLine"
+        name: "WhiteLine"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "RewardItemControl/RewardItemIcon"
+    name: "CurrencyIcon"
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 32.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 32.000000
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: 10.000000
+            topAnchorEnabled: true
+            topAnchor: 2.000000
+            useRtl: true

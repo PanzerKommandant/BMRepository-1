@@ -1,0 +1,77 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: "UIControl.china_region #icon"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/IconsBattlesStatsNation"
+-   selector: "UIControl #icon"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/IconsBattlesStatsNation"
+-   selector: ".germany #icon"
+    properties:
+        bg-frame: 1
+-   selector: ".ussr #icon"
+    properties:
+        bg-frame: 2
+-   selector: ".usa #icon"
+    properties:
+        bg-frame: 0
+-   selector: ".uk #icon"
+    properties:
+        bg-frame: 3
+-   selector: ".china #icon"
+    properties:
+        bg-frame: 5
+-   selector: ".japan #icon"
+    properties:
+        bg-frame: 4
+-   selector: ".france #icon"
+    properties:
+        bg-frame: 6
+-   selector: ".other #icon"
+    properties:
+        bg-frame: 7
+Controls:
+-   class: "UIControl"
+    name: "TankHistogramBarNations"
+    size: [30.000000, 0.000000]
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "value"
+        size: [100.000000, 30.000000]
+        classes: "text2-small text-color-white"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -30.000000
+    -   class: "UIControl"
+        name: "bar"
+        size: [12.000000, 1.000000]
+        components:
+            SizePolicy: {}
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 0.400000, 0.000000, 1.000000]
+    -   class: "UIControl"
+        name: "icon"
+        size: [30.000000, 30.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: -30.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"

@@ -1,0 +1,76 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "explosion_glow_low"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.990000, 0.000000]
+    blending: 3
+    colorOverLife: [255.000000, 178.599213, 78.692604, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 0.200000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "glow1"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [8.000000, 8.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [2.000000, 2.000000]]
+    sprite: "../../../Gfx/Particles/alpha/o2_expGlowB"
+    startTime: 0.000000
+    type: "layer"
+layer1:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.990000, 0.000000]
+    blending: 3
+    colorOverLife: [255.000000, 163.392990, 77.696495, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 0.200000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "glow2"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [8.000000, 8.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
+    sprite: "../../../Gfx/Particles/alpha/o2_expGlowB"
+    startTime: 0.000000
+    type: "layer"

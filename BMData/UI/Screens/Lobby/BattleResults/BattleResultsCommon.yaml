@@ -1,0 +1,21 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: "#TrainingNote"
+    properties:
+        visible: false
+-   selector: ".training ? #TrainingNote"
+    properties:
+        visible: true
+Controls:
+-   class: "UIStaticText"
+    name: "TrainingNote"
+    classes: "text2 text-color-blue"
+    multiline: "MULTILINE_ENABLED"
+    text: "#battle_results:TrainingRooms/NoEarnings"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"

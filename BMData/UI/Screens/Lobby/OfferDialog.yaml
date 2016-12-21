@@ -1,0 +1,258 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/ShopItemCell.yaml"
+- "~res:/UI/Screens/Common/LoadingControl.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIOfferDialog"
+    name: "OfferDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "Background"
+            size: [1024.000000, 768.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Fill"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.070588, 0.125490, 0.160784, 0.850980]
+        -   class: "UIControl"
+            name: "Header"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 105.000000
+            children:
+            -   class: "UIControl"
+                name: "Ribbon"
+                noInput: true
+                components:
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfFirstChild"
+                    Anchor:
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "LeftImagePart"
+                    size: [512.000000, 70.000000]
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+                -   class: "UIControl"
+                    name: "RightImagePart"
+                    position: [512.000000, 0.000000]
+                    size: [512.000000, 70.000000]
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+                -   class: "UIStaticText"
+                    name: "Title"
+                    noInput: true
+                    textColor: [1.000000, 0.800000, 0.000000, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "#hangar:OneTimeOffer/Title"
+                    font: "WarHeliosCondC_Bold_40"
+                    components:
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "Middle"
+            size: [960.000000, 579.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 960.000000
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   prototype: "ShopItemCell/ItemCell"
+                name: "ShopItemCell"
+                position: [342.000000, 289.500000]
+                pivot: [0.500000, 0.500000]
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+            -   class: "UIControl"
+                name: "DetailedDescription"
+                position: [477.000000, 157.000000]
+                size: [350.000000, 265.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIWebView"
+                    name: "WebView"
+                    size: [350.000000, 265.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "Text"
+                    position: [0.000000, 0.000000]
+                    size: [350.000000, 265.000000]
+                    classes: "text2 text-color-blue"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "TOP"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "Сейчас количество символов на оффер 223 (для описания), необходимо увеличить это количество минимум до 400-500 символов. Сейчас количество символов на оффер 223 (для описания), необходимо увеличить это количество минимум до 400-500 символов. Сейчас количество символов на оффер 223 (для описания), необходимо увеличить это количество минимум до 400-500 символов. Сейчас количество символов на оффер 223 (для описания), необходимо увеличить это количество минимум до 400-500 символов. Сейчас количество"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "Warning"
+                size: [960.000000, 32.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 10.000000
+                children:
+                -   class: "UIControl"
+                    name: "LimitedTimeOfferWarning"
+                    size: [960.000000, 32.000000]
+                    components:
+                        LinearLayout:
+                            dynamicPadding: true
+                            useRtl: true
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Text"
+                        size: [454.000000, 32.000000]
+                        classes: "text1 text-color-white"
+                        text: "#hangar:LimitedTimeOffer/Notification/TimeLeft"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
+                            Anchor:
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: -1.000000
+                    -   class: "UIControl"
+                        name: "Spacer"
+                        size: [5.000000, 0.000000]
+                    -   prototype: "ExpireTimer/ExpireTimer"
+                        name: "Timer"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                        children:
+                        -   path: "Shadow"
+                            visible: false
+                        -   path: "Icon"
+                            position: [0.000000, 3.500000]
+                -   class: "UIStaticText"
+                    name: "OneTimeOfferWarning"
+                    size: [960.000000, 32.000000]
+                    classes: "text1 text-color-red"
+                    text: "#hangar:OneTimeOffer/Notification/CannotUse"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Footer"
+            components:
+                LinearLayout:
+                    dynamicPadding: true
+                    spacing: 28.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 84.000000
+            children:
+            -   prototype: "StyledButton/StyledButton"
+                name: "Postpone"
+                visible: false
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Postpone"
+            -   prototype: "StyledButton/StyledButton"
+                name: "Close"
+                children:
+                -   path: "Caption"
+                    position: [0.000000, 0.000000]
+                    text: "#common:DialogButton/Refuse"
+            -   prototype: "StyledButton/StyledButton"
+                name: "CustomButton"
+                visible: false
+                components:
+                    Background:
+                        frame: 2
+                children:
+                -   path: "Caption"
+                    text: "OK"
+            -   prototype: "StyledButton/StyledButton"
+                name: "Buy"
+                components:
+                    Background:
+                        frame: 2
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Buy"
+    -   prototype: "LoadingControl/LoadingControl"
+        name: "LoadingControl"
+        visible: false
+        children:
+        -   path: "DescriptionControl"
+            visible: true
+            text: "Loading..."

@@ -1,0 +1,36 @@
+<root>
+	<ids>
+		<_9RM>0</_9RM>
+		<A-220>1</A-220>
+	</ids>
+	<shared>
+		<_9RM>
+			<userString>#china_vehicles:_9RM</userString>
+			<description>#china_vehicles:_9RM_descr</description>
+			<tags>
+			</tags>
+			<level>9</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<weight>40</weight>
+			<distance>500</distance>
+			<maxHealth>160</maxHealth>
+			<maxRegenHealth>96</maxRegenHealth>
+			<repairCost>3.5</repairCost>
+			</_9RM>
+		<A-220>
+			<userString>#china_vehicles:A-220</userString>
+			<description>#china_vehicles:A-220_descr</description>
+			<tags>
+			</tags>
+			<level>9</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<weight>40</weight>
+			<distance>500</distance>
+			<maxHealth>160</maxHealth>
+			<maxRegenHealth>96</maxRegenHealth>
+			<repairCost>3.5</repairCost>
+			</A-220>
+	</shared>
+</root>

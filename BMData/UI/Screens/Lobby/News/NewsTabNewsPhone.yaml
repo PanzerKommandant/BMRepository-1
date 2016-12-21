@@ -1,0 +1,186 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "NewsTabNews"
+    size: [960.000000, 570.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070600, 0.125500, 0.160800, 0.851000]
+    children:
+    -   class: "UIControl"
+        name: "ListViewer"
+        size: [960.000000, 570.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIList"
+            customClass: "UIListPullRefresh"
+            name: "List"
+            size: [960.000000, 570.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    color: [0.600000, 0.600000, 0.600000, 1.000000]
+        -   class: "UIScrollBar"
+            name: "VerticalScrollbar"
+            position: [950.000000, 0.000000]
+            size: [10.000000, 570.000000]
+            noInput: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [10.000000, 50.000000]
+                noInput: true
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 10.000000
+        -   class: "UIControl"
+            name: "ReadAllPanel"
+            position: [0.000000, 500.000000]
+            size: [960.000000, 70.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.000000, 0.000000, 0.000000, 0.525500]
+            children:
+            -   class: "UIStaticText"
+                name: "TitleText"
+                position: [80.000000, 5.000000]
+                size: [875.000000, 60.000000]
+                noInput: true
+                classes: "header1 text-color-white"
+                textcolorInheritType: "COLOR_ADD_TO_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "#news:markAsRead"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 80.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        align: ["LEFT", "TOP"]
+            -   prototype: "StyledButton/DefaultStyledButton"
+                name: "ReadButton"
+                size: [65.000000, 60.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                children:
+                -   class: "UIControl"
+                    name: "icon"
+                    size: [65.000000, 60.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/NewsScreen/icon_read_all_news"
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Viewer"
+        size: [960.000000, 570.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.529400]
+        children:
+        -   class: "UIWebView"
+            name: "WebView"
+            size: [960.000000, 570.000000]
+            visible: false
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/NewsScreen/Logotype"
+                    color: [0.000000, 0.000000, 0.000000, 0.000000]
+        -   prototype: "LoadingSpinner/LoadingSpinner"
+            name: "ProgressControl"
+            visible: false
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true

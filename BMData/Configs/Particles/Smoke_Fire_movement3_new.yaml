@@ -1,0 +1,64 @@
+emitter:
+    emissionAngle: 1.0000
+    emissionRange: 10.0000
+    emissionVectorInverted: "true"
+    name: "smoke"
+    radius: 1.0000
+    shortEffect: "false"
+    size: [1.0000, 1.2000, 0.0000]
+    type: "rect"
+    emissionVector:
+        externalVariable: "Velosity"
+        modification_line: [0.0000, [1.0000, 0.0000, 1.0000], 0.9900, [1.0000, 1.0000, 1.0000]]
+        value_line: [0.0000, -1.0000, 1.0000]
+
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.0000, 0.0000, 0.1400, 0.5000, 0.7654, 0.4895, 0.9900, 0.0000]
+    angleVariation: 120.0000
+    colorOverLife: [176.0000, 184.0000, 184.0000, 255.0000]
+    degradeStrategy: 2
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    effectFormat: 1
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 200.0000
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 10.0000
+    inheritPosition: "false"
+    isLong: "false"
+    isLooped: "false"
+    layerType: "particles"
+    lifeVariation: 1.0000
+    loopEndTime: 0.0000
+    loopSpriteAnimation: "false"
+    loopVariation: 0.0000
+    name: "FOG"
+    numberVariation: 3.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "true"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.5000, 0.5000]
+    sizeOverLifeXY: [0.0000, [0.0000, 0.0000], 0.9900, [4.0000, 4.0000]]
+    sizeVariation: [0.5000, 0.5000]
+    spinVariation: -8.0000
+    sprite: "../../Gfx/Particles/Fx_DustSpray_two"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.4613
+    velocityVariation: 0.0090
+    life:
+        externalVariable: "Velosity"
+        modification_line: [0.0000, 1.0000, 0.9900, 0.5000]
+        value_line: 3.0000
+    number:
+        externalVariable: "Velosity"
+        modification_line: [0.0000, 1.0000, 1.0000, 2.0000]
+        value_line: 6.0000
+

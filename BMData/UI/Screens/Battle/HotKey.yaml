@@ -1,0 +1,38 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    customClass: "UIHotKey"
+    name: "HotKey"
+    size: [15.000000, 18.700001]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        LinearLayout:
+            padding: 4.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            horizontalValue: 100.000000
+            verticalPolicy: "PercentOfChildrenSum"
+            verticalValue: 110.000000
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/HotKeyShadow"
+            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            leftRightStretchCap: 7.000000
+            topBottomStretchCap: 10.000000
+    children:
+    -   class: "UIStaticText"
+        name: "text"
+        noInput: true
+        textColor: [1.000000, 0.870588, 0.592157, 1.000000]
+        textMargins: [0.000000, 0.000000, 0.000000, 2.000000]
+        text: "1"
+        font: "WarHeliosCondC_Bold_13"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true

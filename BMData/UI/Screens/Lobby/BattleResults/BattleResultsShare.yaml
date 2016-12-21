@@ -1,0 +1,446 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".usa #Back"
+    properties:
+        bg-frame: 0
+-   selector: ".china #Back"
+    properties:
+        bg-frame: 5
+-   selector: ".uk #Back"
+    properties:
+        bg-frame: 3
+-   selector: ".ussr #Back"
+    properties:
+        bg-frame: 2
+-   selector: ".nation #Back"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/TankSlotFlags"
+-   selector: ".nation.china_region #Back"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/TankSlotFlags"
+-   selector: ".japan #Back"
+    properties:
+        bg-frame: 4
+-   selector: ".germany #Back"
+    properties:
+        bg-frame: 1
+-   selector: ".france #Back"
+    properties:
+        bg-frame: 6
+-   selector: ".other #Back"
+    properties:
+        bg-frame: 7
+-   selector: ".header1"
+    properties:
+        text-font: "WarHeliosCondC_Bold_25_results"
+Controls:
+-   class: "UIControl"
+    name: "containerPrototype"
+    position: [230.000000, 0.000000]
+    size: [180.000000, 60.000000]
+    noInput: true
+    components:
+        Anchor:
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [175.000000, 25.000000]
+        noInput: true
+        classes: "text1 text-color-blue"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["RIGHT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "Icon"
+        position: [145.000000, 31.000000]
+        size: [35.000000, 29.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsSharing/icons"
+    -   class: "UIStaticText"
+        name: "Value"
+        position: [0.000000, 30.000000]
+        size: [145.000000, 30.000000]
+        noInput: true
+        classes: "header1 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        textalign: ["RIGHT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 35.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+-   class: "UIControl"
+    customClass: "BattleResultsShareControl"
+    name: "BattleResultsShare"
+    size: [1200.000000, 630.000000]
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        size: [1200.000000, 630.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsSharing/backgrounds"
+        children:
+        -   class: "UIStaticText"
+            name: "ResultText"
+            position: [0.000000, 256.500000]
+            size: [1200.000000, 77.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["HCENTER", "BOTTOM"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#battle_results:Result_Win"
+            font: "Font_5EA3E10"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -20.000000
+                Background:
+                    align: ["HCENTER", "BOTTOM"]
+        -   class: "UIControl"
+            name: "Ribbon"
+            position: [0.000000, 335.500000]
+            size: [1200.000000, 89.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 65.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsSharing/ribbon"
+            children:
+            -   class: "UIControl"
+                name: "Holder"
+                position: [600.000000, 44.500000]
+                size: [1200.000000, 100.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "Middle"
+            position: [0.000000, 435.000000]
+            size: [1200.000000, 60.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    dynamicPadding: true
+                    spacing: 10.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 150.000000
+            children:
+            -   prototype: "containerPrototype"
+                name: "Credits"
+                children:
+                -   path: "Text"
+                    text: "Battle_Results_Share_Credits"
+                -   path: "Value"
+                    text: "999 999"
+                -   class: "UIStaticText"
+                    name: "Modifier"
+                    position: [178.000000, 28.000000]
+                    size: [40.000000, 30.000000]
+                    noInput: true
+                    classes: "header1 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [0.000000, 1.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "(x2)"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 178.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 2.000000
+            -   prototype: "containerPrototype"
+                name: "Experience"
+                children:
+                -   path: "Text"
+                    text: "Battle_Results_Share_Experience"
+                -   path: "Icon"
+                    components:
+                        Background:
+                            frame: 1
+                -   path: "Value"
+                    text: "999 999"
+                -   class: "UIStaticText"
+                    name: "Modifier"
+                    position: [178.000000, 28.000000]
+                    size: [40.000000, 30.000000]
+                    noInput: true
+                    classes: "header1 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [0.000000, 1.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "(x2)"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 178.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 2.000000
+            -   prototype: "containerPrototype"
+                name: "Damage"
+                children:
+                -   path: "Text"
+                    text: "Battle_Results_Share_Damage"
+                -   path: "Icon"
+                    components:
+                        Background:
+                            frame: 2
+                -   path: "Value"
+                    text: "999 999"
+            -   prototype: "containerPrototype"
+                name: "Frags"
+                size: [150.000000, 60.000000]
+                children:
+                -   path: "Text"
+                    text: "Battle_Results_Share_Frags"
+                -   path: "Icon"
+                    components:
+                        Background:
+                            frame: 3
+                -   path: "Value"
+                    text: "7"
+        -   class: "UIControl"
+            name: "Bottom"
+            position: [0.000000, 505.000000]
+            size: [1200.000000, 125.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "Tank"
+                size: [182.000000, 122.000000]
+                classes: "nation"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -120.000000
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Back"
+                    size: [182.000000, 122.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                -   class: "UIControl"
+                    name: "Icon"
+                    position: [8.000000, 8.000000]
+                    size: [166.000000, 106.000000]
+                    clip: true
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 8.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 8.000000
+                            topAnchorEnabled: true
+                            topAnchor: 8.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 8.000000
+                        Background:
+                            drawType: "DRAW_SCALE_PROPORTIONAL"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/noImage"
+                            align: ["HCENTER", "BOTTOM"]
+                -   class: "UIControl"
+                    name: "Level"
+                    position: [29.000000, 3.000000]
+                    size: [34.000000, 30.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 29.000000
+                            topAnchorEnabled: true
+                            topAnchor: 3.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                            align: ["LEFT", "VCENTER"]
+                -   class: "UIControl"
+                    name: "Class"
+                    position: [2.000000, 2.000000]
+                    size: [36.000000, 32.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 2.000000
+                            topAnchorEnabled: true
+                            topAnchor: 2.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                            frame: 1
+                -   class: "UIControl"
+                    name: "Elite"
+                    position: [2.000000, 2.000000]
+                    size: [36.000000, 32.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 2.000000
+                            topAnchorEnabled: true
+                            topAnchor: 2.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                -   class: "UIStaticText"
+                    name: "Name"
+                    position: [10.000000, 88.000000]
+                    size: [142.000000, 30.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [0.000000, 1.000000]
+                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.000000]
+                    fitting: ["REDUCE"]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "unknownVehicleName"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 10.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 30.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 4.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "UserName"
+                position: [580.000000, 5.000000]
+                size: [620.000000, 30.000000]
+                noInput: true
+                classes: "header4 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                fitting: ["POINTS"]
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "vasily_pupkin"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+            -   class: "UIStaticText"
+                name: "AccountType"
+                position: [580.000000, 40.000000]
+                size: [620.000000, 25.000000]
+                noInput: true
+                classes: "text1 text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "Базовый аккаунт"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 40.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "Status"
+                position: [580.000000, 95.000000]
+                size: [620.000000, 25.000000]
+                noInput: true
+                classes: "text1 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "Убит выстрелом Nagibator1999"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                    Background:
+                        align: ["LEFT", "TOP"]

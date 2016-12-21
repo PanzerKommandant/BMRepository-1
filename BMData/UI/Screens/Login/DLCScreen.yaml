@@ -1,0 +1,549 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common.yaml"
+StyleSheets:
+-   selector: ".text-color-green"
+    properties:
+        text-textColor: [0.705882, 1.000000, 0.580392, 1.000000]
+-   selector: ".text1"
+    properties:
+        text-font: "WarHeliosCondC_21_dlc"
+Controls:
+-   class: "UIControl"
+    name: "DLCScreen"
+    size: [1024.000000, 700.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        customClass: "DlcProgressUI"
+        name: "Progress"
+        position: [0.000000, 500.000000]
+        size: [1024.000000, 200.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+        children:
+        -   class: "UIStaticText"
+            name: "Caption"
+            size: [1024.000000, 30.000000]
+            noInput: true
+            classes: "text1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            text: "Download_in_progress"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+        -   class: "UIControl"
+            name: "ProgressFull"
+            position: [150.000000, 60.000000]
+            size: [724.000000, 4.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 150.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 150.000000
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/DlcScreen/loadingbar"
+            children:
+            -   class: "UIStaticText"
+                name: "Percent"
+                position: [734.000000, -13.000000]
+                size: [50.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [1.000000, 0.588200, 0.027500, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "26%"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: -60.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+            -   class: "UIControl"
+                name: "ProgressBar"
+                size: [724.000000, 4.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/DlcScreen/loadingbar"
+                        frame: 1
+            -   class: "UIControl"
+                name: "Glow"
+                position: [50.000000, 2.000000]
+                size: [100.000000, 30.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/DlcScreen/loadingGlow"
+        -   class: "UIControl"
+            name: "Bottom"
+            size: [1024.000000, 200.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Hint"
+                position: [0.000000, 170.000000]
+                size: [1024.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Progress_tip"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        color: [0.000000, 0.000000, 0.000000, 1.000000]
+            -   class: "UIStaticText"
+                name: "LabelNetwork"
+                position: [192.000000, 75.000000]
+                size: [160.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Progress_connection_type"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -240.000000
+                        topAnchorEnabled: true
+                        topAnchor: 75.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "Network"
+                    position: [-70.000000, 25.000000]
+                    size: [147.000000, 30.000000]
+                    noInput: true
+                    classes: "text2-small text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "Progress_connection_type_wifi"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: -70.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: -3.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+                -   class: "UIControl"
+                    customClass: "UINetworkSignalStrength"
+                    name: "SignalStrength"
+                    position: [91.000000, 25.000000]
+                    size: [56.000000, 30.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 11.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 13.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: -25.000000
+            -   class: "UIStaticText"
+                name: "LabelSpeed"
+                position: [352.000000, 75.000000]
+                size: [160.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Progress_connection_speed"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -80.000000
+                        topAnchorEnabled: true
+                        topAnchor: 75.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "Speed"
+                    position: [0.000000, 25.000000]
+                    size: [160.000000, 30.000000]
+                    noInput: true
+                    classes: "text2-small text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "1.2 Мб/c"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+            -   class: "UIStaticText"
+                name: "LabeDownloaded"
+                position: [512.000000, 75.000000]
+                size: [160.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Progress_data"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 80.000000
+                        topAnchorEnabled: true
+                        topAnchor: 75.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "Downloaded"
+                    position: [0.000000, 25.000000]
+                    size: [160.000000, 30.000000]
+                    noInput: true
+                    classes: "text2-small text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "1 206/3 412 Мb"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+            -   class: "UIStaticText"
+                name: "LabelTimeLeft"
+                position: [672.000000, 75.000000]
+                size: [160.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Progress_time"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 240.000000
+                        topAnchorEnabled: true
+                        topAnchor: 75.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "TimeLeft"
+                    position: [0.000000, 25.000000]
+                    size: [160.000000, 30.000000]
+                    noInput: true
+                    classes: "text2-small text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "12:13:14"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 25.000000
+            -   class: "UIStaticText"
+                name: "HintPath"
+                position: [0.000000, 133.000000]
+                size: [1024.000000, 30.000000]
+                noInput: true
+                classes: "text2-small text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 37.000000
+                    Background:
+                        color: [0.000000, 0.000000, 0.000000, 1.000000]
+    -   prototype: "Common/Dialog"
+        name: "ChooseDestinationDialog"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Middle"
+            position: [0.000000, 54.000000]
+            size: [500.000000, 417.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 25.000000
+                    spacing: 10.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    topAnchor: 54.000000
+                    bottomAnchorEnabled: false
+            children:
+            -   class: "UIStaticText"
+                name: "Caption"
+                size: [460.000000, 72.000000]
+                noInput: true
+                classes: "text1 text-color-blue"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                multiline: "MULTILINE_ENABLED"
+                text: "Select_Disk_Discription"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+                        leftRightStretchCap: 7.000000
+            -   prototype: "StyledButton/StyledButton"
+                name: "Development"
+                size: [460.000000, 45.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    classes: "text2-small text-color-green"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "for development: sdcard/WotBlitzDLC"
+                    components:
+                        Anchor:
+                            leftAnchor: 20.000000
+                            rightAnchor: 20.000000
+                        Background:
+                            align: ["LEFT", "VCENTER"]
+            -   prototype: "StyledButton/DefaultStyledButton"
+                name: "Internal"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   class: "UIControl"
+                    name: "ContainerAligne"
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 15.000000
+                            useRtl: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "FreeSpace"
+                        position: [83.000000, 0.000000]
+                        size: [27.000000, 72.000000]
+                        noInput: true
+                        classes: "text-color-white"
+                        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        textalign: ["HCENTER", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "Progress_data_mb"
+                        font: "WarHeliosCondC_21_dlc_num"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIStaticText"
+                        name: "LabelFree"
+                        size: [83.000000, 72.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "Free_space"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIStaticText"
+                    name: "Name"
+                    position: [15.000000, 0.000000]
+                    size: [225.000000, 70.000000]
+                    noInput: true
+                    classes: "text1 text-color-white"
+                    textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "Select_disk_internal"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 15.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                            useRtl: true
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   prototype: "StyledButton/DefaultStyledButton"
+                name: "External"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "Name"
+                    position: [15.000000, 0.000000]
+                    size: [225.000000, 70.000000]
+                    noInput: true
+                    classes: "text1 text-color-white"
+                    textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "Select_disk_external"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 15.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                            useRtl: true
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIControl"
+                    name: "ContainerAligne"
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 15.000000
+                            useRtl: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "FreeSpace"
+                        size: [21.000000, 72.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        textalign: ["HCENTER", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "Progress_data_gb"
+                        font: "WarHeliosCondC_21_dlc_num"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIStaticText"
+                        name: "LabelFree"
+                        size: [83.000000, 72.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "Free_space"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   prototype: "StyledButton/StyledButton"
+                name: "Cancel"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    classes: "header3 text-color-white"
+                    text: "Select_disk_cancel"
+        -   path: "Top/TitleText"
+            classes: "header1 text-color-white"
+            text: "#dlc:ChooseDestinationDialog/Title"

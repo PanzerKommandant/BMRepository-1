@@ -1,0 +1,5 @@
+1
+analize_team0.tex
+254 160
+1
+0 0 207 160 47 0 0 frame0

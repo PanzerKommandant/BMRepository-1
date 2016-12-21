@@ -1,0 +1,383 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [3.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "duck"
+    shortEffect: false
+    size: [1.000000, 10.000000, 0.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer"
+    number: 160.000000
+    particleOrientation: 8
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 1.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer1:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer1"
+    particleOrientation: 8
+    pivotPoint: [1.000000, 2.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer10:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer1"
+    particleOrientation: 8
+    pivotPoint: [5.000000, 10.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer2:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer2"
+    particleOrientation: 8
+    pivotPoint: [-5.000000, 10.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer3:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer2"
+    particleOrientation: 8
+    pivotPoint: [-1.000000, 2.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer4:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer1"
+    particleOrientation: 8
+    pivotPoint: [2.000000, 4.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer5:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer2"
+    particleOrientation: 8
+    pivotPoint: [-2.000000, 4.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer6:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer1"
+    particleOrientation: 8
+    pivotPoint: [3.000000, 6.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer7:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer2"
+    particleOrientation: 8
+    pivotPoint: [-3.000000, 6.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer8:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer1"
+    particleOrientation: 8
+    pivotPoint: [4.000000, 8.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000
+layer9:
+    activeLODS: [1, 1, 1, 1]
+    blending: 1
+    colorOverLife: [139.000000, 126.046700, 113.926102, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 150.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 200.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Layer2"
+    particleOrientation: 8
+    pivotPoint: [-4.000000, 8.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sprite: "../../../Gfx/Particles/malinovka/duck"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.200000

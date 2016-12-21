@@ -1,0 +1,30 @@
+modules:
+    "#vehicle:KV4":
+        position: [3, 3]
+    "#vehicleChassis:KV-3":
+        position: [1, 6]
+    "#vehicleChassis:KV-3bis":
+        position: [2, 6]
+    "#vehicleEngine:V-2IS":
+        position: [2, 5]
+    "#vehicleEngine:V-2SN":
+        position: [3, 5]
+    "#vehicleEngine:V-5":
+        position: [1, 5]
+    "#vehicleGun:_100mm_D10T":
+        position: [4, 2]
+    "#vehicleGun:_107mm_ZiS-6":
+        position: [2, 1]
+    "#vehicleGun:_122-mm_D-25T_with_a_piston_shutter":
+        position: [4, 1]
+    "#vehicleGun:_122-mm_D-25T_with_wedges_shutter":
+        position: [5, 1]
+    "#vehicleGun:_85mm_F-30":
+        position: [1, 1]
+    "#vehicleGun:_85mm_S-31":
+        position: [2, 2]
+    "#vehicleTurret:KV-220_mod":
+        position: [1, 4]
+    "#vehicleTurret:KV-3":
+        position: [3, 1]
+

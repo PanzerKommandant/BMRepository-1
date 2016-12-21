@@ -1,0 +1,49 @@
+emitter:
+    emissionRange: 10.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "fire1"
+    radius: 1.200000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "oncircle"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.705618, 1.000000, 0.990000, 0.000000]
+    angle: 1.000000
+    angleVariation: 360.000000
+    blending: 3
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 1000.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 1.000000
+    lifeVariation: 1.000000
+    loopEndTime: 6.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire1"
+    number: 6.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.000000, 2.000000]
+    spin: 6.000000
+    spinVariation: 10.000000
+    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 2.000000
+    velocityVariation: 1.000000

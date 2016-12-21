@@ -1,0 +1,5 @@
+1
+module_damaged0.tex
+508 320
+1
+0 0 508 300 0 20 0 frame0

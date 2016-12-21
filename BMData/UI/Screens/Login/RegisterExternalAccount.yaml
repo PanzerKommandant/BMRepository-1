@@ -1,0 +1,241 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Login/NicknameDialog.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   prototype: "LoginCommon/ScreenBlank"
+    name: "Screen"
+    children:
+    -   path: "Background"
+        children:
+        -   class: "UIScrollView"
+            name: "Scroll"
+            size: [500.000000, 768.000000]
+            pivot: [0.500000, 0.000000]
+            debugDraw: false
+            autoUpdate: true
+            centerContent: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                size: [500.000000, 462.000000]
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfFirstChild"
+                    Anchor:
+                        leftAnchorEnabled: false
+                        rightAnchorEnabled: false
+                        topAnchorEnabled: false
+                children:
+                -   prototype: "NicknameDialog/NicknameDialog"
+                    name: "Dialog"
+                    children:
+                    -   path: "Middle/VerticalBox/SuggestionHolder"
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                            Anchor:
+                                topAnchor: 0.000000
+                        children: []
+    -   path: "Background/BackButton"
+        visible: false
+        children: []
+    -   path: "Background/RegionSelector"
+        components:
+            Anchor:
+                bottomAnchor: 5.000000
+        children: []
+    -   path: "Background/EULANotice"
+        visible: false
+-   class: "UIControl"
+    customClass: "EmailTakenDialog"
+    name: "EmailTakenDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.109804, 0.780392]
+    children:
+    -   prototype: "Common/ResizableDialog"
+        name: "ResizableDialog"
+        size: [500.000000, 360.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Top/TitleText"
+            text: "Error"
+        -   path: "Middle"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                    spacing: 10.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Text"
+                debugDraw: false
+                textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "#externalRegistration:error/emailTaken"
+                font: "WarHeliosCondC_21_warning"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                        vCenterAnchorEnabled: false
+            -   class: "UIControl"
+                name: "ButtonHolder"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        padding: 10.000000
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 20.000000
+                children:
+                -   prototype: "StyledButton/Button"
+                    name: "LoginButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 20.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 20.000000
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "Caption"
+                        text: "#externalRegistration:button/wgId"
+                -   prototype: "StyledButton/Button"
+                    name: "RegisterDemoButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 20.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 20.000000
+                    children:
+                    -   path: "Caption"
+                        text: "#externalRegistration:button/createNew"
+        -   path: "Middle/VerticalBox"
+            visible: false
+-   class: "UIControl"
+    customClass: "ExternalServiceUnavailableDialog"
+    name: "ExternalServiceUnavailableDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.109804, 0.780392]
+    children:
+    -   prototype: "Common/ResizableDialog"
+        name: "ResizableDialog"
+        size: [500.000000, 502.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Top/TitleText"
+            text: "Error"
+        -   path: "Middle"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                    spacing: 10.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Text"
+                debugDraw: false
+                textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["HCENTER", "VCENTER"]
+                text: "#externalRegistration:error/connect"
+                font: "WarHeliosCondC_21_warning"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        vCenterAnchorEnabled: false
+            -   class: "UIControl"
+                name: "ButtonHolder"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        padding: 10.000000
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 20.000000
+                children:
+                -   prototype: "StyledButton/Button"
+                    name: "RetryButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 20.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 20.000000
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "Caption"
+                        text: "#externalRegistration:button/retry"
+                -   prototype: "StyledButton/Button"
+                    name: "RegisterDemoButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 20.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 20.000000
+                    children:
+                    -   path: "Caption"
+                        text: "#externalRegistration:button/createNew"
+        -   path: "Middle/VerticalBox"
+            visible: false

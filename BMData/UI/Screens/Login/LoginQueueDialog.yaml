@@ -1,0 +1,146 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "LoginQueueDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "DialogControl"
+        position: [262.000000, 234.000000]
+        size: [500.000000, 300.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Middle"
+            size: [500.000000, 300.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_TILED"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+                    leftRightStretchCap: 4.000000
+                    topBottomStretchCap: 4.000000
+            children:
+            -   class: "UIStaticText"
+                name: "DialogText"
+                position: [20.000000, 80.000000]
+                size: [460.000000, 60.000000]
+                noInput: true
+                classes: "text1 text-color-white"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "LOGIN_QUEUE_ERROR_TEXT"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 80.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+                        leftRightStretchCap: 7.000000
+            -   class: "UIStaticText"
+                name: "PositionText"
+                position: [20.000000, 170.000000]
+                size: [460.000000, 30.000000]
+                noInput: true
+                classes: "text1 text-color-white"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "LOGIN_QUEUE_POSITION_TEXT"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 170.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "WaitTimeText"
+                position: [20.000000, 205.000000]
+                size: [460.000000, 30.000000]
+                noInput: true
+                classes: "text1 text-color-white"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "LOGIN_QUEUE_WAIT_TIME_TEXT"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 205.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Top"
+            size: [500.000000, 56.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_TILED"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackTop"
+                    leftRightStretchCap: 4.000000
+            children:
+            -   class: "UIStaticText"
+                name: "TitleText"
+                position: [5.000000, 5.000000]
+                size: [490.000000, 46.000000]
+                noInput: true
+                classes: "header1 text-color-white"
+                shadowoffset: [0.000000, 1.000000]
+                text: "LOGIN_QUEUE_ERROR_TITLE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "CancelButton"

@@ -1,0 +1,4 @@
+MaterialTemplate:
+    HIGH : "~res:/Materials.custom/tank/NormalizedBlinnPhongPerPixel.Opaque.material"
+    MEDIUM: "~res:/Materials.custom/tank/NormalizedBlinnPhongPerPixelFast.Opaque.material"
+    LOW : "~res:/Materials.custom/tank/NormalizedBlinnPhongPerVertex.Opaque.material"

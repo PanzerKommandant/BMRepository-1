@@ -1,0 +1,282 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Tutorial/TutorialCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "tutorialDamagedModules"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "marker"
+        position: [497.000000, 45.000000]
+        size: [30.000000, 30.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 45.000000
+    -   class: "UIControl"
+        name: "layer1"
+        size: [1024.000000, 768.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "ussr"
+            position: [250.000000, 187.666687]
+            size: [524.000000, 392.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -0.333313
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/ussr/damaged_modules_ussr"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "crew"
+                position: [218.000000, 228.333313]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -44.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 32.333313
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "modules"
+                position: [331.000000, 192.000000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 69.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -4.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        frame: 1
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "usa"
+            position: [250.000000, 188.000000]
+            size: [524.000000, 392.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/usa/damaged_modules_usa"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "modules"
+                position: [233.750000, 196.000000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -28.250000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        frame: 1
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "crew"
+                position: [273.000000, 194.000000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 11.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "germany"
+            position: [250.000000, 188.000000]
+            size: [524.000000, 392.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/germany/damaged_modules_germany"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "modules"
+                position: [193.750000, 206.750000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -68.250000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 10.750000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        frame: 1
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "crew"
+                position: [252.000000, 222.250000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -10.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 26.250000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "uk"
+            position: [250.000000, 188.000000]
+            size: [524.000000, 392.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/uk/damaged_modules_uk"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "modules"
+                position: [244.750000, 209.000000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -17.250000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 13.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        frame: 1
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "crew"
+                position: [219.250000, 199.250000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -42.750000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 3.250000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "japan"
+            position: [250.000000, 188.000000]
+            size: [524.000000, 392.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/japan/damaged_modules_jap"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "modules"
+                position: [344.250000, 170.000000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor: {}
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        frame: 1
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "crew"
+                position: [219.250000, 199.250000]
+                size: [200.000000, 200.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -42.750000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 3.250000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/damaged_modules"
+                        color: [1.000000, 1.000000, 1.000000, 0.698000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   prototype: "TutorialCommon/keyboardButton"
+        name: "hotkey"
+        components:
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

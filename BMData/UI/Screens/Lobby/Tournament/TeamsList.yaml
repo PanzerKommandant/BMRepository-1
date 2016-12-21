@@ -1,0 +1,68 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   class: "UIControl"
+    name: "TeamsListContainer"
+    size: [550.000000, 598.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+    children:
+    -   class: "UIControl"
+        name: "ListTitle"
+        size: [550.000000, 50.000000]
+        noInput: true
+        debugDraw: false
+        components:
+            LinearLayout:
+                spacing: 1.000000
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "TeamName"
+            size: [429.000000, 50.000000]
+            classes: "text1 text-color-blue"
+            fitting: ["POINTS"]
+            textalign: ["LEFT", "VCENTER"]
+            textMargins: [10.000000, 0.000000, 0.000000, 0.000000]
+            text: "tournaments/TeamScreen/Table/Team"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIStaticText"
+            name: "Players"
+            size: [120.000000, 50.000000]
+            classes: "text1 text-color-blue"
+            textalign: ["RIGHT", "VCENTER"]
+            textMargins: [0.000000, 0.000000, 10.000000, 0.000000]
+            text: "tournaments/TeamScreen/Table/Members"
+    -   class: "UIControl"
+        name: "Content"
+        noInput: true
+        classes: ""
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIList"
+            name: "TeamsList"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "ScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: -15.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

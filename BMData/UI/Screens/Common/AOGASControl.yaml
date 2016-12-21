@@ -1,0 +1,62 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: "#AOGASControl.china_region"
+    properties:
+        visible: true
+-   selector: "#AOGASControl"
+    properties:
+        visible: false
+Controls:
+-   class: "UIControl"
+    name: "AOGASControl"
+    position: [262.000000, 16.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: false
+    children:
+    -   class: "UIStaticText"
+        name: "DescriptionControlTitle"
+        position: [250.000000, 0.000000]
+        size: [0.000000, 31.000000]
+        noInput: true
+        classes: "header1 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_DISABLED"
+        textalign: ["HCENTER", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        text: "#chinaContent:Restriction/Header"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "DescriptionControlText"
+        position: [0.000000, 31.000000]
+        size: [500.000000, 92.000000]
+        angle: 0.000000
+        visible: true
+        noInput: true
+        classes: "text2 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["HCENTER", "VCENTER"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "#chinaContent:Restriction/Description"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                horizontalValue: 100.000000
+                horizontalMin: 500.000000
+                verticalPolicy: "PercentOfContent"

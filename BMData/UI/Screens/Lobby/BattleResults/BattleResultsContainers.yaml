@@ -1,0 +1,154 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Container"
+    position: [0.000000, 0.000000]
+    size: [422.000000, 30.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfChildrenSum"
+    children:
+    -   class: "UIStaticText"
+        name: "Header"
+        position: [0.000000, 0.000000]
+        size: [422.000000, 30.000000]
+        noInput: true
+        classes: "header1 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: -30.000000
+    -   class: "UIControl"
+        name: "Table"
+        size: [422.000000, 0.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   prototype: "Common/BlueBoldLine"
+            name: "TopBlueBoldLine"
+            size: [422.000000, 2.000000]
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+        -   prototype: "Common/BlueBoldLine"
+            name: "BottomBlueBoldLine"
+            size: [422.000000, 2.000000]
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "TableRow"
+    size: [467.000000, 32.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        size: [467.000000, 32.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                align: ["HCENTER", "BOTTOM"]
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            size: [397.000000, 32.000000]
+            noInput: true
+            classes: "text2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 70.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "VCENTER"]
+        -   class: "UIStaticText"
+            name: "Value"
+            position: [467.000000, 0.000000]
+            size: [0.000000, 32.000000]
+            noInput: true
+            classes: "header4 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                Background:
+                    align: ["RIGHT", "VCENTER"]
+        -   class: "UIControl"
+            name: "SplitLine"
+            position: [0.000000, 31.000000]
+            size: [467.000000, 1.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "TableRow"
+    name: "TableSubRow"
+    children:
+    -   path: "Content"
+        components:
+            Anchor:
+                leftAnchor: 30.000000
+        children: []
+    -   path: "Content/Text"
+        classes: "text2 text-color-blue"

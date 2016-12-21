@@ -1,0 +1,161 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".reward-none #Back #Icon, .reward-none"
+    properties:
+        visible: false
+-   selector: ".reward-credit #Back #Icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-credit-2x #Back #Icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-gold #Back #Icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-gold-2x #Back #Icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-xp #Back #Icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-xp-2x #Back #Icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-free-xp #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-free-xp-2x #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-crew-xp #Back #Icon"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-crew-xp-2x #Back #Icon"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-premium #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge"
+-   selector: ".reward-premium-2x #Back #Icon"
+    properties:
+        bg-frame: 7
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+-   selector: ".reward-vehicle #Back #Icon"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   selector: ".reward-vehicle-2x #Back #Icon"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   selector: ".reward-camo #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_cam.txt"
+-   selector: ".reward-camo-2x #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%_cam.txt"
+-   selector: ".reward-camo-football #Back #Icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_cam.txt"
+-   selector: ".reward-camo-football-2x #Back #Icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%_cam.txt"
+-   selector: ".reward-camo-olimpic #Back #Icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_cam.txt"
+-   selector: ".reward-camo-olimpic-2x #Back #Icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%_cam.txt"
+-   selector: ".reward-camo-esport #Back #Icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_cam.txt"
+-   selector: ".reward-camo-esport-2x #Back #Icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%_cam.txt"
+-   selector: ".common #Back"
+    properties:
+        bg-frame: 0
+-   selector: ".rare #Back"
+    properties:
+        bg-frame: 3
+-   selector: ".unique #Back"
+    properties:
+        bg-frame: 1
+-   selector: ".legendary #Back"
+    properties:
+        bg-frame: 2
+-   selector: ".many-rewards #RegularLayout #Reward #Description"
+    properties:
+        visible: false
+Controls:
+-   class: "UIControl"
+    name: "Reward"
+    size: [0.000000, 120.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+    children:
+    -   prototype: "ItemFrame"
+        name: "Back"
+    -   class: "UIStaticText"
+        name: "Description"
+        position: [0.000000, 120.000000]
+        size: [0.000000, 0.000000]
+        pivot: [0.500000, 0.500000]
+        classes: "header3"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                enabled: true
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "ItemFrame"
+    position: [0.000000, 60.000000]
+    size: [120.000000, 120.000000]
+    scale: [0.500000, 0.500000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/Quests/items_reward_back_200%"
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   class: "UIControl"
+        name: "Icon"
+        size: [104.000000, 104.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

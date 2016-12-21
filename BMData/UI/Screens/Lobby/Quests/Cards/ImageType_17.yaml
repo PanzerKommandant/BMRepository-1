@@ -1,0 +1,46 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Superpershion/card_superpershion"
+        children:
+        -   class: "UIParticles"
+            name: "Smoke"
+            position: [20.000000, 110.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_superpershion/smoke.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Superpershion/card_superpershion"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_superpershion/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_superpershion/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [0.000000, 200.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_superpershion/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [50.000000, 220.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_superpershion/glow_behind.sc2"
+            autoStart: true

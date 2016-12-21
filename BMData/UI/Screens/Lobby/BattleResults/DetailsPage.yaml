@@ -1,0 +1,80 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIBattleResultsDetailsPageControl"
+    name: "Page"
+    size: [1024.000000, 688.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        customClass: "UITabSwitcher"
+        name: "DetailsTabs"
+        size: [1024.000000, 70.000000]
+        components:
+            LinearLayout:
+                spacing: 2.000000
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+        children:
+        -   prototype: "LobbyCommon/TabControl"
+            name: "StatisticsTab"
+            children:
+            -   path: "selected"
+                text: "#battle_results:DetailsPage/StatisticPage"
+            -   path: "unselected/text"
+                text: "#battle_results:DetailsPage/StatisticPage"
+        -   prototype: "LobbyCommon/TabControl"
+            name: "EfficiencyTab"
+            position: [122.000000, 0.000000]
+            tag: 1
+            children:
+            -   path: "selected"
+                text: "#battle_results:DetailsPage/EfficiencyPage"
+            -   path: "unselected/text"
+                text: "#battle_results:DetailsPage/EfficiencyPage"
+        -   prototype: "LobbyCommon/TabControl"
+            name: "CreditsTab"
+            position: [244.000000, 0.000000]
+            tag: 2
+            children:
+            -   path: "selected"
+                text: "#battle_results:DetailsPage/CreditsPage"
+            -   path: "unselected/text"
+                text: "#battle_results:DetailsPage/CreditsPage"
+        -   prototype: "LobbyCommon/TabControl"
+            name: "ExperienceTab"
+            position: [366.000000, 0.000000]
+            tag: 3
+            children:
+            -   path: "selected"
+                text: "#battle_results:DetailsPage/ExperiencePage"
+            -   path: "unselected/text"
+                text: "#battle_results:DetailsPage/ExperiencePage"
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 70.000000]
+        size: [1024.000000, 618.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 70.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000

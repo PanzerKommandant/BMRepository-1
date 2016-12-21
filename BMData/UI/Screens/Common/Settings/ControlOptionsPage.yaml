@@ -1,0 +1,47 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/Settings/Settings.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1025.000000, 688.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   prototype: "SettingsCommon/Row"
+        name: "ControlSelector"
+        components:
+            Anchor:
+                leftAnchor: 5.000000
+                rightAnchor: 5.000000
+                topAnchorEnabled: true
+        children:
+        -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
+            name: "ControlType"
+            children:
+            -   path: "GroupCaption"
+                text: "#settings:Controls/ControlType/Title"
+            -   path: "Description"
+                text: "#settings:Controls/ControlType/Comment"
+    -   class: "UIControl"
+        name: "Content"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 82.000000
+                bottomAnchorEnabled: true

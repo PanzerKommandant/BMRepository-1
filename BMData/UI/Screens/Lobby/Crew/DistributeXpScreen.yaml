@@ -1,0 +1,316 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Crew/ScreenBlank.yaml"
+- "~res:/UI/Screens/Lobby/Crew/CrewCommon.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Icon"
+    size: [100.000000, 125.000000]
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+            vCenterAnchor: 0.000000
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/CrewSkills/skillsIcons2x"
+            frame: 0
+            align: ["HCENTER", "TOP"]
+    children:
+    -   class: "UIControl"
+        name: "Lock"
+        size: [35.000000, 35.000000]
+        debugDraw: false
+        components:
+            Anchor:
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                rightAnchor: -10.000000
+                vCenterAnchorEnabled: false
+                bottomAnchorEnabled: true
+                bottomAnchor: 23.000000
+            Background:
+                sprite: "~res:/Gfx/UI/CrewSkills/lock"
+                frame: 0
+    -   class: "UIStaticText"
+        name: "Label"
+        position: [-50.000000, 105.000000]
+        size: [200.000000, 20.000000]
+        classes: "header3 text-colorwhite"
+        text: "#crew:mastery/skills"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -50.000000
+                rightAnchorEnabled: true
+                rightAnchor: -50.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+-   prototype: "CrewCommon/Panel"
+    name: "Panel"
+    position: [0.000000, 0.000000]
+    size: [600.000000, 60.000000]
+    visible: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+            vCenterAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "Icon"
+        size: [25.000000, 25.000000]
+        noInput: true
+        debugDraw: false
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 20.000000
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                frame: 4
+    -   class: "UIStaticText"
+        name: "Title"
+        size: [545.000000, 25.000000]
+        classes: "text-color-white"
+        debugDraw: false
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["LEFT", "VCENTER"]
+        text: "#common:currency/crewXp/lower"
+        font: "WarHeliosCondC_Bold_25_skills"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 20.000000
+                rightAnchorEnabled: true
+                rightAnchor: 35.000000
+                vCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "Value"
+        size: [550.000000, 25.000000]
+        classes: "header1 text-color-white"
+        debugDraw: false
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["RIGHT", "VCENTER"]
+        text: "0"
+        font: "WarHeliosCondC_Bold_25_skills"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                rightAnchor: 50.000000
+                vCenterAnchorEnabled: true
+-   prototype: "ScreenBlank/Screen"
+    customClass: "UIXpDistributionControl"
+    name: "Screen"
+    children:
+    -   path: "Content"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalMax: 1000.000000
+        children:
+        -   class: "UIControl"
+            name: "Title"
+            size: [1024.000000, 54.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/CrewSkills/plashka"
+            children:
+            -   class: "UIStaticText"
+                name: "Label"
+                textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                text: "#crew:skills/distribution/header"
+                font: "WarHeliosCondC_Bold_25_skills"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Body"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "ConstrainedContent"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        dynamicPadding: true
+                        dynamicSpacing: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                        verticalMax: 500.000000
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                children:
+                -   prototype: "CrewCommon/Panel"
+                    name: "TopPanel"
+                    size: [600.000000, 120.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                    children:
+                    -   class: "UIControl"
+                        customClass: "UIUndistributedXp"
+                        name: "UndistributedXP"
+                        position: [25.000000, 40.000000]
+                        size: [555.000000, 40.000000]
+                        components:
+                            LinearLayout:
+                                spacing: 10.000000
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 25.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 20.000000
+                                topAnchorEnabled: false
+                                vCenterAnchorEnabled: true
+                                bottomAnchorEnabled: false
+                        children:
+                        -   class: "UIControl"
+                            customClass: "UIHangarTankBaseParamBar"
+                            name: "Progress"
+                            position: [0.000000, 29.000000]
+                            size: [550.000000, 6.000000]
+                            components:
+                                IgnoreLayout: {}
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 5.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 5.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [1.000000, 0.000000, 1.000000, 1.000000]
+                        -   class: "UIStaticText"
+                            name: "Label"
+                            position: [0.000000, -4.000000]
+                            size: [490.000000, 25.000000]
+                            classes: "header1 text-color-white"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                            textalign: ["LEFT", "VCENTER"]
+                            textUseRtlAlign: "USE_BY_CONTENT"
+                            text: "#crew:skills/crewXp/lightTank"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "FixedSize"
+                                    verticalValue: 25.000000
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 5.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 120.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 19.000000
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            position: [500.000000, -2.000000]
+                            size: [25.000000, 25.000000]
+                            classes: "header1 text-color-white"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                            textalign: ["RIGHT", "VCENTER"]
+                            text: "44"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "FixedSize"
+                                    verticalValue: 25.000000
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 30.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 17.000000
+                        -   class: "UIControl"
+                            name: "Icon"
+                            position: [535.000000, 1.000000]
+                            size: [20.000000, 20.000000]
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 5.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 19.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                                    frame: 4
+                -   prototype: "CrewCommon/Arrow"
+                    name: "Arrow"
+                -   prototype: "CrewCommon/SkillPanel"
+                    name: "BottomPanel"
+                    position: [212.000000, 326.500000]
+                    size: [600.000000, 121.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                    children:
+                    -   path: "Skill/ShortSkillDescription/Price"
+                        visible: false
+                        children: []
+                    -   path: "Skill/Content"
+                        visible: false
+    -   path: "Footer"
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "DistributeXp"
+            size: [290.000000, 71.000000]
+            classes: "button button-color-green"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                classes: "header1 hacked-font text-color-white"
+                text: "#crew:skills/skillDescription/convert"
+        -   class: "UIStaticText"
+            name: "Description"
+            textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "#crew:skills/distribution/acquireSkills/tip"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 310.000000
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000

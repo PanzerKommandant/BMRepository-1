@@ -1,0 +1,5 @@
+1
+supremacy_victory0.tex
+508 320
+1
+0 0 508 164 0 106 0 frame0

@@ -1,0 +1,17 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "TreeLevelCell"
+    size: [273.000000, 30.000000]
+    children:
+    -   class: "UIStaticText"
+        name: "LevelText"
+        size: [182.000000, 30.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "I"
+        font: "WarHeliosCondC_17"
+        components:
+            Background:
+                align: ["LEFT", "TOP"]

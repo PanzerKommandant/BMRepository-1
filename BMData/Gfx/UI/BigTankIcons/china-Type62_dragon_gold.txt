@@ -1,0 +1,5 @@
+1
+china-Type62_dragon_gold0.tex
+160 100
+1
+0 0 152 100 3 0 0 frame0

@@ -1,0 +1,16 @@
+nationTankMap: 
+    "usa":
+        name: "#usa_vehicles:T1_Cunningham"
+        type: "Light"
+    "germany":
+        name: "#germany_vehicles:Ltraktor"
+        type: "Light"
+    "ussr":
+        name: "#ussr_vehicles:MS-1"
+        type: "Light"
+    "uk":
+        name: "#gb_vehicles:GB01_Medium_Mark_I"
+        type: "Medium"
+    "japan":
+        name: "#japan_vehicles:NC27"
+        type: "Light"

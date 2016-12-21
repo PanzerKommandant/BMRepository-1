@@ -1,0 +1,5 @@
+1
+germany-G20_Marder_II0.tex
+160 100
+1
+0 0 130 100 14 0 0 frame0

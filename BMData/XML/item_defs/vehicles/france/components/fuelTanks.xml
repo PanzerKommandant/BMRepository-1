@@ -1,0 +1,17 @@
+<root>
+	<ids>
+		<Large>205</Large>
+	</ids>
+	<shared>
+		<Large>
+			<userString>#france_vehicles:Large</userString>
+			<description>#france_vehicles:Large_descr</description>
+			<tags> </tags>
+			<price>100</price>
+			<weight>300</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</Large>
+	</shared>
+</root>

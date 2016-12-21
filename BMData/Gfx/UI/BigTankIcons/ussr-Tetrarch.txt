@@ -1,0 +1,5 @@
+1
+ussr-Tetrarch0.tex
+160 100
+1
+0 0 158 100 1 0 0 frame0

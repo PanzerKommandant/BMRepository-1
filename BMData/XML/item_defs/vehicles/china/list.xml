@@ -1,0 +1,21 @@
+<root>
+	<Ch01_Type59>
+		<id>0</id>
+		<userString>#china_vehicles:Ch01_Type59</userString>
+		<description>#china_vehicles:Ch01_Type59_descr</description>
+		<price>10000<gold/> </price>
+		<tags>mediumTank enhancedTorsions3t_user mediumCaliberTankRammer_user wetCombatPack_class1_user aimingStabilizer_Mk1_user</tags>
+		<level>8</level>
+		<notInShop>true</notInShop>
+	</Ch01_Type59>
+	<Ch02_Type62>
+		<id>255</id>
+		<userString>#china_vehicles:Ch02_Type62</userString>
+		<description>#china_vehicles:Ch02_Type62_descr</description>
+		<price>5500<gold/>
+    </price>
+		<notInShop>true</notInShop>
+		<tags>lightTank enhancedTorsions3t_user mediumCaliberTankRammer_user wetCombatPack_class1_user aimingStabilizer_Mk1_user</tags>
+		<level>7</level>
+	</Ch02_Type62>
+</root>

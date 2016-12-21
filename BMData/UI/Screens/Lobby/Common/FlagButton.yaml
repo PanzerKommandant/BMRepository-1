@@ -1,0 +1,59 @@
+Header:
+    version: "2"
+StyleSheets:
+-   selector: ".flag-button.flag-button.china_region #Content"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/flagsbutton"
+-   selector: ".flag-button.flag-button #Content"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/flagsbutton"
+-   selector: ".germany #Content"
+    properties:
+        bg-frame: 1
+-   selector: ".japan #Content"
+    properties:
+        bg-frame: 4
+-   selector: ".ussr #Content"
+    properties:
+        bg-frame: 2
+-   selector: ".china #Content"
+    properties:
+        bg-frame: 5
+-   selector: ".uk #Content"
+    properties:
+        bg-frame: 3
+-   selector: ".usa #Content"
+    properties:
+        bg-frame: 0
+-   selector: ".france #Content"
+    properties:
+        bg-frame: 6
+-   selector: ".flag-button:selected"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/selectbuttonfilter"
+-   selector: ".other #Content"
+    properties:
+        bg-frame: 7
+Controls:
+-   class: "UIControl"
+    name: "FlagButton"
+    size: [90.000000, 64.000000]
+    classes: "flag-button"
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            leftRightStretchCap: 5.000000
+            topBottomStretchCap: 5.000000
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        position: [0.000000, 0.000000]
+        size: [90.000000, 64.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"

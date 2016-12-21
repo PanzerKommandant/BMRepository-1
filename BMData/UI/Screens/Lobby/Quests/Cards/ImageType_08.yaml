@@ -1,0 +1,41 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/PlatoonGame/card_platoon_game"
+        children:
+        -   class: "UIParticles"
+            name: "Snow"
+            position: [0.000000, 80.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_platoon_game/snow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SnowTop"
+            position: [40.000000, 60.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_platoon_game/snow_top.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/PlatoonGame/card_platoon_game"
+        children:
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_platoon_game/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SnowFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_platoon_game/snow_front.sc2"
+            autoStart: true

@@ -1,0 +1,117 @@
+<root>
+	<ids>
+		<_100mm_59>0</_100mm_59>
+		<_85mm_Tip_62-85TS>1</_85mm_Tip_62-85TS>
+	</ids>
+	<shared>
+		<_85mm_Tip_62-85TS>
+			<userString>#china_vehicles:_85mm_Tip_62-85TS</userString>
+			<description>#china_vehicles:_85mm_Tip_62-85TS</description>
+			<tags/>
+			<level>7</level>
+			<price>61530</price>
+			<notInShop>true</notInShop>
+			<impulse>0.44</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.3</amplitude>
+				<backoffTime>0.1</backoffTime>
+				<returnTime>0.28</returnTime>
+			</recoil>
+			<effects>shot_main</effects>
+			<pitchLimits>-22 5</pitchLimits>
+			<rotationSpeed>39.375</rotationSpeed>
+			<reloadTime>5.71428571428571</reloadTime>
+			<maxAmmo>59</maxAmmo>
+			<aimingTime>2.28571428571429</aimingTime>
+			<weight>1650</weight>
+			<maxHealth>134</maxHealth>
+			<maxRegenHealth>67</maxRegenHealth>
+			<repairCost>6</repairCost>
+			<shotDispersionRadius>0.388571428571429</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>0.16</turretRotation>
+				<afterShot>4.0</afterShot>
+				<whileGunDamaged>2.0</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_85mm_UBR>
+					<defaultPortion>0.80</defaultPortion>
+					<speed>793</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>145 135</piercingPower>
+				</_85mm_UBR>
+				<_85mm_HEAT>
+					<defaultPortion>0.0</defaultPortion>
+					<speed>793</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>250 250</piercingPower>
+				</_85mm_HEAT>
+				<_85mm_UOF>
+					<defaultPortion>0.20</defaultPortion>
+					<speed>793</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>43 43</piercingPower>
+				</_85mm_UOF>
+			</shots>
+		</_85mm_Tip_62-85TS>
+		<_100mm_59>
+			<userString>#china_vehicles:_100mm_59</userString>
+			<description>#china_vehicles:_100mm_59</description>
+			<tags/>
+			<level>8</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<impulse>0.44</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.56</amplitude>
+				<backoffTime>0.1</backoffTime>
+				<returnTime>0.54</returnTime>
+			</recoil>
+			<effects>shot_main</effects>
+			<pitchLimits>-20 7</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>33.25</rotationSpeed>
+			<reloadTime>8.0</reloadTime>
+			<maxAmmo>34</maxAmmo>
+			<aimingTime>2.85714285714286</aimingTime>
+			<weight>2257</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<shotDispersionRadius>0.31</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>0.16</turretRotation>
+				<afterShot>4.0</afterShot>
+				<whileGunDamaged>2.0</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_100mm_UBR-412>
+					<defaultPortion>0.80</defaultPortion>
+					<speed>900</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>181 160</piercingPower>
+				</_100mm_UBR-412>
+				<_100mm_UBR-412P>
+					<defaultPortion>0.0</defaultPortion>
+					<speed>1125</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>241 213</piercingPower>
+				</_100mm_UBR-412P>
+				<_100mm_UOF-412>
+					<defaultPortion>0.20</defaultPortion>
+					<speed>900</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>50 50</piercingPower>
+				</_100mm_UOF-412>
+			</shots>
+		</_100mm_59>
+	</shared>
+</root>

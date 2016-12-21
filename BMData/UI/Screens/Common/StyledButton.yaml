@@ -1,0 +1,60 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/FontsExceptions.yaml"
+StyleSheets:
+-   selector: ".button-payment"
+    properties:
+        bg-frame: 2
+-   selector: ".button-sell"
+    properties:
+        bg-frame: 1
+Controls:
+-   class: "UIControl"
+    name: "Button"
+    size: [222.000000, 70.000000]
+    classes: "button"
+    components:
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+            align: ["HCENTER", "VCENTER"]
+            leftRightStretchCap: 10.000000
+            margins: [1.000000, 1.000000, 1.000000, 1.000000]
+    children:
+    -   class: "UIStaticText"
+        name: "Caption"
+        position: [0.000000, 0.000000]
+        size: [222.000000, 70.000000]
+        classes: "header1 text-color-white"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "DefaultStyledButton"
+    size: [222.000000, 70.000000]
+    classes: "button"
+    components:
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            align: ["HCENTER", "VCENTER"]
+            leftRightStretchCap: 9.000000
+-   prototype: "DefaultStyledButton"
+    name: "StyledButton"
+    classes: "button"
+    children:
+    -   class: "UIStaticText"
+        name: "Caption"
+        classes: "header1 hacked-font text-color-white"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true

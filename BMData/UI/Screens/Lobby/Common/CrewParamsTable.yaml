@@ -1,0 +1,46 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIHangarParamsTable"
+    name: "CrewParamsTable"
+    size: [200.000000, 410.000000]
+    components:
+        LinearLayout:
+            orientation: "Vertical"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfChildrenSum"
+    children:
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "ChassiRotationSpeed"
+        children:
+        -   path: "TextContainer/name"
+            text: "tank descr chassi rotation speed"
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "TurretRotationSpeed"
+        children:
+        -   path: "TextContainer/name"
+            text: "tank descr turret rotation speed"
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "FireRate"
+        children:
+        -   path: "TextContainer/name"
+            text: "tank descr fire rate"
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "GunAimingTime"
+        children:
+        -   path: "TextContainer/name"
+            text: "gun aiming time"
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "GunShotDispersionAngle"
+        children:
+        -   path: "TextContainer/name"
+            text: "gun shot dispersion angle"
+    -   prototype: "ParamsPrototype/NumberParamPrototype"
+        name: "CircularVisionRadius"
+        children:
+        -   path: "TextContainer/name"
+            text: "tank descr circular vision radius"

@@ -1,0 +1,20 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Styles/DesktopStyles.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIAmmoContainer"
+    name: "AmmoContainer"
+    size: [600.000000, 600.000000]
+    classes: "limited-width"
+    components:
+        LinearLayout:
+            orientation: "Vertical"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+            verticalMax: 600.000000
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true

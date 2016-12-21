@@ -1,0 +1,22 @@
+modules:
+    "#vehicle:M10_Wolverine":
+        position: [3, 2]
+    "#vehicleChassis:Chassis_T40":
+        position: [1, 5]
+    "#vehicleChassis:Chassis_T40_2":
+        position: [2, 5]
+    "#vehicleEngine:Crysler_A57":
+        position: [2, 4]
+    "#vehicleEngine:Wright_R-975EC2":
+        position: [1, 4]
+    "#vehicleGun:_105mm_AT_Howitzer_M3":
+        position: [2, 1]
+    "#vehicleGun:_57mm_Gun_M1_L50":
+        position: [2, 2]
+    "#vehicleGun:_75mm_Howitzer_M1A1":
+        position: [1, 2]
+    "#vehicleGun:_76mm_AT_Gun_M1918":
+        position: [2, 3]
+    "#vehicleGun:_76mm_AT_Gun_M1A1":
+        position: [3, 3]
+

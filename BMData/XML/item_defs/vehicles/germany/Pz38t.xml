@@ -1,0 +1,629 @@
+<root>
+	<blitz>
+		<smallIconPath>~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/germany-Pz38t</smallIconPath>
+		<bigIconPath>~res:/Gfx/UI/BigTankIcons/germany-Pz38t</bigIconPath>
+		<blitzModelPath>Tanks/German/Pz38t.sc2</blitzModelPath>
+		<blitzDestructedModelPath>Tanks/German/Pz38t_crash.sc2</blitzDestructedModelPath>
+		<engineSoundPC>tanks/pc/engine/de/lt</engineSoundPC>
+		<engineSoundNPC>tanks/npc/engine/de/lt</engineSoundNPC>
+		<smokeEffectPath>FX/smoke_tank_type_black_new.sc2</smokeEffectPath>
+		<fireEffectPathAlive>FX/SmokeFire_tank_movement_new.sc2</fireEffectPathAlive>
+		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
+		<collisionMesh>CollisionMeshes/germany-Pz38t.sc2</collisionMesh>
+		<exclusionMask>Camouflages/germany/CamouflageMasks/Pz38t_CM.tex</exclusionMask>
+	</blitz>
+	<crew>
+		<commander>gunner</commander>
+		<driver/>
+		<radioman/>
+		<loader/>
+	</crew>
+	<speedLimits>
+		<forward>42</forward>
+		<backward>18</backward>
+	</speedLimits>
+	<invisibility>
+		<camouflageNetBonus>0.1</camouflageNetBonus>
+		</invisibility>
+	<repairCost>2.49</repairCost>
+	<crewXpFactor>1.0</crewXpFactor>
+	<effects>
+		<destruction>smallDestruction</destruction>
+		<explosion>smallExplosion</explosion>
+		<flaming>smallFlaming</flaming>
+		<collision/>
+	</effects>
+	<camouflage>
+		<priceFactor>0.6</priceFactor>
+		<tiling>1 1 0 0</tiling>
+		<exclusionMask>vehicles/german/G08_Pz38t/Pz38t_CM.dds</exclusionMask>
+	</camouflage>
+	<emblems>
+		<default>germany_cross</default>
+		<lodDist>MEDIUM</lodDist>
+		<alpha>0.86</alpha>
+	</emblems>
+	<horns>
+		<priceFactor>1</priceFactor>
+		<distanceFactor>1</distanceFactor>
+		<volumeFactor>1</volumeFactor>
+	</horns>
+	<hull>
+		<blitz>
+			<averageThickness>
+				<turret_02>20.525650</turret_02>
+				<turret_01>21.001202</turret_01>
+			</averageThickness>
+			<blitzPartName>hull</blitzPartName>
+			<bbox>
+				<min>-0.819261 -2.070938 -0.501746</min>
+				<max>0.819261 2.142629 0.646201</max>
+			</bbox>
+			<points>
+				<normal>0.000008 0.025955 -0.879894</normal>
+				<crash>-0.000006 0.021578 -0.882798</crash>
+			</points>
+		</blitz>
+		<models>
+			<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Hull.model</undamaged>
+			<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Hull.model</destroyed>
+			<exploded>vehicles/german/G08_Pz38t/crash/lod0/Hull.model</exploded>
+		</models>
+		<swinging>
+			<lodDist>FAR</lodDist>
+			<pitchParams>0.28 34.00 0.34 1.00 0.05 0.30</pitchParams>
+			<rollParams>1.00 0.28 34.00 0.34 1.00 0.05 0.30</rollParams>
+			<sensitivityToImpulse>0.74</sensitivityToImpulse>
+		</swinging>
+		<exhaust>
+			<pixie>particles/Tank/engine_exit_gass.xml</pixie>
+			<nodes>HP_Track_Exhaus_1</nodes>
+			<rates>5.0 10.0 25.0</rates>
+		</exhaust>
+		<turretPositions>
+			<turret>-0.000000 0.599164 0.258793</turret>
+		</turretPositions>
+		<hitTester>
+			<collisionModel>vehicles/german/G08_Pz38t/collision/Hull.model</collisionModel>
+		</hitTester>
+		<armor>
+			<armor_1>25</armor_1>
+			<armor_2>15</armor_2>
+			<armor_3>15</armor_3>
+			<armor_4>15</armor_4>
+			<armor_5>10</armor_5>
+			<armor_6>8</armor_6>
+			<armor_7>12</armor_7>
+			<armor_8>0</armor_8>
+			<armor_9>20</armor_9>
+			<armor_10>10</armor_10>
+		</armor>
+		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+		<weight>4200.0</weight>
+		<maxHealth>264</maxHealth>
+		<ammoBayHealth>
+			<maxHealth>100</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</ammoBayHealth>
+		<emblemSlots>
+			<clan>
+				<rayStart>0.213595 0.275165 1.84167</rayStart>
+				<rayEnd>0.213595 -0.1115 1.73925</rayEnd>
+				<rayUp>0.000000 0.000000 -1</rayUp>
+				<size>0.24</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</clan>
+			<inscription>
+				<rayStart>-0.610133 0.636923 -0.970468</rayStart>
+				<rayEnd>-0.48513 0.256959 -0.970554</rayEnd>
+				<rayUp>0.949835 0.312263 -0.0174523</rayUp>
+				<size>0.78</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</inscription>
+		</emblemSlots>
+	</hull>
+	<chassis>
+		<Pz38t_Standardketten>
+			<blitz>
+				<blitzPartName>chassis</blitzPartName>
+				<bbox>
+					<min>-1.043263 -2.221001 -0.000091</min>
+					<max>1.043263 2.245921 1.117831</max>
+				</bbox>
+				<points>
+					<normal>-0.000013 -0.004766 -0.000018</normal>
+					<crash>0.0 0.0 0.0</crash>
+				</points>
+				<soundPC>tanks/pc/treads/lt</soundPC>
+				<soundNPC>tanks/npc/treads/lt</soundNPC>
+			</blitz>
+			<userString>#germany_vehicles:Pz38t_Standardketten</userString>
+			<description>#germany_vehicles:Pz38t_Standardketten_descr</description>
+			<tags/>
+			<level>2</level>
+			<price>0</price>
+			<models>
+				<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Chassis.model</undamaged>
+				<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Chassis.model</destroyed>
+				<exploded>vehicles/german/G08_Pz38t/crash/lod0/Chassis.model</exploded>
+			</models>
+			<traces>
+				<lodDist>FAR</lodDist>
+				<bufferPrefs>mediumTank</bufferPrefs>
+				<textureSet>germany_01</textureSet>
+				<size>0.4 0.34</size>
+			</traces>
+			<tracks>
+				<lodDist>MEDIUM</lodDist>
+				<leftMaterial>track_mat_L_skinned</leftMaterial>
+				<rightMaterial>track_mat_R_skinned</rightMaterial>
+				<textureScale>-1.11</textureScale>
+			</tracks>
+			<wheels>
+				<lodDist>MEDIUM</lodDist>
+				<group>
+					<isLeft>true</isLeft>
+					<template>W_L</template>
+					<radius>0.39852</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+				<group>
+					<isLeft>false</isLeft>
+					<template>W_R</template>
+					<radius>0.39852</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L0</name>
+					<radius>0.318462</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>WD_L</template>
+					<radius>0.114096</radius>
+					<startIndex>1</startIndex>
+					<count>2</count>
+				</group>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L3</name>
+					<radius>0.27347</radius>
+				</wheel>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R0</name>
+					<radius>0.318462</radius>
+				</wheel>
+				<group>
+					<isLeft>false</isLeft>
+					<template>WD_R</template>
+					<radius>0.114096</radius>
+					<startIndex>1</startIndex>
+					<count>2</count>
+				</group>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R3</name>
+					<radius>0.27347</radius>
+				</wheel>
+			</wheels>
+			<drivingWheels>WD_L0 WD_L3</drivingWheels>
+			<effects>
+				<lodDist>MEDIUM</lodDist>
+				<dust>smallTankDust</dust>
+				<mud>smallTankMud</mud>
+			</effects>
+			<sound>/vehicles/tanks/treads/treads_1</sound>
+			<hullPosition>0.000000 0.881762 -0.024953</hullPosition>
+			<hitTester>
+				<collisionModel>vehicles/german/G08_Pz38t/collision/Chassis.model</collisionModel>
+			</hitTester>
+			<armor>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
+			</armor>
+			<topRightCarryingPoint>0.897134 1.37088</topRightCarryingPoint>
+			<maxClimbAngle>25</maxClimbAngle>
+			<navmeshGirth>6.0</navmeshGirth>
+			<weight>3200</weight>
+			<maxLoad>12300</maxLoad>
+			<terrainResistance>1.1 1.3 1.53</terrainResistance>
+			<brakeForce>35000</brakeForce>
+			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationSpeed>35</rotationSpeed>
+			<shotDispersionFactors>
+				<vehicleMovement>0.2</vehicleMovement>
+				<vehicleRotation>0.2</vehicleRotation>
+			</shotDispersionFactors>
+			<bulkHealthFactor>3.0</bulkHealthFactor>
+			<maxHealth>60</maxHealth>
+			<maxRegenHealth>45</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</Pz38t_Standardketten>
+	</chassis>
+	<turrets0>
+		<LT-40_turm>
+			<blitz>
+				<blitzPartName>turret_02</blitzPartName>
+				<bbox>
+					<min>-0.736435 -0.849600 -0.556127</min>
+					<max>0.735003 0.821979 0.879495</max>
+				</bbox>
+				<points>
+					<normal>0.000000 -0.233841 -1.481381</normal>
+					<crash>0.000010 -0.233323 -1.480692</crash>
+				</points>
+			</blitz>
+			<userString>#germany_vehicles:LT-40_turm</userString>
+			<description>#germany_vehicles:LT-40_turm_descr</description>
+			<tags/>
+			<level>3.0</level>
+			<price>0</price>
+			<unlocks>
+				<turret>Pz38t_Ausf_G_turm<cost>1260</cost>
+				</turret>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Turret_02.model</undamaged>
+				<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Turret_02.model</destroyed>
+				<exploded>vehicles/german/G08_Pz38t/crash/lod0/Turret_02.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/german/G08_Pz38t/collision/Turret_02.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>-0.004793 0.356428 0.620026</gunPosition>
+			<armor>
+				<armor_1>25</armor_1>
+				<armor_2>20</armor_2>
+				<armor_3>15</armor_3>
+				<armor_4>15</armor_4>
+				<armor_5>6</armor_5>
+				<armor_6>8</armor_6>
+				<armor_7>15</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>8</armor_9>
+				<armor_10>10</armor_10>
+				<armor_11>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+				</armor_11>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>1200</weight>
+			<maxHealth>66</maxHealth>
+			<rotationSpeed>32</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>70</maxHealth>
+				<maxRegenHealth>35</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>220</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>50</maxHealth>
+				<maxRegenHealth>25</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<guns>
+				<_37mm_KwK_38t_L47>shared<blitz>
+						<blitzPartName>gun_08</blitzPartName>
+						<bbox>
+							<min>-0.085496 -0.453914 -0.178446</min>
+							<max>0.088685 1.328727 0.149376</max>
+						</bbox>
+						<points>
+							<normal>0.003573 -0.853866 -1.837410</normal>
+							<crash>0.000000 -0.853867 -1.837357</crash>
+						</points>
+					</blitz>
+					<pitchLimits>-20 10</pitchLimits>
+					<maxAmmo>90</maxAmmo>
+					<shotDispersionFactors>
+						<turretRotation>0.12</turretRotation>
+						<afterShot>3</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<unlocks>
+						<gun>_20mm_Flak_38_L112<cost>290</cost>
+						</gun>
+					</unlocks>
+					<models>
+						<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Gun_08.model</undamaged>
+						<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Gun_08.model</destroyed>
+						<exploded>vehicles/german/G08_Pz38t/crash/lod0/Gun_08.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/german/G08_Pz38t/collision/Gun_08.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>25<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.35</shotDispersionRadius>
+					<reloadTime>3.52</reloadTime>
+					<aimingTime>1.7</aimingTime>
+					</_37mm_KwK_38t_L47>
+				<_20mm_Flak_38_L112>shared<blitz>
+						<blitzPartName>gun_09</blitzPartName>
+						<bbox>
+							<min>-0.085496 -0.453914 -0.178446</min>
+							<max>0.088685 2.245657 0.149376</max>
+						</bbox>
+						<points>
+							<normal>0.005533 -0.853867 -1.837410</normal>
+							<crash>-0.000000 -0.853866 -1.837357</crash>
+						</points>
+					</blitz>
+					<pitchLimits>-20 10</pitchLimits>
+					<maxAmmo>340</maxAmmo>
+					<reloadTime>5.85</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.08</turretRotation>
+						<afterShot>2.4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<models>
+						<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Gun_09.model</undamaged>
+						<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Gun_09.model</destroyed>
+						<exploded>vehicles/german/G08_Pz38t/crash/lod0/Gun_09.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/german/G08_Pz38t/collision/Gun_09.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>25<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.45</shotDispersionRadius>
+					</_20mm_Flak_38_L112>
+			</guns>
+			<emblemSlots>
+				<player>
+					<rayStart>0.827579 0.319934 0.332737</rayStart>
+					<rayEnd>0.44922 0.257064 0.219193</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.3</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>-0.827579 0.319934 0.332737</rayStart>
+					<rayEnd>-0.44922 0.257064 0.219193</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.3</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+			</emblemSlots>
+			<camouflage>
+				<tiling>0.52 0.52 0.000000 0.000000</tiling>
+				<exclusionMask>vehicles/german/G08_Pz38t/Pz38t_Turret_02_CM.dds</exclusionMask>
+			</camouflage>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</LT-40_turm>
+		<Pz38t_Ausf_G_turm>
+			<blitz>
+				<blitzPartName>turret_01</blitzPartName>
+				<bbox>
+					<min>-0.695569 -1.012437 -0.556127</min>
+					<max>0.690164 0.747703 0.716397</max>
+				</bbox>
+				<points>
+					<normal>0.000000 -0.232841 -1.481714</normal>
+					<crash>-0.000009 -0.234841 -1.480798</crash>
+				</points>
+			</blitz>
+			<userString>#germany_vehicles:Pz38t_Ausf_G_turm</userString>
+			<description>#germany_vehicles:Pz38t_Ausf_G_turm_descr</description>
+			<tags/>
+			<level>4.0</level>
+			<price>0</price>
+			<unlocks>
+				<gun>_47mm_PaK_38t_L43<cost>230</cost>
+				</gun>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Turret_01.model</undamaged>
+				<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Turret_01.model</destroyed>
+				<exploded>vehicles/german/G08_Pz38t/crash/lod0/Turret_01.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/german/G08_Pz38t/collision/Turret_01.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>0.000000 0.279129 0.540565</gunPosition>
+			<armor>
+				<armor_1>25</armor_1>
+				<armor_2>20</armor_2>
+				<armor_3>15</armor_3>
+				<armor_4>15</armor_4>
+				<armor_5>15</armor_5>
+				<armor_6>8</armor_6>
+				<armor_7>8</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>12</armor_9>
+				<armor_10>10</armor_10>
+				<armor_11>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+				</armor_11>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>1800.0</weight>
+			<maxHealth>106</maxHealth>
+			<rotationSpeed>32</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>70</maxHealth>
+				<maxRegenHealth>35</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>230</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>50</maxHealth>
+				<maxRegenHealth>25</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<guns>
+				<_37mm_KwK_38t_L47>shared<blitz>
+						<blitzPartName>gun_03</blitzPartName>
+						<bbox>
+							<min>-0.088647 -0.414888 -0.178446</min>
+							<max>0.090475 1.327505 0.149376</max>
+						</bbox>
+						<points>
+							<normal>0.000006 -0.774399 -1.760056</normal>
+							<crash>0.000546 -0.774399 -1.760055</crash>
+						</points>
+					</blitz>
+					<pitchLimits>-20 10</pitchLimits>
+					<maxAmmo>90</maxAmmo>
+					<shotDispersionFactors>
+						<turretRotation>0.1</turretRotation>
+						<afterShot>3</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<models>
+						<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Gun_03.model</undamaged>
+						<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Gun_03.model</destroyed>
+						<exploded>vehicles/german/G08_Pz38t/crash/lod0/Gun_03.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/german/G08_Pz38t/collision/Gun_03.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>25<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.35</shotDispersionRadius>
+					<reloadTime>3.52</reloadTime>
+					<aimingTime>1.7</aimingTime>
+					</_37mm_KwK_38t_L47>
+				<_20mm_Flak_38_L112>shared<blitz>
+						<blitzPartName>gun_04</blitzPartName>
+						<bbox>
+							<min>-0.088647 -0.414888 -0.178446</min>
+							<max>0.090475 2.245048 0.149376</max>
+						</bbox>
+						<points>
+							<normal>0.000009 -0.774399 -1.760056</normal>
+							<crash>0.000546 -0.774399 -1.760056</crash>
+						</points>
+					</blitz>
+					<pitchLimits>-20 10</pitchLimits>
+					<reloadTime>5.1</reloadTime>
+					<aimingTime>1.4</aimingTime>
+					<maxAmmo>340</maxAmmo>
+					<shotDispersionFactors>
+						<turretRotation>0.07</turretRotation>
+						<afterShot>2.4</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<models>
+						<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Gun_04.model</undamaged>
+						<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Gun_04.model</destroyed>
+						<exploded>vehicles/german/G08_Pz38t/crash/lod0/Gun_04.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/german/G08_Pz38t/collision/Gun_04.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>25<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.45</shotDispersionRadius>
+					</_20mm_Flak_38_L112>
+				<_47mm_PaK_38t_L43>shared<blitz>
+						<blitzPartName>gun_05</blitzPartName>
+						<bbox>
+							<min>-0.088647 -0.415811 -0.178446</min>
+							<max>0.090475 1.416483 0.149376</max>
+						</bbox>
+						<points>
+							<normal>0.000004 -0.774399 -1.760056</normal>
+							<crash>0.000546 -0.774399 -1.760055</crash>
+						</points>
+					</blitz>
+					<pitchLimits>-20 10</pitchLimits>
+					<maxAmmo>56</maxAmmo>
+					<aimingTime>1.7</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>0.12</turretRotation>
+						<afterShot>3.5</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<models>
+						<undamaged>vehicles/german/G08_Pz38t/normal/lod0/Gun_05.model</undamaged>
+						<destroyed>vehicles/german/G08_Pz38t/crash/lod0/Gun_05.model</destroyed>
+						<exploded>vehicles/german/G08_Pz38t/crash/lod0/Gun_05.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/german/G08_Pz38t/collision/Gun_05.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>25<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>15<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_2>
+						<gun>10</gun>
+					</armor>
+					<shotDispersionRadius>0.39</shotDispersionRadius>
+					<reloadTime>3.8</reloadTime>
+					</_47mm_PaK_38t_L43>
+			</guns>
+			<emblemSlots>
+				<player>
+					<rayStart>0.853625 0.294369 -0.0493725</rayStart>
+					<rayEnd>0.458998 0.23247 -0.0702851</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.3</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>-0.853625 0.294369 -0.0493725</rayStart>
+					<rayEnd>-0.458998 0.23247 -0.0702851</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.3</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+			</emblemSlots>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<camouflage>
+				<exclusionMask>vehicles/german/G08_Pz38t/Pz38t_CM.dds</exclusionMask>
+			</camouflage>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</Pz38t_Ausf_G_turm>
+	</turrets0>
+	<engines>
+		<Praga_TNPS>shared<unlocks>
+				<engine>Praga_EPA_2<cost>830</cost>
+				</engine>
+			</unlocks>
+		</Praga_TNPS>
+		<Praga_EPA_2>shared<unlocks>
+				<engine>Praga_EPA_3<cost>1500</cost>
+				</engine>
+			</unlocks>
+		</Praga_EPA_2>
+		<Praga_EPA_3>shared<unlocks>
+				<vehicle>Pz38_NA<cost>5700</cost>
+				</vehicle>
+			</unlocks>
+		</Praga_EPA_3>
+	</engines>
+	<fuelTanks>
+		<Medium>shared</Medium></fuelTanks>
+	<radios>
+		<FuG37>shared</FuG37>
+	</radios>
+</root>

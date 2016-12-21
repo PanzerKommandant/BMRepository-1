@@ -1,0 +1,55 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 20.000000
+    emissionVector: [0.000000, -1.000000, 0.100000]
+    emissionVectorInverted: true
+    name: "fire_dragon"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.175781, 0.698906, 1.000000, 0.000000]
+    angle: 180.000000
+    angleVariation: 180.000000
+    blending: 3
+    colorOverLife: [245.556427, 159.035019, 9.591439, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: false
+    endTime: 3.000000
+    force0: [0.000000, 0.000000, 1.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.427200, 0.000000, 1.000000, 10.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 2.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.700000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "fire"
+    number: 40.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.003000
+    size: [20.000000, 20.000000]
+    sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [2.000000, 2.000000]]
+    sizeVariation: [1.000000, 1.000000]
+    spin: -90.000000
+    spinOverLife: [0.000400, 1.000000, 1.000000, 0.000000]
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/additive/fire"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 140.000000
+    velocityOverLife: [0.000000, 1.000000, 1.000000, 0.000000]

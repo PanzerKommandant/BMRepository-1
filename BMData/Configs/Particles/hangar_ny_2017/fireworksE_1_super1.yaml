@@ -1,0 +1,281 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 1.000000
+    emissionVector: [-0.400000, 0.200000, 1.000000]
+    emissionVectorInverted: true
+    name: "super1"
+    radius: 2.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_1.yaml"
+    isLong: true
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super1"
+    number: 300.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 1.000000
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer1:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_2.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super2"
+    number: 1200.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer2:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_3.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super3"
+    number: 800.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer3:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_4.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super4"
+    number: 800.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer4:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_5.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super5"
+    number: 11.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer5:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_6.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super6"
+    number: 800.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer6:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_7.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super7"
+    number: 800.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000
+layer7:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "fireworksE_1_super1_8.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 1.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super8"
+    number: 1200.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    startTime: 0.000000
+    type: "layer"
+    velocity: 25.000000

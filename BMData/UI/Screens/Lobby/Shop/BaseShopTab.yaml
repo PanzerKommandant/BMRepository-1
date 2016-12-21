@@ -1,0 +1,49 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "Tab"
+    size: [1024.000000, 617.000000]
+    leftAlignEnabled: true
+    leftAlign: 0.000000
+    rightAlignEnabled: true
+    rightAlign: 0.000000
+    bottomAlignEnabled: true
+    bottomAlign: 0.000000
+    topAlignEnabled: true
+    topAlign: 0.000000
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [1.000000, 1.000000, 1.000000, 0.000000]
+    children:
+    -   class: "UIControl"
+        name: "Footer"
+        position: [0.000000, 523.000000]
+        size: [1024.000000, 94.000000]
+        leftAlignEnabled: true
+        leftAlign: 0.000000
+        rightAlignEnabled: true
+        rightAlign: 0.000000
+        bottomAlignEnabled: true
+        bottomAlign: 0.000000
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_HORIZONTAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+    -   class: "UIControl"
+        name: "Content"
+        size: [1024.000000, 523.000000]
+        leftAlignEnabled: true
+        leftAlign: 0.000000
+        rightAlignEnabled: true
+        rightAlign: 0.000000
+        bottomAlignEnabled: true
+        bottomAlign: 94.000000
+        topAlignEnabled: true
+        topAlign: 0.000000
+        components:
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 0.000000]

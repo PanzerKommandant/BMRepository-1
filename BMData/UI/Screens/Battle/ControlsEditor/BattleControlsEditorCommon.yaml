@@ -1,0 +1,51 @@
+Header:
+    version: "4"
+Controls:
+-   class: "UIControl"
+    name: "Shoot"
+    size: [100.000000, 100.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_SCALE_TO_RECT"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/FireButton"
+            frame: 1
+    children:
+    -   class: "UIControl"
+        name: "Rotate"
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/FireButton"
+                frame: 0
+    -   class: "UIControl"
+        name: "Blast"
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/FireButton"
+                frame: 4
+    -   class: "UIControl"
+        name: "BattleAmmoIcon"
+        size: [48.000000, 48.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        classes: "ammo_icon small"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -3.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoType"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

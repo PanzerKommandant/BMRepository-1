@@ -1,0 +1,45 @@
+emitter:
+    emissionRange: 1.000000
+    emissionVector: [-1.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "bat"
+    shortEffect: false
+    size: [0.000000, 50.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: 0.700000
+    colorOverLife: [128.680923, 128.680923, 128.680923, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1.000000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 30.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 4.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "bat"
+    number: 1.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [40.000000, 40.000000]
+    sprite: "../../../../../../Gfx/Particles/UI/bat"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 70.000000
+    velocityVariation: 5.000000

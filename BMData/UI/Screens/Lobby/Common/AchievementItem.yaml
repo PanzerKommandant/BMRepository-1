@@ -1,0 +1,264 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIButton"
+    customClass: "UIAchievementItem"
+    name: "AchievementItem"
+    size: [120.000000, 120.000000]
+    components:
+        PressedOutside:
+            color: [1.000000, 1.000000, 1.000000, 0.502000]
+    children:
+    -   class: "UIControl"
+        name: "background"
+        position: [-15.000000, 0.000000]
+        size: [150.000000, 129.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "Vertical"
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            size: [100.000000, 95.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            children:
+            -   class: "UIControl"
+                customClass: "UIAchievementIcon"
+                name: "image"
+                position: [50.000000, 47.500000]
+                size: [100.000000, 100.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Achievements/steelwall"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "count"
+                position: [65.000000, 66.500000]
+                size: [30.000000, 22.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 30.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 30.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/ProfileScreen/Number"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        leftRightStretchCap: 4.000000
+                        topBottomStretchCap: 4.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "text"
+                    size: [0.000000, 21.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    font: "WarHeliosCondC_Bold_17"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                            leftRightStretchCap: 4.000000
+                            topBottomStretchCap: 4.000000
+            -   class: "UIControl"
+                name: "series"
+                position: [65.000000, 66.500000]
+                size: [30.000000, 22.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 30.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 30.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/ProfileScreen/SeriesCounter"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                children:
+                -   class: "UIStaticText"
+                    name: "text"
+                    position: [-5.000000, -1.500000]
+                    size: [38.000000, 21.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_MULTIPLY_ON_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    font: "WarHeliosCondC_Bold_17"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: -1.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -2.000000
+        -   class: "UIStaticText"
+            name: "title"
+            position: [0.000000, 95.000000]
+            size: [150.000000, 0.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "TOP"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_Bold_17_medals"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            customClass: "UIProgressBar"
+            name: "progressBar"
+            position: [35.000000, 95.000000]
+            size: [80.000000, 12.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            children:
+            -   class: "UIControl"
+                name: "LeftValue"
+                position: [0.000000, 4.000000]
+                size: [40.000000, 4.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/ProgressBar"
+                        frame: 1
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "RightValue"
+                position: [40.000000, 4.000000]
+                size: [40.000000, 4.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/ProgressBar"
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Progress"
+            position: [64.000000, 107.000000]
+            size: [22.000000, 22.000000]
+            noInput: true
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            children:
+            -   class: "UIControl"
+                name: "Diff"
+                size: [22.000000, 22.000000]
+                noInput: true
+                components:
+                    LinearLayout: {}
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                children:
+                -   class: "UIStaticText"
+                    name: "Value"
+                    size: [0.000000, 22.000000]
+                    noInput: true
+                    textColor: [0.380400, 0.764700, 0.000000, 1.000000]
+                    textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    shadowoffset: [0.000000, 1.000000]
+                    textalign: ["RIGHT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    font: "WarHeliosCondC_17"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                -   class: "UIControl"
+                    name: "deltaValueUpDown"
+                    size: [22.000000, 22.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/Hangar/CharacterArrow"
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIStaticText"
+                name: "Value"
+                position: [22.000000, 0.000000]
+                size: [0.000000, 22.000000]
+                noInput: true
+                textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                shadowoffset: [0.000000, 1.000000]
+                font: "WarHeliosCondC_17"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000

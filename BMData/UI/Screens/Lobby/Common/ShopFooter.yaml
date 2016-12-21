@@ -1,0 +1,175 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/FooterPriceControl.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".button.button-payment:disabled, .button.button-sell:disabled"
+    properties:
+        bg-frame: 0
+-   selector: ".checkbox"
+    properties:
+        bg-frame: 0
+-   selector: ".checkbox:selected"
+    properties:
+        bg-frame: 1
+-   selector: ".footer_price ? ? #Price, .footer_descr ? ? #Descr, .footer_full ? ? #Price, .footer_full ? ? #Descr"
+    properties:
+        visible: true
+-   selector: ".footer_descr ? ? #Price, .footer_price ? ? #Descr"
+    properties:
+        visible: false
+-   selector: ".footer_full ? #PriceDescrContainer"
+    properties:
+        linearLayout-orientation: "TopDown"
+-   selector: ".footer_price ? #PriceDescrContainer, .footer_descr ? #PriceDescrContainer"
+    properties:
+        linearLayout-orientation: "RightToLeft"
+Controls:
+-   class: "UIControl"
+    name: "ShopFooter"
+    position: [0.000000, 594.000000]
+    size: [1024.000000, 94.000000]
+    noInput: true
+    classes: "footer_mode=footer_price"
+    components:
+        LinearLayout:
+            padding: 5.000000
+            dynamicSpacing: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 94.000000
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+        Background:
+            drawType: "DRAW_STRETCH_HORIZONTAL"
+            sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+    children:
+    -   class: "UIControl"
+        name: "ResupplyContainer"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfFirstChild"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "Resupply"
+            position: [5.000000, 0.000000]
+            size: [230.000000, 94.000000]
+            visible: true
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 5.000000
+                    spacing: 10.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 5.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "Checkbox"
+                size: [70.000000, 70.000000]
+                classes: "checkbox"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/CommonUIElements/ButtonCheckBox"
+            -   class: "UIStaticText"
+                name: "Text"
+                size: [140.000000, 94.000000]
+                textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, -2.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "Automatically resupply"
+                font: "WarHeliosCondC_21_resupply"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 140.000000
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "Apply"
+        noInput: true
+        components:
+            LinearLayout:
+                enabled: true
+                orientation: "RightToLeft"
+                padding: 5.000000
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "Button"
+            classes: "button mode=button-payment"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                text: "Apply"
+        -   class: "UIControl"
+            name: "PriceDescrContainer"
+            size: [542.000000, 66.000000]
+            components:
+                LinearLayout:
+                    padding: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    vCenterAnchorEnabled: true
+            children:
+            -   prototype: "FooterPriceControl/FooterPriceControl"
+                name: "Price"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                children:
+                -   path: "Gold/RightPart/Price/Icon"
+                    components:
+                        Background:
+                            frame: 0
+            -   class: "UIStaticText"
+                name: "Descr"
+                size: [500.000000, 0.000000]
+                textColor: [0.627500, 0.725500, 0.800000, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "USE_BY_CONTENT"
+                font: "WarHeliosCondC_21_resupply"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 500.000000
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        align: ["LEFT", "TOP"]

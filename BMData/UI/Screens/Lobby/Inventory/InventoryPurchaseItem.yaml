@@ -1,0 +1,167 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Styles/Lobby/Inventory/InventoryBigStyles.yaml"
+- "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
+StyleSheets:
+-   selector: ".inventory-purchase-item #iconBg #selection"
+    properties:
+        visible: false
+-   selector: ".inventory-purchase-item:selected #iconBg #selection"
+    properties:
+        visible: true
+-   selector: ".inventory-purchase-item:pressed_inside #iconBg"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".inventory-purchase-item #iconBg #installed"
+    properties:
+        visible: false
+-   selector: ".inventory-purchase-item.installed #iconBg #installed"
+    properties:
+        visible: true
+-   selector: ".inventory-purchase-item.installed #price"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".inventory-purchase-item.locked #iconBg"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+-   selector: ".inventory-purchase-item.locked #price"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.498039]
+Controls:
+-   class: "UIControl"
+    customClass: "UIInventoryPurchaseItem"
+    name: "InventoryPurchaseItem"
+    size: [100.000000, 125.000000]
+    exclusiveInput: true
+    classes: "inventory-purchase-item"
+    children:
+    -   class: "UIControl"
+        name: "price"
+        position: [34.000000, 100.000000]
+        size: [32.000000, 25.000000]
+        noInput: true
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "FixedSize"
+                verticalValue: 25.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "value"
+            size: [0.000000, 25.000000]
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            shadowoffset: [0.000000, 1.000000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_Bold_21_price"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "type"
+            size: [32.000000, 25.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "iconBg"
+        position: [0.000000, 1.000000]
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 1.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/InventoryScreen/BoxEquipPower"
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            size: [100.000000, 100.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "selection"
+            size: [100.000000, 100.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/InventoryScreen/BoxEquipPower"
+                    frame: 2
+        -   class: "UIControl"
+            name: "highlight"
+            position: [50.000000, 50.000000]
+            size: [88.000000, 88.000000]
+            pivot: [0.500000, 0.500000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 6.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 6.000000
+                    topAnchorEnabled: true
+                    topAnchor: 6.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 6.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    leftRightStretchCap: 15.000000
+                    topBottomStretchCap: 15.000000
+                    margins: [-12.000000, -12.000000, -12.000000, -12.000000]
+        -   class: "UIControl"
+            name: "installed"
+            size: [100.000000, 100.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/InventoryScreen/BoxEquipPower"
+                    frame: 3
+    -   prototype: "DiscountLabel/DiscountLabel"
+        name: "discount"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 4.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000

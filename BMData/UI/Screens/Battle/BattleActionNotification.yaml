@@ -1,0 +1,111 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".capture.positive #Label"
+    properties:
+        text-textColor: [0.529412, 0.890196, 0.000000, 1.000000]
+-   selector: ".capture.negative #Label"
+    properties:
+        text-textColor: [1.000000, 0.219608, 0.219608, 1.000000]
+Controls:
+-   class: "UIControl"
+    name: "SimpleNotification"
+    size: [576.000000, 30.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "Action"
+        size: [76.000000, 48.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIStaticText"
+        name: "LeftLabel"
+        shadowoffset: [1.000000, 1.000000]
+        textalign: ["RIGHT", "VCENTER"]
+        text: "Left text"
+        font: "WarHeliosCondC_Bold_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                hCenterAnchor: -38.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "RightLabel"
+        shadowoffset: [1.000000, 1.000000]
+        textalign: ["LEFT", "VCENTER"]
+        text: "Right text"
+        font: "WarHeliosCondC_Bold_19"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 38.000000
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "SimpleNotification"
+    customClass: "UIChatActionNotificationControl"
+    name: "ChatActionNotification"
+    children:
+    -   path: "Action"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/NotificationsOnChat"
+-   prototype: "SimpleNotification"
+    customClass: "UIChatMessageNotificationControl"
+    name: "ChatMessageNotification"
+    children:
+    -   path: "Action"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatKills"
+-   prototype: "SimpleNotification"
+    customClass: "UIVehicleKilledNotificationControl"
+    name: "VehicleKilledNotification"
+    children:
+    -   path: "Action"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/ChatKills"
+-   class: "UIControl"
+    name: "PlainTextNotification"
+    size: [576.000000, 30.000000]
+    noInput: true
+    children:
+    -   class: "UIStaticText"
+        name: "Label"
+        shadowoffset: [1.000000, 1.000000]
+        multiline: "MULTILINE_ENABLED"
+        text: "Right text"
+        font: "WarHeliosCondC_Bold_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 50.000000
+                rightAnchorEnabled: true
+                rightAnchor: 50.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   prototype: "PlainTextNotification"
+    customClass: "UIBattleDeviceConnectedNotificationControl"
+    name: "DeviceConnectedNotification"
+    size: [576.000000, 60.000000]
+-   prototype: "PlainTextNotification"
+    customClass: "UICaptureStartedNotification"
+    name: "CaptureStartedNotification"
+    classes: "capture"
+-   prototype: "PlainTextNotification"
+    customClass: "UICaptureFinishedNotification"
+    name: "CaptureFinishedNotification"
+    classes: "capture"
+-   prototype: "PlainTextNotification"
+    customClass: "UITeamCloseToVictoryNotification"
+    name: "TeamCloseToVictoryNotification"
+    classes: "capture"

@@ -1,0 +1,145 @@
+emitter:
+    emissionAngle: 1.000000
+    emissionRange: 30.000000
+    emissionVector: [0.000000, -0.000000, 0.500000]
+    emissionVectorInverted: true
+    name: "fog"
+    radius: 1.000000
+    shortEffect: false
+    size: [0.000000, 1.200000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.692600, 0.699300, 0.980000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [119.918297, 119.696503, 121.595299, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 0.990000, 0.800000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 6.000000, 30.000000, 6.000000, 120.000000, 2.000000, 998.320007, 2.000000]
+    lifeVariation: 2.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke1"
+    number: 2.000000
+    numberVariation: 3.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.000000, [2.000000, 2.000000], 30.000000, [2.000000, 2.000000], 120.000000, [1.000000, 1.000000], 994.950012, [0.000000, 0.000000]]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [2.000000, 2.000000]]
+    sizeVariation: [2.000000, 2.000000]
+    spinVariation: -8.000000
+    sprite: "../../Gfx/Particles/alpha/Fx_DustSpray_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 0.800000, 7.000000, 0.800000]
+    velocityVariation: [0.000000, 0.400000, 7.000000, 0.400000]
+layer1:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.048800, 0.558900, 0.567300, 0.230900, 1.000000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [197.856003, 199.556396, 204.237396, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 0.800000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 8.000000, 30.000000, 8.000000, 120.000000, 2.000000, 993.270020, 0.000000]
+    lifeVariation: [0.000000, 2.000000, 270.000000, 2.000000, 994.950012, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke2"
+    number: [0.000000, 2.000000, 120.000000, 2.000000, 271.040009, 0.000000, 994.950012, 0.000000]
+    numberVariation: [0.000000, 2.000000, 120.000000, 2.000000, 274.410004, 0.000000, 998.320007, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.000000, [1.500000, 1.500000], 30.000000, [1.500000, 1.500000], 120.000000, [0.500000, 0.500000], 202.020203, [0.331400, 0.331400], 994.950012, [0.000000, 0.000000]]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.119400, [0.697000, 0.697000], 0.460000, [1.270100, 1.270000], 1.000000, [4.000000, 4.000000]]
+    sizeVariation: [1.000000, 1.000000]
+    spinVariation: -10.000000
+    sprite: "../../Gfx/Particles/alpha/thick_smoke"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 0.600000, 7.000000, 0.600000]
+    velocityVariation: [0.000000, 0.400000, 7.000000, 0.400000]
+layer2:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.047100, 0.105100, 0.097600, 0.223000, 0.158200, 0.380200, 0.333300, 0.441000, 0.619300, 0.318500, 0.850200, 0.151600, 1.000000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [0.000000, [90.303497, 90.338501, 82.062302, 255.000000], 0.997600, [170.299606, 170.268494, 152.805405, 255.000000]]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: true
+    endTime: 1000.000000
+    force0: [0.000000, 0.000000, 0.500000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 0.800000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: [0.000000, 2.000000, 30.000000, 2.000000, 120.000000, 2.000000, 121.000000, 0.000000]
+    lifeVariation: [0.000000, 2.000000, 30.000000, 2.000000, 120.000000, 2.000000, 121.000000, 0.000000, 996.630005, 0.000000]
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke3"
+    number: [0.000000, 5.000000, 44.607800, 5.000000, 400.000000, 5.000000, 993.270020, 0.000000]
+    numberVariation: [0.000000, 5.000000, 84.175102, 5.000000, 121.000000, 0.000000, 994.950012, 0.000000]
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.700000, 0.700000]
+    sizeOverLifeXY: [0.000000, [0.483200, 0.483200], 0.179700, [0.636600, 0.636600], 1.000000, [1.297900, 1.297900]]
+    sizeVariation: [1.000000, 1.000000]
+    sprite: "../../Gfx/Particles/alpha/dum_anim"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [13.071900, 1.067200, 99.510002, 1.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.530500, 0.801500, 1.000000, 0.607300, 26.790001, 0.000000, 99.469498, 0.024500]
+    velocityVariation: 0.010000

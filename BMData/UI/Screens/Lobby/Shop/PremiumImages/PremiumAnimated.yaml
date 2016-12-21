@@ -1,0 +1,24 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "Image"
+    size: [240.000000, 274.000000]
+    noInput: true
+    hcenterAlignEnabled: true
+    vcenterAlignEnabled: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/ImagePremAnim"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "Effects"
+        size: [230.000000, 265.000000]
+        clip: true
+        noInput: true
+        hcenterAlignEnabled: true
+        hcenterAlign: 1.000000
+        vcenterAlignEnabled: true

@@ -1,0 +1,26 @@
+modules:
+    "#vehicle:PzIII_IV":
+        position: [4, 3]
+    "#vehicleChassis:PzIIIketten_Ausf_J":
+        position: [1, 5]
+    "#vehicleChassis:PzIIIketten_Ausf_L":
+        position: [2, 5]
+    "#vehicleEngine:Maybach_HL_108TR":
+        position: [1, 4]
+    "#vehicleEngine:Maybach_HL_120_TR":
+        position: [2, 4]
+    "#vehicleEngine:Maybach_HL_120_TRM":
+        position: [3, 4]
+    "#vehicleGun:_37mm_KwK_L46":
+        position: [1, 2]
+    "#vehicleGun:_50mm_KwK_38_L42":
+        position: [2, 2]
+    "#vehicleGun:_50mm_KwK_39_L60":
+        position: [3, 2]
+    "#vehicleGun:_75mm_KwK_37_L24":
+        position: [3, 3]
+    "#vehicleTurret:PzIII_Ausf_E":
+        position: [1, 3]
+    "#vehicleTurret:PzIII_Ausf_M":
+        position: [2, 3]
+

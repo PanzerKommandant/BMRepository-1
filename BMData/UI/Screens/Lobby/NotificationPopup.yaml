@@ -1,0 +1,2009 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/FontsExceptions.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UISquadInviteNotification"
+    name: "SquadInvite"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 5
+    -   prototype: "StyledButton/StyledButton"
+        name: "AcceptButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "SQUAD_NOTIFICATION_ACCEPT"
+    -   prototype: "StyledButton/StyledButton"
+        name: "DeclineButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 215.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "SQUAD_NOTIFICATION_DECLINE"
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [529.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 420.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_SYSTEM"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UISquadCreatedNotification"
+    name: "SquadCreated"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 5
+    -   class: "UIControl"
+        name: "Content"
+        size: [739.000000, 32.000000]
+        components:
+            LinearLayout:
+                spacing: 10.000000
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 210.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            position: [0.000000, -22.000000]
+            size: [208.000000, 76.000000]
+            noInput: true
+            classes: "text1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "SQUAD_NOTIFICATION_CREATED"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 75.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "PlayerName"
+            size: [144.000000, 76.000000]
+            noInput: true
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "Аркадий Укупник"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+    -   prototype: "StyledButton/StyledButton"
+        name: "HangarButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "SQUAD_NOTIFICATION_CREATED_HANGAR"
+-   class: "UIControl"
+    customClass: "UIBattleResultsNotification"
+    name: "BattleResults"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+        children:
+        -   class: "UIControl"
+            name: "divider"
+            position: [224.000000, 0.000000]
+            size: [2.000000, 84.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationBarDivider"
+        -   class: "UIControl"
+            name: "icon"
+            position: [7.000000, 10.000000]
+            size: [64.000000, 64.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 7.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                    frame: 8
+        -   class: "UIStaticText"
+            name: "BattleResult"
+            position: [74.000000, 0.000000]
+            size: [150.000000, 76.000000]
+            noInput: true
+            classes: "header1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "NEWS_NOTIFICATION_BATTLE_DRAW"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 74.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -4.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "TankType"
+            position: [226.000000, 5.500000]
+            size: [46.000000, 43.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 226.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesBig"
+                    frame: 2
+            children:
+            -   class: "UIControl"
+                name: "modificator"
+                size: [46.000000, 43.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesBig"
+            -   class: "UIControl"
+                name: "level"
+                position: [31.000000, -1.000000]
+                size: [38.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: -1.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 7
+                        align: ["LEFT", "VCENTER"]
+        -   class: "UIStaticText"
+            name: "TankName"
+            position: [294.000000, 12.500000]
+            size: [202.000000, 29.000000]
+            noInput: true
+            classes: "text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            fitting: ["REDUCE"]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#germany_vehicles:DW_II"
+            font: "WarHeliosCondC_Bold_21_invoice"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 294.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -16.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "MapIcon"
+            position: [226.000000, 35.500000]
+            size: [46.000000, 43.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 226.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                    frame: 9
+        -   class: "UIStaticText"
+            name: "MapName"
+            position: [294.000000, 42.500000]
+            size: [202.000000, 29.000000]
+            noInput: true
+            classes: "text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            fitting: ["REDUCE"]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "Hille"
+            font: "WarHeliosCondC_Bold_21_invoice"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 294.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -16.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "divider1"
+            position: [496.000000, 0.000000]
+            size: [2.000000, 84.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -15.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationBarDivider"
+        -   class: "UIStaticText"
+            name: "Xp"
+            position: [502.000000, 12.500000]
+            size: [257.000000, 29.000000]
+            noInput: true
+            classes: "text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "HANGAR_NOTIFICATION_RECEIVED_XP"
+            font: "WarHeliosCondC_Bold_21_invoice"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 265.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                position: [157.000000, 0.000000]
+                size: [100.000000, 29.000000]
+                noInput: true
+                classes: "header3 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "99 240"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "Credits"
+            position: [502.000000, 42.500000]
+            size: [257.000000, 29.000000]
+            noInput: true
+            classes: "text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "HANGAR_NOTIFICATION_RECEIVED_CREDITS"
+            font: "WarHeliosCondC_Bold_21_invoice"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 265.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                position: [157.000000, 0.000000]
+                size: [100.000000, 29.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "8 640 000"
+                font: "WarHeliosCondC_Bold_21"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "XpIcon"
+            position: [761.000000, 5.500000]
+            size: [46.000000, 43.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 217.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    frame: 3
+                    align: ["LEFT", "VCENTER"]
+            children:
+            -   class: "UIStaticText"
+                name: "multiplier"
+                position: [0.000000, 6.500000]
+                size: [46.000000, 30.000000]
+                noInput: true
+                classes: "header4 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                fitting: ["REDUCE"]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "x3"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "CreditsIcon"
+            position: [760.000000, 35.500000]
+            size: [46.000000, 43.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 218.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    frame: 1
+                    align: ["LEFT", "VCENTER"]
+            children:
+            -   class: "UIStaticText"
+                name: "multiplier"
+                position: [0.000000, 6.500000]
+                size: [47.000000, 30.000000]
+                noInput: true
+                classes: "header4 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                fitting: ["REDUCE"]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "x3"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: -1.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "divider2"
+            position: [812.000000, 0.000000]
+            size: [2.000000, 84.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 210.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationBarDivider"
+    -   prototype: "StyledButton/StyledButton"
+        name: "DetailsButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "HANGAR_NOTIFICATIONS_DETAILS"
+-   class: "UIControl"
+    customClass: "UINewFriendshipNotification"
+    name: "NewFriendship"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [529.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 420.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            noInput: false
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_SYSTEM"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+    -   prototype: "StyledButton/StyledButton"
+        name: "AcceptButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "SQUAD_NOTIFICATION_ACCEPT"
+    -   prototype: "StyledButton/StyledButton"
+        name: "DeclineButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 215.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "SQUAD_NOTIFICATION_DECLINE"
+-   class: "UIControl"
+    customClass: "UIPremiumAccountExpiryNotification"
+    name: "PremiumAccountExpiry"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 2
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [729.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "ProlongButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "NOTIFICATIONS_PREMIUM_PROLONG"
+-   class: "UIControl"
+    customClass: "UIFinanceOperationNotification"
+    name: "FinanceOperation"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 3
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [729.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "DetailsButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "HANGAR_NOTIFICATIONS_DETAILS"
+-   class: "UIControl"
+    customClass: "UITankReceivedNotification"
+    name: "TankReceivedNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 4
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [729.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "ToTankButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "NOTIFICATIONS_TO_TANK"
+-   class: "UIControl"
+    customClass: "UIBonusAvailableNotification"
+    name: "BonusAvailableNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 4
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [931.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+-   class: "UIControl"
+    customClass: "UIQuestCompensationNotification"
+    name: "QuestCompensationNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 4
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 5.000000]
+        size: [931.000000, 69.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            classes: "header3"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+-   class: "UIControl"
+    customClass: "UITutorialLessonCompleteNotification"
+    name: "TutorialLessonCompleteNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            position: [7.000000, 10.000000]
+            size: [64.000000, 64.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 7.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                    frame: 8
+        -   class: "UIStaticText"
+            name: "Result"
+            position: [74.000000, 2.000000]
+            size: [275.000000, 76.000000]
+            noInput: true
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#hangar_tutorial:notification/complete"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 74.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "divider"
+            position: [350.000000, 0.000000]
+            size: [2.000000, 84.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 350.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationBarDivider"
+        -   class: "UIStaticText"
+            name: "LessonName"
+            position: [365.000000, 2.000000]
+            size: [445.000000, 76.000000]
+            noInput: true
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "#hangar_tutorial:task/optional_devices/short"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 365.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "divider2"
+            position: [812.000000, 0.000000]
+            size: [2.000000, 84.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 210.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Notifications/NotificationBarDivider"
+        -   class: "UIControl"
+            name: "Reward"
+            position: [820.000000, 2.000000]
+            size: [194.000000, 76.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -2.000000
+            children:
+            -   class: "UIStaticText"
+                name: "text"
+                size: [194.000000, 76.000000]
+                noInput: true
+                classes: "header3 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "#hangar_tutorial:hangar/task_reward"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    customClass: "UIClanInviteNotification"
+    name: "ClanInviteNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 13
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [729.000000, 78.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 6.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "ToClanButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "#clans:HomeScreen/Invite/Button"
+-   class: "UIControl"
+    customClass: "UIClanApplicationAcceptedNotification"
+    name: "ClanApplicationAcceptedNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 13
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [931.000000, 78.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 6.000000
+-   class: "UIControl"
+    customClass: "UIDeviceConnectedNotification"
+    name: "DeviceConnectedNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 12
+    -   prototype: "StyledButton/StyledButton"
+        name: "SettingsButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "#notification:Devices/SettingsButton"
+    -   class: "UIStaticText"
+        name: "Text"
+        position: [75.000000, 4.000000]
+        size: [729.000000, 76.000000]
+        noInput: true
+        classes: "text1 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    customClass: "UIVideoAdsRewardNotification"
+    name: "VideoAdsReward"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/ads_icon"
+                frame: 0
+        children:
+        -   class: "UIControl"
+            name: "reward_icon"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 22.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/ads_gold"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Content"
+        position: [80.000000, 5.000000]
+        size: [926.000000, 69.000000]
+        noInput: true
+        components:
+            LinearLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 80.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+-   class: "UIControl"
+    customClass: "UITrainingRoomInviteNotification"
+    name: "TrainingRoomInvite"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "Icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 13
+    -   class: "UIStaticText"
+        name: "Text"
+        position: [75.000000, 4.000000]
+        size: [729.000000, 76.000000]
+        noInput: true
+        classes: "text1 text-color-white"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   prototype: "StyledButton/StyledButton"
+        name: "GoToRoomBtn"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "#common:DialogButton/Go"
+-   class: "UIControl"
+    customClass: "UITournamentTeamInviteNotification"
+    name: "TournamentTeamInviteNotification"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: -3
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [529.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 420.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "InvitationText"
+            position: [0.000000, 10.000000]
+            size: [529.000000, 64.000000]
+            noInput: true
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.294100]
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+                Background:
+                    align: ["LEFT", "VCENTER"]
+    -   prototype: "StyledButton/StyledButton"
+        name: "AcceptButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "tournaments/Button/Accept"
+    -   prototype: "StyledButton/StyledButton"
+        name: "DeclineButton"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 215.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "tournaments/Button/Decline"
+-   class: "UIControl"
+    customClass: "UITournamentRoomInviteNotification"
+    name: "TournamentRoomInvite"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 7.000000
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "Icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 15
+    -   class: "UIStaticText"
+        name: "Text"
+        position: [75.000000, 4.000000]
+        size: [729.000000, 76.000000]
+        noInput: true
+        classes: "text1"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   prototype: "StyledButton/StyledButton"
+        name: "GoToRoomBtn"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "#common:DialogButton/Go"
+-   class: "UIControl"
+    customClass: "UITournamentRoomResultNotification"
+    name: "TournamentRoomResult"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                frame: 15
+    -   class: "UIStaticText"
+        name: "Text"
+        position: [75.000000, 4.000000]
+        size: [931.000000, 76.000000]
+        noInput: true
+        classes: "text1"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+-   class: "UIControl"
+    customClass: "UICobrandRewardNotification"
+    name: "CobrandReward"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 3
+    -   class: "UIControl"
+        name: "Content"
+        position: [80.000000, 5.000000]
+        size: [926.000000, 69.000000]
+        noInput: true
+        components:
+            LinearLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 80.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+-   class: "UIControl"
+    customClass: "UIStorageItemsReceivedNotification"
+    name: "StorageItemsReceived"
+    size: [1024.000000, 84.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.094100, 0.094100, 0.094100, 1.000000]
+            leftRightStretchCap: 2.000000
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        size: [1024.000000, 84.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBar"
+                leftRightStretchCap: 7.000000
+    -   class: "UIControl"
+        name: "icon"
+        position: [7.000000, 10.000000]
+        size: [64.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationIcons"
+                frame: 3
+    -   class: "UIControl"
+        name: "Content"
+        position: [75.000000, 0.000000]
+        size: [729.000000, 84.000000]
+        noInput: true
+        components:
+            FlowLayout:
+                hDynamicPadding: true
+                vDynamicPadding: true
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 75.000000
+                rightAnchorEnabled: true
+                rightAnchor: 220.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            classes: "text1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+    -   prototype: "StyledButton/StyledButton"
+        name: "GoToStorageBtn"
+        size: [196.000000, 60.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 11.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Notifications/NotificationBarButton"
+        children:
+        -   path: "Caption"
+            text: "storage/Title"

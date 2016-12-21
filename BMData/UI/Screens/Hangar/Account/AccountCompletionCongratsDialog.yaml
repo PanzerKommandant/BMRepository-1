@@ -1,0 +1,47 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   class: "UIControl"
+    name: "DialogBackground"
+    size: [1024.000000, 768.000000]
+    leftAlignEnabled: true
+    rightAlignEnabled: true
+    bottomAlignEnabled: true
+    topAlignEnabled: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.125490, 0.160784, 0.894118]
+    children:
+    -   class: "UIStaticText"
+        name: "Header"
+        size: [1024.000000, 70.000000]
+        leftAlignEnabled: true
+        rightAlignEnabled: true
+        vcenterAlignEnabled: true
+        vcenterAlign: -35.000000
+        text: "#account:Completion/Congrats/Header"
+        font: "WarHeliosCondC_Bold_50"
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+    -   class: "UIControl"
+        name: "Description"
+        size: [1024.000000, 60.000000]
+        noInput: true
+        leftAlignEnabled: false
+        rightAlignEnabled: false
+        hcenterAlignEnabled: true
+        vcenterAlignEnabled: true
+        vcenterAlign: 35.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Text"
+            size: [1024.000000, 60.000000]
+            leftAlignEnabled: true
+            vcenterAlignEnabled: true
+            vcenterAlign: 0.000000
+            font: "WarHeliosCondC_Bold_40"
+            textColor: [1.000000, 1.000000, 1.000000, 1.000000]

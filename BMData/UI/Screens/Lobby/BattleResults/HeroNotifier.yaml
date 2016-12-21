@@ -1,0 +1,64 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".reward_description"
+    properties:
+        text-font: "WarHeliosCondC_17"
+        text-textColor: [0.298039, 0.203922, 0.105882, 1.000000]
+Controls:
+-   class: "UIControl"
+    name: "Notifier"
+    position: [-315.000000, 0.000000]
+    size: [315.000000, 112.000000]
+    components:
+        IgnoreLayout: {}
+        Anchor:
+            vCenterAnchorEnabled: true
+        Background:
+            sprite: "~res:/Gfx/UI/BattleResultsScreen/resistReward"
+    children:
+    -   class: "UIControl"
+        name: "Text"
+        size: [0.000000, 72.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "title"
+            position: [10.000000, 0.000000]
+            size: [285.000000, 30.000000]
+            classes: "header2"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            fitting: ["REDUCE"]
+            textalign: ["LEFT", "VCENTER"]
+            text: "#battle_results:heroReward/title"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+        -   class: "UIStaticText"
+            name: "increaseReward"
+            position: [10.000000, 30.000000]
+            size: [285.000000, 42.000000]
+            classes: "reward_description"
+            multiline: "MULTILINE_ENABLED"
+            fitting: []
+            textalign: ["LEFT", "TOP"]
+            text: "#battle_results:heroReward/descr"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 285.000000
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000

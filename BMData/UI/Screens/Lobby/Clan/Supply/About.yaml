@@ -1,0 +1,120 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "ClanSupplyAboutView"
+    name: "About"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Contents"
+        size: [791.000000, 460.000000]
+        noInput: true
+        debugDrawColor: [0.839216, 0.254902, 1.000000, 1.000000]
+        components:
+            LinearLayout:
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            size: [128.000000, 128.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/icon_clan_resources_big"
+                    frame: 0
+            children:
+            -   class: "UIControl"
+                name: "BorderTop"
+                size: [128.000000, 1.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.313726, 0.384314, 0.423529, 1.000000]
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "BorderBottom"
+                size: [128.000000, 1.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: false
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.313726, 0.384314, 0.423529, 1.000000]
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "BorderLeft"
+                size: [1.000000, 128.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: false
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.313726, 0.384314, 0.423529, 1.000000]
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "BorderRight"
+                size: [1.000000, 128.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: false
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.313726, 0.384314, 0.423529, 1.000000]
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIStaticText"
+            name: "Txt"
+            position: [138.000000, 0.000000]
+            size: [653.000000, 460.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            text: "#clans:SupplyScreen/AboutSupply/Description"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "BackButton"
+        classes: "button button-color-gray"

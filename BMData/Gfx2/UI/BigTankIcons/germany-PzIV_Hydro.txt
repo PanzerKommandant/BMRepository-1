@@ -1,0 +1,5 @@
+1
+germany-PzIV_Hydro0.tex
+320 200
+1
+0 0 299 200 6 0 0 frame0

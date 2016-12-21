@@ -1,0 +1,61 @@
+emitter:
+    emissionAngle: 1.000000
+    emissionRange: 0.000000
+    emissionVector:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, [1.000000, 0.000000, 1.000000], 0.990000, [1.000000, 1.000000, 1.000000]]
+        value_line: [0.000000, -1.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "smoke"
+    radius: 1.000000
+    shortEffect: false
+    size: [1.000000, 1.200000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.150562, 0.758394, 0.784270, 0.832573, 0.990000, 0.000000]
+    angleVariation: 120.000000
+    blending: 1
+    colorOverLife: [77.000000, 77.000000, 90.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 200.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 0.990000, 0.500000]
+        value_line: 3.000000
+    lifeVariation: 2.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "FOG"
+    number:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 1.000000, 2.000000]
+        value_line: 2.000000
+    numberVariation: 2.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.400000, 1.400000]
+    sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [4.000000, 4.000000]]
+    sizeVariation: [0.500000, 0.500000]
+    spinVariation: -8.000000
+    sprite: "../../../Gfx/Particles/alpha/Fx_DustSpray_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 0.009000

@@ -1,0 +1,44 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/NicknameDialog.yaml"
+Controls:
+-   class: "UIControl"
+    name: "DialogBackground"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.113725, 0.784314]
+    children:
+    -   class: "UIScrollView"
+        name: "Scroll"
+        size: [500.000000, 768.000000]
+        pivot: [0.500000, 0.000000]
+        autoUpdate: true
+        centerContent: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            size: [500.000000, 462.000000]
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfMaxChild"
+            children:
+            -   prototype: "NicknameDialog/NicknameDialog"
+                name: "Dialog"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: false
+                        vCenterAnchorEnabled: false

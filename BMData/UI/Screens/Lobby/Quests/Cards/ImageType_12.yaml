@@ -1,0 +1,41 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Social/card_social"
+        children:
+        -   class: "UIParticles"
+            name: "Smoldering"
+            position: [120.000000, 70.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_social/smoldering.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Social/card_social"
+        children:
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_social/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_social/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [100.000000, 70.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_social/glow_behind.sc2"
+            autoStart: true

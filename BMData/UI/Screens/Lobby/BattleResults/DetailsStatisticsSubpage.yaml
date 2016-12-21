@@ -1,0 +1,177 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Lobby/BattleResults/BattleResultsCommon.yaml"
+- "~res:/UI/Screens/Lobby/BattleResults/BattleResultsContainers.yaml"
+- "~res:/UI/Styles/Lobby/BattleResults/BattleResultsStyles.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1024.000000, 618.000000]
+    classes: "limited-width"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "bg"
+        visible: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.333333, 0.333333, 0.000000, 1.000000]
+    -   class: "UIControl"
+        name: "Panels"
+        size: [1024.000000, 350.000000]
+        components:
+            LinearLayout:
+                padding: 30.000000
+                spacing: 30.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   prototype: "BattleResultsContainers/Container"
+            name: "LeftPanel"
+            size: [467.000000, 350.000000]
+            children:
+            -   path: "Header"
+                text: "#battle_results:DetailsPage/StatisticPage/Damage"
+            -   path: "Table"
+                children:
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "Shots"
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/Shots"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "HitsAndPierced"
+                    position: [0.000000, 32.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/HitsAndPierced"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "HeHits"
+                    position: [0.000000, 64.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/HeHits"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "DamagedAndKills"
+                    position: [0.000000, 96.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/DamagedAndKills"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "DamageDealt"
+                    position: [0.000000, 128.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/DamageDealt"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "Spotted"
+                    position: [0.000000, 160.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/Spotted"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "DamageAssisted"
+                    position: [0.000000, 192.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/DamageAssisted"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "ShotsReceived"
+                    position: [0.000000, 224.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/ShotsReceived"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "PiercedReceived"
+                    position: [0.000000, 256.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/PiercedReceived"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "NoDamageShotsReceived"
+                    position: [0.000000, 288.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/NoDamageShotsReceived"
+        -   prototype: "BattleResultsContainers/Container"
+            name: "RightPanel"
+            position: [527.000000, 0.000000]
+            size: [467.000000, 222.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+            children:
+            -   path: "Header"
+                text: "#battle_results:DetailsPage/StatisticPage/Etc"
+            -   path: "Table"
+                size: [467.000000, 192.000000]
+                classes: "gameplay=domination"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "WinPoints"
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/ScoreEarned"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "WinPointsStolen"
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/ScoreDetracted"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "CapturePoints"
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/CapturePoints"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "DroppedCapturePoints"
+                    position: [0.000000, 32.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/DroppedCapturePoints"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "Mileage"
+                    position: [0.000000, 64.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/Mileage"
+                -   prototype: "BattleResultsContainers/TableRow"
+                    name: "ArenaCreationTime"
+                    position: [0.000000, 96.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/ArenaCreationTime"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "ArenaDuration"
+                    position: [0.000000, 128.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/ArenaDuration"
+                -   prototype: "BattleResultsContainers/TableSubRow"
+                    name: "LifeTime"
+                    position: [0.000000, 160.000000]
+                    children:
+                    -   path: "Content/Text"
+                        text: "#battle_results:DetailsPage/StatisticPage/LifeTime"

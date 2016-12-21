@@ -1,0 +1,802 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+StyleSheets:
+-   selector: ".pagination-btn:pressed_inside #Text"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".pagination-btn #Text"
+    properties:
+        text-textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+-   selector: ".recomended-clans-btn"
+    properties:
+        bg-drawType: "DRAW_STRETCH_BOTH"
+        bg-leftRightStretchCap: 4.000000
+        bg-topBottomStretchCap: 4.000000
+        text-font: "WarHeliosCondC_Bold_21"
+        text-textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+-   selector: ".recomended-clans-btn:pressed_inside, .recomended-clans-btn:selected"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Clan/search_back"
+Controls:
+-   class: "UIControl"
+    customClass: "UIClanSearch"
+    name: "Search"
+    size: [1024.000000, 688.000000]
+    classes: "limited-width"
+    debugDraw: false
+    debugDrawColor: [1.000000, 1.000000, 0.000000, 1.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            padding: 2.000000
+            spacing: 2.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "RecomendedSwitcher"
+        size: [1024.000000, 70.000000]
+        components:
+            LinearLayout:
+                padding: 2.000000
+                spacing: 2.000000
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "OpenClans"
+            noInput: false
+            classes: "recomended-clans-btn"
+            text: "#clans:SearchScreen/Title/OpenClans"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIStaticText"
+            name: "RecentClans"
+            noInput: false
+            classes: "recomended-clans-btn"
+            text: "#clans:SearchScreen/Title/NewlyCreated"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "SearchResultContainer"
+        position: [0.000000, 74.000000]
+        size: [1024.000000, 612.000000]
+        noInput: true
+        debugDraw: false
+        debugDrawColor: [1.000000, 0.058824, 0.000000, 1.000000]
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+-   class: "UIListCell"
+    customClass: "UISearchResultItem"
+    name: "ClanSearchResultItem"
+    size: [1024.000000, 64.000000]
+    identifier: "ClanSearchItem"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Normal:
+            drawType: "DRAW_FILL"
+            color: [0.200000, 0.274510, 0.321569, 0.705882]
+        PressedInside:
+            drawType: "DRAW_FILL"
+            color: [0.200000, 0.274510, 0.321569, 0.313726]
+    children:
+    -   class: "UIStaticText"
+        name: "ClanSize"
+        size: [200.000000, 64.000000]
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["RIGHT", "VCENTER"]
+        text: "30 / 50"
+        font: "WarHeliosCondC_Bold_19"
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                rightAnchorEnabled: true
+                rightAnchor: 20.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   prototype: "ClanCommon/ClanEmblem"
+        name: "Emblem"
+        size: [32.000000, 32.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 20.000000
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+    -   prototype: "ClanCommon/ListLine"
+        name: "ListLine"
+    -   class: "UIControl"
+        name: "NameLayout"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 72.000000
+                rightAnchorEnabled: true
+                rightAnchor: 200.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "ClanName"
+            size: [500.000000, 20.000000]
+            pivot: [0.000000, 0.500000]
+            textColor: [0.960784, 0.650980, 0.137255, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "HCENTER", "VCENTER"]
+            font: "WarHeliosCondC_Bold_19"
+        -   class: "UIStaticText"
+            name: "ClanLanguages"
+            position: [0.000000, 42.000000]
+            size: [500.000000, 20.000000]
+            pivot: [0.000000, 0.500000]
+            noInput: true
+            textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+            textalign: ["LEFT", "VCENTER"]
+            font: "WarHeliosCondC_19"
+-   class: "UIListCell"
+    customClass: "UISearchResultItem"
+    name: "ClanSearchLableCell"
+    size: [1024.000000, 50.000000]
+    identifier: "ClanSearchItemMessage"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "MessageText"
+        classes: "text-color-blue"
+        text: "Loading..."
+        font: "WarHeliosCondC_21_tf"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_ALIGNED"
+                color: [0.278431, 0.372549, 0.435294, 0.501961]
+-   class: "UIControl"
+    customClass: "UISimpleClanSearch"
+    name: "SimpleSearch"
+    size: [1024.000000, 688.000000]
+    classes: "limited-width"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalMax: 1350.000000
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        customClass: "UISearchTextField"
+        name: "ClanSearchTextField"
+        size: [480.000000, 70.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Background"
+            size: [480.000000, 50.000000]
+            components:
+                LinearLayout:
+                    useRtl: true
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/Clan/search_back"
+                    leftRightStretchCap: 4.000000
+                    topBottomStretchCap: 4.000000
+            children:
+            -   class: "UIControl"
+                name: "SearchIcon"
+                size: [50.000000, 70.000000]
+                visible: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 50.000000
+                    Anchor:
+                        leftAnchorEnabled: false
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: false
+                        topAnchorEnabled: false
+                        topAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        bottomAnchorEnabled: false
+                    Background:
+                        sprite: "~res:/Gfx/UI/Clan/search_icon"
+            -   class: "UITextField"
+                customClass: "UITextFieldWithHint"
+                name: "TextField"
+                size: [380.000000, 50.000000]
+                font: "WarHeliosCondC_19"
+                textalign: ["LEFT", "VCENTER"]
+                maxLength: 25
+                returnKeyType: "RETURN_KEY_SEARCH"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 50.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 60.000000
+                        topAnchorEnabled: false
+                        vCenterAnchorEnabled: true
+                    Focus: {}
+                children:
+                -   class: "UIStaticText"
+                    name: "Hint"
+                    textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+                    textalign: ["HCENTER", "VCENTER"]
+                    text: "#clans:SearchScreen/Search/hint"
+                    font: "WarHeliosCondC_19"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            rightAnchor: 60.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "Clear"
+                position: [430.000000, 0.000000]
+                size: [50.000000, 50.000000]
+                noInput: false
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputClear"
+                        frame: 0
+    -   class: "UIControl"
+        name: "SearchClansHeader"
+        position: [0.000000, 70.000000]
+        size: [1024.000000, 50.000000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Left"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                    align: ["RIGHT", "VCENTER"]
+        -   class: "UIControl"
+            name: "Right"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    align: ["LEFT", "VCENTER"]
+        -   class: "UIStaticText"
+            name: "Text"
+            size: [1024.000000, 30.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            text: "#clans:SearchScreen/Title/NewlyCreated"
+            font: "WarHeliosCondC_Bold_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "ClanSearchWrapper"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIList"
+            name: "ClanSearchResult"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+        -   prototype: "Common/VerticalScrollBar"
+            name: "SearchScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UIRecommendedClans"
+    name: "RecomendedClans"
+    size: [1024.000000, 200.000000]
+    noInput: true
+    classes: "limited-width"
+    debugDraw: false
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "RecomendedClansHeader"
+        position: [0.000000, 0.000000]
+        size: [1024.000000, 50.000000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Left"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                    align: ["RIGHT", "VCENTER"]
+        -   class: "UIControl"
+            name: "Right"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/back_title"
+                    spriteModification: ["FLIP_HORIZONTAL"]
+                    align: ["LEFT", "VCENTER"]
+        -   class: "UIStaticText"
+            name: "Text"
+            size: [1024.000000, 30.000000]
+            noInput: true
+            classes: "header3 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            text: "#clans:SearchScreen/Title/NewlyCreated"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Next"
+            classes: "pagination-btn"
+            debugDraw: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: false
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Text"
+                text: "#clans:SearchScreen/NextClans"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: false
+            -   class: "UIControl"
+                name: "icon"
+                size: [50.000000, 50.000000]
+                scale: [-1.000000, 1.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: false
+                        rightAnchorEnabled: true
+                        rightAnchor: -50.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/Clan/icon_back_tab"
+                        frame: 0
+        -   class: "UIControl"
+            name: "Prev"
+            classes: "pagination-btn"
+            debugDraw: false
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    rightAnchorEnabled: false
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "icon"
+                size: [50.000000, 50.000000]
+                noInput: true
+                components:
+                    Background:
+                        sprite: "~res:/Gfx/UI/Clan/icon_back_tab"
+                        frame: 0
+            -   class: "UIStaticText"
+                name: "Text"
+                text: "#clans:SearchScreen/NextClans"
+                font: "WarHeliosCondC_Bold_21"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        customClass: "UITable"
+        name: "RecomendedTable"
+        size: [1024.000000, 150.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 50.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Header"
+            size: [1024.000000, 60.000000]
+            components:
+                LinearLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+        -   class: "UIScrollView"
+            name: "Content"
+            clip: true
+            autoUpdate: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                size: [1024.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "ScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                    bottomAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "Loading"
+        size: [1024.000000, 50.000000]
+        classes: "text-color-blue"
+        debugDraw: false
+        text: "Loading..."
+        font: "WarHeliosCondC_21_tf"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 50.000000
+                bottomAnchorEnabled: false
+            Background:
+                drawType: "DRAW_ALIGNED"
+                color: [0.278431, 0.372549, 0.435294, 0.501961]
+                align: ["HCENTER", "TOP"]
+-   class: "UIControl"
+    name: "ClanTableRow"
+    size: [200.000000, 60.000000]
+    classes: "panel-background"
+    components:
+        LinearLayout: {}
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+-   prototype: "ClanCommon/MemberTableHeaderColumn"
+    name: "ClanSearchTableHeaderColumn"
+    children:
+    -   path: "Text"
+        components:
+            Anchor:
+                leftAnchor: 10.000000
+-   prototype: "ClanCommon/MemberTableHeaderNameColumn"
+    name: "ClanSearchTableHeaderNameColumn"
+    children:
+    -   path: "Text"
+        components:
+            Anchor:
+                leftAnchor: 10.000000
+-   prototype: "ClanCommon/MemberTableCellText"
+    name: "ClanSearchTableCellText"
+    size: [120.000000, 60.000000]
+    components:
+        SizePolicy:
+            verticalPolicy: "FixedSize"
+            verticalValue: 60.000000
+    children:
+    -   path: "Text"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+-   class: "UIControl"
+    customClass: "UIClanNameTableCell"
+    name: "ClanNameTableCell"
+    size: [220.000000, 60.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 60.000000
+    children:
+    -   class: "UIControl"
+        name: "ListLine"
+        size: [220.000000, 1.000000]
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Align"
+        noInput: true
+        components:
+            LinearLayout:
+                padding: 15.000000
+                spacing: 8.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   prototype: "ClanCommon/ClanEmblem"
+            name: "emblem"
+            size: [32.000000, 32.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+        -   class: "UIControl"
+            name: "Al"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: false
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "Align"
+                noInput: true
+                components:
+                    LinearLayout:
+                        spacing: 4.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfMaxChild"
+                children:
+                -   class: "UIStaticText"
+                    name: "tag"
+                    classes: "header4"
+                    textColor: [1.000000, 0.729412, 0.337255, 1.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: ""
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "name"
+                    classes: "header4"
+                    textColor: [1.000000, 0.729412, 0.337255, 1.000000]
+                    fitting: ["POINTS"]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: ""
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "languages"
+                classes: "text2 text-color-blue"
+                fitting: ["POINTS"]
+                textalign: ["LEFT", "VCENTER"]
+                text: ""
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 100.000000
+                        verticalPolicy: "PercentOfContent"
+-   class: "UIControl"
+    customClass: "UIClanSearchHeader"
+    name: "HeaderRight"
+    size: [300.000000, 80.000000]
+    noInput: true
+    debugDraw: false
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_ALIGNED"
+    children:
+    -   prototype: "StyledButton/StyledButton"
+        name: "ShowTextSearchButton"
+        size: [250.000000, 70.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            text: "#clans:SearchScreen/NameSearch/Header"
+-   class: "UIControl"
+    customClass: "UIClanSearchPopup"
+    name: "HeaderPopup"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "Common/PopUp"
+        name: "Bubble"
+        size: [400.000000, 60.000000]
+        pivot: [0.500000, 1.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+        children:
+        -   path: "Arrow"
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    hCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "ChangeLanguageButton"
+            size: [400.000000, 60.000000]
+            classes: "button"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Text"
+                size: [400.000000, 32.000000]
+                classes: "header3 text-color-white"
+                text: "#clans:SearchScreen/NameSearch/LanguageFilterTable/Title"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+-   prototype: "ClanCommon/HeaderTitle"
+    name: "HeaderTitle"

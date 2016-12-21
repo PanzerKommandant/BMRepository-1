@@ -1,0 +1,5 @@
+1
+germany-PzII0.tex
+160 100
+1
+0 0 130 100 17 0 0 frame0

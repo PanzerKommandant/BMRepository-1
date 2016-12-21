@@ -1,0 +1,51 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/PutDamage/card_put_damage"
+        children:
+        -   class: "UIParticles"
+            name: "FireTank"
+            position: [90.000000, 40.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/fire_tank.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/PutDamage/card_put_damage"
+        children:
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Smoldering"
+            position: [80.000000, 230.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/smoldering.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [100.000000, 40.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/glow_behind.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_put_damage/dust.sc2"
+            autoStart: true

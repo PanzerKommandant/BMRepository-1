@@ -1,0 +1,30 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "tutorialControlIntroduction"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIStaticText"
+        name: "title"
+        position: [0.000000, 35.000000]
+        size: [1024.000000, 40.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        multiline: "MULTILINE_ENABLED"
+        font: "WarHeliosCondC_Bold_25"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 35.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                align: ["LEFT", "TOP"]

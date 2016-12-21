@@ -1,0 +1,102 @@
+Header:
+    version: "5"
+StyleSheets:
+-   selector: ".header0"
+    properties:
+        text-font: "WarHeliosCondC_Bold_30"
+-   selector: ".header1"
+    properties:
+        text-font: "WarHeliosCondC_Bold_25"
+-   selector: ".header2"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23"
+-   selector: ".header3"
+    properties:
+        text-font: "WarHeliosCondC_Bold_21"
+-   selector: ".header4"
+    properties:
+        text-font: "WarHeliosCondC_Bold_19"
+-   selector: ".header5"
+    properties:
+        text-font: "WarHeliosCondC_Bold_17"
+-   selector: ".text1"
+    properties:
+        text-font: "WarHeliosCondC_21"
+-   selector: ".text2"
+    properties:
+        text-font: "WarHeliosCondC_19"
+-   selector: ".text2-small"
+    properties:
+        text-font: "WarHeliosCondC_17"
+-   selector: ".text-color-red"
+    properties:
+        text-textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".text-color-blue"
+    properties:
+        text-textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+-   selector: ".text-color-gold"
+    properties:
+        text-textColor: [1.000000, 0.819608, 0.000000, 1.000000]
+-   selector: ".text-color-white"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".text-color-premium"
+    properties:
+        text-textColor: [1.000000, 0.819608, 0.000000, 1.000000]
+-   selector: ".text-color-light-green"
+    properties:
+        text-textColor: [0.701961, 1.000000, 0.701961, 1.000000]
+-   selector: ".text-color-grey"
+    properties:
+        text-textColor: [0.411765, 0.431373, 0.443137, 1.000000]
+-   selector: ".header1.pl"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23"
+-   selector: ".header1.fr"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23"
+-   selector: ".header1.it"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23"
+-   selector: ".header1.ar"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23"
+-   selector: ".battle-points"
+    properties:
+        text-font: "WarHeliosCondC_Bold_16_shells"
+        text-shadowcolor: [0.003922, 0.003922, 0.003922, 0.200000]
+        text-shadowoffset: [1.000000, 1.000000]
+-   selector: ".battle-base-letter-minimap"
+    properties:
+        text-font: "WarHeliosCondC_Bold_13"
+        text-shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+        text-shadowoffset: [1.000000, 1.000000]
+-   selector: ".battle-base-letter-hud"
+    properties:
+        text-font: "WarHeliosCondC_Bold_17"
+        text-shadowcolor: [0.000000, 0.000000, 0.000000, 0.501961]
+        text-shadowoffset: [1.000000, 1.000000]
+-   selector: ".text-big"
+    properties:
+        text-font: "WarHeliosCondC_Bold_40"
+-   selector: ".text-color-grey2"
+    properties:
+        text-textColor: [0.321569, 0.345098, 0.364706, 1.000000]
+-   selector: ".text-color-light-beige"
+    properties:
+        text-textColor: [1.000000, 0.858824, 0.686275, 1.000000]
+-   selector: ".text-color-common"
+    properties:
+        text-textColor: [0.580392, 0.635294, 0.686275, 1.000000]
+-   selector: ".text-color-rare"
+    properties:
+        text-textColor: [0.301961, 0.482353, 1.000000, 1.000000]
+-   selector: ".text-color-unique"
+    properties:
+        text-textColor: [0.717647, 0.243137, 0.945098, 1.000000]
+-   selector: ".text-color-legendary"
+    properties:
+        text-textColor: [0.890196, 0.694118, 0.274510, 1.000000]
+-   selector: ".text3-small"
+    properties:
+        text-font: "WarHeliosCondC_14"

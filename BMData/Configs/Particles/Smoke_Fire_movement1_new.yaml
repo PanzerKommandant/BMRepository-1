@@ -1,0 +1,55 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 90.0000
+    emissionVectorInverted: "true"
+    life: 200.0000
+    shortEffect: "false"
+    size: [1.0000, 1.0000, 0.0000]
+    type: "rect"
+    emissionVector:
+        externalVariable: "Velosity"
+        modification_line: [0.0000, [1.0000, 0.0000, 1.0000], 1.0000, [1.0000, 1.0000, 1.0000]]
+        value_line: [0.0000, -1.0000, 1.0000]
+
+layer0:
+    activeLODS: [1, 1, 1, 0]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.0000, 0.0410, 0.4023]
+    colorRandom: [0.0000, [255.0000, 151.0000, 23.0000, 255.0000], 0.1028, [255.0000, 235.0000, 210.0000, 255.0000], 0.2495, [255.0000, 65.0000, 7.0000, 255.0000], 0.2932, [255.0000, 169.0000, 83.0000, 255.0000], 0.3829, [255.0000, 210.0000, 179.0000, 255.0000], 0.4956, [255.0000, 151.0000, 32.0000, 255.0000], 0.5974, [255.0000, 118.0000, 26.0000, 255.0000], 0.6904, [255.0000, 175.0000, 117.0000, 255.0000], 0.7888, [255.0000, 110.0000, 14.0000, 255.0000], 0.8217, [255.0000, 162.0000, 115.0000, 255.0000], 0.9147, [255.0000, 166.0000, 64.0000, 255.0000]]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 200.0000
+    force0: [0.0000, 0.0000, -8.0000]
+    forceCount: 1
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 0.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLong: "true"
+    isLooped: "false"
+    layerType: "particles"
+    life: 1.0000
+    loopEndTime: 0.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "sparks"
+    number: [0.0000, 20.0000, 200.0000, 17.9924]
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "false"
+    scaleVelocityBase: 0.0000
+    scaleVelocityFactor: 0.3000
+    size: [0.0303, 0.1000]
+    sizeVariation: [0.0100, 0.0800]
+    sprite: "../../Gfx/Particles/Iskr"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: [0.0000, 3.0000, 99.5400, 2.0000]
+    velocityVariation: 3.0000
+

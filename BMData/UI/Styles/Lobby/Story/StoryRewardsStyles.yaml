@@ -1,0 +1,28 @@
+Header:
+    version: "5"
+StyleSheets:
+-   selector: ".reward_icon.vehicle"
+    properties: {}
+-   selector: ".reward_icon.camo"
+    properties: {}
+-   selector: ".reward_icon.premium"
+    properties:
+        bg-frame: 7
+-   selector: ".reward_icon.gold"
+    properties:
+        bg-frame: 0
+-   selector: ".reward_icon.credits"
+    properties:
+        bg-frame: 1
+-   selector: ".reward_icon.free_xp"
+    properties:
+        bg-frame: 2
+-   selector: ".reward_icon.xp"
+    properties:
+        bg-frame: 3
+-   selector: ".reward_icon.tank_xp"
+    properties:
+        bg-frame: 4
+-   selector: ".reward_icon"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"

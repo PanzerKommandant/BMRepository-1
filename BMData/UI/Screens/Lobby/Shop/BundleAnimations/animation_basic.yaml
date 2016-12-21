@@ -1,0 +1,66 @@
+Header:
+    version: "1"
+ImportedPackages: []
+StyleSheets: []
+Controls:
+-   class: "UIControl"
+    name: "Image"
+    size: [240.000000, 274.000000]
+    noInput: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/ImageGoldAnim"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "Effects"
+        size: [230.000000, 265.000000]
+        clip: true
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 1.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIParticles"
+            name: "effect2"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/glow1.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+        -   class: "UIParticles"
+            name: "effect3"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/glow_behind.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+        -   class: "UIParticles"
+            name: "GoldBagFx"
+            position: [155.000000, 130.000000]
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/bag.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "PremFx"
+            position: [70.000000, 150.000000]
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/flow1.sc2"
+            autoStart: true

@@ -1,0 +1,12 @@
+Header:
+    version: "1"
+ImportedPackages: []
+StyleSheets: []
+Controls:
+-   class: "UIMovieView"
+    name: "SplashVideo"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"

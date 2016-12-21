@@ -1,0 +1,83 @@
+Header:
+    version: "1"
+StyleSheets:
+-   selector: ".keyboard-button:selected"
+    properties:
+        frame: 0
+-   selector: ".keyboard-button"
+    properties:
+        frame: 1
+-   selector: ".keyboard-button #text"
+    properties:
+        bottomAnchor: 4.000000
+        textColor: [0.270588, 0.278431, 0.266667, 1.000000]
+        topAnchor: 0.000000
+-   selector: ".keyboard-button:selected #text"
+    properties:
+        bottomAnchor: 0.000000
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        topAnchor: 4.000000
+-   selector: ".mouse #button"
+    properties:
+        visible: false
+-   selector: ".mouse:selected #button"
+    properties:
+        visible: true
+Controls:
+-   class: "UIControl"
+    name: "keyboardButton"
+    size: [52.000000, 52.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    classes: "keyboard-button"
+    components:
+        LinearLayout:
+            padding: 10.000000
+            dynamicPadding: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            horizontalMin: 52.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 52.000000
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/Tutorial/KeyboardMouse/butt_keyboard"
+            leftRightStretchCap: 5.000000
+            topBottomStretchCap: 15.000000
+    children:
+    -   class: "UIStaticText"
+        name: "text"
+        noInput: true
+        text: ""
+        font: "WarHeliosCondC_Bold_23"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+            Anchor:
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    name: "mouse"
+    size: [50.000000, 50.000000]
+    pivot: [0.500000, 0.500000]
+    classes: "mouse"
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            sprite: "~res:/Gfx/UI/Tutorial/KeyboardMouse/mouse"
+    children:
+    -   class: "UIControl"
+        name: "button"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: "~res:/Gfx/UI/Tutorial/KeyboardMouse/mouse"
+                frame: 1
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

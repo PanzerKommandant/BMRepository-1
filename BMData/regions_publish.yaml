@@ -1,0 +1,348 @@
+Common:
+    dlc: "http://dl-wotblitz.wargaming.net/dlc/"
+    public: "true"
+    realmDetect: "http://wargaming.net/realm/detect"
+    wotBlitzPortal: "http://wotblitz.com"
+    storyInteractions: "http://wotblitz.com/%s/fair/"
+    partnerAnalytics: "http://cpumob.wargaming.net/wotcpu_mobile/pubapi"
+    support_query: "blitz=1&locale=%s"
+    appleAppStore: "https://itunes.apple.com/app/id859204347"
+    appleMacAppStore: "macappstore://itunes.apple.com/app/id1068932208"
+    steamStore: "steam://nav/games/details/444200"
+    defaultLanguage: "en"
+    adColonyZonesIOS:
+        ru: "vz54da4d82f1ab4a9083"
+        eu: "vzb110899c86014131a6"
+        us: "vz6abe07ceaad747e0a2"
+        sg: "vzced87bac83de496bbc"
+    adColonyZonesAndroid:
+        ru: "vz5e95bf77c266432a9b"
+        eu: "vza8c7fb165759411fba"
+        us: "vz6e13e48b8b0d446098"
+        sg: "vz32513290bb1b4c428d"
+    blitzAssistant:
+        store:
+            default: "http://wotblitz.ru/assistant/"
+            iOS: "itms-apps://itunes.apple.com/app/id1047617794"
+            Android: "market://details?id=net.wargaming.wot.blitz.assistant"
+            "Windows Desktop UAP": "ms-windows-store://pdp/?ProductId=9nblggh5k75w"
+            "Windows Phone UAP": "ms-windows-store://pdp/?ProductId=9nblggh5k75w"
+Regions:
+    Europe:
+        dlc: "http://dl-wotblitz-gc.wargaming.net/dlc/"
+        wgnwn: "https://eu.wargaming.net"
+        clientId: "D6lcd51pjyFVaRWPGGbVfBS6AGVBaSyN3wYCh9y4"
+        externalClientId: "KERO3plrLuny787hyiSBjZJUIzEYQ7zADBzh9iXc"
+        news: "http://wotblitz.eu/%s/rss/news/"
+        contentPages: "http://wotblitz.eu/%s/content/blitz-client/%s/"
+        popupNews: "http://wotblitz.eu/%s/promo/"
+        eula: "http://wotblitz.eu/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
+        realm: "eu"
+        flag: "eu"
+        wotBlitzPortal: "http://wotblitz.eu"
+        storyInteractions: "http://wotblitz.eu/%s/fair/"
+        adColonyZoneAlias: "eu"
+        hosts:
+            EU:
+                url: "login.wotblitz.eu:20016"
+        communityUrls:
+            http:
+                facebook: "https://www.facebook.com/wotblitz"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "https://twitter.com/WoTBlitz"
+                forum: "http://forum.wotblitz.eu"
+                portal: "http://www.wotblitz.eu"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/572143336148627"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "twitter://user?id=1134245654"
+    Russia:
+        dlc: "http://dl-wotblitz-gc.wargaming.net/dlc/"
+        wgnwn: "https://ru.wargaming.net"
+        clientId: "ESoha64ZYPisFEopdAlbw15Qx7VPQNszV49lUZOg"
+        externalClientId: "aGkKve1sR9YE5LxIu25NkjLiCqD0F4H3l8q1MmRL"
+        news: "http://wotblitz.ru/%s/rss/news/"
+        contentPages: "http://wotblitz.ru/%s/content/blitz-client/%s/"
+        popupNews: "http://wotblitz.ru/%s/promo/"
+        eula: "http://wotblitz.ru/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.ru/index.php?/topic/3316-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8%D0%B3%D1%80%D1%8B/"
+        realm: "ru"
+        flag: "ru"
+        wotBlitzPortal: "http://wotblitz.ru"
+        storyInteractions: "http://wotblitz.ru/%s/fair/"
+        adColonyZoneAlias: "ru"
+        defaultLanguage: "ru"
+        hosts:
+            RU:
+                url: "login.wotblitz.ru:20016"
+        communityUrls:
+            http:
+                vk: "https://vk.com/wotblitz"
+                facebook: "https://www.facebook.com/wotblitz.RU"
+                instagram: "https://instagram.com/wotblitz_ru/"
+                viber: "http://chats.viber.com/wot"
+                twitter: "https://twitter.com/WoTBlitz_ru"
+                forum: "http://forum.wotblitz.ru"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/344948028998439"
+                twitter: "twitter://user?id=1471794794"
+                viber: "viber://public?id=wot"
+    North America:
+        wgnwn: "https://na.wargaming.net"
+        clientId: "2BPjeiZ09NBrHjc4rsV9KqN3za41nGCoRKmqUU9G"
+        externalClientId: "7BXK93XMitIsc1I4GYyJEv1yGniXKDbpJAx8IpAg"
+        news: "http://wotblitz.com/%s/rss/news/"
+        contentPages: "http://wotblitz.com/%s/content/blitz-client/%s/"
+        popupNews: "http://wotblitz.com/%s/promo/"
+        eula: "http://wotblitz.com/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.com/index.php?/forum-0/announcement-13-world-of-tanks-blitz-game-rules/"
+        realm: "us"
+        flag: "us"
+        wotBlitzPortal: "http://wotblitz.com"
+        storyInteractions: "http://wotblitz.com/%s/fair/"
+        adColonyZoneAlias: "us"
+        hosts:
+            NA:
+                url: "login.wotblitz.com:20016"
+        communityUrls:
+            http:
+                facebook: "https://www.facebook.com/wotblitz"
+                youtube: "https://www.youtube.com/channel/UC1h424KQY-jGGQe3inlqfiA"
+                twitter: "https://twitter.com/WoTBlitz"
+                forum: "http://forum.wotblitz.com"
+                portal: "http://www.wotblitz.com"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/572143336148627"
+                youtube: "https://www.youtube.com/channel/UC1h424KQY-jGGQe3inlqfiA"
+                twitter: "twitter://user?id=1134245654"
+    Asia:
+        dlc: "http://dl-wotblitz-gc.wargaming.net/dlc/"
+        wgnwn: "https://asia.wargaming.net"
+        clientId: "CLGZNuOhfKFRQHEVkIQT6oUaoHNMYLG4YC9YG0uK"
+        externalClientId: "6GLjO4mmgMLIPOUn9MCk0Gf72sBPPhw730mYeXaE"
+        news: "http://wotblitz.asia/%s/rss/news/"
+        contentPages: "http://wotblitz.asia/%s/content/blitz-client/%s/"
+        popupNews: "http://wotblitz.asia/%s/promo/"
+        eula: "http://wotblitz.asia/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.asia/index.php?/forum-26/announcement-2-wot-blitz-game-rules/"
+        realm: "sg"
+        flag: "sg"
+        wotBlitzPortal: "http://wotblitz.asia"
+        storyInteractions: "http://wotblitz.asia/%s/fair/"
+        adColonyZoneAlias: "sg"
+        hosts:
+            SG:
+                url: "login.wotblitz.asia:20016"
+        communityUrls:
+            http:
+                facebook: "https://www.facebook.com/WoTBlitzAsia"
+                youtube: "https://www.youtube.com/channel/UC4YbL5me4Z8F6drzIchk06w"
+                twitter: "https://twitter.com/BlitzAsia"
+                forum: "http://forum.wotblitz.asia"
+                portal: "http://www.wotblitz.asia"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/475922645851956"
+                youtube: "https://www.youtube.com/channel/UC4YbL5me4Z8F6drzIchk06w"
+                twitter: "twitter://user?id=2616820147"
+    Arabian:
+        wgnwn: "https://eu.wargaming.net"
+        clientId: "D6lcd51pjyFVaRWPGGbVfBS6AGVBaSyN3wYCh9y4"
+        externalClientId: "KERO3plrLuny787hyiSBjZJUIzEYQ7zADBzh9iXc"
+        news: "http://wotblitz.eu/%s/rss/news/"
+        contentPages: "http://wotblitz.eu/%s/content/blitz-client/%s/"
+        popupNews: "http://wotblitz.eu/%s/promo/"
+        eula: "http://wotblitz.eu/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
+        realm: "eu"
+        flag: "ar"
+        wotBlitzPortal: "http://wotblitz.eu"
+        storyInteractions: "http://wotblitz.eu/%s/fair/"
+        adColonyZoneAlias: "eu"
+        hosts:
+            EU:
+                url: "login.wotblitz.eu:20016"
+        communityUrls:
+            http:
+                facebook: "https://www.facebook.com/wotblitz"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "https://twitter.com/WoTBlitz"
+                forum: "http://forum.wotblitz.eu"
+                portal: "http://www.wotblitz.eu"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/572143336148627"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "twitter://user?id=1134245654"
+ClanEmblems:
+    DefaultEmblem:
+        Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10001.png"
+        Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10001.png"
+    DefaultCreationEmblemID: 10001
+    List:
+        3:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-1.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-1.png"
+        4:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-2.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-2.png"
+        5:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-3.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-3.png"
+        6:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-4.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-4.png"
+        7:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-5.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-5.png"
+        10001:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10001.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10001.png"
+        10002:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10002.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10002.png"
+        10003:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10003.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10003.png"
+        10004:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10004.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10004.png"
+        10005:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10005.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10005.png"
+        10006:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10006.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10006.png"
+        10007:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10007.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10007.png"
+        10008:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10008.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10008.png"
+        10009:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10009.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10009.png"
+        10010:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10010.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10010.png"
+        10011:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10011.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10011.png"
+        10012:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10012.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10012.png"
+        10013:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10013.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10013.png"
+        10014:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10014.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10014.png"
+        10015:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10015.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10015.png"
+        10016:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10016.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10016.png"
+        10017:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10017.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10017.png"
+        10018:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10018.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10018.png"
+        10019:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10019.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10019.png"
+        10020:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10020.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10020.png"
+        10021:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10021.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10021.png"
+        10022:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10022.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10022.png"
+        10023:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10023.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10023.png"
+        10024:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10024.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10024.png"
+        20002:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20002.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20002.png"
+        20003:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20003.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20003.png"
+        20004:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20004.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20004.png"
+        20005:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20005.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20005.png"
+        20006:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20006.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20006.png"
+        20007:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20007.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20007.png"
+        20008:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20008.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20008.png"
+        20009:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20009.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20009.png"
+        20010:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20010.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20010.png"
+        20011:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20011.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20011.png"
+        20012:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20012.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20012.png"
+        20013:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20013.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20013.png"
+        20014:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20014.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20014.png"
+        20015:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20015.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20015.png"
+        20016:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20016.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20016.png"
+        20017:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20017.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20017.png"
+        20018:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20018.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20018.png"
+        20019:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20019.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20019.png"
+        20020:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20020.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20020.png"
+        20021:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20021.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20021.png"
+        20022:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20022.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20022.png"
+        20023:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20023.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20023.png"
+        20024:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20024.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20024.png"
+        20025:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20025.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20025.png"
+        20026:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-20026.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-20026.png"

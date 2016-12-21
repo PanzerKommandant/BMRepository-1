@@ -1,0 +1,5 @@
+1
+japan-Pz_IV_Ausf_H0.tex
+320 200
+1
+0 0 201 160 59 20 0 frame0

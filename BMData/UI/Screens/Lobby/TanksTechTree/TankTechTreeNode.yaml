@@ -1,0 +1,308 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIVehicleTechTreeNode"
+    name: "VehicleTechTreeNode"
+    size: [173.000000, 64.000000]
+    classes: "button"
+    children:
+    -   class: "UIControl"
+        name: "PanelPlaceholder"
+        size: [173.000000, 64.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Background"
+        position: [-14.500000, -18.000000]
+        size: [200.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: -1.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
+                frame: 1
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Content"
+        size: [173.000000, 65.000000]
+        noInput: true
+        components:
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "TankIcon"
+            position: [36.000000, 4.000000]
+            size: [97.000000, 60.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -2.000000
+                    topAnchorEnabled: true
+                    topAnchor: 4.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 1.000000
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                    sprite: "~res:/Gfx/UI/BigTankIcons/germany-Lowe"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "EliteIcon"
+            position: [4.000000, 5.000000]
+            size: [26.000000, 26.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "ClassIcon"
+            position: [4.000000, 5.000000]
+            size: [26.000000, 26.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                    frame: 1
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "LevelIcon"
+            position: [26.000000, 1.000000]
+            size: [38.000000, 32.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 26.000000
+                    topAnchorEnabled: true
+                    topAnchor: 1.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIStaticText"
+            name: "Name"
+            position: [8.000000, 32.500000]
+            size: [135.000000, 28.500000]
+            noInput: true
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["LEFT", "BOTTOM"]
+            textUseRtlAlign: "DONT_USE"
+            font: "Font_18_bold_tech"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 8.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 30.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 4.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Price"
+            position: [43.000000, 38.000000]
+            size: [125.000000, 25.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 2.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                position: [0.000000, -1.000000]
+                size: [101.000000, 26.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                font: "Font_18_tech"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 24.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["RIGHT", "VCENTER"]
+            -   class: "UIControl"
+                name: "Currency"
+                position: [103.000000, 1.500000]
+                size: [22.000000, 22.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                        frame: 3
+        -   class: "UIControl"
+            name: "Experience"
+            position: [44.000000, 3.000000]
+            size: [125.000000, 25.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 3.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIStaticText"
+                name: "Value"
+                position: [0.000000, -1.000000]
+                size: [101.000000, 26.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                font: "Font_18_bold"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 24.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "Currency"
+                position: [103.000000, 1.500000]
+                size: [22.000000, 22.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                        frame: 3
+    -   class: "UIControl"
+        name: "Foreground"
+        position: [-14.500000, -18.000000]
+        size: [200.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: -1.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "Selection"
+            size: [200.000000, 100.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
+                    frame: 5
+        -   prototype: "DiscountLabel/DiscountLabel"
+            name: "Discount"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    topAnchorEnabled: true
+                    topAnchor: 16.000000
+        -   class: "UIControl"
+            name: "highlight"
+            position: [100.500000, 50.000000]
+            size: [193.000000, 86.000000]
+            pivot: [0.500000, 0.500000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 4.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 3.000000
+                    topAnchorEnabled: true
+                    topAnchor: 7.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 7.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
+                    leftRightStretchCap: 15.000000
+                    topBottomStretchCap: 15.000000
+        -   class: "UIControl"
+            name: "CheckMark"
+            size: [200.000000, 100.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
+                    frame: 6
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

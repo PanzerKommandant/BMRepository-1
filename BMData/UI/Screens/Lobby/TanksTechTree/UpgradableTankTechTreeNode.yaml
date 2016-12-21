@@ -1,0 +1,155 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
+- "~res:/UI/Screens/Lobby/TanksTechTree/TankTechTreeNode.yaml"
+Controls:
+-   prototype: "TankTechTreeNode/VehicleTechTreeNode"
+    name: "VehicleTechTreeNode"
+    children:
+    -   path: "PanelPlaceholder"
+        children:
+        -   class: "UIControl"
+            name: "UpgradeToTop"
+            size: [200.000000, 192.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -0.500000
+                    topAnchorEnabled: true
+                    topAnchor: -20.000000
+            children:
+            -   class: "UIControl"
+                name: "UpgradePanel"
+                size: [200.000000, 160.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        topAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/dynamic_control"
+                        color: [0.000000, 0.000000, 0.000000, 0.501961]
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   prototype: "StyledButton/StyledButton"
+                    name: "UpgradeButton"
+                    size: [194.000000, 54.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 3.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                            frame: 2
+                            topBottomStretchCap: 3.000000
+                    children:
+                    -   path: "Caption"
+                        fitting: ["REDUCE"]
+                        text: "#modules_tech_tree:Top/Button"
+                        font: "WarHeliosCondC_Bold_21"
+                        components:
+                            Anchor:
+                                leftAnchor: 5.000000
+                                rightAnchor: 5.000000
+            -   class: "UIControl"
+                name: "Footer"
+                size: [200.000000, 32.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "Ignore"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "Price"
+                    size: [180.000000, 32.000000]
+                    components:
+                        LinearLayout:
+                            spacing: 5.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Label"
+                        position: [0.000000, 0.000000]
+                        size: [86.000000, 32.000000]
+                        classes: "text2 text-color-blue"
+                        textalign: ["HCENTER", "VCENTER"]
+                        text: "#common:Cost"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                    -   prototype: "DiscountLabel/DiscountLabel"
+                        name: "Discount"
+                        visible: false
+                    -   class: "UIControl"
+                        name: "SimplePrice"
+                        size: [89.000000, 32.000000]
+                        components:
+                            LinearLayout:
+                                spacing: 3.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                leftAnchorEnabled: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            position: [0.000000, 0.000000]
+                            size: [62.000000, 32.000000]
+                            classes: "header4"
+                            text: "999 999"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                        -   class: "UIControl"
+                            name: "Currency"
+                            position: [65.000000, 0.000000]
+                            size: [24.000000, 32.000000]
+                            components:
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                -   class: "UIControl"
+                    name: "DiscountedPrice"
+                    size: [89.000000, 32.000000]
+                    visible: false
+                    components:
+                        LinearLayout:
+                            spacing: 3.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Value"
+                        position: [0.000000, 0.000000]
+                        size: [62.000000, 32.000000]
+                        classes: "header4"
+                        text: "999 999"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "Currency"
+                        position: [65.000000, 0.000000]
+                        size: [24.000000, 32.000000]
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"

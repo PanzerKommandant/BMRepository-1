@@ -1,0 +1,5 @@
+1
+tank_destroyers0.tex
+508 320
+1
+0 0 508 292 0 28 0 frame0

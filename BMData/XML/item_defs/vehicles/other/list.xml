@@ -1,0 +1,63 @@
+<root>
+	<Strv_74A2>
+		<id>2</id>
+		<userString>#other_vehicles:Strv_74A2</userString>
+		<shortUserString>#other_vehicles:Strv_74A2_short</shortUserString>
+		<price>3000<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank enhancedTorsions3t_user wetCombatPack_class1_user</tags>
+		<level>6</level>
+	</Strv_74A2>
+	<Sega_Edelweiss>
+		<id>3</id>
+		<userString>#other_vehicles:Sega_Edelweiss</userString>
+		<shortUserString>#other_vehicles:Sega_Edelweiss_short</shortUserString>
+		<price>4900<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank enhancedTorsions5t_user mediumCaliberTankRammer_user wetCombatPack_class1_user</tags>
+		<level>7</level>
+	</Sega_Edelweiss>
+	<Sega_Nameless>
+		<id>5</id>
+		<userString>#other_vehicles:Sega_Nameless</userString>
+		<shortUserString>#other_vehicles:Sega_Nameless_short</shortUserString>
+		<price>5000<gold/>			
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank enhancedTorsions5t_user largeCaliberTankRammer_user wetCombatPack_class2_user</tags>
+		<level>7</level>
+	</Sega_Nameless>
+	<Van_Helsing>
+		<id>6</id>
+		<userString>#other_vehicles:Van_Helsing</userString>
+		<shortUserString>#other_vehicles:Van_Helsing_short</shortUserString>
+		<price>4900<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG secret InGame mediumAT-SPG wetCombatPack_class1_user</tags>
+		<level>7</level>
+	</Van_Helsing>
+	<Akawara>
+		<id>7</id>
+		<userString>#other_vehicles:Akawara</userString>
+		<shortUserString>#other_vehicles:Akawara_short</shortUserString>
+		<price>7300<gold/>		
+		</price>
+		<notInShop>true</notInShop>		
+		<tags>mediumTank enhancedTorsions3t_user mediumCaliberTankRammer_user wetCombatPack_class1_user aimingStabilizer_Mk1_user</tags>
+		<level>8</level>
+	</Akawara>
+	<AMX_dracula>
+		<id>248</id>
+		<userString>#other_vehicles:AMX_dracula</userString>
+		<shortUserString>#other_vehicles:AMX_dracula_short</shortUserString>
+		<description>#other_vehicles:AMX_dracula_descr</description>
+		<price>4900<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank secret InGame enhancedTorsions3t_user mediumCaliberTankRammer_user wetCombatPack_class1_user</tags>
+		<level>7</level>
+	</AMX_dracula>
+</root>

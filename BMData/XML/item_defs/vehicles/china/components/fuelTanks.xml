@@ -1,0 +1,28 @@
+<root>
+	<ids>
+		<Average>203</Average>
+		<Heavy>204</Heavy>
+	</ids>
+	<shared>
+		<Average>
+			<userString>#china_vehicles:Average</userString>
+			<description>#china_vehicles:Average_descr</description>
+			<tags> </tags>
+			<price>100</price>
+			<weight>250</weight>
+			<maxHealth>150</maxHealth>
+			<maxRegenHealth>60</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</Average>
+		<Heavy>
+			<userString>#china_vehicles:Heavy</userString>
+			<description>#china_vehicles:Heavy_descr</description>
+			<tags> </tags>
+			<price>100</price>
+			<weight>275</weight>
+			<maxHealth>175</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</Heavy>
+	</shared>
+</root>

@@ -1,0 +1,53 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
+Controls:
+-   class: "UIControl"
+    name: "HeaderCurrencies"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            dynamicPadding: true
+            dynamicSpacing: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: 20.000000
+            vCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Top"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                rightAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Bottom"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                rightAnchorEnabled: true
+-   prototype: "StoryCurrencyControl/CurrencyItem"
+    name: "HeaderCurrencyItem"
+    components:
+        LinearLayout:
+            spacing: 6.000000
+    children:
+    -   path: "Value"
+        size: [100.000000, 31.000000]
+        classes: "header1 text-color-white"
+        text: "9999999"
+        components:
+            SizePolicy:
+                horizontalPolicy: "Ignore"
+            Background:
+                align: ["RIGHT", "TOP"]

@@ -1,0 +1,122 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Hangar/UIStrangeHMTimer.yaml"
+- "~res:/UI/Screens/Lobby/Quests/QuestSlot.yaml"
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIQuestsHome"
+    name: "QuestsHome"
+    size: [1024.000000, 688.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        size: [944.000000, 688.000000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 40.000000
+                rightAnchorEnabled: true
+                rightAnchor: 40.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Quests"
+            size: [944.000000, 470.000000]
+            visible: true
+            noInput: true
+            classes: "limited-width"
+            components:
+                LinearLayout:
+                    orientation: "Horizontal"
+                    padding: 20.000000
+                    dynamicSpacing: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -25.000000
+            children:
+            -   prototype: "QuestSlot/QuestSlot"
+                name: "Quest1"
+                visible: true
+            -   prototype: "QuestSlot/QuestSlot"
+                name: "Quest2"
+            -   prototype: "QuestSlot/QuestSlot"
+                name: "Quest3"
+        -   class: "UIControl"
+            name: "RefreshInfo"
+            size: [588.000000, 30.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    spacing: 20.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 25.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Label"
+                size: [499.000000, 30.000000]
+                text: "#quests:HomeScreen/MissionsUpdateLabel"
+                font: "WarHeliosCondC_21"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+            -   prototype: "ExpireTimer/ExpireTimer"
+                name: "ExpireTimer"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   path: "Shadow"
+                    visible: false
+                -   path: "Icon"
+                    components:
+                        Anchor:
+                            vCenterAnchor: 1.000000
+                -   path: "Timer"
+                    visible: true
+                    children: []
+                -   path: "Timer/Hours"
+                    size: [21.000000, 26.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    font: "WarHeliosCondC_21"
+                -   path: "Timer/ColonHM"
+                    size: [6.000000, 26.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    font: "WarHeliosCondC_21"
+                -   path: "Timer/Minutes"
+                    size: [21.000000, 26.000000]
+                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                    font: "WarHeliosCondC_21"
+                -   path: "Label"
+                    visible: false
+                    font: "WarHeliosCondC_21"
+        -   class: "UIControl"
+            name: "InputLocker"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"

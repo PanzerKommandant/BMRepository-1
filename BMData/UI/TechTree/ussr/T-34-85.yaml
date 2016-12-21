@@ -1,0 +1,28 @@
+modules:
+    "#vehicle:T-43":
+        position: [3, 1]
+    "#vehicle:KV-13":
+        position: [3, 3]		
+    "#vehicleChassis:T-34-85":
+        position: [1, 5]
+    "#vehicleChassis:T-34-85Bis":
+        position: [2, 5]
+    "#vehicleEngine:V-2-34":
+        position: [1, 4]
+    "#vehicleEngine:V-2-34M":
+        position: [2, 4]
+    "#vehicleEngine:V-54K":
+        position: [3, 4]
+    "#vehicleGun:_122mm_cannon_U-11":
+        position: [2, 1]
+    "#vehicleGun:_76mm_S-54":
+        position: [1, 2]
+    "#vehicleGun:_85mm_D5T-85BM":
+        position: [4, 2]
+    "#vehicleGun:_85mm_ZiS_S-53":
+        position: [2, 2]
+    "#vehicleTurret:T-34-85":
+        position: [1, 3]
+    "#vehicleTurret:T-34_mod_100":
+        position: [3, 2]
+

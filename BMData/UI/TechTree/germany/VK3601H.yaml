@@ -1,0 +1,24 @@
+modules:
+    "#vehicle:PzVI":
+        position: [4, 3]
+    "#vehicleChassis:VK3601H_henshelketten":
+        position: [1, 5]
+    "#vehicleChassis:VK3601H_henshelketten_ausf_B":
+        position: [2, 5]
+    "#vehicleEngine:Maybach_HL_150":
+        position: [1, 4]
+    "#vehicleEngine:Maybach_HL_174":
+        position: [2, 4]
+    "#vehicleGun:_105mm_StuH42_L28Pz":
+        position: [1, 2]
+    "#vehicleGun:_75mm_KwK41_L58_conic":
+        position: [2, 2]
+    "#vehicleGun:_75mm_KwK_L70":
+        position: [2, 1]
+    "#vehicleGun:_88mm_KwK_36_L56":
+        position: [3, 3]
+    "#vehicleTurret:VK3601H_Grosseturm":
+        position: [2, 3]
+    "#vehicleTurret:VK3601H_Standardturm":
+        position: [1, 3]
+

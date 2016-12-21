@@ -1,0 +1,127 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Common/AOGASControl.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".social-button"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/IconsSocialBigOn.txt"
+        exclusiveInput: true
+-   selector: ".social-button:disabled"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/IconsSocialBigOff.txt"
+-   selector: ".header1"
+    properties:
+        text-font: "WarHeliosCondC_Bold_25_button"
+-   selector: ".social-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+Controls:
+-   class: "UIControl"
+    name: "SocialButton"
+    size: [80.000000, 80.000000]
+    classes: "social-button"
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+-   prototype: "LoginCommon/ScreenBlank"
+    name: "Screen"
+    children:
+    -   path: "Background"
+        children:
+        -   class: "UIControl"
+            name: "ExternalLogin"
+            position: [472.000000, 344.000000]
+            size: [80.000000, 80.000000]
+            debugDraw: false
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   prototype: "SocialButton"
+                name: "FB"
+                classes: "social-button"
+                components:
+                    Background:
+                        frame: 0
+            -   prototype: "SocialButton"
+                name: "GC"
+                visible: false
+                components:
+                    Background:
+                        frame: 1
+            -   prototype: "SocialButton"
+                name: "Google"
+                visible: false
+                components:
+                    Background:
+                        frame: 2
+            -   prototype: "SocialButton"
+                name: "Live"
+                visible: false
+                components:
+                    Background:
+                        frame: 3
+            -   prototype: "SocialButton"
+                name: "Steam"
+                visible: false
+                components:
+                    Background:
+                        frame: 4
+        -   class: "UIStaticText"
+            name: "ExternalText"
+            size: [600.000000, 40.000000]
+            classes: "text1 text-color-white"
+            text: "#entry:text/externalLogin"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -65.000000
+        -   prototype: "StyledButton/StyledButton"
+            name: "WGNLoginButton"
+            size: [462.000000, 70.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 100.000000
+            children:
+            -   path: "Caption"
+                classes: "header1 text-color-white"
+                fitting: ["REDUCE"]
+                text: "#entry:button/wgnLogin"
+        -   prototype: "StyledButton/StyledButton"
+            name: "DemoLoginButton"
+            position: [281.000000, 529.000000]
+            size: [462.000000, 70.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 180.000000
+        -   prototype: "AOGASControl/AOGASControl"
+            name: "AOGASControl"
+    -   path: "Background/BackButton"
+        visible: true
+        debugDraw: false
+        children: []
+-   prototype: "Dialogs/WarningDialogWithoutCaption"
+    name: "ExternalNotRegisteredDialog"
+    children:
+    -   path: "Dialog"
+        size: [540.000000, 300.000000]
+        children: []
+    -   path: "Dialog/Middle/ButtonHolder/OkButton/Caption"
+        text: "#entry:social/dialog/register"
+    -   path: "Dialog/Middle/ButtonHolder/CancelButton/Caption"
+        text: "#entry:social/dialog/back"

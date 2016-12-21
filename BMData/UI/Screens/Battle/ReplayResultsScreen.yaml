@@ -1,0 +1,100 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "ReplayResultsScreen"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "ReplayResultsHeader"
+        position: [0.000000, 0.000000]
+        size: [1024.000000, 52.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "Replay Results"
+        font: "Font_A5F1918C"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+    -   class: "UIControl"
+        name: "ResultsContainer"
+        components:
+            LinearLayout:
+                orientation: "Vertical"
+                spacing: 50.000000
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 50.000000
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "PanelsContainer"
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                    verticalValue: 50.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "CurrentFPSText"
+                size: [512.000000, 334.000000]
+                noInput: true
+                textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                multiline: "MULTILINE_ENABLED"
+                font: "Font_19C08A5B"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 50.000000
+                        verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                customClass: "FpsHistogram"
+                name: "FpsHistogram"
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 50.000000
+                        verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            customClass: "ReplayChartControl"
+            name: "ReplayChart"
+            position: [0.000000, 384.000000]
+            size: [1024.000000, 334.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                    verticalValue: 50.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+    -   prototype: "StyledButton/StyledButton"
+        name: "CloseButton"
+        size: [180.000000, 70.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+        children:
+        -   path: "Caption"
+            text: "Close"

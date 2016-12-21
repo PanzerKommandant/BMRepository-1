@@ -1,0 +1,93 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 160.0000
+    emissionVector: [0.0000, -1.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 1000000.0000
+    radius: 0.2000
+    shortEffect: "false"
+    size: [0.0000, 0.0000, 0.0000]
+    type: "point"
+
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.0000, 0.0739, 0.9261, 1.0000, 0.0000]
+    colorOverLife: [206.0000, 203.0000, 236.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 1000000.0000
+    force0: [0.0000, 0.0000, -15.0000]
+    forceCount: 1
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 10.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLong: "true"
+    isLooped: "false"
+    layerType: "particles"
+    life: 0.0500
+    lifeVariation: 0.5000
+    loopEndTime: 0.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "Layer"
+    number: 50.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "false"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.0200, 0.3000]
+    sprite: "../../../Gfx/Particles/hangar/Iskr"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 2.0000
+    velocityVariation: 2.0000
+
+layer1:
+    activeLODS: [1, 1, 1, 1]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.3000, 1.0000, 0.0000]
+    colorOverLife: [161.0000, 124.0000, 255.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 1000000.0000
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 10.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "single"
+    life: 0.0500
+    lifeVariation: 0.2000
+    loopEndTime: 0.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "Layer"
+    number: 1.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "false"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [4.0000, 4.0000]
+    sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.4600, [1.5000, 1.5000], 1.0000, [0.0000, 0.0000]]
+    sizeVariation: [2.0000, 2.0000]
+    spin: 2.0000
+    sprite: "../../../Gfx/Particles/hangar/glow_lamp"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.0100
+

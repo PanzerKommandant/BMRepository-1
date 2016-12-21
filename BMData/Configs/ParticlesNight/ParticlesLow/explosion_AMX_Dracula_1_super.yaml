@@ -1,0 +1,50 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 90.000000
+    emissionVector: [0.000000, 0.000000, 0.500000]
+    emissionVectorInverted: true
+    name: "super"
+    radius: 2.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "oncircle"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.400000
+    force0: [0.000000, 0.000000, -10.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 1.000000, 0.400000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 6.000000
+    inheritPosition: false
+    innerEmitterPath: "../../ParticlesLow/explosion_tank_1_1_super_iner.yaml"
+    isLong: false
+    isLooped: false
+    layerType: "superEmitter"
+    life: 20.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "super"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.250000, 0.250000]
+    sizeVariation: [0.500000, 0.500000]
+    startTime: 0.200000
+    type: "layer"
+    velocity: 15.000000
+    velocityOverLife: [0.000000, 1.000000, 1.000000, 0.300000]
+    velocityVariation: 10.000000

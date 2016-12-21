@@ -1,0 +1,8 @@
+emitter:
+    emissionRange: 1.000000
+    emissionVector: [0.000000, 0.000000, -1.000000]
+    emissionVectorInverted: true
+    name: "rain"
+    shortEffect: false
+    size: [100.000000, 100.000000, 0.000000]
+    type: "rect"

@@ -1,0 +1,9 @@
+keyedArchive:
+    fx0:
+        string: "ground"
+    fx1:
+        string: "stone"
+    fx2:
+        string: "ground"
+    fx3:
+        string: "sand"

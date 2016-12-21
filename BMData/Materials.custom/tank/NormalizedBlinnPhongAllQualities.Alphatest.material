@@ -1,0 +1,4 @@
+MaterialTemplate:    
+    HIGH : "~res:/Materials.custom/tank/NormalizedBlinnPhongPerPixel.Alphatest.material"
+    MEDIUM: "~res:/Materials.custom/tank/NormalizedBlinnPhongPerPixelFast.Alphatest.material"
+    LOW : "~res:/Materials.custom/tank/NormalizedBlinnPhongPerVertex.Alphatest.material"

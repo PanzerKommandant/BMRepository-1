@@ -1,0 +1,17 @@
+Header:
+    version: "4"
+Controls:
+-   class: "UIStaticText"
+    name: "UnreadIcon"
+    position: [354.000000, 26.000000]
+    size: [30.000000, 32.000000]
+    noInput: true
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    shadowoffset: [0.000000, 1.000000]
+    fitting: ["REDUCE"]
+    text: "!"
+    font: "WarHeliosCondC_Bold_21"
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"
+            color: [0.768600, 0.023500, 0.043100, 1.000000]

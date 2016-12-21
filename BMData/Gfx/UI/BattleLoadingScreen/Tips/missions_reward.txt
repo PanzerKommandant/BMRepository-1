@@ -1,0 +1,5 @@
+1
+missions_reward0.tex
+254 160
+1
+0 0 254 143 0 17 0 frame0

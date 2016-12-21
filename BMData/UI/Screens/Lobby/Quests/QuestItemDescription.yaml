@@ -1,0 +1,139 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Lobby/Storage/StorageHome.yaml"
+Controls:
+-   class: "UIControl"
+    name: "VerticalLayout"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        ModalInput: {}
+        Background:
+            drawType: "DRAW_FILL"
+            gradientMode: "Overlay"
+            color: [0.070588, 0.125490, 0.160784, 0.921569]
+    children:
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "BackButton"
+    -   class: "UIControl"
+        name: "HorisontalLayout"
+        position: [102.399994, 256.000000]
+        components:
+            LinearLayout:
+                spacing: 25.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 80.000000
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   prototype: "StorageHome/ItemPrototype"
+            name: "ItemPrototype"
+            children:
+            -   path: "Background"
+                visible: false
+            -   path: "ItemCount"
+                visible: false
+                children: []
+            -   path: "Badge"
+                visible: false
+            -   path: "Selection"
+                visible: false
+        -   class: "UIControl"
+            name: "DescriptionSection"
+            classes: ""
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 20.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIStaticText"
+                name: "ItemName"
+                position: [0.000000, 0.000000]
+                size: [694.200012, 32.000000]
+                classes: "text1 text-color-blue"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "USE_BY_SYSTEM"
+                text: "name"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+            -   prototype: "StorageHome/Rarity"
+                name: "Rarity"
+                position: [0.000000, 52.000000]
+                size: [694.200012, 48.000000]
+            -   class: "UIControl"
+                name: "DescrLayout"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "DescrHeader"
+                    position: [0.000000, 0.000000]
+                    size: [694.200012, 32.000000]
+                    classes: "text1 text-color-white"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "storage/Items/Description"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "Description"
+                    position: [0.000000, 32.000000]
+                    size: [694.200012, 26.000000]
+                    classes: "text1 text-color-blue"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "description"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "ObtainingLayout"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "ObtainingHeader"
+                    position: [0.000000, 0.000000]
+                    size: [694.200012, 32.000000]
+                    classes: "text1 text-color-white"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "storage/Items/Obtainment"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "Obtaining"
+                    position: [0.000000, 32.000000]
+                    size: [694.200012, 26.000000]
+                    classes: "text1 text-color-blue"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "obtaining"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"

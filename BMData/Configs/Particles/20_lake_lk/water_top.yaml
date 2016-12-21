@@ -1,0 +1,89 @@
+emitter:
+    emissionAngle: 190.000000
+    emissionAngleVariation: 120.000000
+    emissionRange: 360.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "water_top"
+    radius: 5.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "shockwave"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.596058, 0.518265, 0.508172, 1.000000, 0.000000]
+    angle: 1.000000
+    angleVariation: 360.000000
+    blending: 1
+    colorOverLife: [190.996109, 195.972763, 176.070038, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 3.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "water2"
+    number: 30.000000
+    particleOrientation: 8
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.000000, 2.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
+    sprite: "../../../Gfx/Particles/alpha/water_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityVariation: 1.000000
+layer1:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    blending: 1
+    colorOverLife: [151.000000, 184.000000, 168.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "water1"
+    number: 30.000000
+    particleOrientation: 8
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
+    sprite: "../../../Gfx/Particles/alpha/water"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.200000
+    velocityVariation: 0.100000

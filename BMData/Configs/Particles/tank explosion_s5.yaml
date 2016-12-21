@@ -1,0 +1,59 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 80.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 10.0000
+    radius: 1.0000
+    shortEffect: "false"
+    size: [0.0000, 0.0000, 0.0000]
+    type: "oncircle"
+
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.0000, 0.3385, 0.9450, 0.7045, 0.9347, 0.8660, 0.0329, 0.9900, 0.0000]
+    angle: 90.0000
+    angleVariation: 90.0000
+    animSpeedOverLife: [0.0000, 0.8000, 1.0000, 0.2000]
+    colorOverLife: [95.0000, 103.0000, 111.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "false"
+    enableFrameBlend: "true"
+    endTime: 0.7000
+    force0: [0.0000, 0.0000, 0.0000]
+    forceCount: 1
+    frameOverLifeEnabled: "true"
+    frameOverLifeFPS: 15.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "particles"
+    life: 3.0000
+    lifeVariation: 3.0000
+    loopEndTime: 6.0000
+    loopSpriteAnimation: "false"
+    loopVariation: 0.0000
+    name: "fire_big"
+    number: 20.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "true"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [4.0000, 4.0000]
+    sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [2.0000, 2.0000]]
+    spin: 5.0000
+    spinVariation: 10.0000
+    sprite: "../../Gfx/Particles/exp_anim_L"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.1000
+    velocityOverLife: [0.0000, 0.3000, 0.7852, 0.2619, 0.9900, 0.0000]
+    velocityVariation: 10.0000
+

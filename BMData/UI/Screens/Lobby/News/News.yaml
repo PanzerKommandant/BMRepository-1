@@ -1,0 +1,137 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+- "~res:/UI/Screens/Lobby/UnreadNotifications.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyHeader/Header"
+        name: "Header"
+        children:
+        -   path: "menuButton/icon"
+            components:
+                Background:
+                    frame: 2
+    -   class: "UIControl"
+        name: "Content"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+-   class: "UIControl"
+    name: "HeaderTab"
+    size: [200.000000, 77.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 200.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 77.000000
+    children:
+    -   class: "UIControl"
+        name: "selected"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/TabActiveTile"
+        children:
+        -   class: "UIStaticText"
+            name: "text"
+            classes: "header3 text-color-blue"
+            debugDraw: false
+            textalign: ["HCENTER", "BOTTOM"]
+            text: "NEWS_SCREEN_TAB_NEWS"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    align: ["HCENTER", "TOP"]
+    -   class: "UIStaticText"
+        name: "unselected"
+        classes: "header3 text-color-blue"
+        textalign: ["HCENTER", "BOTTOM"]
+        text: "NEWS_SCREEN_TAB_NEWS"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                align: ["HCENTER", "TOP"]
+    -   prototype: "UnreadNotifications/UnreadNotifications"
+        name: "UnreadNews"
+        position: [115.000000, 5.000000]
+-   class: "UIControl"
+    customClass: "UITabSwitcher"
+    name: "HeaderTabs"
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   prototype: "HeaderTab"
+        name: "NewsTab"
+        children:
+        -   path: "selected/text"
+            components:
+                Background:
+                    frame: 1
+        -   path: "unselected"
+            components:
+                Background:
+                    frame: 1
+    -   prototype: "HeaderTab"
+        name: "NotificationsTab"
+        tag: 1
+        children:
+        -   path: "selected/text"
+            text: "NEWS_SCREEN_TAB_NOTIFICATIONS"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/NewsScreen/IconTabs"
+                    frame: 1
+        -   path: "unselected"
+            text: "NEWS_SCREEN_TAB_NOTIFICATIONS"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/NewsScreen/IconTabs"
+                    frame: 1
+    -   prototype: "HeaderTab"
+        name: "TournamentsTab"
+        tag: 2
+        children:
+        -   path: "selected/text"
+            text: "NEWS_SCREEN_TAB_TOURNAMENTS"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    frame: 15
+        -   path: "unselected"
+            text: "NEWS_SCREEN_TAB_TOURNAMENTS"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    frame: 15
+        -   path: "UnreadNews"
+            classes: "header3 tournament-unread-bg"

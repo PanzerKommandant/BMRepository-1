@@ -1,0 +1,47 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/FightingArt/card_fighting_art"
+        children:
+        -   class: "UIParticles"
+            name: "FireTank"
+            position: [10.000000, 120.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_fighting_art/fire_tank.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/FightingArt/card_fighting_art"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [10.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_fighting_art/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [10.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_fighting_art/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "Dust"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_fighting_art/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GunM1"
+            position: [150.000000, 65.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_fighting_art/gunM1.sc2"
+            autoStart: true

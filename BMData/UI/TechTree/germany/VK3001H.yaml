@@ -1,0 +1,34 @@
+modules:
+    "#vehicle:VK3002M":
+        position: [4, 3]
+    "#vehicle:VK3601H":
+        position: [4, 4]
+    "#vehicleChassis:VK3001H":
+        position: [1, 6]
+    "#vehicleChassis:VK3001H_ausf_B":
+        position: [2, 6]
+    "#vehicleEngine:Maybach_HL_116":
+        position: [1, 5]
+    "#vehicleEngine:Maybach_HL_150":
+        position: [3, 5]
+    "#vehicleEngine:Maybach_HL_190":
+        position: [2, 5]
+    "#vehicleGun:_105mm_StuH42_L28Pz":
+        position: [3, 4]
+    "#vehicleGun:_50mm_KwK_39_L60":
+        position: [2, 2]
+    "#vehicleGun:_75mm_KwK41_L58_conic":
+        position: [4, 2]
+    "#vehicleGun:_75mm_KwK_37_L24":
+        position: [1, 2]
+    "#vehicleGun:_75mm_KwK_40_L43":
+        position: [2, 1]
+    "#vehicleGun:_75mm_KwK_40_L48":
+        position: [3, 3]
+    "#vehicleGun:_75mm_KwK_L70":
+        position: [4, 1]
+    "#vehicleTurret:VK3001H_Eliteturm":
+        position: [2, 3]
+    "#vehicleTurret:VK3001H_Standardturm":
+        position: [1, 3]
+

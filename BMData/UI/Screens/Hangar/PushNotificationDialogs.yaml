@@ -1,0 +1,29 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   prototype: "Dialogs/ErrorDialogWithoutCaption"
+    name: "PushNotificationsInstructionsDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        text: "SETTINGS_PUSH_NOTIFICATIONS_INSTRUCTION_SETTINGS"
+    -   path: "Dialog/Middle/ButtonHolder/OkButton"
+        components:
+            NormalText:
+                text: "Close"
+-   prototype: "Dialogs/WarningDialogWithoutCaption"
+    name: "PushNotificationsOfferDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        text: "SETTINGS_PUSH_NOTIFICATIONS_OFFER"
+        font: "WarHeliosCondC_Bold_21"
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   path: "Dialog/Middle/ButtonHolder/OkButton"
+        components:
+            NormalText:
+                text: "SETTINGS_PUSH_NOTIFICATIONS_OFFER_ACCEPT"
+    -   path: "Dialog/Middle/ButtonHolder/CancelButton"
+        components:
+            NormalText:
+                text: "SETTINGS_PUSH_NOTIFICATIONS_OFFER_DECLINE"

@@ -1,0 +1,54 @@
+emitter:
+    emissionAngle: 1.000000
+    emissionRange: 10.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "smoke"
+    radius: 0.300000
+    shortEffect: false
+    size: [1.000000, 1.200000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.140000, 0.300000, 0.990000, 0.000000]
+    angle: 1.000000
+    angleVariation: 360.000000
+    blending: 1
+    colorOverLife: [175.677032, 177.357971, 226.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.500000
+    deltaVariation: 0.500000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 6.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 10.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: true
+    layerType: "particles"
+    life: 3.000000
+    lifeVariation: 5.000000
+    loopEndTime: 200.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.500000
+    name: "smoke"
+    number: 3.000000
+    numberVariation: 3.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 0.990000, [2.600000, 2.600000]]
+    sizeVariation: [0.500000, 0.500000]
+    spin: 7.000000
+    spinVariation: 7.000000
+    sprite: "../../../Gfx/Particles/hangar_ny_2017/fog_white"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.461300
+    velocityVariation: 0.009000

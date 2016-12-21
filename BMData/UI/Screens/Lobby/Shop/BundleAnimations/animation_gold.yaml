@@ -1,0 +1,53 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "Image"
+    size: [240.000000, 274.000000]
+    noInput: true
+    hcenterAlignEnabled: true
+    vcenterAlignEnabled: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/ImageGoldAnim"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "Effects"
+        size: [230.000000, 265.000000]
+        clip: true
+        noInput: true
+        hcenterAlignEnabled: true
+        hcenterAlign: 1.000000
+        vcenterAlignEnabled: true
+        children:
+        -   class: "UIParticles"
+            name: "effect2"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/glow1.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "effect3"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Shop/30/glow_behind.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GoldBagFx"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            vcenterAlign: 30.000000
+            effectPath: "~res:/3d/FX/UI/Shop/30/bag.sc2"
+            autoStart: true

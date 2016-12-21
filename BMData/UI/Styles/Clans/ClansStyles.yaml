@@ -1,0 +1,9 @@
+Header:
+    version: "1"
+StyleSheets:
+-   selector: "UIStaticText.clan-name"
+    properties:
+        textColor: [0.960784, 0.650980, 0.137255, 1.000000]
+-   selector: "UIStaticText.clan-tag"
+    properties:
+        textColor: [0.960784, 0.650980, 0.137255, 1.000000]

@@ -1,0 +1,50 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 30.000000
+    emissionVector: [0.000000, 10.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "fireworks"
+    radius: 0.200000
+    shortEffect: false
+    size: [1.000000, 1.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.822472, 1.000000, 1.000000, 0.000000]
+    blending: 3
+    colorRandom: [0.000000, [255.000000, 0.996109, 0.996109, 255.000000], 0.195833, [255.000000, 255.000000, 2.988327, 255.000000], 0.391667, [0.996109, 255.000000, 26.396887, 255.000000], 0.591667, [0.996109, 255.000000, 250.766541, 255.000000], 0.779167, [1.992218, 18.859921, 255.000000, 255.000000], 0.997917, [255.000000, 2.988327, 250.801559, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 0.100000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 25.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "butterfly"
+    number: 200.000000
+    particleOrientation: 1
+    pivotPoint: [1.000000, 1.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.500000, 0.500000]
+    sizeVariation: [0.200000, 0.200000]
+    spin: 200.000000
+    spinVariation: 200.000000
+    sprite: "../../../../Gfx/Particles/1AP/butterfly"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 100.000000
+    velocityOverLife: [0.000000, 1.000000, 0.010000, 0.040000, 0.030000, 0.010000]
+    velocityVariation: 10.000000

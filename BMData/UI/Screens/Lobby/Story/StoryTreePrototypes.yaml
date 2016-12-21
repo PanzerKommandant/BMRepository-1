@@ -1,0 +1,603 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".step.selected #ExpandedState"
+    properties:
+        bg-color:
+            value: [1.000000, 1.000000, 1.000000, 1.000000]
+            transitionTime: 0.200000
+            transitionFunction: "LINEAR"
+        scale:
+            value: [1.000000, 1.000000]
+            transitionTime: 0.200000
+            transitionFunction: "EASE_OUT"
+-   selector: ".step.selected #ExpandedState #NotificationButton"
+    properties:
+        noInput: false
+-   selector: ".step.selected #NormalState"
+    properties:
+        bg-color:
+            value: [1.000000, 1.000000, 1.000000, 0.000000]
+            transitionTime: 0.200000
+            transitionFunction: "EASE_OUT"
+-   selector: ".step.selected #NormalState #Button"
+    properties:
+        noInput: true
+-   selector: ".step #NormalState #Highlight"
+    properties:
+        visible: false
+-   selector: ".step.highlighted #NormalState #Highlight"
+    properties:
+        visible: true
+-   selector: ".step.selected.readyToComplete #NormalState #ToCompleteUnder, .step.selected.readyToComplete #NormalState #ToCompleteOver, .step.readyToComplete #ExpandedState #ToCompleteUnder, .step #NormalState #ToCompleteUnder, .step #NormalState #ToCompleteOver, .step #ExpandedState #ToCompleteUnder"
+    properties:
+        visible: false
+-   selector: ".step.selected.readyToComplete #ExpandedState #ToCompleteUnder, .step.readyToComplete #NormalState #ToCompleteUnder, .step.readyToComplete #NormalState #ToCompleteOver"
+    properties:
+        visible: true
+-   selector: ".step #ExpandedState"
+    properties:
+        bg-color:
+            value: [1.000000, 1.000000, 1.000000, 0.000000]
+            transitionTime: 0.200000
+            transitionFunction: "LINEAR"
+        scale:
+            value: [0.700000, 0.700000]
+            transitionTime: 0.200000
+            transitionFunction: "EASE_OUT"
+-   selector: ".step #ExpandedState #NotificationButton"
+    properties:
+        noInput: true
+-   selector: ".step #NormalState"
+    properties:
+        bg-color:
+            value: [1.000000, 1.000000, 1.000000, 1.000000]
+            transitionTime: 0.200000
+            transitionFunction: "LINEAR"
+-   selector: ".step #NormalState #Button"
+    properties:
+        noInput: false
+-   selector: ".step.completed #NormalState #Button"
+    properties:
+        bg-frame: 2
+-   selector: ".step #ExpandedState #Button #Background"
+    properties:
+        bg-frame: 0
+-   selector: ".step.completed #ExpandedState #Button #Background"
+    properties:
+        bg-frame: 2
+-   selector: ".step #NormalState #CheckMark"
+    properties:
+        visible: false
+-   selector: ".step.completed #NormalState #CheckMark"
+    properties:
+        visible: true
+-   selector: ".step.completed #ExpandedState #Button #CaptionTerms, .step #ExpandedState #Button #CaptionRewards"
+    properties:
+        visible: false
+-   selector: ".step #ExpandedState #Button #CaptionTerms, .step.completed #ExpandedState #Button #CaptionRewards"
+    properties:
+        visible: true
+Controls:
+-   class: "UIControl"
+    name: "HorizontalLine"
+    size: [100.000000, 2.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            verticalPolicy: "FixedSize"
+            verticalValue: 2.000000
+        Background:
+            drawType: "DRAW_FILL"
+            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "VerticalLine"
+    size: [2.000000, 100.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 2.000000
+        Background:
+            drawType: "DRAW_FILL"
+            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "Arrow"
+    size: [100.000000, 2.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: -1.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfFirstChild"
+    children:
+    -   prototype: "HorizontalLine"
+        name: "HorizontalLine"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "ArrowHead"
+        size: [6.000000, 6.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/TankTechTree/Arrowhead"
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "SArrowDown"
+    size: [100.000000, 50.000000]
+    noInput: true
+    children:
+    -   prototype: "HorizontalLine"
+        name: "HorizontalLine"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+    -   prototype: "VerticalLine"
+        name: "VerticalLine"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   prototype: "Arrow"
+        name: "Arrow"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "SArrowUp"
+    size: [100.000000, 50.000000]
+    noInput: true
+    children:
+    -   prototype: "HorizontalLine"
+        name: "HorizontalLine"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   prototype: "VerticalLine"
+        name: "VerticalLine"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   prototype: "Arrow"
+        name: "Arrow"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+-   class: "UIControl"
+    name: "ExpandedStateButton"
+    size: [100.000000, 50.000000]
+    classes: "button"
+    components:
+        Anchor:
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        position: [0.000000, 0.000000]
+        size: [139.000000, 69.500000]
+        scale: [0.720000, 0.720000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 139.000000
+                verticalPolicy: "PercentOfParent"
+                verticalValue: 139.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                leftRightStretchCap: 10.000000
+                margins: [1.000000, 1.000000, 1.000000, 1.000000]
+    -   class: "UIStaticText"
+        name: "CaptionTerms"
+        size: [92.000000, 50.000000]
+        classes: "header5 text-color-white"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        fitting: ["REDUCE"]
+        text: "template_event/ProgressStage/StepTree/TermsButton"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                rightAnchorEnabled: true
+                rightAnchor: 4.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "CaptionRewards"
+        size: [92.000000, 50.000000]
+        classes: "header5 text-color-white"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        fitting: ["REDUCE"]
+        text: "template_event/ProgressStage/StepTree/RewardsButton"
+        font: "WarHeliosCondC_Bold_17"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                rightAnchorEnabled: true
+                rightAnchor: 4.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "StoryStep"
+    size: [86.000000, 70.000000]
+    noInput: true
+    classes: "step"
+    children:
+    -   class: "UIControl"
+        name: "ExpandedState"
+        position: [43.000000, 35.000000]
+        size: [100.000000, 115.000000]
+        pivot: [0.500000, 0.500000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "SelectionInside"
+            position: [0.000000, 0.000000]
+            size: [58.823502, 39.500000]
+            scale: [1.700000, 1.700000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_TILED"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                    color: [0.400000, 0.400000, 0.400000, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    leftRightStretchCap: 10.000000
+        -   prototype: "ExpandedStateButton"
+            name: "Button"
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "Selection"
+            size: [100.000000, 115.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/dynamic_control"
+                    frame: 1
+                    color: [0.325490, 0.572549, 0.160784, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    leftRightStretchCap: 6.000000
+                    topBottomStretchCap: 6.000000
+        -   class: "UIParticles"
+            name: "ToCompleteUnder"
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_glow.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 33.000000
+                    vCenterAnchorEnabled: false
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Image"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 33.000000
+                Background:
+                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "NormalState"
+        size: [85.000000, 70.000000]
+        noInput: true
+        children:
+        -   prototype: "StyledButton/Button"
+            name: "Button"
+            size: [85.000000, 70.000000]
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   path: "Caption"
+                visible: false
+                enabled: false
+                components:
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Highlight"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: -2.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: -2.000000
+                    topAnchorEnabled: true
+                    topAnchor: -2.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: -2.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/Story/btn_glow"
+                    color: [0.325490, 0.572549, 0.160784, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    leftRightStretchCap: 9.000000
+                    topBottomStretchCap: 9.000000
+        -   class: "UIParticles"
+            name: "ToCompleteUnder"
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_glow.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Image"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIParticles"
+            name: "ToCompleteOver"
+            position: [42.500000, 35.000000]
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_unlock.sc2"
+            autoStart: true
+            startDelay: 0.005000
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "CheckMark"
+            position: [66.000000, 51.000000]
+            size: [24.000000, 24.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: -5.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: -5.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/mark"
+                    frame: 5
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "StoryBigStep"
+    size: [128.000000, 106.000000]
+    noInput: true
+    classes: "step"
+    children:
+    -   class: "UIControl"
+        name: "ExpandedState"
+        position: [64.000000, 53.000000]
+        size: [149.666687, 143.666534]
+        pivot: [0.500000, 0.500000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "SelectionInside"
+            position: [0.000000, 0.000000]
+            size: [71.955101, 46.000000]
+            scale: [2.080000, 2.080000]
+            noInput: true
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_TILED"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                    color: [0.400000, 0.400000, 0.400000, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    leftRightStretchCap: 10.000000
+        -   prototype: "ExpandedStateButton"
+            name: "Button"
+            position: [0.000000, 93.666534]
+            size: [149.666687, 50.000000]
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "Selection"
+            size: [149.666687, 143.666534]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/dynamic_control"
+                    frame: 1
+                    color: [0.325490, 0.572549, 0.160784, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    leftRightStretchCap: 6.000000
+                    topBottomStretchCap: 6.000000
+        -   class: "UIParticles"
+            name: "ToCompleteUnder"
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_glow2.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 33.000000
+                    vCenterAnchorEnabled: false
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Image"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 50.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   class: "UIControl"
+        name: "NormalState"
+        size: [130.500000, 105.000000]
+        noInput: true
+        children:
+        -   prototype: "StyledButton/Button"
+            name: "Button"
+            position: [0.000000, 0.000000]
+            size: [87.000000, 70.000000]
+            scale: [1.500000, 1.500000]
+            components:
+                Background:
+                    drawType: "DRAW_TILED"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   path: "Caption"
+                visible: false
+                enabled: false
+        -   class: "UIControl"
+            name: "Highlight"
+            position: [-1.000000, -1.000000]
+            size: [132.500000, 107.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: -1.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: -1.000000
+                    topAnchorEnabled: true
+                    topAnchor: -1.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: -1.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/Story/btn_glow"
+                    color: [0.325490, 0.572549, 0.160784, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    leftRightStretchCap: 9.000000
+                    topBottomStretchCap: 9.000000
+        -   class: "UIParticles"
+            name: "ToCompleteUnder"
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_glow2.sc2"
+            autoStart: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Image"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIStaticText"
+            name: "Label"
+            position: [6.000000, 74.000000]
+            size: [118.500000, 28.000000]
+            classes: "text1 text-color-white"
+            textcolorInheritType: "COLOR_MULTIPLY_ON_PARENT"
+            fitting: ["REDUCE"]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 6.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 6.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 3.000000
+        -   class: "UIParticles"
+            name: "ToCompleteOver"
+            position: [65.250000, 52.500000]
+            size: [0.000000, 0.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/steps_event_unlock.sc2"
+            autoStart: true
+            startDelay: 0.005000
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "CheckMark"
+            position: [111.500000, 86.000000]
+            size: [24.000000, 24.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: -5.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: -5.000000
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/mark"
+                    frame: 5
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

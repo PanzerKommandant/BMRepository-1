@@ -1,0 +1,384 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Styles/Lobby/Inventory/InventoryBigStyles.yaml"
+- "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
+- "~res:/UI/Screens/Lobby/Common/VehicleCharacteristicsInfluence.yaml"
+StyleSheets:
+-   selector: ".inventory-item-slot #icon"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/InventoryScreen/EmptySlot.txt"
+-   selector: ".inventory-item-slot #Selection"
+    properties:
+        visible: false
+-   selector: ".inventory-item-slot:selected #Selection"
+    properties:
+        visible: true
+-   selector: ".inventory-item-slot:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.588235]
+-   selector: ".params-header-background"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Hangar/InfoGradients.txt"
+Controls:
+-   class: "UIControl"
+    name: "Slot"
+    size: [100.000000, 100.000000]
+    selected: false
+    exclusiveInput: true
+    classes: "inventory-item-slot"
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+        Background:
+            drawType: "DRAW_SCALE_TO_RECT"
+            sprite: "~res:/Gfx/UI/InventoryScreen/CheckBoxEquipPower"
+            frame: 1
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        size: [80.000000, 80.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Selection"
+        size: [100.000000, 100.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/InventoryScreen/CheckBoxEquipPower"
+-   class: "UIControl"
+    name: "SlotSeparator"
+    position: [0.000000, 124.000000]
+    size: [140.000000, 2.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            vCenterAnchorEnabled: true
+            vCenterAnchor: -65.000000
+    children:
+    -   class: "UIControl"
+        name: "Left"
+        size: [70.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/Divider"
+    -   class: "UIControl"
+        name: "Right"
+        position: [70.000000, 0.000000]
+        size: [70.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                drawType: "DRAW_SCALE_TO_RECT"
+                sprite: "~res:/Gfx/UI/LobbyCommon/Divider"
+                spriteModification: ["FLIP_HORIZONTAL"]
+-   class: "UIControl"
+    customClass: "UIInventoryEquipmentInfo"
+    name: "InventoryEquipmentInfo"
+    size: [960.000000, 400.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_ALIGNED"
+    children:
+    -   class: "UIControl"
+        name: "Slots"
+        position: [0.000000, 10.000000]
+        size: [140.000000, 380.000000]
+        classes: "selected0"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicPadding: true
+                dynamicSpacing: true
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.498000]
+        children:
+        -   prototype: "Slot"
+            name: "Slot0"
+        -   prototype: "SlotSeparator"
+            name: "Separator0"
+        -   prototype: "Slot"
+            name: "Slot1"
+        -   prototype: "SlotSeparator"
+            name: "Separator1"
+        -   prototype: "Slot"
+            name: "Slot2"
+    -   class: "UIScrollView"
+        name: "Info"
+        position: [610.000000, 10.000000]
+        size: [350.000000, 380.000000]
+        autoUpdate: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.498039]
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: "HorizontalLayout"
+                size: [350.000000, 100.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "LeftToRight"
+                        padding: 10.000000
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "FixedSize"
+                children:
+                -   class: "UIControl"
+                    name: "icon"
+                    position: [10.000000, 10.000000]
+                    size: [80.000000, 80.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 10.000000
+                            topAnchorEnabled: true
+                            topAnchor: 10.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                -   class: "UIStaticText"
+                    name: "Title"
+                    position: [100.000000, 10.000000]
+                    size: [240.000000, 80.000000]
+                    noInput: true
+                    textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    multiline: "MULTILINE_ENABLED"
+                    fitting: ["REDUCE"]
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "DONT_USE"
+                    font: "WarHeliosCondC_Bold_21"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 100.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 10.000000
+                            topAnchorEnabled: true
+                            topAnchor: 10.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "SpaserBeforeDescription"
+                size: [350.000000, 7.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 7.000000
+                children:
+                -   prototype: "ParamsPrototype/Line"
+                    name: "Line"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: false
+            -   class: "UIStaticText"
+                name: "Description"
+                position: [10.000000, 107.000000]
+                size: [330.000000, 0.000000]
+                noInput: true
+                textColor: [0.541200, 0.572500, 0.596100, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["LEFT", "TOP"]
+                textUseRtlAlign: "USE_BY_CONTENT"
+                font: "Font_A2F83950"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                        topAnchorEnabled: true
+                        topAnchor: 100.000000
+                        bottomAnchorEnabled: false
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "SpaserAfterDescriprion"
+                size: [350.000000, 7.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 7.000000
+            -   prototype: "VehicleCharacteristicsInfluence/VehicleCharacteristicsInfluence"
+                name: "VehicleCharacteristicsInfluence"
+                children:
+                -   path: "DetalesParam/ProtectabilityParams/HeaderStrength/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "DetalesParam/MobilityParams/HeaderMobility/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "DetalesParam/GunParams/HeaderDetaleGun/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "ModulesParam/Gun/HeaderGun/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "ModulesParam/Engine/HeaderEngine/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "ModulesParam/Turret/HeaderTurret/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+                -   path: "ModulesParam/Chassi/HeaderChassi/bg/title"
+                    textalign: ["LEFT", "VCENTER"]
+        -   class: "UIScrollBar"
+            name: "InfoScrollBar"
+            size: [6.000000, 380.000000]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 6.000000
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [6.000000, 20.000000]
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 4.000000
+    -   class: "UIControl"
+        name: "CentralContainer"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 140.000000
+                rightAnchorEnabled: true
+                rightAnchor: 350.000000
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIScrollView"
+            name: "Purchase"
+            position: [0.000000, 0.000000]
+            size: [470.000000, 390.000000]
+            clip: true
+            autoUpdate: true
+            centerContent: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                size: [470.000000, 10.000000]
+                components:
+                    FlowLayout:
+                        hDynamicInLinePadding: true
+                        hDynamicSpacing: true
+                        vPadding: 5.000000
+                        vSpacing: 30.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalMax: 800.000000
+                        verticalPolicy: "PercentOfChildrenSum"
+        -   class: "UIScrollBar"
+            name: "ScrollBar"
+            position: [466.000000, 0.000000]
+            size: [4.000000, 390.000000]
+            noInput: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [4.000000, 8.000000]
+                noInput: true
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 2.000000

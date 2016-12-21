@@ -1,0 +1,11 @@
+<root>
+	<ids>
+		<Chassis_Strv_74A2>1</Chassis_Strv_74A2>
+		<Edelweiss_ketten>2</Edelweiss_ketten>
+		<Pz_N_ketten>3</Pz_N_ketten>
+		<Hellsing_type1>4</Hellsing_type1>
+		<Chassis_Dracula>5</Chassis_Dracula>
+		<RX_20_1_chassis>6</RX_20_1_chassis>
+	</ids>
+	<shared/>
+</root>

@@ -1,0 +1,10 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 90.000000
+    emissionVector: [0.000000, 0.000000, 0.010000]
+    emissionVectorInverted: true
+    name: "butterfly"
+    radius: 0.500000
+    shortEffect: false
+    size: [0.000000, 0.200000, 4.000000]
+    type: "oncircle"

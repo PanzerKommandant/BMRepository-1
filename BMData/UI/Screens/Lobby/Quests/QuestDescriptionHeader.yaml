@@ -1,0 +1,37 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/FooterPriceControl.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "HeaderRightControl"
+    size: [519.000000, 76.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   prototype: "FooterPriceControl/FooterPriceControl"
+        name: "PriceControl"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 250.000000
+                vCenterAnchorEnabled: true
+    -   prototype: "StyledButton/StyledButton"
+        name: "SkipButton"
+        classes: "button"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 2.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            fitting: ["REDUCE"]
+            components:
+                Anchor:
+                    leftAnchor: 12.000000
+                    rightAnchor: 12.000000

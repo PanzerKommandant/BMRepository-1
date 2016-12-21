@@ -1,0 +1,53 @@
+emitter:
+    emissionRange: 30.000000
+    emissionVector: [1.000000, -0.450000, 0.000000]
+    emissionVectorInverted: true
+    name: "smoke_s"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.044053, 0.099562, 0.810000, 0.100000, 1.000000, 0.000000]
+    angle: 0.000000
+    angleVariation: 360.000000
+    blending: 1
+    colorOverLife: [215.754868, 214.035019, 225.486374, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 2.500000
+    force0: [-300.000000, 0.000000, 0.000000]
+    forceCount: 1
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 8.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 2.000000
+    lifeVariation: 0.500000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "smoke_s"
+    number: 60.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [60.000000, 60.000000]
+    sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [1.500000, 1.500000]]
+    spin: 30.000000
+    spinVariation: 15.000000
+    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/smoke"
+    startTime: 0.100000
+    type: "layer"
+    velocity: 150.000000
+    velocityOverLife: [0.000000, 1.000000, 0.110000, 0.200000]
+    velocityVariation: 50.000000

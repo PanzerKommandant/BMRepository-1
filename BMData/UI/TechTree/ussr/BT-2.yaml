@@ -1,0 +1,18 @@
+modules:
+    "#vehicle:BT-7":
+        position: [4, 2]
+    "#vehicleChassis:BT-2bis":
+        position: [1, 5]
+    "#vehicleEngine:M-17T":
+        position: [1, 4]
+    "#vehicleGun:_23mm_VJA":
+        position: [2, 1]
+    "#vehicleGun:_37mm_B-3":
+        position: [1, 2]
+    "#vehicleGun:_45mm_20K":
+        position: [3, 2]
+    "#vehicleTurret:BT-2_bis":
+        position: [2, 2]
+    "#vehicleTurret:BT-2_cylindrical":
+        position: [1, 3]
+

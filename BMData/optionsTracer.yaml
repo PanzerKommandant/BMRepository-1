@@ -1,0 +1,25 @@
+keyedArchive:
+    ARMOR_PIERCING:
+        keyedArchive:
+            Color:
+                Vector4: [1.0000, 1.0000, 1.0000, 0.2500]
+            Width:
+                float: 1.0000
+    ARMOR_PIERCING_CR:
+        keyedArchive:
+            Color:
+                Vector4: [1.0000, 1.0000, 1.0000, 0.0800]
+            Width:
+                float: 1.0000
+    HIGH_EXPLOSIVE:
+        keyedArchive:
+            Color:
+                Vector4: [1.0000, 0.7500, 0.0000, 0.3500]
+            Width:
+                float: 1.0000
+    HOLLOW_CHARGE:
+        keyedArchive:
+            Color:
+                Vector4: [1.0000, 1.0000, 1.0000, 0.2500]
+            Width:
+                float: 0.5000

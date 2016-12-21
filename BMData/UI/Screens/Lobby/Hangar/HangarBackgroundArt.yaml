@@ -1,0 +1,20 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "HangarBackgroundArt"
+    size: [1024.000000, 768.000000]
+    children:
+    -   class: "UIParticles"
+        name: "particleEffect"
+        position: [462.000000, 250.000000]
+        size: [100.000000, 30.000000]
+        noInput: true
+        effectPath: "~res:/3d/FX/UI/waiting/glow_flow.sc2"
+        autoStart: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 250.000000

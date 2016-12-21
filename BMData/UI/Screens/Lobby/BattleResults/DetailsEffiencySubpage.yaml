@@ -1,0 +1,1733 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+StyleSheets:
+-   selector: ".china #Nation"
+    properties:
+        bg-frame: 5
+-   selector: "UIControl.china_region #Nation"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/China/SmallTankCellFlag"
+-   selector: "UIControl #Nation"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/Default/SmallTankCellFlag"
+-   selector: ".usa #Nation"
+    properties:
+        bg-frame: 0
+-   selector: ".uk #Nation"
+    properties:
+        bg-frame: 3
+-   selector: ".ussr #Nation"
+    properties:
+        bg-frame: 2
+-   selector: ".japan #Nation"
+    properties:
+        bg-frame: 4
+-   selector: ".germany #Nation"
+    properties:
+        bg-frame: 1
+-   selector: ".france #Nation"
+    properties:
+        bg-frame: 6
+-   selector: ".other #Nation"
+    properties:
+        bg-frame: 7
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1012.000000, 897.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "RightPanel"
+        position: [432.000000, 10.000000]
+        size: [580.000000, 887.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 432.000000
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "ConstrainedContainer"
+            classes: "limited-width"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   class: "UIScrollBar"
+                name: "ScrollBar"
+                position: [574.000000, 0.000000]
+                size: [6.000000, 887.000000]
+                orientation: "ORIENTATION_VERTICAL"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                children:
+                -   class: "UIControl"
+                    name: "slider"
+                    size: [4.000000, 8.000000]
+                    noInput: true
+                    components:
+                        Background:
+                            drawType: "DRAW_STRETCH_VERTICAL"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                            topBottomStretchCap: 2.000000
+            -   class: "UIScrollView"
+                name: "ScrollView"
+                size: [570.000000, 887.000000]
+                clip: true
+                noInput: true
+                autoUpdate: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                children:
+                -   class: "UIScrollViewContainer"
+                    name: "scrollContainerControl"
+                    size: [570.000000, 854.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfFirstChild"
+                    children:
+                    -   class: "UIControl"
+                        name: "Holder"
+                        position: [0.000000, 0.000000]
+                        size: [570.000000, 854.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "TopDown"
+                                spacing: 10.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfChildrenSum"
+                        children:
+                        -   class: "UIControl"
+                            customClass: "UIEfficiencyAssistPanel"
+                            name: "AssistPanel"
+                            size: [570.000000, 236.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                Background:
+                                    leftRightStretchCap: 10.000000
+                                    topBottomStretchCap: 10.000000
+                            children:
+                            -   class: "UIControl"
+                                name: "Background"
+                                size: [570.000000, 236.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        drawType: "DRAW_STRETCH_BOTH"
+                                        sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                        leftRightStretchCap: 10.000000
+                                        topBottomStretchCap: 10.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "TopPart"
+                                    position: [4.000000, 4.000000]
+                                    size: [562.000000, 88.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.627500]
+                                -   class: "UIControl"
+                                    name: "MiddleLine"
+                                    position: [4.000000, 87.000000]
+                                    size: [562.000000, 11.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 87.000000
+                                        Background:
+                                            drawType: "DRAW_STRETCH_BOTH"
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                            frame: 1
+                                            leftRightStretchCap: 10.000000
+                                -   class: "UIControl"
+                                    name: "BottomPart"
+                                    position: [3.000000, 94.000000]
+                                    size: [563.000000, 138.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 3.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 94.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.392200]
+                            -   class: "UIControl"
+                                name: "Header"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Icon"
+                                    size: [90.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/iconsStat"
+                                -   class: "UIStaticText"
+                                    name: "Title"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "BOTTOM"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist"
+                                    font: "WarHeliosCondC_Bold_21"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Description"
+                                    position: [90.000000, 45.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Description"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                            -   class: "UIControl"
+                                name: "AssistedRadio"
+                                position: [0.000000, 90.000000]
+                                size: [570.000000, 48.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "Value"
+                                    size: [70.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "XXXX"
+                                    font: "WarHeliosCondC_Bold_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Text"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Scout"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                    children:
+                                    -   class: "UIControl"
+                                        name: "Line"
+                                        position: [0.000000, 46.000000]
+                                        size: [475.000000, 2.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 0.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                bottomAnchorEnabled: true
+                                                bottomAnchor: 0.000000
+                                            Background:
+                                                drawType: "DRAW_STRETCH_HORIZONTAL"
+                                                sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                            -   class: "UIControl"
+                                name: "AssistedTrack"
+                                position: [0.000000, 138.000000]
+                                size: [570.000000, 48.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "Value"
+                                    size: [70.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "YYYY"
+                                    font: "WarHeliosCondC_Bold_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Text"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Track"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                    children:
+                                    -   class: "UIControl"
+                                        name: "Line"
+                                        position: [0.000000, 46.000000]
+                                        size: [475.000000, 2.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 0.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                bottomAnchorEnabled: true
+                                                bottomAnchor: 0.000000
+                                            Background:
+                                                drawType: "DRAW_STRETCH_HORIZONTAL"
+                                                sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                            -   class: "UIControl"
+                                name: "AssistedTotal"
+                                position: [0.000000, 186.000000]
+                                size: [570.000000, 48.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "Value"
+                                    size: [70.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "YYYY"
+                                    font: "WarHeliosCondC_Bold_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Text"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Total"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                        -   class: "UIControl"
+                            customClass: "UIEfficiencySpotPanel"
+                            name: "SpotPanel"
+                            position: [0.000000, 246.000000]
+                            size: [570.000000, 90.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                Background:
+                                    leftRightStretchCap: 7.000000
+                                    topBottomStretchCap: 7.000000
+                            children:
+                            -   class: "UIControl"
+                                name: "Background"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        drawType: "DRAW_STRETCH_BOTH"
+                                        sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                        leftRightStretchCap: 10.000000
+                                        topBottomStretchCap: 10.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "TopPart"
+                                    position: [4.000000, 4.000000]
+                                    size: [562.000000, 82.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 4.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.627500]
+                            -   class: "UIControl"
+                                name: "Header"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Icon"
+                                    size: [90.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/iconsStat"
+                                            frame: 2
+                                -   class: "UIStaticText"
+                                    name: "Title"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "BOTTOM"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Detect"
+                                    font: "WarHeliosCondC_Bold_21"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Description"
+                                    position: [90.000000, 45.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Detect/Description"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                        -   class: "UIControl"
+                            customClass: "UIEfficiencyDamagePanel"
+                            name: "DamagePanel"
+                            position: [0.000000, 346.000000]
+                            size: [570.000000, 188.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                            children:
+                            -   class: "UIControl"
+                                name: "Background"
+                                size: [570.000000, 188.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        drawType: "DRAW_STRETCH_BOTH"
+                                        sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                        leftRightStretchCap: 10.000000
+                                        topBottomStretchCap: 10.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "TopPart"
+                                    position: [4.000000, 4.000000]
+                                    size: [562.000000, 88.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.627500]
+                                -   class: "UIControl"
+                                    name: "MiddleLine"
+                                    position: [4.000000, 87.000000]
+                                    size: [562.000000, 11.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 87.000000
+                                        Background:
+                                            drawType: "DRAW_STRETCH_BOTH"
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                            frame: 1
+                                            leftRightStretchCap: 10.000000
+                                -   class: "UIControl"
+                                    name: "BottomPart"
+                                    position: [4.000000, 94.000000]
+                                    size: [562.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 94.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.392200]
+                            -   class: "UIControl"
+                                name: "Header"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Icon"
+                                    size: [90.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/iconsStat"
+                                            frame: 1
+                                -   class: "UIStaticText"
+                                    name: "Header"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "BOTTOM"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage"
+                                    font: "WarHeliosCondC_Bold_21"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Description"
+                                    position: [90.000000, 45.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Description"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                            -   class: "UIControl"
+                                name: "DamageDealt"
+                                position: [0.000000, 90.000000]
+                                size: [570.000000, 48.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Line"
+                                    position: [90.000000, 46.000000]
+                                    size: [478.000000, 2.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 2.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            drawType: "DRAW_STRETCH_HORIZONTAL"
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                                -   class: "UIStaticText"
+                                    name: "Value"
+                                    size: [70.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "XXXX"
+                                    font: "WarHeliosCondC_Bold_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Text"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Damage_Total"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                            -   class: "UIControl"
+                                name: "Pierced"
+                                position: [0.000000, 138.000000]
+                                size: [570.000000, 48.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "Value"
+                                    size: [70.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["RIGHT", "VCENTER"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "YYYY"
+                                    font: "WarHeliosCondC_Bold_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Text"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 48.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "VCENTER"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Penetration_Total"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                        -   class: "UIControl"
+                            customClass: "UIEfficiencyKillPanel"
+                            name: "KillPanel"
+                            position: [0.000000, 544.000000]
+                            size: [570.000000, 90.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                            children:
+                            -   class: "UIControl"
+                                name: "Background"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        drawType: "DRAW_STRETCH_BOTH"
+                                        sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                        leftRightStretchCap: 10.000000
+                                        topBottomStretchCap: 10.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "TopPart"
+                                    position: [4.000000, 4.000000]
+                                    size: [562.000000, 82.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 4.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 4.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 4.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 4.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.627500]
+                            -   class: "UIControl"
+                                name: "Header"
+                                size: [570.000000, 90.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Icon"
+                                    size: [90.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/BattleResultsScreen/iconsStat"
+                                            frame: 3
+                                -   class: "UIStaticText"
+                                    name: "Header"
+                                    position: [90.000000, 0.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "BOTTOM"]
+                                    textUseRtlAlign: "DONT_USE"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Destroy"
+                                    font: "WarHeliosCondC_Bold_21"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            topAnchorEnabled: true
+                                            topAnchor: 0.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                -   class: "UIStaticText"
+                                    name: "Description"
+                                    position: [90.000000, 45.000000]
+                                    size: [475.000000, 45.000000]
+                                    noInput: true
+                                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                    shadowoffset: [0.000000, 1.000000]
+                                    textalign: ["LEFT", "TOP"]
+                                    textUseRtlAlign: "USE_BY_CONTENT"
+                                    text: "#battle_results:DetailsPage/EfficiencyPage/Type_Destroy/Discription_Shot"
+                                    font: "WarHeliosCondC_19"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 90.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 5.000000
+                                            vCenterAnchorEnabled: true
+                                            vCenterAnchor: 0.000000
+                                            bottomAnchorEnabled: true
+                                            bottomAnchor: 0.000000
+                        -   class: "UIControl"
+                            customClass: "UIEfficiencyCriticalPanel"
+                            name: "CriticalPanel"
+                            position: [0.000000, 644.000000]
+                            size: [570.000000, 210.000000]
+                            noInput: true
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfFirstChild"
+                                Background:
+                                    drawType: "DRAW_STRETCH_BOTH"
+                                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                    leftRightStretchCap: 10.000000
+                                    topBottomStretchCap: 10.000000
+                            children:
+                            -   class: "UIControl"
+                                name: "ContentBox"
+                                size: [562.000000, 210.000000]
+                                noInput: true
+                                components:
+                                    LinearLayout:
+                                        orientation: "TopDown"
+                                        padding: 4.000000
+                                    SizePolicy:
+                                        verticalPolicy: "PercentOfChildrenSum"
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 4.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 4.000000
+                                children:
+                                -   class: "UIControl"
+                                    name: "Header"
+                                    size: [562.000000, 90.000000]
+                                    noInput: true
+                                    components:
+                                        SizePolicy:
+                                            horizontalPolicy: "PercentOfParent"
+                                            verticalPolicy: "PercentOfMaxChild"
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.627500]
+                                    children:
+                                    -   class: "UIControl"
+                                        name: "Icon"
+                                        size: [90.000000, 90.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 0.000000
+                                                vCenterAnchorEnabled: true
+                                                vCenterAnchor: 0.000000
+                                            Background:
+                                                sprite: "~res:/Gfx/UI/BattleResultsScreen/iconsStat"
+                                                frame: 4
+                                    -   class: "UIControl"
+                                        name: "TextBox"
+                                        position: [90.000000, 9.000000]
+                                        size: [472.000000, 72.000000]
+                                        noInput: true
+                                        components:
+                                            LinearLayout:
+                                                orientation: "TopDown"
+                                            SizePolicy:
+                                                verticalPolicy: "PercentOfChildrenSum"
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 90.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                vCenterAnchorEnabled: true
+                                                vCenterAnchor: 0.000000
+                                        children:
+                                        -   class: "UIStaticText"
+                                            name: "Header"
+                                            size: [467.000000, 26.000000]
+                                            noInput: true
+                                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                            shadowoffset: [0.000000, 1.000000]
+                                            multiline: "MULTILINE_ENABLED"
+                                            textalign: ["LEFT", "BOTTOM"]
+                                            textUseRtlAlign: "DONT_USE"
+                                            text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module"
+                                            font: "WarHeliosCondC_Bold_21"
+                                            components:
+                                                SizePolicy:
+                                                    verticalPolicy: "PercentOfContent"
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 0.000000
+                                                    rightAnchorEnabled: true
+                                                    rightAnchor: 5.000000
+                                        -   class: "UIStaticText"
+                                            name: "Description"
+                                            size: [472.000000, 46.000000]
+                                            noInput: true
+                                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                            shadowoffset: [0.000000, 1.000000]
+                                            multiline: "MULTILINE_ENABLED"
+                                            textalign: ["LEFT", "TOP"]
+                                            textUseRtlAlign: "USE_BY_CONTENT"
+                                            text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module/Description"
+                                            font: "WarHeliosCondC_19"
+                                            components:
+                                                SizePolicy:
+                                                    verticalPolicy: "PercentOfContent"
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 0.000000
+                                                    rightAnchorEnabled: true
+                                                    rightAnchor: 0.000000
+                                -   class: "UIControl"
+                                    name: "MiddlePart"
+                                    position: [0.000000, 94.000000]
+                                    size: [562.000000, 2.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                    children:
+                                    -   class: "UIControl"
+                                        name: "MiddleLine"
+                                        position: [0.000000, -4.500000]
+                                        size: [562.000000, 11.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 0.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                vCenterAnchorEnabled: true
+                                                vCenterAnchor: 0.000000
+                                            Background:
+                                                drawType: "DRAW_STRETCH_BOTH"
+                                                sprite: "~res:/Gfx/UI/BattleResultsScreen/bgTable"
+                                                frame: 1
+                                                leftRightStretchCap: 10.000000
+                                -   class: "UIControl"
+                                    name: "Body"
+                                    position: [0.000000, 96.000000]
+                                    size: [562.000000, 110.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            leftAnchor: 0.000000
+                                            rightAnchorEnabled: true
+                                            rightAnchor: 0.000000
+                                        Background:
+                                            drawType: "DRAW_FILL"
+                                            color: [0.000000, 0.000000, 0.000000, 0.392200]
+                                    children:
+                                    -   class: "UIControl"
+                                        name: "Critical"
+                                        position: [78.000000, 0.000000]
+                                        size: [484.000000, 64.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 78.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                topAnchorEnabled: true
+                                                topAnchor: 0.000000
+                                        children:
+                                        -   class: "UIControl"
+                                            name: "Line"
+                                            position: [0.000000, 62.000000]
+                                            size: [484.000000, 2.000000]
+                                            noInput: true
+                                            components:
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 0.000000
+                                                    rightAnchorEnabled: true
+                                                    rightAnchor: 0.000000
+                                                    bottomAnchorEnabled: true
+                                                    bottomAnchor: 0.000000
+                                                Background:
+                                                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                                                    sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
+                                        -   class: "UIControl"
+                                            name: "Modules"
+                                            size: [280.000000, 64.000000]
+                                            noInput: true
+                                            components:
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 0.000000
+                                                    topAnchorEnabled: true
+                                                    topAnchor: 0.000000
+                                                    bottomAnchorEnabled: true
+                                                    bottomAnchor: 0.000000
+                                            children:
+                                            -   class: "UIControl"
+                                                name: "Module0"
+                                                position: [0.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                            -   class: "UIControl"
+                                                name: "Module1"
+                                                position: [40.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 1
+                                            -   class: "UIControl"
+                                                name: "Module2"
+                                                position: [80.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 2
+                                            -   class: "UIControl"
+                                                name: "Module3"
+                                                position: [120.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 3
+                                            -   class: "UIControl"
+                                                name: "Module4"
+                                                position: [160.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 4
+                                            -   class: "UIControl"
+                                                name: "Module5"
+                                                position: [200.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 5
+                                            -   class: "UIControl"
+                                                name: "Module6"
+                                                position: [240.000000, 19.000000]
+                                                size: [40.000000, 26.000000]
+                                                noInput: true
+                                                components:
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageTankIcon"
+                                                        frame: 6
+                                        -   class: "UIControl"
+                                            name: "Tankmen"
+                                            position: [300.000000, 0.000000]
+                                            size: [125.000000, 64.000000]
+                                            noInput: true
+                                            components:
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 300.000000
+                                                    topAnchorEnabled: true
+                                                    topAnchor: 0.000000
+                                                    bottomAnchorEnabled: true
+                                                    bottomAnchor: 0.000000
+                                            children:
+                                            -   class: "UIControl"
+                                                name: "Tankman0"
+                                                position: [0.000000, 20.000000]
+                                                size: [25.000000, 24.000000]
+                                                noInput: true
+                                                components:
+                                                    Anchor:
+                                                        vCenterAnchorEnabled: true
+                                                        vCenterAnchor: 0.000000
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                                            -   class: "UIControl"
+                                                name: "Tankman1"
+                                                position: [25.000000, 20.000000]
+                                                size: [25.000000, 24.000000]
+                                                noInput: true
+                                                components:
+                                                    Anchor:
+                                                        vCenterAnchorEnabled: true
+                                                        vCenterAnchor: 0.000000
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                                                        frame: 1
+                                            -   class: "UIControl"
+                                                name: "Tankman2"
+                                                position: [50.000000, 20.000000]
+                                                size: [25.000000, 24.000000]
+                                                noInput: true
+                                                components:
+                                                    Anchor:
+                                                        vCenterAnchorEnabled: true
+                                                        vCenterAnchor: 0.000000
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                                                        frame: 2
+                                            -   class: "UIControl"
+                                                name: "Tankman3"
+                                                position: [75.000000, 20.000000]
+                                                size: [25.000000, 24.000000]
+                                                noInput: true
+                                                components:
+                                                    Anchor:
+                                                        vCenterAnchorEnabled: true
+                                                        vCenterAnchor: 0.000000
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                                                        frame: 3
+                                            -   class: "UIControl"
+                                                name: "Tankman4"
+                                                position: [100.000000, 20.000000]
+                                                size: [25.000000, 24.000000]
+                                                noInput: true
+                                                components:
+                                                    Anchor:
+                                                        vCenterAnchorEnabled: true
+                                                        vCenterAnchor: 0.000000
+                                                    Background:
+                                                        sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                                                        frame: 4
+                                    -   class: "UIControl"
+                                        name: "Total"
+                                        position: [0.000000, 62.000000]
+                                        size: [562.000000, 48.000000]
+                                        noInput: true
+                                        components:
+                                            Anchor:
+                                                leftAnchorEnabled: true
+                                                leftAnchor: 0.000000
+                                                rightAnchorEnabled: true
+                                                rightAnchor: 0.000000
+                                                bottomAnchorEnabled: true
+                                                bottomAnchor: 0.000000
+                                        children:
+                                        -   class: "UIStaticText"
+                                            name: "Value"
+                                            size: [70.000000, 48.000000]
+                                            noInput: true
+                                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                            shadowoffset: [0.000000, 1.000000]
+                                            textalign: ["RIGHT", "VCENTER"]
+                                            textUseRtlAlign: "DONT_USE"
+                                            text: "XXXX"
+                                            font: "WarHeliosCondC_Bold_19"
+                                            components:
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 0.000000
+                                                    topAnchorEnabled: true
+                                                    topAnchor: 0.000000
+                                                    bottomAnchorEnabled: true
+                                                    bottomAnchor: 0.000000
+                                        -   class: "UIStaticText"
+                                            name: "Text"
+                                            position: [90.000000, 0.000000]
+                                            size: [467.000000, 48.000000]
+                                            noInput: true
+                                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                            shadowoffset: [0.000000, 1.000000]
+                                            textalign: ["LEFT", "VCENTER"]
+                                            textUseRtlAlign: "USE_BY_CONTENT"
+                                            text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module/Total"
+                                            font: "WarHeliosCondC_19"
+                                            components:
+                                                Anchor:
+                                                    leftAnchorEnabled: true
+                                                    leftAnchor: 90.000000
+                                                    rightAnchorEnabled: true
+                                                    rightAnchor: 5.000000
+                                                    topAnchorEnabled: true
+                                                    topAnchor: 0.000000
+                                                    bottomAnchorEnabled: true
+                                                    bottomAnchor: 0.000000
+    -   class: "UIControl"
+        name: "LeftPanel"
+        position: [0.000000, 10.000000]
+        size: [430.000000, 887.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 10.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIList"
+            name: "VehicleList"
+            size: [425.000000, 887.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    color: [0.070600, 0.125500, 0.160800, 0.949000]
+        -   class: "UIScrollBar"
+            name: "ScrollBar"
+            position: [425.000000, 0.000000]
+            size: [5.000000, 887.000000]
+            noInput: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [4.000000, 8.000000]
+                noInput: true
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 2.000000
+    -   class: "UIStaticText"
+        name: "NoResultText"
+        position: [0.000000, 433.500000]
+        size: [1012.000000, 30.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+        text: "#battle_results:DetailsPage/EfficiencyPage/none"
+        font: "WarHeliosCondC_Bold_25"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                align: ["LEFT", "TOP"]
+-   class: "UIListCell"
+    customClass: "UIEfficiencyVehicleListCell"
+    name: "Cell"
+    size: [425.000000, 80.000000]
+    identifier: "EfficiencyVehicleListCell"
+    components:
+        Normal:
+            color: [1.000000, 1.000000, 1.000000, 0.000000]
+        Selected:
+            color: [1.000000, 1.000000, 1.000000, 0.996078]
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        position: [4.000000, 2.000000]
+        size: [417.000000, 76.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                rightAnchorEnabled: true
+                rightAnchor: 4.000000
+                topAnchorEnabled: true
+                topAnchor: 2.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 2.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.454900, 0.454900, 0.454900, 0.502000]
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   class: "UIControl"
+        name: "SelectionHighlight"
+        position: [2.000000, 0.000000]
+        size: [421.000000, 80.000000]
+        visible: true
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 2.000000
+                rightAnchorEnabled: true
+                rightAnchor: 2.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/tankSelect"
+                color: [0.996100, 0.560800, 0.000000, 1.000000]
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                leftRightStretchCap: 5.000000
+                topBottomStretchCap: 5.000000
+    -   class: "UIControl"
+        name: "Vehicle"
+        size: [185.000000, 80.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Nation"
+            size: [185.000000, 80.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Icon"
+            position: [50.000000, 8.000000]
+            size: [85.000000, 64.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/noImage"
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   class: "UIControl"
+            name: "Level"
+            position: [42.000000, 10.000000]
+            size: [36.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 42.000000
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "Name"
+            position: [18.000000, 40.000000]
+            size: [167.000000, 30.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            fitting: ["REDUCE"]
+            textalign: ["LEFT", "BOTTOM"]
+            textUseRtlAlign: "DONT_USE"
+            font: "WarHeliosCondC_Bold_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 18.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Class"
+            position: [17.000000, 10.000000]
+            size: [29.500000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 17.000000
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                    frame: 1
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+        name: "PlayerName"
+        position: [192.000000, 4.000000]
+        size: [225.000000, 26.000000]
+        components:
+            SizePolicy:
+                horizontalValue: 225.000000
+        children:
+        -   path: "name"
+            position: [0.000000, 0.000000]
+            textalign: ["LEFT", "VCENTER"]
+            font: "Font_18_bold"
+        -   path: "tag"
+            textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+            font: "Font_18_bold"
+    -   class: "UIControl"
+        name: "Holder"
+        position: [188.000000, 34.000000]
+        size: [232.000000, 41.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 5.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                color: [0.564700, 0.564700, 0.564700, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "Spotted"
+            size: [232.000000, 41.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                    frame: 5
+        -   class: "UIControl"
+            name: "Assisted"
+            size: [232.000000, 41.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                    frame: 4
+        -   class: "UIControl"
+            name: "Damaged"
+            size: [232.000000, 41.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                    frame: 3
+        -   class: "UIControl"
+            name: "Crited"
+            size: [232.000000, 41.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                    frame: 2
+        -   class: "UIControl"
+            name: "Killed"
+            size: [232.000000, 41.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bgDamages"
+                    frame: 1
+    -   class: "UIControl"
+        name: "BottomLine"
+        position: [0.000000, 78.000000]
+        size: [425.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_STRETCH_HORIZONTAL"
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"

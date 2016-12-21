@@ -1,0 +1,23 @@
+<root>
+	<ids>
+		<Maybach_HL_234P45A>58</Maybach_HL_234P45A>
+	</ids>
+	<shared>
+		<Maybach_HL_234P45A>
+			<userString>#france_vehicles:Maybach_HL_234P45A</userString>
+			<shortUserString>#france_vehicles:Maybach_HL_234P45A_short</shortUserString>
+			<description>#france_vehicles:Maybach_HL_234P45A_descr</description>
+			<tags>gasoline</tags>
+			<level>9</level>
+			<price>98730</price>
+			<notInShop>true</notInShop>
+			<sound>/vehicles/tanks/heavy/IS_2</sound>
+			<power>1000</power>
+			<weight>750</weight>
+			<maxHealth>320</maxHealth>
+			<maxRegenHealth>160</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>0.2</fireStartingChance>
+		</Maybach_HL_234P45A>
+	</shared>
+</root>

@@ -1,0 +1,7 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common/LoadingControl.yaml"
+Controls:
+-   prototype: "LoadingControl/LoadingControl"
+    name: "FadePopup"

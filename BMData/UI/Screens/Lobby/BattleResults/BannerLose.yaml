@@ -1,0 +1,236 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "BannerBackground"
+    size: [1024.000000, 260.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "SpriteLayer1"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+        children:
+        -   class: "UIParticles"
+            name: "church_smoke"
+            position: [648.000000, 91.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/church_smoke.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "heaven_glow"
+            position: [529.000000, 134.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/heaven_glow.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "house_smoke"
+            position: [291.000000, 85.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/house_smoke.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "house_smoke1"
+            position: [473.000000, 119.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/house_smoke.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer2"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 1
+        children:
+        -   class: "UIParticles"
+            name: "sparks"
+            position: [600.000000, 174.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/smoldering.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "smoke"
+            position: [516.000000, 197.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/big_smoke.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer3"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 2
+        children:
+        -   class: "UIParticles"
+            name: "fire_barels"
+            position: [755.000000, 180.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/fire_barrel.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer4"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 3
+        children:
+        -   class: "UIParticles"
+            name: "fire_tank"
+            position: [79.000000, 137.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/fire_tank.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer5"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 4
+        children:
+        -   class: "UIParticles"
+            name: "hotspot1"
+            position: [891.000000, 191.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/hotspot1.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "hotspot2"
+            position: [161.000000, 189.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/hotspot2.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "hotspot3"
+            position: [716.000000, 156.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/hotspot3.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer6"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 5
+        children:
+        -   class: "UIParticles"
+            name: "fire_debris"
+            position: [121.000000, 241.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/fire_debris.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "fire_debris1"
+            position: [243.000000, 254.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/fire_debris2.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "spark1"
+            position: [856.000000, 243.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/sparks_low.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "SpriteLayer7"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Lose/HeadBackgroundDefeat"
+                frame: 6
+        children:
+        -   class: "UIParticles"
+            name: "dust"
+            position: [534.000000, 271.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/defeat/dust.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"

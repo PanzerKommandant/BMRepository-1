@@ -1,0 +1,346 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/StoryTreePrototypes.yaml"
+Controls:
+-   prototype: "StoryTreePrototypes/StoryStep"
+    name: "WinterPrototype"
+    children:
+    -   path: "ExpandedState/Image"
+        components:
+            Anchor:
+                topAnchor: 37.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Story/NY_2016/medal"
+        children:
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/NY_2016/medal"
+                    frame: 2
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "NormalState/Image"
+        components:
+            Anchor:
+                vCenterAnchor: 3.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Story/NY_2016/medal"
+        children:
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/NY_2016/medal"
+                    frame: 1
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "Stories"
+    position: [0.000000, 0.000000]
+    size: [950.000000, 283.418274]
+    noInput: true
+    children:
+    -   prototype: "StoryTreePrototypes/SArrowUp"
+        name: "SArrowUp"
+        position: [758.409302, 64.000046]
+        size: [34.499798, 76.999977]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 74.999977]
+            size: [17.249899, 2.000000]
+    -   prototype: "StoryTreePrototypes/SArrowDown"
+        name: "SArrowDown"
+        position: [758.409302, 139.000031]
+        size: [34.499798, 71.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [112.409355, 139.000076]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [652.409302, 139.000046]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [220.409363, 139.000046]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [328.409363, 139.000031]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [436.409363, 139.000031]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [544.409302, 139.000046]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "WinterPrototype"
+        name: "1"
+        position: [29.076025, 105.000076]
+        children:
+        -   path: "ExpandedState/Image"
+            position: [50.000000, 37.000000]
+            children: []
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 1
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 1
+    -   prototype: "WinterPrototype"
+        name: "2"
+        position: [137.409363, 105.000053]
+        children:
+        -   path: "ExpandedState/Image"
+            position: [50.000000, 37.000000]
+            children: []
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 2
+    -   prototype: "WinterPrototype"
+        name: "3"
+        position: [245.409363, 105.000008]
+        children:
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+    -   prototype: "WinterPrototype"
+        name: "4"
+        position: [353.409363, 105.000053]
+        children:
+        -   path: "ExpandedState/SelectionInside"
+            position: [-637.142883, -180.000000]
+            pivot: [-6.371431, -2.680566]
+        -   path: "ExpandedState/Button/Background"
+            position: [0.000000, 0.000000]
+            size: [139.000000, 69.500000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+    -   prototype: "WinterPrototype"
+        name: "5"
+        position: [461.409363, 105.000053]
+        children:
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+    -   prototype: "WinterPrototype"
+        name: "6"
+        position: [569.409302, 105.000053]
+        children:
+        -   path: "ExpandedState/SelectionInside"
+            position: [-402.000000, -277.000000]
+            pivot: [-4.020002, -4.125093]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+    -   prototype: "WinterPrototype"
+        name: "7"
+        position: [677.409302, 105.000061]
+        children:
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+    -   prototype: "StoryTreePrototypes/StoryBigStep"
+        name: "8"
+        position: [792.909119, 12.333370]
+        children:
+        -   path: "ExpandedState/Image"
+            components:
+                Anchor:
+                    topAnchor: 53.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/StorageItemIcons/NY_2016/tickets"
+        -   path: "NormalState"
+            position: [-1.249997, 0.999997]
+            children: []
+        -   path: "NormalState/Image"
+            components:
+                Anchor:
+                    vCenterAnchor: -7.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/StorageItemIcons/NY_2016/tickets"
+        -   path: "NormalState/Label"
+            text: "winter_event/Currencies/tickets"
+    -   prototype: "StoryTreePrototypes/StoryBigStep"
+        name: "9"
+        position: [792.909119, 155.285767]
+        children:
+        -   path: "ExpandedState"
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [20.000000, 0.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 15
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 7
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   path: "ExpandedState/Image"
+            scale: [0.950000, 0.950000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-Strv_74_A2"
+        -   path: "NormalState"
+            position: [-1.250000, 0.000000]
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [23.000000, 3.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 23.000000
+                        topAnchorEnabled: true
+                        topAnchor: 3.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 15
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 7
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   path: "NormalState/Image"
+            scale: [0.950000, 0.950000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-Strv_74_A2"
+        -   path: "NormalState/Label"
+            position: [-200.999954, -58.000000]
+            pivot: [-1.746835, -4.714286]
+            text: "#other_vehicles:Strv_74A2_short"

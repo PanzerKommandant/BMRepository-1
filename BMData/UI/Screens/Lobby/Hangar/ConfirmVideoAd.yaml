@@ -1,0 +1,53 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+Controls:
+-   prototype: "Dialogs/ErrorDialogWithoutCaption"
+    name: "Dialog"
+    children:
+    -   path: "Dialog"
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -133.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/ads/ads_icon_big"
+        -   class: "UIStaticText"
+            name: "Text"
+            fitting: ["REDUCE"]
+            textalign: ["HCENTER", "TOP"]
+            text: "#videoAds:NewVideo/Header"
+            font: "WarHeliosCondC_Bold_25"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    topAnchorEnabled: true
+                    topAnchor: 70.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -50.000000
+    -   path: "Dialog/Middle/DialogText"
+        textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+        text: "asdasdasdas"
+        components:
+            Anchor:
+                topAnchorEnabled: false
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -50.000000
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "CancelButton"
+        children:
+        -   path: "icon"
+            components:
+                Background:
+                    frame: 30

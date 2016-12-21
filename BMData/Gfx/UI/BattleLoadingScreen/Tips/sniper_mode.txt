@@ -1,0 +1,5 @@
+1
+sniper_mode0.tex
+254 160
+1
+0 0 254 151 0 9 0 frame0

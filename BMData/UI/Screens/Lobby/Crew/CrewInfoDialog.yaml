@@ -1,0 +1,27 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   prototype: "Dialogs/ErrorDialogWithoutCaption"
+    name: "CrewInfoDialog"
+    children:
+    -   path: "Dialog/Middle/DialogText"
+        bottomAlign: 114.000000
+        topAlign: 20.000000
+        text: "#crew:mastery/congratulation/lightTank"
+        font: "WarHeliosCondC_21"
+        textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+        textalign: ["HCENTER", "TOP"]
+    -   path: "Dialog/Middle/ButtonHolder/OkButton"
+        components:
+            Normal:
+                frame: 0
+            PressedInside:
+                frame: 0
+            Disabled:
+                frame: 0
+            NormalText:
+                text: "#crew:mastery/congratulation/OK"
+            DisabledText:
+                text: "#crew:mastery/congratulation/OK"

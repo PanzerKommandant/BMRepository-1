@@ -1,0 +1,57 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 90.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 4.0000
+    shortEffect: "false"
+    size: [0.0000, 0.0000, 0.0000]
+    type: "point"
+
+layer0:
+    activeLODS: [0, 0, 1, 0]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 1.0000, 0.9900, 0.0000]
+    angle: 90.0000
+    angleVariation: 90.0000
+    colorOverLife: [171.0000, 173.0000, 180.0000, 255.0000]
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 0.0600
+    force0: [0.0000, 0.0000, -10.0000]
+    forceCount: 1
+    frameOverLifeEnabled: "true"
+    frameOverLifeFPS: 100.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "particles"
+    life: 2.0000
+    lifeVariation: 0.5000
+    loopEndTime: 4.0000
+    loopSpriteAnimation: "false"
+    loopVariation: 0.0000
+    name: "lod"
+    number: 50.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "true"
+    scaleVelocityBase: 0.0000
+    scaleVelocityFactor: 0.0000
+    size: [3.0000, 3.0000]
+    sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 1.0000, [4.0000, 4.0000]]
+    spin: 20.0000
+    spinVariation: 20.0000
+    sprite: "../../Gfx/Particles/fog"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 1.0000
+    velocityOverLife: [0.0000, 1.0000, 0.1474, 0.0949, 0.9900, 0.0000]
+    velocityVariation: 10.0000
+

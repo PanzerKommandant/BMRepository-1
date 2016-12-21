@@ -1,0 +1,47 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 1.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 6.0000
+    size: [0.0000, 0.0000, 0.0000]
+    type: "point"
+
+layer0:
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.0000, 0.3062, 1.0000, 0.9165, 0.9752, 1.0000, 0.0000]
+    blend: "add"
+    endTime: 0.3000
+    frameOverLifeEnabled: "true"
+    frameOverLifeFPS: 32.0000
+    isDisabled: "false"
+    layerType: "single"
+    life: 0.5000
+    name: "Exp1"
+    pivotPoint: [0.0000, 0.0000]
+    size: [16.0000, 16.0000]
+    sprite: "../../Gfx/Particles/exp_anim_one"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.0100
+
+layer1:
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 1.0000, 0.6250, 0.9650, 1.0000, 0.0000]
+    angle: 90.0000
+    blend: "add"
+    endTime: 0.3000
+    frameOverLifeEnabled: "true"
+    frameOverLifeFPS: 28.0000
+    isDisabled: "false"
+    layerType: "single"
+    life: 0.5000
+    name: "Exp2"
+    pivotPoint: [0.0000, 0.0000]
+    size: [16.0000, 16.0000]
+    sprite: "../../Gfx/Particles/exp_anim"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.0100
+

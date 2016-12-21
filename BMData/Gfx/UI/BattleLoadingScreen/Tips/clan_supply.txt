@@ -1,0 +1,5 @@
+1
+clan_supply0.tex
+254 160
+1
+0 0 254 152 0 8 0 frame0

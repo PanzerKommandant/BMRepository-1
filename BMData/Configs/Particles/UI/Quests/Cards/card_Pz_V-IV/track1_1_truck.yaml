@@ -1,0 +1,49 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [1.000000, -0.250000, 0.000000]
+    emissionVectorInverted: true
+    name: "truck"
+    shortEffect: false
+    size: [0.000000, 50.000000, 0.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.168675, 0.295620, 0.817556, 0.170467, 1.000000, 0.000000]
+    angle: 20.000000
+    angleVariation: 200.000000
+    colorOverLife: [157.630341, 159.373535, 144.431900, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE_MINUS_SRC_ALPHA"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: true
+    isLong: true
+    isLooped: false
+    layerType: "particles"
+    life: 2.500000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "truck"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.005000
+    size: [70.000000, 70.000000]
+    spin: -30.000000
+    spinVariation: -10.000000
+    sprite: "../../../../../../Gfx/Particles/UI/fog_white"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 60.000000
+    velocityVariation: 50.000000

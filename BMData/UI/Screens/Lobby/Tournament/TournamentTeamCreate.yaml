@@ -1,0 +1,292 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Content"
+    size: [1024.000000, 768.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            spacing: 20.000000
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Header"
+        size: [1024.000000, 80.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "TitleShadow"
+            size: [1024.000000, 80.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/Header"
+        -   prototype: "StyledButton/DefaultStyledButton"
+            name: "BackButton"
+            size: [92.000000, 76.000000]
+            components:
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                    leftRightStretchCap: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "icon"
+                position: [0.000000, 0.000000]
+                size: [92.000000, 76.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                        frame: 3
+                        mask: ""
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   prototype: "UnreadIcon/UnreadIcon"
+                name: "UnreadNews"
+                visible: false
+                classes: "header3 bg-color=tournament-unread-bg"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "Title"
+            classes: "header1"
+            text: "tournaments/TeamCreationScreen/Header"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 9.000000
+                    vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Center"
+        size: [475.000000, 242.000000]
+        components:
+            LinearLayout:
+                spacing: 25.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Left"
+            size: [110.000000, 144.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 8.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    topAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Label"
+                size: [76.000000, 26.000000]
+                classes: "text1 text-color-blue"
+                text: "tournaments/TeamCreationScreen/Params/Emblem"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   prototype: "ClanCommon/ClanEmblem"
+                name: "ClanEmblem"
+                size: [110.000000, 110.000000]
+                components:
+                    Anchor: {}
+        -   class: "UIControl"
+            name: "Right"
+            size: [340.000000, 242.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 12.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: "Tag"
+                size: [46.000000, 53.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 1.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "Label"
+                    size: [27.000000, 26.000000]
+                    classes: "text1 text-color-blue"
+                    text: "tournaments/TeamCreationScreen/Params/Tag"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                -   class: "UIStaticText"
+                    name: "TagValue"
+                    size: [46.000000, 26.000000]
+                    classes: "header3 clan-tag"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "[TAG]"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "Title"
+                size: [340.000000, 81.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 5.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "Label"
+                    size: [79.000000, 26.000000]
+                    classes: "text1 text-color-blue"
+                    text: "tournaments/TeamCreationScreen/Params/Name"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    customClass: "UISearchTextField"
+                    name: "TeamTitle"
+                    size: [340.000000, 50.000000]
+                    components:
+                        Anchor: {}
+                    children:
+                    -   class: "UIControl"
+                        name: "Background"
+                        size: [340.000000, 50.000000]
+                        components:
+                            LinearLayout:
+                                useRtl: true
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_STRETCH_BOTH"
+                                sprite: "~res:/Gfx/UI/Clan/search_back"
+                                leftRightStretchCap: 4.000000
+                                topBottomStretchCap: 4.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "Offset"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfParent"
+                                    verticalPolicy: "PercentOfParent"
+                            children:
+                            -   class: "UITextField"
+                                customClass: "UITextFieldWithHint"
+                                name: "TextField"
+                                font: "WarHeliosCondC_19"
+                                maxLength: 15
+                                returnKeyType: "RETURN_KEY_DEFAULT"
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 10.000000
+                                        rightAnchorEnabled: true
+                                        topAnchorEnabled: true
+                                        bottomAnchorEnabled: true
+                                    Focus: {}
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "Hint"
+                                    classes: "text2 text-color-blue"
+                                    textalign: ["LEFT", "HCENTER", "VCENTER"]
+                                    text: "asdf"
+                                    components:
+                                        Anchor:
+                                            leftAnchorEnabled: true
+                                            rightAnchorEnabled: true
+                                            topAnchorEnabled: true
+                                            bottomAnchorEnabled: true
+                        -   class: "UIControl"
+                            name: "Clear"
+                            position: [290.000000, 0.000000]
+                            size: [50.000000, 50.000000]
+                            noInput: false
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    drawType: "DRAW_ALIGNED"
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/InputClear"
+                                    frame: 0
+            -   class: "UIControl"
+                name: "Spacer"
+                size: [0.000000, 2.000000]
+            -   prototype: "StyledButton/StyledButton"
+                name: "CreateButton"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -2.000000
+                    Background:
+                        frame: 2
+                children:
+                -   path: "Caption"
+                    text: "tournaments/Button/Create"
+    -   class: "UIStaticText"
+        name: "ErrorMessage"
+        size: [500.000000, 160.000000]
+        textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+        multiline: "MULTILINE_ENABLED"
+        fitting: ["REDUCE"]
+        textalign: ["HCENTER", "TOP"]
+        text: "Test Error"
+        font: "WarHeliosCondC_21"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 390.000000

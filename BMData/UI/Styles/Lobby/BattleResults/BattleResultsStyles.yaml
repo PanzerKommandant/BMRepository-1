@@ -1,0 +1,9 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".domination #WinPoints, .domination #WinPointsStolen, .supremacy #CapturePoints, .supremacy #DroppedCapturePoints"
+    properties:
+        visible: false
+-   selector: ".supremacy #WinPoints, .supremacy #WinPointsDepriveEnemy, .domination #CapturePoints, .domination #DroppedCapturePoints"
+    properties:
+        visible: true

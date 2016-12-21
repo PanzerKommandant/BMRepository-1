@@ -1,0 +1,43 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Olimpic/olimpic"
+        children:
+        -   class: "UIParticles"
+            name: "fire"
+            position: [109.000000, 40.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_olympic/fire.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Olimpic/olimpic"
+        children:
+        -   class: "UIParticles"
+            name: "dust"
+            position: [0.000000, 212.000000]
+            size: [0.000000, 0.000000]
+            angle: 0.000000
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_olympic/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "sparks"
+            position: [0.000000, 250.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_olympic/sparks.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "confetti"
+            position: [110.000000, 0.000000]
+            size: [0.000000, 0.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/car_olympic/confetti.sc2"
+            autoStart: true

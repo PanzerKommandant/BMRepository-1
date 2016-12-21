@@ -1,0 +1,5 @@
+1
+japan-Tiger_I_GuP0.tex
+160 100
+1
+0 0 158 100 2 0 0 frame0

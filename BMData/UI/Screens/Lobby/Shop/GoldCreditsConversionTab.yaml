@@ -1,0 +1,529 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
+- "~res:/UI/Screens/Lobby/Shop/BaseShopTab.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   prototype: "BaseShopTab/Tab"
+    customClass: "UIGoldCreditsConversionTabControl"
+    name: "Tab"
+    children:
+    -   path: "Footer"
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "ConvertButton"
+            size: [250.000000, 70.000000]
+            classes: "button button-color-green"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                text: "shop/Convert"
+        -   class: "UIStaticText"
+            name: "GoldAfterConversionLabel"
+            position: [584.000000, 12.000000]
+            size: [155.000000, 30.000000]
+            noInput: true
+            textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "shop/Balance"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 285.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -20.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "DividerImage"
+            position: [568.000000, 8.000000]
+            size: [46.000000, 78.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 410.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/Slash"
+        -   class: "UIControl"
+            name: "IncomeContainer"
+            position: [320.000000, 12.000000]
+            size: [211.000000, 30.000000]
+            components:
+                LinearLayout: {}
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 493.000000
+            children:
+            -   class: "UIControl"
+                name: "Spacer"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+            -   class: "UIStaticText"
+                name: "WillAchieveLabel"
+                noInput: true
+                textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "shop/WillAchieve"
+                font: "WarHeliosCondC_21"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 495.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   prototype: "DiscountLabel/DiscountLabel"
+                name: "Discount"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 493.000000
+                        topAnchorEnabled: false
+        -   class: "UIStaticText"
+            name: "GoldAfterConversionText"
+            position: [509.000000, 47.000000]
+            size: [200.000000, 30.000000]
+            noInput: true
+            classes: "header1 color=text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "0"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 315.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "GoldImage"
+            position: [714.000000, 47.000000]
+            size: [30.000000, 30.000000]
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 280.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+        -   class: "UIStaticText"
+            name: "CreditsAfterConversionText"
+            position: [252.000000, 47.000000]
+            size: [247.000000, 30.000000]
+            noInput: true
+            classes: "header1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "0"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 525.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "CreditsImage"
+            position: [504.000000, 47.000000]
+            size: [30.000000, 30.000000]
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 490.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 15.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    frame: 1
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "ConstrainedContent"
+            position: [0.000000, 0.000000]
+            size: [1024.000000, 523.000000]
+            classes: "limited-width"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    dynamicPadding: true
+                    dynamicSpacing: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    horizontalMax: 1100.000000
+                    verticalPolicy: "PercentOfParent"
+                    verticalMax: 590.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "ExchangeRateContainer"
+                position: [277.000000, 37.000000]
+                size: [470.000000, 70.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 25.000000
+                        useRtl: true
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                        leftRightStretchCap: 4.000000
+                children:
+                -   class: "UIControl"
+                    name: "Gradient"
+                    size: [470.000000, 70.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "RightGradient"
+                        position: [235.000000, 20.000000]
+                        size: [235.000000, 30.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/TextExchangeBack"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                                align: ["LEFT", "VCENTER"]
+                    -   class: "UIControl"
+                        name: "LeftGradient"
+                        position: [0.000000, 20.000000]
+                        size: [235.000000, 30.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/TextExchangeBack"
+                                align: ["RIGHT", "VCENTER"]
+                -   class: "UIControl"
+                    name: "Container"
+                    components:
+                        LinearLayout:
+                            dynamicPadding: true
+                            spacing: 5.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "ExchangeRateLabel"
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_CONTENT"
+                        text: "shop/ExchangeRate"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIStaticText"
+                        name: "ExchangeGoldText"
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "1"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "GoldImage"
+                        size: [30.000000, 70.000000]
+                        components:
+                            SizePolicy:
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    -   class: "UIStaticText"
+                        name: "EqualsLabel"
+                        size: [20.000000, 70.000000]
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        text: "="
+                        components:
+                            SizePolicy:
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIStaticText"
+                        name: "ExchangeRateText"
+                        size: [26.000000, 70.000000]
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "25"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "CreditsImage"
+                        size: [30.000000, 70.000000]
+                        noInput: true
+                        components:
+                            SizePolicy:
+                                verticalPolicy: "PercentOfParent"
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                                frame: 1
+            -   class: "UIControl"
+                name: "Converter"
+                position: [351.000000, 144.000000]
+                size: [322.000000, 210.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "GoldImage"
+                    position: [11.000000, 55.000000]
+                    size: [30.000000, 30.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: -135.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -35.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+                -   class: "UIControl"
+                    name: "GoldLabel"
+                    position: [54.500000, 6.000000]
+                    size: [213.000000, 30.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            padding: 5.000000
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -84.000000
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Label"
+                        size: [72.000000, 30.000000]
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "shop/Gold"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "CreditsImage"
+                    position: [11.000000, 155.000000]
+                    size: [30.000000, 30.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: -135.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 65.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+                            frame: 1
+                -   class: "UIControl"
+                    name: "CreditsLabel"
+                    position: [54.500000, 106.000000]
+                    size: [213.000000, 30.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            padding: 5.000000
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 16.000000
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Label"
+                        size: [89.000000, 30.000000]
+                        noInput: true
+                        classes: "header1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "shop/Credits"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                    -   prototype: "DiscountLabel/DiscountLabel"
+                        name: "Discount"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: false
+                                topAnchorEnabled: false
+                                vCenterAnchorEnabled: true
+                -   class: "UIControl"
+                    customClass: "UINumericSpinner"
+                    name: "GoldSpinner"
+                    position: [54.500000, 38.000000]
+                    size: [213.000000, 64.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: -35.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                    children:
+                    -   class: "UITextField"
+                        name: "GoldTextField"
+                        position: [10.000000, 0.000000]
+                        size: [155.000000, 64.000000]
+                        text: "0"
+                        font: "ShopScreenTextFieldFont"
+                        keyboardType: "KEYBOARD_TYPE_NUMBER_PAD"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 10.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 48.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Focus: {}
+                -   class: "UIControl"
+                    customClass: "UINumericSpinner"
+                    name: "CreditsSpinner"
+                    position: [54.500000, 138.000000]
+                    size: [213.000000, 64.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 65.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                    children:
+                    -   class: "UITextField"
+                        name: "CreditsTextField"
+                        position: [10.000000, 0.000000]
+                        size: [155.000000, 64.000000]
+                        text: "0"
+                        font: "ShopScreenTextFieldFont"
+                        keyboardType: "KEYBOARD_TYPE_NUMBER_PAD"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 10.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 48.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Focus: {}
+            -   class: "UIStaticText"
+                name: "Hint"
+                position: [51.200012, 391.000000]
+                size: [921.599976, 95.000000]
+                noInput: true
+                classes: "limited-width"
+                textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                multiline: "MULTILINE_ENABLED"
+                fitting: ["REDUCE"]
+                text: "shop/Hint/Silver"
+                font: "WarHeliosCondC_21"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 90.000000
+                        verticalPolicy: "PercentOfContent"
+                        verticalMin: 95.000000
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Background:
+                        align: ["LEFT", "TOP"]

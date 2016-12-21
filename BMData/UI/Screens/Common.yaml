@@ -1,0 +1,288 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Styles/Clans/ClansStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIButton"
+    name: "DefaultButton"
+    position: [0.000000, 0.000000]
+    size: [222.000000, 70.000000]
+    components:
+        Normal:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            color: [1.000000, 1.000000, 1.000000, 1.000000]
+            leftRightStretchCap: 9.000000
+        PressedInside:
+            color: [1.000000, 1.000000, 1.000000, 0.500000]
+            leftRightStretchCap: 9.000000
+        Disabled:
+            frame: 4
+            color: [1.000000, 1.000000, 1.000000, 0.749000]
+            leftRightStretchCap: 9.000000
+        NormalText:
+            font: "WarHeliosCondC_Bold_25_button"
+        DisabledText:
+            textColor: [0.603900, 0.603900, 0.603900, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.000000]
+            font: "WarHeliosCondC_Bold_25_button"
+-   class: "UIButton"
+    name: "PopUpButton"
+    position: [0.000000, 0.000000]
+    size: [222.000000, 74.000000]
+    components:
+        Normal:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonPopUp"
+            color: [1.000000, 1.000000, 1.000000, 1.000000]
+            leftRightStretchCap: 10.000000
+        PressedInside:
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonPopUp"
+            color: [1.000000, 1.000000, 1.000000, 0.500000]
+        Disabled:
+            frame: 1
+            color: [1.000000, 1.000000, 1.000000, 0.749000]
+        NormalText:
+            font: "WarHeliosCondC_Bold_25_button"
+        DisabledText:
+            textColor: [0.603900, 0.603900, 0.603900, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.000000]
+            font: "WarHeliosCondC_Bold_25_button"
+-   class: "UIButton"
+    name: "ButtonSmall"
+    size: [84.000000, 70.000000]
+    components:
+        Normal:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            leftRightStretchCap: 9.000000
+        PressedInside:
+            color: [1.000000, 1.000000, 1.000000, 0.500000]
+            leftRightStretchCap: 9.000000
+        Disabled:
+            frame: 4
+            color: [1.000000, 1.000000, 1.000000, 0.749000]
+            leftRightStretchCap: 9.000000
+-   class: "UIScrollBar"
+    name: "HorizontalScrollBar"
+    size: [30.000000, 10.000000]
+    noInput: true
+    orientation: "ORIENTATION_HORIZONTAL"
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            topBottomStretchCap: 10.000000
+    children:
+    -   class: "UIControl"
+        name: "slider"
+        size: [20.000000, 10.000000]
+        noInput: true
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_HORIZONTAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/HorizontalScroll"
+                leftRightStretchCap: 10.000000
+-   class: "UIScrollBar"
+    name: "VerticalScrollBar"
+    size: [10.000000, 30.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_ALIGNED"
+            topBottomStretchCap: 10.000000
+    children:
+    -   class: "UIControl"
+        name: "slider"
+        size: [10.000000, 20.000000]
+        noInput: true
+        components:
+            Background:
+                drawType: "DRAW_STRETCH_VERTICAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                topBottomStretchCap: 10.000000
+-   class: "UIControl"
+    name: "Dialog_"
+    size: [500.000000, 56.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+    children:
+    -   class: "UIControl"
+        name: "Top"
+        size: [500.000000, 56.000000]
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackTop"
+                leftRightStretchCap: 4.000000
+        children:
+        -   class: "UIStaticText"
+            name: "TitleText"
+            classes: "header1 text-color-white"
+            text: ""
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Middle"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: false
+                topAnchor: 0.000000
+                bottomAnchorEnabled: false
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+                leftRightStretchCap: 4.000000
+                topBottomStretchCap: 4.000000
+-   prototype: "Dialog_"
+    customClass: "ResizableDialog"
+    name: "ResizableDialog"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+            leftRightStretchCap: 4.000000
+            topBottomStretchCap: 4.000000
+    children:
+    -   path: "Middle"
+        visible: true
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                topAnchorEnabled: false
+                bottomAnchorEnabled: false
+        children:
+        -   class: "UIControl"
+            name: "VerticalBox"
+            size: [460.000000, 32.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 16.000000
+                    spacing: 16.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+-   class: "UIControl"
+    name: "WhiteLine"
+    size: [1.000000, 1.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [1.000000, 1.000000, 1.000000, 0.301961]
+-   class: "UIControl"
+    name: "BlueBoldLine"
+    size: [4.000000, 2.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_SCALE_TO_RECT"
+            sprite: "~res:/Gfx/UI/CommonUIElements/BlueLine"
+-   class: "UIControl"
+    name: "PopUp"
+    size: [292.000000, 188.000000]
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/CommonUIElements/popup_new"
+            leftRightStretchCap: 14.000000
+            topBottomStretchCap: 14.000000
+    children:
+    -   class: "UIControl"
+        name: "Arrow"
+        position: [245.000000, -32.000000]
+        size: [32.000000, 32.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 115.000000
+                topAnchorEnabled: true
+                topAnchor: -32.000000
+            Background:
+                sprite: "~res:/Gfx/UI/CommonUIElements/popup_triangle"
+                align: ["HCENTER", "VCENTER", "BOTTOM"]
+-   class: "UIControl"
+    name: "PopupMenuSeparator"
+    size: [1.000000, 1.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 0.121569]
+-   class: "UIControl"
+    name: "Dialog"
+    size: [500.000000, 500.000000]
+    children:
+    -   class: "UIControl"
+        name: "Middle"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+                leftRightStretchCap: 4.000000
+                topBottomStretchCap: 4.000000
+    -   class: "UIControl"
+        name: "Top"
+        size: [500.000000, 56.000000]
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+            Background:
+                drawType: "DRAW_TILED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackTop"
+                leftRightStretchCap: 4.000000
+        children:
+        -   class: "UIStaticText"
+            name: "TitleText"
+            classes: "header1 text-color-white"
+            text: ""
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

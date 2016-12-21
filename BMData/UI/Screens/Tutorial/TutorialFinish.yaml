@@ -1,0 +1,273 @@
+Header:
+    version: "1"
+Controls:
+-   class: "UIControl"
+    name: "back"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 0.694100]
+    children:
+    -   class: "UIControl"
+        name: "finishDialog"
+        position: [175.000000, 202.000000]
+        size: [674.000000, 304.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "Vertical"
+                dynamicPadding: true
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -30.000000
+            Background:
+                leftRightStretchCap: 70.000000
+                topBottomStretchCap: 31.000000
+        children:
+        -   class: "UIStaticText"
+            name: "tutorialCompleteLabel"
+            size: [574.000000, 40.000000]
+            noInput: true
+            text: "#battle_tutorial:complete/header"
+            font: "WarHeliosCondC_Bold_25_gold_xp"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 50.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 50.000000
+                    topAnchorEnabled: true
+                    topAnchor: 55.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "tutorialCompleteLabel2"
+            position: [50.000000, 40.000000]
+            size: [574.000000, 40.000000]
+            noInput: true
+            textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+            shadowcolor: [0.196100, 0.392200, 0.196100, 1.000000]
+            multiline: "MULTILINE_ENABLED"
+            text: "#battle_tutorial:complete/comment"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 50.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 50.000000
+                    topAnchorEnabled: true
+                    topAnchor: 90.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "icon"
+            position: [287.000000, 80.000000]
+            size: [100.000000, 100.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 130.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Tutorial/icon_congratulations"
+        -   class: "UIControl"
+            name: "rewardInfo"
+            size: [674.000000, 130.000000]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "separatorLeft"
+                position: [111.000000, 0.000000]
+                size: [226.000000, 4.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -113.000000
+                        topAnchorEnabled: true
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/line_separator"
+            -   class: "UIControl"
+                name: "separatorRight"
+                position: [337.000000, 0.000000]
+                size: [226.000000, 4.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 113.000000
+                        topAnchorEnabled: true
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tutorial/line_separator"
+                        spriteModification: 1
+            -   class: "UIStaticText"
+                name: "profit"
+                position: [50.000000, 10.000000]
+                size: [574.000000, 40.000000]
+                noInput: true
+                shadowcolor: [0.196100, 0.392200, 0.196100, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                text: "#battle_tutorial:complete/profit"
+                font: "WarHeliosCondC_Bold_25"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 50.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 50.000000
+                        topAnchorEnabled: true
+                        topAnchor: 10.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "creditsContainer"
+                position: [120.000000, 60.000000]
+                size: [202.000000, 60.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 120.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "creditsLabel"
+                    size: [202.000000, 60.000000]
+                    noInput: true
+                    textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                    shadowcolor: [1.000000, 1.000000, 1.000000, 0.000000]
+                    textalign: ["RIGHT", "TOP"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "shop/Credits"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "credits"
+                        size: [106.000000, 30.000000]
+                        noInput: true
+                        shadowcolor: [1.000000, 1.000000, 1.000000, 0.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "20 000"
+                        font: "WarHeliosCondC_Bold_25_tutorial"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                        children:
+                        -   class: "UIControl"
+                            name: "icon"
+                            position: [74.000000, -1.000000]
+                            size: [32.000000, 32.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                                    frame: 1
+            -   class: "UIControl"
+                name: "xpContainer"
+                position: [352.000000, 60.000000]
+                size: [202.000000, 60.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 120.000000
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                children:
+                -   class: "UIStaticText"
+                    name: "xpLabel"
+                    size: [108.000000, 60.000000]
+                    noInput: true
+                    textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                    shadowcolor: [1.000000, 1.000000, 1.000000, 0.000000]
+                    textalign: ["RIGHT", "TOP"]
+                    textUseRtlAlign: "DONT_USE"
+                    text: "RESEARCH_TANK_EXPERIENCE_MIN"
+                    font: "WarHeliosCondC_21"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "xp"
+                        position: [36.000000, 30.000000]
+                        size: [72.000000, 30.000000]
+                        noInput: true
+                        shadowoffset: [0.000000, 1.000000]
+                        shadowcolor: [1.000000, 1.000000, 1.000000, 0.000000]
+                        multiline: "MULTILINE_ENABLED"
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "DONT_USE"
+                        text: "200"
+                        font: "WarHeliosCondC_Bold_25_tutorial"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                align: ["LEFT", "TOP"]
+                        children:
+                        -   class: "UIControl"
+                            name: "icon"
+                            position: [40.000000, -1.000000]
+                            size: [32.000000, 32.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                                    frame: 3
+    -   class: "UIStaticText"
+        name: "tapToContinue"
+        position: [0.000000, 688.000000]
+        size: [1024.000000, 40.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text: "#battle_tutorial:welcome/tap_hint"
+        font: "WarHeliosCondC_21_tf"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 40.000000
+            Background:
+                align: ["LEFT", "TOP"]

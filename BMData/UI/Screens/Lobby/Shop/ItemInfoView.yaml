@@ -1,0 +1,106 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/ShopItemCell.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "ItemInfoView"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.070588, 0.125490, 0.160784, 0.850980]
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "BackButton"
+    -   prototype: "ShopItemCell/ItemCell"
+        name: "ItemCell"
+        position: [60.000000, 70.000000]
+        size: [270.000000, 400.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 60.000000
+                topAnchorEnabled: true
+                topAnchor: 70.000000
+    -   class: "UIControl"
+        name: "Box"
+        position: [370.000000, 130.000000]
+        size: [624.000000, 638.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                enabled: true
+                orientation: "TopDown"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 370.000000
+                rightAnchorEnabled: true
+                rightAnchor: 30.000000
+                topAnchorEnabled: true
+                topAnchor: 130.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIStaticText"
+            name: "ItemInfoName"
+            size: [654.000000, 30.000000]
+            noInput: true
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "A-32 + 1 SLOT + 1 WEEK"
+            font: "WarHeliosCondC_Bold_25"
+            components:
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "ItemInfoExpires"
+            noInput: true
+            textColor: [1.000000, 0.313726, 0.000000, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [0.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.745100]
+            textalign: ["LEFT", "TOP"]
+            textUseRtlAlign: "DONT_USE"
+            text: "expires"
+            font: "WarHeliosCondC_Bold_21"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "Spacer"
+            size: [0.000000, 10.000000]
+            visible: false
+        -   class: "UIWebView"
+            name: "ItemInfoDescription"
+            position: [0.000000, 56.000000]
+            size: [624.000000, 582.000000]
+            noInput: false
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"

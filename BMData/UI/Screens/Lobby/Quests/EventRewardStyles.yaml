@@ -1,0 +1,55 @@
+Header:
+    version: "2"
+StyleSheets:
+-   selector: ".regular-reward.reward-credit #Icon"
+    properties:
+        visible: true
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall.txt"
+-   selector: ".regular-reward.reward-gold #Icon"
+    properties:
+        visible: true
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall.txt"
+-   selector: ".regular-reward.reward-xp #Icon"
+    properties:
+        visible: true
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall.txt"
+-   selector: ".regular-reward.reward-free-xp #Icon"
+    properties:
+        visible: true
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall.txt"
+-   selector: ".regular-reward.reward-crew-xp #Icon"
+    properties:
+        visible: true
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall.txt"
+-   selector: ".regular-reward.reward-premium #Icon"
+    properties:
+        visible: true
+        bg-drawType: "DRAW_STRETCH_BOTH"
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge"
+-   selector: ".regular-reward.reward-vehicle #Icon"
+    properties:
+        visible: true
+        bg-frame: 0
+        bg-sprite: ""
+-   selector: ".regular-reward.reward-camo #Icon"
+    properties:
+        visible: false
+Controls:
+-   class: "UIControl"
+    name: ""
+    classes: "regular-reward reward-premium"
+    children:
+    -   class: "UIControl"
+        name: "Icon"
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 22.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 22.000000

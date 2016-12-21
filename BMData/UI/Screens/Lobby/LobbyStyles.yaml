@@ -1,0 +1,69 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".currency-gold-small"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+-   selector: ".currency-gold-big"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   selector: ".currency-gold-huge"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".currency-credit-small"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+-   selector: ".currency-credit-big"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   selector: ".currency-credit-huge"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".currency-free-xp-small"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+-   selector: ".currency-free-xp-big"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   selector: ".currency-free-xp-huge"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".currency-xp-small"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+-   selector: ".currency-xp-big"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   selector: ".currency-xp-huge"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".currency-crew-xp-small"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+-   selector: ".currency-crew-xp-big"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   selector: ".currency-crew-xp-huge"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".currency-jetton-small"
+    properties:
+        bg-frame: 5
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"

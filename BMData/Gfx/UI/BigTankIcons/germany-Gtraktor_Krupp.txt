@@ -1,0 +1,5 @@
+1
+germany-Gtraktor_Krupp0.tex
+160 100
+1
+0 0 147 100 7 0 0 frame0

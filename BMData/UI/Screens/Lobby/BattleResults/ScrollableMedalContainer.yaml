@@ -1,0 +1,130 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIScrollableMedalContainer"
+    name: "MedalContainer"
+    size: [1024.000000, 70.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "MedalsBg"
+        size: [1024.000000, 70.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "RightImagePart"
+            position: [512.000000, 0.000000]
+            size: [512.000000, 70.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+        -   class: "UIControl"
+            name: "LeftImagePart"
+            size: [512.000000, 70.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+    -   class: "UIScrollView"
+        name: "Medals"
+        position: [110.000000, -20.000000]
+        size: [804.000000, 110.000000]
+        noInput: true
+        autoUpdate: true
+        centerContent: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 110.000000
+                rightAnchorEnabled: true
+                rightAnchor: 110.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            size: [0.000000, 110.000000]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfFirstChild"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "Holder"
+                noInput: true
+                components:
+                    LinearLayout:
+                        skipInvisible: false
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "AnimationLayer"
+                noInput: true
+                components:
+                    LinearLayout:
+                        skipInvisible: false
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "QuestsButton"
+        size: [91.000000, 126.000000]
+        classes: "button"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 27.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -14.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/bag_animation"
+        children:
+        -   class: "UIControl"
+            name: "Img"
+            size: [91.000000, 126.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleResultsScreen/bag_animation"
+                    frame: 1
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

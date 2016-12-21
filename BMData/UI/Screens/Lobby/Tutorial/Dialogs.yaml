@@ -1,0 +1,61 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+Controls:
+-   prototype: "Dialogs/WarningDialogWithoutCaption"
+    name: "SkipHangarTutorialDialog"
+    children:
+    -   path: "Dialog"
+        size: [620.000000, 340.000000]
+        children: []
+    -   path: "Dialog/Middle"
+        children:
+        -   class: "UIControl"
+            name: "LostBonus"
+            size: [580.000000, 45.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    topAnchorEnabled: true
+                    topAnchor: 90.000000
+        -   class: "UIStaticText"
+            name: "DialogTextWarning"
+            size: [580.000000, 85.000000]
+            textColor: [1.000000, 0.529412, 0.058824, 1.000000]
+            multiline: "MULTILINE_ENABLED"
+            text: "#skip_tutor:descr2"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 20.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 100.000000
+    -   path: "Dialog/Middle/DialogText"
+        size: [580.000000, 85.000000]
+        textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text: "#skip_tutor:descr1"
+        components:
+            Anchor:
+                bottomAnchorEnabled: false
+    -   path: "Dialog/Middle/ButtonHolder/OkButton"
+        components:
+            Normal:
+                frame: 0
+            PressedInside:
+                frame: 0
+            Disabled:
+                frame: 0
+            NormalText:
+                text: "#skip_tutor:skip"
+    -   path: "Dialog/Middle/ButtonHolder/CancelButton"
+        components:
+            NormalText:
+                text: "#skip_tutor:accept"

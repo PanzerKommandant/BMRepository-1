@@ -1,0 +1,9 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, -1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "fire_smoke"
+    shortEffect: false
+    size: [170.000000, 0.000000, 20.000000]
+    type: "rect"

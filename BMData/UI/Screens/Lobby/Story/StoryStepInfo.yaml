@@ -1,0 +1,175 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryRewardPrototypes.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Content"
+    size: [1027.000000, 768.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.125490, 0.160784, 0.850980]
+    children:
+    -   prototype: "StoryRewardPrototypes/StepScrollView"
+        name: "StepScrollView"
+        children:
+        -   path: "scrollContainerControl"
+            children:
+            -   class: "UIControl"
+                name: "Header"
+                size: [1027.000000, 70.000000]
+                clip: true
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "Left"
+                    position: [0.000000, 0.000000]
+                    size: [513.500000, 70.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+                            align: ["RIGHT", "VCENTER"]
+                -   class: "UIControl"
+                    name: "Right"
+                    position: [513.500000, 0.000000]
+                    size: [513.500000, 70.000000]
+                    noInput: true
+                    debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+                            align: ["LEFT", "VCENTER"]
+                -   class: "UIControl"
+                    name: "Content"
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "RewardTitle"
+                    classes: "header1"
+                    text: "template_event/CompleteStep/StepScreen/Reward"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+            -   prototype: "StoryRewardPrototypes/Rewards"
+                name: "Rewards"
+            -   class: "UIControl"
+                name: "CurrencyDescriptionContainer"
+                size: [960.000000, 70.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: "ConditionsHeader"
+                    position: [0.000000, 0.000000]
+                    size: [960.000000, 50.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "Left"
+                        size: [480.000000, 50.000000]
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Clan/back_title"
+                    -   class: "UIControl"
+                        name: "Right"
+                        position: [480.000000, 0.000000]
+                        size: [480.000000, 50.000000]
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Clan/back_title"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                    -   class: "UIStaticText"
+                        name: ""
+                        size: [307.000000, 31.000000]
+                        classes: "header1"
+                        text: "template_event/CompleteStep/StepScreen/Currencies"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "CurrenciesDescription"
+                    position: [30.000000, 50.000000]
+                    size: [900.000000, 20.000000]
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                            padding: 10.000000
+                            spacing: 20.000000
+                        SizePolicy:
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "CurrencyDescription"
+    size: [900.000000, 32.000000]
+    components:
+        LinearLayout:
+            spacing: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            leftAnchorEnabled: true
+            topAnchorEnabled: true
+    children:
+    -   prototype: "StoryCurrencyControl/CurrencySmallIcon"
+        name: "Icon"
+    -   class: "UIStaticText"
+        name: "Description"
+        size: [858.000000, 0.000000]
+        classes: "text2 text-color-blue"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 858.000000
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                topAnchorEnabled: true

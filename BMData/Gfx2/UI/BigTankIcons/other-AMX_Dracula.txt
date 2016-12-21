@@ -1,0 +1,5 @@
+1
+other-AMX_Dracula0.tex
+320 200
+1
+0 0 317 200 3 0 0 frame0

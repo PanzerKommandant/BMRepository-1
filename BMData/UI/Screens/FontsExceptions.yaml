@@ -1,0 +1,32 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".text2-small.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_17_tree"
+-   selector: ".header1.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_Bold_25_button"
+-   selector: ".header3.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_21_footer"
+-   selector: ".text1.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_21_footer"
+-   selector: ".text-dev-console"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23_footer"
+-   selector: ".header3.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_21_footer"
+-   selector: ".text1.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_21_footer"
+-   selector: ".text1.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_21_footer"
+-   selector: ".header2.hacked-font"
+    properties:
+        text-font: "WarHeliosCondC_Bold_23_footer"

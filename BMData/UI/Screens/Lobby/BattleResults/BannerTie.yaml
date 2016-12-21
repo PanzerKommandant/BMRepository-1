@@ -1,0 +1,47 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "BannerBackground"
+    size: [1024.000000, 260.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "SpriteLayer1"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Tie/HeadBackgroundDraw"
+    -   class: "UIControl"
+        name: "SpriteLayer2"
+        size: [1024.000000, 260.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleResultsScreen/Tie/HeadBackgroundDraw"
+                frame: 1
+        children:
+        -   class: "UIParticles"
+            name: "fire"
+            position: [354.000000, 190.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/draw/fire1.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"
+        -   class: "UIParticles"
+            name: "glow"
+            position: [355.000000, 192.000000]
+            size: [100.000000, 30.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/draw/hotspot1.sc2"
+            autoStart: true
+            components:
+                Background:
+                    drawType: "DRAW_FILL"

@@ -1,0 +1,28 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".tournament-unread-bg"
+    properties:
+        bg-color: [0.266667, 0.662745, 0.945098, 1.000000]
+-   selector: ".unread-icon-bg"
+    properties:
+        bg-color: [0.768627, 0.023529, 0.043137, 1.000000]
+-   selector: ".squad-unread-bg"
+    properties:
+        bg-color: [0.580392, 0.768627, 0.003922, 1.000000]
+Controls:
+-   class: "UIStaticText"
+    customClass: "UIUnreadIcon"
+    name: "UnreadIcon"
+    size: [30.000000, 32.000000]
+    noInput: true
+    classes: "header3 bg-color=unread-icon-bg"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    shadowoffset: [0.000000, 1.000000]
+    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+    fitting: ["REDUCE"]
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"

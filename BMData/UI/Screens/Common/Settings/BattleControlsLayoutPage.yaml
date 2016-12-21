@@ -1,0 +1,116 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages:
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1025.000000, 688.000000]
+    clip: true
+    noInput: true
+    leftAlignEnabled: true
+    leftAlign: 0.000000
+    rightAlignEnabled: true
+    rightAlign: 0.000000
+    bottomAlignEnabled: true
+    bottomAlign: 0.000000
+    topAlignEnabled: true
+    topAlign: 0.000000
+    components:
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+            sprite: "~res:/Gfx/UI/EditorControlsScreen/background/Background"
+    children:
+    -   class: "UIControl"
+        name: "battleControlsField"
+        size: [1025.000000, 768.000000]
+        leftAlignEnabled: true
+        leftAlign: 0.000000
+        rightAlignEnabled: true
+        rightAlign: 0.000000
+        bottomAlignEnabled: true
+        bottomAlign: 0.000000
+        topAlignEnabled: true
+        topAlign: -80.000000
+        children:
+        -   class: "UIControl"
+            customClass: "UIBattleControlsInputLayer"
+            name: "inputLayer"
+            size: [1025.000000, 768.000000]
+            leftAlignEnabled: true
+            leftAlign: 0.000000
+            rightAlignEnabled: true
+            rightAlign: 0.000000
+            bottomAlignEnabled: true
+            bottomAlign: 0.000000
+            topAlignEnabled: true
+            topAlign: 0.000000
+    -   class: "UIControl"
+        name: "header"
+        size: [1025.000000, 80.000000]
+        noInput: true
+        classes: "background-light"
+        leftAlignEnabled: true
+        leftAlign: 0.000000
+        rightAlignEnabled: true
+        rightAlign: 0.000000
+        topAlignEnabled: true
+        topAlign: 0.000000
+        components:
+            Background:
+                drawType: "DRAW_FILL"
+        children:
+        -   prototype: "SettingsCommon/SliderWithCaption"
+            name: "SliderWithCaption"
+            rightAlignEnabled: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            components:
+                Background:
+                    drawType: "DRAW_ALIGNED"
+            children:
+            -   path: "Slider/MiddleTick"
+                visible: false
+            -   path: "ValueAndCaption/GroupCaption"
+                visible: false
+            -   path: "ValueAndCaption/Value"
+                visible: false
+        -   class: "UIStaticText"
+            name: "elementSizeText"
+            size: [200.000000, 40.000000]
+            leftAlignEnabled: true
+            leftAlign: 20.000000
+            topAlignEnabled: true
+            vcenterAlignEnabled: true
+            vcenterAlign: 0.000000
+            text: "#settings:Controls/TouchSettings/Tune/ElementSize"
+            font: "WarHeliosCondC_Bold_21"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "BOTTOM"]
+        -   class: "UIStaticText"
+            name: "comment"
+            size: [1005.000000, 40.000000]
+            classes: "text-color-comment"
+            leftAlignEnabled: true
+            leftAlign: 20.000000
+            rightAlignEnabled: true
+            bottomAlignEnabled: true
+            vcenterAlignEnabled: true
+            vcenterAlign: 0.000000
+            text: "#settings:Controls/TouchSettings/Tune/ElementSize/Comment"
+            font: "WarHeliosCondC_19"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "elementSize"
+            size: [200.000000, 40.000000]
+            leftAlignEnabled: true
+            leftAlign: 20.000000
+            topAlignEnabled: true
+            vcenterAlignEnabled: true
+            vcenterAlign: 0.000000
+            text: "100%"
+            font: "WarHeliosCondC_Bold_21"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "BOTTOM"]

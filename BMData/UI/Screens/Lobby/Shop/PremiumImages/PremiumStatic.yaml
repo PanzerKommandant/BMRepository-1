@@ -1,0 +1,15 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    name: "Image"
+    size: [240.000000, 274.000000]
+    noInput: true
+    hcenterAlignEnabled: true
+    vcenterAlignEnabled: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/ShopScreen/ImagePremium1"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

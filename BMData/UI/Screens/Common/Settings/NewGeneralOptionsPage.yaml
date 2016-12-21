@@ -1,0 +1,334 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/Settings/Settings.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Page"
+    size: [1025.000000, 688.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIScrollView"
+        name: "ScrollView"
+        size: [1025.000000, 688.000000]
+        clip: true
+        noInput: true
+        autoUpdate: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                color: [0.192200, 0.192200, 0.192200, 1.000000]
+        children:
+        -   class: "UIScrollViewContainer"
+            name: "scrollContainerControl"
+            position: [0.000000, 0.000000]
+            size: [1025.000000, 818.000000]
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 2.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+            children:
+            -   class: "UIControl"
+                name: ""
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 2.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 5.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 5.000000
+                children:
+                -   prototype: "SettingsCommon/Button"
+                    name: "ChangeLanguageButton"
+                    size: [1015.000000, 80.000000]
+                    components:
+                        Background:
+                            color: [0.200000, 0.270588, 0.321569, 0.600000]
+                    children:
+                    -   path: "TextContainer"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "CurrentLanguageText"
+                            textalign: ["RIGHT", "VCENTER"]
+                            text: "TEST"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 10.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 50.000000
+                                    topAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                                    vCenterAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                        -   class: "UIControl"
+                            name: "Arrow"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 20.000000
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    sprite: "~res:/Gfx/UI/SettingsScreen/arrow_settings"
+                                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    -   path: "TextContainer/Text"
+                        text: "SETTINGS_BUTTON_LANGUAGE"
+                -   prototype: "SettingsCommon/Row"
+                    name: "Row1"
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SliderWithCaption"
+                        name: "SoundVolume"
+                        position: [0.000000, 0.000000]
+                        size: [1015.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                        children:
+                        -   path: "Slider"
+                            position: [535.000000, 5.000000]
+                            children: []
+                        -   path: "Slider/MiddleTick"
+                            visible: false
+                        -   path: "ValueAndCaption/GroupCaption"
+                            text: "SETTINGS_GROUP_CAPTION_VOLUME"
+                -   prototype: "SettingsCommon/Row"
+                    name: "Row3"
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
+                        name: "PushNotificationsMode"
+                        children:
+                        -   path: "GroupCaption"
+                            text: "SETTINGS_LABEL_GENERAL_PUSH"
+                -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
+                    name: "MinimapSize"
+                    visible: true
+                    children:
+                    -   path: "GroupCaption"
+                        text: "#settings:Other/MinimapSize/Title"
+                    -   path: "Description"
+                        text: ""
+                -   prototype: "SettingsCommon/Row"
+                    name: "Row2"
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "ClanInvites"
+                        position: [508.500000, 0.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: false
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 1.000000
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "Clan Invites"
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "Minimap"
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: -1.000000
+                                rightAnchorEnabled: false
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "SETTINGS_GROUP_CAPTION_MINIMAP"
+                        -   path: "Description"
+                            text: "SETTINGS_DESCRIPTION_MINIMAP"
+                -   prototype: "SettingsCommon/Row"
+                    name: "RowMarker"
+                    visible: true
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "Rangefinder"
+                        position: [0.000000, 0.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: -1.000000
+                                rightAnchorEnabled: false
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/Rangefinder/Title"
+                        -   path: "Description"
+                            text: "#settings:Other/Rangefinder/Description"
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "ReloadTimer"
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: false
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 1.000000
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/ReloadTimer/Title"
+                        -   path: "Description"
+                            text: "#settings:Other/ReloadTimer/Description"
+                -   prototype: "SettingsCommon/Row"
+                    name: "Row4"
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "SkillsDisplay"
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: -1.000000
+                                rightAnchorEnabled: false
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/SkillsDisplay/Title"
+                        -   path: "Description"
+                            text: "#settings:Other/SkillsDisplay/Description"
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "DrivingDirectionIndicator"
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 1.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/DrivingDirectionIndicator/Title"
+                        -   path: "Description"
+                            text: "#settings:Other/DrivingDirectionIndicator/Description"
+                -   prototype: "SettingsCommon/Row"
+                    name: "Row5"
+                    noInput: false
+                    children:
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "Supremacy"
+                        position: [0.000000, 0.000000]
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: -1.000000
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/Supremacy/Title"
+                        -   path: "Description"
+                            text: "#settings:Other/Supremacy/Description"
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "SameControlType"
+                        position: [508.500000, 0.000000]
+                        size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 1.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/SameControlType/Title"
+                            font: "WarHeliosCondC_Bold_19"
+                        -   path: "Description"
+                            text: "#settings:Other/SameControlType/Description"
+                -   prototype: "SettingsCommon/Button"
+                    name: "SelectMapButton"
+                    position: [0.000000, 656.000000]
+                    size: [1015.000000, 80.000000]
+                    visible: true
+                    children:
+                    -   path: "TextContainer"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "SelectMapText"
+                            textalign: ["RIGHT", "VCENTER"]
+                            text: "TEST"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 50.000000
+                                    topAnchorEnabled: true
+                                    bottomAnchorEnabled: true
+                        -   class: "UIControl"
+                            name: "Arrow"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 20.000000
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    sprite: "~res:/Gfx/UI/SettingsScreen/arrow_settings"
+                                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    -   path: "TextContainer/Text"
+                        text: "MAP"
+                -   prototype: "SettingsCommon/Button"
+                    name: "LegalNoticesButton"
+                    size: [1015.000000, 80.000000]
+                    classes: "background settings-button"
+                    children:
+                    -   path: "TextContainer"
+                        children:
+                        -   class: "UIControl"
+                            name: "Arrow"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 20.000000
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    sprite: "~res:/Gfx/UI/SettingsScreen/arrow_settings"
+                                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    -   path: "TextContainer/Text"
+                        text: "#settings:LegalNotices"
+        -   prototype: "Common/VerticalScrollBar"
+            name: "VerticalScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

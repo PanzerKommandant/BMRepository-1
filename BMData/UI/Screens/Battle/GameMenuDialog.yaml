@@ -1,0 +1,158 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "GameMenuUI"
+    name: "GameMenuDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy: {}
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "Common/ResizableDialog"
+        name: "menuDialog"
+        size: [246.000000, 614.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Top/TitleText"
+            text: "Menu"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   path: "Middle"
+            visible: true
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 0.000000
+                    spacing: 0.000000
+            children: []
+        -   path: "Middle/VerticalBox"
+            position: [0.000000, 0.000000]
+            size: [246.000000, 558.000000]
+            children:
+            -   prototype: "Common/DefaultButton"
+                name: "exitButton"
+                position: [12.000000, 16.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        frame: 1
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    PressedInside:
+                        frame: 1
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    Disabled:
+                        frame: 1
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    NormalText:
+                        fitting: ["REDUCE"]
+                        text: "Exit to Hangar"
+                    DisabledText:
+                        fitting: ["REDUCE"]
+                        text: "Exit to Hangar"
+            -   prototype: "Common/DefaultButton"
+                name: "optionsButton"
+                position: [12.000000, 102.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    PressedInside:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    Disabled:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    NormalText:
+                        fitting: ["REDUCE"]
+                        text: "Dev Options"
+                    DisabledText:
+                        fitting: ["REDUCE"]
+                        text: "Dev Options"
+            -   prototype: "Common/DefaultButton"
+                name: "playerOptionsButton"
+                position: [12.000000, 188.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    PressedInside:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    Disabled:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    NormalText:
+                        fitting: ["REDUCE"]
+                        text: "Options"
+                    DisabledText:
+                        fitting: ["REDUCE"]
+                        text: "Options"
+            -   prototype: "Common/DefaultButton"
+                name: "devFunctionsButton"
+                position: [12.000000, 274.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    PressedInside:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    Disabled:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    NormalText:
+                        fitting: ["REDUCE"]
+                        text: "Dev Functions"
+                    DisabledText:
+                        fitting: ["REDUCE"]
+                        text: "Dev Functions"
+            -   prototype: "Common/DefaultButton"
+                name: "graphicsOptionsButton"
+                position: [12.000000, 360.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    PressedInside:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    Disabled:
+                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
+                    NormalText:
+                        fitting: ["REDUCE"]
+                        text: "Graphics Options"
+                    DisabledText:
+                        fitting: ["REDUCE"]
+                        text: "Graphics Options"
+            -   class: "UIControl"
+                name: "Empty"
+                position: [73.000000, 446.000000]
+                size: [100.000000, 10.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   prototype: "Common/DefaultButton"
+                name: "cancelButton"
+                position: [12.000000, 472.000000]
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                    Normal:
+                        frame: 3
+                    PressedInside:
+                        frame: 3
+                    Disabled:
+                        frame: 3
+                    NormalText:
+                        text: "Back to Game"
+                    DisabledText:
+                        text: "Back to Game"

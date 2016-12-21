@@ -1,0 +1,79 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   prototype: "Dialogs/WarningDialogWithoutCaption"
+    name: "UpgradeConfirmationDialog"
+    children:
+    -   path: "Dialog/Middle"
+        children:
+        -   class: "UIControl"
+            name: "PriceLabel"
+            position: [187.500000, 135.000000]
+            size: [125.000000, 50.000000]
+            components:
+                LinearLayout:
+                    spacing: 5.000000
+                    useRtl: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 115.000000
+            children:
+            -   class: "UIStaticText"
+                name: "PriceCaption"
+                size: [95.000000, 50.000000]
+                classes: "text1"
+                text: "#modules_tech_tree:Install/Cost"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                    Anchor:
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "Price"
+                size: [25.000000, 50.000000]
+                components:
+                    LinearLayout:
+                        spacing: 3.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Value"
+                    size: [0.000000, 50.000000]
+                    classes: "header4"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Currency"
+                    size: [22.000000, 50.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+    -   path: "Dialog/Middle/DialogText"
+        position: [20.000000, 10.000000]
+        size: [460.000000, 160.000000]
+        text: "#modules_tech_tree:TopModules/Confirmation"
+        components:
+            Anchor:
+                bottomAnchor: 130.000000
+    -   path: "Dialog/Middle/ButtonHolder/OkButton/Caption"
+        text: "#modules_tech_tree:BuyButton"

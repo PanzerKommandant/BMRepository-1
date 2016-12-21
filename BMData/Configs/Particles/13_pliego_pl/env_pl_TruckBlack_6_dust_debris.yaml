@@ -1,0 +1,132 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 120.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "dust_debris"
+    shortEffect: false
+    size: [2.000000, 3.000000, 0.200000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    angle: 90.000000
+    blending: 1
+    colorOverLife: [75.000000, 58.000000, 48.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    force0: [0.000000, 0.000000, -10.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 0.207000, 0.961100, 0.393500, 0.878200, 0.596200, 0.712500, 0.768000, 0.518300, 0.897200, 0.371500, 1.000000, 0.200000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 3.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris"
+    number: 150.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.100000, 0.250000]
+    sizeVariation: [0.050000, 0.250000]
+    spin: 90.000000
+    spinVariation: 180.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 0.700000, 1.000000, 0.100000]
+    velocityVariation: 5.000000
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    angle: 90.000000
+    blending: 1
+    colorOverLife: [83.000000, 63.000000, 51.000000, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    force0: [0.000000, 0.000000, -10.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 1.000000, 0.207000, 0.961100, 0.393500, 0.878200, 0.596200, 0.712500, 0.768000, 0.518300, 0.897200, 0.371500, 1.000000, 0.200000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 3.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris"
+    number: 50.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.100000, 0.500000]
+    sizeVariation: [0.050000, 0.250000]
+    spin: 90.000000
+    spinVariation: 180.000000
+    sprite: "../../../Gfx/Particles/alpha/flinders"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 0.700000, 1.000000, 0.200000]
+    velocityVariation: 5.000000
+layer2:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.620400, 1.000000, 0.000000]
+    blending: 1
+    colorOverLife: [211.000000, 194.000000, 159.000000, 255.000000]
+    degradeStrategy: 2
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 3.000000
+    loopEndTime: 10.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "dust"
+    number: 200.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.500000, 1.500000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
+    sprite: "../../../Gfx/Particles/alpha/fog_white"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityOverLife: [0.000000, 1.000000, 0.160000, 0.000000]

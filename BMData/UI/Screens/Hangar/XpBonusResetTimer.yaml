@@ -1,0 +1,54 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/UIStrangeHMTimer.yaml"
+Controls:
+-   class: "UIControl"
+    name: "XpBonusResetTimer"
+    size: [118.000000, 32.000000]
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/LobbyCommon/xcounter"
+    children:
+    -   prototype: "UIStrangeHMTimer/Timer"
+        name: "Timer"
+        position: [25.000000, 3.500000]
+        debugDraw: false
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 25.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+        children:
+        -   path: "Hours"
+            font: "WarHeliosCondC_Bold_19_xpResetTimer"
+        -   path: "ColonHM"
+            font: "WarHeliosCondC_Bold_19_xpResetTimer"
+        -   path: "Minutes"
+            font: "WarHeliosCondC_Bold_19_xpResetTimer"
+    -   class: "UIControl"
+        name: "StarIcon"
+        position: [74.000000, 2.000000]
+        size: [28.000000, 28.000000]
+        noInput: true
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                frame: 3
+    -   class: "UIStaticText"
+        name: "xpMultiplier"
+        position: [97.000000, -1.000000]
+        size: [30.000000, 30.000000]
+        noInput: true
+        textalign: ["LEFT", "VCENTER"]
+        text: "x2"
+        font: "WarHeliosCondC_Bold_19_xpResetTimer"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 97.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -2.000000

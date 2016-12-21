@@ -1,0 +1,5 @@
+1
+germany-JagdTiger8_8_Snowstorm0.tex
+160 100
+1
+0 0 154 99 6 0 0 frame0

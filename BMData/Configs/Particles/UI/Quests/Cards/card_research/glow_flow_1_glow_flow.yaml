@@ -1,0 +1,49 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [1.000000, -1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "glow_flow"
+    radius: 700.000000
+    shortEffect: false
+    size: [0.000000, 150.000000, 1.000000]
+    type: "rect"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.100000, 0.200000, 0.836700, 0.100000, 1.000000, 0.000000]
+    colorOverLife: [0.000000, [255.000000, 180.377426, 110.568092, 255.000000], 0.992051, [255.000000, 102.996109, 37.852139, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 3.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "glow_flow"
+    numberVariation: 1.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.505050, [6.407060, 6.407060], 1.000000, [4.364100, 4.364100]]
+    sizeVariation: [1.000000, 1.000000]
+    sprite: "../../../../../../Gfx/Particles/UI/glow_blur"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 60.000000
+    velocityVariation: 30.000000

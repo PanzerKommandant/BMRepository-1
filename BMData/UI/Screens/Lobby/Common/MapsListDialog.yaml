@@ -1,0 +1,140 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common.yaml"
+Controls:
+-   prototype: "Dialogs/WarningDialog"
+    name: "MapsListDialog"
+    components:
+        Anchor:
+            leftAnchor: 0.000000
+        Background:
+            leftRightStretchCap: 4.000000
+            topBottomStretchCap: 4.000000
+    children:
+    -   path: "Dialog"
+        size: [504.000000, 500.000000]
+        children: []
+    -   path: "Dialog/Middle"
+        size: [504.000000, 500.000000]
+        children:
+        -   class: "UIList"
+            name: "MapsList"
+            position: [2.000000, 55.000000]
+            size: [500.000000, 333.000000]
+            clip: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 2.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 2.000000
+                    topAnchorEnabled: true
+                    topAnchor: 55.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 112.000000
+            children:
+            -   class: "UIControl"
+                name: "CellPrototype"
+                size: [500.000000, 80.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/MapsListDialog/back_maps"
+                        frame: 0
+                children:
+                -   class: "UIStaticText"
+                    name: "MapName"
+                    position: [30.000000, 0.000000]
+                    size: [470.000000, 80.000000]
+                    noInput: true
+                    textColor: [0.788200, 0.788200, 0.713700, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "#maps:fort/fort.sc2"
+                    font: "Font_8D81019B"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 30.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "SelectionHolder"
+                    visible: true
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "top"
+                        size: [500.000000, 4.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_FILL"
+                                color: [0.960784, 0.650980, 0.133333, 1.000000]
+                    -   class: "UIControl"
+                        name: "bottom"
+                        size: [500.000000, 4.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_FILL"
+                                color: [0.960784, 0.650980, 0.133333, 1.000000]
+                    -   class: "UIControl"
+                        name: "right"
+                        size: [4.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: false
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_FILL"
+                                color: [0.960784, 0.650980, 0.133333, 1.000000]
+                    -   class: "UIControl"
+                        name: "left"
+                        size: [4.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_FILL"
+                                color: [0.960784, 0.650980, 0.133333, 1.000000]
+        -   prototype: "Common/VerticalScrollBar"
+            name: "ScrollBar"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 100.000000
+    -   path: "Dialog/Top/TitleText"
+        text: "Maps"

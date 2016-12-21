@@ -1,0 +1,395 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Styles/Lobby/Inventory/InventoryBigStyles.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "AmmoInfoDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        ModalInput: {}
+        Focus: {}
+    children:
+    -   class: "UIControl"
+        name: "background"
+        size: [1024.000000, 768.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.070600, 0.125500, 0.160800, 0.898000]
+    -   class: "UIControl"
+        name: "info"
+        position: [262.000000, 234.000000]
+        size: [500.000000, 300.000000]
+        noInput: true
+        classes: "ammo_item full"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            position: [60.000000, 10.000000]
+            size: [90.000000, 90.000000]
+            noInput: true
+            classes: "ammo_bg"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 60.000000
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIStaticText"
+            name: "title"
+            position: [180.000000, 10.000000]
+            size: [310.000000, 30.000000]
+            noInput: true
+            classes: "header1"
+            textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 180.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "description"
+            position: [180.000000, 45.000000]
+            size: [390.000000, 25.000000]
+            noInput: true
+            classes: "text1"
+            textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 180.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: -70.000000
+                    topAnchorEnabled: true
+                    topAnchor: 45.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "caliber"
+            position: [0.000000, 105.000000]
+            size: [500.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 105.000000
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                size: [215.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -35.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "text"
+                position: [235.000000, 0.000000]
+                size: [265.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "AMMO_INFO_CALIBER"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "penetration"
+            position: [0.000000, 135.000000]
+            size: [500.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 135.000000
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                size: [215.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -35.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "text"
+                position: [235.000000, 0.000000]
+                size: [265.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "AMMO_INFO_PENETRATION"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "damage"
+            position: [0.000000, 165.000000]
+            size: [500.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 165.000000
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                size: [215.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -35.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "text"
+                position: [235.000000, 0.000000]
+                size: [265.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "AMMO_INFO_DAMAGE"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "radius"
+            position: [0.000000, 195.000000]
+            size: [500.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 195.000000
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                size: [215.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -35.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "text"
+                position: [235.000000, 0.000000]
+                size: [265.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "AMMO_INFO_EXPLODE_RADIUS"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "count"
+            position: [0.000000, 225.000000]
+            size: [500.000000, 30.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 225.000000
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                size: [215.000000, 30.000000]
+                noInput: true
+                classes: "header3"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -35.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "text"
+                position: [235.000000, 0.000000]
+                size: [265.000000, 30.000000]
+                noInput: true
+                classes: "text1"
+                textColor: [0.792200, 0.827500, 0.858800, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                text: "AMMO_INFO_COUNT"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: -15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        align: ["LEFT", "TOP"]
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "backButton"

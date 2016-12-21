@@ -1,0 +1,324 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIStatsInfoControl"
+    name: "CurrencyPanel"
+    size: [582.000000, 76.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            padding: 2.000000
+            dynamicPadding: true
+            dynamicSpacing: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Spacer"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "statContainer"
+        position: [2.000000, 0.000000]
+        size: [492.000000, 76.000000]
+        noInput: true
+        components:
+            LinearLayout: {}
+            Anchor:
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+            Background:
+                drawType: "DRAW_ALIGNED"
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "Spacer"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "gold"
+            position: [0.000000, 0.000000]
+            size: [164.000000, 76.000000]
+            components:
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                position: [0.000000, 10.000000]
+                size: [119.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                font: "WarHeliosCondC_Bold_25_gold_xp"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 45.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -13.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "icon"
+                position: [122.000000, 12.000000]
+                size: [30.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -11.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+            -   class: "UIStaticText"
+                name: "title"
+                position: [2.000000, 38.000000]
+                size: [150.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["RIGHT", "VCENTER"]
+                text: "hangar stats gold"
+                font: "WarHeliosCondC_17"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 2.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 8.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "divider"
+                position: [162.000000, 0.000000]
+                size: [2.000000, 76.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/Hangar/CurrencyDivider"
+        -   class: "UIControl"
+            name: "credits"
+            position: [164.000000, 0.000000]
+            size: [164.000000, 76.000000]
+            visible: true
+            components:
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    align: ["RIGHT", "VCENTER"]
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                position: [0.000000, 10.000000]
+                size: [119.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                font: "WarHeliosCondC_Bold_25_gold_xp"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 45.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -13.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "icon"
+                position: [122.000000, 12.000000]
+                size: [30.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -11.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                        frame: 1
+            -   class: "UIStaticText"
+                name: "title"
+                position: [2.000000, 38.000000]
+                size: [150.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["RIGHT", "VCENTER"]
+                text: "hangar stats credits"
+                font: "WarHeliosCondC_17"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 2.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 8.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "experience"
+            position: [328.000000, 0.000000]
+            size: [164.000000, 76.000000]
+            components:
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    align: ["LEFT", "VCENTER"]
+            children:
+            -   class: "UIStaticText"
+                name: "value"
+                position: [0.000000, 10.000000]
+                size: [119.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                textalign: ["RIGHT", "VCENTER"]
+                font: "WarHeliosCondC_Bold_25_gold_xp"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 45.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -13.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "icon"
+                position: [122.000000, 12.000000]
+                size: [30.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -11.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                        frame: 2
+            -   class: "UIStaticText"
+                name: "title"
+                position: [2.000000, 38.000000]
+                size: [150.000000, 30.000000]
+                noInput: true
+                shadowoffset: [0.000000, 1.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 0.750000]
+                textalign: ["RIGHT", "VCENTER"]
+                text: "hangar stats xp"
+                font: "WarHeliosCondC_17"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 2.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 12.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 8.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "divider"
+                position: [0.000000, 0.000000]
+                size: [2.000000, 76.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_ALIGNED"
+                        sprite: "~res:/Gfx/UI/Hangar/CurrencyDivider"
+    -   prototype: "StyledButton/DefaultStyledButton"
+        name: "shopButton"
+        size: [84.000000, 68.000000]
+        classes: "button button-color-green"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            position: [0.000000, 0.000000]
+            size: [84.000000, 68.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 23
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Spacer"
+        size: [2.000000, 76.000000]
+        components:
+            Anchor:
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true

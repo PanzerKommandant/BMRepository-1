@@ -1,0 +1,5 @@
+1
+module_autorepair0.tex
+508 320
+1
+0 0 508 249 0 71 0 frame0

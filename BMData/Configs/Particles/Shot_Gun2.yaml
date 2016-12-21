@@ -1,0 +1,80 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 1.000000
+    emissionVector: [0.000000, 1.000000, -0.000000]
+    emissionVectorInverted: true
+    name: "Particle Emitter"
+    radius: 40.000000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.500500, 0.480100, 0.167700, 0.990000, 0.000000]
+    blending: 3
+    colorOverLife: [0.000000, [255.000000, 251.474701, 213.680893, 255.000000], 0.483800, [255.000000, 128.000000, 0.000000, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.050000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.500000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Exp"
+    number: 30.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [5.000000, 5.000000]
+    sprite: "../../Gfx/Particles/alpha/o2_expGlowB"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 0.010000
+layer1:
+    activeLODS: [1, 1, 1, 1]
+    blending: 3
+    colorOverLife: [0.000000, [255.000000, 156.147903, 0.000000, 255.000000], 0.115300, [246.000000, 255.000000, 223.000000, 0.000000], 1.000000, [240.000000, 0.000000, 0.000000, 0.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.060000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.400000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "Bloom"
+    number: 25.000000
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [2.500000, 2.500000]
+    spin: 0.000000
+    sprite: "../../Gfx/Particles/alpha/o2SMOKEB"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 82.540901

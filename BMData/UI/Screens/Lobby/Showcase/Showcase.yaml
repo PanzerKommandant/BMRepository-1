@@ -1,0 +1,1355 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/HangarBaseScreen.yaml"
+- "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+StyleSheets:
+-   selector: ".fb-button"
+    properties:
+        bg-frame: 1
+        exclusiveInput: true
+-   selector: ".fb-button:disabled"
+    properties:
+        bg-frame: 2
+-   selector: ".fb-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+Controls:
+-   prototype: "HangarBaseScreen/Screen"
+    name: "Screen"
+    children:
+    -   path: "Header/Layout/leftContent"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 100.000000
+        children: []
+    -   path: "Header/Layout/leftContent/label"
+        size: [500.000000, 76.000000]
+        visible: true
+        textalign: ["HCENTER", "VCENTER"]
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: false
+    -   path: "Header/Layout/rightContent"
+        noInput: true
+        children: []
+    -   path: "Header/Layout/rightContent/CurrencyPanel"
+        visible: false
+        children: []
+    -   path: "Content/Background"
+        visible: true
+        components:
+            Anchor:
+                topAnchor: -80.000000
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: ""
+        children:
+        -   class: "UIControl"
+            name: "tankInfo"
+            position: [0.000000, 98.000000]
+            size: [1024.000000, 50.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 98.000000
+            children:
+            -   class: "UIControl"
+                name: "bgRight"
+                position: [512.000000, 0.000000]
+                size: [512.000000, 50.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                        spriteModification: ["FLIP_HORIZONTAL"]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "bgLeft"
+                size: [512.000000, 50.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/BlackGradTile"
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIControl"
+                name: "tankName"
+                position: [312.000000, 3.500000]
+                size: [400.000000, 43.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "showcase"
+            size: [1024.000000, 768.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    color: [0.000000, 0.000000, 0.000000, 0.800000]
+            children:
+            -   class: "UIControl"
+                name: "trainingDialog"
+                position: [0.000000, 80.000000]
+                size: [1024.000000, 608.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 80.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 80.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/PriceBackground"
+                        frame: 1
+                children:
+                -   class: "UIControl"
+                    name: "setMasteryLevelContainer"
+                    position: [10.000000, 0.000000]
+                    size: [1004.000000, 608.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 10.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 10.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [1.000000, 1.000000, 1.000000, 0.000000]
+                    children:
+                    -   class: "UIControl"
+                        name: "regimentSchool"
+                        position: [386.000122, 304.000000]
+                        size: [234.000000, 160.000000]
+                        pivot: [0.004274, 0.500000]
+                        tag: 75
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                        children:
+                        -   class: "UIControl"
+                            name: "selection"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 1
+                        -   class: "UIStaticText"
+                            name: "regimentSchoolText"
+                            position: [0.000000, 52.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "AVATAR_REGIMENT_SCHOOL_TEXT"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 52.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            customClass: "UIStaticTextWithAlignedIcon"
+                            name: "priceLabel"
+                            position: [0.000000, 156.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: -26.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [1.000000, 1.000000, 1.000000, 0.000000]
+                            children:
+                            -   class: "UIStaticText"
+                                name: "costText"
+                                size: [234.000000, 30.000000]
+                                noInput: true
+                                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                text: "0"
+                                font: "WarHeliosCondC_Bold_21"
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        align: ["LEFT", "VCENTER"]
+                            -   class: "UIControl"
+                                name: "imageGold"
+                                position: [190.000000, 0.000000]
+                                size: [40.000000, 30.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                                        frame: 1
+                        -   prototype: "DiscountLabel/DiscountLabel"
+                            name: "discount"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 6.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 28.000000
+                        -   class: "UIStaticText"
+                            name: "upgradeToLabel"
+                            position: [12.000000, 83.000000]
+                            size: [210.000000, 50.000000]
+                            noInput: true
+                            textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            multiline: "MULTILINE_ENABLED"
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "AVATAR_SCREEN_UPDARADE_UP_TO"
+                            font: "WarHeliosCondC_17"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 12.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 12.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 83.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIStaticText"
+                            name: "levelText"
+                            position: [63.500000, 100.000000]
+                            size: [107.000000, 40.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "75%"
+                            font: "WarHeliosCondC_Bold_40"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 100.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "icon"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 2
+                    -   class: "UIControl"
+                        name: "tankAcademy"
+                        position: [646.000122, 304.000000]
+                        size: [234.000000, 160.000000]
+                        pivot: [0.004274, 0.500000]
+                        tag: 100
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 260.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                frame: 3
+                        children:
+                        -   class: "UIControl"
+                            name: "selection"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 1
+                        -   class: "UIStaticText"
+                            name: "tankAcademyText"
+                            position: [0.000000, 52.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "AVATAR_TANK_ACADEMY_TEXT"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 52.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            customClass: "UIStaticTextWithAlignedIcon"
+                            name: "priceLabel"
+                            position: [0.000000, 156.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: -26.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [1.000000, 1.000000, 1.000000, 0.000000]
+                            children:
+                            -   class: "UIStaticText"
+                                name: "costText"
+                                size: [234.000000, 30.000000]
+                                noInput: true
+                                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                text: "0"
+                                font: "WarHeliosCondC_Bold_21"
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        align: ["LEFT", "VCENTER"]
+                            -   class: "UIControl"
+                                name: "imageGold"
+                                position: [190.000000, 0.000000]
+                                size: [40.000000, 30.000000]
+                                noInput: true
+                                components:
+                                    Anchor:
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                        -   class: "UIStaticText"
+                            name: "upgradeToLabel"
+                            position: [12.000000, 83.000000]
+                            size: [210.000000, 50.000000]
+                            noInput: true
+                            textColor: [1.000000, 0.819600, 0.000000, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            multiline: "MULTILINE_ENABLED"
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "AVATAR_SCREEN_UPDARADE_UP_TO"
+                            font: "WarHeliosCondC_17"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 12.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 12.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 83.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIStaticText"
+                            name: "levelText"
+                            position: [63.500000, 100.000000]
+                            size: [107.000000, 40.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "100%"
+                            font: "WarHeliosCondC_Bold_40"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 100.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "icon"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 4
+                        -   prototype: "DiscountLabel/DiscountLabel"
+                            name: "discount"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 6.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 28.000000
+                    -   class: "UIControl"
+                        name: "baseTraining"
+                        position: [126.000114, 304.000000]
+                        size: [234.000000, 160.000000]
+                        pivot: [0.004274, 0.500000]
+                        tag: 50
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: -260.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                        children:
+                        -   class: "UIControl"
+                            name: "selection"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 1
+                        -   class: "UIStaticText"
+                            name: "regimentSchoolText"
+                            position: [0.000000, 52.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            text: "AVATAR_BASE_TRAINING_TEXT"
+                            font: "WarHeliosCondC_Bold_21"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 52.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "priceLabel"
+                            position: [0.000000, 156.000000]
+                            size: [234.000000, 30.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: -26.000000
+                                Background:
+                                    drawType: "DRAW_FILL"
+                                    color: [1.000000, 1.000000, 1.000000, 0.000000]
+                            children:
+                            -   class: "UIStaticText"
+                                name: "costText"
+                                size: [234.000000, 30.000000]
+                                noInput: true
+                                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                                text: "AVATAR_BASE_TRAINING_PRICE"
+                                font: "WarHeliosCondC_Bold_21"
+                                components:
+                                    Anchor:
+                                        leftAnchorEnabled: true
+                                        leftAnchor: 0.000000
+                                        rightAnchorEnabled: true
+                                        rightAnchor: 0.000000
+                                        topAnchorEnabled: true
+                                        topAnchor: 0.000000
+                                        bottomAnchorEnabled: true
+                                        bottomAnchor: 0.000000
+                                    Background:
+                                        align: ["LEFT", "VCENTER"]
+                        -   class: "UIStaticText"
+                            name: "upgradeToLabel"
+                            position: [12.000000, 83.000000]
+                            size: [210.000000, 50.000000]
+                            noInput: true
+                            textColor: [0.627500, 0.725500, 0.803900, 1.000000]
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            multiline: "MULTILINE_ENABLED"
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "AVATAR_SCREEN_UPDARADE_UP_TO"
+                            font: "WarHeliosCondC_17"
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 12.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 12.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 83.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIStaticText"
+                            name: "levelText"
+                            position: [63.500000, 100.000000]
+                            size: [107.000000, 40.000000]
+                            noInput: true
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [0.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+                            textalign: ["HCENTER", "TOP"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "50%"
+                            font: "WarHeliosCondC_Bold_40"
+                            components:
+                                Anchor:
+                                    hCenterAnchorEnabled: true
+                                    hCenterAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 100.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "icon"
+                            size: [234.000000, 160.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/LobbyCommon/CrewSkills"
+                                    frame: 5
+            -   class: "UIStaticText"
+                name: "lockText"
+                position: [0.000000, 508.000000]
+                size: [1024.000000, 60.000000]
+                noInput: true
+                classes: "text1 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                shadowoffset: [0.000000, 1.000000]
+                multiline: "MULTILINE_ENABLED"
+                fitting: ["REDUCE"]
+                text: "To unlock this tank upgrade the previous one in the tree."
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 200.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Hangar/PriceBackground"
+                        frame: 1
+                        align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "dealInfo"
+                position: [0.000000, 568.000000]
+                size: [1024.000000, 200.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                children:
+                -   class: "UIControl"
+                    name: "infoBack"
+                    size: [1024.000000, 120.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/Hangar/PriceBackground"
+                            frame: 1
+                -   class: "UIControl"
+                    name: "priceBack"
+                    position: [0.000000, 120.000000]
+                    size: [1024.000000, 80.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+                -   class: "UIControl"
+                    name: "info1"
+                    size: [1024.000000, 40.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [195.000000, 7.000000]
+                        size: [468.000000, 26.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 361.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 7.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 7.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "info2"
+                    position: [0.000000, 40.000000]
+                    size: [1024.000000, 40.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 40.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [195.000000, 7.000000]
+                        size: [468.000000, 26.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 361.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 7.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 7.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "info3"
+                    position: [0.000000, 80.000000]
+                    size: [1024.000000, 40.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 80.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [195.000000, 7.000000]
+                        size: [468.000000, 26.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 361.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 7.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 7.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "price1"
+                    position: [0.000000, 120.000000]
+                    size: [1024.000000, 40.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 40.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIControl"
+                        name: "labelContainer"
+                        position: [195.000000, 5.000000]
+                        size: [104.000000, 30.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 5.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "label"
+                            position: [0.000000, 2.000000]
+                            size: [35.000000, 26.000000]
+                            noInput: true
+                            classes: "text1 text-color-white"
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [1.000000, 1.000000]
+                            textalign: ["LEFT", "VCENTER"]
+                            textUseRtlAlign: "USE_BY_SYSTEM"
+                            text: "msg"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   prototype: "DiscountLabel/DiscountLabel"
+                            name: "discount"
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 7.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 7.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "price2"
+                    position: [0.000000, 160.000000]
+                    size: [1024.000000, 40.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIControl"
+                        name: "labelContainer"
+                        position: [195.000000, 5.000000]
+                        size: [104.000000, 30.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 5.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "label"
+                            position: [0.000000, 2.000000]
+                            size: [35.000000, 26.000000]
+                            noInput: true
+                            classes: "text1 text-color-white"
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [1.000000, 1.000000]
+                            textalign: ["LEFT", "VCENTER"]
+                            textUseRtlAlign: "USE_BY_SYSTEM"
+                            text: "msg"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   prototype: "DiscountLabel/DiscountLabel"
+                            name: "discount"
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 7.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 7.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "priceBig"
+                    position: [0.000000, 120.000000]
+                    size: [1024.000000, 80.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [195.000000, 27.000000]
+                        size: [468.000000, 26.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 361.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 27.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 27.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "infoBig"
+                    size: [1024.000000, 80.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "label"
+                        position: [195.000000, 27.000000]
+                        size: [468.000000, 26.000000]
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["LEFT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 195.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 361.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [785.000000, 27.000000]
+                        size: [30.000000, 26.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 209.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
+                    -   class: "UIStaticText"
+                        name: "value"
+                        position: [616.000000, 27.000000]
+                        size: [167.000000, 26.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        textalign: ["RIGHT", "VCENTER"]
+                        textUseRtlAlign: "USE_BY_SYSTEM"
+                        text: "1 000 000"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 104.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 241.000000
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                                useRtl: true
+                            Background:
+                                align: ["LEFT", "TOP"]
+                    -   class: "UIStaticText"
+                        name: "message"
+                        size: [1024.000000, 80.000000]
+                        visible: true
+                        noInput: true
+                        classes: "text1 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        shadowoffset: [1.000000, 1.000000]
+                        fitting: ["REDUCE"]
+                        text: "msg"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                align: ["LEFT", "TOP"]
+            -   prototype: "StyledButton/StyledButton"
+                name: "getTankButton"
+                size: [179.000000, 70.000000]
+                classes: "button color=button-color-green"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                children:
+                -   path: "Caption"
+                    text: "Get Tank"
+                    font: "Font_18_bold"
+            -   class: "UIControl"
+                name: "congratsDialog"
+                position: [0.000000, 688.000000]
+                size: [1024.000000, 80.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+                children:
+                -   prototype: "StyledButton/StyledButton"
+                    name: "toHangarButton"
+                    size: [179.000000, 70.000000]
+                    classes: "button button-color-green"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   path: "Caption"
+                        text: "#hangar_showcase:ToTankButton"
+                        font: "Font_18_bold"
+            -   class: "UIControl"
+                name: "shareOnFacebook"
+                size: [70.000000, 70.000000]
+                visible: false
+                classes: "fb-button"
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 4.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 4.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/IconsSocialBigOn"
+                        frame: 0

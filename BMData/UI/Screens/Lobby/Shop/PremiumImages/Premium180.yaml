@@ -1,0 +1,38 @@
+Header:
+    version: "0"
+StyleSheets: []
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/PremiumImages/PremiumAnimated.yaml"
+Controls:
+-   prototype: "PremiumAnimated/Image"
+    name: "Image"
+    children:
+    -   path: "Effects"
+        children:
+        -   class: "UIParticles"
+            name: "effect2"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Shop/180/glow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "effect3"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Shop/180/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "PremFx"
+            size: [10.000000, 10.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            hcenterAlignEnabled: true
+            vcenterAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Shop/180/flow.sc2"
+            autoStart: true

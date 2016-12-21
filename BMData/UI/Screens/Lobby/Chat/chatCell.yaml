@@ -1,0 +1,96 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/CommonStyles.yaml"
+Controls:
+-   class: "UIControl"
+    name: "chatCell"
+    size: [466.000000, 40.000000]
+    children:
+    -   class: "UIControl"
+        name: "chatMsgCell"
+        size: [466.000000, 40.000000]
+        components:
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 0.047100]
+        children:
+        -   class: "UIControl"
+            name: "chatMsgCellBg"
+            size: [466.000000, 40.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.047100]
+        -   class: "UIStaticText"
+            name: "fromName"
+            position: [30.000000, 3.000000]
+            size: [136.000000, 34.000000]
+            noInput: true
+            classes: "textColor=chat-nick-text-color"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            fitting: ["POINTS"]
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "UIStaticText1"
+            font: "WarHeliosCondC_Bold_21"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 30.000000
+                    topAnchorEnabled: true
+                    topAnchor: 3.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 3.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "msgText"
+            position: [182.000000, 0.000000]
+            size: [204.000000, 40.000000]
+            noInput: true
+            classes: "textColor=chat-msg-text-color"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["LEFT", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "UIStaticText1"
+            font: "WarHeliosCondC_21"
+            components:
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIStaticText"
+            name: "timeText"
+            position: [386.000000, 3.000000]
+            size: [80.000000, 34.000000]
+            noInput: true
+            classes: "textColor=chat-date-text-color"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            shadowoffset: [1.000000, 1.000000]
+            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
+            textalign: ["HCENTER", "VCENTER"]
+            textUseRtlAlign: "DONT_USE"
+            text: "15:03"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 3.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 3.000000
+                Background:
+                    align: ["LEFT", "TOP"]

@@ -1,0 +1,61 @@
+<root>
+	<ids>
+		<_90mm_canon_DCA_45A>60</_90mm_canon_DCA_45A>
+	</ids>
+	<shared>
+		<_90mm_canon_DCA_45A>
+			<userString>#france_vehicles:_90mm_canon_DCA_45</userString>
+			<description>#france_vehicles:_90mm_canon_DCA_45</description>
+			<tags/>
+			<level>8</level>
+			<price>121250</price>
+			<notInShop>true</notInShop>
+			<impulse>0.46</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.38</amplitude>
+				<backoffTime>0.1</backoffTime>
+				<returnTime>0.36</returnTime>
+			</recoil>
+			<effects>shot_main_mb</effects>
+			<pitchLimits>-17 6</pitchLimits>
+			<rotationSpeed>35.0</rotationSpeed>
+			<reloadTime>7.42857142857143</reloadTime>
+			<maxAmmo>91</maxAmmo>
+			<aimingTime>2.28571428571429</aimingTime>
+			<weight>2750</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>7</repairCost>
+			<shotDispersionRadius>0.411428571428571</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>0.12</turretRotation>
+				<afterShot>3.5</afterShot>
+				<whileGunDamaged>2.0</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_90mm_Prf1941>
+					<defaultPortion>0.8</defaultPortion>
+					<speed>1000</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>212 193</piercingPower>
+				</_90mm_Prf1941>
+				<_90mm_FrtPrf1944>
+					<defaultPortion>0.0</defaultPortion>
+					<speed>1250</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>259 228</piercingPower>
+				</_90mm_FrtPrf1944>
+				<_90mm_OE_mle_1924>
+					<defaultPortion>0.2</defaultPortion>
+					<speed>1000</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>45 45</piercingPower>
+				</_90mm_OE_mle_1924>
+			</shots>
+		</_90mm_canon_DCA_45A>
+	</shared>
+</root>

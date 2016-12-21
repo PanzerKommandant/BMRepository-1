@@ -1,0 +1,832 @@
+<root>
+	<blitz>
+		<smallIconPath>~res:/Gfx/UI/BattleScreenHUD/SmallTankIcons/britsh-Covenanter</smallIconPath>
+		<bigIconPath>~res:/Gfx/UI/BigTankIcons/britsh-Covenanter</bigIconPath>
+		<blitzModelPath>Tanks/GB/covenanter.sc2</blitzModelPath>
+		<blitzDestructedModelPath>Tanks/GB/covenanter_crash.sc2</blitzDestructedModelPath>
+		<engineSoundPC>tanks/pc/engine/uk/lt</engineSoundPC>
+		<engineSoundNPC>tanks/npc/engine/uk/lt</engineSoundNPC>
+		<smokeEffectPath>FX/smoke_tank_type_black_new_4.sc2</smokeEffectPath>
+		<fireEffectPathAlive>FX/SmokeFire_tank_movement_new.sc2</fireEffectPathAlive>
+		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
+		<collisionMesh>CollisionMeshes/uk-GB60_Covenanter.sc2</collisionMesh>
+		<exclusionMask>Camouflages/uk/CamouflageMasks/GB60_Covenanter_CM.tex</exclusionMask>
+	</blitz>
+	<crew>
+		<commander>radioman</commander>
+		<gunner/>
+		<driver/>
+		<loader/>
+	</crew>
+	<speedLimits>
+		<forward>50</forward>
+		<backward>20</backward>
+	</speedLimits>
+	<invisibility>
+		<camouflageNetBonus>0.1</camouflageNetBonus>
+		</invisibility>
+	<repairCost>4.17</repairCost>
+	<crewXpFactor>1.0</crewXpFactor>
+	<effects>
+		<destruction>mediumDestruction</destruction>
+		<explosion>mediumExplosion</explosion>
+		<flaming>mediumFlaming</flaming>
+		<collision/>
+	</effects>
+	<camouflage>
+		<priceFactor>0.8</priceFactor>
+		<tiling>1 1 0 0</tiling>
+		<exclusionMask>vehicles/british/GB60_Covenanter/Covenanter_CM.dds</exclusionMask>
+	</camouflage>
+	<emblems>
+		<default>britain_color</default>
+		<lodDist>MEDIUM</lodDist>
+		<alpha>0.88</alpha>
+	</emblems>
+	<horns>
+		<priceFactor>1</priceFactor>
+		<distanceFactor>1</distanceFactor>
+		<volumeFactor>1</volumeFactor>
+	</horns>
+	<hull>
+		<blitz>
+			<averageThickness>
+				<turret_01>37.821712</turret_01>
+				<turret_02>38.346317</turret_02>
+			</averageThickness>
+			<blitzPartName>hull</blitzPartName>
+			<bbox>
+				<min>-0.965532 -2.672368 -0.530721</min>
+				<max>0.970239 2.678955 0.523345</max>
+			</bbox>
+			<points>
+				<normal>-0.002000 -0.000000 -0.899649</normal>
+				<crash>-0.001058 0.000000 -0.900000</crash>
+			</points>
+		</blitz>
+		<models>
+			<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Hull.model</undamaged>
+			<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Hull.model</destroyed>
+			<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Hull.model</exploded>
+		</models>
+		<swinging>
+			<lodDist>FAR</lodDist>
+			<pitchParams>0.28 37.00 0.34 1.00 0.05 0.33</pitchParams>
+			<rollParams>1.00 0.28 37.00 0.34 1.00 0.05 0.33</rollParams>
+			<sensitivityToImpulse>0.76</sensitivityToImpulse>
+		</swinging>
+		<exhaust>
+			<pixie>particles/Tank/engine_exit_gass.xml</pixie>
+			<nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2 HP_Track_Exhaus_3 HP_Track_Exhaus_4</nodes>
+			<rates>5.0 10.0 25.0</rates>
+		</exhaust>
+		<turretPositions>
+			<turret>0.000000 0.471042 0.313399</turret>
+		</turretPositions>
+		<hitTester>
+			<collisionModel>vehicles/british/GB60_Covenanter/collision/Hull.model</collisionModel>
+		</hitTester>
+		<armor>
+			<armor_1>16</armor_1>
+			<armor_2>31</armor_2>
+			<armor_3>30</armor_3>
+			<armor_4>25</armor_4>
+			<armor_5>7</armor_5>
+			<armor_6>9</armor_6>
+			<armor_7>9</armor_7>
+			<armor_8>0</armor_8>
+			<armor_9>40</armor_9>
+			<armor_10>14</armor_10>
+			<armor_11>30</armor_11>
+			<armor_12>20</armor_12>
+			<armor_13>15</armor_13>
+		</armor>
+		<primaryArmor>armor_9 armor_3 armor_4</primaryArmor>
+		<weight>9510</weight>
+		<maxHealth>392</maxHealth>
+		<ammoBayHealth>
+			<maxHealth>140</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+			</ammoBayHealth>
+		<emblemSlots>
+			<clan>
+				<rayStart>0.527237 0.180463 2.46189</rayStart>
+				<rayEnd>0.527237 0.00633864 2.3635</rayEnd>
+				<rayUp>0.000000 0.000000 -1</rayUp>
+				<size>0.25</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</clan>
+		</emblemSlots>
+	</hull>
+	<chassis>
+		<Chassis_GB60_Covenanter>
+			<blitz>
+				<blitzPartName>chassis</blitzPartName>
+				<bbox>
+					<min>-1.281600 -2.852904 -0.000000</min>
+					<max>1.281600 2.674623 1.037363</max>
+				</bbox>
+				<points>
+					<normal>0.000000 0.000000 -0.000000</normal>
+					<crash>0.0 0.0 0.0</crash>
+				</points>
+				<soundPC>tanks/pc/treads/lt</soundPC>
+				<soundNPC>tanks/npc/treads/lt</soundNPC>
+			</blitz>
+			<userString>#gb_vehicles:Chassis_GB60_Covenanter</userString>
+			<description>#gb_vehicles:Chassis_GB60_Covenanter_descr</description>
+			<tags/>
+			<level>3</level>
+			<price>0</price>
+			<unlocks>
+				<chassis>Chassis_GB60_Covenanter_2<cost>1360</cost>
+				</chassis>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Chassis.model</undamaged>
+				<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Chassis.model</destroyed>
+				<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Chassis.model</exploded>
+			</models>
+			<traces>
+				<lodDist>FAR</lodDist>
+				<bufferPrefs>largeTank</bufferPrefs>
+				<textureSet>germany_01</textureSet>
+				<size>0.44 0.28</size>
+			</traces>
+			<tracks>
+				<lodDist>MEDIUM</lodDist>
+				<leftMaterial>track_mat_L_skinned</leftMaterial>
+				<rightMaterial>track_mat_R_skinned</rightMaterial>
+				<textureScale>-1.62</textureScale>
+			</tracks>
+			<wheels>
+				<lodDist>MEDIUM</lodDist>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L0</name>
+					<radius>0.254906</radius>
+				</wheel>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L1</name>
+					<radius>0.321305</radius>
+				</wheel>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R0</name>
+					<radius>0.254906</radius>
+				</wheel>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R1</name>
+					<radius>0.321305</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>W_L</template>
+					<radius>0.416103</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+				<group>
+					<isLeft>false</isLeft>
+					<template>W_R</template>
+					<radius>0.416103</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+			</wheels>
+			<drivingWheels>WD_L0 WD_L1</drivingWheels>
+			<effects>
+				<lodDist>MEDIUM</lodDist>
+				<dust>mediumTankDust</dust>
+				<mud>mediumTankMud</mud>
+			</effects>
+			<sound>/vehicles/tanks/treads/treads_1</sound>
+			<hullPosition>0.000000 0.9 0.000000</hullPosition>
+			<hitTester>
+				<collisionModel>vehicles/british/GB60_Covenanter/collision/Chassis.model</collisionModel>
+			</hitTester>
+			<armor>
+				<leftTrack>15</leftTrack>
+				<rightTrack>15</rightTrack>
+			</armor>
+			<topRightCarryingPoint>1.16374 1.61203</topRightCarryingPoint>
+			<maxClimbAngle>25</maxClimbAngle>
+			<navmeshGirth>6.0</navmeshGirth>
+			<weight>4500</weight>
+			<maxLoad>20500</maxLoad>
+			<terrainResistance>1 1.2 1.5</terrainResistance>
+			<brakeForce>18000</brakeForce>
+			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationSpeed>38</rotationSpeed>
+			<shotDispersionFactors>
+				<vehicleMovement>0.22</vehicleMovement>
+				<vehicleRotation>0.22</vehicleRotation>
+			</shotDispersionFactors>
+			<bulkHealthFactor>3.0</bulkHealthFactor>
+			<maxHealth>70</maxHealth>
+			<maxRegenHealth>55</maxRegenHealth>
+			<repairCost>5.0</repairCost>
+			</Chassis_GB60_Covenanter>
+		<Chassis_GB60_Covenanter_2>
+			<blitz>
+				<blitzPartName>chassis</blitzPartName>
+				<bbox>
+					<min>-1.281600 -2.852904 -0.000000</min>
+					<max>1.281600 2.674623 1.037363</max>
+				</bbox>
+				<points>
+					<normal>0.000000 0.000000 -0.000000</normal>
+					<crash>0.0 0.0 0.0</crash>
+				</points>
+				<soundPC>tanks/pc/treads/lt</soundPC>
+				<soundNPC>tanks/npc/treads/lt</soundNPC>
+			</blitz>
+			<userString>#gb_vehicles:Chassis_GB60_Covenanter_2</userString>
+			<description>#gb_vehicles:Chassis_GB60_Covenanter_2_descr</description>
+			<tags/>
+			<level>4</level>
+			<price>0</price>
+			<models>
+				<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Chassis.model</undamaged>
+				<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Chassis.model</destroyed>
+				<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Chassis.model</exploded>
+			</models>
+			<traces>
+				<lodDist>FAR</lodDist>
+				<bufferPrefs>largeTank</bufferPrefs>
+				<textureSet>germany_01</textureSet>
+				<size>0.44 0.28</size>
+			</traces>
+			<tracks>
+				<lodDist>MEDIUM</lodDist>
+				<leftMaterial>track_mat_L_skinned</leftMaterial>
+				<rightMaterial>track_mat_R_skinned</rightMaterial>
+				<textureScale>-1.62</textureScale>
+			</tracks>
+			<wheels>
+				<lodDist>MEDIUM</lodDist>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L0</name>
+					<radius>0.254906</radius>
+				</wheel>
+				<wheel>
+					<isLeft>true</isLeft>
+					<name>WD_L1</name>
+					<radius>0.321305</radius>
+				</wheel>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R0</name>
+					<radius>0.254906</radius>
+				</wheel>
+				<wheel>
+					<isLeft>false</isLeft>
+					<name>WD_R1</name>
+					<radius>0.321305</radius>
+				</wheel>
+				<group>
+					<isLeft>true</isLeft>
+					<template>W_L</template>
+					<radius>0.416103</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+				<group>
+					<isLeft>false</isLeft>
+					<template>W_R</template>
+					<radius>0.416103</radius>
+					<startIndex>0</startIndex>
+					<count>4</count>
+				</group>
+			</wheels>
+			<drivingWheels>WD_L0 WD_L1</drivingWheels>
+			<effects>
+				<lodDist>MEDIUM</lodDist>
+				<dust>mediumTankDust</dust>
+				<mud>mediumTankMud</mud>
+			</effects>
+			<sound>/vehicles/tanks/treads/treads_1</sound>
+			<hullPosition>0.000000 0.9 0.000000</hullPosition>
+			<hitTester>
+				<collisionModel>vehicles/british/GB60_Covenanter/collision/Chassis.model</collisionModel>
+			</hitTester>
+			<armor>
+				<leftTrack>15</leftTrack>
+				<rightTrack>15</rightTrack>
+			</armor>
+			<topRightCarryingPoint>1.16374 1.61203</topRightCarryingPoint>
+			<maxClimbAngle>25</maxClimbAngle>
+			<navmeshGirth>6.0</navmeshGirth>
+			<weight>4500</weight>
+			<maxLoad>20500</maxLoad>
+			<terrainResistance>0.9 1 1.4</terrainResistance>
+			<brakeForce>20000</brakeForce>
+			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationSpeed>40</rotationSpeed>
+			<shotDispersionFactors>
+				<vehicleMovement>0.2</vehicleMovement>
+				<vehicleRotation>0.2</vehicleRotation>
+			</shotDispersionFactors>
+			<bulkHealthFactor>3.0</bulkHealthFactor>
+			<maxHealth>80</maxHealth>
+			<maxRegenHealth>60</maxRegenHealth>
+			<repairCost>5.0</repairCost>
+			</Chassis_GB60_Covenanter_2>
+	</chassis>
+	<turrets0>
+		<Turret_1_GB60_Covenanter>
+			<blitz>
+				<blitzPartName>turret_01</blitzPartName>
+				<bbox>
+					<min>-1.005043 -1.297420 -0.689640</min>
+					<max>1.005043 0.832724 0.854249</max>
+				</bbox>
+				<points>
+					<normal>-0.001000 -0.313397 -1.371999</normal>
+					<crash>-0.001000 -0.312238 -1.371191</crash>
+				</points>
+			</blitz>
+			<userString>#gb_vehicles:Turret_1_GB60_Covenanter</userString>
+			<description>#gb_vehicles:Turret_1_GB60_Covenanter_descr</description>
+			<tags/>
+			<level>3</level>
+			<price>0</price>
+			<unlocks>
+				<turret>Turret_2_GB60_Covenanter<cost>1240</cost>
+				</turret>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Turret_01.model</undamaged>
+				<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Turret_01.model</destroyed>
+				<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Turret_01.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/british/GB60_Covenanter/collision/Turret_01.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>-0.015997 0.313288 0.654896</gunPosition>
+			<armor>
+				<armor_1>39</armor_1>
+				<armor_2>48</armor_2>
+				<armor_3>19.5</armor_3>
+				<armor_4>25</armor_4>
+				<armor_5>9</armor_5>
+				<armor_6>9</armor_6>
+				<armor_7>39</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>9</armor_9>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>3000</weight>
+			<maxHealth>98</maxHealth>
+			<rotationSpeed>48</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>80</maxHealth>
+				<maxRegenHealth>40</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>230</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>60</maxHealth>
+				<maxRegenHealth>30</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<emblemSlots>
+				<player>
+					<rayStart>0.849418 0.553879 0.372089</rayStart>
+					<rayEnd>0.586669 0.273591 0.260726</rayEnd>
+					<rayUp>-0.8245 0.488836 -0.285025</rayUp>
+					<size>0.25</size>
+					<hideIfDamaged>false</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>-0.849418 0.553879 0.372089</rayStart>
+					<rayEnd>-0.586669 0.273591 0.260726</rayEnd>
+					<rayUp>0.8245 0.488836 -0.285026</rayUp>
+					<size>0.25</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</player>
+				<inscription>
+					<rayStart>0.937638 0.505883 -0.448748</rayStart>
+					<rayEnd>0.65284 0.228307 -0.405841</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.73</size>
+					<hideIfDamaged>false</hideIfDamaged>
+				</inscription>
+			</emblemSlots>
+			<guns>
+				<_2pdr_Gun_Mk_X>shared<blitz>
+						<blitzPartName>gun_01</blitzPartName>
+						<bbox>
+							<min>-0.333708 -0.667193 -0.188260</min>
+							<max>0.355695 1.489159 0.188260</max>
+						</bbox>
+						<points>
+							<normal>0.015997 -0.967450 -1.685330</normal>
+							<crash>0.015997 -0.968219 -1.685331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>130</maxAmmo>
+					<pitchLimits>-25 15</pitchLimits>
+					<unlocks>
+						<gun>_40mm_Pom_Pom<cost>1800</cost>
+						</gun>
+						<gun>_76mm_Howitzer_MkI<cost>2370</cost>
+						</gun>
+					</unlocks>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_01.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_01.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_01.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_01.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>10</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-25 12 45</front>
+						<back>-25 10 35</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.36</shotDispersionRadius>
+					<reloadTime>3.4</reloadTime>
+					<aimingTime>1.7</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>0.1</turretRotation>
+						<afterShot>3</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+				</_2pdr_Gun_Mk_X>
+				<_40mm_Pom_Pom>shared<blitz>
+						<blitzPartName>gun_02</blitzPartName>
+						<bbox>
+							<min>-0.333708 -0.667198 -0.188260</min>
+							<max>0.355695 1.589524 0.188260</max>
+						</bbox>
+						<points>
+							<normal>0.015997 -0.968466 -1.685330</normal>
+							<crash>0.015997 -0.967645 -1.686330</crash>
+						</points>
+					</blitz>
+					<maxAmmo>200</maxAmmo>
+					<pitchLimits>-25 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_02.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_02.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_02.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_02.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>10</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-25 10 45</front>
+						<back>-25 8 45</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.41</shotDispersionRadius>
+					<reloadTime>7.5</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.1</turretRotation>
+						<afterShot>2.2</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>1.9</aimingTime>
+					<clip>
+						<count>4</count>
+						<rate>120</rate>
+					</clip>
+					<burst>
+						<count>2</count>
+						<rate>120</rate>
+					</burst>
+				</_40mm_Pom_Pom>
+				<_76mm_Howitzer_MkI>shared<blitz>
+						<blitzPartName>gun_03</blitzPartName>
+						<bbox>
+							<min>-0.333708 -0.667193 -0.188260</min>
+							<max>0.355695 1.399021 0.188260</max>
+						</bbox>
+						<points>
+							<normal>0.015997 -0.968293 -1.684330</normal>
+							<crash>0.015997 -0.969401 -1.685331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>74</maxAmmo>
+					<pitchLimits>-25 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_03.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_03.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_03.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_03.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>20</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-25 12 45</front>
+						<back>-25 10 40</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.53</shotDispersionRadius>
+					<reloadTime>10.25</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4.0</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					</_76mm_Howitzer_MkI>
+			</guns>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</Turret_1_GB60_Covenanter>
+		<Turret_2_GB60_Covenanter>
+			<blitz>
+				<blitzPartName>turret_02</blitzPartName>
+				<bbox>
+					<min>-1.005043 -1.297420 -0.689640</min>
+					<max>1.005043 0.951190 0.854249</max>
+				</bbox>
+				<points>
+					<normal>-0.000000 -0.313397 -1.370574</normal>
+					<crash>0.000001 -0.313545 -1.375207</crash>
+				</points>
+			</blitz>
+			<userString>#gb_vehicles:Turret_2_GB60_Covenanter</userString>
+			<description>#gb_vehicles:Turret_2_GB60_Covenanter_descr</description>
+			<tags/>
+			<level>4</level>
+			<price>0</price>
+			<unlocks>
+				<gun>_40mm_Bofors_MkI<cost>1800</cost>
+				</gun>
+				<vehicle>GB20_Crusader<cost>16950</cost>
+				</vehicle>
+			</unlocks>
+			<models>
+				<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Turret_02.model</undamaged>
+				<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Turret_02.model</destroyed>
+				<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Turret_02.model</exploded>
+			</models>
+			<hitTester>
+				<collisionModel>vehicles/british/GB60_Covenanter/collision/Turret_02.model</collisionModel>
+			</hitTester>
+			<yawLimits>-180 180</yawLimits>
+			<gunPosition>-0.00968 0.313288 0.704896</gunPosition>
+			<armor>
+				<armor_1>39</armor_1>
+				<armor_2>39</armor_2>
+				<armor_3>19.5</armor_3>
+				<armor_4>25</armor_4>
+				<armor_5>9</armor_5>
+				<armor_6>9</armor_6>
+				<armor_7>39</armor_7>
+				<armor_8>0</armor_8>
+				<armor_9>9</armor_9>
+				<armor_10>39</armor_10>
+				<armor_11>39</armor_11>
+			</armor>
+			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+			<weight>3000</weight>
+			<maxHealth>148</maxHealth>
+			<rotationSpeed>48</rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth>80</maxHealth>
+				<maxRegenHealth>40</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</turretRotatorHealth>
+			<circularVisionRadius>230</circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth>60</maxHealth>
+				<maxRegenHealth>30</maxRegenHealth>
+				<repairCost>1.0</repairCost>
+				</surveyingDeviceHealth>
+			<emblemSlots>
+				<player>
+					<rayStart>0.780247 0.471377 0.383751</rayStart>
+					<rayEnd>0.648873 0.331233 0.32807</rayEnd>
+					<rayUp>-0.799511 0.490122 -0.34722</rayUp>
+					<size>0.25</size>
+					<hideIfDamaged>false</hideIfDamaged>
+				</player>
+				<player>
+					<rayStart>-0.780247 0.471377 0.383751</rayStart>
+					<rayEnd>-0.648873 0.331233 0.32807</rayEnd>
+					<rayUp>0.8245 0.488836 -0.285026</rayUp>
+					<size>0.25</size>
+					<hideIfDamaged>false</hideIfDamaged>
+				</player>
+				<inscription>
+					<rayStart>0.00394696 0.597272 -1.5206</rayStart>
+					<rayEnd>0.00394696 0.48964 -1.35204</rayEnd>
+					<rayUp>0.000000 1 0.000000</rayUp>
+					<size>0.7</size>
+					<hideIfDamaged>true</hideIfDamaged>
+				</inscription>
+			</emblemSlots>
+			<guns>
+				<_2pdr_Gun_Mk_X>shared<blitz>
+						<blitzPartName>gun_04</blitzPartName>
+						<bbox>
+							<min>-0.089640 -0.727347 -0.085928</min>
+							<max>0.082614 1.439812 0.086322</max>
+						</bbox>
+						<points>
+							<normal>0.009680 -1.017797 -1.683330</normal>
+							<crash>0.009674 -1.019737 -1.685331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>130</maxAmmo>
+					<pitchLimits>-20 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_04.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_04.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_04.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_04.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>10</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-20 13 45</front>
+						<back>-20 10 35</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.36</shotDispersionRadius>
+					<reloadTime>3.3</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.08</turretRotation>
+						<afterShot>3</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>1.7</aimingTime>
+					</_2pdr_Gun_Mk_X>
+				<_40mm_Pom_Pom>shared<blitz>
+						<blitzPartName>gun_05</blitzPartName>
+						<bbox>
+							<min>-0.093123 -0.727348 -0.088161</min>
+							<max>0.088567 1.460191 0.078300</max>
+						</bbox>
+						<points>
+							<normal>0.009680 -1.017063 -1.684331</normal>
+							<crash>0.009680 -1.018786 -1.683331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>200</maxAmmo>
+					<pitchLimits>-20 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_05.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_05.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_05.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_05.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>10</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-20 11 45</front>
+						<back>-20 8 45</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.41</shotDispersionRadius>
+					<reloadTime>7.5</reloadTime>
+					<aimingTime>1.9</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>0.08</turretRotation>
+						<afterShot>2</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<clip>
+						<count>4</count>
+						<rate>120</rate>
+					</clip>
+					<burst>
+						<count>2</count>
+						<rate>120</rate>
+					</burst>
+				</_40mm_Pom_Pom>
+				<_76mm_Howitzer_MkI>shared<blitz>
+						<blitzPartName>gun_06</blitzPartName>
+						<bbox>
+							<min>-0.083220 -0.727345 -0.079899</min>
+							<max>0.076973 1.338869 0.080295</max>
+						</bbox>
+						<points>
+							<normal>0.009680 -1.019112 -1.685331</normal>
+							<crash>0.009680 -1.016736 -1.684331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>74</maxAmmo>
+					<pitchLimits>-20 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_06.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_06.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_06.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_06.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>20</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-20 12 45</front>
+						<back>-20 10 40</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.53</shotDispersionRadius>
+					<reloadTime>10.25</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.16</turretRotation>
+						<afterShot>4.0</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>2.3</aimingTime>
+					</_76mm_Howitzer_MkI>
+				<_40mm_Bofors_MkI>shared<blitz>
+						<blitzPartName>gun_07</blitzPartName>
+						<bbox>
+							<min>-0.085975 -0.727344 -0.082653</min>
+							<max>0.079728 2.074342 0.083051</max>
+						</bbox>
+						<points>
+							<normal>0.009680 -1.018558 -1.684330</normal>
+							<crash>0.009680 -1.017736 -1.684331</crash>
+						</points>
+					</blitz>
+					<maxAmmo>120</maxAmmo>
+					<pitchLimits>-20 15</pitchLimits>
+					<models>
+						<undamaged>vehicles/british/GB60_Covenanter/normal/lod0/Gun_07.model</undamaged>
+						<destroyed>vehicles/british/GB60_Covenanter/crash/lod0/Gun_07.model</destroyed>
+						<exploded>vehicles/british/GB60_Covenanter/crash/lod0/Gun_07.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModel>vehicles/british/GB60_Covenanter/collision/Gun_07.model</collisionModel>
+					</hitTester>
+					<armor>
+						<armor_1>39<vehicleDamageFactor>0.0</vehicleDamageFactor>
+						</armor_1>
+						<gun>10</gun>
+					</armor>
+					<extraPitchLimits>
+						<front>-20 13 45</front>
+						<back>-20 10 35</back>
+					</extraPitchLimits>
+					<shotDispersionRadius>0.39</shotDispersionRadius>
+					<reloadTime>7</reloadTime>
+					<shotDispersionFactors>
+						<turretRotation>0.1</turretRotation>
+						<afterShot>2</afterShot>
+						<whileGunDamaged>2.0</whileGunDamaged>
+					</shotDispersionFactors>
+					<aimingTime>1.9</aimingTime>
+					<clip>
+						<count>4</count>
+						<rate>150</rate>
+					</clip>
+					<burst>
+						<count>2</count>
+						<rate>150</rate>
+					</burst>
+				</_40mm_Bofors_MkI>
+			</guns>
+			<showEmblemsOnGun>false</showEmblemsOnGun>
+			<physicsShape>1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500</physicsShape>
+		</Turret_2_GB60_Covenanter>
+	</turrets0>
+	<engines>
+		<Meadows_DAV>shared<unlocks>
+				<engine>Meadows_DAV_MkI<cost>1020</cost>
+				</engine>
+			</unlocks>
+		</Meadows_DAV>
+		<Meadows_DAV_MkI>shared</Meadows_DAV_MkI>
+	</engines>
+	<fuelTanks>
+		<Medium>shared</Medium></fuelTanks>
+	<radios>
+		<N9>shared</N9>
+	</radios>
+</root>

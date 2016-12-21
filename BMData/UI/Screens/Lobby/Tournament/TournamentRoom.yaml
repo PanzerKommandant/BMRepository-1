@@ -1,0 +1,1271 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledSmallButton.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+- "~res:/UI/Screens/Lobby/Training/TrainingRoomStyles.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/IndependenceFonts.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentRoomTimer.yaml"
+- "~res:/UI/Styles/Battle/BattleHUD.yaml"
+StyleSheets:
+-   selector: ".arrow-button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".down"
+    properties:
+        scale: [1.000000, -1.000000]
+-   selector: "#VehicleLevel"
+    properties:
+        anchor-leftAnchor: -20.000000
+        anchor-topAnchor: 5.000000
+        text-textalign: ["RIGHT", "TOP"]
+-   selector: ".not-ready #VehicleName"
+    properties:
+        text-textColor: [0.627451, 0.600000, 0.800000, 0.941176]
+-   selector: ".right-to-left"
+    properties:
+        linearLayout-orientation: "RightToLeft"
+-   selector: ".right-to-left #Header"
+    properties: {}
+-   selector: "#VehicleName"
+    properties:
+        text-textalign: ["LEFT", "TOP"]
+-   selector: ".right-to-left ? #VehicleName"
+    properties:
+        text-textalign: ["RIGHT", "TOP"]
+-   selector: "#VehicleIcon"
+    properties:
+        anchor-leftAnchor: 0.000000
+        anchor-leftAnchorEnabled: false
+        anchor-rightAnchor: 0.000000
+        anchor-rightAnchorEnabled: true
+        scale: [1.000000, 1.000000]
+-   selector: ".right-to-left ? #VehicleIcon"
+    properties:
+        anchor-leftAnchor: 0.000000
+        anchor-leftAnchorEnabled: true
+        anchor-rightAnchor: 0.000000
+        anchor-rightAnchorEnabled: false
+        scale: [1.000000, 1.000000]
+-   selector: ".right-to-left ? #VehicleLevel"
+    properties:
+        text-textalign: ["LEFT", "TOP"]
+-   selector: ".offline"
+    properties:
+        text-textColor: [0.996078, 0.000000, 0.000000, 1.000000]
+-   selector: ".selector"
+    properties:
+        visible: false
+-   selector: ".selected .selector"
+    properties:
+        bg-color: [0.960784, 0.650980, 0.133333, 1.000000]
+        visible: true
+-   selector: "#bottomSelector"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.141176]
+        sizePolicy-verticalValue: 1.000000
+-   selector: ".selected #bottomSelector"
+    properties:
+        sizePolicy-verticalValue: 2.000000
+-   selector: "#MouseIcon"
+    properties:
+        anchor-bottomAnchor: 4.000000
+        anchor-bottomAnchorEnabled: true
+        anchor-rightAnchor: -4.000000
+        anchor-rightAnchorEnabled: true
+-   selector: ".right-to-left ? #MouseIcon"
+    properties:
+        anchor-leftAnchorEnabled: true
+        anchor-rightAnchorEnabled: false
+-   selector: ".ready"
+    properties:
+        bg-color: [0.200000, 0.321569, 0.274510, 1.000000]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".ready:pressed_inside"
+    properties:
+        bg-color: [0.200000, 0.321569, 0.274510, 0.686275]
+-   selector: ".not-ready:pressed_inside"
+    properties:
+        bg-color: [0.000000, 0.000000, 0.000000, 0.098039]
+        bg-drawType: "DRAW_FILL"
+-   selector: "#TraineeName #spacer"
+    properties:
+        visible: false
+-   selector: ".right-to-left ? #TraineeName #spacer"
+    properties:
+        visible: true
+-   selector: ".button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+        bg-frame: 0
+-   selector: ".set-vertical-size"
+    properties:
+        sizePolicy-verticalPolicy: "FixedSize"
+        sizePolicy-verticalValue: 64.000000
+-   selector: ".map-random"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.862745]
+        bg-drawType: "DRAW_FILL"
+-   selector: ".map-specific"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+        bg-drawType: "DRAW_SCALE_TO_RECT"
+-   selector: ".queue #TraineeList"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: ".queue #InviteButton"
+    properties:
+        visible: false
+-   selector: ".queue #ListLine"
+    properties:
+        visible: false
+-   selector: ".queue #LeftLine"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: ".queue #RightLine"
+    properties:
+        anchor-topAnchor: 40.000000
+-   selector: ".queue-invite #TraineeList"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".queue-invite #InviteButton"
+    properties:
+        visible: true
+-   selector: ".queue-invite #ListLine"
+    properties:
+        visible: true
+-   selector: ".queue-invite #LeftLine"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".queue-invite #RightLine"
+    properties:
+        anchor-topAnchor: 120.000000
+-   selector: ".left-green-icon #icon"
+    properties:
+        bg-frame: 3
+        scale: [1.000000, 1.000000]
+-   selector: ".right-green-icon #icon"
+    properties:
+        bg-frame: 3
+        scale: [-1.000000, 1.000000]
+-   selector: ".left-red-icon #icon"
+    properties:
+        bg-frame: 2
+        scale: [-1.000000, 1.000000]
+-   selector: ".right-red-icon #icon"
+    properties:
+        bg-frame: 2
+        scale: [1.000000, 1.000000]
+-   selector: ".green-mark"
+    properties:
+        bg-frame: 0
+-   selector: ".red-mark"
+    properties:
+        bg-frame: 1
+Controls:
+-   class: "UIControl"
+    customClass: "UITournamentRoom"
+    name: "ScreenContainer"
+    size: [1024.000000, 768.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "TopPanel"
+        size: [1024.000000, 90.000000]
+        classes: "limited-width"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 90.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "MapContainer"
+            visible: true
+            classes: "map-white-back"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 90.000000
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "MapAndCount"
+                visible: true
+                classes: "miniMapType=map-random"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 90.000000
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "RespawnMarkersContainer"
+                    size: [90.000000, 90.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "markerPrototype"
+                        size: [17.000000, 17.000000]
+                        pivot: [0.500000, 0.500000]
+                        noInput: true
+                        tag: 1
+                        components:
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapRespawn"
+                                perPixelAccuracy: "PER_PIXEL_ACCURACY_DISABLED"
+                -   class: "UIControl"
+                    name: "WinsCountContainer"
+                    size: [90.000000, 90.000000]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "WinsCount"
+                        size: [0.000000, 0.000000]
+                        text: ""
+                        font: "WarHeliosCondC_Bold_40"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: -2.000000
+        -   class: "UIControl"
+            name: "DescriptionPanel"
+            classes: "panel-background"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+            children:
+            -   class: "UIControl"
+                name: "HorizContainer1"
+                noInput: true
+                components:
+                    LinearLayout:
+                        padding: 10.000000
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "GrLeft"
+                    components:
+                        FlowLayout:
+                            hSpacing: 10.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "GameplayMode"
+                        classes: "text1 text-color-white"
+                        text: "#training_rooms:RoomScreen/Mode"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIStaticText"
+                        name: "GameplayModeText"
+                        classes: "text1 text-color-blue"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "GrRight"
+                    components:
+                        FlowLayout:
+                            hSpacing: 10.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "TermsOfVictoryLab"
+                        classes: "text2 text-color-white"
+                        text: "#training_rooms:RoomScreen/TermsOfVictory"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIStaticText"
+                        name: "TermsOfVictoryTxt"
+                        classes: "text2 text-color-blue"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "HorizContainer2"
+                position: [0.000000, 45.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        padding: 10.000000
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "GrLeft"
+                    components:
+                        FlowLayout:
+                            hSpacing: 10.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "MapLab"
+                        classes: "text2 text-color-white"
+                        text: "#training_rooms:RoomScreen/Map"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIStaticText"
+                        name: "MapTxt"
+                        classes: "text2 text-color-blue"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "GrRight"
+                    components:
+                        FlowLayout:
+                            hSpacing: 10.000000
+                            useRtl: true
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 50.000000
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   class: "UIStaticText"
+                        name: "LevelLab"
+                        classes: "text2 text-color-white"
+                        text: "#training_rooms:RoomScreen/VehicleLevel"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                    -   class: "UIStaticText"
+                        name: "LevelTxt"
+                        classes: "text2 text-color-blue"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "SwitchPanel"
+            classes: "panel-background"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 250.000000
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+            children:
+            -   class: "UIControl"
+                name: "ListLine"
+                size: [1.000000, 90.000000]
+                noInput: true
+                components:
+                    IgnoreLayout: {}
+                    Anchor:
+                        leftAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 1.000000, 1.000000, 0.141176]
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "ChatContainer"
+        position: [0.000000, 90.000000]
+        classes: "limited-width"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Footer"
+        size: [1024.000000, 94.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_HORIZONTAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
+        children:
+        -   class: "UIControl"
+            name: "Controlls"
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "Left"
+                position: [0.000000, 0.000000]
+                components:
+                    LinearLayout:
+                        dynamicPadding: true
+                        spacing: 8.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   prototype: "StyledSmallButton/StyledSmallButton"
+                    name: "ButtonToTeamA"
+                    position: [97.000000, 12.000000]
+                    classes: "button left-green-icon"
+                    components:
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   path: "icon"
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Training/icon_team_controls"
+                -   prototype: "StyledSmallButton/StyledSmallButton"
+                    name: "ButtonProfile"
+                    components:
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   path: "icon"
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Training/icon_team_controls"
+                                frame: 0
+                -   prototype: "StyledSmallButton/StyledSmallButton"
+                    name: "ButtonToQueue"
+                    components:
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                        Background:
+                            frame: 0
+                    children:
+                    -   path: "icon"
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Training/icon_team_controls"
+                                frame: 4
+                -   class: "UIStaticText"
+                    name: "Hint"
+                    visible: false
+                    classes: "text2 text-color-white"
+                    textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+                    multiline: "MULTILINE_ENABLED"
+                    fitting: ["REDUCE"]
+                    text: ""
+                    components:
+                        IgnoreLayout: {}
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            horizontalValue: 90.000000
+                            verticalPolicy: "PercentOfParent"
+                        Anchor:
+                            leftAnchorEnabled: false
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "Center"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 4.000000
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIControl"
+                    name: "ListLine"
+                    size: [2.000000, 93.000000]
+                    noInput: true
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 1.000000
+                            bottomAnchorEnabled: true
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [1.000000, 1.000000, 1.000000, 0.141176]
+                            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "Right"
+                components:
+                    LinearLayout:
+                        dynamicPadding: true
+                        spacing: 8.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   prototype: "StyledButton/Button"
+                    name: "SelectVehicle"
+                    size: [200.000000, 70.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 10.000000
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   path: "Caption"
+                        classes: "header3 text-color-white"
+                        fitting: ["REDUCE"]
+                        text: "#training_rooms:RoomScreen/ChooseButton"
+                -   prototype: "StyledButton/Button"
+                    name: "NotReady"
+                    size: [200.000000, 70.000000]
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 10.000000
+                            vCenterAnchorEnabled: true
+                    children:
+                    -   path: "Caption"
+                        classes: "header3 text-color-white"
+                        text: "#training_rooms:RoomScreen/NotReadyButton"
+                -   prototype: "StyledButton/Button"
+                    name: "ReadyButton"
+                    size: [200.000000, 70.000000]
+                    visible: true
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 10.000000
+                            vCenterAnchorEnabled: true
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "Caption"
+                        visible: true
+                        classes: "header3 text-color-white"
+                        text: "#training_rooms:RoomScreen/ReadyButton"
+        -   class: "UIControl"
+            name: "VehicleIconWrapper"
+            size: [250.000000, 63.000000]
+            scale: [1.000000, 1.000000]
+            visible: false
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 250.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 63.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "SelectedVehicleIcon"
+                position: [153.000000, 0.000000]
+                size: [97.000000, 63.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+            -   class: "UIStaticText"
+                name: "SelectedVehicleLevel"
+                classes: "header4"
+                textColor: [0.752941, 0.705882, 0.607843, 1.000000]
+                textalign: ["RIGHT", "TOP"]
+                text: "X"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 83.000000
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "SelectedVehicleName"
+                classes: "text2-small text-color-blue"
+                textalign: ["RIGHT", "VCENTER"]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        rightAnchor: 83.000000
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UITournamentRoomTitle"
+    name: "Title"
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 76.000000
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "TournamentTitleContainer"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                padding: 5.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            classes: "lang_independece header1 text-color-white"
+            fitting: ["POINTS"]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    horizontalMax: 480.000000
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "StageRoundContainer"
+            classes: "textType=registration-invisible"
+            components:
+                LinearLayout:
+                    spacing: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "StageTitle"
+                classes: "lang_independece text2 text-color-blue"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "GroupTitle"
+                classes: "text2 text-color-blue"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "RoundTitle"
+                classes: "text2 text-color-blue"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UITrainingRoomQueue"
+    name: "TeamA"
+    size: [250.000000, 488.000000]
+    classes: "queue"
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+            verticalMax: 488.000000
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            topAnchorEnabled: true
+    children:
+    -   class: "UIList"
+        name: "TraineeList"
+        size: [250.000000, 448.000000]
+        classes: "panel-background"
+        components:
+            SizePolicy: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "Header"
+        position: [0.000000, 0.000000]
+        size: [250.000000, 40.000000]
+        classes: "text1"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.274510, 0.368627, 0.431373, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "ListLine"
+            size: [250.000000, 1.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.141176]
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "TeamMark"
+            size: [32.000000, 32.000000]
+            classes: "green-mark"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Training/image_clan"
+        -   class: "UIControl"
+            name: "TeamNameWithTag"
+            size: [250.000000, 40.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 15.000000
+                    spacing: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIStaticText"
+                name: "Tag"
+                size: [0.000000, 40.000000]
+                classes: "header4 clan-tag"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIStaticText"
+                name: "Name"
+                position: [20.000000, 0.000000]
+                size: [0.000000, 40.000000]
+                classes: "header4"
+                fitting: ["POINTS"]
+                textalign: ["LEFT", "VCENTER"]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Bottom"
+        size: [250.000000, 1.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Left"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Right"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "TeamA"
+    name: "TeamB"
+    classes: "right-to-left queue"
+    components:
+        Anchor:
+            leftAnchorEnabled: false
+            rightAnchorEnabled: true
+    children:
+    -   path: "TraineeList"
+        size: [250.000000, 448.000000]
+        classes: "panel-background right-to-left"
+    -   path: "Header/TeamMark"
+        classes: "red-mark"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                rightAnchorEnabled: false
+                rightAnchor: 0.000000
+    -   path: "Header/TeamNameWithTag"
+        classes: "right-to-left"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+        children: []
+    -   path: "Header/TeamNameWithTag/Name"
+        position: [230.000000, 0.000000]
+-   prototype: "TeamA"
+    name: "Queue"
+    size: [500.000000, 600.000000]
+    classes: "queue-invite"
+    components:
+        SizePolicy:
+            verticalMax: 99999.000000
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 270.000000
+            rightAnchorEnabled: true
+            rightAnchor: 270.000000
+    children:
+    -   path: "TraineeList"
+        size: [500.000000, 560.000000]
+        components:
+            Anchor:
+                topAnchor: 40.000000
+    -   path: "Header"
+        text: "#training_rooms:RoomScreen/Turn"
+        children: []
+    -   path: "Header/TeamMark"
+        visible: false
+    -   path: "Bottom"
+        visible: false
+    -   path: "Left"
+        size: [1.000000, 40.000000]
+        components:
+            Anchor:
+                bottomAnchorEnabled: false
+    -   path: "Right"
+        size: [1.000000, 40.000000]
+        components:
+            Anchor:
+                bottomAnchorEnabled: false
+    -   class: "UIControl"
+        name: "ListLine"
+        size: [500.000000, 1.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 40.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "LeftLine"
+        size: [1.000000, 560.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 40.000000
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "RightLine"
+        size: [1.000000, 560.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 40.000000
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIListCell"
+    name: "TraineeEmptyEntry"
+    size: [250.000000, 64.000000]
+    noInput: true
+    classes: "set-vertical-size"
+    identifier: "traineeEmptyCell"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "bottomSelector"
+        size: [250.000000, 1.000000]
+        visible: true
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                verticalPolicy: "FixedSize"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    customClass: "UITournamentRoomHeader"
+    name: "HeaderRight"
+    size: [300.000000, 80.000000]
+    noInput: true
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "TimeContainer"
+        classes: "textType=registration-invisible"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 10.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   prototype: "TournamentRoomTimer/TournamentTimer"
+            name: "TournamentTimer"
+        -   class: "UIStaticText"
+            name: "BeforeBattle"
+            position: [0.000000, 33.000000]
+            classes: "text2 text-color-blue"
+            text: "#training_rooms:RoomScreen/Countdown"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    rightAnchorEnabled: true
+-   class: "UIListCell"
+    customClass: "UITraineeEntry"
+    name: "TraineeEntry"
+    size: [250.000000, 64.000000]
+    selected: false
+    classes: "trainee-entry right-to-left set-vertical-size ready observer-mode=observer-none"
+    identifier: "traineeEntryCell"
+    components:
+        LinearLayout:
+            padding: 10.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "back"
+        size: [250.000000, 64.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                colorInherit: "COLOR_IGNORE_PARENT"
+    -   class: "UIControl"
+        name: "topSelector"
+        size: [250.000000, 2.000000]
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "leftSelector"
+        size: [2.000000, 64.000000]
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "rightSelector"
+        size: [2.000000, 64.000000]
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "bottomSelector"
+        size: [250.000000, 1.000000]
+        visible: true
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                verticalPolicy: "FixedSize"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "NameWrapper"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 64.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   prototype: "PlayerNameWithTag/PlayerNameWithTag"
+            name: "TraineeName"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
+                    vCenterAnchorEnabled: false
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   path: "name"
+                classes: "header4 text-color=training-nick-text-color"
+                textalign: ["LEFT", "VCENTER"]
+            -   path: "tag"
+                classes: "header4 clan-tag"
+        -   class: "UIStaticText"
+            name: "VehicleName"
+            size: [132.000000, 26.000000]
+            classes: "text2-small text-color-blue"
+            fitting: ["POINTS"]
+            text: "Not Ready"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 5.000000
+    -   class: "UIControl"
+        name: "VehicleIconWrapper"
+        size: [98.000000, 64.000000]
+        scale: [1.000000, 1.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 98.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 64.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "VehicleIcon"
+            position: [0.000000, 7.000000]
+            size: [77.000000, 50.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIStaticText"
+            name: "VehicleLevel"
+            classes: "header4"
+            textColor: [0.752941, 0.705882, 0.607843, 1.000000]
+            text: "X"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "MouseIcon"
+            size: [16.000000, 26.000000]
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    rightAnchor: 0.000000
+                Background:
+                    sprite: "~res:/Gfx/UI/Training/icon_mouse"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "ObserverModeWrapper"
+        size: [70.000000, 64.000000]
+        scale: [1.000000, 1.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 70.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 64.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "Camera"
+            position: [8.000000, 17.000000]
+            size: [54.000000, 34.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 2.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/Training/icon_camera"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "ObserverMode"
+            position: [0.000000, 0.000000]
+            size: [32.000000, 32.000000]
+            noInput: true
+            components:
+                Anchor:
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/Training/icon_spectator"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

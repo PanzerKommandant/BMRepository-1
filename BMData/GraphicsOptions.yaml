@@ -1,0 +1,320 @@
+options:
+    -   name: WaterQuality
+        type: selector
+        values:
+            - Low:
+                Water: LOW
+            - Medium:
+                Water: HIGH
+            - High:
+                Water: ULTRA_HIGH
+    -   name: ObjectsQuality
+        type: selector
+        values:
+            - Low:
+                "Static object": LOW
+                Landscape: MEDIUM
+                "Spherical Harmonics": LOW
+                "Decoration Objects": OFF
+                "Vegetation Animation": false
+            - Medium:
+                "Static object": LOW
+                Landscape: MEDIUM
+                "Spherical Harmonics": MEDIUM
+                "Decoration Objects": OFF
+                "Vegetation Animation": true
+            - High:
+                "Static object": MEDIUM
+                Landscape: MEDIUM
+                "Spherical Harmonics": HIGH
+                "Decoration Objects": ON
+                "Vegetation Animation": true
+    -   name: VehiclesQuality
+        type: selector
+        values:
+            - Low:
+                tankInBattle: LOW
+                tankInHangar: LOW
+            - Medium:
+                tankInBattle: MEDIUM
+                tankInHangar: MEDIUM
+            - High:
+                tankInBattle: MEDIUM
+                tankInHangar: HIGH
+    -   name: EffectsQuality
+        type: selector
+        values:
+            - Compatible:
+                particleQuality: LOW
+                waveLevel: 0.0
+                mudLevel: 0.0
+                dustLevel: 0.0
+                snowWetherEffectLevel: 0.0
+                otherWetherEffectsLevel: 0.0
+                "Lod0 effects": true
+            - Low:
+                particleQuality: LOW
+                waveLevel: 0.0
+                mudLevel: 1.0
+                dustLevel: 0.0
+                snowWetherEffectLevel: 0.0
+                otherWetherEffectsLevel: 1.0
+                "Lod0 effects": false
+            - Medium:
+                particleQuality: MEDIUM
+                waveLevel: 0.3
+                mudLevel: 1.0
+                dustLevel: 1.0
+                snowWetherEffectLevel: 0.0
+                otherWetherEffectsLevel: 1.0
+                "Lod0 effects": false
+            - High:
+                particleQuality: HIGH
+                waveLevel: 1.0
+                mudLevel: 1.0
+                dustLevel: 1.0
+                snowWetherEffectLevel: 1.0
+                otherWetherEffectsLevel: 1.0
+                "Lod0 effects": false
+    -   name: LevelOfDetail
+        type: selector
+        values:
+            - Compatible:
+                mapObjectsLodSwitchPercent: 0.55
+                objectHideDistanceFactor: 0.0085
+                tanksLod0Distance: 0.0
+                tanksLod1Distance: 30.0
+            - Low:
+                mapObjectsLodSwitchPercent: 1.0
+                objectHideDistanceFactor: 0.0085
+                tanksLod0Distance: 30.0
+                tanksLod1Distance: 50.0
+            - Medium:
+                mapObjectsLodSwitchPercent: 1.3
+                objectHideDistanceFactor: 0.006
+                tanksLod0Distance: 40.0
+                tanksLod1Distance: 60.0
+            - High:
+                mapObjectsLodSwitchPercent: 1.3
+                objectHideDistanceFactor: 0.0035
+                tanksLod0Distance: 50.0
+                tanksLod1Distance: 70.0
+    -   name: FogQuality
+        type: selector
+        values:
+            - Compatible:
+                "Disable fog": true
+            - Low:
+                "Disable fog": false
+                "Disable fog attenuation": true
+                "Disable fog scattering": true
+                "Disable half-space fog": true
+            - Medium:
+                "Disable fog": false
+                "Disable fog attenuation": false
+                "Disable fog scattering": false
+                "Disable half-space fog": true
+            - High:
+                "Disable fog": false
+                "Disable fog attenuation": false
+                "Disable fog scattering": false
+                "Disable half-space fog": false
+    -   name: AnisotropicFiltering
+        type: selector
+        supportedValues: anisotropicFilteringSupport
+        hideIfNotAvailable: true
+        values:
+            - Off:
+                anisotropicFilteringQuality: OFF
+            - 2X:
+                anisotropicFilteringQuality: 2X
+            - 4X:
+                anisotropicFilteringQuality: 4X
+            - 8X:
+                anisotropicFilteringQuality: 8X
+            - 16X:
+                anisotropicFilteringQuality: 16X
+    -   name: Antialiasing
+        type: selector
+        supportedValues: MSAASupport
+        hideIfNotAvailable: true
+        values:
+            - Off:
+                MSAA: NONE
+            - 2X:
+                MSAA: MSAA_2X
+            - 4X:
+                MSAA: MSAA_4X
+    -   name: Camouflage
+        type: selector
+        values:
+            - Off:
+                camouflageVisibilityValue: DISABLED
+                camouflageVisibilityInBattle: DISABLED
+                camouflageVisibilityInHangar: ENABLED
+            - ForPlayer:
+                camouflageVisibilityValue: PLAYER_ONLY
+                camouflageVisibilityInBattle: PLAYER_ONLY
+                camouflageVisibilityInHangar: ENABLED
+            - ForAll:
+                camouflageVisibilityValue: ENABLED
+                camouflageVisibilityInBattle: ENABLED
+                camouflageVisibilityInHangar: ENABLED
+    -   name: GrassQuality
+        type: selector
+        supportedValues: "vegetationSupport"
+        values:
+            - Compatible:
+                Vegetation: LOW
+                VegetationCount: regular
+            - Low:
+                Vegetation: HIGH
+                VegetationCount: regular
+            - Medium:
+                Vegetation: HIGH
+                VegetationCount: 60k
+            - High:
+                Vegetation: HIGH
+                VegetationCount: 500k
+    -   name: GrassInSniperMode
+        type: switch
+        editableOnlyIf: "GrassQuality"
+        values:
+            - false:
+                grassInSniperMode: false
+            - true:
+                grassInSniperMode: true
+    -   name: Shadows
+        type: switch
+        values:
+            - false:
+                "Stencil Shadows": false
+            - true:
+                "Stencil Shadows": true
+    -   name: HDTextures
+        type: switch
+        values:
+            - false:
+                textureQuality: HIGH
+            - true:
+                textureQuality: HIGHEST
+    -   name: HDSounds
+        type: switch
+        requiresReboot: true
+        values:
+            - false: 
+                HDSounds: false
+            - true:
+                HDSounds: true
+    -   name: HalfResolution
+        type: switch
+        values:
+            - false:
+                resolutionMultiplierInHangar: 1.0
+                resolutionMultiplierInBattle: 1.0
+            - true:
+                resolutionMultiplierInHangar: 1.0
+                resolutionMultiplierInBattle: 0.5
+    -   name: FPSLimit30
+        type: switch
+        values:
+            - false:
+                fpsLimit: 60
+            - true:
+                fpsLimit: 30
+    -   name: MetalAPI
+        type: switch
+        supportedValues: "metalAPISupport"
+        hideIfNotAvailable: true
+        requiresReboot: true
+        values:
+            - false:
+                renderer: "gles2"
+            - true:
+                renderer: "metal"
+appliers:
+    Water:
+        applier: setFrameworkMaterialQuality
+    "Static object":
+        applier: setFrameworkMaterialQuality
+    Landscape:
+        applier: setFrameworkMaterialQuality
+    "Spherical Harmonics":
+        applier: setFrameworkMaterialQuality
+    tankInBattle:
+        applier: setFrameworkMaterialQuality
+        qualityName: Tank
+        scope: battle
+    tankInHangar:
+        applier: setFrameworkMaterialQuality
+        qualityName: Tank
+        scope: hangar
+    Vegetation:
+        applier: setFrameworkMaterialQuality
+    VegetationCount:
+        applier: setFrameworkMaterialQuality
+    "Decoration Objects":
+        applier: setFrameworkMaterialQuality
+    "Stencil Shadows":
+        applier: setFrameworkOption
+    "Vegetation Animation":
+        applier: setFrameworkOption
+    "Disable fog":
+        applier: setFrameworkOption
+    "Disable fog attenuation":
+        applier: setFrameworkOption
+    "Disable fog scattering":
+        applier: setFrameworkOption
+    "Disable half-space fog":
+        applier: setFrameworkOption
+    "Lod0 effects":
+        applier: setFrameworkOption
+    textureQuality:
+        applier: setFrameworkTextureQuality
+    anisotropicFilteringQuality:
+        applier: setFrameworkAnisotropicFilteringQuality
+    MSAA:
+        applier: setFrameworkMSAAQuality
+    grassInSniperMode:
+        applier: setBoolConstant
+    particleQuality:
+        applier: setFrameworkParticleQuality
+    waveLevel:
+        applier: setFloatConstant
+    mudLevel:
+        applier: setFloatConstant
+    dustLevel:
+        applier: setFloatConstant
+    snowWetherEffectLevel:
+        applier: setFloatConstant
+    otherWetherEffectsLevel:
+        applier: setFloatConstant
+    mapObjectsLodSwitchPercent:
+        applier: setFloatConstant
+    objectHideDistanceFactor:
+        applier: setFloatConstant
+    tanksLod0Distance:
+        applier: setFloatConstant
+    tanksLod1Distance:
+        applier: setFloatConstant
+    resolutionMultiplierInBattle:
+        applier: setFrameworkResolutionMultiplier
+        scope: battleDidLoad
+    resolutionMultiplierInHangar:
+        applier: setFrameworkResolutionMultiplier
+        notScope: battleDidLoad
+    camouflageVisibilityInBattle:
+        applier: setCamouflageVisibility
+        scope: battle
+    camouflageVisibilityInHangar:
+        applier: setCamouflageVisibility
+        scope: hangar
+    camouflageVisibilityValue:
+        applier: setStringConstant
+    fpsLimit:
+        applier: setFloatConstant
+        scope: battleDidLoad
+    renderer:
+        applier: setStartupStringConstant
+    HDSounds:
+        applier: setBoolConstant

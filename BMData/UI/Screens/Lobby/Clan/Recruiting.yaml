@@ -1,0 +1,180 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+StyleSheets:
+-   selector: ".sliders-container .restriction-slider"
+    properties:
+        bg-color: [0.200000, 0.270588, 0.321569, 0.600000]
+-   selector: ".sliders-container.fade .restriction-slider"
+    properties:
+        bg-color: [0.200000, 0.270588, 0.321569, 0.298039]
+-   selector: ".sliders-container .restriction-slider #Content"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".sliders-container.fade .restriction-slider #Content"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.478431]
+-   selector: ".sliders-container .disclaimer"
+    properties:
+        text-textColor: [0.619608, 0.721569, 0.800000, 1.000000]
+-   selector: ".sliders-container.fade .disclaimer"
+    properties:
+        text-textColor: [0.619608, 0.721569, 0.800000, 0.478431]
+Controls:
+-   class: "UIControl"
+    name: "RestrictionSlider"
+    size: [600.000000, 80.000000]
+    noInput: true
+    classes: "restriction-slider"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+    children:
+    -   prototype: "SettingsCommon/SliderWithCaption"
+        name: "Content"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_ALIGNED"
+        children:
+        -   path: "Slider"
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                min:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                max:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children: []
+        -   path: "Slider/thumbSpriteControl"
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "Slider/MinTick"
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "Slider/MaxTick"
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "Slider/MiddleTick"
+            visible: false
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "ValueAndCaption"
+            components:
+                LinearLayout:
+                    spacing: 5.000000
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children: []
+        -   path: "ValueAndCaption/GroupCaption"
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   path: "ValueAndCaption/Value"
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+-   class: "UIControl"
+    customClass: "UIClanRecruiting"
+    name: "Recruiting"
+    size: [1024.000000, 688.000000]
+    classes: "limited-width"
+    components:
+        LinearLayout:
+            orientation: "Vertical"
+            spacing: 2.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalMax: 1350.000000
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            topAnchorEnabled: true
+    children:
+    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+        name: "AutoRecruiting"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+            Background:
+                color: [0.278431, 0.372549, 0.435294, 1.000000]
+        children:
+        -   path: "GroupCaption"
+            size: [904.000000, 50.000000]
+            textalign: ["LEFT", "TOP"]
+            text: "#clans:RecruitingScreen/Title"
+            components:
+                Anchor:
+                    leftAnchor: 20.000000
+        -   path: "Description"
+            size: [904.000000, 50.000000]
+            textalign: ["LEFT", "BOTTOM"]
+            text: "#clans:RecruitingScreen/Comment"
+            components:
+                Anchor:
+                    leftAnchor: 20.000000
+    -   class: "UIControl"
+        name: "Restrictions"
+        classes: "sliders-container"
+        components:
+            LinearLayout:
+                orientation: "Vertical"
+                padding: 0.000000
+                spacing: 2.000000
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   prototype: "RestrictionSlider"
+            name: "BattlesPerDay"
+            children:
+            -   path: "Content/ValueAndCaption/GroupCaption"
+                text: "#clans:RecruitingScreen/Table/BattlesperDay"
+        -   prototype: "RestrictionSlider"
+            name: "TotalBattles"
+            children:
+            -   path: "Content/ValueAndCaption/GroupCaption"
+                text: "#clans:RecruitingScreen/Table/BattlesTottaly"
+        -   prototype: "RestrictionSlider"
+            name: "WinRatio"
+            children:
+            -   path: "Content/ValueAndCaption/GroupCaption"
+                text: "#clans:RecruitingScreen/Table/Victories"
+        -   prototype: "RestrictionSlider"
+            name: "Damage"
+            children:
+            -   path: "Content/ValueAndCaption/GroupCaption"
+                text: "#clans:RecruitingScreen/Table/AverageDamage"
+        -   prototype: "RestrictionSlider"
+            name: "VehicleLevel"
+            children:
+            -   path: "Content/ValueAndCaption/GroupCaption"
+                text: "#clans:RecruitingScreen/Table/VehicleLevel"
+        -   class: "UIStaticText"
+            name: "Disclaimer"
+            size: [960.000000, 50.000000]
+            classes: "disclaimer"
+            multiline: "MULTILINE_ENABLED"
+            text: "#clans:RecruitingScreen/ParamsComment"
+            font: "WarHeliosCondC_21"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Fade"
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"

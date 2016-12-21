@@ -1,0 +1,162 @@
+premium_rows: 2
+
+tanks:
+    T1_Cunningham:
+        position: [1, 5]
+
+#<!-- 2-nd level -->
+    M2_lt:
+        position: [2, 3]
+
+#    T1_E6:
+#        position: [2, 2]
+#    T2_lt:
+#        position: [2, 3]
+#
+#    Ram-II:
+#        position: [5, 1]
+
+    T18:
+        position: [2, 5]
+
+    T2_med:
+        position: [2, 6]
+
+#<!-- 3-rd level -->
+#    M22_Locust:
+#        position: [3, 2]
+    M3_Stuart:
+        position: [3, 3]
+    T82:
+        position: [3, 5]
+    M2_med:
+        position: [3, 6]
+
+#<!-- 4-th level -->
+    M5_Stuart:
+        position: [4, 3]
+
+    T40:
+        position: [4, 5]
+
+    M8A1:
+        position: [4, 4]		
+
+    M3_Grant:
+        position: [4, 6]
+
+#<!-- 5-th level -->
+#    M24_Chaffee:
+#        position: [5, 1]
+    M7_med:
+        position: [5, 3]
+
+    T14:
+        position: [5, 2]
+
+    M10_Wolverine:
+        position: [5, 5]
+
+    T49:
+        position: [5, 4]		
+
+    M4_Sherman:
+        position: [5, 6]
+
+    T1_hvy:
+        position: [5, 8]
+
+#<!-- 6-th level -->
+    T21:
+        position: [6, 3]
+
+    M36_Slagger:
+        position: [6, 5]
+
+    M18_Hellcat:
+        position: [6, 4]
+
+    Sherman_Jumbo:
+        position: [6, 7]	
+
+    M4A3E8_Sherman:
+        position: [6, 6]
+
+    M6:
+        position: [6, 8]
+
+#<!-- 7-th level -->
+    T71:
+        position: [7, 3]
+
+    T25_AT:
+        position: [7, 5]
+
+    T25_2:
+        position: [7, 4]		
+
+    T20:
+        position: [7, 6]
+        lines:
+            - Pershing
+
+    T29:
+        position: [7, 8]
+
+    T23E3:
+        position: [7, 2]
+
+#<!--  8-th level -->
+
+    T34_hvy:
+        position: [8, 1]
+
+    T26_E4_SuperPershing:
+        position: [8, 2]
+
+    T69:
+        position: [8, 3]		
+
+    T28:
+        position: [8, 5]
+
+    T28_Prototype:
+        position: [8, 4]		
+
+    Pershing:
+        position: [8, 6]
+
+    T32:
+        position: [8, 8]
+
+#<!-- 9-th level -->
+    T54E1:
+        position: [9, 3]
+
+    T95:
+        position: [9, 5]
+
+    T30:
+        position: [9, 4]		
+
+    M46_Patton:
+        position: [9, 6]
+            
+    M103:
+        position: [9, 8]
+
+#<!-- 10-th level -->
+    T57_58:
+        position: [10, 3]
+
+    T110E3:
+        position: [10, 5]
+
+    T110E4:
+        position: [10, 4]		
+
+    M48A1:
+        position: [10, 6]
+
+    T110:
+        position: [10, 8]

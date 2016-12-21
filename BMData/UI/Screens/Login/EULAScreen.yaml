@@ -1,0 +1,49 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Overlay"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.700000]
+    -   prototype: "StyledBackButton/StyledBackButton"
+        name: "MenuButton"
+    -   class: "UIWebView"
+        name: "Content"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 100.000000
+                rightAnchorEnabled: true
+                rightAnchor: 100.000000
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+    -   prototype: "LoadingSpinner/LoadingSpinner"
+        name: "ProgressControl"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true

@@ -1,0 +1,5 @@
+1
+concentrate_fire0.tex
+508 320
+1
+0 0 508 306 0 14 0 frame0

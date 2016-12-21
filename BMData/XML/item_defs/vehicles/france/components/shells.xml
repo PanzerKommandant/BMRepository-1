@@ -1,0 +1,63 @@
+<root>
+	<icons>
+		<ap>ARMOR_PIERCING.png 0 0</ap>
+		<ap_premium>ARMOR_PIERCING_PREMIUM.png 0 0</ap_premium>
+		<ap_cr>ARMOR_PIERCING_CR.png 0 0</ap_cr>
+		<he>HIGH_EXPLOSIVE.png 0 0</he>
+		<he_premium>HIGH_EXPLOSIVE_PREMIUM.png 0 0</he_premium>
+		<hc>HOLLOW_CHARGE.png 0 0</hc>
+	</icons>
+	<_90mm_Prf1941>
+		<blitz>
+			<blitzIconFrame>0</blitzIconFrame>
+		</blitz>
+		<id>34</id>
+		<userString>#france_vehicles:_90mm_Prf1941</userString>
+		<icon>ap</icon>
+		<price>255</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainArmorPiercing</effects>
+		<damage>
+			<armor>225</armor>
+			<devices>122</devices>
+		</damage>
+		</_90mm_Prf1941>
+	<_90mm_FrtPrf1944>
+		<blitz>
+			<blitzIconFrame>2</blitzIconFrame>
+		</blitz>
+		<id>35</id>
+		<userString>#france_vehicles:_90mm_FrtPrf1944</userString>
+		<icon>ap_cr</icon>
+		<price>12<gold/>
+		</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainAPCR</effects>
+		<damage>
+			<armor>225</armor>
+			<devices>122</devices>
+		</damage>
+		</_90mm_FrtPrf1944>
+	<_90mm_OE_mle_1924>
+		<blitz>
+			<blitzIconFrame>3</blitzIconFrame>
+		</blitz>
+		<id>36</id>
+		<userString>#france_vehicles:_90mm_OE_mle_1924</userString>
+		<icon>he</icon>
+		<price>255</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<caliber>90</caliber>
+		<explosionRadius>1.46</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>270</armor>
+			<devices>122</devices>
+		</damage>
+	</_90mm_OE_mle_1924>
+</root>

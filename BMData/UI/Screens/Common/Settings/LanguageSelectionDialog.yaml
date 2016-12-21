@@ -1,0 +1,197 @@
+Header:
+    version: "2"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIListCell"
+    name: "Cell"
+    size: [480.000000, 70.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+        Normal:
+            color: [0.007843, 0.007843, 0.007843, 0.313726]
+            colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+            leftRightStretchCap: 9.000000
+        PressedInside:
+            sprite: ""
+    children:
+    -   class: "UIControl"
+        name: "Box"
+        noInput: true
+        components:
+            LinearLayout:
+                padding: 20.000000
+                useRtl: true
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "LocalizedLanguageName"
+            classes: "header4"
+            textalign: ["LEFT", "VCENTER"]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+        -   class: "UIControl"
+            name: "Spacer"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+        -   class: "UIStaticText"
+            name: "LanguageName"
+            classes: "text2 text-color-blue"
+            debugDraw: false
+            textalign: ["LEFT", "VCENTER"]
+            font: "WarHeliosCondC_19"
+            forceBiDiSupport: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    topAnchorEnabled: true
+                    topAnchor: 10.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 10.000000
+    -   class: "UIControl"
+        name: "Selection"
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -5.000000
+                rightAnchorEnabled: true
+                rightAnchor: -5.000000
+                topAnchorEnabled: true
+                topAnchor: -5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -5.000000
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/LobbyCommon/ButtonDefaultSelector"
+                leftRightStretchCap: 10.000000
+                topBottomStretchCap: 10.000000
+    -   class: "UIControl"
+        name: "botomLine"
+        position: [2.000000, 69.000000]
+        size: [476.000000, 1.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 2.000000
+                rightAnchorEnabled: true
+                rightAnchor: 2.000000
+                topAnchorEnabled: false
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "LanguageSelectionDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.113725, 0.784314]
+    children:
+    -   prototype: "Common/Dialog"
+        name: "Dialog"
+        size: [500.000000, 470.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Middle"
+            children:
+            -   class: "UIControl"
+                name: "ListContainer"
+                size: [500.000000, 300.000000]
+                debugDraw: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 60.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 110.000000
+                children:
+                -   class: "UIList"
+                    name: "LanguageList"
+                    clip: true
+                    debugDraw: false
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                -   prototype: "Common/VerticalScrollBar"
+                    name: "ScrollBar"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+            -   class: "UIControl"
+                name: "ButtonHolder"
+                components:
+                    LinearLayout:
+                        orientation: "RightToLeft"
+                        padding: 20.000000
+                        spacing: 20.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 20.000000
+                children:
+                -   prototype: "StyledButton/Button"
+                    name: "ApplyButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Background:
+                            frame: 2
+                    children:
+                    -   path: "Caption"
+                        text: "#language:Selection/Accept"
+                -   prototype: "StyledButton/Button"
+                    name: "CancelButton"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                    children:
+                    -   path: "Caption"
+                        text: "#language:Selection/Cancel"
+        -   path: "Top/TitleText"
+            text: "#clans:LanguageScreen/Header"
+            font: "WarHeliosCondC_Bold_25"

@@ -1,0 +1,117 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Hangar/PopupFullScreenNotification.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Styles/Clans/ClansStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Supply/BonusIcons.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Supply/SupplyLevelList.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledMenuButton.yaml"
+Controls:
+-   prototype: "PopupFullScreenNotification/BasePopup"
+    customClass: "UISupplyLevelUpDialog"
+    name: "LevelUpPopup"
+    children:
+    -   path: "Content"
+        children:
+        -   class: "UIControl"
+            name: "Center"
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: -40.000000
+            children:
+            -   class: "UIStaticText"
+                name: "Header"
+                position: [229.000000, 0.000000]
+                classes: "header1 text-color-white"
+                text: "shop/Congrats/Title"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "SubTitle"
+                classes: "text1 text-color-light-beige"
+                text: "#clans:SupplyScreen/ClanAccess/Congratulation"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "space"
+                size: [0.000000, 20.000000]
+                noInput: true
+            -   prototype: "SupplyLevelList/BoxPrototype"
+                name: "BoxPrototype"
+                noInput: true
+                children:
+                -   path: "ProgressStatus"
+                    children:
+                    -   class: "UIControl"
+                        name: "TypeEmblem"
+                        size: [60.000000, 40.000000]
+                        components:
+                            Background:
+                                sprite: "~res:/Gfx/UI/Clan/icon_clan_resources_big"
+                                frame: 0
+                -   path: "ProgressStatus/Clan"
+                    visible: false
+                    children: []
+                -   path: "ProgressStatus/Account"
+                    visible: false
+                    children: []
+            -   class: "UIControl"
+                name: "space"
+                size: [0.000000, 20.000000]
+                noInput: true
+            -   prototype: "BonusIcons/BonusBigIcons"
+                name: "BonusBigIcons"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "space"
+                size: [0.000000, 20.000000]
+                noInput: true
+            -   class: "UIStaticText"
+                name: "Motivation"
+                classes: "text2 text-color-blue"
+                multiline: "MULTILINE_ENABLED"
+                text: "#clans:SupplyScreen/ClanAccess/Congratulation/Motivation"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 600.000000
+                        horizontalMax: 600.000000
+                        verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "space"
+                size: [0.000000, 20.000000]
+                noInput: true
+            -   prototype: "StyledButton/StyledButton"
+                name: "ToSupplyButton"
+                size: [280.000000, 70.000000]
+                classes: "button button-color-gray"
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   path: "Caption"
+                    text: "#clans:SupplyScreen/Supply/Button"
+-   prototype: "BonusIcons/BonusIcon"
+    name: "BonusIcon"

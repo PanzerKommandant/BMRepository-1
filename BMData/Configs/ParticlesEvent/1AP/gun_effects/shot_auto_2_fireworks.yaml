@@ -1,0 +1,165 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, 1.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "fireworks"
+    radius: 0.200000
+    shortEffect: false
+    size: [1.000000, 1.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 0]
+    blending: 3
+    colorRandom: [0.000000, [255.000000, 94.428017, 7.968873, 255.000000], 0.500000, [9.961089, 26.295719, 255.000000, 255.000000], 0.995833, [2.988327, 255.000000, 2.988327, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.010000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: false
+    endTime: 0.100000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: true
+    isLooped: false
+    layerType: "particles"
+    life: 0.100000
+    lifeVariation: 0.100000
+    loopEndTime: 0.500000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "2"
+    number: 1000.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.200000
+    size: [0.090000, 0.090000]
+    sprite: "../../../../Gfx/Particles/1AP/sparks1"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 12.000000
+layer1:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.500000, 0.400000, 0.990000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    blending: 3
+    colorOverLife: [255.000000, 121.357979, 25.898832, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.100000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 0.100000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 16.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.100000
+    lifeVariation: 0.100000
+    loopEndTime: 0.500000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "3"
+    number: 25.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 1.000000
+    size: [2.000000, 2.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
+    sprite: "../../../../Gfx/Particles/alpha/glow_anim_low"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 12.000000
+layer2:
+    activeLODS: [0, 1, 1, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.107865, 0.141840, 0.990000, 0.000000]
+    angle: 90.000000
+    angleVariation: 90.000000
+    blending: 3
+    colorRandom: [0.000000, [180.291824, 255.000000, 185.272369, 255.000000], 0.489583, [255.000000, 173.120621, 118.536964, 255.000000], 0.993750, [91.642021, 246.832687, 255.000000, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.100000
+    deltaVariation: 0.100000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: true
+    endTime: 0.300000
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 16.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 0.500000
+    lifeVariation: 0.300000
+    loopEndTime: 1.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.100000
+    name: "4"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 1.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
+    sprite: "../../../../Gfx/Particles/alpha/fog_white"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 12.000000
+    velocityOverLife: [0.000000, 1.000000, 0.300000, 0.100000]
+layer3:
+    activeLODS: [1, 1, 1, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.792185, 1.000000, 1.000000, 0.000000]
+    angle: 1.000000
+    angleVariation: 360.000000
+    blending: 1
+    colorRandom: [0.000000, [250.817123, 255.000000, 3.984436, 255.000000], 0.530100, [255.000000, 0.996109, 0.996109, 255.000000], 0.998328, [255.000000, 214.342407, 176.307388, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: false
+    enableFrameBlend: false
+    endTime: 1.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 1.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "confetti"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [2.000000, 2.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.100000, 0.100000]
+    sizeVariation: [0.100000, 0.100000]
+    spin: 200.000000
+    spinVariation: 200.000000
+    sprite: "../../../../Gfx/Particles/1AP/small_gun"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 3.000000
+    velocityVariation: 1.000000

@@ -1,0 +1,93 @@
+Header:
+    version: "0"
+ImportedPackages: []
+Controls:
+-   class: "UIControl"
+    customClass: "UITipsView"
+    name: "hint"
+    position: [0.000000, 0.000000]
+    size: [1024.000000, 160.000000]
+    noInput: true
+    leftAlignEnabled: true
+    leftAlign: 0.000000
+    rightAlignEnabled: true
+    rightAlign: 0.000000
+    bottomAlignEnabled: true
+    bottomAlign: 0.000000
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 0.298039]
+    children:
+    -   class: "UIControl"
+        name: "hintBg"
+        position: [0.000000, 0.000000]
+        size: [254.000000, 160.000000]
+        noInput: true
+        leftAlignEnabled: true
+        bottomAlignEnabled: true
+        topAlignEnabled: true
+        hcenterAlignEnabled: false
+        hcenterAlign: 0.000000
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleLoadingScreen/tips_back"
+                align: ["HCENTER", "VCENTER"]
+        children:
+        -   class: "UIControl"
+            name: "hintIcon"
+            position: [0.000000, 0.000000]
+            size: [254.000000, 160.000000]
+            noInput: true
+            leftAlignEnabled: true
+            rightAlignEnabled: true
+            bottomAlignEnabled: true
+            topAlignEnabled: true
+            hcenterAlignEnabled: true
+            hcenterAlign: -365.000000
+            components:
+                Background:
+                    sprite: ""
+                    align: ["HCENTER", "VCENTER"]
+    -   class: "UIStaticText"
+        name: "hintText"
+        position: [274.000000, 5.000000]
+        size: [730.000000, 150.000000]
+        noInput: true
+        leftAlignEnabled: true
+        leftAlign: 274.000000
+        rightAlignEnabled: true
+        rightAlign: 20.000000
+        bottomAlignEnabled: true
+        bottomAlign: 5.000000
+        topAlignEnabled: true
+        topAlign: 5.000000
+        hcenterAlignEnabled: true
+        hcenterAlign: 110.000000
+        text: "Arena loading note"
+        font: "WarHeliosCondC_Bold_21_tips"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        shadowoffset: [0.000000, 1.000000]
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: USE_BY_CONTENT
+        components:
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "delimiter"
+        position: [0.000000, 0.000000]
+        size: [1024.000000, 1.000000]
+        noInput: true
+        leftAlignEnabled: true
+        rightAlignEnabled: true
+        bottomAlignEnabled: false
+        topAlignEnabled: true
+        hcenterAlignEnabled: true
+        hcenterAlign: -365.000000
+        components:
+            Background:
+                drawType: "DRAW_FILL"
+                sprite: ""
+                color: [1.000000, 1.000000, 1.000000, 0.486275]
+                align: ["HCENTER", "VCENTER"]

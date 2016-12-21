@@ -1,0 +1,254 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".header1"
+    properties:
+        text-font: "Font_18_bold"
+Controls:
+-   prototype: "StyledButton/StyledButton"
+    name: "LocalButton"
+    size: [222.000000, 49.000000]
+    visible: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 2.000000
+            rightAnchorEnabled: true
+            rightAnchor: 2.000000
+        Background:
+            topBottomStretchCap: 5.000000
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        position: [5.000000, 4.000000]
+        size: [40.000000, 41.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/ModuleDamaged"
+-   class: "UIControl"
+    customClass: "ModulesUIDialog"
+    name: "DevFunctionModulesDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        customClass: "DraggableDialog"
+        name: "modulesDialog"
+        position: [405.000000, 101.500000]
+        size: [214.000000, 565.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "Background"
+            size: [214.000000, 565.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+            children:
+            -   class: "UIControl"
+                name: "Middle"
+                position: [0.000000, 42.000000]
+                size: [214.000000, 505.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 42.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 18.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableMiddle"
+                        align: ["HCENTER", "TOP"]
+                        leftRightStretchCap: 10.000000
+                        topBottomStretchCap: 1.000000
+            -   class: "UIControl"
+                name: "Top"
+                size: [214.000000, 42.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableTop"
+                        align: ["HCENTER", "TOP"]
+                        leftRightStretchCap: 10.000000
+            -   class: "UIControl"
+                name: "Bottom"
+                position: [0.000000, 547.000000]
+                size: [214.000000, 18.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableBottom"
+                        align: ["HCENTER", "BOTTOM"]
+                        leftRightStretchCap: 10.000000
+        -   prototype: "StyledButton/StyledButton"
+            name: "cancelButton"
+            size: [190.000000, 49.000000]
+            visible: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 12.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 12.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 15.000000
+                Background:
+                    frame: 3
+                    topBottomStretchCap: 5.000000
+            children:
+            -   path: "Caption"
+                text: "Back to Game"
+        -   class: "UIStaticText"
+            name: "titleText"
+            position: [10.000000, 5.000000]
+            size: [194.000000, 30.000000]
+            noInput: true
+            classes: "header1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            text: "Modules"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
+                Background:
+                    align: ["LEFT", "TOP"]
+        -   class: "UIControl"
+            name: "verticalBox"
+            position: [10.000000, 45.000000]
+            size: [196.000000, 450.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 1.000000
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 8.000000
+                    topAnchorEnabled: true
+                    topAnchor: 45.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 70.000000
+            children:
+            -   prototype: "LocalButton"
+                name: "engineButton"
+                children:
+                -   path: "Caption"
+                    text: "Engine"
+            -   prototype: "LocalButton"
+                name: "ammoButton"
+                children:
+                -   path: "Caption"
+                    text: "Ammo bay"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 1
+            -   prototype: "LocalButton"
+                name: "gunButton"
+                children:
+                -   path: "Caption"
+                    text: "Gun"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 4
+            -   prototype: "LocalButton"
+                name: "turretButton"
+                children:
+                -   path: "Caption"
+                    text: "Turret rotator"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 5
+            -   prototype: "LocalButton"
+                name: "leftTrackButton"
+                children:
+                -   path: "Caption"
+                    text: "Left track"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 3
+            -   prototype: "LocalButton"
+                name: "rightTrackButton"
+                children:
+                -   path: "Caption"
+                    text: "Right track"
+                    font: "Font_18_bold"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 3
+                            spriteModification: ["FLIP_HORIZONTAL"]
+            -   prototype: "LocalButton"
+                name: "surveyButton"
+                children:
+                -   path: "Caption"
+                    text: "Surveying device"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 6
+            -   prototype: "LocalButton"
+                name: "fuelButton"
+                children:
+                -   path: "Caption"
+                    text: "Fuel tank"
+                -   path: "icon"
+                    components:
+                        Background:
+                            frame: 2

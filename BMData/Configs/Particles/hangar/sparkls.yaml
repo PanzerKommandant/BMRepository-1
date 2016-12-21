@@ -1,0 +1,51 @@
+emitter:
+    3d: "true"
+    emissionAngle: 0.0000
+    emissionRange: 360.0000
+    emissionVector: [0.0000, 0.0000, 1.0000]
+    emissionVectorInverted: "true"
+    life: 1000000.0000
+    shortEffect: "false"
+    size: [15.0000, 20.0000, 10.0000]
+    type: "rect"
+
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alignToMotion: 0.0000
+    alphaOverLife: [0.0000, 0.0000, 0.0756, 0.3000, 0.2027, 0.0000, 0.3265, 0.0000, 0.5137, 0.3109, 0.6065, 0.3140, 0.7285, 0.0000, 0.8436, 0.3223, 0.9021, 0.2164, 1.0000, 0.0000]
+    angle: 10.0000
+    angleVariation: 180.0000
+    deltaTime: 0.0000
+    deltaVariation: 0.0000
+    dstBlendFactor: "BLEND_ONE"
+    enableFog: "true"
+    enableFrameBlend: "false"
+    endTime: 1000000.0000
+    frameOverLifeEnabled: "false"
+    frameOverLifeFPS: 0.0000
+    inheritPosition: "true"
+    isDisabled: "false"
+    isLooped: "false"
+    layerType: "particles"
+    life: 30.0000
+    loopEndTime: 0.0000
+    loopSpriteAnimation: "true"
+    loopVariation: 0.0000
+    name: "Layer"
+    number: 30.0000
+    particleOrientation: 1
+    pivotPoint: [0.0000, 0.0000]
+    randomFrameOnStart: "false"
+    randomSpinDirection: "false"
+    scaleVelocityBase: 1.0000
+    scaleVelocityFactor: 0.0000
+    size: [0.0700, 0.0700]
+    spin: 10.0000
+    sprite: "../../../Gfx/Particles/hangar/fog"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.0000
+    type: "layer"
+    velocity: 0.0200
+    velocityOverLife: 2.0000
+    velocityVariation: 0.0000
+

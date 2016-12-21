@@ -1,0 +1,24 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
+Controls:
+-   class: "UIControl"
+    name: "IconButton"
+    size: [222.000000, 70.000000]
+    classes: "button"
+    components:
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            align: ["HCENTER", "VCENTER"]
+            leftRightStretchCap: 9.000000
+            topBottomStretchCap: 9.000000
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true

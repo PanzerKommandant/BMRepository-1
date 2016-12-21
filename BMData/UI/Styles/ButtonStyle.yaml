@@ -1,0 +1,30 @@
+Header:
+    version: "4"
+StyleSheets:
+-   selector: ".button"
+    properties:
+        exclusiveInput: true
+-   selector: ".button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".button-color-gray"
+    properties:
+        bg-frame: 0
+-   selector: ".button-color-red"
+    properties:
+        bg-frame: 1
+-   selector: ".button-color-green"
+    properties:
+        bg-frame: 2
+-   selector: ".button-color-orange"
+    properties:
+        bg-frame: 3
+-   selector: ".button-color-white"
+    properties:
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/white_contour.txt"
+        bg-detail: "~res:/Gfx/UI/CommonUIElements/Button/white_detail.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/white_gradient.txt"
+        bg-mask: "~res:/Gfx/UI/CommonUIElements/Button/white_mask.txt"

@@ -1,0 +1,28 @@
+modules:
+    "#vehicle:M36_Slagger":
+        position: [3, 5]
+    "#vehicle:T20":
+        position: [4, 2]
+    "#vehicleChassis:NVSS_T66":
+        position: [1, 5]
+    "#vehicleChassis:NVSS_T80":
+        position: [2, 5]
+    "#vehicleEngine:Ford_GAA":
+        position: [3, 4]
+    "#vehicleEngine:Wright_Continental_R-975C1":
+        position: [1, 4]
+    "#vehicleEngine:Wright_Continental_R-975C4":
+        position: [2, 4]
+    "#vehicleGun:_105mm_SPH_M4_L23":
+        position: [2, 2]
+    "#vehicleGun:_75mm_Gun_M3_L37":
+        position: [1, 2]
+    "#vehicleGun:_76mm_Gun_M1A1":
+        position: [2, 1]
+    "#vehicleGun:_76mm_Gun_M1A2":
+        position: [4, 1]
+    "#vehicleTurret:D51074":
+        position: [1, 3]
+    "#vehicleTurret:D51080":
+        position: [3, 1]
+

@@ -1,0 +1,48 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 90.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "sparks"
+    shortEffect: false
+    size: [1.000000, 1.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    alphaOverLife: [0.000000, 0.000000, 0.041000, 0.402300]
+    blending: 3
+    colorRandom: [0.000000, [255.000000, 151.000000, 23.000000, 255.000000], 0.102800, [255.000000, 235.000000, 210.000000, 255.000000], 0.249500, [255.000000, 65.000000, 7.000000, 255.000000], 0.293200, [255.000000, 169.000000, 83.000000, 255.000000], 0.382900, [255.000000, 210.000000, 179.000000, 255.000000], 0.495600, [255.000000, 151.000000, 32.000000, 255.000000], 0.597400, [255.000000, 118.000000, 26.000000, 255.000000], 0.690400, [255.000000, 175.000000, 117.000000, 255.000000], 0.788800, [255.000000, 110.000000, 14.000000, 255.000000], 0.821700, [255.000000, 162.000000, 115.000000, 255.000000], 0.914700, [255.000000, 166.000000, 64.000000, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 1000.000000
+    force0: [0.000000, 0.000000, -8.000000]
+    forceCount: 1
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: true
+    isLooped: false
+    layerType: "particles"
+    life: 1.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "sparks"
+    number: [0.000000, 20.000000, 100.000000, 20.000000, 996.219971, 10.000000]
+    particleOrientation: 1
+    pivotPoint: [-0.000000, -0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 0.100000
+    scaleVelocityFactor: 0.300000
+    size: [0.005000, 0.050000]
+    sizeVariation: [0.005000, 0.040000]
+    sprite: "../../Gfx/Particles/alpha/Iskr"
+    startTime: 0.000000
+    type: "layer"
+    velocity: [0.000000, 3.000000, 99.540001, 2.000000]
+    velocityVariation: 3.000000

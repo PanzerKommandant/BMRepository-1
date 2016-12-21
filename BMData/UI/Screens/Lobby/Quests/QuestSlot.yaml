@@ -1,0 +1,535 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Lobby/Quests/EventRewardStyles.yaml"
+- "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
+StyleSheets:
+-   selector: ".quest-slot #FrameBlock #Frame"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/frame"
+-   selector: ".quest-slot.stage #FrameBlock #Frame"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/frame"
+-   selector: ".quest-slot #CardBlock #Clip #Content #Tape"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/tape"
+-   selector: ".quest-slot.stage #CardBlock #Clip #Content #Tape"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/tape"
+-   selector: ".quest-slot.stage #TitleBlock #Title"
+    properties:
+        text-textColor: [1.000000, 0.682353, 0.000000, 1.000000]
+-   selector: ".quest-slot.status-fail #StatusBlock #Status"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/Quests/stamp"
+-   selector: ".quest-slot.status-complete #StatusBlock #Status"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/stamp"
+-   selector: ".quest-slot.status-complete.stage #StatusBlock #Status"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/Quests/stamp"
+-   selector: ".quest-slot.status-active #StatusBlock #Status"
+    properties:
+        visible: false
+-   selector: "#disable .quest-slot #CardBlock #Clip #Content #ExpireTimer"
+    properties:
+        anchor-hCenterAnchor: 0.000000
+-   selector: "#disable .quest-slot.stage #CardBlock #Clip #Content #ExpireTimer"
+    properties:
+        anchor-hCenterAnchor: 75.000000
+-   selector: ".quest-slot #CardBlock #Clip #Content #Stage"
+    properties:
+        visible: false
+-   selector: ".quest-slot.stage #CardBlock #Clip #Content #Stage"
+    properties:
+        visible: true
+-   selector: ".button"
+    properties: {}
+-   selector: ".button:pressed_inside"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.494118]
+-   selector: ".button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.749020]
+-   selector: ".many-rewards #Description"
+    properties:
+        visible: true
+-   selector: ".few-rewards #Description"
+    properties:
+        visible: false
+-   selector: ".many-rewards #RegularLayout #Reward #Description"
+    properties:
+        visible: false
+Controls:
+-   class: "UIControl"
+    name: "EventReward"
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: 5.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "FixedSize"
+            verticalValue: 31.000000
+    children:
+    -   class: "UIStaticText"
+        name: "Value"
+        classes: "header1 text-color-white"
+        shadowoffset: [0.000000, 1.000000]
+        text: "text"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+    -   class: "UIControl"
+        name: "Icon"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 22.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 22.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 2.000000
+-   class: "UIControl"
+    customClass: "UIQuestSlot"
+    name: "QuestSlotInBattleResult"
+    size: [240.000000, 470.000000]
+    enabled: true
+    classes: "button quest-slot"
+    children:
+    -   class: "UIControl"
+        name: "TitleBlock"
+        size: [280.000000, 60.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -20.000000
+                rightAnchorEnabled: true
+                rightAnchor: -20.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -210.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            size: [280.000000, 60.000000]
+            classes: "header1 text-color-white"
+            textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "VCENTER"]
+            textUseRtlAlign: "USE_BY_CONTENT"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "CardBlock"
+        size: [220.000000, 252.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -35.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "Clip"
+            size: [220.000000, 252.000000]
+            clip: true
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "Content"
+                size: [220.000000, 252.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                children:
+                -   class: "UIControl"
+                    name: "Image"
+                    clip: false
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIControl"
+                    name: "Tape"
+                    size: [220.000000, 68.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 152.000000
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIControl"
+                    name: "Stage"
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 119.000000
+                        Background:
+                            sprite: "~res:/Gfx/UI/Quests/StageBackground"
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Text"
+                        classes: "header4"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIControl"
+                    name: "Reward"
+                    size: [220.000000, 100.000000]
+                    pivot: [0.500000, 0.500000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 152.000000
+                            bottomAnchorEnabled: true
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    children:
+                    -   class: "UIControl"
+                        name: "RegularLayout"
+                        size: [0.000000, 50.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                dynamicSpacing: true
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                topAnchorEnabled: true
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    -   class: "UIStaticText"
+                        name: "Description"
+                        size: [220.000000, 0.000000]
+                        classes: "header2"
+                        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 15.000000
+                -   prototype: "ExpireTimer/ExpireTimer"
+                    name: "ExpireTimer"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            topAnchorEnabled: true
+                            topAnchor: 120.000000
+                    children:
+                    -   path: "Timer/Hours"
+                        text: "12"
+                    -   path: "Timer/Minutes"
+                        text: "35"
+            -   class: "UIControl"
+                name: "ContentAnimationHolder"
+                visible: true
+                noInput: true
+                debugDraw: false
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                children:
+                -   class: "UIControl"
+                    name: "ContentAppear"
+                    size: [220.000000, 252.000000]
+                    visible: false
+                    clip: true
+                    noInput: true
+                    components:
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    children:
+                    -   class: "UIControl"
+                        name: "Scale"
+                        position: [110.000000, 126.000000]
+                        size: [220.000000, 252.000000]
+                        pivot: [0.500000, 0.500000]
+                        visible: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: false
+                                rightAnchorEnabled: false
+                                topAnchorEnabled: false
+                                bottomAnchorEnabled: false
+                -   class: "UIControl"
+                    name: "ContentDisappear"
+                    size: [220.000000, 252.000000]
+                    visible: false
+                    clip: true
+                    noInput: true
+                    components:
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    children:
+                    -   class: "UIControl"
+                        customClass: "UICroppedControl"
+                        name: "Crop"
+                        visible: true
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                    -   class: "UIParticles"
+                        name: "FireLine"
+                        position: [0.000000, 252.000000]
+                        angle: 45.000000
+                        visible: true
+                        effectPath: "~res:/3d/FX/UI/Quests/FirePlume/fire_plume.sc2"
+                        autoStart: true
+                -   class: "UIControl"
+                    name: "BonusAppear"
+                    position: [110.000000, 126.000000]
+                    size: [220.000000, 252.000000]
+                    pivot: [0.500000, 0.500000]
+                    visible: true
+                    clip: true
+                    noInput: true
+                    components:
+                        Background:
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   class: "UIControl"
+        name: "FrameBlock"
+        size: [232.000000, 264.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -35.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "Frame"
+            size: [232.000000, 264.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "StatusBlock"
+        size: [92.000000, 92.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 116.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -167.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "Status"
+            size: [92.000000, 92.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "ProgressBlock"
+        size: [240.000000, 40.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 135.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "Progress"
+            size: [240.000000, 40.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            children:
+            -   class: "UIControl"
+                customClass: "UIHangarTankBaseParamBar"
+                name: "Bar"
+                position: [0.000000, 5.000000]
+                size: [240.000000, 6.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                        bottomAnchorEnabled: false
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [1.000000, 0.000000, 1.000000, 1.000000]
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIStaticText"
+                name: "Value"
+                size: [240.000000, 30.000000]
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                text: "5 / 5"
+                font: "WarHeliosCondC_17"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+    -   class: "UIControl"
+        name: "RewardAnimationHolder"
+        size: [220.000000, 100.000000]
+        visible: false
+        noInput: true
+        debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 226.000000
+        children:
+        -   class: "UIControl"
+            name: "RewardScaling"
+            position: [110.000000, 28.000000]
+            size: [440.000000, 200.000000]
+            pivot: [0.500000, 0.280000]
+            noInput: true
+            children:
+            -   class: "UIParticles"
+                name: "glow"
+                position: [220.000000, 56.000000]
+                size: [10.000000, 10.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                effectPath: "~res:/3d/FX/UI/Quests/Cards/glow.sc2"
+                autoStart: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -44.000000
+                    Background:
+                        align: ["HCENTER", "VCENTER"]
+            -   class: "UIControl"
+                name: "Image"
+                size: [140.000000, 140.000000]
+                pivot: [0.500000, 0.500000]
+                noInput: true
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -44.000000
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIStaticText"
+                name: "Text"
+                position: [220.000000, 110.000000]
+                size: [440.000000, 82.000000]
+                pivot: [0.500000, 0.000000]
+                shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+                textUseRtlAlign: "USE_BY_CONTENT"
+                font: "WarHeliosCondC_Bold_42"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 110.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 8.000000
+-   prototype: "QuestSlotInBattleResult"
+    name: "QuestSlot"
+    children:
+    -   path: "CardBlock/Clip/Content/Reward"
+        classes: ""
+        children: []
+    -   path: "CardBlock/Clip/Content/Reward/RegularLayout"
+        components:
+            LinearLayout:
+                orientation: "RightToLeft"
+    -   path: "RewardAnimationHolder/RewardScaling/Text"
+        angle: 0.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "SkipButton"
+        classes: "button"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true

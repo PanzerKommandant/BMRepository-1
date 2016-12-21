@@ -1,0 +1,230 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Lobby/Crew/CrewCommon.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "CrewDialog"
+    position: [0.000000, 0.000000]
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "LobbyCommon/DialogBackground"
+        name: "Background"
+    -   class: "UIControl"
+        name: "Footer"
+        size: [1024.000000, 85.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.502000]
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "BtnSelectSkill"
+            size: [286.000000, 71.000000]
+            classes: "button button-color-green"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                classes: "header1 hacked-font text-color-white"
+                text: "#crew:mastery/congratulation/selectSkill"
+        -   prototype: "StyledButton/StyledButton"
+            name: "BtnRecommendedSkill"
+            size: [449.000000, 71.000000]
+            classes: "button button-color-gray"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                classes: "header1 button-color-green text-color-white"
+                text: "#crew:mastery/congratulation/recomendedSkill"
+    -   class: "UIControl"
+        name: "Content"
+        size: [1024.000000, 683.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 85.000000
+-   prototype: "CrewDialog"
+    customClass: "UISkillTrainedDialog"
+    name: "SkillTrainedDialog"
+    children:
+    -   path: "Content"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicPadding: true
+                dynamicSpacing: true
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            size: [960.000000, 30.000000]
+            classes: "header1 text-color-white"
+            text: "#crew:skills/congratulation/header"
+            components:
+                SizePolicy: {}
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 30.000000
+        -   class: "UIStaticText"
+            name: "labelTop"
+            size: [960.000000, 44.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "TOP"]
+            text: "#crew:skills/skillDescription/tip2"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+        -   prototype: "CrewCommon/SkillPanelWithText"
+            name: "TrainedSkill"
+            size: [640.000000, 114.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+            children:
+            -   path: "Skill/ShortSkillDescription/Progress"
+                visible: false
+                children: []
+            -   path: "Skill/ShortSkillDescription/Price"
+                visible: false
+                children: []
+        -   prototype: "CrewCommon/Divider"
+            name: "Divider"
+            position: [0.000000, 325.500000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "Tip"
+            position: [192.000000, 361.875000]
+            size: [640.000000, 60.000000]
+            classes: "header3 text-color-white"
+            multiline: "MULTILINE_ENABLED"
+            text: "#crew:mastery/congratulation/desc/lightTank"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   prototype: "CrewCommon/SkillPanelWithText"
+            name: "RecommendedSkill"
+            position: [192.000000, 456.250000]
+            size: [640.000000, 114.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+            children:
+            -   path: "Skill/ShortSkillDescription/Progress"
+                visible: false
+                children: []
+            -   path: "Skill/ShortSkillDescription/Price"
+                visible: false
+                children: []
+        -   class: "UIStaticText"
+            name: "labelBottom"
+            size: [960.000000, 44.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "BOTTOM"]
+            text: "#crew:mastery/congratulation/desc2"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 95.000000
+-   prototype: "CrewDialog"
+    customClass: "UISkillTrainedDialog"
+    name: "AllSkillsTrainedDialog"
+    children:
+    -   path: "Footer/BtnSelectSkill"
+        visible: false
+        children: []
+    -   path: "Footer/BtnRecommendedSkill"
+        size: [315.000000, 71.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: false
+                leftAnchor: 0.000000
+                hCenterAnchorEnabled: true
+        children: []
+    -   path: "Footer/BtnRecommendedSkill/Caption"
+        size: [315.000000, 71.000000]
+        text: "hangar menu hangar"
+    -   path: "Content"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicPadding: true
+                dynamicSpacing: true
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            size: [960.000000, 30.000000]
+            text: "#crew:skills/congratulation/header"
+            font: "WarHeliosCondC_Bold_25_skills"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 30.000000
+        -   class: "UIStaticText"
+            name: "labelTop"
+            size: [960.000000, 44.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "TOP"]
+            text: "label"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 60.000000
+        -   prototype: "CrewCommon/SkillPanelWithText"
+            name: "TrainedSkill"
+            size: [640.000000, 154.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Skill/ShortSkillDescription/Price"
+                visible: false
+                children: []
+        -   class: "UIStaticText"
+            name: "labelBottom"
+            size: [960.000000, 44.000000]
+            classes: "text2 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            textalign: ["HCENTER", "BOTTOM"]
+            text: "label"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 95.000000

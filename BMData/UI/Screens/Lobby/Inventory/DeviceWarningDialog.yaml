@@ -1,0 +1,44 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/DialogView.yaml"
+Controls:
+-   prototype: "DialogView/WarningDialog"
+    name: "DeviceWarningDialog"
+    children:
+    -   path: "Dialog/Content/InfoContent"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicPadding: true
+                spacing: 10.000000
+        children:
+        -   class: "UIStaticText"
+            name: "DialogTextTop"
+            size: [460.000000, 0.000000]
+            classes: "text1"
+            multiline: "MULTILINE_ENABLED"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+        -   class: "UIStaticText"
+            name: "DialogTextBottom"
+            size: [460.000000, 26.000000]
+            classes: "text1"
+            multiline: "MULTILINE_ENABLED"
+            text: "INVENTORY_OPTIONAL_DEVICE_CHANGE_NOTE"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "ClanSupplyDiscount"
+            size: [50.000000, 30.000000]
+            angle: 0.000000
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/DiscountClanSmall"

@@ -1,0 +1,41 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Su85/card_su_85"
+        children:
+        -   class: "UIParticles"
+            name: "SnowTop"
+            position: [0.000000, 100.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_su_85/snow_top.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Su85/card_su_85"
+        children:
+        -   class: "UIParticles"
+            name: "SnowGround"
+            position: [60.000000, 230.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_su_85/snow_ground.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_su_85/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SnowFront"
+            position: [0.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_su_85/snow_front.sc2"
+            autoStart: true

@@ -1,0 +1,105 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 1.000000
+    emissionVector: [0.000000, -0.010000, 0.010000]
+    emissionVectorInverted: true
+    name: "dirt_stone_l"
+    shortEffect: false
+    size: [1.000000, 1.000000, 1.000000]
+    type: "point"
+layer0:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
+    blending: 1
+    colorOverLife: [212.501938, 175.840469, 103.334625, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 10000.000000
+    force0: [0.000000, 0.000000, -5.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.381600, 0.809500, 0.990000, 5.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 1.000000, 0.500000]
+        value_line: 1.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "sand1"
+    number:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 0.000000, 0.991000, 0.998500]
+        value_line: 10.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [1.000000, 1.000000]
+    spin: 90.000000
+    spinVariation: 90.000000
+    sprite: "../../../../Gfx/Particles/alpha/pul"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 60.000000
+    velocityVariation: 200.000000
+layer1:
+    activeLODS: [0, 1, 0, 0]
+    alphaOverLife: [0.000000, 1.000000, 0.717500, 0.883200, 1.000000, 0.000000]
+    blending: 1
+    colorOverLife: [211.319061, 174.859924, 102.758751, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 10000.000000
+    force0: [0.000000, 0.000000, -5.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 5.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 1.000000, 1.000000, 0.500000]
+        value_line: 1.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "sand2"
+    number:
+        externalVariable: "Velosity"
+        modification_line: [0.000000, 0.000000, 0.994000, 1.000000]
+        value_line: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [1.000000, 1.000000]
+    sizeOverLifeXY: [1.000000, 1.000000]
+    spin: 90.000000
+    spinVariation: 90.000000
+    sprite: "../../../../Gfx/Particles/alpha/pul_one"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 60.000000
+    velocityVariation: 200.000000

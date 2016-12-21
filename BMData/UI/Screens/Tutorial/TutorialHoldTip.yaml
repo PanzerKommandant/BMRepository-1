@@ -1,0 +1,109 @@
+Header:
+    version: "1"
+StyleSheets:
+-   selector: ".finger-button:pressed_inside"
+    properties:
+        scale:
+            value: [1.100000, 1.100000]
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+-   selector: ".finger-button"
+    properties:
+        scale:
+            value: [1.000000, 1.000000]
+            transitionTime: 0.150000
+            transitionFunction: "LINEAR"
+Controls:
+-   class: "UIControl"
+    name: "tutorialHoldTip"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            color: [0.000000, 0.000000, 0.000000, 1.000000]
+    children:
+    -   class: "UIStaticText"
+        name: "title"
+        position: [0.000000, 35.000000]
+        size: [1024.000000, 40.000000]
+        noInput: true
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        multiline: "MULTILINE_ENABLED"
+        text: "#battle_tutorial:grip/comment"
+        font: "WarHeliosCondC_Bold_25"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 35.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIControl"
+        name: "tip"
+        position: [427.500000, 95.000000]
+        size: [169.000000, 106.000000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                topAnchorEnabled: true
+                topAnchor: 95.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Tutorial/IpadIcon"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIButton"
+        name: "button1"
+        position: [188.000000, 550.000000]
+        size: [136.000000, 156.000000]
+        pivot: [0.500000, 0.500000]
+        classes: "finger-button"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 120.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 140.000000
+            Normal:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                sprite: "~res:/Gfx/UI/Tutorial/button_fingerprint_over"
+                frame: 0
+                spriteModification: 0
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            PressedInside:
+                color: [1.000000, 1.000000, 1.000000, 0.996100]
+                colorInherit: "COLOR_IGNORE_PARENT"
+            Selected:
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+            NormalText:
+                font: "Font_default"
+    -   class: "UIButton"
+        name: "button2"
+        position: [836.000000, 550.000000]
+        size: [136.000000, 156.000000]
+        pivot: [0.500000, 0.500000]
+        classes: "finger-button"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 120.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 140.000000
+            Normal:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                sprite: "~res:/Gfx/UI/Tutorial/button_fingerprint_over"
+                frame: 0
+                spriteModification: 1
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            PressedInside:
+                color: [1.000000, 1.000000, 1.000000, 0.996100]
+                colorInherit: "COLOR_IGNORE_PARENT"
+            Selected:
+                color: [1.000000, 1.000000, 1.000000, 1.000000]
+            NormalText:
+                font: "Font_default"

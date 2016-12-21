@@ -1,0 +1,54 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Base/card_base"
+        children:
+        -   class: "UIParticles"
+            name: "FireTank"
+            position: [10.000000, 110.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_base/fire_tank.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Base/card_base"
+        children:
+        -   class: "UIParticles"
+            name: "Dust"
+            size: [10.000000, 10.000000]
+            enabled: true
+            rightAlignEnabled: true
+            bottomAlignEnabled: true
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_base/dust.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [20.000000, 250.000000]
+            clip: false
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_base/glow_flow.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [20.000000, 250.000000]
+            size: [10.000000, 10.000000]
+            pivot: [0.000000, 0.000000]
+            enabled: true
+            clip: false
+            leftAlignEnabled: false
+            rightAlignEnabled: false
+            topAlignEnabled: false
+            hcenterAlignEnabled: false
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_base/sparks_front.sc2"
+            autoStart: true

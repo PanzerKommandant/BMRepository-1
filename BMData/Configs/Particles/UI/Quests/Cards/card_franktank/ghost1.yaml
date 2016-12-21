@@ -1,0 +1,44 @@
+emitter:
+    emissionRange: 0.000000
+    emissionVector: [0.000000, -0.500000, 0.000000]
+    emissionVectorInverted: true
+    name: "Particle Emitter"
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: [0.000000, 0.000000, 0.231733, 0.586269, 0.534447, 0.594954, 0.797495, 0.587990, 0.990000, 0.000000]
+    colorOverLife: [0.000000, [204.000000, 199.000000, 255.000000, 255.000000], 0.996400, [195.000000, 195.000000, 195.000000, 255.000000]]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 5.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: true
+    isLong: false
+    isLooped: false
+    layerType: "single"
+    life: 8.000000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: false
+    loopVariation: 0.000000
+    name: "ghost"
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [50.000000, 50.000000]
+    sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [1.500000, 2.000000]]
+    sizeVariation: [20.000000, 20.000000]
+    sprite: "../../../../../../Gfx/Particles/UI/ghost1"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"

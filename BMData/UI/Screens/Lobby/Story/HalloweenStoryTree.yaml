@@ -1,0 +1,699 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/StoryTreePrototypes.yaml"
+Controls:
+-   prototype: "StoryTreePrototypes/StoryStep"
+    name: "DraculaPrototype"
+    children:
+    -   path: "ExpandedState/Image"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/drakula_icon"
+        children:
+        -   class: "UIControl"
+            name: "Control"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/drakula_icon"
+                    frame: 1
+                    color: [0.305882, 0.615686, 0.854902, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/drakula_icon"
+                    frame: 2
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "NormalState/Image"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/drakula_icon"
+        children:
+        -   class: "UIControl"
+            name: "Control"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/drakula_icon"
+                    frame: 1
+                    color: [0.305882, 0.615686, 0.854902, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/drakula_icon"
+                    frame: 2
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   prototype: "StoryTreePrototypes/StoryStep"
+    name: "HellsingPrototype"
+    children:
+    -   path: "ExpandedState/Image"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+        children:
+        -   class: "UIControl"
+            name: "Control"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+                    frame: 1
+                    color: [0.317647, 0.549020, 0.894118, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+                    frame: 2
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "NormalState/Image"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+        children:
+        -   class: "UIControl"
+            name: "Control"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+                    frame: 1
+                    color: [0.317647, 0.549020, 0.894118, 1.000000]
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "Number"
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/hellsing_icon"
+                    frame: 2
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "Stories"
+    size: [950.000000, 320.000000]
+    noInput: true
+    children:
+    -   prototype: "StoryTreePrototypes/SArrowUp"
+        name: "SArrowUp"
+        position: [103.000000, 86.000000]
+        size: [34.499798, 76.999977]
+    -   prototype: "StoryTreePrototypes/SArrowDown"
+        name: "SArrowDown"
+        position: [103.000000, 161.000000]
+        size: [34.499798, 71.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [328.000000, 229.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [759.000000, 85.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [652.000000, 85.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [652.000000, 229.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [220.000000, 85.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [220.000000, 228.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [328.000000, 85.000008]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [760.000000, 229.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [436.000000, 85.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [436.000000, 229.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [544.000000, 85.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/Arrow"
+        name: "Arrow"
+        position: [544.000000, 229.000000]
+        size: [25.000000, 2.000000]
+        children:
+        -   path: "HorizontalLine"
+            position: [0.000000, 0.000000]
+            size: [20.000000, 2.000000]
+    -   prototype: "StoryTreePrototypes/StoryStep"
+        name: "0"
+        position: [20.000000, 126.000000]
+        children:
+        -   path: "ExpandedState/Image"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/1level_icon"
+        -   path: "NormalState/Image"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Story/1level_icon"
+    -   prototype: "DraculaPrototype"
+        name: "1"
+        position: [137.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.305882, 0.615686, 0.854902, 1.000000]
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.305882, 0.615686, 0.854902, 1.000000]
+    -   prototype: "DraculaPrototype"
+        name: "2"
+        position: [245.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.372549, 0.713726, 0.662745, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.372549, 0.713726, 0.662745, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+    -   prototype: "DraculaPrototype"
+        name: "3"
+        position: [353.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.019608, 0.301961, 0.596078, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.019608, 0.301961, 0.596078, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+    -   prototype: "DraculaPrototype"
+        name: "4"
+        position: [461.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.827451, 0.407843, 0.066667, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.827451, 0.407843, 0.066667, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+    -   prototype: "DraculaPrototype"
+        name: "5"
+        position: [568.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.576471, 0.372549, 0.850980, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.576471, 0.372549, 0.850980, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+    -   prototype: "DraculaPrototype"
+        name: "6"
+        position: [677.000000, 52.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.878431, 0.160784, 0.160784, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.878431, 0.160784, 0.160784, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+    -   prototype: "HellsingPrototype"
+        name: "8"
+        position: [137.000000, 197.000000]
+    -   prototype: "HellsingPrototype"
+        name: "9"
+        position: [245.000000, 197.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.372549, 0.713726, 0.662745, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.372549, 0.713726, 0.662745, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 3
+    -   prototype: "HellsingPrototype"
+        name: "10"
+        position: [353.000000, 197.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.011765, 0.333333, 0.666667, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.011765, 0.333333, 0.666667, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 4
+    -   prototype: "HellsingPrototype"
+        name: "11"
+        position: [461.000000, 197.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.827451, 0.407843, 0.066667, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.827451, 0.407843, 0.066667, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 5
+    -   prototype: "HellsingPrototype"
+        name: "12"
+        position: [568.000000, 197.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.576471, 0.372549, 0.850980, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.576471, 0.372549, 0.850980, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 6
+    -   prototype: "HellsingPrototype"
+        name: "13"
+        position: [677.000000, 197.000000]
+        children:
+        -   path: "ExpandedState/Image/Control"
+            components:
+                Background:
+                    color: [0.878431, 0.160784, 0.160784, 1.000000]
+        -   path: "ExpandedState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+        -   path: "NormalState/Image/Control"
+            components:
+                Background:
+                    color: [0.878431, 0.160784, 0.160784, 1.000000]
+        -   path: "NormalState/Image/Number"
+            components:
+                Background:
+                    frame: 7
+    -   prototype: "StoryTreePrototypes/StoryBigStep"
+        name: "7"
+        position: [785.000000, 34.000000]
+        children:
+        -   path: "ExpandedState"
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [20.000000, 0.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 16
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 7
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   path: "ExpandedState/Image"
+            scale: [0.700000, 0.700000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-AMX_Dracula"
+        -   path: "NormalState"
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [23.000000, 3.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 23.000000
+                        topAnchorEnabled: true
+                        topAnchor: 3.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 16
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 7
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   path: "NormalState/Image"
+            scale: [0.700000, 0.700000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-AMX_Dracula"
+        -   path: "NormalState/Label"
+            text: "#other_vehicles:AMX_dracula"
+            font: "WarHeliosCondC_21"
+    -   prototype: "StoryTreePrototypes/StoryBigStep"
+        name: "14"
+        position: [785.000000, 177.000000]
+        children:
+        -   path: "ExpandedState"
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [20.000000, 0.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 16
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 9
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+            -   class: "UIControl"
+                name: "class"
+                position: [-3.000000, 0.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -3.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   path: "ExpandedState/Image"
+            scale: [0.700000, 0.700000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-Van_Helsing"
+        -   path: "NormalState"
+            children:
+            -   class: "UIControl"
+                name: "level"
+                position: [23.000000, 3.000000]
+                size: [34.000000, 30.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 23.000000
+                        topAnchorEnabled: true
+                        topAnchor: 3.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                        frame: 16
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+                        align: ["LEFT", "VCENTER"]
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 9
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+            -   class: "UIControl"
+                name: "class"
+                position: [-1.000000, 2.000000]
+                size: [36.000000, 32.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: -1.000000
+                        topAnchorEnabled: true
+                        topAnchor: 2.000000
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
+                        frame: 5
+                        colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        -   path: "NormalState/Image"
+            scale: [0.700000, 0.700000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/BigTankIcons/other-Van_Helsing"
+        -   path: "NormalState/Label"
+            text: "#other_vehicles:Van_Helsing"
+            font: "WarHeliosCondC_21"

@@ -1,0 +1,179 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "ProgressBar"
+    size: [256.000000, 6.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "ProgressBarBackground"
+        size: [256.000000, 6.000000]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.929412, 0.976471, 1.000000, 0.200000]
+    -   class: "UIControl"
+        name: "ProgressBarForegroundAdditional"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 0.000000
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.529412, 0.827451, 0.000000, 1.000000]
+    -   class: "UIControl"
+        name: "ProgressBarForeground"
+        size: [128.000000, 6.000000]
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 50.000000
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 0.400000, 0.000000, 1.000000]
+-   class: "UIStaticText"
+    name: "ProgressLabelTemplate"
+    size: [166.000000, 24.000000]
+    classes: "text1"
+    textColor: [0.862745, 0.807843, 0.729412, 1.000000]
+    textalign: ["LEFT", "VCENTER"]
+    text: "#clans:SupplyScreen/SupplyLevel/Explored"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+        Anchor:
+            leftAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UISupplyProgressBar"
+    name: "ResearchProgressBar"
+    size: [674.000000, 48.000000]
+    components:
+        LinearLayout:
+            padding: 10.000000
+            dynamicPadding: true
+            spacing: 10.000000
+            dynamicSpacing: true
+    children:
+    -   class: "UIControl"
+        name: "IconWrapper"
+        size: [48.000000, 48.000000]
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            size: [48.000000, 48.000000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/icon_clan_resources_big"
+    -   class: "UIControl"
+        name: "VertContainer"
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                dynamicPadding: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 68.000000
+                rightAnchorEnabled: true
+                rightAnchor: 18.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "CaptionContainer"
+            size: [596.000000, 24.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "CaptionBar"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        vCenterAnchorEnabled: true
+                children:
+                -   prototype: "ProgressLabelTemplate"
+                    name: "LabelExplored"
+                -   prototype: "ProgressLabelTemplate"
+                    name: "LabelAvailable"
+                    text: "#clans:SupplyScreen/SupplyLevel/Available"
+                -   prototype: "ProgressLabelTemplate"
+                    name: "LabelNotExplored"
+                    textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    text: "#clans:SupplyScreen/SupplyLevel/NotExplored"
+                -   prototype: "ProgressLabelTemplate"
+                    name: "LabelProgress"
+                    textColor: [1.000000, 0.400000, 0.000000, 1.000000]
+            -   class: "UIControl"
+                name: "ScoreBar"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "LabelValues"
+                    position: [-16.000000, 0.500000]
+                    size: [88.000000, 23.000000]
+                    classes: "text2 text-color-blue"
+                    textalign: ["RIGHT", "VCENTER"]
+                    text: "1000 / 1000"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 48.000000
+                            vCenterAnchorEnabled: true
+                -   class: "UIControl"
+                    name: "Icon"
+                    size: [32.000000, 24.000000]
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                            frame: 3
+        -   class: "UIControl"
+            name: "BarContainer"
+            size: [596.000000, 24.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   prototype: "ProgressBar"
+                name: "ProgressBar"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true

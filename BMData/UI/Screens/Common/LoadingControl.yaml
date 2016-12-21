@@ -1,0 +1,56 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common/LoadingSpinner.yaml"
+Controls:
+-   class: "UIControl"
+    name: "LoadingControl"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "FadeBackground"
+        size: [1024.000000, 768.000000]
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 0.498000]
+    -   class: "UIStaticText"
+        name: "DescriptionControl"
+        position: [512.000000, 409.000000]
+        size: [1024.000000, 60.000000]
+        pivot: [0.500000, 0.000000]
+        visible: false
+        noInput: true
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["HCENTER", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        font: "WarHeliosCondC_17"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 0.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 55.000000
+    -   class: "UIControl"
+        name: "SpinnerPlaceholder"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   prototype: "LoadingSpinner/LoadingSpinner"
+            name: "ProgressControl"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true

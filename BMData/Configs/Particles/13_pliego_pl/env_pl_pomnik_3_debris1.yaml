@@ -1,0 +1,98 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 60.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionVectorInverted: true
+    name: "debris1"
+    radius: 0.300000
+    shortEffect: false
+    size: [0.000000, 0.000000, 0.000000]
+    type: "shockwave"
+layer0:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [140.486404, 140.486404, 140.486404, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -2.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 15.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris1"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.050000, 0.050000]
+    sizeVariation: [0.100000, 0.100000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/brick_anim_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 2.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 2.000000
+layer1:
+    activeLODS: [1, 1, 0, 0]
+    angle: 100.000000
+    angleVariation: 100.000000
+    blending: 1
+    colorOverLife: [127.501900, 127.501900, 127.501900, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.300000
+    force0: [0.000000, 0.000000, -2.000000]
+    forceCount: 1
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 26.000000
+    inheritPosition: false
+    isLong: false
+    isLooped: false
+    layerType: "particles"
+    life: 4.000000
+    loopEndTime: 0.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "debris2"
+    number: 20.000000
+    particleOrientation: 1
+    pivotPoint: [0.000000, 0.000000]
+    randomFrameOnStart: true
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    size: [0.050000, 0.050000]
+    sizeVariation: [0.050000, 0.050000]
+    spin: 60.000000
+    spinVariation: 60.000000
+    sprite: "../../../Gfx/Particles/alpha/brick_anim_two"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 1.000000
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    velocityVariation: 3.000000

@@ -1,0 +1,72 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+Controls:
+-   class: "UIControl"
+    name: "LeftContent"
+    size: [270.000000, 80.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            dynamicPadding: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+            verticalValue: 95.000000
+    children:
+    -   class: "UIStaticText"
+        name: "Title"
+        position: [5.000000, 11.500000]
+        size: [265.000000, 31.000000]
+        classes: "header1"
+        shadowoffset: [0.000000, 1.000000]
+        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749020]
+        textalign: ["LEFT", "VCENTER"]
+        text: "LOREM IPSUM"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+                rightAnchorEnabled: true
+    -   class: "UIControl"
+        name: "RemainingTime"
+        size: [260.000000, 26.000000]
+        components:
+            LinearLayout:
+                spacing: 5.000000
+                useRtl: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Label"
+            size: [197.000000, 26.000000]
+            classes: "text1 text-color-blue"
+            text: "До завершения стадии:"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+        -   prototype: "ExpireTimer/ExpireTimer"
+            name: "ExpireTimer"
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 1.000000
+                Background:
+                    color: [0.627451, 0.725490, 0.800000, 1.000000]
+            children:
+            -   path: "Timer/Hours"
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   path: "Timer/ColonHM"
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   path: "Timer/Minutes"
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"

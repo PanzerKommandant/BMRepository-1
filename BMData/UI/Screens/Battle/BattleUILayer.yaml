@@ -1,0 +1,299 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".cont.loaded ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.501961]
+        text-textColor: [0.000000, 0.000000, 0.000000, 0.705882]
+-   selector: ".cont.rangefinder ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.501961]
+        text-textColor: [0.000000, 0.000000, 0.000000, 0.705882]
+-   selector: ".cont.loaded-last-wheel ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.392157]
+        text-textColor: [1.000000, 0.705882, 0.000000, 1.000000]
+-   selector: ".cont.loaded-last-type ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.392157]
+        text-textColor: [1.000000, 0.705882, 0.000000, 1.000000]
+-   selector: ".cont.loading ?"
+    properties:
+        text-shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
+        text-shadowoffset: [1.000000, 1.000000]
+        text-textColor: [0.921569, 0.929412, 0.000000, 1.000000]
+-   selector: ".cont.over ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.392157]
+        text-textColor: [0.352941, 0.352941, 0.352941, 1.000000]
+-   selector: ".cont.broken ?"
+    properties:
+        text-shadowcolor: [1.000000, 1.000000, 1.000000, 0.392157]
+        text-textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".cursor-font"
+    properties:
+        text-font: "WarHeliosCondC_Bold_17"
+        text-shadowoffset: [0.000000, -1.000000]
+Controls:
+-   class: "UIControl"
+    name: "UgnUvn"
+    position: [294.000000, 251.000000]
+    size: [248.000000, 32.000000]
+    visible: false
+    noInput: true
+    components:
+        Anchor: {}
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/UgnUvn"
+            frame: 1
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "Glow"
+        position: [0.000000, 0.000000]
+        size: [248.000000, 32.000000]
+        visible: true
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/UgnUvn"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    name: "EnemyMarker"
+    size: [50.000000, 50.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/EnemyMarker"
+            color: [1.000000, 0.000000, 0.000000, 0.600000]
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+-   class: "UIControl"
+    customClass: "BattleUILayer"
+    name: "BattleUILayer"
+    size: [800.000000, 600.000000]
+    noInput: true
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "HitHighlight"
+        size: [800.000000, 600.000000]
+        visible: false
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        name: "RecochetHighlight"
+        size: [800.000000, 600.000000]
+        visible: false
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIControl"
+        customClass: "UISightCursor"
+        name: "UISightCursor"
+        size: [800.000000, 600.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIControl"
+            name: "arcadeCursor"
+            size: [800.000000, 600.000000]
+            visible: true
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/SightCursor"
+                    color: [1.000000, 1.000000, 1.000000, 0.666667]
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "sightCursorZoom"
+            size: [220.000000, 60.000000]
+            visible: false
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/SightCursorSniper"
+                    color: [1.000000, 1.000000, 1.000000, 0.588235]
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   prototype: "UgnUvn"
+            name: "ugnLeft"
+            position: [48.000000, 300.000000]
+            pivot: [0.000000, 0.500000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    frame: 5
+            children:
+            -   path: "Glow"
+                components:
+                    Background:
+                        frame: 4
+        -   prototype: "UgnUvn"
+            name: "ugnRight"
+            position: [782.000000, 300.000000]
+            pivot: [1.000000, 0.500000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    frame: 7
+            children:
+            -   path: "Glow"
+                components:
+                    Background:
+                        frame: 6
+        -   prototype: "UgnUvn"
+            name: "uvnTop"
+            position: [400.000000, 160.500000]
+            pivot: [0.500000, 1.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   prototype: "UgnUvn"
+            name: "uvnBottom"
+            position: [400.000000, 452.277832]
+            pivot: [0.500000, 0.000000]
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                Background:
+                    frame: 3
+            children:
+            -   path: "Glow"
+                components:
+                    Background:
+                        frame: 2
+        -   class: "UIControl"
+            name: "distanceContainer"
+            size: [90.000000, 32.000000]
+            visible: true
+            noInput: true
+            classes: "cont rangefinder"
+            components:
+                LinearLayout:
+                    spacing: 3.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 70.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/RangeBack"
+                    color: [1.000000, 1.000000, 1.000000, 0.666667]
+            children:
+            -   class: "UIStaticText"
+                name: "distance"
+                classes: "cursor-font"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["RIGHT", "VCENTER"]
+                textMargins: [0.000000, 2.000000, 0.000000, 0.000000]
+                text: "350"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 60.000000
+                        verticalPolicy: "PercentOfParent"
+            -   class: "UIStaticText"
+                name: "m"
+                classes: "cursor-font"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textMargins: [0.000000, 2.000000, 0.000000, 0.000000]
+                text: "#common:Shortening/Meter"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 40.000000
+                        verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "reloadTimeContainer"
+            size: [90.000000, 32.000000]
+            visible: true
+            noInput: true
+            classes: "cont state=loading"
+            components:
+                LinearLayout:
+                    spacing: 3.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -85.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 9.000000
+            children:
+            -   class: "UIStaticText"
+                name: "reloadTime"
+                classes: "cursor-font"
+                textalign: ["RIGHT", "VCENTER"]
+                text: "12.0"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 65.000000
+                        verticalPolicy: "PercentOfParent"
+            -   class: "UIStaticText"
+                name: "s"
+                classes: "cursor-font"
+                textalign: ["LEFT", "VCENTER"]
+                text: "#common:Shortening/Second"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        horizontalValue: 35.000000
+                        verticalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "GunAim"
+        position: [400.000000, 300.000000]
+        size: [23.000000, 19.000000]
+        pivot: [0.500000, 0.000000]
+        noInput: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/GunAim"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "GunAimServer"
+        position: [400.000000, 300.000000]
+        size: [21.000000, 19.000000]
+        pivot: [0.500000, 0.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/GunAimServer"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

@@ -1,0 +1,460 @@
+Header:
+    version: "3"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+StyleSheets:
+-   selector: ".text_property #Value #EditableText"
+    properties:
+        visible: true
+-   selector: ".text_property #Value #StaticText"
+    properties:
+        visible: false
+-   selector: ".text_property.readonly #Value #EditableText"
+    properties:
+        visible: false
+-   selector: ".text_property.readonly #Value #StaticText"
+    properties:
+        visible: true
+-   selector: ".bool_property #Value #Checkbox"
+    properties:
+        bg-frame: 0
+-   selector: ".bool_property #Value #Checkbox.checked"
+    properties:
+        bg-frame: 1
+-   selector: ".section_property.open #Value #Icon"
+    properties:
+        bg-frame: 1
+-   selector: ".section_property #Value #Icon"
+    properties:
+        bg-frame: 0
+Controls:
+-   class: "UIListCell"
+    name: "PropertyCell"
+    size: [590.000000, 68.000000]
+    components:
+        LinearLayout:
+            orientation: "RightToLeft"
+            padding: 5.000000
+            spacing: 5.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIControl"
+        name: "Value"
+        size: [345.000000, 68.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 60.000000
+                verticalPolicy: "PercentOfParent"
+    -   class: "UIStaticText"
+        name: "Name"
+        classes: "header1 text-color-white"
+        textalign: ["LEFT", "VCENTER"]
+        text: "Property name"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 40.000000
+                verticalPolicy: "PercentOfParent"
+-   prototype: "PropertyCell"
+    name: "TextPropertyCell"
+    classes: "text_property"
+    children:
+    -   path: "Value"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                horizontalValue: 100.000000
+        children:
+        -   class: "UIStaticText"
+            name: "StaticText"
+            size: [72.000000, 40.000000]
+            classes: "header1"
+            text: "Testsdf"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "EditableText"
+            size: [200.000000, 40.000000]
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                    leftRightStretchCap: 5.000000
+                    topBottomStretchCap: 5.000000
+            children:
+            -   class: "UITextField"
+                name: "TextField"
+                size: [195.000000, 35.000000]
+                font: "WarHeliosCondC_Bold_25"
+                maxLength: 7
+                components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                    Focus: {}
+    -   path: "Name"
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+-   prototype: "PropertyCell"
+    name: "BoolPropertyCell"
+    classes: "bool_property"
+    children:
+    -   path: "Value"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                horizontalValue: 100.000000
+        children:
+        -   prototype: "SettingsCommon/Switch"
+            name: "Switch"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+    -   path: "Name"
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+-   prototype: "PropertyCell"
+    name: "ComboPropertyCell"
+    children:
+    -   path: "Value"
+        children:
+        -   prototype: "SettingsCommon/Spinner"
+            name: "Spinner"
+            position: [0.000000, 4.000000]
+            size: [345.000000, 60.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    topBottomStretchCap: 10.000000
+            children:
+            -   path: "buttonNext"
+                position: [294.000000, 3.000000]
+                size: [48.000000, 54.000000]
+                components:
+                    Anchor:
+                        rightAnchor: 3.000000
+                    Normal:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["RIGHT", "TOP"]
+                        topBottomStretchCap: 25.000000
+                    PressedInside:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["RIGHT", "TOP"]
+                        topBottomStretchCap: 25.000000
+                    Disabled:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["RIGHT", "TOP"]
+                        topBottomStretchCap: 25.000000
+                children: []
+            -   path: "buttonPrevious"
+                size: [48.000000, 54.000000]
+                components:
+                    Anchor:
+                        leftAnchor: 3.000000
+                    Normal:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["LEFT", "VCENTER"]
+                        topBottomStretchCap: 25.000000
+                    PressedInside:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["LEFT", "VCENTER"]
+                        topBottomStretchCap: 25.000000
+                    Disabled:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                        align: ["LEFT", "VCENTER"]
+                        topBottomStretchCap: 25.000000
+                children: []
+            -   path: "content"
+                components:
+                    Anchor:
+                        leftAnchor: 48.000000
+                        rightAnchor: 48.000000
+                children: []
+-   prototype: "PropertyCell"
+    name: "SectionPropertyCell"
+    size: [590.000000, 60.000000]
+    classes: "section_property"
+    components:
+        Normal:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+            leftRightStretchCap: 14.000000
+            topBottomStretchCap: 4.000000
+    children:
+    -   path: "Value"
+        position: [0.000000, 0.000000]
+        size: [590.000000, 60.000000]
+        visible: true
+        components:
+            IgnoreLayout: {}
+            SizePolicy:
+                horizontalValue: 100.000000
+            Background:
+                leftRightStretchCap: 14.000000
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            position: [7.428573, 10.000000]
+            size: [40.000000, 40.000000]
+            noInput: true
+            components:
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/CommonUIElements/IconsSmall"
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+    -   path: "Name"
+        position: [5.000000, 0.000000]
+        textalign: ["HCENTER", "VCENTER"]
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+-   prototype: "PropertyCell"
+    name: "ColorPropertyCell"
+    size: [590.000000, 100.000000]
+    components:
+        LinearLayout:
+            orientation: "BottomUp"
+    children:
+    -   path: "Value"
+        position: [0.000000, 52.500000]
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+        children:
+        -   class: "UIControl"
+            name: "ColorBox"
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+            children:
+            -   class: "UIStaticText"
+                name: "LabelR"
+                size: [70.000000, 35.000000]
+                classes: "header1"
+                textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                text: "Red"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "TextFieldHolderR"
+                size: [55.000000, 40.000000]
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   class: "UITextField"
+                    name: "TextField"
+                    size: [50.000000, 35.000000]
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Focus: {}
+            -   class: "UIStaticText"
+                name: "LabelG"
+                size: [70.000000, 35.000000]
+                classes: "header1"
+                textColor: [0.000000, 1.000000, 0.000000, 1.000000]
+                text: "Green"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "TextFieldHolderG"
+                size: [55.000000, 40.000000]
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   class: "UITextField"
+                    name: "TextField"
+                    size: [50.000000, 35.000000]
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Focus: {}
+            -   class: "UIStaticText"
+                name: "LabelB"
+                size: [70.000000, 35.000000]
+                classes: "header1"
+                textColor: [0.000000, 0.000000, 1.000000, 1.000000]
+                text: "Blue"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "TextFieldHolderB"
+                size: [55.000000, 40.000000]
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   class: "UITextField"
+                    name: "TextField"
+                    size: [50.000000, 35.000000]
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Focus: {}
+            -   class: "UIStaticText"
+                name: "LabelA"
+                size: [70.000000, 35.000000]
+                classes: "header1"
+                text: "Alpha"
+                components:
+                    Anchor:
+                        vCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "TextFieldHolderA"
+                size: [55.000000, 40.000000]
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                        leftRightStretchCap: 5.000000
+                        topBottomStretchCap: 5.000000
+                children:
+                -   class: "UITextField"
+                    name: "TextField"
+                    size: [50.000000, 35.000000]
+                    font: "WarHeliosCondC_Bold_25"
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            vCenterAnchorEnabled: true
+                        Focus: {}
+    -   path: "Name"
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+        children:
+        -   class: "UIControl"
+            name: "Example"
+            size: [50.000000, 35.000000]
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+-   prototype: "PropertyCell"
+    name: "SliderPropertyCell"
+    size: [590.000000, 100.000000]
+    components:
+        LinearLayout:
+            orientation: "BottomUp"
+            spacing: 0.000000
+    children:
+    -   path: "Value"
+        position: [0.000000, 33.000000]
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+                verticalPolicy: "PercentOfMaxChild"
+        children:
+        -   class: "UIControl"
+            name: "SliderWithText"
+            components:
+                LinearLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+            children:
+            -   class: "UIStaticText"
+                name: "MinValue"
+                classes: "header1"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 70.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 40.000000
+                    Anchor:
+                        vCenterAnchorEnabled: true
+            -   prototype: "SettingsCommon/Slider"
+                name: "Slider"
+                size: [351.000000, 62.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: false
+                        rightAnchorEnabled: false
+                        vCenterAnchorEnabled: true
+                        bottomAnchorEnabled: false
+            -   class: "UIStaticText"
+                name: "MaxValue"
+                classes: "header1"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 70.000000
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 40.000000
+                    Anchor:
+                        vCenterAnchorEnabled: true
+    -   path: "Name"
+        components:
+            SizePolicy:
+                horizontalValue: 100.000000
+        children:
+        -   class: "UIStaticText"
+            name: "CurValue"
+            classes: "header1"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 40.000000
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 5.000000
+                    vCenterAnchorEnabled: true

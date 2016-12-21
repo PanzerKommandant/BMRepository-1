@@ -1,0 +1,809 @@
+keyedArchive:
+    lesson 1:
+        keyedArchive: 
+            task 1: 
+                keyedArchive: 
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: fullscreen
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "show yaml"
+                            checkpoint: 
+                                bool: false
+                            file:
+                                string: "Tutorial/TutorialIntro"
+                            show tap to continue:
+                                bool: true
+            task 2: 
+                keyedArchive: 
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar only
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "hold tip"
+                            checkpoint: 
+                                bool: false
+            task 3: 
+                keyedArchive: 
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: true
+                            mode:
+                                string: progressbar only
+                            transparent:
+                                bool: true
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "slide tip"
+                            checkpoint: 
+                                bool: false
+                    step 3:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 4: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_camera/header2"
+                            description:
+                                string: "#battle_tutorial:camera/task/comment"
+                    step 5: 
+                        keyedArchive: 
+                            type: 
+                                string: "rotate camera"
+                            checkpoint: 
+                                bool: false
+                            anim: 
+                                bool: true
+                            eye name: 
+                                string: "bunker_eye.sc2"
+                            obj name: 
+                                string: "bunker_tut.sc2"
+                            scale: 
+                                Vector3: [1.0000, 1.0000, 1.0000]
+                    step 6: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+                    step 7: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: false
+                            task: 
+                                string: "#battle_tutorial:task_camera/header1"
+                            description:
+                                string: "#battle_tutorial:camera/task/comment"
+                    step 8: 
+                        keyedArchive: 
+                            type: 
+                                string: "rotate camera"
+                            checkpoint: 
+                                bool: false
+                            anim: 
+                                bool: false
+                            eye name: 
+                                string: "old_truck_eye.sc2"
+                            obj name: 
+                                string: "Oldtruck_tut.sc2"
+                            scale: 
+                                Vector3: [0.5000, 0.5000, 1.5000]
+                    step 9: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 4: 
+                keyedArchive: 
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: true
+                            mode:
+                                string: progressbar only
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "control introduction"
+                            control:
+                                string: "joypad"
+                            tip:
+                                string: "#battle_tutorial:intro_joystick/comment"
+                            wait for tap:
+                                bool: true
+                            checkpoint: 
+                                bool: false
+                    step 3:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 4:
+                        keyedArchive:
+                            type:
+                                string: "new step"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_joystick1/header"
+                            description:
+                                string: "#battle_tutorial:task_joystick1/comment"
+                    step 5:
+                        keyedArchive:
+                            type:
+                                string: "move"
+                            checkpoint:
+                                bool: false
+                            arrow:
+                                string: "Tut_arrow_1.sc2"
+                            circle:
+                                string: "select01.sc2"
+                            path:
+                                string: "path1"
+                            anim:
+                                string: "forward"
+                    step 6:
+                        keyedArchive:
+                            type:
+                                string: "complete"
+                            checkpoint:
+                                bool: false
+                    step 7:
+                        keyedArchive:
+                            type:
+                                string: "dialog"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_joystick1/header"
+                            description:
+                                string: "#battle_tutorial:task_joystick2/comment"
+                    step 8:
+                        keyedArchive:
+                            type:
+                                string: "move"
+                            checkpoint:
+                                bool: false
+                            anim:
+                                string: "rotate"
+                            arrow:
+                                string: "Tut_arrow_2.sc2"
+                            circle:
+                                string: "select02.sc2"
+                            path:
+                                string: "path2"
+                    step 9:
+                        keyedArchive:
+                            checkpoint:
+                                bool: false
+                            type:
+                                string: "complete"
+    lesson 2:
+        keyedArchive:
+            task 1: # aim enemy
+                keyedArchive:
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "show lamp"
+                            checkpoint:
+                                bool: true
+                            blink count:
+                                int32: 3
+                    step 2:
+                        keyedArchive:
+                            type:
+                                string: "new step"
+                            checkpoint:
+                                bool: false
+                            task:
+                                string: "#battle_tutorial:task_aim_enemy/header"
+                            description:
+                                string: "#battle_tutorial:task_aim_enemy/comment"
+                    step 3:
+                        keyedArchive:
+                            type:
+                                string: "wait aim"
+                            checkpoint:
+                                bool: false
+                            target:
+                                string: "spawn21"
+                            enemy:
+                                string: "#battle_tutorial:bot_1"
+                    step 4:
+                        keyedArchive:
+                            checkpoint:
+                                bool: false
+                            type:
+                                string: "complete"
+            task 2:
+                keyedArchive:
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "new step"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_destroy_enemy/header"
+                            description:
+                                string: "#battle_tutorial:task_destroy_enemy/comment"
+                    step 2:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar and task
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "control introduction"
+                            control:
+                                string: "shoot button"
+                            tip:
+                                string: ""
+                            wait for tap:
+                                bool: true
+                            checkpoint: 
+                                bool: false
+                    step 4: 
+                        keyedArchive: 
+                            type: 
+                                string: "control introduction"
+                            control:
+                                string: "shell type selector"
+                            animate:
+                                bool: false
+                            enable input:
+                                bool: false
+                            checkpoint: 
+                                bool: false
+                    step 5:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 6:
+                        keyedArchive:
+                            type:
+                                string: "new step"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_destroy_enemy/header"
+                            description:
+                                string: "#battle_tutorial:task_destroy_enemy/comment"
+                    step 7: # enemy fire
+                        keyedArchive: 
+                            type: 
+                                string: "player enemy gunplay"
+                            checkpoint: 
+                                bool: false
+                            enemy: 
+                                string: "#battle_tutorial:bot_1"
+                    step 8:
+                        keyedArchive:
+                            type:
+                                string: "dialog"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_destroy_enemy/header"
+                    step 9:
+                        keyedArchive: 
+                            type: 
+                                string: "wait kill tank"
+                            checkpoint: 
+                                bool: false
+                            shots count for explode:
+                                int32: -1
+                            tank: 
+                                string: "#battle_tutorial:bot_1"
+                            tank marker: 
+                                string: "spawn21"
+                    step 10:
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+    lesson 3:
+        keyedArchive:
+            task 1:
+                keyedArchive:
+                    condition:
+                        string: "hasContusedTankman"
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:intro_modules/header"
+                            description:
+                                string: "#battle_tutorial:intro_modules/comment"
+                    step 2:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar and task
+                            bring control to front:
+                                string: hudbottom
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "scale damaged parts"
+                            checkpoint: 
+                                bool: false
+                            target scale:
+                                float: 1.2500
+                    step 4: 
+                        keyedArchive: 
+                            type: 
+                                string: "control highlight"
+                            checkpoint: 
+                                bool: false
+                            enable:
+                                bool: true
+                            control:
+                                string: damaged parts
+                    step 5: 
+                        keyedArchive: 
+                            type: 
+                                string: "set control visibility"
+                            checkpoint: 
+                                bool: false
+                            visible:
+                                bool: false
+                            control:
+                                string: text notifications
+                    step 6:
+                        keyedArchive:
+                            type:
+                                string: "show yaml"
+                            checkpoint: 
+                                bool: false
+                            file:
+                                string: "Tutorial/TutorialDamagedModulesIntro"
+                    step 7: 
+                        keyedArchive: 
+                            type: 
+                                string: "set control visibility"
+                            checkpoint: 
+                                bool: false
+                            visible:
+                                bool: true
+                            control:
+                                string: text notifications
+                    step 8: 
+                        keyedArchive: 
+                            type: 
+                                string: "control highlight"
+                            checkpoint: 
+                                bool: false
+                            enable:
+                                bool: false
+                            control:
+                                string: damaged parts
+                    step 9: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: false
+                            task: 
+                                string: "#battle_tutorial:task_heal/header"
+                            description:
+                                string: "#battle_tutorial:task_heal/comment"
+                    step 10: 
+                        keyedArchive: 
+                            type: 
+                                string: "damaged parts uber"
+                            checkpoint: 
+                                bool: false
+                            part type:
+                                string: "crew"
+                    step 11:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 12: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 2:
+                keyedArchive: 
+                    condition:
+                        string: "hasDamagedModule"
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "hide damaged parts"
+                            checkpoint: 
+                                bool: true
+                            except type:
+                                string: "all"
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: false
+                            task: 
+                                string: "#battle_tutorial:task_repair/header"
+                            description:
+                                string: "#battle_tutorial:task_repair/comment"
+                    step 3:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar and task
+                            bring control to front:
+                                string: hudbottom
+                    step 4: 
+                        keyedArchive: 
+                            type: 
+                                string: "damaged parts uber"
+                            checkpoint: 
+                                bool: false
+                            part type:
+                                string: "modules"
+                    step 5:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 6: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+                    step 7: 
+                        keyedArchive: 
+                            type: 
+                                string: "hide damaged parts"
+                            checkpoint: 
+                                bool: false
+                            except type:
+                                string: "none"
+    lesson 4: 
+        keyedArchive: 
+            task 1: 
+                keyedArchive: 
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_joystick1/header"
+                            description:
+                                string: ""
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "move"
+                            checkpoint: 
+                                bool: false
+                            anim: 
+                                string: "none"
+                            arrow: 
+                                string: "Tut_arrow_3.sc2"
+                            circle: 
+                                string: "select03.sc2"
+                            path: 
+                                string: "path3"
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 2: 
+                keyedArchive: 
+                    step 1: 
+                        keyedArchive:
+                            type:
+                                string: "dialog"
+                            checkpoint:
+                                bool: true
+                            task:
+                                string: "#battle_tutorial:task_sniper/header"
+                            description:
+                                string: "#battle_tutorial:task_sniper/comment"
+                    step 2:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar only
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "control introduction"
+                            control:
+                                string: "sniper button"
+                            tip:
+                                string: "#battle_tutorial:intro_sniper/comment"
+                            wait for tap:
+                                bool: true
+                            checkpoint: 
+                                bool: false
+                    step 4:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+                    step 5:
+                        keyedArchive: 
+                            type: 
+                                string: "wait sniper mode"
+                            checkpoint: 
+                                bool: false
+                            tank marker: 
+                                string: "spawn23"
+                    step 6:
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 3: # unsuccessful fire
+                keyedArchive:
+                    condition:
+                        string: "enemyAlive"
+                    requiredEnemy:
+                        string: "#battle_tutorial:bot_3"
+                    step 1:
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_sniper/header"
+                            description:
+                                string: "#battle_tutorial:task_sniper/comment"
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "wait fire"
+                            checkpoint: 
+                                bool: false
+                            effect: 
+                                bool: true
+                            entity: 
+                                string: "spawn23"
+                    step 3:
+                        keyedArchive:
+                            type:
+                                string: "wait fire"
+                            checkpoint:
+                                bool: false
+                            effect:
+                                bool: true
+                            entity:
+                                string: "spawn23"
+                    step 4:
+                        keyedArchive:
+                            type:
+                                string: "wait"
+                            checkpoint:
+                                bool: false
+                            time:
+                                float: 1.0000
+                    step 5:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: progressbar only
+                    step 6:
+                        keyedArchive: 
+                            type: 
+                                string: "armor anim"
+                            checkpoint: 
+                                bool: false
+                    step 7:
+                        keyedArchive:
+                            type:
+                                string: "set overlay visibility"
+                            checkpoint: 
+                                bool: false
+                            mode:
+                                string: hidden
+            task 4: # move to second sniper position
+                keyedArchive: 
+                    condition:
+                        string: "enemyAlive"
+                    requiredEnemy:
+                        string: "#battle_tutorial:bot_3"
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_armor_back/header"
+                            description:
+                                string: "#battle_tutorial:task_armor_back/comment"
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "move"
+                            checkpoint: 
+                                bool: false
+                            anim: 
+                                string: "none"
+                            arrow: 
+                                string: "Tut_arrow_4.sc2"
+                            circle: 
+                                string: "select04.sc2"
+                            path: 
+                                string: "path4"
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 5:
+                keyedArchive: 
+                    condition:
+                        string: "enemyAlive"
+                    requiredEnemy:
+                        string: "#battle_tutorial:bot_3"
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_sniper_fire/header"
+                            description:
+                                string: "#battle_tutorial:task_sniper_fire/comment"
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "wait kill tank"
+                            checkpoint: 
+                                bool: false
+                            shots count for explode:
+                                int32: 2
+                            tank: 
+                                string: "#battle_tutorial:bot_3"
+                            tank marker: 
+                                string: "spawn23"
+                            highlight sniper button:
+                                bool: true
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+                    step 4: 
+                        keyedArchive: 
+                            type: 
+                                string: "wait"
+                            checkpoint: 
+                                bool: false
+                            time: 
+                                float: 2.0000
+    lesson 5: 
+        keyedArchive: 
+            task 1: 
+                keyedArchive: 
+                    step 1: 
+                        keyedArchive: 
+                            type: 
+                                string: "new step"
+                            checkpoint: 
+                                bool: true
+                            task: 
+                                string: "#battle_tutorial:task_follow_aim/header"
+                            description:
+                                string: "#battle_tutorial:task_follow_aim/comment"
+                    step 2: 
+                        keyedArchive: 
+                            type: 
+                                string: "start bot moving"
+                            checkpoint: 
+                                bool: false
+                            tank: 
+                                string: "#battle_tutorial:bot_2"
+                    step 3: 
+                        keyedArchive: 
+                            type: 
+                                string: "wait kill tank"
+                            checkpoint: 
+                                bool: false
+                            shots count for explode:
+                                int32: -1
+                            tank: 
+                                string: "#battle_tutorial:bot_2"
+                            tank marker: 
+                                string: "spawn22"
+                    step 4:
+                        keyedArchive: 
+                            type: 
+                                string: "complete"
+                            checkpoint: 
+                                bool: false
+            task 2:
+                keyedArchive:
+                    step 1:
+                        keyedArchive:
+                            type:
+                                string: "wait"
+                            checkpoint:
+                                bool: false
+                            time:
+                                float: 6.0000

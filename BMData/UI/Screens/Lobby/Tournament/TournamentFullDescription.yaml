@@ -1,0 +1,272 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common/StyledMenuButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/IndependenceFonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [1024.000000, 768.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        Anchor:
+            hCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Content"
+        size: [768.000000, 738.000000]
+        noInput: true
+        classes: "limited-width"
+        components:
+            LinearLayout:
+                spacing: 4.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 75.000000
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 30.000000
+                vCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIScrollView"
+            name: "ScrollView"
+            position: [0.000000, 0.000000]
+            size: [760.000000, 738.000000]
+            clip: true
+            noInput: true
+            autoUpdate: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+            children:
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
+                size: [760.000000, 284.000000]
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "Title"
+                    size: [760.000000, 100.000000]
+                    classes: "lang_independece header1"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "ВСЕХ УНИЧТОЖИТЬ Х"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "FixedSize"
+                -   class: "UIControl"
+                    name: "TechInfo"
+                    size: [249.000000, 104.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfMaxChild"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    children:
+                    -   class: "UIControl"
+                        name: "Begin"
+                        size: [221.000000, 26.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 10.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Key"
+                            size: [110.000000, 26.000000]
+                            classes: "text1"
+                            text: "tournaments/DescrScreen/BattleStart"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            size: [101.000000, 26.000000]
+                            classes: "text1 text-color-blue"
+                            text: "31 сентебря"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "RegEnd"
+                        size: [236.000000, 26.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 10.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Key"
+                            size: [205.000000, 26.000000]
+                            classes: "text1"
+                            text: "tournaments/FutureTournaments/Status/RegistrationEnd"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            size: [21.000000, 26.000000]
+                            classes: "text1 text-color-blue"
+                            text: "11"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "Teams"
+                        size: [206.000000, 26.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 10.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Key"
+                            size: [170.000000, 26.000000]
+                            classes: "text1"
+                            text: "tournaments/DescrScreen/Teams"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            size: [26.000000, 26.000000]
+                            classes: "text1 text-color-blue"
+                            text: "2/0"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "ControlType"
+                        size: [249.000000, 26.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 10.000000
+                                useRtl: true
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Key"
+                            size: [138.000000, 26.000000]
+                            classes: "text1"
+                            text: "tournaments/DescrScreen/ControlType"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                        -   class: "UIStaticText"
+                            name: "Value"
+                            size: [101.000000, 26.000000]
+                            classes: "text1 text-color-blue"
+                            text: "31 сентебря"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                -   class: "UIControl"
+                    name: "Description"
+                    size: [760.000000, 80.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            orientation: "TopDown"
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfChildrenSum"
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Key"
+                        size: [113.000000, 80.000000]
+                        classes: "header1"
+                        multiline: "MULTILINE_ENABLED"
+                        text: "tournaments/DescrScreen/Description"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "FixedSize"
+                                verticalValue: 80.000000
+                    -   class: "UIStaticText"
+                        name: "Value"
+                        size: [760.000000, 0.000000]
+                        classes: "text1 text-color-blue lang_independece"
+                        multiline: "MULTILINE_ENABLED"
+                        textalign: ["LEFT", "VCENTER"]
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfContent"
+        -   class: "UIScrollBar"
+            name: "ScrollBar"
+            position: [764.000000, 0.000000]
+            size: [4.000000, 738.000000]
+            noInput: true
+            orientation: "ORIENTATION_VERTICAL"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+            children:
+            -   class: "UIControl"
+                name: "slider"
+                size: [4.000000, 8.000000]
+                noInput: true
+                components:
+                    Background:
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 2.000000
+    -   prototype: "StyledMenuButton/StyledMenuButton"
+        name: "BackButton"
+        children:
+        -   path: "icon"
+            components:
+                Background:
+                    frame: 3
+        -   path: "UnreadNews"
+            visible: false
+            classes: "header3 bg-color=tournament-unread-bg"

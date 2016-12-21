@@ -1,0 +1,47 @@
+emitter:
+    emissionAngle: 0.000000
+    emissionRange: 1.000000
+    emissionVector: [1.000000, 0.000000, 0.000000]
+    emissionVectorInverted: true
+    name: "trail"
+    radius: 700.000000
+    shortEffect: false
+    size: [0.000000, 300.000000, 1.000000]
+    type: "point"
+layer0:
+    activeLODS: [1, 1, 1, 1]
+    alphaOverLife: 0.600000
+    colorOverLife: [229.027237, 205.961090, 122.564201, 255.000000]
+    degradeStrategy: 0
+    deltaTime: 0.000000
+    deltaVariation: 0.000000
+    dstBlendFactor: "BLEND_ONE"
+    effectFormat: 1
+    enableFog: true
+    enableFrameBlend: false
+    endTime: 0.500000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    inheritPosition: true
+    isLong: true
+    isLooped: false
+    layerType: "single"
+    life: 0.600000
+    loopEndTime: 100.000000
+    loopSpriteAnimation: true
+    loopVariation: 0.000000
+    name: "trail"
+    numberVariation: 1.000000
+    particleOrientation: 1
+    pivotPoint: [1.000000, 0.000000]
+    randomFrameOnStart: false
+    randomSpinDirection: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.001000
+    size: [8.000000, 12.000000]
+    sprite: "../../../../../../Gfx/Particles/UI/treil"
+    srcBlendFactor: "BLEND_SRC_ALPHA"
+    startTime: 0.000000
+    type: "layer"
+    velocity: 500.000000
+    velocityVariation: 15.000000

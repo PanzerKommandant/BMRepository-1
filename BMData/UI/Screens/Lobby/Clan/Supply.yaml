@@ -1,0 +1,242 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Supply/BonusIcons.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/FontsExceptions.yaml"
+- "~res:/UI/Styles/Lobby/Inventory/InventoryNormalStyles.yaml"
+StyleSheets:
+-   selector: ".horizontal-limit.Desktop"
+    properties:
+        sizePolicy-horizontalMax: 1100.000000
+Controls:
+-   class: "UIControl"
+    customClass: "UIClanSupply"
+    name: "Supply"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Horizontal"
+        classes: "horizontal-limit"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "SupplyListHolder"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 350.000000
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "DetailedLevelInfoHolder"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+-   class: "UIControl"
+    customClass: "UIClanSupplyStatus"
+    name: "Status"
+    size: [960.000000, 80.000000]
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        position: [30.000000, 0.000000]
+        size: [900.000000, 80.000000]
+        classes: "blue-button-like"
+        components:
+            LinearLayout:
+                spacing: 10.000000
+            SizePolicy:
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                leftRightStretchCap: 7.000000
+                topBottomStretchCap: 7.000000
+        children:
+        -   class: "UIControl"
+            name: "IconBackground"
+            size: [80.000000, 80.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    frame: 0
+                    color: [0.254902, 0.313726, 0.364706, 1.000000]
+            children:
+            -   class: "UIControl"
+                name: "Icon"
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        drawType: "DRAW_SCALE_PROPORTIONAL"
+        -   class: "UIControl"
+            name: "LeftContent"
+            size: [212.000000, 80.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIStaticText"
+                name: "LevelLabel"
+                classes: "header3 text-color-white"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "УРОВЕНЬ СНАБЖЕНИЯ IV"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: -15.000000
+            -   class: "UIStaticText"
+                name: "Progress"
+                classes: "text2"
+                textColor: [1.000000, 0.392157, 0.156863, 1.000000]
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                text: "Исследуется: 50%"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 15.000000
+        -   class: "UIControl"
+            name: "IconContent"
+            size: [498.000000, 80.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfChildrenSum"
+                    verticalMin: 80.000000
+        -   class: "UIControl"
+            name: "ButtonBackground"
+            size: [80.000000, 80.000000]
+            noInput: true
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    frame: 0
+                    color: [1.000000, 1.000000, 1.000000, 0.058824]
+            children:
+            -   class: "UIControl"
+                name: "arrow"
+                size: [13.000000, 21.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        vCenterAnchorEnabled: true
+                    Background:
+                        sprite: "~res:/Gfx/UI/Clan/arrow"
+-   class: "UIControl"
+    name: "HeaderRight"
+    size: [300.000000, 80.000000]
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "StyledButton/StyledButton"
+        name: "MySupplyButton"
+        classes: "button button-color-green"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            classes: "header1 hacked-font text-color-white"
+            fitting: ["REDUCE"]
+            textMargins: [5.000000, 0.000000, 5.000000, 0.000000]
+            text: "#clans:SupplyScreen/PersonalAccess/Button"
+-   prototype: "ClanCommon/HeaderTitle"
+    name: "Title"
+    children:
+    -   path: "Center/Vertical/Title"
+        text: "#clans:SupplyScreen/Header"
+-   class: "UIControl"
+    customClass: "UIClanSupplyPopup"
+    name: "Popup"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "Common/PopUp"
+        name: "Bubble"
+        size: [400.000000, 60.000000]
+        pivot: [0.500000, 1.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+        children:
+        -   path: "Arrow"
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    hCenterAnchor: 0.000000
+        -   class: "UIControl"
+            name: "AboutBtn"
+            size: [400.000000, 60.000000]
+            classes: "button"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "Text"
+                size: [400.000000, 32.000000]
+                classes: "header3 text-color-white"
+                text: "#clans:SupplyScreen/FirstLevel/AboutSupply/Button"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        vCenterAnchorEnabled: true

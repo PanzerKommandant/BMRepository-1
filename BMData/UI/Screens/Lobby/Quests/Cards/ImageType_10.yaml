@@ -1,0 +1,42 @@
+Header:
+    version: "0"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Quests/Cards/BaseQuestImage.yaml"
+Controls:
+-   prototype: "BaseQuestImage/QuestImage"
+    name: "QuestImage"
+    components:
+        Background:
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   path: "Layer1"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Installation/card_installation"
+        children:
+        -   class: "UIParticles"
+            name: "GlowBehind"
+            position: [170.000000, 50.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_installation/glow_behind.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "SparksBehind"
+            position: [170.000000, 100.000000]
+            size: [10.000000, 10.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_installation/sparks_behind.sc2"
+            autoStart: true
+    -   path: "Layer0"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Quests/Cards/Installation/card_installation"
+        children:
+        -   class: "UIParticles"
+            name: "SparksFront"
+            position: [10.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_installation/sparks_front.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "GlowFlow"
+            position: [10.000000, 250.000000]
+            effectPath: "~res:/3d/FX/UI/Quests/Cards/card_installation/glow_flow.sc2"
+            autoStart: true

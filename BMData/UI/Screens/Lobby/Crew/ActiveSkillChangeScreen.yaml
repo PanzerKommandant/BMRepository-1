@@ -1,0 +1,111 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Crew/ScreenBlank.yaml"
+- "~res:/UI/Screens/Lobby/Crew/CrewCommon.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/FontsExceptions.yaml"
+Controls:
+-   prototype: "ScreenBlank/Screen"
+    customClass: "UIActiveSkillChangeControl"
+    name: "Screen"
+    children:
+    -   path: "Content"
+        debugDraw: false
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+        children:
+        -   class: "UIControl"
+            name: "Title"
+            size: [1024.000000, 54.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/CrewSkills/plashka"
+            children:
+            -   class: "UIStaticText"
+                name: "Label"
+                classes: "header1 text-color-blue"
+                text: "#crew:skills/changeSkill/header"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "ConstraintedContent"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "AlignedContent"
+                classes: "limited-width"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        dynamicPadding: true
+                        dynamicSpacing: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                        verticalMax: 600.000000
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
+                children:
+                -   prototype: "CrewCommon/SkillPanel"
+                    name: "CurrentSkill"
+                    size: [640.000000, 121.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   path: "Skill/ShortSkillDescription/Price"
+                        visible: false
+                        children: []
+                    -   path: "Skill/Content"
+                        visible: false
+                -   prototype: "CrewCommon/Arrow"
+                    name: "Arrow"
+                    components:
+                        Anchor:
+                            vCenterAnchor: 70.000000
+                -   prototype: "CrewCommon/SkillPanel"
+                    name: "NewSkill"
+                    size: [640.000000, 121.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                    children:
+                    -   path: "Skill/ShortSkillDescription/Price"
+                        visible: false
+                        children: []
+                    -   path: "Skill/Content"
+                        visible: false
+    -   path: "Footer"
+        children:
+        -   prototype: "StyledButton/StyledButton"
+            name: "ConvertButton"
+            size: [290.000000, 71.000000]
+            classes: "button button-color-green"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 10.000000
+                    vCenterAnchorEnabled: true
+            children:
+            -   path: "Caption"
+                classes: "header1 hacked-font text-color-white"
+                text: "#crew:skills/changeSkill/accept"

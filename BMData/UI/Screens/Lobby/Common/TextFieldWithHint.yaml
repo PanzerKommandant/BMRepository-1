@@ -1,0 +1,49 @@
+Header:
+    version: "2"
+Controls:
+-   class: "UIControl"
+    name: "TextFieldWithHint"
+    size: [380.000000, 50.000000]
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/LobbyCommon/textfield_back"
+            leftRightStretchCap: 4.000000
+            topBottomStretchCap: 4.000000
+    children:
+    -   class: "UITextField"
+        customClass: "UITextFieldWithHint"
+        name: "TextField"
+        size: [370.000000, 40.000000]
+        font: "WarHeliosCondC_19"
+        textalign: ["LEFT", "VCENTER"]
+        maxLength: 25
+        returnKeyType: "RETURN_KEY_SEARCH"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 5.000000
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 5.000000
+            Focus: {}
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: "~res:/Gfx/UI/LobbyCommon/textfield_back"
+                leftRightStretchCap: 4.000000
+                topBottomStretchCap: 4.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Hint"
+            textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+            textalign: ["HCENTER", "VCENTER"]
+            font: "WarHeliosCondC_19"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true

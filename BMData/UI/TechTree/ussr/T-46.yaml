@@ -1,0 +1,22 @@
+modules:
+    "#vehicle:T-28":
+        position: [4, 3]
+    "#vehicleChassis:T-46-1":
+        position: [1, 4]
+    "#vehicleEngine:MT-5-1":
+        position: [2, 3]
+    "#vehicleEngine:V-4":
+        position: [1, 3]
+    "#vehicleGun:_37mm_ZiS-19":
+        position: [1, 1]
+    "#vehicleGun:_37mm_automatic_SH-37":
+        position: [3, 2]
+    "#vehicleGun:_45mm_VT-42":
+        position: [3, 1]
+    "#vehicleGun:_76mm_L-10":
+        position: [3, 3]
+    "#vehicleTurret:T-46":
+        position: [1, 2]
+    "#vehicleTurret:T-46-1":
+        position: [2, 2]
+

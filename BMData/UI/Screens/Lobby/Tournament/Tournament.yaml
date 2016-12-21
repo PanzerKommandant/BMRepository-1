@@ -1,0 +1,713 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledSmallButton.yaml"
+- "~res:/UI/Screens/Dialogs.yaml"
+- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackground.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/IndependenceFonts.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentCurrency.yaml"
+StyleSheets:
+-   selector: ".back-image-placeholder"
+    properties:
+        bg-drawType: "DRAW_SCALE_TO_RECT"
+-   selector: ".back-image-crop"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   selector: ".media-link.youtube"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/youtube.txt"
+-   selector: ".media-link.twitch"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/twitch.txt"
+-   selector: ".media-link.portal"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/blitz_portal.txt"
+-   selector: ".media-link.custom"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL"
+-   selector: ".tournament-show-status #Status"
+    properties:
+        visible: true
+-   selector: ".tournament-show-status .time-ui"
+    properties:
+        visible: false
+-   selector: ".tournament-hide-status #Status"
+    properties:
+        visible: false
+-   selector: ".time-ui"
+    properties: {}
+-   selector: ".time-ui-hide-all #Status"
+    properties:
+        visible: false
+-   selector: ".time-ui-hide-all .time-ui"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-start #RegistrationEndLabel"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-end #RegistrationStartLabel"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-start #Status"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-end #Status"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-start #NextRoundLabel"
+    properties:
+        visible: false
+-   selector: ".time-ui-registration-end #NextRoundLabel"
+    properties:
+        visible: false
+-   selector: ".time-ui-next-round #Status"
+    properties:
+        visible: false
+-   selector: ".time-ui-next-round .time-ui-reg"
+    properties:
+        visible: false
+-   selector: ".time-ui-reg"
+    properties: {}
+Controls:
+-   class: "UIControl"
+    name: "MediaLink"
+    size: [92.000000, 52.000000]
+    pivot: [0.500000, 0.500000]
+    classes: "button media-link media-link-tag=portal"
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            horizontalValue: 92.000000
+            verticalPolicy: "FixedSize"
+            verticalValue: 52.000000
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "ScreenContainer"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "TopPanel"
+        position: [0.000000, 0.000000]
+        classes: "backType=back-image-placeholder"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                bottomAnchorEnabled: false
+            Background:
+                sprite: "~res:/Gfx/UI/Tournament/placeholder"
+        children:
+        -   class: "UIControl"
+            name: "TitleShadow"
+            size: [1024.000000, 102.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    vCenterAnchorEnabled: false
+                Background:
+                    drawType: "DRAW_STRETCH_BOTH"
+                    sprite: "~res:/Gfx/UI/Tournament/gradient"
+        -   class: "UIControl"
+            name: "ButtonsContainer"
+            position: [161.500000, 234.000000]
+            size: [701.000000, 130.000000]
+            classes: ""
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    spacing: 10.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    enabled: true
+                    leftAnchorEnabled: false
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 20.000000
+            children:
+            -   class: "UIControl"
+                name: "ButtonsContainerCenter"
+                position: [0.000000, 0.000000]
+                size: [701.000000, 68.000000]
+                classes: ""
+                components:
+                    LinearLayout:
+                        dynamicPadding: true
+                        spacing: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        leftAnchorEnabled: false
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: false
+                        bottomAnchorEnabled: false
+                children:
+                -   prototype: "StyledButton/DefaultStyledButton"
+                    name: "ParticipateButton"
+                    size: [220.000000, 68.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            hCenterAnchorEnabled: false
+                            vCenterAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                            frame: 2
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Caption"
+                        size: [220.000000, 68.000000]
+                        classes: "header4 text-color-white"
+                        text: "tournaments/Button/Participate"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                -   prototype: "StyledButton/DefaultStyledButton"
+                    name: "MyTeamButton"
+                    size: [220.000000, 68.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            hCenterAnchorEnabled: false
+                            vCenterAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                            frame: 2
+                    children:
+                    -   class: "UIStaticText"
+                        name: "Caption"
+                        size: [220.000000, 68.000000]
+                        classes: "header4 text-color-white"
+                        text: "tournaments/Button/MyTeam"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                -   prototype: "StyledButton/DefaultStyledButton"
+                    name: "TeamsButton"
+                    size: [241.000000, 68.000000]
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: false
+                            rightAnchorEnabled: true
+                            vCenterAnchorEnabled: false
+                        Background:
+                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                            frame: 0
+                    children:
+                    -   class: "UIControl"
+                        name: "Container"
+                        size: [89.000000, 24.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                spacing: 6.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 20.000000
+                                vCenterAnchorEnabled: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "Caption"
+                            position: [0.000000, 0.000000]
+                            size: [83.000000, 24.000000]
+                            classes: "header4 text-color-white"
+                            text: "tournaments/FutureTournaments/Tabs/Teams"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    vCenterAnchorEnabled: true
+                        -   class: "UIStaticText"
+                            name: "TeamsCount"
+                            position: [89.000000, 12.000000]
+                            classes: "text2 text-color-white"
+                            fitting: ["ENLARGE"]
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                    verticalPolicy: "PercentOfContent"
+                                Anchor:
+                                    vCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "icon"
+                        position: [11.000000, 14.799999]
+                        size: [38.400002, 38.400002]
+                        noInput: true
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                horizontalValue: 60.000000
+                                verticalPolicy: "PercentOfContent"
+                                verticalValue: 60.000000
+                            Anchor:
+                                vCenterAnchorEnabled: true
+                                vCenterAnchor: 0.000000
+                            Background:
+                                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                                frame: 10
+            -   class: "UIControl"
+                name: "ButtonsContainerTable"
+                position: [80.500000, 78.000000]
+                size: [540.000000, 52.000000]
+                classes: ""
+                components:
+                    LinearLayout:
+                        dynamicPadding: true
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 540.000000
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        leftAnchorEnabled: false
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: false
+                        bottomAnchorEnabled: false
+                children:
+                -   prototype: "TournamentButton/Button"
+                    name: "TableTeamsButton"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 52.000000
+                    children:
+                    -   path: "Caption"
+                        classes: "header4 hacked-font text-color-white"
+                        text: "tournaments/CurrentTournaments/Table/Teams"
+                -   prototype: "TournamentButton/Button"
+                    name: "TableButton"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "FixedSize"
+                            verticalValue: 52.000000
+                    children:
+                    -   path: "Caption"
+                        classes: "header4 hacked-font text-color-white"
+                        text: "tournaments/CurrentTournaments/Table/Brackets"
+        -   class: "UIControl"
+            name: "TitleContainer"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+            children:
+            -   class: "UIStaticText"
+                name: "TournamentTitle"
+                classes: "header1 lang_independece"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "RoundContainer"
+                size: [209.000000, 21.000000]
+                classes: "stageType=none"
+                components:
+                    LinearLayout:
+                        spacing: 5.000000
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "StageTitle"
+                    classes: "text2-small time-ui time-ui-reg"
+                    text: "#training_rooms:RoomScreen/StageTour/Qualification"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "RoundText"
+                    classes: "text2-small time-ui time-ui-reg"
+                    text: "#training_rooms:RoomScreen/StageTour/Qualification"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+            -   class: "UIControl"
+                name: "TimeContainer"
+                size: [93.000000, 21.000000]
+                classes: "textType=time-ui-next-round"
+                components:
+                    LinearLayout:
+                        spacing: 4.000000
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "RegistrationEndLabel"
+                    classes: "text2-small time-ui time-ui-reg"
+                    text: "tournaments/FutureTournaments/Status/RegistrationEnd"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "RegistrationStartLabel"
+                    classes: "text2-small time-ui time-ui-reg"
+                    text: "tournaments/FutureTournaments/Status/TeamRegistrationStart"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "NextRoundLabel"
+                    classes: "text2-small time-ui"
+                    text: "tournaments/DescrScreen/BattleStart"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "Time"
+                    classes: "text2-small time-ui"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "Status"
+                    classes: "text2-small"
+                    text: "tournaments/CurrentTournaments/Status/CurrentBattles"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "BottomPanel"
+        position: [0.000000, 384.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: false
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   prototype: "TournamentBackground/EffectsContainer"
+            name: "EffectsContainer"
+        -   class: "UIControl"
+            name: "PrizeContainer"
+            size: [1024.000000, 70.000000]
+            noInput: true
+            classes: ""
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: -4.000000
+            children:
+            -   class: "UIControl"
+                name: "Lenta"
+                size: [1024.000000, 70.000000]
+                noInput: true
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                children:
+                -   class: "UIControl"
+                    name: "RightImagePart"
+                    position: [512.000000, 0.000000]
+                    size: [512.000000, 70.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+                -   class: "UIControl"
+                    name: "LeftImagePart"
+                    size: [512.000000, 70.000000]
+                    noInput: true
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            hCenterAnchorEnabled: true
+                            hCenterAnchor: 0.000000
+                            vCenterAnchorEnabled: true
+                            vCenterAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+            -   class: "UIControl"
+                name: "TextContainer"
+                noInput: true
+                classes: ""
+                components:
+                    LinearLayout:
+                        spacing: 10.000000
+                        useRtl: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfChildrenSum"
+                        verticalPolicy: "PercentOfMaxChild"
+                    Anchor:
+                        leftAnchorEnabled: false
+                        hCenterAnchorEnabled: true
+                        rightAnchorEnabled: false
+                        vCenterAnchorEnabled: true
+                        bottomAnchorEnabled: false
+                children:
+                -   class: "UIStaticText"
+                    name: "PrizeText"
+                    position: [0.000000, 10.000000]
+                    size: [100.000000, 42.000000]
+                    classes: "header5"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "tournaments/CurrentTournaments/PrizeFund"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 100.000000
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            vCenterAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "PrizeTitle"
+                    classes: "header1"
+                    fitting: ["ENLARGE"]
+                    text: "9 000"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            horizontalValue: 200.000000
+                            verticalPolicy: "PercentOfContent"
+                            verticalValue: 200.000000
+                -   prototype: "TournamentCurrency/CurrencyIcon"
+                    name: "CurrencyIcon"
+        -   class: "UIControl"
+            name: "DescriptionContainer"
+            position: [102.399994, 90.000000]
+            size: [819.200012, 230.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    horizontalValue: 80.000000
+                    horizontalMax: 1100.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 90.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 64.000000
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [0.207843, 0.274510, 0.325490, 0.250980]
+            children:
+            -   class: "UIControl"
+                name: "Padding"
+                size: [819.200012, 15.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 15.000000
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "DescriptionText"
+                clip: true
+                classes: "text1 lang_independece"
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                multiline: "MULTILINE_ENABLED"
+                textalign: ["LEFT", "TOP"]
+                text: "Test"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+            -   class: "UIControl"
+                name: "More"
+                size: [819.200012, 46.000000]
+                classes: "button"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "FixedSize"
+                        verticalValue: 46.000000
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                children:
+                -   class: "UIControl"
+                    name: ""
+                    size: [819.200012, 46.000000]
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        Background:
+                            drawType: "DRAW_FILL"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+                            color: [0.207843, 0.274510, 0.325490, 0.501961]
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                -   class: "UIStaticText"
+                    name: "Caption"
+                    size: [819.200012, 46.000000]
+                    classes: "header4 text-color-white"
+                    text: "tournaments/Button/Expand"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "Shadow"
+                size: [819.200012, 56.000000]
+                noInput: true
+                components:
+                    IgnoreLayout: {}
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 45.000000
+                    Background:
+                        drawType: "DRAW_TILED"
+                        sprite: "~res:/Gfx/UI/Tournament/gradient_text"
+        -   class: "UIControl"
+            name: "Media"
+            size: [1024.000000, 64.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    dynamicPadding: true
+                    spacing: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 64.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    bottomAnchorEnabled: true
+    -   prototype: "StyledButton/DefaultStyledButton"
+        name: "BackButton"
+        size: [92.000000, 76.000000]
+        components:
+            Background:
+                drawType: "DRAW_ALIGNED"
+                sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                leftRightStretchCap: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            position: [0.000000, 0.000000]
+            size: [92.000000, 76.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 0.000000
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                    frame: 3
+                    mask: ""
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   prototype: "UnreadIcon/UnreadIcon"
+            name: "UnreadNews"
+            visible: false
+            classes: "header3 bg-color=tournament-unread-bg"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
