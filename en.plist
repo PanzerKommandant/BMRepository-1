@@ -13,6 +13,12 @@
 		<dict>
 			<key>AuC GunSight:auc_gunsight</key>
 			<string></string>
+			<key>M4 GunSight:m4_gunsight</key>
+			<string></string>
+			<key>M4 GunSight (No Shadow):m4_gunsight_no_shadow</key>
+			<string></string>
+			<key>WGL GunSight:wgl_gunsight</key>
+			<string></string>
 			<key>No HUD:no_hud</key>
 			<string></string>
 			<key>kAEdE Type 1:kaede1</key>
