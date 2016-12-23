@@ -11,6 +11,30 @@
 		</dict>
 		<key>Reticle:reticle</key>
 		<dict>
+			<key>MW HUD:mw_hud</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD Compact:mw_hud_compact</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD Compact (Arrow):mw_hud_compact_arrow</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 1:mw_circle1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 2:mw_circle2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 3:mw_circle3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 1:mw_square1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 1 (Sniper):mw_square1_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 2:mw_square2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 2 (Sniper):mw_square2_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 3:mw_square3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 3 (Sniper):mw_square3_sniper</key>
+			<string>3.4.2:iawm</string>
 			<key>AuC GunSight:auc_gunsight</key>
 			<string>3.4.2:iawm</string>
 			<key>M4 GunSight:m4_gunsight</key>
@@ -61,7 +85,7 @@
 		</dict>
 		<key>Hangar Skin:hangar</key>
 		<dict>
-			<key>Gfx Mod Pack Hangar Skin:modpack</key>
+			<key>MW Hangar Skin:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tier Icon / Vehicle Icon:icon</key>
@@ -94,7 +118,7 @@
 		</dict>
 		<key>Tracer:tracer</key>
 		<dict>
-			<key>Gfx Mod Pack Ballistic Skin:modpack</key>
+			<key>MW Ballistic Skin:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>Lazer Black:lazer_black</key>
 			<string>3.4.2:iawm</string>
@@ -197,7 +221,7 @@
 		</dict>
 		<key>Gun Sound:gun</key>
 		<dict>
-			<key>Sfx Mod Pack Gun Sound:modpack</key>
+			<key>MW Gun Sound:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>War Thunder Gun Sound:warthunder</key>
 			<string>3.4.2:iawm</string>
@@ -214,19 +238,19 @@
 		</dict>
 		<key>Hit Sound:hit</key>
 		<dict>
-			<key>Sfx Mod Pack Hit Sound:modpack</key>
+			<key>MW Hit Sound:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>Old PC Hit Sound:pc_old</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Engine Sound:engine</key>
 		<dict>
-			<key>Sfx Mod Pack Engine Sound:modpack</key>
+			<key>MW Engine Sound:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Sound Effect:effect</key>
 		<dict>
-			<key>Sfx Mod Pack Sound Effect:modpack</key>
+			<key>MW Sound Effect:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>Hangar Environmental Sound:hangar</key>
 			<string>3.4.2:iawm</string>
@@ -237,7 +261,7 @@
 		</dict>
 		<key>Voice (for English settings):voice_en</key>
 		<dict>
-			<key>Sfx Mod Pack Voice:modpack</key>
+			<key>MW Voice:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>War Thunder Voice:warthunder</key>
 			<string>3.4.2:iawm</string>
@@ -311,7 +335,7 @@
 		</dict>
 		<key>BGM:bgm</key>
 		<dict>
-			<key>Sfx Mod Pack BGM:modpack</key>
+			<key>MW BGM:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>PC Music:pc_music</key>
 			<string>3.4.2:iawm</string>

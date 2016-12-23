@@ -11,6 +11,30 @@
 		</dict>
 		<key>レティクル:reticle</key>
 		<dict>
+			<key>MW HUD:mw_hud</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD コンパクト:mw_hud_compact</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD コンパクト (矢印):mw_hud_compact_arrow</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 円タイプ 1:mw_circle1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 円タイプ 2:mw_circle2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 円タイプ 3:mw_circle3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 1:mw_square1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 1 (スナイパー):mw_square1_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 2:mw_square2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 2 (スナイパー):mw_square2_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 3:mw_square3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 正方形タイプ 3 (スナイパー):mw_square3_sniper</key>
+			<string>3.4.2:iawm</string>
 			<key>AuC GunSight:auc_gunsight</key>
 			<string>3.4.2:iawm</string>
 			<key>M4 GunSight:m4_gunsight</key>
@@ -21,11 +45,11 @@
 			<string>3.4.2:</string>
 			<key>No HUD:no_hud</key>
 			<string>3.4.2:iawm</string>
-			<key>kAEdE タイプ1:kaede1</key>
+			<key>kAEdEタイプ 1:kaede1</key>
 			<string>3.4.1:iawm</string>
-			<key>kAEdE タイプ2:kaede2</key>
+			<key>kAEdEタイプ 2:kaede2</key>
 			<string>3.4.1:iawm</string>
-			<key>kAEdE タイプ3:kaede3</key>
+			<key>kAEdEタイプ 3:kaede3</key>
 			<string>3.4.1:iawm</string>
 			<key>Deegies Sight:deegies</key>
 			<string>3.4.1:iawm</string>
@@ -48,9 +72,9 @@
 		</dict>
 		<key>ミニマップ:minimap</key>
 		<dict>
-			<key>視界範囲円 (中Tier):visiblerange_middle</key>
+			<key>MW 視界範囲円 (中Tier):visiblerange_middle</key>
 			<string>3.4.2:iawm</string>
-			<key>視界範囲円 (高Tier):visiblerange_high</key>
+			<key>MW 視界範囲円 (高Tier):visiblerange_high</key>
 			<string>3.4.2:iawm</string>
 			<key>NeXT VisibleRange (中Tier):next_visiblerange_middle</key>
 			<string>3.4.2:iawm</string>
@@ -61,7 +85,7 @@
 		</dict>
 		<key>ハンガースキン:hangar</key>
 		<dict>
-			<key>Gfx Mod Pack ハンガースキン:modpack</key>
+			<key>MW ハンガースキン:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tierアイコン / 戦車アイコン:icon</key>
@@ -94,7 +118,7 @@
 		</dict>
 		<key>トレーサー:tracer</key>
 		<dict>
-			<key>Gfx Mod Pack 弾道表示スキン:modpack</key>
+			<key>MW 弾道表示スキン:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>レーザー黒:lazer_black</key>
 			<string>3.4.2:iawm</string>
@@ -204,7 +228,7 @@
 		</dict>
 		<key>砲撃音:gun</key>
 		<dict>
-			<key>Sfx Mod Pack 砲撃音:modpack</key>
+			<key>MW 砲撃音:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>War Thunder 砲撃音:warthunder</key>
 			<string>3.4.2:iawm</string>
@@ -221,19 +245,19 @@
 		</dict>
 		<key>被弾音:hit</key>
 		<dict>
-			<key>Sfx Mod Pack 被弾音:modpack</key>
+			<key>MW 被弾音:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>PC版 旧被弾音:pc_old</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>エンジン音:engine</key>
 		<dict>
-			<key>Sfx Mod Pack エンジン音:modpack</key>
+			<key>MW エンジン音:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>効果音:effect</key>
 		<dict>
-			<key>Sfx Mod Pack 効果音:modpack</key>
+			<key>MW 効果音:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>ハンガー環境音:hangar</key>
 			<string>3.4.2:iawm</string>
@@ -244,7 +268,7 @@
 		</dict>
 		<key>ボイス (日本語設定用):voice_ja</key>
 		<dict>
-			<key>Sfx Mod Pack ボイス:modpack</key>
+			<key>MW ボイス:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>War Thunder ボイス:warthunder</key>
 			<string>3.4.2:iawm</string>
@@ -318,7 +342,7 @@
 		</dict>
 		<key>BGM:bgm</key>
 		<dict>
-			<key>Sfx Mod Pack BGM:modpack</key>
+			<key>MW BGM:mw_default</key>
 			<string>3.4.2:iawm</string>
 			<key>本家BGM:pc_music</key>
 			<string>3.4.2:iawm</string>
