@@ -43,6 +43,8 @@
 			<string>3.4.2:iawm</string>
 			<key>WGL GunSight:wgl_gunsight</key>
 			<string>3.4.2:</string>
+			<key>WcB GunSight:wcb_gunsight</key>
+			<string>3.4.2:iawm</string>
 			<key>No HUD:no_hud</key>
 			<string>3.4.2:iawm</string>
 			<key>kAEdE Type 1:kaede1</key>
