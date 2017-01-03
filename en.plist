@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Sys Mods:sys</key>
+	<key>Sys Mod:sys</key>
 	<dict>
 		<key>Garage Filter:garage_filter</key>
 		<dict>
@@ -12,7 +12,7 @@
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
-	<key>3D Mods:3d</key>
+	<key>3D Mod:3d</key>
 	<dict>
 		<key>Tank Skin:tank_skin</key>
 		<dict>
@@ -56,7 +56,7 @@
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
-	<key>Gfx Mods:gfx</key>
+	<key>Gfx Mod:gfx</key>
 	<dict>
 		<key>Mod Pack:modpack</key>
 		<dict>
@@ -225,7 +225,7 @@
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
-	<key>Sfx Mods:sfx</key>
+	<key>Sfx Mod:sfx</key>
 	<dict>
 		<key>Mod Pack:modpack</key>
 		<dict>
