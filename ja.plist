@@ -2,6 +2,65 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Sys Mod:sys</key>
+	<dict>
+		<key>フォント:font</key>
+		<dict>
+			<key>日本語＆英語Mix:ja_en_mix</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>ガレージフィルタ:garage_filter</key>
+		<dict>
+			<key>追加国籍フィルタ:advanced</key>
+			<string>3.4.2:iawm</string>
+			<key>追加国籍フィルタ (フランスなし):advanced_no_france</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+	<key>3D Mod:3d</key>
+	<dict>
+		<key>戦車スキン:tank_skin</key>
+		<dict>
+			<key>痛戦車スキン:itasensha</key>
+			<string>3.4.2:</string>
+			<key>ガルパンスキン:gup</key>
+			<string>3.4.2:iawm</string>
+			<key>冬のプラウダスキン:pravda_winter</key>
+			<string>3.4.2:iawm</string>
+			<key>白骨化スキン:beltrup</key>
+			<string>3.4.2:iawm</string>
+			<key>Type59/Type62 金色スキン:type59_62_gold</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>戦車迷彩:tank_camouflage</key>
+		<dict>
+			<key>透明迷彩:transparent</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>ハンガースキン:hangar</key>
+		<dict>
+			<key>MW ハンガースキン:mw_default</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>排気煙:exhaust_smoke</key>
+		<dict>
+			<key>花(エイプリルフールネタ):april_flower</key>
+			<string>3.4.2:iawm</string>
+			<key>IS-3Dの電気:defender_electricity</key>
+			<string>3.4.2:iawm</string>
+			<key>Tankensteinの炎:tanken_fire</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>進行方向矢印:drive_arrow</key>
+		<dict>
+			<key>透過度50%:transparent50</key>
+			<string>3.4.2:iawm</string>
+			<key>透過度75%:transparent75</key>
+			<string>3.4.2:iawm</string>
+			<key>透過度100%:transparent100</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
 	<key>Gfx Mod:gfx</key>
 	<dict>
 		<key>Modパック:modpack</key>
@@ -56,24 +115,6 @@
 			<key>Deegies Sight:deegies</key>
 			<string>3.4.1:iawm</string>
 		</dict>
-		<key>戦車スキン:tank_skin</key>
-		<dict>
-			<key>痛戦車スキン:itasensha</key>
-			<string>3.4.2:</string>
-			<key>ガルパンスキン:gup</key>
-			<string>3.4.2:iawm</string>
-			<key>冬のプラウダスキン:pravda_winter</key>
-			<string>3.4.2:iawm</string>
-			<key>白骨化スキン:beltrup</key>
-			<string>3.4.2:iawm</string>
-			<key>Type59/Type62 金色スキン:type59_62_gold</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>戦車迷彩:tank_camouflage</key>
-		<dict>
-			<key>透明迷彩:transparent</key>
-			<string>3.4.2:iawm</string>
-		</dict>
 		<key>ミニマップ:minimap</key>
 		<dict>
 			<key>MW 視界範囲円 (中Tier):visiblerange_middle</key>
@@ -85,11 +126,6 @@
 			<key>NeXT VisibleRange (高Tier):next_visiblerange_high</key>
 			<string>3.4.2:iawm</string>
 			<key>カラーミニマップ:color_minimap</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>ハンガースキン:hangar</key>
-		<dict>
-			<key>MW ハンガースキン:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tierアイコン / 戦車アイコン:icon</key>
@@ -109,15 +145,6 @@
 			<key>Ikon ver4:ikon4</key>
 			<string>3.4.2:iawm</string>
 			<key>Mini3D:mini3d</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>進行方向矢印:drive_arrow</key>
-		<dict>
-			<key>透過度50%:transparent50</key>
-			<string>3.4.2:iawm</string>
-			<key>透過度75%:transparent75</key>
-			<string>3.4.2:iawm</string>
-			<key>透過度100%:transparent100</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>トレーサー:tracer</key>
@@ -166,20 +193,6 @@
 			<key>アクバー提督:admiral_ackbar</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>排気煙:exhaust_smoke</key>
-		<dict>
-			<key>花(エイプリルフールネタ):april_flower</key>
-			<string>3.4.2:iawm</string>
-			<key>IS-3Dの電気:defender_electricity</key>
-			<string>3.4.2:iawm</string>
-			<key>Tankensteinの炎:tanken_fire</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>フォント(日本語設定用):font</key>
-		<dict>
-			<key>日本語＆英語Mix:ja_en_mix</key>
-			<string>3.4.2:iwm</string>
-		</dict>
 		<key>ログイン画面キーアート:login_keyart</key>
 		<dict>
 			<key>ガルパン 全校:gup_all</key>
@@ -216,10 +229,6 @@
 			<key>ガルパン戦闘読み込み画面:gup_battle_loading</key>
 			<string>3.4.2:iawm</string>
 			<key>PC版戦闘読み込み画面:pc_battle_loading</key>
-			<string></string>
-			<key>追加国籍フィルタ:advanced_filter</key>
-			<string>3.4.2:iawm</string>
-			<key>追加国籍フィルタ (フランスなし):advanced_filter_no_france</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>

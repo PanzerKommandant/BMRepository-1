@@ -2,6 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Sys Mods:sys</key>
+	<dict>
+		<key>Garage Filter:garage_filter</key>
+		<dict>
+			<key>Advanced Filter:advanced</key>
+			<string>3.4.2:iawm</string>
+			<key>Advanced Filter (No France):advanced_no_france</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+	<key>3D Mods:3d</key>
+	<dict>
+		<key>Tank Skin:tank_skin</key>
+		<dict>
+			<key>Anime Itasensha:itasensha</key>
+			<string>3.4.2:</string>
+			<key>Girls und Panzer:gup</key>
+			<string>3.4.2:iawm</string>
+			<key>Pravda Winter:pravda_winter</key>
+			<string>3.4.2:iawm</string>
+			<key>BelTrup (Skelton Skin):beltrup</key>
+			<string>3.4.2:iawm</string>
+			<key>Type59/Type62 Gold Skin:type59_62_gold</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Tank Camouflage:tank_camouflage</key>
+		<dict>
+			<key>Transparent Camouflage:transparent</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Hangar Skin:hangar</key>
+		<dict>
+			<key>MW Hangar Skin:mw_default</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Exhaust Smoke:exhaust_smoke</key>
+		<dict>
+			<key>Flower(April Fool Joke):april_flower</key>
+			<string>3.4.2:iawm</string>
+			<key>IS-3D Electricity:defender_electricity</key>
+			<string>3.4.2:iawm</string>
+			<key>Tankenstein Fire:tanken_fire</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Drive Arrow:drive_arrow</key>
+		<dict>
+			<key>Transparent Rate 50%:transparent50</key>
+			<string>3.4.2:iawm</string>
+			<key>Transparent Rate 75%:transparent75</key>
+			<string>3.4.2:iawm</string>
+			<key>Transparent Rate 100%:transparent100</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
 	<key>Gfx Mods:gfx</key>
 	<dict>
 		<key>Mod Pack:modpack</key>
@@ -56,24 +110,6 @@
 			<key>Deegies Sight:deegies</key>
 			<string>3.4.1:iawm</string>
 		</dict>
-		<key>Tank Skin:tank_skin</key>
-		<dict>
-			<key>Anime Itasensha:itasensha</key>
-			<string>3.4.2:</string>
-			<key>Girls und Panzer:gup</key>
-			<string>3.4.2:iawm</string>
-			<key>Pravda Winter:pravda_winter</key>
-			<string>3.4.2:iawm</string>
-			<key>BelTrup (Skelton Skin):beltrup</key>
-			<string>3.4.2:iawm</string>
-			<key>Type59/Type62 Gold Skin:type59_62_gold</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>Tank Camouflage:tank_camouflage</key>
-		<dict>
-			<key>Transparent Camouflage:transparent</key>
-			<string>3.4.2:iawm</string>
-		</dict>
 		<key>Minimap:minimap</key>
 		<dict>
 			<key>Visible Range (Middle Tier):visiblerange_middle</key>
@@ -85,11 +121,6 @@
 			<key>NeXT VisibleRange (High Tier):next_visiblerange_high</key>
 			<string>3.4.2:iawm</string>
 			<key>Color Minimap:color_minimap</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>Hangar Skin:hangar</key>
-		<dict>
-			<key>MW Hangar Skin:mw_default</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tier Icon / Vehicle Icon:icon</key>
@@ -109,15 +140,6 @@
 			<key>Ikon ver4:ikon4</key>
 			<string>3.4.2:iawm</string>
 			<key>Mini3D:mini3d</key>
-			<string>3.4.2:iawm</string>
-		</dict>
-		<key>Drive Arrow:drive_arrow</key>
-		<dict>
-			<key>Transparent Rate 50%:transparent50</key>
-			<string>3.4.2:iawm</string>
-			<key>Transparent Rate 75%:transparent75</key>
-			<string>3.4.2:iawm</string>
-			<key>Transparent Rate 100%:transparent100</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Tracer:tracer</key>
@@ -166,15 +188,6 @@
 			<key>Admiral Ackbar:admiral_ackbar</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>Exhaust Smoke:exhaust_smoke</key>
-		<dict>
-			<key>Flower(April Fool Joke):april_flower</key>
-			<string>3.4.2:iawm</string>
-			<key>IS-3D Electricity:defender_electricity</key>
-			<string>3.4.2:iawm</string>
-			<key>Tankenstein Fire:tanken_fire</key>
-			<string>3.4.2:iawm</string>
-		</dict>
 		<key>Login Keyart:login_keyart</key>
 		<dict>
 			<key>GuP All Schools:gup_all</key>
@@ -209,10 +222,6 @@
 			<key>Circle type loading gauge:circle_loading</key>
 			<string>3.4.2:iawm</string>
 			<key>GuP Battle Loading Screen:gup_battle_loading</key>
-			<string>3.4.2:iawm</string>
-			<key>Advanced Filter:advanced_filter</key>
-			<string>3.4.2:iawm</string>
-			<key>Advanced Filter (No France):advanced_filter_no_france</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
