@@ -7,7 +7,7 @@
 		<key>フォント:font</key>
 		<dict>
 			<key>日本語＆英語Mix:ja_en_mix</key>
-			<string>3.4.2:iawm</string>
+			<string>3.4.2:iwm</string>
 		</dict>
 		<key>ガレージフィルタ:garage_filter</key>
 		<dict>
@@ -93,6 +93,8 @@
 			<key>MW 正方形タイプ 3:mw_square3</key>
 			<string>3.4.2:iawm</string>
 			<key>MW 正方形タイプ 3 (スナイパー):mw_square3_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 円形装填ゲージ:circle_loading</key>
 			<string>3.4.2:iawm</string>
 			<key>AuC GunSight:auc_gunsight</key>
 			<string>3.4.2:iawm</string>
@@ -212,23 +214,29 @@
 			<key>ガルパン 聖グロリアーナ女学院 2:gup_gloriana2</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>その他:others</key>
+		<key>戦闘読み込み画面:battle_loading</key>
 		<dict>
-			<key>敵攻撃方向マーカー:damage_direction</key>
+			<key>ガルパン戦闘読み込み画面:gup</key>
 			<string>3.4.2:iawm</string>
-			<key>敵方向マーカー:enemy_direction</key>
+			<key>PC版戦闘読み込み画面:pc</key>
 			<string>3.4.2:iawm</string>
+		</dict>
+		<key>インジケータ:indicator</key>
+		<dict>
+			<key>MW 攻撃方向インジケータ:mw_damage</key>
+			<string>3.4.2:iawm</string>
+			<key>MW 敵方向インジケータ:mw_enemy</key>
+			<string>3.4.2:iawm</string>
+			<key>DamageIM:damage_im</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>UI:ui</key>
+		<dict>
 			<key>旧タイプジョイスティック:old_joystick</key>
 			<string>3.4.2:iawm</string>
 			<key>フラットUIボタン:flat_button</key>
 			<string>3.4.2:iawm</string>
 			<key>カラー弾種変更:color_ammo</key>
-			<string>3.4.2:iawm</string>
-			<key>円形装填ゲージ:circle_loading</key>
-			<string>3.4.2:iawm</string>
-			<key>ガルパン戦闘読み込み画面:gup_battle_loading</key>
-			<string>3.4.2:iawm</string>
-			<key>PC版戦闘読み込み画面:pc_battle_loading</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>

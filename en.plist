@@ -89,6 +89,8 @@
 			<string>3.4.2:iawm</string>
 			<key>MW Square Type 3 (Sniper):mw_square3_sniper</key>
 			<string>3.4.2:iawm</string>
+			<key>MW Circle Type Loading Gauge:circle_loading</key>
+			<string>3.4.2:iawm</string>
 			<key>AuC GunSight:auc_gunsight</key>
 			<string>3.4.2:iawm</string>
 			<key>M4 GunSight:m4_gunsight</key>
@@ -207,21 +209,29 @@
 			<key>GuP St.Gloriana Girls 2:gup_gloriana2</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>Others:others</key>
+		<key>Battle Loading Screen:battle_loading</key>
 		<dict>
-			<key>Enemy Shelling Direction Marker:damage_direction</key>
+			<key>GuP Battle Loading Screen:gup</key>
 			<string>3.4.2:iawm</string>
-			<key>Enemy Direction Marker:enemy_direction</key>
+			<key>PC Battle Loading Screen:pc</key>
 			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Indicator:indicator</key>
+		<dict>
+			<key>MW Damage Direction:mw_damage</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Enemy Direction:mw_enemy</key>
+			<string>3.4.2:iawm</string>
+			<key>DamgeIM:damage_im</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>UI:ui</key>
+		<dict>
 			<key>Old Type Joystick:old_joystick</key>
 			<string>3.4.2:iawm</string>
 			<key>Flat UI Buttons:flat_button</key>
 			<string>3.4.2:iawm</string>
 			<key>Colored Ammunition:color_ammo</key>
-			<string>3.4.2:iawm</string>
-			<key>Circle type loading gauge:circle_loading</key>
-			<string>3.4.2:iawm</string>
-			<key>GuP Battle Loading Screen:gup_battle_loading</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
