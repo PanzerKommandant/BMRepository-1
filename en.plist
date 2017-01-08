@@ -6,9 +6,9 @@
 	<dict>
 		<key>Garage Filter:garage_filter</key>
 		<dict>
-			<key>Advanced Filter:advanced</key>
+			<key>Advanced Filter:advanced_with_france</key>
 			<string>3.4.2:iawm</string>
-			<key>Advanced Filter (No France):advanced_no_france</key>
+			<key>Advanced Filter (No France):advanced_without_france</key>
 			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
@@ -102,13 +102,13 @@
 			<key>WcB GunSight:wcb_gunsight</key>
 			<string>3.4.2:iawm</string>
 			<key>No HUD:no_hud</key>
-			<string>3.4.2:iawm</string>
+			<string>3.4.2:iwm</string>
 			<key>kAEdE Type 1:kaede1</key>
-			<string>3.4.1:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>kAEdE Type 2:kaede2</key>
-			<string>3.4.1:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>kAEdE Type 3:kaede3</key>
-			<string>3.4.1:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>Deegies Sight:deegies</key>
 			<string>3.4.1:iawm</string>
 		</dict>
