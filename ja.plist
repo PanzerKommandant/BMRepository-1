@@ -348,8 +348,10 @@
 			<key>エイラーニャボイス:eila-nya</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>第六感:sixth_sense</key>
+		<key>スポットタイマー:sixth_sense</key>
 		<dict>
+			<key>MW スポットタイマー:mw_default</key>
+			<string></string>
 			<key>継続高校スポットタイマー:keizoku</key>
 			<string>3.4.2:iawm</string>
 			<key>イ401スポットタイマー:e401</key>

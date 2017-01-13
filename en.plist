@@ -345,6 +345,8 @@
 		</dict>
 		<key>Sixth Sense:sixth_sense</key>
 		<dict>
+			<key>MW Spot Timer:mw_default</key>
+			<string></string>
 			<key>Keizoku Spot Timer:keizoku</key>
 			<string>3.4.2:iawm</string>
 			<key>E401 Spot Timer:e401</key>
