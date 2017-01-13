@@ -343,7 +343,7 @@
 			<key>Eila-nya Voice:eila-nya</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>Sixth Sense:sixth_sense</key>
+		<key>Spot Timer:spot_timer</key>
 		<dict>
 			<key>MW Spot Timer:mw_default</key>
 			<string></string>
@@ -353,7 +353,7 @@
 			<string>3.4.2:iawm</string>
 			<key>Bell Angel Spot Timer:bell_angel</key>
 			<string>3.4.2:iawm</string>
-			<key>Inori Minase Spot Timer:inori_minase</key>
+			<key>Rem Spot Timer:rem</key>
 			<string>3.4.2:iawm</string>
 			<key>Metal Gear Sixth Sense:metal_gear</key>
 			<string>3.4.2:iawm</string>

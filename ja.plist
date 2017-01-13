@@ -348,7 +348,7 @@
 			<key>エイラーニャボイス:eila-nya</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>スポットタイマー:sixth_sense</key>
+		<key>スポットタイマー:spot_timer</key>
 		<dict>
 			<key>MW スポットタイマー:mw_default</key>
 			<string></string>
@@ -358,7 +358,7 @@
 			<string>3.4.2:iawm</string>
 			<key>ベルエンジェルスポットタイマー:bell_angel</key>
 			<string>3.4.2:iawm</string>
-			<key>水瀬いのりスポットタイマー:inori_minase</key>
+			<key>レムスポットタイマー:rem</key>
 			<string>3.4.2:iawm</string>
 			<key>メタルギア:metal_gear</key>
 			<string>3.4.2:iawm</string>
