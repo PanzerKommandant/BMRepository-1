@@ -180,6 +180,8 @@
 		</dict>
 		<key>第六感:sixth_sense</key>
 		<dict>
+			<key>BlitzModder:blitzmodder</key>
+			<string>3.4.2:iawm</string>
 			<key>エヴァンゲリオン:evangelion</key>
 			<string>3.4.2:iawm</string>
 			<key>艦これ ビスマルク:kancolle_bismark</key>

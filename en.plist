@@ -175,6 +175,8 @@
 		</dict>
 		<key>Sixth Sense:sixth_sense</key>
 		<dict>
+			<key>BlitzModder:blitzmodder</key>
+			<string>3.4.2:iawm</string>
 			<key>Evangelion:evangelion</key>
 			<string>3.4.2:iawm</string>
 			<key>KanColle Bismark:kancolle_bismark</key>
