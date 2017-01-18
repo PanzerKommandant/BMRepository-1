@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Системные моды:sys</key>
+	<dict>
+		<key>Дерево исследований:garage_filter</key>
+		<dict>
+			<key>Расширенное дерево исследований:advanced_with_france</key>
+			<string>3.4.2:iawm</string>
+			<key>Расширенное дерево исследований (без Франции):advanced_without_france</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+	<key>3D моды:3d</key>
+	<dict>
+		<key>Шкурки танков:tank_skin</key>
+		<dict>
+			<key>Аниме шкурки Itasensha:itasensha</key>
+			<string>3.4.2:</string>
+			<key>Аниме шкурки в стиле Girls und Panzer:gup</key>
+			<string>3.4.2:iawm</string>
+			<key>Pravda Winter:pravda_winter</key>
+			<string>3.4.2:iawm</string>
+			<key>Белые трупы танков:beltrup</key>
+			<string>3.4.2:iawm</string>
+			<key>Золотая шкурка Type59/Type62:type59_62_gold</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Камуфляжи:tank_camouflage</key>
+		<dict>
+			<key>Прозрачные камуфляжи:transparent</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Ангары:hangar</key>
+		<dict>
+			<key>MW ангар:mw_default</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Замена выхлопного дыма:exhaust_smoke</key>
+		<dict>
+			<key>Цветы(первоапрельская шутка):april_flower</key>
+			<string>3.4.2:iawm</string>
+			<key>Электрический как у Защитника:defender_electricity</key>
+			<string>3.4.2:iawm</string>
+			<key>Огненный как у Франкенштанка:tanken_fire</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Стрелки направления движения:drive_arrow</key>
+		<dict>
+			<key>С прозрачностью 50%:transparent50</key>
+			<string>3.4.2:iawm</string>
+			<key>С прозрачностью 75%:transparent75</key>
+			<string>3.4.2:iawm</string>
+			<key>С прозрачностью 100%:transparent100</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+	<key>Интерфейс моды:gfx</key>
+	<dict>
+		<key>Модпак:modpack</key>
+		<dict>
+			<key>Проект GuP:projekt_gup</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Прицелы:reticle</key>
+		<dict>
+			<key>MW HUD:mw_hud</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD Compact:mw_hud_compact</key>
+			<string>3.4.2:iawm</string>
+			<key>MW HUD Compact (Arrow):mw_hud_compact_arrow</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 1:mw_circle1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 2:mw_circle2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type 3:mw_circle3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 1:mw_square1</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 1 (Sniper):mw_square1_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 2:mw_square2</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 2 (Sniper):mw_square2_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 3:mw_square3</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Square Type 3 (Sniper):mw_square3_sniper</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Circle Type Loading Gauge:circle_loading</key>
+			<string>3.4.2:iawm</string>
+			<key>AuC GunSight:auc_gunsight</key>
+			<string>3.4.2:iawm</string>
+			<key>M4 GunSight:m4_gunsight</key>
+			<string>3.4.2:iawm</string>
+			<key>M4 GunSight (No Shadow):m4_gunsight_no_shadow</key>
+			<string>3.4.2:iawm</string>
+			<key>WGL GunSight:wgl_gunsight</key>
+			<string>3.4.2:iawm</string>
+			<key>WcB GunSight:wcb_gunsight</key>
+			<string>3.4.2:iawm</string>
+			<key>No HUD:no_hud</key>
+			<string>3.4.2:iwm</string>
+			<key>kAEdE Type 1:kaede1</key>
+			<string>3.4.2:iawm</string>
+			<key>kAEdE Type 2:kaede2</key>
+			<string>3.4.2:iawm</string>
+			<key>kAEdE Type 3:kaede3</key>
+			<string>3.4.2:iawm</string>
+			<key>Deegies Sight:deegies</key>
+			<string>3.4.1:iawm</string>
+		</dict>
+		<key>Миникарта:minimap</key>
+		<dict>
+			<key>Круги обзора (Middle уровень):visiblerange_middle</key>
+			<string>3.4.2:iawm</string>
+			<key>Круги обзора (High уровень):visiblerange_high</key>
+			<string>3.4.2:iawm</string>
+			<key>NeXT Круги обзора (Middle уровень):next_visiblerange_middle</key>
+			<string>3.4.2:iawm</string>
+			<key>NeXT Круги обзора (High уровень):next_visiblerange_high</key>
+			<string>3.4.2:iawm</string>
+			<key>Цветные миникарты:color_minimap</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Уровень техники / Иконки танков:icon</key>
+		<dict>
+			<key>Цветные уровни техники:color_tier</key>
+			<string>3.4.2:iawm</string>
+			<key>Цветные и цифровые уровни техники:color_numeric_tier</key>
+			<string>3.4.2:iawm</string>
+			<key>Цветные и цифровые уровни техники (Череп):color_numeric_tier_skull</key>
+			<string>3.4.2:iawm</string>
+			<key>Иконки танков ver1:ikon1</key>
+			<string>3.4.2:iawm</string>
+			<key>Иконки танков ver2:ikon2</key>
+			<string>3.4.2:iawm</string>
+			<key>Иконки танков ver3:ikon3</key>
+			<string>3.4.2:iawm</string>
+			<key>Иконки танков ver4:ikon4</key>
+			<string>3.4.2:iawm</string>
+			<key>Иконки танков Mini3D:mini3d</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Трасеры:tracer</key>
+		<dict>
+			<key>MW Ballistic Skin:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный черный:lazer_black</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный синий:lazer_blue</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный зеленый:lazer_green</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный оранженый:lazer_orange</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный розовый:lazer_pink</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный темный:lazer_potato</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный фиолетовый:lazer_purple</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный радужный1:lazer_rainbow1</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный радужный2:lazer_rainbow2</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный красный:lazer_red</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный белый:lazer_white</key>
+			<string>3.4.2:iawm</string>
+			<key>Лазерный желтый:lazer_yellow</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Лампа засвета:sixth_sense</key>
+		<dict>
+			<key>BlitzModder:blitzmodder</key>
+			<string>3.4.2:iawm</string>
+			<key>Evangelion:evangelion</key>
+			<string>3.4.2:iawm</string>
+			<key>KanColle Bismark:kancolle_bismark</key>
+			<string>3.4.2:iawm</string>
+			<key>Miho:miho</key>
+			<string>3.4.2:iawm</string>
+			<key>SAO Klein:sao_klein</key>
+			<string>3.4.2:iawm</string>
+			<key>Quickybaby:quickybaby</key>
+			<string>3.4.2:iawm</string>
+			<key>Danger Close:danger_close</key>
+			<string>3.4.2:iawm</string>
+			<key>Admiral Ackbar:admiral_ackbar</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Окно ввода логина:login_keyart</key>
+		<dict>
+			<key>GuP All Schools:gup_all</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Anko Team Pz.IV:gup_anko</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Anzio Girls:gup_anzio</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Kuro Mori Mine Girls:gup_kuro</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Pravda 1:gup_pravda1</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Pravda 2:gup_pravda2</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP St.Gloriana Girls 1:gup_gloriana1</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP St.Gloriana Girls 2:gup_gloriana2</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Окно загрузки боя:battle_loading</key>
+		<dict>
+			<key>Окно загрузки боя GuP:gup</key>
+			<string>3.4.2:iawm</string>
+			<key>Окно загрузки боя PC:pc</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Индикаторы:indicator</key>
+		<dict>
+			<key>MW Индикатор направления получения повреждения:mw_damage</key>
+			<string>3.4.2:iawm</string>
+			<key>MW Индикатор противника:mw_enemy</key>
+			<string>3.4.2:iawm</string>
+			<key>Индикатор направления получения повреждения:damage_im</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>UI:ui</key>
+		<dict>
+			<key>Старый джойстик:old_joystick</key>
+			<string>3.4.2:iawm</string>
+			<key>Пролские кнопки UI:flat_button</key>
+			<string>3.4.2:iawm</string>
+			<key>Цветная амуниция:color_ammo</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+	<key>Звуковые моды:sfx</key>
+	<dict>
+		<key>Модпак:modpack</key>
+		<dict>
+			<key>GUI-звуковой мод:gui_sfx</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Звуки выстрелов орудий:gun</key>
+		<dict>
+			<key>MW орудия:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>War Thunder орудия:warthunder</key>
+			<string>3.4.2:iawm</string>
+			<key>Старые звуки выстрелов орудий из ББ:pc_old</key>
+			<string>3.4.2:iawm</string>
+			<key>Старые звуки выстрелов орудий из ББ (9.14):pc_914</key>
+			<string>3.4.2:iawm</string>
+			<key>Старые звуки выстрелов орудий из ББ (9.16):pc_916</key>
+			<string>3.4.2:iawm</string>
+			<key>Реалистичные звуки выстрелов орудий (HQ):realcannons_hq</key>
+			<string>3.4.2:iawm</string>
+			<key>Реалистичные звуки выстрелов орудий (LQ):realcannons_lq</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Звуки попаданий:hit</key>
+		<dict>
+			<key>MW звуки попаданий:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>Старые звуки попаданий из ББ:pc_old</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Звуки двигателей:engine</key>
+		<dict>
+			<key>MW двигатели:mw_default</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Звуковые эффекты:effect</key>
+		<dict>
+			<key>MW эффекты:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>Звуки ангара:hangar</key>
+			<string>3.4.2:iawm</string>
+			<key>Облегченные звуки ангара:lightweight</key>
+			<string>3.4.2:iawm</string>
+			<key>Радиопереговоры:realgui</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Озвучка экипажа (для Английской версии):voice_en</key>
+		<dict>
+			<key>MW озвучка:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>War Thunder озвучка:warthunder</key>
+			<string>3.4.2:iawm</string>
+			<key>Battle Field 4 озвучка:bf4</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка из ББ (Японская):pc_ja</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка из ББ (Американский английский):pc_en</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка из ББ (Британский английский):pc_uk</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка из ББ (Русская):pc_ru</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка из ББ (Немецкая):pc_de</key>
+			<string>3.4.2:iawm</string>
+			<key>Miho озвучка:miho</key>
+			<string>3.4.2:iawm</string>
+			<key>Yukari озвучка:yukari</key>
+			<string>3.4.2:iawm</string>
+			<key>Saori озвучка:saori</key>
+			<string>3.4.2:iawm</string>
+			<key>Hana озвучка:hana</key>
+			<string>3.4.2:iawm</string>
+			<key>Mako озвучка:mako</key>
+			<string>3.4.2:iawm</string>
+			<key>Nonna озвучка:nonna</key>
+			<string>3.4.2:iawm</string>
+			<key>Katyusha озвучка:katyusha</key>
+			<string>3.4.2:iawm</string>
+			<key>Nonna and Katyusha озвучка:nonna_katyusha</key>
+			<string>3.4.2:iawm</string>
+			<key>Maho озвучка:maho</key>
+			<string>3.4.2:iawm</string>
+			<key>Nishi озвучка:nishi</key>
+			<string>3.4.2:iawm</string>
+			<key>Nishi озвучка (измененная):nishi_modified</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка экипажа Anko:anko</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка экипажа Ahirusan:ahirusan</key>
+			<string>3.4.2:iawm</string>
+			<key>Озвучка экипажа Kabasan:kabasan</key>
+			<string>3.4.2:iawm</string>
+			<key>Keizoku High School озвучка:keizoku</key>
+			<string>3.4.2:iawm</string>
+			<key>Pravda озвучка (CV Tetsuo):pravda_tetsuo</key>
+			<string>3.4.2:iawm</string>
+			<key>E401 озвучка:e401</key>
+			<string>3.4.2:iawm</string>
+			<key>Mikakunin De Sinkoukei озвучка:mikakunin</key>
+			<string>3.4.2:iawm</string>
+			<key>Yuru Yuri озвучка:yuruyuri</key>
+			<string>3.4.2:iawm</string>
+			<key>Tomori Nao озвучка:tomori_nao</key>
+			<string>3.4.2:iawm</string>
+			<key>Eila-nya озвучка:eila-nya</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Озвучка "Шестого чувства":spot_timer</key>
+		<dict>
+			<key>MW Spot Timer:mw_default</key>
+			<string></string>
+			<key>Keizoku Spot Timer:keizoku</key>
+			<string>3.4.2:iawm</string>
+			<key>E401 Spot Timer:e401</key>
+			<string>3.4.2:iawm</string>
+			<key>Bell Angel Spot Timer:bell_angel</key>
+			<string>3.4.2:iawm</string>
+			<key>Rem Spot Timer:rem</key>
+			<string>3.4.2:iawm</string>
+			<key>Metal Gear Sixth Sense:metal_gear</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>BGM:bgm</key>
+		<dict>
+			<key>MW BGM:mw_default</key>
+			<string>3.4.2:iawm</string>
+			<key>PC Music:pc_music</key>
+			<string>3.4.2:iawm</string>
+			<key>GuP Movie BGM:gup_movie</key>
+			<string>3.4.2:iawm</string>
+			<key>Blue Steel BGM:blue_steel</key>
+			<string>3.4.2:iawm</string>
+			<key>Sakkijarven polkka Garage BGM:sakkijarven_polkka</key>
+			<string>3.4.2:iawm</string>
+			<key>Sakkijarven polkka (Remix) Garage BGM:sakkijarven_polkka_remix</key>
+			<string>3.4.2:iawm</string>
+			<key>Projekt GuP Extra Garage Music:projekt_gup_extra</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+		<key>Loading Completion Sound:loaded</key>
+		<dict>
+			<key>Sound Type 1:sound1</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 2:sound2</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 3:sound3</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 4:sound4</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 5:sound5</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 6:sound6</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 7:sound7</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 8:sound8</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 9:sound9</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound Type 10:sound10</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound and Voice (Japanese):sound_voice_ja</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound and Voice (English):sound_voice_en</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound and Voice (Russian):sound_voice_ru</key>
+			<string>3.4.2:iawm</string>
+			<key>Sound and Voice (German):sound_voice_de</key>
+			<string>3.4.2:iawm</string>
+			<key>Voice (Japanese):voice_ja</key>
+			<string>3.4.2:iawm</string>
+			<key>Voice (English):voice_en</key>
+			<string>3.4.2:iawm</string>
+			<key>Voice (Russian):voice_ru</key>
+			<string>3.4.2:iawm</string>
+			<key>Voice (German):voice_de</key>
+			<string>3.4.2:iawm</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
