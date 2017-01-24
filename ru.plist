@@ -17,7 +17,7 @@
 		<key>Шкурки танков:tank_skin</key>
 		<dict>
 			<key>Аниме шкурки Itasensha:itasensha</key>
-			<string>3.4.2:</string>
+			<string>3.4.2:iawm</string>
 			<key>Аниме шкурки в стиле Girls und Panzer:gup</key>
 			<string>3.4.2:iawm</string>
 			<key>Pravda Winter:pravda_winter</key>
@@ -345,7 +345,7 @@
 			<key>Eila-nya озвучка:eila-nya</key>
 			<string>3.4.2:iawm</string>
 		</dict>
-		<key>Озвучка "Шестого чувства":spot_timer</key>
+		<key>Озвучка &quot;Шестого чувства&quot;:spot_timer</key>
 		<dict>
 			<key>MW Spot Timer:mw_default</key>
 			<string></string>
