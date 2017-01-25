@@ -42,7 +42,7 @@ layer0:
     scaleVelocityFactor: 0.020000
     size: [2.000000, 2.000000]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../../../../../Gfx/Particles/UI/Blur_sparks"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Blur_sparks"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

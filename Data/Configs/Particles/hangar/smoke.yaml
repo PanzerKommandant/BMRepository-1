@@ -49,7 +49,7 @@ layer0:
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [5.0000, 5.0000]]
     spin: 15.0000
     spinVariation: 10.0000
-    sprite: "../../../Gfx/Particles/hangar/explosion_smoke_white"
+    sprite: "../../../../Data/Gfx/Particles/hangar/explosion_smoke_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

@@ -42,7 +42,7 @@ layer0:
     scaleVelocityFactor: 1.000000
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.000000, [0.100000, 0.100000], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/pul"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/pul"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -79,7 +79,7 @@ layer1:
     size: [0.300000, 0.300000]
     sizeOverLifeXY: [0.000000, [0.010000, 0.010000], 1.000000, [1.000000, 1.000000]]
     sizeVariation: [0.300000, 0.300000]
-    sprite: "../../../../Gfx/Particles/additive/fire"
+    sprite: "../../../../../Data/Gfx/Particles/additive/fire"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

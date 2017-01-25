@@ -38,7 +38,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.500000, 1.500000]
-    sprite: "../../../Gfx/Particles/hangar/glow_two"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_two"
     startTime: 0.000000
     type: "layer"
     velocity: 0.010000
@@ -72,7 +72,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [0.500000, 0.500000]
-    sprite: "../../../Gfx/Particles/hangar/glow_lamp"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_lamp"
     startTime: 0.000000
     type: "layer"
     velocity: 0.010000

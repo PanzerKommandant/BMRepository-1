@@ -1,10 +1,11 @@
 Header:
-    version: "2"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
-- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanEmblem.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/SmartTextField.yaml"
+- "~res:/UI/Screens/Common/EULANotice.yaml"
 StyleSheets:
 -   selector: ".button #Caption"
     properties:
@@ -18,7 +19,7 @@ StyleSheets:
 Controls:
 -   class: "UIControl"
     name: "Create"
-    size: [1024.000000, 688.000000]
+    size: [1524.000000, 688.000000]
     components:
         Anchor:
             leftAnchorEnabled: true
@@ -30,7 +31,7 @@ Controls:
     children:
     -   class: "UIScrollView"
         name: "Scroll"
-        position: [262.000000, 0.000000]
+        position: [512.000000, 0.000000]
         size: [500.000000, 688.000000]
         autoUpdate: true
         centerContent: true
@@ -43,15 +44,10 @@ Controls:
         -   class: "UIScrollViewContainer"
             name: "scrollContainerControl"
             position: [0.000000, 84.000000]
-            size: [500.000000, 520.000000]
-            noInput: false
             components:
                 SizePolicy:
-                    horizontalPolicy: "PercentOfMaxChild"
+                    horizontalPolicy: "PercentOfParent"
                     verticalPolicy: "PercentOfMaxChild"
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
             children:
             -   prototype: "Common/Dialog"
                 customClass: "CreateClanDialog"
@@ -76,7 +72,7 @@ Controls:
                                 rightAnchorEnabled: true
                                 topAnchorEnabled: true
                                 topAnchor: 62.000000
-                    -   prototype: "LoginCommon/LoginTextField"
+                    -   prototype: "SmartTextField/SmartTextField"
                         customClass: "UIClanCreateTextField"
                         name: "ClanName"
                         size: [460.000000, 75.000000]
@@ -125,7 +121,7 @@ Controls:
                                         rightAnchor: 6.000000
                                         topAnchorEnabled: true
                                         bottomAnchorEnabled: true
-                    -   prototype: "LoginCommon/LoginTextField"
+                    -   prototype: "SmartTextField/SmartTextField"
                         customClass: "UIClanCreateTextField"
                         name: "ClanTag"
                         size: [460.000000, -5.000000]
@@ -203,17 +199,16 @@ Controls:
                                 bottomAnchorEnabled: true
                                 bottomAnchor: 20.000000
                         children:
-                        -   prototype: "StyledButton/Button"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "Submit"
+                            classes: "button button-color-green"
                             components:
                                 SizePolicy:
                                     horizontalPolicy: "PercentOfParent"
-                                Background:
-                                    frame: 2
                             children:
                             -   path: "Caption"
                                 text: "#clans:CreationScreen/OKButton"
-                        -   prototype: "StyledButton/Button"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "Cancel"
                             children:
                             -   path: "Caption"
@@ -232,7 +227,7 @@ Controls:
                 children:
                 -   path: "Middle"
                     children:
-                    -   prototype: "LoginCommon/LoginTextField"
+                    -   prototype: "SmartTextField/SmartTextField"
                         customClass: "UIClanCreateTextField"
                         name: "Motto"
                         size: [460.000000, 60.000000]
@@ -272,7 +267,7 @@ Controls:
                                 Anchor:
                                     leftAnchor: -10.000000
                                     rightAnchor: 0.000000
-                    -   prototype: "LoginCommon/LoginTextField"
+                    -   prototype: "SmartTextField/SmartTextField"
                         customClass: "UIClanCreateTextField"
                         name: "Description"
                         size: [460.000000, 160.000000]
@@ -327,7 +322,7 @@ Controls:
                                 Anchor:
                                     leftAnchor: -10.000000
                                     rightAnchor: 0.000000
-                    -   prototype: "ClanCommon/ClanEmblem"
+                    -   prototype: "ClanEmblem/ClanEmblem"
                         name: "Emblem"
                         size: [64.000000, 64.000000]
                         components:
@@ -338,6 +333,31 @@ Controls:
                                 topAnchor: 75.000000
                             Background:
                                 drawType: "DRAW_SCALE_TO_RECT"
+                        children:
+                        -   path: "BorderTop"
+                            components:
+                                Anchor:
+                                    leftAnchor: 1.000000
+                                    rightAnchor: 1.000000
+                                    topAnchor: 1.000000
+                        -   path: "BorderBottom"
+                            components:
+                                Anchor:
+                                    leftAnchor: 1.000000
+                                    rightAnchor: 1.000000
+                                    bottomAnchor: 1.000000
+                        -   path: "BorderLeft"
+                            components:
+                                Anchor:
+                                    leftAnchor: 1.000000
+                                    topAnchor: 1.000000
+                                    bottomAnchor: 1.000000
+                        -   path: "BorderRight"
+                            components:
+                                Anchor:
+                                    rightAnchor: 1.000000
+                                    topAnchor: 1.000000
+                                    bottomAnchor: 1.000000
                     -   class: "UIStaticText"
                         name: "Error"
                         size: [500.000000, 160.000000]
@@ -354,17 +374,17 @@ Controls:
                                 hCenterAnchorEnabled: true
                                 topAnchorEnabled: true
                                 topAnchor: 520.000000
-                    -   prototype: "StyledButton/Button"
+                    -   prototype: "StyledButton/StyledButton"
                         name: "ChooseEmblem"
-                        position: [107.000000, 70.000000]
-                        size: [373.000000, 70.000000]
+                        position: [107.000000, 75.000000]
+                        size: [373.000000, 64.000000]
                         components:
                             Anchor:
                                 hCenterAnchor: 54.000000
                                 rightAnchorEnabled: true
                                 rightAnchor: 20.000000
                                 topAnchorEnabled: true
-                                topAnchor: 70.000000
+                                topAnchor: 75.000000
                         children:
                         -   path: "Caption"
                             text: "#clans:CreationScreen/InsertDescription/ChooseIcon/Button"
@@ -382,17 +402,16 @@ Controls:
                                 bottomAnchorEnabled: true
                                 bottomAnchor: 20.000000
                         children:
-                        -   prototype: "StyledButton/Button"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "Submit"
+                            classes: "button button-color-green"
                             components:
                                 SizePolicy:
                                     horizontalPolicy: "PercentOfParent"
-                                Background:
-                                    frame: 2
                             children:
                             -   path: "Caption"
                                 text: "#clans:CreationScreen/InsertDescription/OKButton"
-                        -   prototype: "StyledButton/Button"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "Cancel"
                             children:
                             -   path: "Caption"
@@ -455,24 +474,23 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "Submit"
+                    classes: "button button-color-green"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "#clans:CreationScreen/InsertDescription/OK"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "Cancel"
                     children:
                     -   path: "Caption"
                         text: "#clans:CreationScreen/InsertDescription/CancelButton"
         -   path: "Top/TitleText"
             text: "#clans:CreationScreen/InsertDescription/ChooseIcon"
-    -   prototype: "LoginCommon/EULANotice"
+    -   prototype: "EULANotice/EULANotice"
         customClass: "UIEULANoticeClans"
         name: "EULANotice"
         visible: false

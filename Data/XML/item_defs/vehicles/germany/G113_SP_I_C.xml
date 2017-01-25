@@ -48,8 +48,8 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>15.797509</turret_01>
-				<turret_02>15.318667</turret_02>
+				<turret_01>15.797503</turret_01>
+				<turret_02>15.318651</turret_02>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>
@@ -1020,7 +1020,7 @@
 							<crash>-0.001886 -0.334100 -1.869313</crash>
 						</points>
 					</blitz>
-					<maxAmmo>39</maxAmmo>
+					<maxAmmo>40</maxAmmo>
 					<unlocks>
 						<vehicle>Indien_Panzer<cost>106000</cost>
 						</vehicle>
@@ -1052,7 +1052,7 @@
 					</armor>
 					<clip>
 						<count>2</count>
-						<rate>30</rate>
+						<rate>17</rate>
 					</clip>
 					<pitchLimits>-15 10</pitchLimits>
 					<emblemSlots>
@@ -1064,13 +1064,13 @@
 							<hideIfDamaged>false</hideIfDamaged>
 						</insigniaOnGun>
 					</emblemSlots>
-					<reloadTime>14</reloadTime>
+					<reloadTime>12.5</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>0.12</turretRotation>
 						<afterShot>3</afterShot>
 						<whileGunDamaged>2.0</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2.0</aimingTime>
+					<aimingTime>2</aimingTime>
 					<camouflage>
 						<tiling>0.535 0.34 0.000000 0.000000</tiling>
 					</camouflage>

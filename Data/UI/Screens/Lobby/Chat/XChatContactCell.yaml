@@ -1,7 +1,6 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
-- "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
 - "~res:/UI/Screens/Common/UnreadIcon.yaml"
 Controls:
@@ -138,12 +137,9 @@ Controls:
                 children:
                 -   path: "name"
                     textalign: ["LEFT", "VCENTER"]
-                    font: "WarHeliosCondC_Bold_19"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfContent"
-                -   path: "tag"
-                    font: "WarHeliosCondC_Bold_19"
             -   class: "UIStaticText"
                 name: "clanRole"
                 position: [0.000000, 40.500000]

@@ -2,18 +2,21 @@ stages:
  winter2016_inform:
   name: "winter_event/Title"
   timer_hint: "template_event/AnyStage/Start"
-  icon: "~res:/Gfx/UI/Story/NY_2016/lamp_0"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Inform.yaml"
   info: "event-info"
  winter2016_process:
   name: "winter_event/Title"
   timer_hint: "template_event/AnyStage/Finish"
-  icon: "~res:/Gfx/UI/Story/NY_2016/lamp_1"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Process.yaml"
   info: "event-progress"
-  tree: "Lobby/Story/Winter2016StoryTree"
+  tree: "Lobby/Story/Winter2016/StoryTree"
  winter2016_buy:
   name: "winter_event/Title"
   timer_hint: "template_event/AnyStage/Finish"
-  icon: "~res:/Gfx/UI/Story/NY_2016/lamp_2"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Buy.yaml"
   info: "event-progress"
-  tree: "Lobby/Story/Winter2016StoryTree"
+  tree: "Lobby/Story/Winter2016/StoryTree"
 currencyKeys:
+  ticket: "winter_event/Currencies/tickets/Terms"
+  snowflake: "winter_event/Currencies/cases/Terms"
+  star: "winter_event/Currencies/streamers/Terms"

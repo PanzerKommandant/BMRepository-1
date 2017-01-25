@@ -1,0 +1,20 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Prototypes:
+-   prototype: "StyledBackButton/StyledBackButton"
+    name: "BackButton"
+    children:
+    -   prototype: "UnreadIcon/UnreadIcon"
+        name: "UnreadNews"
+        size: [32.000000, 32.000000]
+        classes: "header3 bg-color=tournament-unread-bg"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: -4.000000
+                topAnchorEnabled: true
+                topAnchor: -4.000000

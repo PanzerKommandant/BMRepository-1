@@ -45,7 +45,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.065300, [7.109500, 7.109500], 0.998700, [6.189800, 6.189800]]
     spin: 10.000000
     spinVariation: 10.000000
-    sprite: "../../../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

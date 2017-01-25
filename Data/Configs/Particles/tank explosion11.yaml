@@ -28,7 +28,7 @@ layer0:
     size: [0.0000, [0.0000, 3.0000], 0.3000, [3.0000, 3.0000]]
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [2.0000, 2.0000]]
     sizeVariation: [0.1000, 0.1000]
-    sprite: "../../Gfx/Particles/pul"
+    sprite: "../../../Data/Gfx/Particles/pul"
     startTime: 0.0000
     type: "layer"
     velocity: 1.0000

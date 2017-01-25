@@ -42,7 +42,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [60.000000, 60.000000]
     sizeVariation: [40.000000, 40.000000]
-    sprite: "../../../../../Gfx/Particles/UI/smoke"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/smoke"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -83,7 +83,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [60.000000, 60.000000]
     sizeVariation: [40.000000, 40.000000]
-    sprite: "../../../../../Gfx/Particles/UI/fire"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/fire"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -126,7 +126,7 @@ layer2:
     size: [1.000000, 1.000000]
     sizeVariation: [4.000000, 4.000000]
     spin: 300.000000
-    sprite: "../../../../../Gfx/Particles/UI/o2_expGlowB"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/o2_expGlowB"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

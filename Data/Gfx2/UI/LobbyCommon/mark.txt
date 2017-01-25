@@ -1,5 +1,5 @@
 1
-texture1.tex
+texture0.tex
 64 64
 1
-1043 0 64 64 0 0 0 frame0
+1916 1858 64 64 0 0 0 frame0

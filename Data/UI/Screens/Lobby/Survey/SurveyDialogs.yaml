@@ -100,16 +100,15 @@ Controls:
                         verticalPolicy: "PercentOfContent"
                     Anchor:
                         hCenterAnchorEnabled: true
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "acceptButton"
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
                         leftAnchor: 20.000000
                         rightAnchorEnabled: true
                         rightAnchor: 20.000000
-                    Background:
-                        frame: 2
                 children:
                 -   path: "Caption"
                     text: "ПРОЙТИ ОПРОС"

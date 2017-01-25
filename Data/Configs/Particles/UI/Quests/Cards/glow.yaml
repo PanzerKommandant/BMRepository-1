@@ -42,7 +42,7 @@ layer0:
         modification_line: [0.000000, [0.000000, 0.000000], 0.990000, [1.000000, 1.000000]]
         value_line: [0.000000, [1.000000, 1.000000], 1.000000, [1.001460, 1.001460]]
     spin: -10.000000
-    sprite: "../../../../../Gfx/Particles/UI/glow_anim_min"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/glow_anim_min"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -82,7 +82,7 @@ layer1:
         modification_line: [0.000000, [0.000000, 0.000000], 0.990000, [1.000000, 1.000000]]
         value_line: [0.000000, [1.000000, 1.000000], 0.990000, [1.000000, 1.000000]]
     spin: 10.000000
-    sprite: "../../../../../Gfx/Particles/UI/glow_anim_min"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/glow_anim_min"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

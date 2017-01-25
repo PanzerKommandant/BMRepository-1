@@ -1,0 +1,43 @@
+emitter:
+    size: [0.000000, 0.000000, 0.000000]
+    name: "glow"
+    type: "point"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionVector: [1.000000, -1.000000, 0.000000]
+    emissionRange: 0.000000
+layer0:
+    name: "glow"
+    enableFog: true
+    sprite: "../../../../../Data/Gfx/Particles/UI/Default_KeyArt/o2_expGlowB"
+    type: "layer"
+    isLong: false
+    layerType: "single"
+    blending: 3
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 45.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    size: [1500.000000, 1500.000000]
+    velocity: 140.000000
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.430000, 0.400000, 0.994286, 0.000000]
+    colorOverLife: [240.217896, 65.311279, 21.583656, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 2.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1

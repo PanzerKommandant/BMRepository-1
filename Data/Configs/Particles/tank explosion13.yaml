@@ -21,7 +21,7 @@ layer0:
     name: "Exp1"
     pivotPoint: [0.0000, 0.0000]
     size: [16.0000, 16.0000]
-    sprite: "../../Gfx/Particles/exp_anim_one"
+    sprite: "../../../Data/Gfx/Particles/exp_anim_one"
     startTime: 0.0000
     type: "layer"
     velocity: 0.0100
@@ -40,7 +40,7 @@ layer1:
     name: "Exp2"
     pivotPoint: [0.0000, 0.0000]
     size: [16.0000, 16.0000]
-    sprite: "../../Gfx/Particles/exp_anim"
+    sprite: "../../../Data/Gfx/Particles/exp_anim"
     startTime: 0.0000
     type: "layer"
     velocity: 0.0100

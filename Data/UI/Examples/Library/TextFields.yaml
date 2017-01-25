@@ -1,0 +1,7 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/SmartTextField.yaml"
+Controls:
+-   prototype: "SmartTextField/SmartTextField"
+    name: "SmartTextField"

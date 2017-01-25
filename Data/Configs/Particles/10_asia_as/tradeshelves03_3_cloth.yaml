@@ -47,7 +47,7 @@ layer0:
     spin: 30.000000
     spinOverLife: 2.000000
     spinVariation: 5.082200
-    sprite: "../../../Gfx/Particles/alpha/cloth"
+    sprite: "../../../../Data/Gfx/Particles/alpha/cloth"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -92,7 +92,7 @@ layer1:
     spin: 30.000000
     spinOverLife: 2.000000
     spinVariation: 5.082200
-    sprite: "../../../Gfx/Particles/alpha/cloth"
+    sprite: "../../../../Data/Gfx/Particles/alpha/cloth"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

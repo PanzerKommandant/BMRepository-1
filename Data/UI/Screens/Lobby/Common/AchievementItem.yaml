@@ -1,13 +1,13 @@
 Header:
-    version: "1"
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
 Controls:
--   class: "UIButton"
+-   class: "UIControl"
     customClass: "UIAchievementItem"
     name: "AchievementItem"
     size: [120.000000, 120.000000]
-    components:
-        PressedOutside:
-            color: [1.000000, 1.000000, 1.000000, 0.502000]
+    classes: "button"
     children:
     -   class: "UIControl"
         name: "background"
@@ -16,7 +16,7 @@ Controls:
         noInput: true
         components:
             LinearLayout:
-                orientation: "Vertical"
+                orientation: "TopDown"
             SizePolicy:
                 horizontalPolicy: "PercentOfMaxChild"
                 verticalPolicy: "PercentOfChildrenSum"

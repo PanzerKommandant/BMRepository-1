@@ -42,7 +42,7 @@ layer0:
     scaleVelocityFactor: 0.400000
     size: [0.005000, 0.015000]
     sizeVariation: [0.005000, 0.005000]
-    sprite: "../../../../Gfx/Particles/alpha/Iskr"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/Iskr"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -82,7 +82,7 @@ layer1:
     scaleVelocityFactor: 1.000000
     size: [0.300000, 0.300000]
     sizeOverLifeXY: [0.000000, [0.100000, 0.100000], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/pul"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/pul"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -123,7 +123,7 @@ layer2:
     size: [0.010000, 0.010000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [0.300000, 0.300000]]
     sizeVariation: [0.020000, 0.020000]
-    sprite: "../../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -165,7 +165,7 @@ layer3:
     scaleVelocityFactor: 0.200000
     size: [0.020000, 0.050000]
     sizeVariation: [0.010000, 0.010000]
-    sprite: "../../../../Gfx/Particles/alpha/o2_expGlow"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/o2_expGlow"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000

@@ -45,7 +45,7 @@ layer0:
     sizeVariation: [0.179300, 0.080800]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fragment_car_one_snow"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_one_snow"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000
@@ -88,7 +88,7 @@ layer1:
     sizeVariation: [0.050000, 0.050000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fragment_car_snow"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_snow"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -131,7 +131,7 @@ layer2:
     sizeVariation: [0.200000, 0.200000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/Glass"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass"
     startTime: 0.000000
     type: "layer"
     velocity: 4.000000
@@ -174,7 +174,7 @@ layer3:
     sizeVariation: [0.050000, 0.050000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/Glass_two"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass_two"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

@@ -1,0 +1,26 @@
+Header:
+    version: "5"
+StyleSheets:
+-   selector: ".auto-follow-aim-arcade"
+    properties:
+        bg-frame: 2
+-   selector: ".manual-follow-aim-arcade"
+    properties:
+        bg-frame: 3
+-   selector: ".auto-follow-aim-sniper"
+    properties:
+        bg-frame: 0
+-   selector: ".manual-follow-aim-sniper"
+    properties:
+        bg-frame: 1
+Controls:
+-   class: "UIButton"
+    customClass: "UIFollowAimSwitchButton"
+    name: "FollowAimButton"
+    size: [72.000000, 72.000000]
+    exclusiveInput: false
+    classes: "follow-aim=manual-follow-aim-sniper"
+    components:
+        Normal:
+            drawType: "DRAW_SCALE_TO_RECT"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/FollowAim"

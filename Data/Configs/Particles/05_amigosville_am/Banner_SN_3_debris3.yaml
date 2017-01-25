@@ -42,7 +42,7 @@ layer0:
     sizeVariation: [0.000000, 0.500000]
     spin: 180.000000
     spinVariation: 180.000000
-    sprite: "../../../Gfx/Particles/alpha/wooden_debris_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/wooden_debris_one"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000
@@ -82,7 +82,7 @@ layer1:
     sizeVariation: [0.000000, 0.500000]
     spin: 180.000000
     spinVariation: 180.000000
-    sprite: "../../../Gfx/Particles/alpha/wooden_debris_two"
+    sprite: "../../../../Data/Gfx/Particles/alpha/wooden_debris_two"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000

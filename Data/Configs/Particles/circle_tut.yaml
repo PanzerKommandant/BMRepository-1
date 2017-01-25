@@ -22,7 +22,7 @@ layer0:
     pivotPoint: [8.9043, 8.9043]
     size: [20.0000, 20.0000]
     spin: 40.0000
-    sprite: "../../Gfx/Particles/circle_tut"
+    sprite: "../../../Data/Gfx/Particles/circle_tut"
     startTime: 0.0000
     type: "layer"
     velocity: 0.0100

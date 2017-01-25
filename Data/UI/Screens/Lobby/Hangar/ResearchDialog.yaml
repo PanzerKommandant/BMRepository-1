@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
@@ -347,39 +347,38 @@ Controls:
                             bottomAnchorEnabled: true
                             bottomAnchor: 20.000000
                     children:
-                    -   prototype: "StyledButton/Button"
+                    -   prototype: "StyledButton/StyledButton"
                         name: "researchButton"
+                        classes: "button button-color-green"
                         components:
                             SizePolicy:
                                 horizontalPolicy: "PercentOfParent"
-                            Background:
-                                frame: 2
                         children:
                         -   path: "Caption"
                             text: "RESEARCH"
                         -   class: "UIControl"
                             name: "highlight"
-                            position: [110.000000, 34.405056]
+                            position: [110.000000, 32.379738]
                             pivot: [0.500000, 0.506329]
                             visible: false
                             noInput: true
                             components:
                                 Anchor:
                                     leftAnchorEnabled: true
-                                    leftAnchor: 3.000000
+                                    leftAnchor: 2.000000
                                     rightAnchorEnabled: true
-                                    rightAnchor: 3.000000
+                                    rightAnchor: 2.000000
                                     topAnchorEnabled: true
                                     topAnchor: 2.000000
                                     bottomAnchorEnabled: true
-                                    bottomAnchor: 4.000000
+                                    bottomAnchor: 2.000000
                                 Background:
                                     drawType: "DRAW_STRETCH_BOTH"
                                     sprite: "~res:/Gfx/UI/HangarTutorial/HighlightTile"
                                     leftRightStretchCap: 15.000000
                                     topBottomStretchCap: 15.000000
                                     margins: [-12.000000, -12.000000, -12.000000, -12.000000]
-                    -   prototype: "StyledButton/Button"
+                    -   prototype: "StyledButton/StyledButton"
                         name: "cancelButton"
                         components:
                             SizePolicy:

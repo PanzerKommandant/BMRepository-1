@@ -1,10 +1,23 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
 - "~res:/UI/Screens/Lobby/UnreadNotifications.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/CommonStyles.yaml"
+StyleSheets:
+-   selector: ".tab #selected"
+    properties:
+        visible: false
+-   selector: ".tab:selected #selected"
+    properties:
+        visible: true
+-   selector: ".tab #unselected"
+    properties:
+        visible: true
+-   selector: ".tab:selected #unselected"
+    properties:
+        visible: false
 Controls:
 -   class: "UIControl"
     name: "Screen"
@@ -35,6 +48,7 @@ Controls:
     name: "HeaderTab"
     size: [200.000000, 77.000000]
     noInput: true
+    classes: "tab"
     components:
         SizePolicy:
             horizontalPolicy: "FixedSize"

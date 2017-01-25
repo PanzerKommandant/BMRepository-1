@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Login/LoginCommon.yaml"
@@ -96,13 +96,14 @@ Controls:
 -   class: "UIListCell"
     name: "RegionCell"
     size: [458.000000, 70.000000]
+    classes: "button button-color-gray"
     components:
-        Normal:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+        Background:
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+            gradientMode: "Overlay"
             leftRightStretchCap: 9.000000
-        PressedInside:
-            color: [1.000000, 1.000000, 1.000000, 0.500000]
     children:
     -   class: "UIControl"
         name: "RegionIcon"
@@ -139,16 +140,20 @@ Controls:
         components:
             Anchor:
                 leftAnchorEnabled: true
-                leftAnchor: -3.000000
+                leftAnchor: -4.000000
                 rightAnchorEnabled: true
-                rightAnchor: -3.000000
+                rightAnchor: -4.000000
                 topAnchorEnabled: true
-                topAnchor: -3.000000
+                topAnchor: -4.000000
                 bottomAnchorEnabled: true
-                bottomAnchor: -3.000000
+                bottomAnchor: -4.000000
             Background:
                 drawType: "DRAW_STRETCH_BOTH"
                 sprite: "~res:/Gfx/UI/LobbyCommon/ButtonDefaultSelector"
+                mask: "~res:/Gfx/UI/CommonUIElements/Selection/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Selection/detail"
+                gradient: "~res:/Gfx/UI/CommonUIElements/Selection/gradient"
+                contour: "~res:/Gfx/UI/CommonUIElements/Selection/contour"
                 leftRightStretchCap: 10.000000
                 topBottomStretchCap: 10.000000
     -   class: "UIControl"

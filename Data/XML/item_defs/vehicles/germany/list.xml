@@ -167,7 +167,7 @@
 		<shortUserString>#germany_vehicles:VK1602_short</shortUserString>
 		<description>#germany_vehicles:VK1602_descr</description>
 		<price>355000</price>
-		<tags>lightTank enhancedTorsions1t_user</tags>
+		<tags>lightTank beast enhancedTorsions1t_user</tags>
 		<level>5</level>
 	</VK1602>
 	<PzII_Luchs>

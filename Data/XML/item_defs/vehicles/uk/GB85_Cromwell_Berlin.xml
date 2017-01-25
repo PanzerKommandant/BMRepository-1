@@ -50,7 +50,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>48.318649</turret_01>
+				<turret_01>56.170696</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>
@@ -157,7 +157,7 @@
 				<lodDist>MEDIUM_TRACK</lodDist>
 				<leftMaterial>track_mat_L_skinned</leftMaterial>
 				<rightMaterial>track_mat_R_skinned</rightMaterial>
-				<textureScale>-4</textureScale>
+				<textureScale>-0.98</textureScale>
 			</tracks>
 			<wheels>
 				<lodDist>MEDIUM</lodDist>

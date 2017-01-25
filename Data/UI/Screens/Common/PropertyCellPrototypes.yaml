@@ -1,10 +1,11 @@
 Header:
-    version: "3"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
 - "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Common/Spinner.yaml"
 StyleSheets:
 -   selector: ".text_property #Value #EditableText"
     properties:
@@ -133,11 +134,9 @@ Controls:
     children:
     -   path: "Value"
         children:
-        -   prototype: "SettingsCommon/Spinner"
+        -   prototype: "Spinner/Spinner"
             name: "Spinner"
-            position: [0.000000, 4.000000]
             size: [345.000000, 60.000000]
-            noInput: true
             components:
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
@@ -147,47 +146,20 @@ Controls:
                     topBottomStretchCap: 10.000000
             children:
             -   path: "buttonNext"
-                position: [294.000000, 3.000000]
                 size: [48.000000, 54.000000]
                 components:
-                    Anchor:
-                        rightAnchor: 3.000000
-                    Normal:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
                         align: ["RIGHT", "TOP"]
-                        topBottomStretchCap: 25.000000
-                    PressedInside:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                        align: ["RIGHT", "TOP"]
-                        topBottomStretchCap: 25.000000
-                    Disabled:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                        align: ["RIGHT", "TOP"]
-                        topBottomStretchCap: 25.000000
+                        leftRightStretchCap: 25.000000
                 children: []
             -   path: "buttonPrevious"
                 size: [48.000000, 54.000000]
                 components:
-                    Anchor:
-                        leftAnchor: 3.000000
-                    Normal:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                        align: ["LEFT", "VCENTER"]
-                        topBottomStretchCap: 25.000000
-                    PressedInside:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                        align: ["LEFT", "VCENTER"]
-                        topBottomStretchCap: 25.000000
-                    Disabled:
-                        drawType: "DRAW_STRETCH_VERTICAL"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                        align: ["LEFT", "VCENTER"]
-                        topBottomStretchCap: 25.000000
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        align: ["RIGHT", "TOP"]
+                        leftRightStretchCap: 25.000000
                 children: []
             -   path: "content"
                 components:
@@ -195,16 +167,20 @@ Controls:
                         leftAnchor: 48.000000
                         rightAnchor: 48.000000
                 children: []
+            -   path: "content/spinnerText"
+                text: "Text"
 -   prototype: "PropertyCell"
     name: "SectionPropertyCell"
     size: [590.000000, 60.000000]
-    classes: "section_property"
+    classes: "section_property button-color-gray"
     components:
-        Normal:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+        Background:
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+            gradientMode: "Overlay"
             leftRightStretchCap: 14.000000
-            topBottomStretchCap: 4.000000
+            topBottomStretchCap: 14.000000
     children:
     -   path: "Value"
         position: [0.000000, 0.000000]

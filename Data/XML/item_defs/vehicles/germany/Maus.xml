@@ -10,7 +10,7 @@
 		<fireEffectPathAlive>FX/SmokeFire_tank_movement_new.sc2</fireEffectPathAlive>
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/germany-Maus.sc2</collisionMesh>
-		<exclusionMask>Camouflages/germany/CamouflageMasks/Maus_CM.tex</exclusionMask>
+		<customEffects/>
 	</blitz>
 	<crew>
 		<commander/>
@@ -53,7 +53,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>221.064728</turret_01>
+				<turret_01>218.802383</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>
@@ -331,12 +331,7 @@
 					</armor>
 					<shotDispersionRadius>0.38</shotDispersionRadius>
 					<aimingTime>2.9</aimingTime>
-					<shotDispersionFactors>
-						<turretRotation>0.08</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>2.0</whileGunDamaged>
-					</shotDispersionFactors>
-				</_128mm_KwK44_L55>
+					</_128mm_KwK44_L55>
 			</guns>
 			<emblemSlots>
 				<player>
@@ -369,7 +364,8 @@
 		<MB507>shared</MB507>
 	</engines>
 	<fuelTanks>
-		<Large>shared</Large></fuelTanks>
+		<Large>shared</Large>
+	</fuelTanks>
 	<radios>
 		<_10WSc>shared</_10WSc>
 	</radios>

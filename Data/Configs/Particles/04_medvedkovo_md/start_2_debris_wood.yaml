@@ -1,0 +1,145 @@
+emitter:
+    size: [0.000000, 0.000000, 0.000000]
+    name: "debris_wood"
+    type: "oncircle_edges"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionRange: 180.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    radius: 0.100000
+layer0:
+    name: "debris_wood"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_snow"
+    type: "layer"
+    lifeVariation: 1.000000
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [-0.000000, -0.000000]
+    loopVariation: 0.000000
+    angle: 90.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 0.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.100000
+    life: 2.000000
+    number: 250.000000
+    spinVariation: 90.000000
+    size: [0.015000, 0.100000]
+    sizeVariation: [0.030000, 0.075000]
+    velocityVariation: 1.000000
+    sizeOverLifeXY: [1.500000, 1.500000]
+    velocity: 2.000000
+    forceOverLife0: [0.000000, 0.600000, 0.990000, 0.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.093000, 0.560100, 0.996500, 0.507600]
+    spin: 400.000000
+    randomSpinDirection: true
+    angleVariation: 90.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 4.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -14.000000]
+layer1:
+    name: "debris_wood2"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_snow_one"
+    type: "layer"
+    lifeVariation: 1.000000
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [-0.000000, -0.000000]
+    loopVariation: 0.000000
+    angle: 90.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 0.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.100000
+    life: 2.000000
+    number: 100.000000
+    spinVariation: 90.000000
+    size: [0.015000, 0.050000]
+    sizeVariation: [0.015000, 0.015000]
+    velocityVariation: 2.000000
+    sizeOverLifeXY: [1.500000, 1.500000]
+    velocity: 4.000000
+    forceOverLife0: [0.000000, 0.600000, 0.990000, 0.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.093000, 0.560100, 0.996500, 0.507600]
+    spin: 400.000000
+    randomSpinDirection: false
+    angleVariation: 90.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: true
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 4.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -14.000000]
+layer2:
+    name: "debris_wood4"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_snow"
+    type: "layer"
+    lifeVariation: 1.000000
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [-0.000000, -0.000000]
+    loopVariation: 0.000000
+    angle: 90.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 0.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.100000
+    life: 2.000000
+    number: 100.000000
+    spinVariation: 90.000000
+    size: [0.015000, 0.100000]
+    sizeVariation: [0.100000, 0.150000]
+    velocityVariation: 4.000000
+    sizeOverLifeXY: [1.500000, 1.500000]
+    velocity: 3.000000
+    forceOverLife0: [0.000000, 0.600000, 0.990000, 0.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.093000, 0.560100, 0.996500, 0.507600]
+    spin: 400.000000
+    randomSpinDirection: true
+    angleVariation: 90.000000
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 4.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -14.000000]

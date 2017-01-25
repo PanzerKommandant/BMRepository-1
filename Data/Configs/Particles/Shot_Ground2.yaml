@@ -48,7 +48,7 @@ layer0:
     sizeVariation: [1.000000, 1.000000]
     spin: [0.000000, 5.000000, 0.300000, 0.000000]
     spinOverLife: [0.000000, 1.000000, 0.300000, 0.000000]
-    sprite: "../../Gfx/Particles/alpha/o2SMOKEB"
+    sprite: "../../../Data/Gfx/Particles/alpha/o2SMOKEB"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -92,7 +92,7 @@ layer1:
     size: [0.500000, 0.250000]
     sizeOverLifeXY: [0.000000, [3.000000, 3.000000], 0.900000, [2.000000, 2.000000]]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../Gfx/Particles/alpha/o2SMOKEB"
+    sprite: "../../../Data/Gfx/Particles/alpha/o2SMOKEB"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -135,7 +135,7 @@ layer2:
     size: [0.250000, 0.250000]
     sizeOverLifeXY: [0.000000, [3.000000, 3.000000], 0.900000, [2.000000, 2.000000]]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../Gfx/Particles/alpha/o2SMOKEB"
+    sprite: "../../../Data/Gfx/Particles/alpha/o2SMOKEB"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -178,7 +178,7 @@ layer3:
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.200000, [2.000000, 2.000000], 0.900000, [2.000000, 2.000000]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../Gfx/Particles/alpha/o2SMOKEB"
+    sprite: "../../../Data/Gfx/Particles/alpha/o2SMOKEB"
     startTime: 0.000000
     type: "layer"
     velocity: 6.000000

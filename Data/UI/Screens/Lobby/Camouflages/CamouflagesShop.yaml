@@ -1,5 +1,5 @@
 Header:
-    version: "3"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
 - "~res:/UI/Screens/Common.yaml"
@@ -7,6 +7,7 @@ ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/FooterPriceControl.yaml"
 - "~res:/UI/Screens/Lobby/Common/ShopFooter.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
 StyleSheets:
 -   selector: "#Screen.preview_on ? #previewButton"
     properties:
@@ -38,12 +39,12 @@ StyleSheets:
             value: 1024.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
-        anchor-rightAnchor:
-            value: -512.000000
-            transitionTime: 0.160000
-            transitionFunction: "LINEAR"
         bg-color:
             value: [0.000000, 0.000000, 0.000000, 0.000000]
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+        anchor-rightAnchor:
+            value: -512.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
 -   selector: "#Screen.preview_off ? #info"
@@ -52,19 +53,19 @@ StyleSheets:
             value: 512.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
+        bg-color: [0.000000, 0.000000, 0.000000, 1.000000]
         anchor-rightAnchor:
             value: 0.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
-        bg-color: [0.000000, 0.000000, 0.000000, 1.000000]
 -   selector: "#Screen.preview_on ? #content"
     properties:
-        anchor-bottomAnchor:
-            value: 94.000000
-            transitionTime: 0.160000
-            transitionFunction: "LINEAR"
         anchor-leftAnchor:
             value: -512.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+        anchor-bottomAnchor:
+            value: 94.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
         anchor-topAnchor:
@@ -73,12 +74,12 @@ StyleSheets:
             transitionFunction: "LINEAR"
 -   selector: "#Screen.preview_off ? #content"
     properties:
-        anchor-bottomAnchor:
-            value: 94.000000
-            transitionTime: 0.160000
-            transitionFunction: "LINEAR"
         anchor-leftAnchor:
             value: 0.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+        anchor-bottomAnchor:
+            value: 94.000000
             transitionTime: 0.160000
             transitionFunction: "LINEAR"
         anchor-topAnchor:
@@ -234,9 +235,15 @@ Controls:
                             topBottomStretchCap: 10.000000
         -   class: "UIControl"
             name: "info"
-            size: [512.000000, 130.000000]
+            size: [512.000000, 111.000000]
             noInput: true
             components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 10.000000
+                    spacing: 10.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
                 Anchor:
                     leftAnchorEnabled: true
                     rightAnchorEnabled: true
@@ -249,11 +256,10 @@ Controls:
             children:
             -   class: "UIControl"
                 name: "content"
-                size: [512.000000, 130.000000]
+                size: [512.000000, 111.000000]
                 noInput: true
                 components:
-                    LinearLayout:
-                        orientation: "TopDown"
+                    IgnoreLayout: {}
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
                         verticalPolicy: "PercentOfParent"
@@ -262,41 +268,18 @@ Controls:
                         color: [0.000000, 0.000000, 0.000000, 0.498039]
                         colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
             -   class: "UIStaticText"
-                name: "description"
-                position: [15.000000, 48.000000]
-                size: [487.000000, 75.000000]
-                noInput: true
-                textColor: [0.647059, 0.729412, 0.803922, 1.000000]
-                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
-                multiline: "MULTILINE_ENABLED"
-                fitting: ["REDUCE"]
-                textalign: ["LEFT", "TOP"]
-                textUseRtlAlign: "USE_BY_SYSTEM"
-                text: "#vehicle_customization:Camouflage/Universal/Descr"
-                font: "WarHeliosCondC_21"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 15.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 10.000000
-                    Background:
-                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                        align: ["LEFT", "TOP"]
-            -   class: "UIStaticText"
                 name: "title"
-                position: [15.000000, 0.000000]
-                size: [492.000000, 48.000000]
                 noInput: true
-                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                classes: "header2 text-color-white"
                 textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
                 multiline: "MULTILINE_ENABLED"
                 fitting: ["REDUCE"]
                 textalign: ["LEFT", "VCENTER"]
                 textUseRtlAlign: "DONT_USE"
                 text: "Капитанская дочка"
-                font: "WarHeliosCondC_Bold_23"
                 components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
                     Anchor:
                         leftAnchorEnabled: true
                         leftAnchor: 15.000000
@@ -305,10 +288,32 @@ Controls:
                     Background:
                         colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                         align: ["LEFT", "TOP"]
+            -   class: "UIStaticText"
+                name: "description"
+                size: [487.000000, 52.000000]
+                noInput: true
+                classes: "text1 text-color-blue"
+                textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+                multiline: "MULTILINE_ENABLED"
+                fitting: ["REDUCE"]
+                textalign: ["LEFT", "TOP"]
+                textUseRtlAlign: "USE_BY_SYSTEM"
+                text: "#vehicle_customization:Camouflage/Universal/Descr"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 15.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        align: ["LEFT", "TOP"]
         -   prototype: "StyledButton/DefaultStyledButton"
             name: "previewButton"
-            size: [72.000000, 72.000000]
-            classes: "button preview_hide"
+            size: [64.000000, 64.000000]
+            classes: "button button-color-gray preview_hide"
             components:
                 Anchor:
                     rightAnchorEnabled: true
@@ -350,3 +355,4 @@ Controls:
                         sprite: "~res:/Gfx/UI/CommonUIElements/Footer"
             -   prototype: "ShopFooter/ShopFooter"
                 name: "ShopFooter"
+                position: [0.000000, 0.000000]

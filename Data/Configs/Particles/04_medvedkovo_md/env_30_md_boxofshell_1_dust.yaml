@@ -1,0 +1,55 @@
+emitter:
+    size: [2.000000, 2.000000, 2.000000]
+    name: "dust"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 60.000000
+    emissionRange: 50.000000
+    emissionVector: [0.100000, -0.010000, 1.000000]
+    radius: 2.000000
+layer0:
+    name: "dust"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 2
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 180.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 3.000000
+    number: 20.000000
+    size: [0.500000, 0.500000]
+    sizeVariation: [1.000000, 1.000000]
+    velocityVariation: 1.000000
+    sizeOverLifeXY: [0.000000, [3.445100, 3.445100], 0.355700, [3.504900, 3.504900], 0.900000, [5.000000, 5.000000]]
+    velocity: 1.000000
+    velocityOverLife: [0.000000, 2.000000, 0.052500, 0.587800, 0.420000, 0.100000, 0.896300, 0.131400]
+    spin: [0.000000, 5.000000, 0.300000, 0.000000]
+    angleVariation: 180.000000
+    spinOverLife: [0.000000, 1.000000, 0.300000, 0.000000]
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.147287, 0.529964, 0.751700, 0.373000, 0.875000, 0.226900, 0.990000, 0.000000]
+    colorOverLife: [102.245132, 82.132294, 93.863808, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [0, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, [0.000000, 0.000000, -2.000000], 0.300000, [0.010000, 0.000000, 0.000000], 0.900000, [0.000000, 0.000000, -0.938700]]

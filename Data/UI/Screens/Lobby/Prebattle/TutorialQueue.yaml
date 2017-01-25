@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
@@ -134,7 +134,7 @@ Controls:
                 Background:
                     drawType: "DRAW_SCALE_TO_RECT"
                     sprite: "~res:/Gfx/UI/LobbyCommon/ThinRedLine"
-                    spriteModification: 1
+                    spriteModification: ["FLIP_HORIZONTAL"]
         -   class: "UIStaticText"
             name: "HeaderText1"
             size: [1024.000000, 80.000000]
@@ -186,13 +186,12 @@ Controls:
             -   prototype: "StyledButton/StyledButton"
                 name: "SkipButton"
                 position: [797.000000, 12.000000]
+                classes: "button button-color-red"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
                         rightAnchor: 5.000000
                         vCenterAnchorEnabled: true
-                    Background:
-                        frame: 1
                 children:
                 -   path: "Caption"
                     multiline: "MULTILINE_ENABLED"

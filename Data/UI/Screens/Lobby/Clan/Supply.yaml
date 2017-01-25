@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
 - "~res:/UI/Screens/Common.yaml"
@@ -13,42 +13,7 @@ StyleSheets:
 -   selector: ".horizontal-limit.Desktop"
     properties:
         sizePolicy-horizontalMax: 1100.000000
-Controls:
--   class: "UIControl"
-    customClass: "UIClanSupply"
-    name: "Supply"
-    size: [1024.000000, 768.000000]
-    components:
-        Anchor:
-            leftAnchorEnabled: true
-            rightAnchorEnabled: true
-            topAnchorEnabled: true
-            bottomAnchorEnabled: true
-    children:
-    -   class: "UIControl"
-        name: "Horizontal"
-        classes: "horizontal-limit"
-        components:
-            LinearLayout: {}
-            SizePolicy:
-                horizontalPolicy: "PercentOfParent"
-                verticalPolicy: "PercentOfParent"
-            Anchor:
-                hCenterAnchorEnabled: true
-        children:
-        -   class: "UIControl"
-            name: "SupplyListHolder"
-            components:
-                SizePolicy:
-                    horizontalPolicy: "FixedSize"
-                    horizontalValue: 350.000000
-                    verticalPolicy: "PercentOfParent"
-        -   class: "UIControl"
-            name: "DetailedLevelInfoHolder"
-            components:
-                SizePolicy:
-                    horizontalPolicy: "PercentOfParent"
-                    verticalPolicy: "PercentOfParent"
+Prototypes:
 -   class: "UIControl"
     customClass: "UIClanSupplyStatus"
     name: "Status"
@@ -178,14 +143,50 @@ Controls:
         components:
             Anchor:
                 rightAnchorEnabled: true
-                rightAnchor: 5.000000
+                rightAnchor: 6.000000
                 vCenterAnchorEnabled: true
         children:
         -   path: "Caption"
-            classes: "header1 hacked-font text-color-white"
+            classes: "header3 text-color-white"
             fitting: ["REDUCE"]
             textMargins: [5.000000, 0.000000, 5.000000, 0.000000]
             text: "#clans:SupplyScreen/PersonalAccess/Button"
+Controls:
+-   class: "UIControl"
+    customClass: "UIClanSupply"
+    name: "Supply"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Horizontal"
+        classes: "horizontal-limit"
+        components:
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "SupplyListHolder"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 350.000000
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "DetailedLevelInfoHolder"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
 -   prototype: "ClanCommon/HeaderTitle"
     name: "Title"
     children:

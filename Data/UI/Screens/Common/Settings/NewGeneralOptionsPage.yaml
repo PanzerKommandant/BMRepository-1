@@ -120,15 +120,11 @@ Controls:
                             visible: false
                         -   path: "ValueAndCaption/GroupCaption"
                             text: "SETTINGS_GROUP_CAPTION_VOLUME"
-                -   prototype: "SettingsCommon/Row"
-                    name: "Row3"
-                    noInput: false
+                -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
+                    name: "PushNotificationsMode"
                     children:
-                    -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
-                        name: "PushNotificationsMode"
-                        children:
-                        -   path: "GroupCaption"
-                            text: "SETTINGS_LABEL_GENERAL_PUSH"
+                    -   path: "GroupCaption"
+                        text: "SETTINGS_LABEL_GENERAL_PUSH"
                 -   prototype: "SettingsCommon/SelectorWithCaptionAndDescription"
                     name: "MinimapSize"
                     visible: true
@@ -261,6 +257,24 @@ Controls:
                         name: "SameControlType"
                         position: [508.500000, 0.000000]
                         size: [506.500000, 80.000000]
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 1.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                        children:
+                        -   path: "GroupCaption"
+                            text: "#settings:Other/SameControlType/Title"
+                            font: "WarHeliosCondC_Bold_19"
+                        -   path: "Description"
+                            text: "#settings:Other/SameControlType/Description"
+                    -   prototype: "SettingsCommon/SwitchWithCaptionAndDescription"
+                        name: "SameControlTypeMouse"
+                        position: [508.500000, 0.000000]
+                        size: [506.500000, 80.000000]
+                        visible: false
                         components:
                             Anchor:
                                 hCenterAnchorEnabled: true

@@ -47,7 +47,7 @@ layer0:
     sizeVariation: [0.025000, 0.025000]
     spin: 400.000000
     spinVariation: 90.000000
-    sprite: "../../../../Gfx/Particles/alpha/ground"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/ground"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -93,7 +93,7 @@ layer1:
     sizeVariation: [0.025000, 0.025000]
     spin: 400.000000
     spinVariation: 90.000000
-    sprite: "../../../../Gfx/Particles/alpha/ground_one"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/ground_one"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -139,7 +139,7 @@ layer2:
     sizeVariation: [0.025000, 0.025000]
     spin: 400.000000
     spinVariation: 90.000000
-    sprite: "../../../../Gfx/Particles/alpha/ground"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/ground"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -185,7 +185,7 @@ layer3:
     sizeVariation: [0.035000, 0.035000]
     spin: 400.000000
     spinVariation: 90.000000
-    sprite: "../../../../Gfx/Particles/alpha/rock"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/rock"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

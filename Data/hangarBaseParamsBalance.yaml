@@ -14,54 +14,54 @@ keyedArchive:
     maxSpeedWeight:
         float: 0.15
     averageThicknessMin:
-        float: 9.033815 # GB01_Medium_Mark_I
+        float: 6.449697 # GB39_Universal_CarrierQF2
     averageThicknessMax:
-        float: 232.935898 # ST_I
+        float: 240.493820 # VK7201
     chassisRotationSpeedMin:
-        float: 0.261799 # KV4
+        float: 0.209440 # T95
     chassisRotationSpeedMax:
-        float: 0.977384 # T62A
+        float: 1.117011 # Pz35t
     enginePowerPerTonMin:
         float: 3687.346924 # T95
     enginePowerPerTonMax:
-        float: 28764.177734 # BT-2
+        float: 31739.066406 # BT-2
     firePowerMin:
-        float: 370.000000 # GB01_Medium_Mark_I
+        float: 313.316528 # GB01_Medium_Mark_I
     firePowerMax:
-        float: 3209.076172 # GB22_Comet
+        float: 2714.560791 # JagdTiger
     maxHealthMin:
-        float: 140.000000 # MS-1
+        float: 125.000000 # NC27
     maxHealthMax:
         float: 2500.000000 # Maus
     maxSpeedMin:
-        float: 3.611140 # T95
+        float: 3.333360 # GB44_Archer_Custom
     maxSpeedMax:
-        float: 20.000160 # T2_lt
+        float: 22.222401 # G103_RU_251
     mobilityMin:
-        float: -1.0 # T95
+        float: -0.752619 # T95
     mobilityMax:
-        float: 86.072395 # T2_lt
+        float: 77.470673 # BT-2
     piercingPowerMin:
-        float: 23.000000 # Pz35t
+        float: 20.000000 # M2_med
     piercingPowerMax:
-        float: 303.000000 # Object268
+        float: 310.000000 # GB48_FV215b_183
     protectabilityMin:
-        float: -2.2 # T1_Cunningham
+        float: 0.0 # GB01_Medium_Mark_I
     protectabilityMax:
-        float: 96.818832 # Maus
+        float: 100.000000 # VK7201
     shotDamageMin:
         float: 8.000000 # BT-2
     shotDamageMax:
-        float: 800.000000 # JagdPz_E100
+        float: 930.000000 # GB48_FV215b_183
     shotDispersionAngleMin:
         float: 0.003000 # E-50
     shotDispersionAngleMax:
-        float: 0.005900 # Pz35t
+        float: 0.006000 # KV2
     shotEfficiencyMin:
-        float: -0.9 # Pz35t
+        float: -16.194601 # PzII
     shotEfficiencyMax:
-        float: 95.862076 # Object268
+        float: 83.994995 # Object268
     shotsPerMinuteMin:
-        float: 2.859375 # KV-1s
+        float: 2.500000 # KV2
     shotsPerMinuteMax:
-        float: 127.208481 # Pz38_NA
+        float: 131.707306 # VK1602

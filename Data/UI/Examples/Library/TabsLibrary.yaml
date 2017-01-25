@@ -1,0 +1,68 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/Tab.yaml"
+Controls:
+-   prototype: "Tab/TabPane"
+    name: "ImageTabPane"
+    children:
+    -   prototype: "Tab/ImageTab"
+        name: "Tab1"
+        position: [4.000000, 4.000000]
+        selected: true
+        tag: 0
+        children:
+        -   path: "Icon"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/SettingsScreen/IconTabs_new"
+                    frame: 14
+        -   path: "Text"
+            angle: 0.000000
+            text: "TAB 1"
+    -   prototype: "Tab/ImageTab"
+        name: "Tab2"
+        position: [201.333328, 4.000000]
+        tag: 1
+        children:
+        -   path: "Icon"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/SettingsScreen/IconTabs_new"
+                    frame: 1
+        -   path: "Text"
+            text: "TAB 2"
+    -   prototype: "Tab/ImageTab"
+        name: "Tab3"
+        position: [398.666656, 4.000000]
+        tag: 2
+        children:
+        -   path: "Icon"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/SettingsScreen/IconTabs_new"
+                    frame: 2
+        -   path: "Text"
+            text: "TAB 3"
+-   prototype: "Tab/TabPane"
+    name: "TextTabPane"
+    children:
+    -   prototype: "Tab/TextTab"
+        name: "Tab1"
+        selected: true
+        tag: 0
+        children:
+        -   path: "Text"
+            text: "TAB 1"
+    -   prototype: "Tab/TextTab"
+        name: "Tab2"
+        tag: 1
+        children:
+        -   path: "Text"
+            text: "TAB 2"
+    -   prototype: "Tab/TextTab"
+        name: "Tab3"
+        tag: 2
+        children:
+        -   path: "Text"
+            text: "TAB 3"

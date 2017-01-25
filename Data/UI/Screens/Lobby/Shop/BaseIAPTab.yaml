@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Shop/BaseShopTab.yaml"
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
@@ -11,15 +11,15 @@ ImportedPackages:
 StyleSheets:
 -   selector: ".packages.Desktop"
     properties:
+        sizePolicy-horizontalPolicy: "PercentOfParent"
         flowLayout-enabled: true
         linearLayout-enabled: false
-        sizePolicy-horizontalPolicy: "PercentOfParent"
         sizePolicy-verticalPolicy: "PercentOfChildrenSum"
 -   selector: ".packages"
     properties:
+        sizePolicy-horizontalPolicy: "PercentOfChildrenSum"
         flowLayout-enabled: false
         linearLayout-enabled: true
-        sizePolicy-horizontalPolicy: "PercentOfChildrenSum"
         sizePolicy-verticalPolicy: "PercentOfParent"
 -   selector: ".description.Desktop"
     properties:
@@ -39,7 +39,7 @@ StyleSheets:
 -   selector: ".footer.invisible"
     properties:
         visible: false
-Controls:
+Prototypes:
 -   prototype: "BaseShopTab/Tab"
     name: "Tab"
     children:
@@ -89,7 +89,7 @@ Controls:
                     align: ["LEFT", "TOP"]
         -   prototype: "StyledButton/StyledButton"
             name: "BuyButton"
-            size: [250.000000, 70.000000]
+            size: [250.000000, 64.000000]
             classes: "button button-color-green"
             components:
                 Anchor:

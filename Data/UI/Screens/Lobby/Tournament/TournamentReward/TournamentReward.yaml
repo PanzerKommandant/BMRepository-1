@@ -1,0 +1,122 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackground.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentTabControl.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Lobby/Common/HeaderWithLines.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Content"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+            topAnchorEnabled: true
+            bottomAnchorEnabled: true
+    children:
+    -   prototype: "TournamentBackground/EffectsContainer"
+        name: "EffectsContainer"
+    -   class: "UIControl"
+        name: "View"
+        size: [1024.000000, 768.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 16.000000
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Header"
+            size: [1024.000000, 80.000000]
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+            children:
+            -   class: "UIControl"
+                name: "TitleShadow"
+                position: [0.000000, 0.000000]
+                size: [1024.000000, 80.000000]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        vCenterAnchorEnabled: false
+                    Background:
+                        drawType: "DRAW_SCALE_TO_RECT"
+                        sprite: "~res:/Gfx/UI/Tournament/gradient"
+            -   prototype: "TournamentBackButton/BackButton"
+                name: "BackButton"
+            -   class: "UIControl"
+                name: "Title"
+                size: [202.000000, 31.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfMaxChild"
+                        verticalPolicy: "PercentOfChildrenSum"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 9.000000
+                        vCenterAnchorEnabled: true
+                children:
+                -   class: "UIStaticText"
+                    name: "Title"
+                    classes: "header1"
+                    text: "tournaments/TournamentRewardsScreen/Header"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfContent"
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Center"
+            size: [554.000000, 70.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 554.000000
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 70.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 115.000000
+            children:
+            -   prototype: "TournamentTabControl/TabPanel"
+                name: "Tabs"
+                components:
+                    SizePolicy:
+                        verticalPolicy: "PercentOfParent"
+                        verticalValue: 100.000000
+        -   prototype: "HeaderWithLines/HeaderWithLines"
+            name: "StageNameContainer"
+        -   class: "UIControl"
+            name: "ListOfReward"
+            size: [550.000000, 569.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 550.000000
+                    verticalPolicy: "PercentOfParent"
+                Anchor:
+                    hCenterAnchorEnabled: true

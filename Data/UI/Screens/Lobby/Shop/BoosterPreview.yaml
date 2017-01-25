@@ -1,0 +1,51 @@
+Header:
+    version: "6"
+StyleSheets:
+-   selector: ".rare #Grade"
+    properties:
+        bg-color: [0.141176, 0.349020, 0.941176, 1.000000]
+-   selector: ".unique #Grade"
+    properties:
+        bg-color: [0.549020, 0.023529, 0.803922, 1.000000]
+-   selector: ".legendary #Grade"
+    properties:
+        bg-color: [1.000000, 0.752941, 0.000000, 1.000000]
+-   selector: ".common #Grade"
+    properties:
+        bg-color: [0.517647, 0.521569, 0.525490, 1.000000]
+Prototypes:
+-   class: "UIControl"
+    name: "BoosterPreview"
+    position: [0.000000, 10.399999]
+    size: [53.000000, 70.599983]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            horizontalValue: 25.000000
+        Anchor:
+            bottomAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "Grade"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 90.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+                sprite: "~res:/Gfx/UI/Storage/Items_back"
+    -   class: "UIControl"
+        name: "Icon"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 70.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL_ONE"

@@ -40,7 +40,7 @@ layer0:
     scaleVelocityFactor: 0.0000
     size: [40.1168, 40.0000]
     spin: 1.0000
-    sprite: "../../../Gfx/Particles/hangar/glow_anim_low"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_anim_low"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -76,7 +76,7 @@ layer1:
     scaleVelocityFactor: 0.0000
     size: [40.1168, 40.0000]
     spin: -1.0000
-    sprite: "../../../Gfx/Particles/hangar/glow_anim_low"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_anim_low"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

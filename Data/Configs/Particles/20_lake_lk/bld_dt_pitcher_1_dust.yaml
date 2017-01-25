@@ -45,7 +45,7 @@ layer0:
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.000000, [3.000000, 3.000000], 0.900000, [2.000000, 2.000000]]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/alpha/o2SMOKEB_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2SMOKEB_one"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

@@ -1,0 +1,83 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UISearchTextField"
+    name: "SearchTextField"
+    size: [480.000000, 50.000000]
+    children:
+    -   class: "UIControl"
+        name: "Background"
+        size: [480.000000, 50.000000]
+        components:
+            LinearLayout:
+                useRtl: true
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/Clan/search_back"
+                leftRightStretchCap: 4.000000
+                topBottomStretchCap: 4.000000
+        children:
+        -   class: "UIControl"
+            name: "SearchIcon"
+            size: [50.000000, 50.000000]
+            visible: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 50.000000
+                Anchor:
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Clan/search_icon"
+        -   class: "UITextField"
+            customClass: "UITextFieldWithHint"
+            name: "TextField"
+            size: [380.000000, 50.000000]
+            font: "WarHeliosCondC_19"
+            textalign: ["LEFT", "VCENTER"]
+            maxLength: 25
+            returnKeyType: "RETURN_KEY_SEARCH"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 50.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 60.000000
+                    topAnchorEnabled: false
+                    vCenterAnchorEnabled: true
+                Focus: {}
+            children:
+            -   class: "UIStaticText"
+                name: "Hint"
+                classes: "text2"
+                textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+                textalign: ["HCENTER", "VCENTER"]
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        rightAnchorEnabled: true
+                        rightAnchor: 60.000000
+                        topAnchorEnabled: true
+                        bottomAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Clear"
+            position: [430.000000, 0.000000]
+            size: [50.000000, 50.000000]
+            noInput: false
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_ALIGNED"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/InputClear"
+                    frame: 0

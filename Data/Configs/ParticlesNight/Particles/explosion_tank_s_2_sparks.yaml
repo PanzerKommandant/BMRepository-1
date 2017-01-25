@@ -41,7 +41,7 @@ layer0:
     scaleVelocityFactor: 0.400000
     size: [0.010000, 0.015000]
     sizeVariation: [0.010000, 0.010000]
-    sprite: "../../../Gfx/Particles/alpha/Iskr"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Iskr"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000

@@ -1,0 +1,189 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/LobbyStyles.yaml"
+Controls:
+-   class: "UIControl"
+    name: "MainContainer"
+    components:
+        LinearLayout:
+            orientation: "Vertical"
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 1.000000]
+    children:
+    -   class: "UIControl"
+        name: "ContainerSmall"
+        size: [420.000000, 48.000000]
+        components:
+            LinearLayout:
+                padding: 30.000000
+                spacing: 30.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "currencyGoldSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-gold-small"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCreditSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-credit-small"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyFreeXpSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-free-xp-small"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyXpSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-xp-small"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCrewXpSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-crew-xp-small"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+    -   class: "UIControl"
+        name: "ContainerBig"
+        size: [420.000000, 48.000000]
+        components:
+            LinearLayout:
+                padding: 30.000000
+                spacing: 30.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "currencyGoldBig"
+            size: [48.000000, 48.000000]
+            classes: "currency-gold-big"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCreditBig"
+            size: [48.000000, 48.000000]
+            classes: "currency-credit-big"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyFreeXpBig"
+            size: [48.000000, 48.000000]
+            classes: "currency-free-xp-big"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyXpBig"
+            size: [48.000000, 48.000000]
+            classes: "currency-xp-big"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCrewXpSmall"
+            size: [48.000000, 48.000000]
+            classes: "currency-crew-xp-big"
+            components:
+                SizePolicy: {}
+                Background:
+                    drawType: "DRAW_ALIGNED"
+    -   class: "UIControl"
+        name: "ContainerHuge"
+        size: [420.000000, 48.000000]
+        components:
+            LinearLayout:
+                padding: 30.000000
+                spacing: 30.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfMaxChild"
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.000000, 0.000000, 0.000000, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "currencyGoldHuge"
+            size: [48.000000, 48.000000]
+            classes: "currency-gold-huge"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCreditHuge"
+            size: [48.000000, 48.000000]
+            classes: "currency-credit-huge"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyFreeXpHuge"
+            size: [48.000000, 48.000000]
+            classes: "currency-free-xp-huge"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyXpHuge"
+            size: [48.000000, 48.000000]
+            classes: "currency-xp-huge"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_ALIGNED"
+        -   class: "UIControl"
+            name: "currencyCrewXpHuge"
+            size: [48.000000, 48.000000]
+            classes: "currency-crew-xp-huge"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_ALIGNED"

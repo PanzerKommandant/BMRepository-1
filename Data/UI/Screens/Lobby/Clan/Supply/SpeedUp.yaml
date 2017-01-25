@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Clan/Supply/ResearchProgress.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
@@ -156,8 +156,6 @@ Controls:
                         children: []
                     -   path: "VertContainer/CaptionContainer/ScoreBar"
                         components:
-                            SizePolicy:
-                                horizontalPolicy: "FixedSize"
                             Anchor:
                                 enabled: true
                                 rightAnchorEnabled: true
@@ -398,6 +396,7 @@ Controls:
             children:
             -   prototype: "StyledButton/StyledButton"
                 name: "SpeedUpButton"
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         rightAnchorEnabled: true

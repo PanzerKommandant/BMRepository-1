@@ -1,5 +1,5 @@
 Header:
-    version: "1"
+    version: "5"
 StyleSheets:
 -   selector: ".finger-button:pressed_inside"
     properties:
@@ -7,12 +7,14 @@ StyleSheets:
             value: [1.100000, 1.100000]
             transitionTime: 0.150000
             transitionFunction: "LINEAR"
+        bg-color: [1.000000, 1.000000, 1.000000, 0.996078]
 -   selector: ".finger-button"
     properties:
         scale:
             value: [1.000000, 1.000000]
             transitionTime: 0.150000
             transitionFunction: "LINEAR"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 Controls:
 -   class: "UIControl"
     name: "tutorialHoldTip"
@@ -57,7 +59,7 @@ Controls:
             Background:
                 sprite: "~res:/Gfx/UI/Tutorial/IpadIcon"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-    -   class: "UIButton"
+    -   class: "UIControl"
         name: "button1"
         position: [188.000000, 550.000000]
         size: [136.000000, 156.000000]
@@ -69,20 +71,11 @@ Controls:
                 leftAnchor: 120.000000
                 bottomAnchorEnabled: true
                 bottomAnchor: 140.000000
-            Normal:
+            Background:
                 drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
                 sprite: "~res:/Gfx/UI/Tutorial/button_fingerprint_over"
-                frame: 0
-                spriteModification: 0
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-            PressedInside:
-                color: [1.000000, 1.000000, 1.000000, 0.996100]
-                colorInherit: "COLOR_IGNORE_PARENT"
-            Selected:
-                color: [1.000000, 1.000000, 1.000000, 1.000000]
-            NormalText:
-                font: "Font_default"
-    -   class: "UIButton"
+    -   class: "UIControl"
         name: "button2"
         position: [836.000000, 550.000000]
         size: [136.000000, 156.000000]
@@ -94,16 +87,8 @@ Controls:
                 rightAnchor: 120.000000
                 bottomAnchorEnabled: true
                 bottomAnchor: 140.000000
-            Normal:
+            Background:
                 drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
                 sprite: "~res:/Gfx/UI/Tutorial/button_fingerprint_over"
-                frame: 0
-                spriteModification: 1
+                spriteModification: ["FLIP_HORIZONTAL"]
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-            PressedInside:
-                color: [1.000000, 1.000000, 1.000000, 0.996100]
-                colorInherit: "COLOR_IGNORE_PARENT"
-            Selected:
-                color: [1.000000, 1.000000, 1.000000, 1.000000]
-            NormalText:
-                font: "Font_default"

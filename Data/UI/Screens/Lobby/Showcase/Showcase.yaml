@@ -1,10 +1,12 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Hangar/HangarBaseScreen.yaml"
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Lobby/Common/VehicleParamsTable.yaml"
+- "~res:/UI/Screens/Lobby/Common/ShopFooter.yaml"
 StyleSheets:
 -   selector: ".fb-button"
     properties:
@@ -16,6 +18,51 @@ StyleSheets:
 -   selector: ".fb-button:pressed_inside"
     properties:
         bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: "#previewButton"
+    properties:
+        anchor-topAnchor: 86.000000
+-   selector: "#Screen.fullscreen_on #Header"
+    properties:
+        anchor-topAnchor:
+            value: -80.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_off #Header"
+    properties:
+        anchor-topAnchor:
+            value: 0.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_on #Content #Background ? #statsContainer"
+    properties:
+        anchor-rightAnchor:
+            value: -300.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_off #Content #Background ? #statsContainer"
+    properties:
+        anchor-rightAnchor:
+            value: 0.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_on #previewButton"
+    properties:
+        anchor-topAnchor:
+            value: 0.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_off #previewButton"
+    properties:
+        anchor-topAnchor:
+            value: 80.000000
+            transitionTime: 0.160000
+            transitionFunction: "LINEAR"
+-   selector: "#Screen.fullscreen_on #previewButton #icon"
+    properties:
+        bg-frame: 1
+-   selector: "#Screen.fullscreen_off #previewButton #icon"
+    properties:
+        bg-frame: 0
 Controls:
 -   prototype: "HangarBaseScreen/Screen"
     name: "Screen"
@@ -27,7 +74,7 @@ Controls:
                 rightAnchor: 100.000000
         children: []
     -   path: "Header/Layout/leftContent/label"
-        size: [500.000000, 76.000000]
+        size: [500.000000, 80.000000]
         visible: true
         textalign: ["HCENTER", "VCENTER"]
         components:
@@ -60,7 +107,6 @@ Controls:
                     leftAnchorEnabled: true
                     leftAnchor: 0.000000
                     rightAnchorEnabled: true
-                    rightAnchor: 0.000000
                     topAnchorEnabled: true
                     topAnchor: 98.000000
             children:
@@ -104,8 +150,9 @@ Controls:
                         colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
             -   class: "UIControl"
                 name: "tankName"
-                position: [312.000000, 3.500000]
+                position: [512.000000, 25.000000]
                 size: [400.000000, 43.000000]
+                pivot: [0.500000, 0.500000]
                 noInput: true
                 components:
                     Anchor:
@@ -972,7 +1019,7 @@ Controls:
                     -   class: "UIControl"
                         name: "labelContainer"
                         position: [195.000000, 5.000000]
-                        size: [104.000000, 30.000000]
+                        size: [103.000000, 30.000000]
                         noInput: true
                         components:
                             LinearLayout:
@@ -1060,7 +1107,7 @@ Controls:
                     -   class: "UIControl"
                         name: "labelContainer"
                         position: [195.000000, 5.000000]
-                        size: [104.000000, 30.000000]
+                        size: [103.000000, 30.000000]
                         noInput: true
                         components:
                             LinearLayout:
@@ -1298,7 +1345,7 @@ Controls:
                                 align: ["LEFT", "TOP"]
             -   prototype: "StyledButton/StyledButton"
                 name: "getTankButton"
-                size: [179.000000, 70.000000]
+                size: [179.000000, 64.000000]
                 classes: "button color=button-color-green"
                 components:
                     Anchor:
@@ -1329,7 +1376,7 @@ Controls:
                 children:
                 -   prototype: "StyledButton/StyledButton"
                     name: "toHangarButton"
-                    size: [179.000000, 70.000000]
+                    size: [180.000000, 64.000000]
                     classes: "button button-color-green"
                     components:
                         Anchor:
@@ -1353,3 +1400,100 @@ Controls:
                     Background:
                         sprite: "~res:/Gfx/UI/LobbyCommon/IconsSocialBigOn"
                         frame: 0
+            -   class: "UIControl"
+                name: "statsContainer"
+                size: [425.000000, 688.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 425.000000
+                    Anchor:
+                        rightAnchorEnabled: true
+                        topAnchorEnabled: true
+                        topAnchor: 80.000000
+                        bottomAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_FILL"
+                        color: [0.070588, 0.125490, 0.160784, 0.850980]
+                children:
+                -   class: "UIScrollView"
+                    name: "scroll"
+                    size: [425.000000, 688.000000]
+                    autoUpdate: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [0.000000, 0.000000, 0.000000, 0.501961]
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    children:
+                    -   class: "UIScrollViewContainer"
+                        name: "scrollContainerControl"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfChildrenSum"
+                            Background:
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                        children:
+                        -   prototype: "VehicleParamsTable/VehicleParamsTable"
+                            name: "VehicleParamsTable"
+                            components:
+                                SizePolicy:
+                                    horizontalValue: 100.000000
+                                Anchor:
+                                    topAnchorEnabled: true
+                                    bottomAnchorEnabled: true
+                -   class: "UIScrollBar"
+                    name: "scrollBar"
+                    position: [419.000000, 0.000000]
+                    size: [6.000000, 688.000000]
+                    noInput: true
+                    orientation: "ORIENTATION_VERTICAL"
+                    components:
+                        Anchor:
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_SCALE_TO_RECT"
+                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    children:
+                    -   class: "UIControl"
+                        name: "slider"
+                        size: [6.000000, 50.000000]
+                        noInput: true
+                        components:
+                            Background:
+                                drawType: "DRAW_STRETCH_VERTICAL"
+                                sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                                topBottomStretchCap: 4.000000
+    -   prototype: "StyledButton/DefaultStyledButton"
+        name: "previewButton"
+        size: [64.000000, 64.000000]
+        visible: false
+        classes: "button preview_hide button-color-gray"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 7.000000
+                topAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "icon"
+            pivot: [0.500000, 0.500000]
+            classes: "preview_icon"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/CamouflagesShop/icon_camouflage_preview"
+                    colorInherit: "COLOR_MULTIPLY_ON_PARENT"

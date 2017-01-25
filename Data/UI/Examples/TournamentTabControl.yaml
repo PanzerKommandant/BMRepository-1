@@ -1,0 +1,48 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Tournament/TournamentTabControl.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIStaticText"
+    name: "Label"
+    size: [0.000000, 0.000000]
+    classes: "header3 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+-   prototype: "TournamentTabControl/TabPanel"
+    name: "TabPanel"
+    children:
+    -   prototype: "TournamentTabControl/TabControl"
+        name: "TabControl"
+        children:
+        -   path: "unselected"
+            children:
+            -   prototype: "Label"
+                name: "Label"
+                text: "111"
+    -   class: "UIControl"
+        name: "Image"
+        position: [93.000000, -10.000000]
+        size: [73.000008, 90.000000]
+        components:
+            Background:
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/Tournament/tabpanel/tab_panel_mask"
+                detail: "~res:/Gfx/UI/Tournament/tabpanel/tab_panel_detail"
+                gradient: "~res:/Gfx/UI/Tournament/tabpanel/tab_panel_gradient"
+                contour: "~res:/Gfx/UI/Tournament/tabpanel/tab_panel_contour"
+    -   prototype: "TournamentTabControl/TabControl"
+        name: "TabControl"
+        children:
+        -   path: "unselected"
+            children:
+            -   prototype: "Label"
+                name: "Label"
+                text: "5"

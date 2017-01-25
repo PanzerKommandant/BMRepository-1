@@ -1,10 +1,10 @@
 BadWords:
-- {excl: '(?-i)D(?i)ick', incl: ^dick$}
 - {excl: '', incl: 자1지}
 - {excl: '', incl: 광zoo폭동}
 - {excl: '', incl: 노무현시계}
 - {excl: '', incl: 이명박그네}
 - {excl: '', incl: 518폭동이}
+- {excl: '', incl: 싸가 지}
 - {excl: '', incl: 쌕쓰}
 - {excl: '', incl: 팍근혜}
 - {excl: '', incl: 히틀러슈칸}
@@ -12,7 +12,9 @@ BadWords:
 - {excl: '', incl: 자슥}
 - {excl: '', incl: AdolfHitler1940}
 - {excl: '', incl: 광주가는두환이}
+- {excl: '', incl: 개 같 은년}
 - {excl: '', incl: 루돌프히틀러}
+- {excl: '', incl: 자 지 빨 어}
 - {excl: '', incl: 오덕후}
 - {excl: '', incl: 준장전두환}
 - {excl: '', incl: 새누리당박근혜}
@@ -29,6 +31,8 @@ BadWords:
 - {excl: '', incl: 탱크는전탱크}
 - {excl: '', incl: 홍어진압용땅크}
 - {excl: '', incl: 부릉부릉전탱크}
+- {excl: '', incl: 시 팔 새끼}
+- {excl: '', incl: 후 라 덜 넘}
 - {excl: '', incl: 김대중개섀끼}
 - {excl: '', incl: 공수특전사전두환}
 - {excl: '', incl: TankBoy_General_Jun}
@@ -38,12 +42,13 @@ BadWords:
 - {excl: '', incl: 제너럴전두환}
 - {excl: '', incl: 보지물}
 - {excl: '', incl: 자식}
-- {excl: '', incl: 광주행TTANK}
+- {excl: '', incl: 진압왕노운지}
 - {excl: '', incl: 근혜잡는정희}
 - {excl: '', incl: 전두환과친구들}
 - {excl: '', incl: 광주폭동땅크부릉}
 - {excl: '', incl: 실력운지노무현}
 - {excl: '', incl: 땅크황제전두환}
+- {excl: '', incl: 개후 라새끼}
 - {excl: '', incl: 전두환전땅크전두}
 - {excl: '', incl: 전두환의_땅끄}
 - {excl: '', incl: 좃이다}
@@ -51,31 +56,39 @@ BadWords:
 - {excl: '', incl: NaziCube}
 - {excl: '', incl: 운지버섯노짱}
 - {excl: '', incl: 두환이의구축전차}
+- {excl: '', incl: 씨 발 년}
 - {excl: '', incl: 우라늄왕김대중}
 - {excl: '', incl: 전두환의_땅크}
 - {excl: '', incl: 느금마드록바}
 - {excl: '', incl: 전두환강림}
 - {excl: '', incl: 이땅크가전땅크요}
+- {excl: '', incl: 쌕 쓰}
+- {excl: '', incl: '크리 토 '}
 - {excl: '', incl: Oil8폭동}
-- {excl: '', incl: 땅크두환터짐고환}
+- {excl: '', incl: 08이명박}
 - {excl: '', incl: 이명박땅크}
+- {excl: '', incl: '보 지 '}
 - {excl: '', incl: 전땅크슛}
 - {excl: '', incl: 노오무현이탓노}
 - {excl: '', incl: 전땅크부릉나간다}
 - {excl: '', incl: 폭도를노짱곁으로}
 - {excl: '', incl: 광주는폭동Ol야}
-- {excl: '', incl: 펜타킬박근혜}
+- {excl: '', incl: 싸 가지}
+- {excl: '', incl: 전두환새해복}
 - {excl: '', incl: 전땅크의}
 - {excl: '', incl: 죽이자개쌍도}
+- {excl: '', incl: 자 지 빨 아}
 - {excl: '', incl: 종북좌빨}
+- {excl: '', incl: 걸레 같 은 년}
 - {excl: '', incl: ahitler}
 - {excl: '', incl: 프란츠리터할더}
+- {excl: '', incl: 후라덜 넘}
 - {excl: '', incl: 땅끄보이전장군}
 - {excl: '', incl: 전장군숯불구이}
 - {excl: '', incl: Hair}
 - {excl: '', incl: 왈도오브전땅크}
 - {excl: '', incl: 광폭동주부릉부릉}
-- {excl: '', incl: 씨발새끼}
+- {excl: '', incl: T2MichaelWittmannC}
 - {excl: '', incl: 북괴홍어대중}
 - {excl: '', incl: 전장군님축지법}
 - {excl: '', incl: 바보노무현}
@@ -84,41 +97,47 @@ BadWords:
 - {excl: '', incl: 땅크오브전장군}
 - {excl: '', incl: 광주의_폭동}
 - {excl: '', incl: 미하일비트먼}
-- {excl: '', incl: 홍어김대중}
+- {excl: '', incl: 시 방새}
+- {excl: '', incl: 젖탱이}
 - {excl: '', incl: 현아보zi}
 - {excl: '', incl: Boob}
 - {excl: '', incl: 이정희전탱크}
 - {excl: '', incl: 흑인성기삽니다}
 - {excl: '', incl: 땅끄앤광주}
+- {excl: '', incl: Dick Head}
 - {excl: '', incl: 이정희의어딜만져}
 - {excl: '', incl: totenkorpf}
-- {excl: '', incl: 쌕수}
+- {excl: '', incl: 니 미 랄}
+- {excl: '', incl: 호루 자}
 - {excl: '', incl: 우람한쟈지}
 - {excl: '', incl: 몽키D근혜}
 - {excl: '', incl: 도라에몽김대중}
 - {excl: '', incl: 씹덕}
-- {excl: '', incl: 시발}
+- {excl: '', incl: 섹스킹is커밍}
 - {excl: '', incl: NAZI새인}
+- {excl: '', incl: 니 미 럴}
 - {excl: '', incl: 518폭도진압}
 - {excl: '', incl: 난세영웅전두환}
 - {excl: '', incl: 혼란을틈타섹스}
 - {excl: '', incl: 기호1번_박근혜}
 - {excl: '', incl: 땅끄두환이}
+- {excl: '', incl: 성 폭행}
+- {excl: '', incl: 개 씨발자슥}
 - {excl: '', incl: NLU이명박땅크}
 - {excl: '', incl: 광주빨괭이}
-- {excl: '', incl: 폭동은광주}
+- {excl: '', incl: 전장군님탱크}
 - {excl: '', incl: 미친년}
 - {excl: '', incl: 홍어사냥전땅크}
 - {excl: '', incl: 신들린전두환}
 - {excl: '', incl: 홍어잡이전두환}
-- {excl: '', incl: 두환나가신다}
+- {excl: '', incl: 딸 딸이}
+- {excl: '', incl: 땅크보이광주폭동}
 - {excl: '', incl: Gestapo_General}
 - {excl: '', incl: 노무현돌격대장}
 - {excl: '', incl: 전장군의하수인}
 - {excl: '', incl: 다까기마사오}
-- {excl: '', incl: 518폭도들}
+- {excl: '', incl: 카드캡터전땅크}
 - {excl: '', incl: 시팍새끼}
-- {excl: '', incl: 씨가랭넘}
 - {excl: '', incl: 개색희}
 - {excl: '', incl: 느금마전자}
 - {excl: '', incl: Gang주폭동}
@@ -126,7 +145,7 @@ BadWords:
 - {excl: '', incl: 전장군의비밀땅크}
 - {excl: '', incl: 존망}
 - {excl: '', incl: 대머리전두환}
-- {excl: '', incl: 생존왕박근혜}
+- {excl: '', incl: 좆}
 - {excl: '', incl: NAZIS_}
 - {excl: '', incl: cibalrom}
 - {excl: '', incl: 핵팽귄노운지}
@@ -135,7 +154,7 @@ BadWords:
 - {excl: '', incl: 느금마토오그}
 - {excl: '', incl: 전땅크of운지}
 - {excl: '', incl: 두환이의전땅크}
-- {excl: '', incl: 위대한전두환각하}
+- {excl: '', incl: 미친놈}
 - {excl: '', incl: 다크이명박}
 - {excl: '', incl: 개색히}
 - {excl: '', incl: 니엄마김대중}
@@ -147,10 +166,11 @@ BadWords:
 - {excl: '', incl: 리설주}
 - {excl: '', incl: 내가전두환}
 - {excl: '', incl: 본인은전땅크여}
-- {excl: '', incl: 시팔새끼}
 - {excl: '', incl: BJ전땅크}
 - {excl: '', incl: Joen땅크}
 - {excl: '', incl: 노짱의운지}
+- {excl: '', incl: 보지틀 래기}
+- {excl: '', incl: 튼 뇬}
 - {excl: '', incl: 전두환땅끄짱짱맨}
 - {excl: '', incl: 전_땅_크_부릉}
 - {excl: '', incl: 하일히틀러}
@@ -159,68 +179,86 @@ BadWords:
 - {excl: '', incl: SS게쉬타포}
 - {excl: '', incl: 국산땅끄전두환}
 - {excl: '', incl: 느금마가부른다}
+- {excl: '', incl: 후라 덜 넘}
 - {excl: '', incl: 박근혜짱짱걸}
+- {excl: '', incl: 같 은 년}
 - {excl: '', incl: 섹스오브탱크}
 - {excl: '', incl: 전장군의탱크부대}
 - {excl: '', incl: 전장군탱크부대}
 - {excl: '', incl: 두환아광주가자}
 - {excl: '', incl: 박근혜_대통령}
+- {excl: '', incl: 헐렁 보지}
+- {excl: '', incl: 1 8 년}
 - {excl: '', incl: 전차장전듀환}
-- {excl: '', incl: 노운지}
+- {excl: '', incl: 전탱크가좋아요}
 - {excl: '', incl: 보지뚫어}
 - {excl: '', incl: SS기갑친위대}
+- {excl: '', incl: 크리 토 리스}
 - {excl: '', incl: 광주계엄짱짱맨}
 - {excl: '', incl: 전땅크5}
 - {excl: '', incl: 폭풍섹스}
+- {excl: '', incl: 좃 빠네}
 - {excl: '', incl: 퍼킹김치}
 - {excl: '', incl: pennis}
 - {excl: '', incl: 육갑}
-- {excl: '', incl: 섹스매직}
+- {excl: '', incl: 전두환과김대중}
 - {excl: '', incl: 전땅크1234}
 - {excl: '', incl: 경상남도전땅크}
 - {excl: '', incl: 나치연맹}
 - {excl: '', incl: 두환쓰땅크}
+- {excl: '', incl: '좆같 은 '}
 - {excl: '', incl: 홍어슨상다이쥬}
 - {excl: '', incl: 운지_뜻밖의중력}
-- {excl: '', incl: 전장군의전차}
+- {excl: '', incl: 김대중꼬추불꼬추}
 - {excl: '', incl: 홍어왕머중이}
 - {excl: '', incl: 니미씨1발}
 - {excl: '', incl: Hitler_The_Furer}
 - {excl: '', incl: 개같은}
 - {excl: '', incl: SS기갑척탄사단}
 - {excl: '', incl: 전땅크K}
-- {excl: '', incl: 젖탱이}
 - {excl: '', incl: 느금마귤껍데기}
 - {excl: '', incl: 한명숙청5182}
 - {excl: '', incl: CODENAME_Hitler}
 - {excl: '', incl: 전탱크광주간다}
 - {excl: '', incl: 전땅크T}
 - {excl: '', incl: GAeBOJiTanK}
+- {excl: '', incl: unji_518}
+- {excl: '', incl: 개자 지}
 - {excl: '', incl: 미치인}
 - {excl: '', incl: 지전두환}
-- {excl: '', incl: 광주는그폭똥이야}
-- {excl: '', incl: 호로새}
+- {excl: '', incl: 518폭도잡이}
+- {excl: '', incl: 발령권자전장군}
 - {excl: '', incl: 색근박근혜}
 - {excl: '', incl: 총기는광주를들고}
 - {excl: '', incl: 개걸레}
 - {excl: '', incl: 근혜아빠}
 - {excl: '', incl: 야내가전장군이다}
 - {excl: '', incl: 전땅끄장군님}
-- {excl: '', incl: 땅땅치킨전땅크}
+- {excl: '', incl: 탱크오브느금마}
 - {excl: '', incl: 히틀러의전기톱}
-- {excl: '', incl: 진압왕노운지}
+- {excl: '', incl: 광주행TTANK}
 - {excl: '', incl: 5월은광주가는날}
 - {excl: '', incl: 전땅크알라뷰우우}
 - {excl: '', incl: 노무현전차군단}
+- {excl: '', incl: 페니스}
+- {excl: '', incl: 좃 냄새}
+- {excl: '', incl: 헐렁 보 지}
+- {excl: '', incl: 좃 까}
 - {excl: '', incl: 박근혜돌격}
 - {excl: '', incl: 그네타는박근혜}
+- {excl: '', incl: 1 8 놈}
 - {excl: '', incl: 박근혜이쁜이}
 - {excl: '', incl: 전땅크후18}
-- {excl: '', incl: 빛고을포도518}
+- {excl: '', incl: 침몰하는광주도시}
 - {excl: '', incl: 토텐코프}
+- {excl: '', incl: 성 폭 행}
+- {excl: '', incl: 보지틀래 기}
 - {excl: '', incl: 전장군님의위엄}
+- {excl: '', incl: 개 같 은 년}
 - {excl: '', incl: Stalin_Hitler}
 - {excl: '', incl: 미하일비트만}
+- {excl: '', incl: 시 팔 새 끼}
+- {excl: '', incl: '개가튼 '}
 - {excl: '', incl: 박근혜대통령}
 - {excl: '', incl: 기동전사전땅크}
 - {excl: '', incl: 전두환각하만쉐}
@@ -235,68 +273,83 @@ BadWords:
 - {excl: '', incl: nazist7040}
 - {excl: '', incl: 버짓물마셔}
 - {excl: '', incl: 시발놈}
+- {excl: '', incl: 좆만한 새 끼}
 - {excl: '', incl: 두환이나가신다}
+- {excl: '', incl: 씨 부랄}
 - {excl: '', incl: 느금마빠덜}
+- {excl: '', incl: 자 지 빨어}
 - {excl: '', incl: 전두환나이스샷}
 - {excl: '', incl: 빠가십새}
 - {excl: '', incl: 파괘신전땅크}
 - {excl: '', incl: 땅크타는두환이}
 - {excl: '', incl: 땅크로광주를밀자}
 - {excl: '', incl: 라도홍어무침}
+- {excl: '', incl: 개 보지}
 - {excl: '', incl: 땅크king두환}
 - {excl: '', incl: kingjaji}
 - {excl: '', incl: 노운지버섯}
 - {excl: '', incl: 전땅크자주포}
-- {excl: '', incl: 광주폭동의날}
+- {excl: '', incl: 보 짓 물}
 - {excl: '', incl: 광주는포도야}
+- {excl: '', incl: 유방 핥어}
 - {excl: '', incl: 독재자히틀러}
 - {excl: '', incl: 전두환과계엄군}
 - {excl: '', incl: 데헷히틀러임}
+- {excl: '', incl: 보지 핥어}
 - {excl: '', incl: 경기도광주계염군}
-- {excl: '', incl: 신잦이}
 - {excl: '', incl: 걸레핀년}
 - {excl: '', incl: HAJAJI69}
 - {excl: '', incl: 김대중_}
 - {excl: '', incl: 전두환무적땅크}
+- {excl: '', incl: 시 방 새}
 - {excl: '', incl: 계엄군탱크}
 - {excl: '', incl: 정액사정}
 - {excl: '', incl: 광주는야이동폭}
 - {excl: '', incl: 땅크킹전두환}
 - {excl: '', incl: 광주계엄}
-- {excl: '', incl: 씨발놈}
+- {excl: '', incl: Mother Fucker}
 - {excl: '', incl: 박근혜쨔응}
 - {excl: '', incl: waffen2ss}
 - {excl: '', incl: 전_땅_크_빵야}
+- {excl: '', incl: jajiboji}
 - {excl: '', incl: 정력킹전두환}
 - {excl: '', incl: 핵대중짱짱맨xz}
 - {excl: '', incl: NaZiHitler}
 - {excl: '', incl: SSiBbojiTanK}
 - {excl: '', incl: 전두환아저씨}
+- {excl: '', incl: 호로 자 식}
 - {excl: '', incl: penisup}
 - {excl: '', incl: 홍어잡는쌍도인}
 - {excl: '', incl: Pokdong518}
-- {excl: '', incl: 폭도학살자전두환}
+- {excl: '', incl: im_Hitler}
+- {excl: '', incl: 씨 퐁 자}
 - {excl: '', incl: 전땅크님빵야빵야}
 - {excl: '', incl: Nazis1}
+- {excl: '', incl: 씨 섹끼}
 - {excl: '', incl: 보안사령관전장군}
+- {excl: '', incl: 띠 블 넘}
 - {excl: '', incl: 518폭동운동}
 - {excl: '', incl: 7시홍어}
+- {excl: '', incl: 성폭 행}
 - {excl: '', incl: 밀어버린환두}
 - {excl: '', incl: 노짱허리케인운지}
-- {excl: '', incl: 전두환노무현}
+- {excl: '', incl: 광주는_총기를}
 - {excl: '', incl: 11_SS기갑군}
 - {excl: '', incl: NAZITANK}
 - {excl: '', incl: 사람전두환}
-- {excl: '', incl: 폭동진압광주}
+- {excl: '', incl: 광주는_폭동이노}
 - {excl: '', incl: 불알}
 - {excl: '', incl: 보1지청소기}
 - {excl: '', incl: 전두환장군님_}
-- {excl: '', incl: 홍어잡이탱크}
+- {excl: '', incl: 쓰 바 새끼}
+- {excl: '', incl: 전두환탑승중}
 - {excl: '', incl: 간다간다전땅크}
 - {excl: '', incl: Nazist}
+- {excl: '', incl: 빠구 리}
 - {excl: '', incl: 운지본능}
 - {excl: '', incl: 지이라알}
-- {excl: '', incl: 김대중관}
+- {excl: '', incl: 개 걸 레}
+- {excl: '', incl: 쪼 다 새끼}
 - {excl: '', incl: 전두환_땅크부릉}
 - {excl: '', incl: 계엄땅크전두환}
 - {excl: '', incl: 운지운지홍어}
@@ -312,24 +365,30 @@ BadWords:
 - {excl: '', incl: 부릉부릉_전장군}
 - {excl: '', incl: 상계동전두환}
 - {excl: '', incl: TheNazis}
-- {excl: '', incl: 침몰하는광주도시}
+- {excl: '', incl: 개후라새 끼}
 - {excl: '', incl: 지이랄}
 - {excl: '', incl: VictorRussianDogSuck}
+- {excl: '', incl: 좆만한새 끼}
 - {excl: '', incl: 계엄사령관}
+- {excl: '', incl: 성서읽는흑인노예}
 - {excl: '', incl: 다이버노운지}
 - {excl: '', incl: 땅크왕전장군}
 - {excl: '', incl: 느금마강북멋쟁이}
+- {excl: '', incl: '좆 만 '}
 - {excl: '', incl: 광주밀러간다}
 - {excl: '', incl: JOT근혜대통령}
-- {excl: '', incl: 08이명박}
+- {excl: '', incl: '후라 '}
 - {excl: '', incl: 버지따먹기}
+- {excl: '', incl: 씹 창}
 - {excl: '', incl: 김대중은사생아}
-- {excl: '', incl: TANK_전두환}
+- {excl: '', incl: Heinrich_Muller}
 - {excl: '', incl: 평화의왕전땅크}
 - {excl: '', incl: 광주Riot}
-- {excl: '', incl: 광주는음총기를}
+- {excl: '', incl: 씨1발뭐하냐}
 - {excl: '', incl: 히틀최}
 - {excl: '', incl: 전_땅크부릉부릉}
+- {excl: '', incl: 걸레같 은 년}
+- {excl: '', incl: 개 라 슥}
 - {excl: '', incl: 전두환과폭도들}
 - {excl: '', incl: 뭐이씨1발아}
 - {excl: '', incl: 노짱이타고있어요}
@@ -340,35 +399,46 @@ BadWords:
 - {excl: '', incl: 지옥에있는노무현}
 - {excl: '', incl: 김대중컨밴션센터}
 - {excl: '', incl: _전땅크부릉부릉}
+- {excl: '', incl: 개 너 미}
 - {excl: '', incl: 섹스가하고싶어요}
 - {excl: '', incl: 섹스요정}
 - {excl: '', incl: 전두환의심복}
+- {excl: '', incl: 십 새}
 - {excl: '', incl: 전1라민국}
 - {excl: '', incl: 박근혜화끈혜}
-- {excl: '', incl: 전두환탱크대통령}
+- {excl: '', incl: 박근혜팬클럽회장}
+- {excl: '', incl: 미친 새 끼}
 - {excl: '', incl: 좃까}
 - {excl: '', incl: 히틀러탔다}
+- {excl: '', incl: 개후라 년}
 - {excl: '', incl: 밀어서광주해제}
-- {excl: '', incl: KJ폭동}
+- {excl: '', incl: '벌창같 '}
+- {excl: '', incl: 핵대중과땅크보이}
+- {excl: '', incl: 시 팔놈}
+- {excl: '', incl: 7시폭동진압기}
+- {excl: '', incl: 벌창 같은년}
 - {excl: '', incl: 노오란전땅크}
 - {excl: '', incl: Tanku전장군}
 - {excl: '', incl: 굴러라전땅크}
-- {excl: '', incl: 보지머리박기}
+- {excl: '', incl: 느금마23호}
 - {excl: '', incl: 29만원전두환}
 - {excl: '', incl: 각하이명박}
 - {excl: '', incl: 전Panzer}
-- {excl: '', incl: 애미}
-- {excl: '', incl: 전장군님행차}
+- {excl: '', incl: 육사십일기전두환}
 - {excl: '', incl: 두환땡크나가신다}
 - {excl: '', incl: T518김대중}
 - {excl: '', incl: AKA운지}
 - {excl: '', incl: 성적소수자전땅크}
-- {excl: '', incl: 전두환부활}
 - {excl: '', incl: 썅}
+- {excl: '', incl: 개후 라}
+- {excl: '', incl: 자지 빨 어}
 - {excl: '', incl: 땅끄보이두환}
 - {excl: '', incl: 나치스탱크}
+- {excl: '', incl: 쌍쌍 보지}
 - {excl: '', incl: 병신}
 - {excl: '', incl: 북괴멀티즐라도}
+- {excl: '', incl: 미친 년}
+- {excl: '', incl: '쌕 '}
 - {excl: '', incl: 전탱크보이}
 - {excl: '', incl: 조선인민무력부}
 - {excl: '', incl: 광주탈환땅끄}
@@ -377,27 +447,32 @@ BadWords:
 - {excl: '', incl: 섹1스킹이즈커밍}
 - {excl: '', incl: 전두환중앙정보부}
 - {excl: '', incl: 홍어든슨상}
-- {excl: '', incl: 월드오브두환}
+- {excl: '', incl: 보노보노무현}
 - {excl: '', incl: 홍어는운지하거라}
 - {excl: '', incl: 광주_폭도}
 - {excl: '', incl: 운지짱노짱}
 - {excl: '', incl: 미하일x비트만}
+- {excl: '', incl: 좆같 은새끼}
 - {excl: '', incl: 국가원수_전두환}
 - {excl: '', incl: 탱크맨전두환}
 - {excl: '', incl: 미친구녕}
 - {excl: '', incl: 제1SS기갑사단}
+- {excl: '', incl: '개같 '}
 - {excl: '', incl: 전두환땅크몬}
 - {excl: '', incl: 아이러브전두환}
 - {excl: '', incl: 부엉이바위운지}
 - {excl: '', incl: 탱크보이전장군}
-- {excl: '', incl: 전두환빵빵}
+- {excl: '', incl: 1 8 새 끼}
+- {excl: '', incl: 전두환시즈모드}
+- {excl: '', incl: 좃간 년}
 - {excl: '', incl: ic18}
-- {excl: '', incl: 쑤셔}
+- {excl: '', incl: 방 새}
+- {excl: '', incl: 씨 팔}
 - {excl: '', incl: 전땅끄행님}
 - {excl: '', incl: 대중땅크운지무현}
 - {excl: '', incl: 광주원정대}
 - {excl: '', incl: 개후라년}
-- {excl: '', incl: 전두환의땅크으}
+- {excl: '', incl: 광주폭동진압용}
 - {excl: '', incl: 팔넘}
 - {excl: '', incl: 탱크보이1전장군}
 - {excl: '', incl: 밥팅}
@@ -405,77 +480,92 @@ BadWords:
 - {excl: '', incl: 전두환이떳다}
 - {excl: '', incl: 슨상님박멸전두환}
 - {excl: '', incl: NaziCryingcube}
+- {excl: '', incl: 걸레 보 지}
 - {excl: '', incl: 개놈}
 - {excl: '', incl: 노쨩곁으로}
 - {excl: '', incl: 씹탱이}
 - {excl: '', incl: 가슴주물럭}
 - {excl: '', incl: 쟈너럴전땅크}
-- {excl: '', incl: 홍어슨상님}
+- {excl: '', incl: 홍어밀러광주로}
 - {excl: '', incl: 유얼빠큐더마프}
 - {excl: '', incl: 땡크전땅크}
 - {excl: '', incl: 전두환의땡크}
 - {excl: '', incl: 종북세력척결}
+- {excl: '', incl: 개가 튼년}
 - {excl: '', incl: 보지틀래기}
 - {excl: '', incl: 광주가는오유인}
 - {excl: '', incl: 탱크보이_전장군}
-- {excl: '', incl: 색히}
+- {excl: '', incl: 버지물마셔}
 - {excl: '', incl: 도요다_다이쥬}
 - {excl: '', incl: 위대하신노무현}
+- {excl: '', incl: 시팔새 끼}
 - {excl: '', incl: 계엄군전두환}
-- {excl: '', incl: 이오시프스탈린}
+- {excl: '', incl: 떨어져라무현이}
 - {excl: '', incl: 잦이와싱톤}
+- {excl: '', incl: 개후 라 새끼}
 - {excl: '', incl: 광주밀자전땅크}
-- {excl: '', incl: 씌팔}
 - {excl: '', incl: 개거얼레}
 - {excl: '', incl: 삭힌김대중}
+- {excl: '', incl: 호로자 슥}
+- {excl: '', incl: 창 녀}
 - {excl: '', incl: 진격의전두환}
+- {excl: '', incl: Bent bastard}
 - {excl: '', incl: 운지왕노운지}
 - {excl: '', incl: 나치땅크01}
+- {excl: '', incl: 씨 뎅}
 - {excl: '', incl: 히틀러사령관}
-- {excl: '', incl: 개가튼}
+- {excl: '', incl: 씨가랭넘}
 - {excl: '', incl: 에스에스하인리히}
+- {excl: '', incl: 씹 쌔 끼}
 - {excl: '', incl: 전두환탱크사령관}
 - {excl: '', incl: 게부럴}
 - {excl: '', incl: 캡틴히틀러}
 - {excl: '', incl: 보안사전장군}
 - {excl: '', incl: 전장군님1}
 - {excl: '', incl: 노무현사랑해요}
-- {excl: '', incl: 잰두환}
+- {excl: '', incl: 5_18폭동}
+- {excl: '', incl: 미친 눔}
 - {excl: '', incl: 지옥의노무현}
 - {excl: '', incl: HackDaeJung}
 - {excl: '', incl: 계엄킹전두환}
 - {excl: '', incl: 민주화영웅김대중}
-- {excl: '', incl: 펜타킬전두환}
+- {excl: '', incl: 탱크공주박근혜}
+- {excl: '', incl: 부릉전두환}
 - {excl: '', incl: 전두환각하대통령}
+- {excl: '', incl: 개 후 라 년}
 - {excl: '', incl: 전_땅크_부릉}
 - {excl: '', incl: 전두환장군님}
-- {excl: '', incl: 히틀러총통}
 - {excl: '', incl: 폭동518}
-- {excl: '', incl: 씨_발}
 - {excl: '', incl: 전두환_사령관}
 - {excl: '', incl: 전두환형님}
 - {excl: '', incl: 씨가랭년}
 - {excl: '', incl: 나치히틀러}
 - {excl: '', incl: 전두환123}
-- {excl: '', incl: 전두환1호}
 - {excl: '', incl: 땅크의전장군}
 - {excl: '', incl: 쵸코케익전두환}
+- {excl: '', incl: 고 치}
 - {excl: '', incl: 섹스킹덤}
+- {excl: '', incl: 쓰바 새끼}
 - {excl: '', incl: ssibalrom}
-- {excl: '', incl: SSwaffen}
+- {excl: '', incl: 느금마배밟기}
+- {excl: '', incl: 씨뱅 가 리}
 - {excl: '', incl: _전땅끄}
 - {excl: '', incl: 전두환_부릉부릉}
 - {excl: '', incl: 518김머중홍어}
 - {excl: '', incl: 히틀러사단}
 - {excl: '', incl: 미하일비트마안}
 - {excl: '', incl: 엿부랄}
+- {excl: '', incl: 씹 새 끼}
 - {excl: '', incl: 카시와쟈키두환}
 - {excl: '', incl: 강간}
 - {excl: '', incl: Heil_Hitler_88}
 - {excl: '', incl: 효순미선이더블킬}
+- {excl: '', incl: 보지 벌려}
 - {excl: '', incl: nazikingtiger}
 - {excl: '', incl: 전땅크땅크랑께요}
 - {excl: '', incl: 크리토리스}
+- {excl: '', incl: 개 새 끼}
+- {excl: '', incl: 보지 녀}
 - {excl: '', incl: 탱크는전두환}
 - {excl: '', incl: 총기를든광주}
 - {excl: '', incl: 전땅크의폭동진압}
@@ -486,25 +576,31 @@ BadWords:
 - {excl: '', incl: 광주_Riot}
 - {excl: '', incl: BoZiJaJi}
 - {excl: '', incl: 아몰라씨_발}
+- {excl: '', incl: 미친 놈}
 - {excl: '', incl: Totenkopf}
 - {excl: '', incl: 게새끼}
 - {excl: '', incl: 너무노무현}
 - {excl: '', incl: 전땅크간다}
 - {excl: '', incl: 전두환땅크맨}
 - {excl: '', incl: 띠부우울}
+- {excl: '', incl: 전슨상님탱크}
 - {excl: '', incl: 쌕스}
 - {excl: '', incl: 전땅크갑이다}
 - {excl: '', incl: 음경}
+- {excl: '', incl: 자지 짤라}
+- {excl: '', incl: 보지 털}
 - {excl: '', incl: 폭도라전어홍}
 - {excl: '', incl: 전두환개객끼}
 - {excl: '', incl: 애비}
 - {excl: '', incl: 노무현타고있어요}
 - {excl: '', incl: 히틀러척결}
 - {excl: '', incl: 폭도제압용땅크}
-- {excl: '', incl: 대구의전두환}
+- {excl: '', incl: 자지 털}
+- {excl: '', incl: 개 고치}
+- {excl: '', incl: 전땅크M_M}
 - {excl: '', incl: 땅크에깔린노무현}
 - {excl: '', incl: Guwang_Ju_of_JunDDangKe}
-- {excl: '', incl: 땅크의전설전두환}
+- {excl: '', incl: 홍어김대중}
 - {excl: '', incl: 민주화사범전두환}
 - {excl: '', incl: 불타는느금마}
 - {excl: '', incl: 니엄마히틀러}
@@ -512,7 +608,9 @@ BadWords:
 - {excl: '', incl: 홍어사냥꾼두환}
 - {excl: '', incl: 암구호김대중}
 - {excl: '', incl: 흐긴노예}
+- {excl: '', incl: 개가 튼뇬}
 - {excl: '', incl: 전땅크의기상}
+- {excl: '', incl: 개 불 랄}
 - {excl: '', incl: 전땅끄_부릉브릉}
 - {excl: '', incl: 전두환보안사령관}
 - {excl: '', incl: BBK이명박}
@@ -522,6 +620,7 @@ BadWords:
 - {excl: '', incl: 땅끄보2전두환}
 - {excl: '', incl: Penisless}
 - {excl: '', incl: 전두환배땅크대회}
+- {excl: '', incl: 주 글 년}
 - {excl: '', incl: 광주홍어척살단}
 - {excl: '', incl: 느금마캔디팡}
 - {excl: '', incl: _전_땅크}
@@ -530,17 +629,17 @@ BadWords:
 - {excl: '', incl: 지옥왕김대중}
 - {excl: '', incl: 전두환69}
 - {excl: '', incl: 전장군님표땅크}
-- {excl: '', incl: 느금마입냄새}
+- {excl: '', incl: 7시의계엄군}
 - {excl: '', incl: 도타도라전북종}
 - {excl: '', incl: 전장군518}
 - {excl: '', incl: AdofHitler}
 - {excl: '', incl: Naziism}
 - {excl: '', incl: 땅크모는히틀러}
-- {excl: '', incl: 폭도를제압하라}
+- {excl: '', incl: 섹1스왕임신왕}
 - {excl: '', incl: SS붉은전차여단}
 - {excl: '', incl: 아돌프히틀뤄}
 - {excl: '', incl: 5공전두환}
-- {excl: '', incl: 허버리년}
+- {excl: '', incl: 자아압옷}
 - {excl: '', incl: 나치의승리}
 - {excl: '', incl: 광주폭도부릉}
 - {excl: '', incl: 노운지쨔응}
@@ -548,63 +647,80 @@ BadWords:
 - {excl: '', incl: SS구데리안}
 - {excl: '', incl: Afro두환}
 - {excl: '', incl: 쩔뚝이김대중}
+- {excl: '', incl: 땅크의전설전두환}
 - {excl: '', incl: 광주총기사태}
 - {excl: '', incl: 전_땅_끄}
-- {excl: '', incl: 518GwangjuRiot}
-- {excl: '', incl: 전장군님이로그인}
-- {excl: '', incl: 개병신}
+- {excl: '', incl: 박근혜탱크}
+- {excl: '', incl: 방망이든광주시민}
+- {excl: '', incl: 개 자 지}
+- {excl: '', incl: 좆 만 한 새 끼}
 - {excl: '', incl: 광주사랑전두환}
 - {excl: '', incl: 전땅크장군님}
+- {excl: '', incl: 보 지 빨 어}
 - {excl: '', incl: 김두환전설}
 - {excl: '', incl: 전땅크의후예}
-- {excl: '', incl: 히틀려}
+- {excl: '', incl: fuck you}
+- {excl: '', incl: 후 장}
+- {excl: '', incl: 히틀러딱갈이S}
 - {excl: '', incl: 월드오브전탱크}
 - {excl: '', incl: 전땅크입니다만}
+- {excl: '', incl: 버짓 물}
 - {excl: '', incl: 진격의전탱크}
 - {excl: '', incl: 땅_전두환_크}
 - {excl: '', incl: 12_SS_Panzer_Division}
 - {excl: '', incl: 전두환과탱크들}
 - {excl: '', incl: 노무현짱짱맨}
-- {excl: '', incl: 무현이와대중이}
+- {excl: '', incl: 좆 먹 어}
+- {excl: '', incl: 전땅크의땅크}
 - {excl: '', incl: naziTiger}
-- {excl: '', incl: 느금마호승이}
+- {excl: '', incl: 자1위한번해보자}
 - {excl: '', incl: 518RiotGames}
 - {excl: '', incl: 광주폭동진압반}
+- {excl: '', incl: 벌 창 같 은 년}
 - {excl: '', incl: 느금마전땅크}
 - {excl: '', incl: 후우장}
 - {excl: '', incl: 이두박근혜}
 - {excl: '', incl: 전땅끄랑께}
 - {excl: '', incl: 네모바지전땅크}
-- {excl: '', incl: 두환이의뉴땅크}
+- {excl: '', incl: 자연인운지노무현}
 - {excl: '', incl: 전땡쿠}
+- {excl: '', incl: 시발 년}
+- {excl: '', incl: 개 너미}
+- {excl: '', incl: 걸레 같은년}
 - {excl: '', incl: 전땅크나가신다빵}
-- {excl: '', incl: 제5공화국전땅크}
-- {excl: '', incl: 계엄군땅크성님}
+- {excl: '', incl: 광주침략}
+- {excl: '', incl: ID_Adolf_Hitle}
 - {excl: '', incl: 계엄전두환땅크}
-- {excl: '', incl: 광주시청민탱크}
+- {excl: '', incl: 십세끼}
 - {excl: '', incl: 좌빨척결}
 - {excl: '', incl: 땅크보이전땅크s}
+- {excl: '', incl: 8 새끼}
 - {excl: '', incl: 전두환장난감}
 - {excl: '', incl: 개후}
 - {excl: '', incl: 광주는폭도}
 - {excl: '', incl: 구출왕이명박}
 - {excl: '', incl: 29만전땅크}
-- {excl: '', incl: 섹스왕이준형}
+- {excl: '', incl: 광주진압용땅크}
 - {excl: '', incl: 운지왕노쨩}
 - {excl: '', incl: 땅크가이전두환}
 - {excl: '', incl: 광주항쟁}
 - {excl: '', incl: 전땅크83}
 - {excl: '', incl: 탱크신전두환}
-- {excl: '', incl: 뇌물왕노무현}
+- {excl: '', incl: 홍어지옥군주슨상}
+- {excl: '', incl: 광주는폭동0l야}
 - {excl: '', incl: 인민령웅김정은}
 - {excl: '', incl: 대중이가타고있노}
 - {excl: '', incl: 땡크보이전두환}
-- {excl: '', incl: 여대생강간범}
+- {excl: '', incl: zl죤느금마}
+- {excl: '', incl: 씨 퐁넘}
 - {excl: '', incl: 씨퐁자지}
+- {excl: '', incl: 개가튼 뇬}
 - {excl: '', incl: ss기갑사단}
 - {excl: '', incl: 광주는총기를들}
-- {excl: '', incl: 전두환누드사진}
+- {excl: '', incl: 유방}
 - {excl: '', incl: 전두환짱짱맨}
+- {excl: '', incl: 호 로}
+- {excl: '', incl: 씨 불알}
 - {excl: '', incl: 나는노운지다}
 - {excl: '', incl: 노오란부엉이}
 - {excl: '', incl: 매직이다십세야}
@@ -613,7 +729,7 @@ BadWords:
 - {excl: '', incl: 좃가튼뇬}
 - {excl: '', incl: 아내가노무현}
 - {excl: '', incl: 나랑께전탱크}
-- {excl: '', incl: 전두환이탄땅크}
+- {excl: '', incl: 운지무현}
 - {excl: '', incl: 일곱시멀티젼땅크}
 - {excl: '', incl: 광주는폭동이라네}
 - {excl: '', incl: 왕쟈지}
@@ -621,22 +737,28 @@ BadWords:
 - {excl: '', incl: 빛고을진압용땅크}
 - {excl: '', incl: 박근혜화끈해}
 - {excl: '', incl: 제2신병중대}
+- {excl: '', incl: 미친 넘}
 - {excl: '', incl: 킹자지}
 - {excl: '', incl: 전두환의무적땅크}
 - {excl: '', incl: 쒸벌넘}
 - {excl: '', incl: 느금마덜}
+- {excl: '', incl: 'Hair '}
+- {excl: '', incl: 전땅끄부르으응}
 - {excl: '', incl: 광주어택땅}
 - {excl: '', incl: 비켜이시붤것들아}
-- {excl: '', incl: 좃}
+- {excl: '', incl: 두환왕전탱크}
 - {excl: '', incl: 폭동의전탱크}
 - {excl: '', incl: 광주는똥이야똥}
 - {excl: '', incl: 홍어스핀}
 - {excl: '', incl: Gestapo_SS}
 - {excl: '', incl: 땅크전두환}
+- {excl: '', incl: 개 년}
 - {excl: '', incl: 개작두년}
-- {excl: '', incl: 섹스중독자}
+- {excl: '', incl: 씨 블}
 - {excl: '', incl: 전두환땅크뿌뿌뿡}
+- {excl: '', incl: 개후 라년}
 - {excl: '', incl: 쟈지포}
+- {excl: '', incl: '미 친 '}
 - {excl: '', incl: 월드오브전땅크1}
 - {excl: '', incl: 전두환님하드캐리}
 - {excl: '', incl: 광주보이전두환}
@@ -649,15 +771,16 @@ BadWords:
 - {excl: '', incl: 슈발잠지}
 - {excl: '', incl: 개작두넘}
 - {excl: '', incl: 병새신끼}
-- {excl: '', incl: 땅크보이광주폭동}
+- {excl: '', incl: 두환나가신다}
 - {excl: '', incl: 노무현사료관}
 - {excl: '', incl: 내가나치다}
 - {excl: '', incl: 시_발_새_끼}
 - {excl: '', incl: 쉬발}
 - {excl: '', incl: 노무현살아있노}
 - {excl: '', incl: 미하일_비트만_}
-- {excl: '', incl: 섹1스왕임신왕}
 - {excl: '', incl: 전땅크작전부대}
+- {excl: '', incl: 개 걸레}
+- {excl: '', incl: 좆같 은 새끼}
 - {excl: '', incl: 느금마끼아또}
 - {excl: '', incl: 멍청도출동}
 - {excl: '', incl: 나치분홍팬티}
@@ -668,6 +791,7 @@ BadWords:
 - {excl: '', incl: 광주오브전땅크}
 - {excl: '', incl: 광주폭동전땅끄}
 - {excl: '', incl: 앰창흑인}
+- {excl: '', incl: 병신 세 리}
 - {excl: '', incl: 탱크왕전장군}
 - {excl: '', incl: jajiking}
 - {excl: '', incl: 무적전차전땅크}
@@ -682,21 +806,25 @@ BadWords:
 - {excl: '', incl: 지휘왕전두환}
 - {excl: '', incl: 광주땅크두환이}
 - {excl: '', incl: NAZI_Hitler}
-- {excl: '', incl: 12_SS_Hitler_Jugend}
+- {excl: '', incl: 아씨1발잠깐만}
 - {excl: '', incl: 땅크장군전두환}
 - {excl: '', incl: 무현이가타고있음}
 - {excl: '', incl: 두환이의거친땅크}
+- {excl: '', incl: 개 고 치}
 - {excl: '', incl: 전두환따앙크}
 - {excl: '', incl: 존나}
 - {excl: '', incl: 전두환꼬추}
 - {excl: '', incl: SS_Panzer_Division}
 - {excl: '', incl: 히틀러가탐}
 - {excl: '', incl: 계엄대장전두환}
+- {excl: '', incl: 개 놈}
+- {excl: '', incl: 보지핥 아}
 - {excl: '', incl: 전지전능전장군님}
-- {excl: '', incl: 7시의계엄군}
+- {excl: '', incl: 느금마입냄새}
 - {excl: '', incl: 518테러리스트}
 - {excl: '', incl: 진격전땅크}
 - {excl: '', incl: 젼땅크부릉부릉}
+- {excl: '', incl: 1 8년}
 - {excl: '', incl: 518장갑차폭동}
 - {excl: '', incl: 홍어조옷}
 - {excl: '', incl: 색쓰}
@@ -704,16 +832,21 @@ BadWords:
 - {excl: '', incl: 노무현이타고있어}
 - {excl: '', incl: 압진도폭}
 - {excl: '', incl: 두환S2땅크}
+- {excl: '', incl: u c k}
 - {excl: '', incl: 개새끼야}
 - {excl: '', incl: 인전히틀러}
 - {excl: '', incl: 씨1발새1끼}
 - {excl: '', incl: 위인노무현}
 - {excl: '', incl: 전뜨앙크전두환}
 - {excl: '', incl: 월드오브전두환}
-- {excl: '', incl: SS_친위대}
+- {excl: '', incl: 호 루 자 슥}
+- {excl: '', incl: 두환이형보고있지}
+- {excl: '', incl: 씨 파넘}
+- {excl: '', incl: 개가튼}
 - {excl: '', incl: 노무현}
+- {excl: '', incl: 빨 아}
 - {excl: '', incl: 전두환폭동부대}
-- {excl: '', incl: 힐링탱크전두환편}
+- {excl: '', incl: JarJi}
 - {excl: '', incl: 슨상님의홍어}
 - {excl: '', incl: Gold_penis}
 - {excl: '', incl: 좌빨학살자}
@@ -721,13 +854,15 @@ BadWords:
 - {excl: '', incl: 운지하노무현}
 - {excl: '', incl: 노짱운지하신다}
 - {excl: '', incl: 오일팔폭동진압대}
-- {excl: '', incl: 좆}
+- {excl: '', incl: 생존왕박근혜}
+- {excl: '', incl: 호로새 끼}
+- {excl: '', incl: 니좇}
 - {excl: '', incl: 전두환킬러}
 - {excl: '', incl: 전땅크와계엄군}
-- {excl: '', incl: NaziErichVonManstein}
+- {excl: '', incl: 폭도를제압하라}
 - {excl: '', incl: 518폭동주도자}
 - {excl: '', incl: 박정희vs전두환}
-- {excl: '', incl: 아가리}
+- {excl: '', incl: 핥아}
 - {excl: '', incl: 전두환의계엄군}
 - {excl: '', incl: 좋오웃}
 - {excl: '', incl: 다이쥬쎈세}
@@ -736,27 +871,29 @@ BadWords:
 - {excl: '', incl: 흑인노예님}
 - {excl: '', incl: 나는자1지킹}
 - {excl: '', incl: 되돌아온전두환}
-- {excl: '', incl: 탐나는전땅크}
+- {excl: '', incl: 쌕수}
 - {excl: '', incl: 7시폭동진압땅크}
 - {excl: '', incl: Michael_Wittmann}
 - {excl: '', incl: 느금마전두환}
 - {excl: '', incl: HAJAJI}
-- {excl: '', incl: 자아압옷}
+- {excl: '', incl: 허버리년}
 - {excl: '', incl: 조까네}
 - {excl: '', incl: 전두환_늦은고백}
 - {excl: '', incl: 전장군님의_그것}
-- {excl: '', incl: 홍어존슨}
 - {excl: '', incl: 전나디언XK2}
 - {excl: '', incl: 노무현1호}
+- {excl: '', incl: 니 미럴}
 - {excl: '', incl: 전두환총재}
 - {excl: '', incl: 아돌프전두환}
 - {excl: '', incl: 이명박국가대원수}
-- {excl: '', incl: 미친놈}
+- {excl: '', incl: 두환짱탱크라능}
+- {excl: '', incl: 위대한전두환각하}
 - {excl: '', incl: 땅크몰고광주간다}
 - {excl: '', incl: fuck}
+- {excl: '', incl: 미 친 눔}
 - {excl: '', incl: SS나치}
 - {excl: '', incl: 느금마섬노예}
-- {excl: '', incl: 파괴왕전장군}
+- {excl: '', incl: 전장군이타던땅크}
 - {excl: '', incl: 섹1스킹1}
 - {excl: '', incl: TANK전두환}
 - {excl: '', incl: 이명박근혜싫으다}
@@ -764,12 +901,14 @@ BadWords:
 - {excl: '', incl: 폭도잡는박근혜}
 - {excl: '', incl: J_NAZI}
 - {excl: '', incl: 홍어잡이땅크}
-- {excl: '', incl: 운지킹노짱}
 - {excl: '', incl: 씨발것이}
 - {excl: '', incl: ss기갑}
-- {excl: '', incl: 빠구리}
+- {excl: '', incl: 좆 만 한 놈}
+- {excl: '', incl: 개 새끼}
 - {excl: '', incl: 슨상님킬러전두환}
 - {excl: '', incl: 호구}
+- {excl: '', incl: 호 냥년}
+- {excl: '', incl: 좃 깟네}
 - {excl: '', incl: 나치당원}
 - {excl: '', incl: 땅크가이전땅크}
 - {excl: '', incl: 좇만한}
@@ -777,6 +916,7 @@ BadWords:
 - {excl: '', incl: o넌딸이나쳐o}
 - {excl: '', incl: 땅크부릉홍어운지}
 - {excl: '', incl: CIBAL}
+- {excl: '', incl: 쌕 스}
 - {excl: '', incl: 노무노무현명하노}
 - {excl: '', incl: 곧휴가철파워섹스}
 - {excl: '', incl: 전탱크나가신다}
@@ -787,31 +927,36 @@ BadWords:
 - {excl: '', incl: 탱크가이전두환}
 - {excl: '', incl: 섹스탱크}
 - {excl: '', incl: 전탱크씨}
+- {excl: '', incl: Beaber}
 - {excl: '', incl: 대통령박근혜}
+- {excl: '', incl: '호냥 '}
+- {excl: '', incl: 크리토리 스}
 - {excl: '', incl: 노무현이타고있음}
+- {excl: '', incl: 미 친 놈}
 - {excl: '', incl: 518폭동군}
-- {excl: '', incl: 박근혜탱크}
+- {excl: '', incl: 518GwangjuRiot}
+- {excl: '', incl: 개 부랄}
+- {excl: '', incl: 보 지 틀 래 기}
 - {excl: '', incl: 보지녀}
 - {excl: '', incl: 03UpJaJi}
+- {excl: '', incl: 자지 빨아}
 - {excl: '', incl: Michael_Wittmanne}
 - {excl: '', incl: 부릉부릉_전땅끄}
 - {excl: '', incl: 전두환in광주}
+- {excl: '', incl: 벌창같 은 년}
 - {excl: '', incl: TankHitler}
 - {excl: '', incl: 느금마삽살개}
 - {excl: '', incl: 박근혜강남으}
 - {excl: '', incl: 병신세끼}
 - {excl: '', incl: 전두환의인생}
-- {excl: '', incl: 세엑쓰}
 - {excl: '', incl: 전탱크요}
 - {excl: '', incl: 천황폐하만세69}
-- {excl: '', incl: 전두환포}
-- {excl: '', incl: 느금마똥꼬}
+- {excl: '', incl: 파괴전차전땅크}
 - {excl: '', incl: 전장군사랑해요}
-- {excl: '', incl: 김라도전대중}
-- {excl: '', incl: 라도진압땅끄}
+- {excl: '', incl: 폭도왕김대중}
 - {excl: '', incl: 광주전장군땅크}
 - {excl: '', incl: 땅끄탄두환이}
-- {excl: '', incl: 딜탱전땅크}
+- {excl: '', incl: Korea_근혜}
 - {excl: '', incl: 노운지부릉부릉}
 - {excl: '', incl: 하나회땅크}
 - {excl: '', incl: 계엄군이나타났다}
@@ -819,27 +964,33 @@ BadWords:
 - {excl: '', incl: 홍어박는계엄군}
 - {excl: '', incl: 전두환장군만세}
 - {excl: '', incl: 씌발련}
+- {excl: '', incl: 개 지 랄}
 - {excl: '', incl: 나치용병대}
 - {excl: '', incl: 월드오브전장군}
 - {excl: '', incl: 전두환전두환}
 - {excl: '', incl: yasiballama}
 - {excl: '', incl: 존니}
-- {excl: '', incl: 씨퐁보지}
+- {excl: '', incl: 전쟁과섹스}
 - {excl: '', incl: 폭동진압땅크a}
 - {excl: '', incl: 벌창}
 - {excl: '', incl: 전두엽다친전두환}
 - {excl: '', incl: 떠라이}
+- {excl: '', incl: 호 로 자식}
 - {excl: '', incl: 대중_무현크로스}
 - {excl: '', incl: 폭도전문가전두환}
 - {excl: '', incl: 전땅크부릉부룽}
 - {excl: '', incl: 무현RT부탁}
+- {excl: '', incl: 5월18일폭동}
+- {excl: '', incl: 애 무}
 - {excl: '', incl: 섹스는번식용}
-- {excl: '', incl: 유방}
+- {excl: '', incl: 호 로 자 슥}
 - {excl: '', incl: 병신새끼들아}
 - {excl: '', incl: 전땅크대통령각하}
+- {excl: '', incl: 개같 은년}
 - {excl: '', incl: 전두환계엄군땅끄}
+- {excl: '', incl: 보지 빨 아}
 - {excl: '', incl: 히틀러아빵}
-- {excl: '', incl: 즈언두환}
+- {excl: '', incl: 전땅크맨크러쉬}
 - {excl: '', incl: 두환boy땅크}
 - {excl: '', incl: 대한땅크전두환}
 - {excl: '', incl: 518폭똥}
@@ -848,6 +999,8 @@ BadWords:
 - {excl: '', incl: Faggot}
 - {excl: '', incl: 히틀러아빠}
 - {excl: '', incl: 폭동진압엠비땅크}
+- {excl: '', incl: 씹 지랄}
+- {excl: '', incl: '좃 '}
 - {excl: '', incl: 개거얼래}
 - {excl: '', incl: 당뇨걸린전땅크}
 - {excl: '', incl: 개대중}
@@ -863,20 +1016,24 @@ BadWords:
 - {excl: '', incl: 땅크보이_두환}
 - {excl: '', incl: 상남자전땅크}
 - {excl: '', incl: 전두환탱크boy}
+- {excl: '', incl: 좆 만 한놈}
 - {excl: '', incl: 시박색히}
-- {excl: '', incl: 광주폭동부릉}
+- {excl: '', incl: 김대중_전대통령}
 - {excl: '', incl: 29만에폭도진압}
+- {excl: '', incl: 박근혜각하의땅크}
+- {excl: '', incl: 크리 토리스}
 - {excl: '', incl: 두환땅크}
 - {excl: '', incl: 홍어나치최고}
+- {excl: '', incl: 보지 빨 어}
 - {excl: '', incl: 나치군땅크}
 - {excl: '', incl: 고영욱강간맨}
 - {excl: '', incl: 흑인파워섹스}
-- {excl: '', incl: 쌔끈한빡근혜}
+- {excl: '', incl: 전땅크나갓신다}
 - {excl: '', incl: SEX}
 - {excl: '', incl: 성폭행}
+- {excl: '', incl: 헐 렁 보 지}
 - {excl: '', incl: 두환땅끄}
 - {excl: '', incl: 콜로라도의김대중}
-- {excl: '', incl: 전땅크행님}
 - {excl: '', incl: 월드오브두환각하}
 - {excl: '', incl: 전두환님이미쳐날}
 - {excl: '', incl: 구국영웅전두환}
@@ -884,38 +1041,43 @@ BadWords:
 - {excl: '', incl: 아아섹스하고싶다}
 - {excl: '', incl: 노무현다이빙}
 - {excl: '', incl: 땅크전두환님}
-- {excl: '', incl: 노무현자의돌}
+- {excl: '', incl: 홍어사냥꾼전두환}
 - {excl: '', incl: 박근혜아들}
 - {excl: '', incl: 운지도사노무현}
 - {excl: '', incl: 유우방}
 - {excl: '', incl: 전두환땅크각하}
 - {excl: '', incl: 광주민주폭동}
-- {excl: '', incl: 구국의전장군}
+- {excl: '', incl: LT_전땅크}
+- {excl: '', incl: AdolfHitler_}
 - {excl: '', incl: 전두환의땅크실력}
-- {excl: '', incl: 전땅크의땅크}
-- {excl: '', incl: 박근혜팬클럽회장}
-- {excl: '', incl: 느금마23호}
+- {excl: '', incl: 7시폭동진압}
+- {excl: '', incl: 전두환탱크대통령}
+- {excl: '', incl: 보지머리박기}
 - {excl: '', incl: 자지}
 - {excl: '', incl: 물리학박사김대중}
-- {excl: '', incl: 광주는폭똥}
-- {excl: '', incl: 쌕}
+- {excl: '', incl: 18 새끼}
+- {excl: '', incl: 나치부대}
 - {excl: '', incl: 홍어냄새곧휴}
 - {excl: '', incl: 퓨어탱전두환}
-- {excl: '', incl: 전두환시즈모드}
+- {excl: '', incl: 전두환빵빵}
 - {excl: '', incl: 광주홍어박멸}
-- {excl: '', incl: 광주폭동진압용}
+- {excl: '', incl: 전두환의땅크으}
 - {excl: '', incl: 홍어민주화}
+- {excl: '', incl: 호로 자슥}
 - {excl: '', incl: 광주폭도잡자}
 - {excl: '', incl: 이명박이타고있음}
-- {excl: '', incl: 떨어져라무현이}
+- {excl: '', incl: 이오시프스탈린}
 - {excl: '', incl: 광주폭도진압령}
-- {excl: '', incl: 5_18폭동}
+- {excl: '', incl: 잰두환}
 - {excl: '', incl: 전장군땅크가간다}
 - {excl: '', incl: NaziSS}
 - {excl: '', incl: 광주는RIOT}
+- {excl: '', incl: 씨 부 랄}
 - {excl: '', incl: 수호자전땅크}
 - {excl: '', incl: 내가히틀러임}
+- {excl: '', incl: 씨 퐁뇬}
 - {excl: '', incl: 흐긴꼬추대포}
+- {excl: '', incl: 좆 만 한년}
 - {excl: '', incl: 이명박중전차}
 - {excl: '', incl: 오일팔은폭동이야}
 - {excl: '', incl: 섹스하고싶다}
@@ -924,46 +1086,60 @@ BadWords:
 - {excl: '', incl: 좆망}
 - {excl: '', incl: 더블넥보1지}
 - {excl: '', incl: 전땅크짱}
-- {excl: '', incl: 난잦이가크다}
+- {excl: '', incl: 진압왕전장군님}
 - {excl: '', incl: 쪼다}
 - {excl: '', incl: 전두환부릉땅크}
+- {excl: '', incl: '걸레 보 '}
+- {excl: '', incl: 18 새 끼}
 - {excl: '', incl: 후배위해주는선배}
 - {excl: '', incl: 탱끄형전두환}
 - {excl: '', incl: 느금마심영}
 - {excl: '', incl: 전땅크7시로}
-- {excl: '', incl: 파1워섹1스}
+- {excl: '', incl: 광주폭동땅크랑께}
+- {excl: '', incl: 미 친놈}
 - {excl: '', incl: 히틀러독일총통}
 - {excl: '', incl: 나치정권}
 - {excl: '', incl: 광주땅크전땅크}
 - {excl: '', incl: 라도는폭동이다}
 - {excl: '', incl: 빨개이노무현}
 - {excl: '', incl: 나치흑형}
+- {excl: '', incl: 걸 레 같 은 년}
+- {excl: '', incl: 개후라 새 끼}
 - {excl: '', incl: 광주쩌는두환}
-- {excl: '', incl: 두환왕전탱크}
+- {excl: '', incl: 좃}
 - {excl: '', incl: 지옥의전두환}
+- {excl: '', incl: 씨 퐁 자 지}
 - {excl: '', incl: 머중이와대중이}
 - {excl: '', incl: 히틀러콧수염}
 - {excl: '', incl: 젼땅크부릉릉릉}
+- {excl: '', incl: 월남패망종북척결}
+- {excl: '', incl: 전장군의폭동진압}
 - {excl: '', incl: cibal뭐이래}
-- {excl: '', incl: Tank전땅크}
+- {excl: '', incl: 광주의폭동이야}
 - {excl: '', incl: 계엄왕전장군님}
 - {excl: '', incl: 광_주_는폭동}
 - {excl: '', incl: 광쥬우는폭동이야}
+- {excl: '', incl: 버지 쑤셔}
 - {excl: '', incl: 이명박근혜}
 - {excl: '', incl: 빨갱이}
 - {excl: '', incl: 땅끄는전땅끄지}
+- {excl: '', incl: 니 미랄}
 - {excl: '', incl: 쒸발}
+- {excl: '', incl: 시방 새}
 - {excl: '', incl: 광주는폭폭동이야}
 - {excl: '', incl: 16_SS_Reichsfuhrer_SS}
 - {excl: '', incl: 땅크왕전두화노프}
 - {excl: '', incl: 전땅크계엄군}
-- {excl: '', incl: 7시폭동진압}
-- {excl: '', incl: 땅크두환}
+- {excl: '', incl: 흑인노예}
+- {excl: '', incl: 두환S2태우}
+- {excl: '', incl: 빠구리}
 - {excl: '', incl: 땅끄탄노무현}
-- {excl: '', incl: 계엄캡틴전두환}
+- {excl: '', incl: 박근혜탑승중}
 - {excl: '', incl: SS_Obersturmfuhrer}
 - {excl: '', incl: 띠발뇬}
+- {excl: '', incl: 색스온더승욱이집}
 - {excl: '', incl: 느금마f0ck}
+- {excl: '', incl: 보지 물}
 - {excl: '', incl: 퍽휴머거}
 - {excl: '', incl: 홍어잡이자G포}
 - {excl: '', incl: 병신새끼}
@@ -975,10 +1151,11 @@ BadWords:
 - {excl: '', incl: 운지홍어}
 - {excl: '', incl: 광주는폭동이야A}
 - {excl: '', incl: 폭도빛고을}
+- {excl: '', incl: 크리 토}
 - {excl: '', incl: 광주비상계엄령}
 - {excl: '', incl: 전두환개색기}
 - {excl: '', incl: 전두환계엄군}
-- {excl: '', incl: 느금마배밟기}
+- {excl: '', incl: 미 친 새끼}
 - {excl: '', incl: 살인마전두환}
 - {excl: '', incl: 두환이형땅크}
 - {excl: '', incl: 부엉위바위로무현}
@@ -986,60 +1163,73 @@ BadWords:
 - {excl: '', incl: 전_두환땅크}
 - {excl: '', incl: 노_고무현}
 - {excl: '', incl: 전_땅끄}
-- {excl: '', incl: Hil히틀러}
+- {excl: '', incl: 시 팔 넘}
+- {excl: '', incl: 땅크두환}
+- {excl: '', incl: 1 8 새끼}
 - {excl: '', incl: 전땅크의기갑사단}
+- {excl: '', incl: 후 라 덜}
 - {excl: '', incl: The_Nazi_Panzer}
 - {excl: '', incl: 느금마전단지}
 - {excl: '', incl: 부릉운지땅크}
+- {excl: '', incl: 신 셰리}
+- {excl: '', incl: 좌빨땅크}
 - {excl: '', incl: 핵대중과뇌물현}
 - {excl: '', incl: 두환이는땅크}
 - {excl: '', incl: 두환찡의땅크}
 - {excl: '', incl: 전두환자동차}
+- {excl: '', incl: 호 루 자슥}
 - {excl: '', incl: nazi_germany}
+- {excl: '', incl: 시 팔 년}
+- {excl: '', incl: 냥 년}
 - {excl: '', incl: 후장}
 - {excl: '', incl: 알까는전두환}
 - {excl: '', incl: 광주는폭동이야1}
 - {excl: '', incl: 앙망왕김머중}
-- {excl: '', incl: 광주침략}
-- {excl: '', incl: ID_Adolf_Hitle}
-- {excl: '', incl: 부릉전두환}
+- {excl: '', incl: 제5공화국전땅크}
+- {excl: '', incl: 씨 퐁 보지}
+- {excl: '', incl: 계엄군땅크성님}
 - {excl: '', incl: 518진압스타일}
 - {excl: '', incl: 탱킹왕전두환}
-- {excl: '', incl: 전두환과친구들2}
+- {excl: '', incl: 섹스중독자}
 - {excl: '', incl: 홍어보안사령관}
-- {excl: '', incl: 십세끼}
-- {excl: '', incl: 강간스타일}
+- {excl: '', incl: 광주시청민탱크}
+- {excl: '', incl: Nazii}
+- {excl: '', incl: 18 놈}
 - {excl: '', incl: 개걸래}
+- {excl: '', incl: 전두환의계엄령}
 - {excl: '', incl: 전두환땅크보이V}
-- {excl: '', incl: 느금마_치다훈요}
+- {excl: '', incl: 좆 만 한 년}
+- {excl: '', incl: 박근혜똥크}
 - {excl: '', incl: 전두환땅크보이_}
-- {excl: '', incl: 씨이팔}
+- {excl: '', incl: MichaeI_Wittmann}
+- {excl: '', incl: 호루 자슥}
 - {excl: '', incl: 저격명사수전땅크}
 - {excl: '', incl: 노무현시체튀김}
-- {excl: '', incl: 광주는폭도야}
+- {excl: '', incl: 서독나치v}
 - {excl: '', incl: 달리자전땅크}
 - {excl: '', incl: 탱크보이전두환_}
 - {excl: '', incl: 전땅크의역습}
 - {excl: '', incl: 라도는홍어천국}
 - {excl: '', incl: 전두환_EX}
-- {excl: '', incl: 광Ju폭동}
 - {excl: '', incl: 전두환땅크다}
 - {excl: '', incl: 전두환과홍어들}
-- {excl: '', incl: 폭동장갑차518}
+- {excl: '', incl: 느금마안철수}
 - {excl: '', incl: 초지보딩}
 - {excl: '', incl: 쪼물딱}
 - {excl: '', incl: 제3SS기갑사단}
 - {excl: '', incl: 너네엄마흑인노예}
 - {excl: '', incl: A_Hitler}
 - {excl: '', incl: 박정희박근혜}
+- {excl: '', incl: 새 끼}
 - {excl: '', incl: 제내럴전두환}
 - {excl: '', incl: 전두환의일격}
+- {excl: '', incl: 광주주둔계엄군}
 - {excl: '', incl: 계엄땅크두환}
-- {excl: '', incl: 호루자슥}
 - {excl: '', incl: 땅크오브전두환}
 - {excl: '', incl: 나치땅크부릉}
 - {excl: '', incl: 폭동의제왕_광주}
 - {excl: '', incl: 전차왕전두환}
+- {excl: '', incl: 계엄킹전탱크}
 - {excl: '', incl: 전두환_각하}
 - {excl: '', incl: 노인이된고무현}
 - {excl: '', incl: 폭동왕홍어}
@@ -1047,34 +1237,42 @@ BadWords:
 - {excl: '', incl: 느금마시러}
 - {excl: '', incl: 쾌남땅크전두환}
 - {excl: '', incl: Hoonpenis}
+- {excl: '', incl: 후장 꽂아}
 - {excl: '', incl: 518_is_riot}
 - {excl: '', incl: 광주왕김대중}
 - {excl: '', incl: Cibal1004}
 - {excl: '', incl: 거대귀두}
 - {excl: '', incl: 너희어머니박근혜}
+- {excl: '', incl: 호로 새 끼}
+- {excl: '', incl: 좆같 은}
 - {excl: '', incl: 반란수괴전땅크}
 - {excl: '', incl: 노짱과핵머중}
 - {excl: '', incl: 십새끼}
 - {excl: '', incl: 씨발병신}
+- {excl: '', incl: 좆 만아}
+- {excl: '', incl: 씨퐁 자지}
 - {excl: '', incl: 전두환승입니다}
 - {excl: '', incl: 광주가는길좀요}
 - {excl: '', incl: 전장군_부릉}
+- {excl: '', incl: '걸레같은 '}
+- {excl: '', incl: 개 불랄}
 - {excl: '', incl: 박근혜공략}
 - {excl: '', incl: 떠어라이}
-- {excl: '', incl: 광주는폭동0l야}
+- {excl: '', incl: Meat puppet}
+- {excl: '', incl: 뇌물왕노무현}
 - {excl: '', incl: 탱크강간}
 - {excl: '', incl: po전두환wer}
 - {excl: '', incl: 홍어운지땅크}
 - {excl: '', incl: 월드of섹스탱크}
 - {excl: '', incl: 광주초토화}
 - {excl: '', incl: 김정은죽여라}
-- {excl: '', incl: 가카전두환}
+- {excl: '', incl: nazi_general}
 - {excl: '', incl: 느금마혜성}
 - {excl: '', incl: hitler77}
 - {excl: '', incl: 이다광주는폭동}
 - {excl: '', incl: 버스왕이명박}
 - {excl: '', incl: 전두환상의커플}
-- {excl: '', incl: 나찌짱짱탱크}
+- {excl: '', incl: 김대중컨벤션센터}
 - {excl: '', incl: 계엄왕_전장군}
 - {excl: '', incl: 전땅크의야성}
 - {excl: '', incl: 전땅크개객끼}
@@ -1082,7 +1280,7 @@ BadWords:
 - {excl: '', incl: 전땅크의전용땅크}
 - {excl: '', incl: 가슴빨아}
 - {excl: '', incl: 광주가는핵뚜기}
-- {excl: '', incl: zl죤느금마}
+- {excl: '', incl: 여대생강간범}
 - {excl: '', incl: 탱크의전설전두환}
 - {excl: '', incl: 폭도왕다이쥬}
 - {excl: '', incl: 나치친위대코난}
@@ -1104,60 +1302,70 @@ BadWords:
 - {excl: '', incl: 히_틀_러}
 - {excl: '', incl: 나치당}
 - {excl: '', incl: 가슴만져}
+- {excl: '', incl: 미친 새끼}
 - {excl: '', incl: 전두환친구인꼬마}
+- {excl: '', incl: 후 라 덜넘}
 - {excl: '', incl: 518폭_동}
 - {excl: '', incl: 전두환이쏜다쏜다}
 - {excl: '', incl: 핥어}
+- {excl: '', incl: Fuck Off}
+- {excl: '', incl: 씹 자 지}
 - {excl: '', incl: 전장군이다}
-- {excl: '', incl: 전땅끄드리프트}
+- {excl: '', incl: 십 세 이}
 - {excl: '', incl: 십알년}
 - {excl: '', incl: 호남의자랑전두환}
 - {excl: '', incl: Pie}
-- {excl: '', incl: 덜넘}
+- {excl: '', incl: 보 지 핥아}
 - {excl: '', incl: 와드까는전땅크}
 - {excl: '', incl: 광주가는일게이}
-- {excl: '', incl: M전땅크B}
+- {excl: '', incl: 섹스왕}
 - {excl: '', incl: 두환이찡}
 - {excl: '', incl: 셋키}
 - {excl: '', incl: 왕좌전두환}
-- {excl: '', incl: 흑인노예쓰}
 - {excl: '', incl: SS_LSSAH}
 - {excl: '', incl: 노무현대통령}
 - {excl: '', incl: 번지점프왕노무현}
 - {excl: '', incl: 전두환땅크모드}
+- {excl: '', incl: 개 자지}
 - {excl: '', incl: 518GawnjuIGunsRiotTank}
 - {excl: '', incl: 홍어민주화탱크}
 - {excl: '', incl: 십알놈}
-- {excl: '', incl: 지옥에있는전두환}
+- {excl: '', incl: 광주는폭똥}
+- {excl: '', incl: 자 지}
 - {excl: '', incl: sibaltiger}
 - {excl: '', incl: 전장군의땅크랑께}
+- {excl: '', incl: 보 지 핥 아}
 - {excl: '', incl: 색스}
 - {excl: '', incl: 정수자1지1cm}
 - {excl: '', incl: 폭풍땅크전두환}
 - {excl: '', incl: 아갈}
+- {excl: '', incl: 전두환빌드}
 - {excl: '', incl: whitepenis}
-- {excl: '', incl: 광주폭동진압땅끄}
+- {excl: '', incl: 아가리}
 - {excl: '', incl: 땅크부릉전장군}
 - {excl: '', incl: 두환아한방맞자}
 - {excl: '', incl: 전장군님만만세}
 - {excl: '', incl: 부릉부릉두환}
 - {excl: '', incl: 제4SS기갑사단}
+- {excl: '', incl: 두환땅크부릉}
 - {excl: '', incl: 북한멀티7시}
 - {excl: '', incl: 광주이퀄폭동}
+- {excl: '', incl: 씨 섹 끼}
 - {excl: '', incl: 다까끼_마사오}
 - {excl: '', incl: SS돌격대12}
 - {excl: '', incl: 느금마안녕}
 - {excl: '', incl: 히틀러쨔응}
-- {excl: '', incl: 박근혜똥크}
+- {excl: '', incl: 느금마_치다훈요}
 - {excl: '', incl: 땅땅크전두환}
 - {excl: '', incl: 지옥에서온전두환}
+- {excl: '', incl: 걸레 보}
 - {excl: '', incl: 내가전두환이다}
 - {excl: '', incl: 전장군_}
 - {excl: '', incl: 전탱크우힝}
 - {excl: '', incl: 홍광주어}
 - {excl: '', incl: 부랄}
 - {excl: '', incl: 7시에폭동}
-- {excl: '', incl: 운지스트}
+- {excl: '', incl: 전땅크슨상님}
 - {excl: '', incl: 전장군님Tank}
 - {excl: '', incl: 히틀러의타이거}
 - {excl: '', incl: 히틀러각하}
@@ -1169,42 +1377,51 @@ BadWords:
 - {excl: '', incl: 꼬마전장군붕붕}
 - {excl: '', incl: 조까라}
 - {excl: '', incl: 좃같은}
-- {excl: '', incl: 광주518폭똥}
+- {excl: '', incl: 주 글년}
+- {excl: '', incl: 독재왕전두환}
 - {excl: '', incl: 7시폭도사냥꾼}
-- {excl: '', incl: 518폭도잡이}
+- {excl: '', incl: 광주는그폭똥이야}
+- {excl: '', incl: Fucking Bastard}
+- {excl: '', incl: 백보 지}
 - {excl: '', incl: 광주민주화전땅크}
 - {excl: '', incl: 떠어라아이}
 - {excl: '', incl: 홍어헌터전두환}
 - {excl: '', incl: 홍어잡는전두환}
-- {excl: '', incl: 운지무현}
+- {excl: '', incl: 전두환이탄땅크}
 - {excl: '', incl: 불도저이명박}
 - {excl: '', incl: 제갈윤김대중}
 - {excl: '', incl: 골드무현}
+- {excl: '', incl: 개 보 지}
 - {excl: '', incl: 녹색전차이명박}
 - {excl: '', incl: 작전명광주민주화}
 - {excl: '', incl: 폭동진압땅크}
+- {excl: '', incl: 씹 탱}
 - {excl: '', incl: 광주열중쉬어}
 - {excl: '', incl: 클리토리스}
 - {excl: '', incl: AloisHitler}
+- {excl: '', incl: 폭동땅크_전땅크}
 - {excl: '', incl: Adolf__Hitler_}
 - {excl: '', incl: 무적전땅크}
 - {excl: '', incl: 전땅크땅크성님}
 - {excl: '', incl: 전두환땅끄}
+- {excl: '', incl: 허벌 보지}
 - {excl: '', incl: 폭도를물리쳐라}
 - {excl: '', incl: Post히틀러}
 - {excl: '', incl: 씨부랄}
+- {excl: '', incl: 허벌보 지}
 - {excl: '', incl: 느금마파프리카}
 - {excl: '', incl: 두환이의새땅크}
 - {excl: '', incl: 전두환후계자}
 - {excl: '', incl: 전땅크의귀환}
+- {excl: '', incl: 개 부달}
 - {excl: '', incl: o전두환o}
 - {excl: '', incl: 정액받이무녀님}
+- {excl: '', incl: 개후라 들 놈}
 - {excl: '', incl: 이상해씨1발}
-- {excl: '', incl: 전장군의민주화}
 - {excl: '', incl: YO실금씨1발}
 - {excl: '', incl: 전장군이나가신다}
 - {excl: '', incl: 미하일비트만옹}
-- {excl: '', incl: 관악구히틀러}
+- {excl: '', incl: 광주를함락하자}
 - {excl: '', incl: 김대중혼외정사}
 - {excl: '', incl: 다카키_마사오}
 - {excl: '', incl: 걸래년}
@@ -1213,84 +1430,101 @@ BadWords:
 - {excl: '', incl: 나의잦이를받아라}
 - {excl: '', incl: 전두환광주탱크}
 - {excl: '', incl: _노무현_}
+- {excl: '', incl: 패배의전두환}
 - {excl: '', incl: 518무장폭동}
 - {excl: '', incl: 드록바느금마}
 - {excl: '', incl: naziwula}
 - {excl: '', incl: Ssip잦이}
 - {excl: '', incl: Cunt}
+- {excl: '', incl: 딸딸 이}
+- {excl: '', incl: 개 후 라}
 - {excl: '', incl: 518폭도진압대}
-- {excl: '', incl: 시빡}
 - {excl: '', incl: 버따리자지}
 - {excl: '', incl: 노무현슨상님부활}
+- {excl: '', incl: 호루자 슥}
 - {excl: '', incl: 우리엄마박근혜}
-- {excl: '', incl: 개같}
+- {excl: '', incl: 전땅크가신다}
 - {excl: '', incl: 폭동진압민주땅크}
 - {excl: '', incl: 땅크왕두환옹}
 - {excl: '', incl: 환수형전땅크}
 - {excl: '', incl: 더럽고치졸한흐긴}
 - {excl: '', incl: 인간전두환}
+- {excl: '', incl: sex 해}
 - {excl: '', incl: 전땅크각하오신날}
 - {excl: '', incl: 히틀러4세}
 - {excl: '', incl: 탱크마스터전땅끄}
-- {excl: '', incl: 느금마안철수}
+- {excl: '', incl: 폭동장갑차518}
 - {excl: '', incl: jaji}
+- {excl: '', incl: 자 지 핥어}
 - {excl: '', incl: 개후라들놈}
-- {excl: '', incl: 보노보노무현}
+- {excl: '', incl: 개잡년}
 - {excl: '', incl: 발년}
+- {excl: '', incl: '걸레 같 '}
 - {excl: '', incl: 땅크는두환을싣고}
 - {excl: '', incl: 느금마입니다}
 - {excl: '', incl: 수꼴땅크두환}
 - {excl: '', incl: 광주탱커전두환}
 - {excl: '', incl: 명바기의비밀병기}
 - {excl: '', incl: 허벌자식}
-- {excl: '', incl: 썅놈}
 - {excl: '', incl: 마린보이전땅크}
-- {excl: '', incl: 전두환새해복}
+- {excl: '', incl: 걸레같 은년}
+- {excl: '', incl: 펜타킬박근혜}
+- {excl: '', incl: 우직한전두환}
 - {excl: '', incl: 운지사령관노부엉}
 - {excl: '', incl: MC전탱크}
 - {excl: '', incl: NaziMaru}
 - {excl: '', incl: 씨1발탱크는개뿔}
-- {excl: '', incl: 카드캡터전땅크}
+- {excl: '', incl: 518폭도들}
+- {excl: '', incl: '미친 '}
 - {excl: '', incl: 붕알큰흑인}
+- {excl: '', incl: S EX}
 - {excl: '', incl: 노운지핵대중}
 - {excl: '', incl: 내이름은전땅크}
 - {excl: '', incl: 전장군슈탱}
 - {excl: '', incl: 트롤러전두환}
 - {excl: '', incl: 가랏전땅크}
-- {excl: '', incl: 전탱크가좋아요}
+- {excl: '', incl: 보 지 빨아}
+- {excl: '', incl: 노운지}
 - {excl: '', incl: 탱크두환}
 - {excl: '', incl: 이끄요전땅끄}
-- {excl: '', incl: 전두환과김대중}
+- {excl: '', incl: 섹스매직}
 - {excl: '', incl: 전두환아버}
 - {excl: '', incl: 동탄재왕왕자1지}
-- {excl: '', incl: 김대중꼬추불꼬추}
+- {excl: '', incl: 전장군의전차}
 - {excl: '', incl: 꼬마히틀러}
 - {excl: '', incl: 자1지의위엄}
+- {excl: '', incl: 허벌자 지}
+- {excl: '', incl: '후 라 덜 '}
 - {excl: '', incl: 개세}
-- {excl: '', incl: 대중슨상님}
 - {excl: '', incl: 전두환전용차}
 - {excl: '', incl: 쥐랄}
 - {excl: '', incl: 불건전한땅크두환}
-- {excl: '', incl: 내가히틀러}
+- {excl: '', incl: 존 니}
+- {excl: '', incl: 쓰바새 끼}
+- {excl: '', incl: 전땅크달린다비켜}
 - {excl: '', incl: penisoff}
 - {excl: '', incl: 두환오브땅크}
+- {excl: '', incl: 이멱박근혜카림}
 - {excl: '', incl: 전두환대령}
 - {excl: '', incl: jeon_tanku}
 - {excl: '', incl: 7시홍어피떡갈비}
+- {excl: '', incl: 핥 어}
 - {excl: '', incl: 무현이타고있어요}
 - {excl: '', incl: 전두환땅꾸}
-- {excl: '', incl: 광주는_총기를}
-- {excl: '', incl: 전두환탑승중}
+- {excl: '', incl: 전두환노무현}
+- {excl: '', incl: 홍어잡이탱크}
+- {excl: '', incl: 보 지 빨어}
 - {excl: '', incl: 김대중개_기해봐}
 - {excl: '', incl: HailHitler}
+- {excl: '', incl: 좃 빠 네}
 - {excl: '', incl: 자기핥아}
 - {excl: '', incl: 히틀로K}
 - {excl: '', incl: 씹}
 - {excl: '', incl: 히틀린}
-- {excl: '', incl: 핵대중과땅크보이}
+- {excl: '', incl: 빛고을포도518}
 - {excl: '', incl: 좇이다}
-- {excl: '', incl: 광주폭동빨깽이1}
-- {excl: '', incl: 육사십일기전두환}
+- {excl: '', incl: af_hitler}
+- {excl: '', incl: 전장군님행차}
 - {excl: '', incl: SSNazi}
 - {excl: '', incl: 518Riotcontrol}
 - {excl: '', incl: 광쥬는폭똥이야}
@@ -1303,31 +1537,36 @@ BadWords:
 - {excl: '', incl: 계엄군두환}
 - {excl: '', incl: 광주시폭동}
 - {excl: '', incl: 전땅크의후퇴}
+- {excl: '', incl: 좆같 은 놈}
+- {excl: '', incl: 존 나}
+- {excl: '', incl: '벌창 '}
 - {excl: '', incl: 간나세끼}
 - {excl: '', incl: 니미젖}
 - {excl: '', incl: 2SSpanzer_DasReich}
 - {excl: '', incl: GunMetalJaJi}
 - {excl: '', incl: 전땅크닝}
-- {excl: '', incl: 서독나치v}
+- {excl: '', incl: 'fuck '}
 - {excl: '', incl: 전두환더땅크킹}
-- {excl: '', incl: 518폭동out}
+- {excl: '', incl: Michael_Wittmann_Jr}
 - {excl: '', incl: 히틀렁}
 - {excl: '', incl: 전장군에디션}
 - {excl: '', incl: 폭동오브전땅크}
 - {excl: '', incl: 전두환과아이들}
+- {excl: '', incl: 좃 마무리}
 - {excl: '', incl: 강간왕간철수}
+- {excl: '', incl: 1 8놈}
 - {excl: '', incl: 씨입팔}
 - {excl: '', incl: 전두환의용기}
+- {excl: '', incl: 전두환과친구들2}
 - {excl: '', incl: 박근혜만세}
-- {excl: '', incl: 히틀러처남}
+- {excl: '', incl: 두환이형부릉부릉}
 - {excl: '', incl: 내가전장군이다}
-- {excl: '', incl: 보지핥아}
-- {excl: '', incl: 히틀러딱갈이S}
+- {excl: '', incl: 개병신}
+- {excl: '', incl: 히틀려}
 - {excl: '', incl: 광주폭도진압만세}
 - {excl: '', incl: 노짱땅크운지}
 - {excl: '', incl: 전두환과프렌즈}
 - {excl: '', incl: 혀로보지핥기}
-- {excl: '', incl: 좆만한놈}
 - {excl: '', incl: 전두환2세}
 - {excl: '', incl: 초코좋고섹1스}
 - {excl: '', incl: 느그할배전두환}
@@ -1335,64 +1574,78 @@ BadWords:
 - {excl: '', incl: 시입세}
 - {excl: '', incl: 정희와두환이}
 - {excl: '', incl: _Hitler_}
-- {excl: '', incl: 폭동땅크_전땅크}
-- {excl: '', incl: 버짓물}
+- {excl: '', incl: 전두환누드사진}
+- {excl: '', incl: 전오브땅크}
 - {excl: '', incl: 보노보노무현짱}
 - {excl: '', incl: NaZi_히틀러}
 - {excl: '', incl: 미하일__비트만}
 - {excl: '', incl: 홍어킹대중}
 - {excl: '', incl: 히틀러의기관총}
+- {excl: '', incl: 가슴 쪼물딱}
 - {excl: '', incl: 전두환은못말려}
 - {excl: '', incl: 홍어척결부릉부릉}
+- {excl: '', incl: 쪼다새 끼}
 - {excl: '', incl: oil8전두환}
-- {excl: '', incl: 전땅크와계엄군들}
+- {excl: '', incl: 전두환1여단장}
 - {excl: '', incl: 광주로폭도진압}
+- {excl: '', incl: 씨 발 롬}
 - {excl: '', incl: lolsibal2}
-- {excl: '', incl: 아씨1발잠깐만}
+- {excl: '', incl: 12_SS_Hitler_Jugend}
 - {excl: '', incl: 김일성동무}
 - {excl: '', incl: 전두환땅크가져와}
-- {excl: '', incl: 개가튼뇬}
 - {excl: '', incl: 전땅크주니어}
+- {excl: '', incl: 박근혜퇴진땅크}
+- {excl: '', incl: 걸레 같 은년}
 - {excl: '', incl: 탱크황제전두환}
 - {excl: '', incl: 전탱크부릉부릉}
 - {excl: '', incl: 두환이땅크}
 - {excl: '', incl: 곽노무현}
 - {excl: '', incl: 느금마씨}
-- {excl: '', incl: _ss롬멜_}
+- {excl: '', incl: GwangJu_is_riot}
 - {excl: '', incl: 전땅크_Art}
 - {excl: '', incl: 전장군오브땅크}
 - {excl: '', incl: 광주계염렁}
 - {excl: '', incl: 또라이}
+- {excl: '', incl: 또 라이}
 - {excl: '', incl: 광주라이엇}
 - {excl: '', incl: 대중이가타고있음}
-- {excl: '', incl: 전장군이타던땅크}
+- {excl: '', incl: 파괴왕전장군}
 - {excl: '', incl: 개새}
+- {excl: '', incl: 보 지털}
 - {excl: '', incl: 령도자전두환}
 - {excl: '', incl: 전두환님의땅크}
 - {excl: '', incl: 전땅크8호}
 - {excl: '', incl: 땅크부대전두환}
 - {excl: '', incl: 땅크보이_전두환}
 - {excl: '', incl: 518광주폭죽}
+- {excl: '', incl: 렁 보 지}
+- {excl: '', incl: 좆 만 아}
 - {excl: '', incl: 핵대중전땅크}
-- {excl: '', incl: 전땅크맨크러쉬}
+- {excl: '', incl: 즈언두환}
 - {excl: '', incl: o광주는폭동o}
 - {excl: '', incl: 느금마이미쉘}
+- {excl: '', incl: 벌창 같 은 년}
+- {excl: '', incl: 좃 만 아}
+- {excl: '', incl: 보 지녀}
 - {excl: '', incl: 광주포도진압용}
 - {excl: '', incl: 모두느금마탓}
+- {excl: '', incl: 보 지 빨 아}
 - {excl: '', incl: 느금마미역}
-- {excl: '', incl: 홍어사냥꾼전두환}
-- {excl: '', incl: 광주폭동_전땅크}
+- {excl: '', incl: 개가튼 년}
+- {excl: '', incl: 노무현자의돌}
+- {excl: '', incl: 히틀러총통}
 - {excl: '', incl: 폭동주동자대중이}
-- {excl: '', incl: 제너럴전땅크}
+- {excl: '', incl: 미하일비트만소령}
 - {excl: '', incl: 탱크탑전두환}
 - {excl: '', incl: MB18Nom}
-- {excl: '', incl: 진압왕전장군님}
+- {excl: '', incl: 페 니스}
+- {excl: '', incl: 난잦이가크다}
 - {excl: '', incl: 짱깨}
 - {excl: '', incl: 운지전차해노수}
 - {excl: '', incl: 노운지의탱크}
-- {excl: '', incl: 씨이벌}
+- {excl: '', incl: 노운짱지}
 - {excl: '', incl: 땅크몰고광주토벌}
-- {excl: '', incl: 박근혜탑승중}
+- {excl: '', incl: 계엄캡틴전두환}
 - {excl: '', incl: 꼬마전땅크부릉}
 - {excl: '', incl: 518홍어폭동}
 - {excl: '', incl: 강간수월해1}
@@ -1401,8 +1654,10 @@ BadWords:
 - {excl: '', incl: 전장군포에버}
 - {excl: '', incl: 상노무새끼}
 - {excl: '', incl: 일베박멸월오탱}
+- {excl: '', incl: '좆 '}
 - {excl: '', incl: 전두환나와}
-- {excl: '', incl: 기호1번박근혜}
+- {excl: '', incl: 씨이팔}
+- {excl: '', incl: 가슴 핥아}
 - {excl: '', incl: 광쥬토벌땅크}
 - {excl: '', incl: 김대중장군}
 - {excl: '', incl: 전두환518}
@@ -1411,39 +1666,47 @@ BadWords:
 - {excl: '', incl: 오덕}
 - {excl: '', incl: 벵신}
 - {excl: '', incl: 띠발}
+- {excl: '', incl: 땅크땅크섹스}
+- {excl: '', incl: '씹 '}
 - {excl: '', incl: 김정일지도자}
 - {excl: '', incl: 전두환빨지마시바}
 - {excl: '', incl: Mr_전땅크}
 - {excl: '', incl: 게가튼}
-- {excl: '', incl: nazi_general}
+- {excl: '', incl: 가카전두환}
+- {excl: '', incl: e x}
 - {excl: '', incl: 518계엄전차}
+- {excl: '', incl: 허 벌 자지}
 - {excl: '', incl: 땅크탱크전땅크}
 - {excl: '', incl: 자_지포발사}
+- {excl: '', incl: 벵 신}
+- {excl: '', incl: 개 씨 블}
 - {excl: '', incl: 전두환스키}
 - {excl: '', incl: 빛고을폭동}
 - {excl: '', incl: 폭광주동}
-- {excl: '', incl: 광주는폭동이확실}
-- {excl: '', incl: 시뱔}
+- {excl: '', incl: 자 지털}
+- {excl: '', incl: 땅끄로리전두환}
 - {excl: '', incl: 후우자앙}
 - {excl: '', incl: 광_주폭_동임}
+- {excl: '', incl: 헐렁보 지}
+- {excl: '', incl: '개 후 라 '}
 - {excl: '', incl: 전장군나가신다}
 - {excl: '', incl: jajibozisax}
 - {excl: '', incl: 전차왕전땅크장군}
 - {excl: '', incl: 탱크게이전두환}
 - {excl: '', incl: 전두환이나간다}
+- {excl: '', incl: 걸레같은 년}
 - {excl: '', incl: 씨이펄}
 - {excl: '', incl: 살아있는노무현}
 - {excl: '', incl: 전두환개객끼레알}
 - {excl: '', incl: 홍어감식처리반}
-- {excl: '', incl: 유두}
 - {excl: '', incl: 띠벌}
 - {excl: '', incl: 롸도폭동진압땅크}
 - {excl: '', incl: 폭동광주폭동}
 - {excl: '', incl: 깡패폭도노운지}
-- {excl: '', incl: 조까}
+- {excl: '', incl: 무현RT}
 - {excl: '', incl: 박준수씨1발}
-- {excl: '', incl: 버지구녕}
-- {excl: '', incl: 두환S2태우}
+- {excl: '', incl: 글로벌전땅크}
+- {excl: '', incl: 광Ju폭동}
 - {excl: '', incl: 애국열사전두환}
 - {excl: '', incl: SS_노르트란트}
 - {excl: '', incl: 빵셔틀박근혜}
@@ -1457,34 +1720,38 @@ BadWords:
 - {excl: '', incl: 광주를부수자}
 - {excl: '', incl: 전땅크광주폭동}
 - {excl: '', incl: 미하일비트만전차}
-- {excl: '', incl: 전땅크1부릉부릉}
+- {excl: '', incl: 전땅크로리닷}
 - {excl: '', incl: 개후라}
 - {excl: '', incl: 대중이와무현이}
-- {excl: '', incl: 전오브땅크}
+- {excl: '', incl: 버짓물}
+- {excl: '', incl: 18 년}
 - {excl: '', incl: 광주폭동전두환}
 - {excl: '', incl: 광주왕전땅크}
 - {excl: '', incl: 나치혁명단}
+- {excl: '', incl: 개후 라 새 끼}
 - {excl: '', incl: 광주민란진압군}
+- {excl: '', incl: 호 로 새 끼}
 - {excl: '', incl: 29전두환}
 - {excl: '', incl: 탱크그리고두환}
 - {excl: '', incl: 병딱}
 - {excl: '', incl: 보지빨어}
 - {excl: '', incl: 광주는총기를_}
 - {excl: '', incl: 뉴클리어대중}
-- {excl: '', incl: MB이명박}
+- {excl: '', incl: 탱크전두환}
 - {excl: '', incl: 봉하마을노시개}
 - {excl: '', incl: 홍어인민공화국}
 - {excl: '', incl: 씹년}
-- {excl: '', incl: 땅끄로리전두환}
-- {excl: '', incl: 무현RT}
-- {excl: '', incl: 전땅크로리닷}
+- {excl: '', incl: 광주는폭동이확실}
+- {excl: '', incl: 가슴 쪼물락}
+- {excl: '', incl: 조까}
+- {excl: '', incl: 전땅크1부릉부릉}
 - {excl: '', incl: 땅끄오브전땅끄}
-- {excl: '', incl: 흑인노예}
-- {excl: '', incl: 호남영웅이호성}
+- {excl: '', incl: 개가튼뇬}
 - {excl: '', incl: 전땅끄의모험}
-- {excl: '', incl: 탱크전두환}
+- {excl: '', incl: MB이명박}
 - {excl: '', incl: 광주이즈리얼폭동}
-- {excl: '', incl: 광주주둔계엄군}
+- {excl: '', incl: 광주폭동_전땅크}
+- {excl: '', incl: 씌팔}
 - {excl: '', incl: 에비}
 - {excl: '', incl: 진압형전땅크}
 - {excl: '', incl: 느금마해녀}
@@ -1494,21 +1761,27 @@ BadWords:
 - {excl: '', incl: 대중무현사랑}
 - {excl: '', incl: 조깥}
 - {excl: '', incl: 뭘봐씨1발아}
-- {excl: '', incl: 518운지}
+- {excl: '', incl: 몰바씨1발아}
+- {excl: '', incl: 씨 발롬}
 - {excl: '', incl: 전두환땅크부르릉}
 - {excl: '', incl: 광주는폭동_땅크}
 - {excl: '', incl: 달려라전땅끄}
+- {excl: '', incl: 좃 대가리}
 - {excl: '', incl: 섹스892}
+- {excl: '', incl: 병신 세리}
 - {excl: '', incl: 계엄령_노운지}
 - {excl: '', incl: Chun_TTANK}
+- {excl: '', incl: 느금마리자몽}
 - {excl: '', incl: 개가튼년}
-- {excl: '', incl: 광주대학살}
 - {excl: '', incl: 전두환의전차놀이}
 - {excl: '', incl: 다카키마사오v}
+- {excl: '', incl: 18새 끼}
 - {excl: '', incl: 전차와홍어진압}
+- {excl: '', incl: 29만원전통령}
 - {excl: '', incl: 히틀러총독}
 - {excl: '', incl: 땅크보이전두환}
 - {excl: '', incl: 광주를제압한다}
+- {excl: '', incl: 크 리 토 리 스}
 - {excl: '', incl: 박근혜콘돔}
 - {excl: '', incl: 블리츠전땅크랭크}
 - {excl: '', incl: 텡크보이전두환}
@@ -1516,26 +1789,28 @@ BadWords:
 - {excl: '', incl: 김대중선생님}
 - {excl: '', incl: 계엄장군전두환}
 - {excl: '', incl: 나능냐전땅크}
-- {excl: '', incl: 땅크두환씨}
+- {excl: '', incl: x미하일비트만x}
 - {excl: '', incl: 내가전땅크다}
 - {excl: '', incl: 전탱크부릉}
 - {excl: '', incl: 0전땅크0}
+- {excl: '', incl: 허벌 자 지}
 - {excl: '', incl: 광황전두환}
 - {excl: '', incl: 후라덜}
 - {excl: '', incl: 1Hitler}
 - {excl: '', incl: 전두환각선미}
 - {excl: '', incl: 허벌}
 - {excl: '', incl: 전두환}
-- {excl: '', incl: 비트만미하일}
+- {excl: '', incl: 강간자범인빌리}
 - {excl: '', incl: 봉하마을노운지}
 - {excl: '', incl: 땅끄오브계엄}
 - {excl: '', incl: 노무현식정치}
+- {excl: '', incl: sex 하자}
 - {excl: '', incl: 박근혜갓카만세}
 - {excl: '', incl: NAZISHERO}
 - {excl: '', incl: 보지빨아}
 - {excl: '', incl: 땅크쾌남전두환}
+- {excl: '', incl: 후라 덜넘}
 - {excl: '', incl: 김대중대통령}
-- {excl: '', incl: 보1지털}
 - {excl: '', incl: 전장군의패기}
 - {excl: '', incl: 노하신전땅크}
 - {excl: '', incl: 좌빨잡이존두환}
@@ -1548,7 +1823,6 @@ BadWords:
 - {excl: '', incl: 보지}
 - {excl: '', incl: 황홀한전땅끄}
 - {excl: '', incl: 죽이자전두환}
-- {excl: '', incl: 니좃}
 - {excl: '', incl: Spirit나치}
 - {excl: '', incl: 홍어학살전땅크}
 - {excl: '', incl: 해물파전두환}
@@ -1558,26 +1832,25 @@ BadWords:
 - {excl: '', incl: 김대중붕알}
 - {excl: '', incl: 대머리전땅크}
 - {excl: '', incl: 두환이네폭동이야}
+- {excl: '', incl: '개후라 '}
 - {excl: '', incl: 쌔끼}
 - {excl: '', incl: 안녕나이명박}
 - {excl: '', incl: _전_땅크_}
 - {excl: '', incl: 오빤강남스탈린}
 - {excl: '', incl: 십선비는땅크로}
 - {excl: '', incl: 마약빠는흑인}
-- {excl: '', incl: 니어미}
 - {excl: '', incl: 니애미}
 - {excl: '', incl: Kwangju_riots}
-- {excl: '', incl: Bear}
+- {excl: '', incl: 좆 새 끼}
 - {excl: '', incl: 폭동계엄}
 - {excl: '', incl: NoUnjiOut}
 - {excl: '', incl: 북괴멀티광주}
 - {excl: '', incl: 전땅크브룽브룽}
-- {excl: '', incl: 전땅크광주민주화}
+- {excl: '', incl: 전땅끄드리프트}
 - {excl: '', incl: 병1신}
 - {excl: '', incl: 전두환_계엄군}
 - {excl: '', incl: 텔미광주이즈폭동}
-- {excl: '', incl: 땅끄는역시전땅끄}
-- {excl: '', incl: 십세}
+- {excl: '', incl: 대중슨상님}
 - {excl: '', incl: 젖가슴}
 - {excl: '', incl: Nazi1024}
 - {excl: '', incl: 김대중국방위원장}
@@ -1586,57 +1859,73 @@ BadWords:
 - {excl: '', incl: 빨아}
 - {excl: '', incl: 이웃집전땅크}
 - {excl: '', incl: 계엄사령부사령관}
+- {excl: '', incl: 호로 자 슥}
+- {excl: '', incl: 개후 라 들 놈}
 - {excl: '', incl: 박근혜생리중}
 - {excl: '', incl: 빨어}
 - {excl: '', incl: 개자지}
 - {excl: '', incl: 느금마5}
+- {excl: '', incl: 좆같은 새 끼}
 - {excl: '', incl: 느금마7}
 - {excl: '', incl: 두환이꼬츄}
 - {excl: '', incl: 민주화하는전땅크}
 - {excl: '', incl: 불멸의전땅크}
+- {excl: '', incl: 땅크두환터짐고환}
 - {excl: '', incl: sibalser}
 - {excl: '', incl: 전장군출동하신다}
+- {excl: '', incl: 걸레 같}
 - {excl: '', incl: 부_랄_큰타이거}
 - {excl: '', incl: 섹스킹이즈커밍}
+- {excl: '', incl: '자 지 '}
 - {excl: '', incl: EBN_느금마}
 - {excl: '', incl: 박근혜7H새}
 - {excl: '', incl: 518폭도진압전}
+- {excl: '', incl: 개 후 라 들 놈}
 - {excl: '', incl: 홍어사냥땅크}
 - {excl: '', incl: 518홍어봉기}
 - {excl: '', incl: 전두환광주박살}
 - {excl: '', incl: 홍어잡는전장군}
+- {excl: '', incl: 전땅크나셧네}
 - {excl: '', incl: 전탱크충전완료}
 - {excl: '', incl: 강간집단}
 - {excl: '', incl: 좌빨}
+- {excl: '', incl: 좆 도}
 - {excl: '', incl: 쏘고보니느금마}
 - {excl: '', incl: 병닥}
 - {excl: '', incl: 박근혜}
 - {excl: '', incl: 전두환고추발사}
+- {excl: '', incl: '개가 '}
 - {excl: '', incl: 오쒸팔광주봉기}
+- {excl: '', incl: 전땅크나가신다_}
 - {excl: '', incl: 광주는폭도랑께}
 - {excl: '', incl: Joachim__Peiper}
 - {excl: '', incl: 광주는밞아야함}
 - {excl: '', incl: 느금마가부른당}
 - {excl: '', incl: 번지왕노운지}
 - {excl: '', incl: 전땅크는OP다}
+- {excl: '', incl: 페 니 스}
 - {excl: '', incl: ss저격기갑사단}
 - {excl: '', incl: 최강_이명박}
 - {excl: '', incl: GM_kr}
 - {excl: '', incl: 쟈지_패튼}
+- {excl: '', incl: 펜타킬전두환}
 - {excl: '', incl: 광주의계엄령}
 - {excl: '', incl: 이정희1호}
-- {excl: '', incl: 전장군의심판}
+- {excl: '', incl: 광주대학살}
 - {excl: '', incl: Germany_Hitler}
-- {excl: '', incl: 탱크보이두환}
+- {excl: '', incl: '씨 퐁 자 '}
+- {excl: '', incl: 미 친}
+- {excl: '', incl: 운지킹노짱}
 - {excl: '', incl: PO섹스WER}
+- {excl: '', incl: 자 지 핥 어}
 - {excl: '', incl: 홍어척결조국사수}
 - {excl: '', incl: Heil_Hitler}
 - {excl: '', incl: 홍어무장반란진압}
+- {excl: '', incl: 좋만 한 것}
 - {excl: '', incl: 대일본제국천황}
 - {excl: '', incl: 이명박친위대}
 - {excl: '', incl: 시벌}
 - {excl: '', incl: 광주로가는계엄군}
-- {excl: '', incl: 지녀}
 - {excl: '', incl: 두환장군}
 - {excl: '', incl: 지롤}
 - {excl: '', incl: BoJiTer_kk}
@@ -1650,7 +1939,7 @@ BadWords:
 - {excl: '', incl: 폭동은광주이지}
 - {excl: '', incl: 지나가는나근혜}
 - {excl: '', incl: 시발년}
-- {excl: '', incl: 광_주_폭_동}
+- {excl: '', incl: 김대중관}
 - {excl: '', incl: 광주를진압해보까}
 - {excl: '', incl: 빛고을폭동단}
 - {excl: '', incl: 쪼다새끼}
@@ -1659,17 +1948,20 @@ BadWords:
 - {excl: '', incl: 흑인전땅크}
 - {excl: '', incl: 전땅크의응딩이}
 - {excl: '', incl: 비와태희성관계}
+- {excl: '', incl: 벌창같은 년}
 - {excl: '', incl: 땅크끄는전두환}
 - {excl: '', incl: 아씨1발쏴바}
+- {excl: '', incl: '쓰바 '}
 - {excl: '', incl: ss철십자}
 - {excl: '', incl: 전땅크붕붕민주화}
-- {excl: '', incl: jajiboji}
+- {excl: '', incl: 힐링탱크전두환편}
 - {excl: '', incl: 내이름은두환}
 - {excl: '', incl: 역습의전장군}
 - {excl: '', incl: 니애1미리스}
 - {excl: '', incl: tank518riot}
 - {excl: '', incl: 노무현소환술사}
-- {excl: '', incl: 섹스킹is커밍}
+- {excl: '', incl: 개후라 들놈}
+- {excl: '', incl: 시발}
 - {excl: '', incl: 시밝}
 - {excl: '', incl: 광주폭동엔전땅크}
 - {excl: '', incl: 박찬국시바넘아}
@@ -1686,60 +1978,76 @@ BadWords:
 - {excl: '', incl: 5월18일은폭동}
 - {excl: '', incl: 게세끼}
 - {excl: '', incl: 땅크보2전두환}
-- {excl: '', incl: 느금마아넬카}
+- {excl: '', incl: Lips}
+- {excl: '', incl: 다 새 끼}
 - {excl: '', incl: 씨퐁넘}
+- {excl: '', incl: 허벌 자지}
 - {excl: '', incl: 전두환포스}
 - {excl: '', incl: Totenkopf_Panzer_Div}
 - {excl: '', incl: 광주FOK동}
+- {excl: '', incl: 보 지 핥 어}
 - {excl: '', incl: 느금마지예지}
 - {excl: '', incl: 전땅크보1지}
-- {excl: '', incl: 지뢀}
+- {excl: '', incl: 시뱔}
 - {excl: '', incl: WaffenSS}
+- {excl: '', incl: 씨퐁자 지}
 - {excl: '', incl: 전차장_전두환}
+- {excl: '', incl: 걸 레 보지}
+- {excl: '', incl: 호로 새끼}
 - {excl: '', incl: 5광폭동주18}
 - {excl: '', incl: 전두환찡_}
-- {excl: '', incl: 젼땅크}
+- {excl: '', incl: 좆 먹어}
 - {excl: '', incl: 1941제초클랜}
-- {excl: '', incl: 탱크공주박근혜}
+- {excl: '', incl: 보지 빨아}
+- {excl: '', incl: 좆만한놈}
 - {excl: '', incl: GuanGJUResistance}
 - {excl: '', incl: 레전두환}
-- {excl: '', incl: 계엄킹전탱크}
+- {excl: '', incl: 신잦이}
 - {excl: '', incl: 박근혜각하}
 - {excl: '', incl: 쎅스}
 - {excl: '', incl: 전땅크와광주폭동}
 - {excl: '', incl: 전두환표땅크}
-- {excl: '', incl: im_Hitler}
+- {excl: '', incl: 폭도학살자전두환}
+- {excl: '', incl: 음 경}
+- {excl: '', incl: 십 녀}
 - {excl: '', incl: 무현이땅크}
 - {excl: '', incl: 강간수월해}
+- {excl: '', incl: 보지빨 아}
 - {excl: '', incl: 삼청교대전두환}
 - {excl: '', incl: 땅크영웅전두환}
+- {excl: '', incl: 좆같 은놈}
 - {excl: '', incl: 존나아}
 - {excl: '', incl: 넣고보니전두환}
 - {excl: '', incl: 독일깍두기히틀러}
 - {excl: '', incl: 가라전땅크}
 - {excl: '', incl: 전땅크음유시인}
-- {excl: '', incl: 7시폭동진압기}
+- {excl: '', incl: KJ폭동}
 - {excl: '', incl: 전땅크느님}
 - {excl: '', incl: 전두환입니다}
 - {excl: '', incl: 전장군의땅크형님}
 - {excl: '', incl: 무현_뜻밖의운지}
 - {excl: '', incl: 위대한전두환대장}
+- {excl: '', incl: 좆 털}
 - {excl: '', incl: 광주폭동사태}
-- {excl: '', incl: 쓰벌}
 - {excl: '', incl: 전땅크1호기}
 - {excl: '', incl: 두환이땅크T}
 - {excl: '', incl: 3제국총통히틀러}
 - {excl: '', incl: 전두환부릉부릉}
+- {excl: '', incl: 좆같은 놈}
 - {excl: '', incl: 개병신새끼}
 - {excl: '', incl: 광주는폭똥이야}
 - {excl: '', incl: 간년}
 - {excl: '', incl: 라새끼}
-- {excl: '', incl: 홍어잡는충청도}
+- {excl: '', incl: 폭도진압약전두환}
+- {excl: '', incl: 좆 년}
+- {excl: '', incl: 보지 벌리자}
 - {excl: '', incl: 광주진압작전}
 - {excl: '', incl: 김머중518호}
+- {excl: '', incl: 개후 라들놈}
 - {excl: '', incl: 히틀}
 - {excl: '', incl: 허벌보지}
 - {excl: '', incl: 영준말자1지}
+- {excl: '', incl: 자기핥 아}
 - {excl: '', incl: 게새}
 - {excl: '', incl: 자압것}
 - {excl: '', incl: 음섹스}
@@ -1748,16 +2056,21 @@ BadWords:
 - {excl: '', incl: 전장군부릉부릉}
 - {excl: '', incl: 히틀러가카}
 - {excl: '', incl: 광주는대중이야}
+- {excl: '', incl: 광_주_폭_동}
+- {excl: '', incl: 쌍쌍보 지}
 - {excl: '', incl: SS_Stormtroopers}
-- {excl: '', incl: 방망이든광주시민}
+- {excl: '', incl: 전장군님이로그인}
 - {excl: '', incl: 민주화시켜버린다}
 - {excl: '', incl: 느금마이쮸}
 - {excl: '', incl: 에미}
+- {excl: '(?-i)D(?i)ick', incl: ^dick$}
+- {excl: '', incl: 자기 핥아}
 - {excl: '', incl: 7시멀티광주}
 - {excl: '', incl: 일베는네오나찌다}
 - {excl: '', incl: 버지벌려}
 - {excl: '', incl: 전두환93호}
 - {excl: '', incl: 느금마밀탱크}
+- {excl: '', incl: Dog Fucker}
 - {excl: '', incl: 전땅끄부대열중셔}
 - {excl: '', incl: 전장군의7시함락}
 - {excl: '', incl: 뻐킹뻐킹}
@@ -1767,14 +2080,15 @@ BadWords:
 - {excl: '', incl: 전땅끄앤드물태우}
 - {excl: '', incl: 전두환의전차}
 - {excl: '', incl: 전탱크가카}
+- {excl: '', incl: 백 보지}
+- {excl: '', incl: 땅크보이두환이}
 - {excl: '', incl: 버지구멍}
 - {excl: '', incl: 히틀러전차}
 - {excl: '', incl: 7시는폭동이야}
-- {excl: '', incl: JarJi}
+- {excl: '', incl: 니좃}
 - {excl: '', incl: 폭도진압봉}
-- {excl: '', incl: 니좇}
+- {excl: '', incl: Hil히틀러}
 - {excl: '', incl: 킹보지}
-- {excl: '', incl: 섹스왕}
 - {excl: '', incl: 전땅끄계엄사령관}
 - {excl: '', incl: 전두환사촌}
 - {excl: '', incl: 썅놈새끼}
@@ -1783,21 +2097,23 @@ BadWords:
 - {excl: '', incl: horsepenis}
 - {excl: '', incl: 광주는포크동}
 - {excl: '', incl: 노무현땅크}
-- {excl: '', incl: 빙신}
+- {excl: '', incl: 탱크짱짱맨전두환}
 - {excl: '', incl: 느금마에용}
 - {excl: '', incl: 민주땅크}
 - {excl: '', incl: 빙신쉐이}
-- {excl: '', incl: 가슴조물락}
+- {excl: '', incl: 보 지 핥어}
 - {excl: '', incl: 히틀러의_전차}
 - {excl: '', incl: 이명박박}
-- {excl: '', incl: 파괴전차전땅크}
+- {excl: '', incl: 전두환포}
 - {excl: '', incl: 이명박대통령}
 - {excl: '', incl: NeoNazism}
-- {excl: '', incl: 씨뱔}
+- {excl: '', incl: f u c k}
+- {excl: '', incl: 유우깝}
 - {excl: '', incl: 새침떼기전두환}
-- {excl: '', incl: 전쟁과섹스}
+- {excl: '', incl: 씨퐁보지}
 - {excl: '', incl: 조또}
-- {excl: '', incl: 5월18일폭동}
+- {excl: '', incl: 애미}
+- {excl: '', incl: 김대중핵볕정책}
 - {excl: '', incl: 포반장전두환}
 - {excl: '', incl: 진압전차518}
 - {excl: '', incl: 개새뀌}
@@ -1805,34 +2121,43 @@ BadWords:
 - {excl: '', incl: 씹알}
 - {excl: '', incl: 운전병전두환}
 - {excl: '', incl: 전장군님나가신다}
-- {excl: '', incl: 김대중_전대통령}
+- {excl: '', incl: 광주폭동부릉}
+- {excl: '', incl: 개 씨발넘}
 - {excl: '', incl: 헐렁보지}
 - {excl: '', incl: 토텐코프사단}
 - {excl: '', incl: 하켄크로이츠크}
 - {excl: '', incl: 계엄전차오일팔}
 - {excl: '', incl: 두환이의땅크}
-- {excl: '', incl: AdolfHitler_}
+- {excl: '', incl: 광주폭동의날}
 - {excl: '', incl: 박근혜국방위원장}
 - {excl: '', incl: 이명박땅크부대}
-- {excl: '', incl: 땅크오브전땅크}
+- {excl: '', incl: 7시폭도계엄군}
 - {excl: '', incl: 전두환장군_}
-- {excl: '', incl: 광주는푸옥동}
+- {excl: '', incl: Nazi_땅크}
 - {excl: '', incl: 전장군}
 - {excl: '', incl: 두환이장난감}
 - {excl: '', incl: 노짱의운지엔딩}
 - {excl: '', incl: 자연인노무현}
-- {excl: '', incl: Rudolf_Hitler}
+- {excl: '', incl: 블 넘}
+- {excl: '', incl: 파1워섹1스}
+- {excl: '', incl: '쪼다 '}
 - {excl: '', incl: 전탱크돌진}
 - {excl: '', incl: 전땅끄의땅끄}
 - {excl: '', incl: v전땅크도령v}
 - {excl: '', incl: 씹탱굴이}
-- {excl: '', incl: 허벌년}
+- {excl: '', incl: Fucking Asshole}
+- {excl: '', incl: NaziErichVonManstein}
 - {excl: '', incl: 전장군의탱크}
 - {excl: '', incl: 운지하는노무현}
+- {excl: '', incl: 쪼 다 새 끼}
 - {excl: '', incl: 니1미씨1발}
+- {excl: '', incl: 자 지 털}
 - {excl: '', incl: 내머리속의노시계}
 - {excl: '', incl: 후라덜넘}
-- {excl: '', incl: Nazii}
+- {excl: '', incl: 자 지 빨아}
+- {excl: '', incl: 헐 렁 보지}
+- {excl: '', incl: 강간스타일}
+- {excl: '', incl: 썅 년}
 - {excl: '', incl: 독립국가라도}
 - {excl: '', incl: 516전따랑끄}
 - {excl: '', incl: 헤일히틀러}
@@ -1842,19 +2167,25 @@ BadWords:
 - {excl: '', incl: 붕신}
 - {excl: '', incl: Nazis}
 - {excl: '', incl: 땅끄뽀이전두환}
+- {excl: '', incl: 지 랄}
 - {excl: '', incl: 시_발_}
 - {excl: '', incl: 전두환_bot}
 - {excl: '', incl: 전땅크베이비}
 - {excl: '', incl: 븅신새끼}
+- {excl: '', incl: 시 팔 놈}
 - {excl: '', incl: 전두환과함께}
-- {excl: '', incl: 성서읽는흑인노예}
+- {excl: '', incl: M전땅크B}
 - {excl: '', incl: 호갱왕전두환}
 - {excl: '', incl: 슨상홍어}
 - {excl: '', incl: 전땅크동무}
+- {excl: '', incl: 미 친년}
+- {excl: '', incl: 씨 퐁 보 지}
 - {excl: '', incl: 좌빨종북척결}
-- {excl: '', incl: 십새}
+- {excl: '', incl: Nazi판저IV}
+- {excl: '', incl: 지 럴}
 - {excl: '', incl: Nazism}
-- {excl: '', incl: 독재왕전두환}
+- {excl: '', incl: 광주518폭똥}
+- {excl: '', incl: 쓰 파}
 - {excl: '', incl: _전장군_}
 - {excl: '', incl: 내남근}
 - {excl: '', incl: 유우까압}
@@ -1863,46 +2194,55 @@ BadWords:
 - {excl: '', incl: 광주로진군}
 - {excl: '', incl: Bitch}
 - {excl: '', incl: 미스터전두환}
-- {excl: '', incl: 핥아}
+- {excl: '', incl: 시빡}
 - {excl: '', incl: 느금마에시앙}
 - {excl: '', incl: 전장군계엄령}
-- {excl: '', incl: 씨밬}
+- {excl: '', incl: 가슴 핥어}
+- {excl: '', incl: 썅놈}
 - {excl: '', incl: 올바르마전두환}
+- {excl: '', incl: 보 지 털}
 - {excl: '', incl: 두환찡은다알아}
 - {excl: '', incl: 홍어라도맨}
+- {excl: '', incl: 보 짓물}
+- {excl: '', incl: 지옥에있는전두환}
 - {excl: '', incl: 라도진압땅크}
 - {excl: '', incl: WOFT_느금마}
-- {excl: '', incl: 전땅크달린다비켜}
+- {excl: '', incl: 내가히틀러}
 - {excl: '', incl: 2_SS_Das_Reich}
-- {excl: '', incl: af_hitler}
+- {excl: '', incl: 걸레 보지}
+- {excl: '', incl: 개같 은 년}
+- {excl: '', incl: 띠 블넘}
+- {excl: '', incl: 광주폭동빨깽이1}
 - {excl: '', incl: 뻐큐}
 - {excl: '', incl: 오십팔폭동}
 - {excl: '', incl: 새끼}
+- {excl: '', incl: 빠 네}
 - {excl: '', incl: 전두환이타있어요}
 - {excl: '', incl: 박근혜양}
-- {excl: '', incl: Michael_Wittmann_Jr}
-- {excl: '', incl: 두환이형부릉부릉}
+- {excl: '', incl: 518폭동out}
+- {excl: '', incl: 히틀러처남}
 - {excl: '', incl: 아동성도착증}
 - {excl: '', incl: 전두환빵야빵야}
-- {excl: '', incl: Lips}
+- {excl: '', incl: 씨 뱅 가 리}
 - {excl: '', incl: 좆만한새끼}
-- {excl: '', incl: 월남패망종북척결}
+- {excl: '', incl: 라도진압땅끄}
 - {excl: '', incl: 1SS기갑사단}
 - {excl: '', incl: 홍어삼합회}
 - {excl: '', incl: 계엄군518}
 - {excl: '', incl: SA돌격대}
 - {excl: '', incl: 전장군_부르릉}
-- {excl: '', incl: GwangJu_is_riot}
+- {excl: '', incl: _ss롬멜_}
 - {excl: '', incl: 홍어박멸계엄군}
 - {excl: '', incl: 기갑신장전두환}
-- {excl: '', incl: 미하일비트만소령}
+- {excl: '', incl: 제너럴전땅크}
 - {excl: '', incl: 전두환리더싶}
 - {excl: '', incl: 김대중교통}
 - {excl: '', incl: 시벌럼아}
+- {excl: '', incl: 쓰 벌}
 - {excl: '', incl: 탱크영웅전두환}
-- {excl: '', incl: 땅크땅크섹스}
+- {excl: '', incl: 가슴조물락}
 - {excl: '', incl: 씨봘}
-- {excl: '', incl: 씨발}
+- {excl: '', incl: YM_Jaji}
 - {excl: '', incl: 518땅크폭동}
 - {excl: '', incl: Chun땅크}
 - {excl: '', incl: 서민대통령노무현}
@@ -1911,6 +2251,7 @@ BadWords:
 - {excl: '', incl: 계엄사령부전두환}
 - {excl: '', incl: 민주땅크전두환}
 - {excl: '', incl: AdolfHitler}
+- {excl: '', incl: 개후라 새끼}
 - {excl: '', incl: 초보운전전두환}
 - {excl: '', incl: 폭도해결사전땅크}
 - {excl: '', incl: 전두환_jpg}
@@ -1922,93 +2263,115 @@ BadWords:
 - {excl: '', incl: 느금마가부른다_}
 - {excl: '', incl: 섹스킹}
 - {excl: '', incl: 박근혜팬클럽}
+- {excl: '', incl: 좆같 은 새 끼}
 - {excl: '', incl: 보안사전땅크}
+- {excl: '', incl: 지 뢀}
 - {excl: '', incl: 민주화킹전두환}
 - {excl: '', incl: 박근혜당선인}
 - {excl: '', incl: 갱스터오브광주}
 - {excl: '', incl: GSPOT공략왕}
-- {excl: '', incl: 광주분쇄기}
+- {excl: '', incl: 씨 발년}
+- {excl: '', incl: 광주척살지역대}
 - {excl: '', incl: 빵야빵야전두환}
+- {excl: '', incl: 크리토 리스}
 - {excl: '', incl: 광주좌표앙망}
 - {excl: '', incl: 슈퍼폭군박정희}
 - {excl: '', incl: 무고한전땅크}
-- {excl: '', incl: 짱꼴라}
+- {excl: '', incl: 십세}
 - {excl: '', incl: 승리의전두환}
-- {excl: '', incl: 좌빨땅크}
+- {excl: '', incl: 광주폭동진압땅끄}
 - {excl: '', incl: 쪽바리}
 - {excl: '', incl: 썅년}
 - {excl: '', incl: 녹색땅크전두환}
 - {excl: '', incl: 광주는포도야포도}
 - {excl: '', incl: 씹새끼}
 - {excl: '', incl: 벌창같은년}
+- {excl: '', incl: 미 친눔}
 - {excl: '', incl: 계엄군부사령관}
-- {excl: '', incl: 광주폭동땅크랑께}
+- {excl: '', incl: 전땅크행님}
 - {excl: '', incl: 잦이카포}
 - {excl: '', incl: 170mm잦이포}
 - {excl: '', incl: 정액변기}
+- {excl: '', incl: 호 로 새끼}
 - {excl: '', incl: 전두환등장}
+- {excl: '', incl: 개걸 레}
 - {excl: '', incl: 일부심노운지}
-- {excl: '', incl: 두환땅크부릉}
+- {excl: '', incl: 은 년}
+- {excl: '', incl: 젼땅크}
 - {excl: '', incl: 빛고을은폭동이노}
-- {excl: '', incl: 전장군의폭동진압}
+- {excl: '', incl: 느금마아넬카}
 - {excl: '', incl: 종북홍어땅크}
 - {excl: '', incl: 새키}
 - {excl: '', incl: 홍어사냥꾼전장군}
+- {excl: '', incl: 씹 지 랄}
 - {excl: '', incl: 전땅크랑꼐}
 - {excl: '', incl: 전땅크자1지}
-- {excl: '', incl: 폭도진압약전두환}
+- {excl: '', incl: 홍어잡는충청도}
+- {excl: '', incl: 개 후 라년}
+- {excl: '', incl: 미 친넘}
 - {excl: '', incl: 전땅크1980}
+- {excl: '', incl: 보지 벌리}
 - {excl: '', incl: GM박근혜}
 - {excl: '', incl: 큰보지}
 - {excl: '', incl: 518폭두환운동}
 - {excl: '', incl: 북괴멀티라도}
 - {excl: '', incl: 리명박근혜}
 - {excl: '', incl: UNvsNAZI}
-- {excl: '', incl: 탱크짱짱맨전두환}
+- {excl: '', incl: 빙신}
 - {excl: '', incl: 전장군축지법}
 - {excl: '', incl: 홍어계엄군}
-- {excl: '', incl: 유우깝}
+- {excl: '', incl: 씨뱔}
 - {excl: '', incl: 좋만}
 - {excl: '', incl: OoOo}
-- {excl: '', incl: 육군_전두환}
-- {excl: '', incl: 땅크전사두환이}
+- {excl: '', incl: 전장군의땅끄}
+- {excl: '', incl: 유두}
 - {excl: '', incl: 두환_땅크보이}
-- {excl: '', incl: 7시폭도계엄군}
+- {excl: '', incl: 땅크오브전땅크}
 - {excl: '', incl: 귀염둥이두환이}
+- {excl: '', incl: 보 지}
 - {excl: '', incl: 전__땅__크}
-- {excl: '', incl: 중력왕노무현}
+- {excl: '', incl: '개후 라 '}
+- {excl: '', incl: 전두환각하땅크}
 - {excl: '', incl: 노운지의절대시계}
-- {excl: '', incl: 로지보리}
 - {excl: '', incl: 전땅크부르르부릉}
-- {excl: '', incl: Nazi판저IV}
+- {excl: '', incl: 십새}
 - {excl: '', incl: 홍어전챠}
-- {excl: '', incl: 전땅크나가신다_}
+- {excl: '', incl: 씨밬}
 - {excl: '', incl: 광주폭동민주화}
 - {excl: '', incl: Alois_Hitler}
 - {excl: '', incl: 걸레년}
-- {excl: '', incl: YM_Jaji}
+- {excl: '', incl: 씨발}
 - {excl: '', incl: 시탱}
 - {excl: '', incl: Tank두환}
+- {excl: '', incl: 지뢀}
 - {excl: '', incl: 시입세에}
-- {excl: '', incl: 무적_히틀러}
+- {excl: '', incl: SSwaffen}
+- {excl: '', incl: 쑤셔}
+- {excl: '', incl: 광주는그폭동2야}
 - {excl: '', incl: boji}
 - {excl: '', incl: 전두환팬클럽}
 - {excl: '', incl: 운지하는전땅크}
+- {excl: '', incl: 벌창 같 은년}
 - {excl: '', incl: 부룽전두환}
 - {excl: '', incl: 빠가씹새}
-- {excl: '', incl: 전장군의땅끄}
+- {excl: '', incl: 육군_전두환}
 - {excl: '', incl: 가슴빨어}
 - {excl: '', incl: 광주파견계엄군}
-- {excl: '', incl: 전두환각하땅크}
+- {excl: '', incl: 중력왕노무현}
+- {excl: '', incl: 벌 자지}
 - {excl: '', incl: 노태우무현}
-- {excl: '', incl: 좆만한년}
+- {excl: '', incl: 개 부 랄}
+- {excl: '', incl: 좃 깟 네}
 - {excl: '', incl: 가슴쪼물딱}
 - {excl: '', incl: 영웅박정희}
 - {excl: '', incl: 대중두환홍어퓨전}
 - {excl: '', incl: 미하일비트만77}
 - {excl: '', incl: 걸레같은}
 - {excl: '', incl: 광주와홍어무침}
+- {excl: '', incl: 호루 자 슥}
+- {excl: '', incl: 씨 뱅 가리}
 - {excl: '', incl: 우주류나치}
+- {excl: '', incl: 씹탱 이}
 - {excl: '', incl: 탱크보이전두환}
 - {excl: '', incl: 쌔엑스}
 - {excl: '', incl: 전땅크계엄령뿡}
@@ -2017,6 +2380,7 @@ BadWords:
 - {excl: '', incl: 전두환대통령이다}
 - {excl: '', incl: 두환이의폭동진압}
 - {excl: '', incl: 전차장I전두환}
+- {excl: '', incl: 쪼다 새끼}
 - {excl: '', incl: 강간폭행죄}
 - {excl: '', incl: 노시개운지}
 - {excl: '', incl: 호냥}
@@ -2024,17 +2388,20 @@ BadWords:
 - {excl: '', incl: JeonTank518}
 - {excl: '', incl: 계엄왕_전두환}
 - {excl: '', incl: 홍어왕대중이}
-- {excl: '', incl: 씨1발뭐하냐}
+- {excl: '', incl: 빠 구리}
 - {excl: '', incl: 쓰바새끼}
 - {excl: '', incl: 씨벌}
+- {excl: '', incl: 띠발 뇬}
 - {excl: '', incl: 씹덕후}
 - {excl: '', incl: 전두환땅크왕}
+- {excl: '', incl: 광주는폭도야}
 - {excl: '', incl: 섹스1킹이즈커밍}
 - {excl: '', incl: ADOLF__HITLER}
 - {excl: '', incl: 518광주항쟁}
 - {excl: '', incl: 전장군님땅끄}
 - {excl: '', incl: 전장군님부릉부릉}
 - {excl: '', incl: 전두환과12땅크}
+- {excl: '', incl: 시 팔년}
 - {excl: '', incl: 탱크위에탄전두환}
 - {excl: '', incl: 느금마느금빠}
 - {excl: '', incl: 도요타다이쥬센세}
@@ -2043,24 +2410,29 @@ BadWords:
 - {excl: '', incl: 계엄군속의김대중}
 - {excl: '', incl: 강간범}
 - {excl: '', incl: 노운지땅크부릉}
+- {excl: '', incl: 니 애미}
 - {excl: '', incl: 대장전두환}
-- {excl: '', incl: 이명박격포}
-- {excl: '', incl: 색스머신}
+- {excl: '', incl: 로지보리}
+- {excl: '', incl: 허벌년}
 - {excl: '', incl: 섹스킹이스커밍}
+- {excl: '', incl: 또 라 이}
 - {excl: '', incl: 부릉부릉광주진압}
 - {excl: '', incl: 니쟈지개쟈지}
 - {excl: '', incl: Nazi충}
+- {excl: '', incl: 허벌 보 지}
 - {excl: '', incl: 노무현운지땅크}
 - {excl: '', incl: 전두환뽈레뽈레}
 - {excl: '', incl: 붕붕이섹스}
 - {excl: '', incl: 전두환나간다부릉}
 - {excl: '', incl: 땅끄왕전두환}
-- {excl: '', incl: 색스온더승욱이집}
+- {excl: '', incl: 전땅크광주민주화}
 - {excl: '', incl: 내가바로히틀러다}
 - {excl: '', incl: 아아가리}
 - {excl: '', incl: 돌격전탱크}
 - {excl: '', incl: 간다잦이포}
 - {excl: '', incl: 패튼_두환}
+- {excl: '', incl: 위대하신전두환}
+- {excl: '', incl: 개 씨 발}
 - {excl: '', incl: 전장군땅크보이}
 - {excl: '', incl: 노무현아}
 - {excl: '', incl: 지옥수문장노무현}
@@ -2069,25 +2441,29 @@ BadWords:
 - {excl: '', incl: 니엄마흐긴노예}
 - {excl: '', incl: 아돌프히틀러12}
 - {excl: '', incl: 시팔}
-- {excl: '', incl: 광주는폭동헤}
+- {excl: '', incl: 색스머신}
 - {excl: '', incl: 김대중개객기해봐}
 - {excl: '', incl: 7time폭동}
 - {excl: '', incl: 시발새끼}
 - {excl: '', incl: 전두으아닝}
 - {excl: '', incl: 섹스123123}
 - {excl: '', incl: 전장군의_자가용}
-- {excl: '', incl: 전장군애마1호}
+- {excl: '', incl: 땅끄는역시전땅끄}
+- {excl: '', incl: '개후 '}
+- {excl: '', incl: 호로자 식}
 - {excl: '', incl: 이중대_김신병}
 - {excl: '', incl: 섹쓰}
 - {excl: '', incl: 시방쉑희}
 - {excl: '', incl: 시팍}
 - {excl: '', incl: 미하일_비트만}
+- {excl: '', incl: 좆만한 새끼}
 - {excl: '', incl: Hitler땅크}
 - {excl: '', incl: xk2전땅크}
 - {excl: '', incl: 홍어진압}
 - {excl: '', incl: 아기천사두환이}
 - {excl: '', incl: 잦이드링크}
 - {excl: '', incl: 전탱크랑께}
+- {excl: '', incl: 라 들 놈}
 - {excl: '', incl: 지럴}
 - {excl: '', incl: 전장군만세}
 - {excl: '', incl: 전장군각하}
@@ -2098,13 +2474,17 @@ BadWords:
 - {excl: '', incl: 전땅끄짱짱맨}
 - {excl: '', incl: 기갑의달인전두환}
 - {excl: '', incl: 전두환땅크땅크}
-- {excl: '', incl: T2MichaelWittmannC}
-- {excl: '', incl: 전장군님탱크}
+- {excl: '', incl: 씨발새끼}
+- {excl: '', incl: 폭동은광주}
 - {excl: '', incl: 전장군의심복}
+- {excl: '', incl: 좃 또}
 - {excl: '', incl: 전땅크의기갑부대}
 - {excl: '', incl: 전장군님여깁니다}
+- {excl: '', incl: Sausage Jockey}
 - {excl: '', incl: 대화동히틀러}
 - {excl: '', incl: 짱히들러}
+- {excl: '', incl: 개 후 라 새 끼}
+- {excl: '', incl: 개같은 년}
 - {excl: '', incl: 전두환전대통령}
 - {excl: '', incl: 장군님의땅끄}
 - {excl: '', incl: 김대중전두환}
@@ -2115,69 +2495,87 @@ BadWords:
 - {excl: '', incl: 땅크보이전장군}
 - {excl: '', incl: 광주땅끄폭동}
 - {excl: '', incl: 탱크보이전탱크}
-- {excl: '', incl: 발령권자전장군}
-- {excl: '', incl: 탱크오브느금마}
+- {excl: '', incl: 호로새}
+- {excl: '', incl: 땅땅치킨전땅크}
 - {excl: '', incl: 전땅크의위엄}
 - {excl: '', incl: 친위대ss}
 - {excl: '', incl: 월드오빠두환}
-- {excl: '', incl: 땅크보이두환이}
+- {excl: '', incl: 씨_발}
+- {excl: '', incl: 쌔 끼}
+- {excl: '', incl: Fuck Head}
 - {excl: '', incl: 전땅크열중쉬어}
 - {excl: '', incl: 핵고자}
+- {excl: '', incl: 좆 밥}
 - {excl: '', incl: 버지뜨더}
+- {excl: '', incl: 보지핥 어}
 - {excl: '', incl: 전땅크2세}
 - {excl: '', incl: 전두환탱끄}
 - {excl: '', incl: 섹스킹전두환}
 - {excl: '', incl: 두환이긔여어}
-- {excl: '', incl: 광주는_폭동이노}
+- {excl: '', incl: 폭동진압광주}
 - {excl: '', incl: 전땡크전탱크}
 - {excl: '', incl: 전장군님납신다}
 - {excl: '', incl: 홍어사냥꾼땅크}
+- {excl: '', incl: 니 애 미}
 - {excl: '', incl: 홍어삭힌광주여}
 - {excl: '', incl: jeon두환}
 - {excl: '', incl: 호냥년}
-- {excl: '', incl: Heinrich_Muller}
-- {excl: '', incl: 광주는그폭동2야}
+- {excl: '', incl: TANK_전두환}
+- {excl: '', incl: 좆 새끼}
+- {excl: '', incl: 광주는음총기를}
+- {excl: '', incl: 성교 하자}
 - {excl: '', incl: 탱크왕전두환}
 - {excl: '', incl: 전땅크물태우}
-- {excl: '', incl: 콜오브전두환}
+- {excl: '', incl: 전두환부활}
 - {excl: '', incl: 백보지}
 - {excl: '', incl: 문재인운지}
 - {excl: '', incl: 씹섀끼}
 - {excl: '', incl: 섹스왕퍼킹}
-- {excl: '', incl: 김대중핵볕정책}
+- {excl: '', incl: 전두환1호}
+- {excl: '', incl: 빠 구 리}
 - {excl: '', incl: 김대중다이스키}
 - {excl: '', incl: 이명박대총통}
-- {excl: '', incl: 홍어밀러광주로}
+- {excl: '', incl: 홍어슨상님}
 - {excl: '', incl: 노란봉하운지땅크}
-- {excl: '', incl: 버지물마셔}
+- {excl: '', incl: 색히}
+- {excl: '', incl: 미 티 넘}
 - {excl: '', incl: NaziRommel}
 - {excl: '', incl: 좇까}
 - {excl: '', incl: 조까고있네}
 - {excl: '', incl: 씨1발럼들아}
 - {excl: '', incl: 광주는하나으폭동}
+- {excl: '', incl: 보 지물}
 - {excl: '', incl: SS_Germany}
 - {excl: '', incl: 전땅크릉}
 - {excl: '', incl: 전땅크의패기}
-- {excl: 'klon', incl: Dike}
+- {excl: klon, incl: Dike}
 - {excl: '', incl: 정액발싸}
 - {excl: '', incl: 전두환대통령}
 - {excl: '', incl: 과광주는폭동이야}
 - {excl: '', incl: 일베충척살단}
-- {excl: '', incl: 전땅크M_M}
+- {excl: '', incl: 대구의전두환}
+- {excl: '', incl: 호 냥 년}
+- {excl: '', incl: 쓰바 새 끼}
 - {excl: '', incl: 광주폭동24시}
 - {excl: '', incl: BJ전두환}
 - {excl: '', incl: 부엉이운지노무현}
+- {excl: '', incl: 좋만한 것}
 - {excl: '', incl: 전땅크의퍼싱}
-- {excl: '', incl: 자1위한번해보자}
-- {excl: '', incl: 자연인운지노무현}
+- {excl: '', incl: 자지 빨 아}
+- {excl: '', incl: Rudolf_Hitler}
+- {excl: '', incl: 느금마호승이}
+- {excl: '', incl: 두환이의뉴땅크}
 - {excl: '', incl: 계엄땅크전땅크}
 - {excl: '', incl: 광주폭도진압탱크}
 - {excl: '', incl: Jeon_Doohwan}
+- {excl: '', incl: '허벌 '}
 - {excl: '', incl: 가슴쪼물락}
 - {excl: '', incl: 두환of땅크}
-- {excl: '', incl: 광주진압용땅크}
+- {excl: '', incl: 섹스왕이준형}
 - {excl: '', incl: 전두환계엄군부대}
-- {excl: '', incl: 전두환의계엄령}
+- {excl: '', incl: 개후 라 들놈}
+- {excl: '', incl: '호로 '}
+- {excl: '', incl: 지녀}
 - {excl: '', incl: 땅크보이젼땅크}
 - {excl: '', incl: Waffen_SS}
 - {excl: '', incl: 독재자박근혜}
@@ -2185,12 +2583,17 @@ BadWords:
 - {excl: '', incl: AdolfHitler93}
 - {excl: '', incl: 광주폭동_518}
 - {excl: '', incl: 전땅크홍어파티}
+- {excl: '', incl: 씹 새끼}
 - {excl: '', incl: hi_hitler}
 - {excl: '', incl: 느금마보노보노}
+- {excl: '', incl: 자지 빨어}
+- {excl: '', incl: 무적_히틀러}
 - {excl: '', incl: 전땅크뽀이}
 - {excl: '', incl: 대중무현아웃}
 - {excl: '', incl: 히틀러손자}
-- {excl: '', incl: 두환이형보고있지}
+- {excl: '', incl: 계엄파워전두환}
+- {excl: '', incl: 좆 물}
+- {excl: '', incl: SS_친위대}
 - {excl: '', incl: 후라}
 - {excl: '', incl: 루돌프x히틀러}
 - {excl: '', incl: 전두환사단}
@@ -2199,17 +2602,18 @@ BadWords:
 - {excl: '', incl: 섹스섹스꼬추}
 - {excl: '', incl: 광주무장봉기}
 - {excl: '', incl: 광저우폭도}
+- {excl: '', incl: 무현이와대중이}
 - {excl: '', incl: LittleHitler}
 - {excl: '', incl: 노무현운지}
 - {excl: '', incl: 전땅크나가신다아}
 - {excl: '', incl: 호로자}
 - {excl: '', incl: 걸레보지}
 - {excl: '', incl: 한년}
-- {excl: '', incl: Beaber}
+- {excl: '', incl: 덜넘}
 - {excl: '', incl: 광저우폭동}
 - {excl: '', incl: zl전두환}
-- {excl: '', incl: 폭도왕김대중}
-- {excl: '', incl: Korea_근혜}
+- {excl: '', incl: 김라도전대중}
+- {excl: '', incl: 딜탱전땅크}
 - {excl: '', incl: 노무현입니다}
 - {excl: '', incl: 씨발년}
 - {excl: '', incl: 폭동왕김홍어}
@@ -2225,24 +2629,27 @@ BadWords:
 - {excl: '', incl: 걸레같은년}
 - {excl: '', incl: 땅크땅크운지노짱}
 - {excl: '', incl: 라스트라도인}
-- {excl: '', incl: 전땅크나갓신다}
+- {excl: '', incl: 쌔끈한빡근혜}
 - {excl: '', incl: 전두환의동반자}
-- {excl: '', incl: LT_전땅크}
-- {excl: '', incl: 나치부대}
+- {excl: '', incl: 씨 발}
+- {excl: '', incl: 구국의전장군}
+- {excl: '', incl: 쌕}
+- {excl: '', incl: 호냥 년}
 - {excl: '', incl: 광주전두환}
 - {excl: '', incl: 보_짓_물_탱}
-- {excl: '', incl: 느금마리자몽}
+- {excl: '', incl: 씨발놈}
 - {excl: '', incl: 번지왕노무현}
 - {excl: '', incl: 전두환님의따앙크}
 - {excl: '', incl: SSPanzers}
+- {excl: '', incl: u c k y o u}
 - {excl: '', incl: 느금마아이유}
 - {excl: '', incl: 씨이불}
-- {excl: '', incl: 광주의폭동이야}
+- {excl: '', incl: Tank전땅크}
 - {excl: '', incl: 518은폭동이다}
 - {excl: '', incl: 핵탄두보1지}
+- {excl: '', incl: 싸 가 지}
 - {excl: '', incl: 두환땅크나가신다}
 - {excl: '', incl: 전땅크렝크}
-- {excl: '', incl: 땅크of나치}
 - {excl: '', incl: 엄창}
 - {excl: '', incl: 두환이의힘쎈땅크}
 - {excl: '', incl: 탈홍어}
@@ -2250,43 +2657,53 @@ BadWords:
 - {excl: '', incl: 섹스}
 - {excl: '', incl: 시방색희}
 - {excl: '', incl: 전두환마왕}
+- {excl: '', incl: 육 갑}
 - {excl: '', incl: 장군_전두환}
 - {excl: '', incl: 씨_발조질거임}
 - {excl: '', incl: 전두환성님땅크}
+- {excl: '', incl: 씨 퐁 자지}
 - {excl: '', incl: 광주는폭동이래요}
 - {excl: '', incl: 젓탱이}
+- {excl: '', incl: 백 보 지}
 - {excl: '', incl: 섹스왕양민우}
+- {excl: '', incl: 개 부 달}
 - {excl: '', incl: 호로}
+- {excl: '', incl: 쥐 랄}
+- {excl: '', incl: 크리토 리 스}
 - {excl: '', incl: 느금마호성}
-- {excl: '', incl: 김대중컨벤션센터}
+- {excl: '', incl: 호로 자식}
+- {excl: '', incl: 나찌짱짱탱크}
 - {excl: '', incl: 박근혜땅크}
 - {excl: '', incl: 진압왕_전두환}
 - {excl: '', incl: 색수하고싶다}
 - {excl: '', incl: 공수계엄군}
+- {excl: '', incl: 탐나는전땅크}
 - {excl: '', incl: 쌍쌍보지}
-- {excl: '', incl: 쎅수}
-- {excl: '', incl: 전두환빌드}
+- {excl: '', incl: 이명박격포}
 - {excl: '', incl: 느금마맹구}
+- {excl: '', incl: 씹 쌔끼}
 - {excl: '', incl: 전장군땅크사단}
-- {excl: '', incl: 전땅크슨상님}
+- {excl: '', incl: 운지스트}
 - {excl: '', incl: 박근혜땅끄}
+- {excl: '', incl: 클리토리 스}
 - {excl: '', incl: 외교왕이명박}
 - {excl: '', incl: 호로자식}
-- {excl: '', incl: 우직한전두환}
-- {excl: '', incl: 개잡년}
-- {excl: '', incl: 광주를함락하자}
+- {excl: '', incl: 니어미}
+- {excl: '', incl: 관악구히틀러}
 - {excl: '', incl: 호로자슥}
+- {excl: '', incl: 개가 튼 년}
 - {excl: '', incl: 섹스종우}
-- {excl: '', incl: 전땅크가신다}
+- {excl: '', incl: 개같}
 - {excl: '', incl: 개가}
-- {excl: '', incl: 박정희딸근혜}
+- {excl: '', incl: 세엑쓰}
 - {excl: '', incl: 계엄군장군전두환}
 - {excl: '', incl: 빨개이김대중}
 - {excl: '', incl: 김대중오빠}
 - {excl: '', incl: 서버관리자}
 - {excl: '', incl: 씨이뱅}
 - {excl: '', incl: 히틀러2세}
-- {excl: '', incl: 이멱박근혜카림}
+- {excl: '', incl: 땅크of나치}
+- {excl: '', incl: 개후라들 놈}
 - {excl: '', incl: 이명박탱크}
 - {excl: '', incl: 전두환각하의땅크}
 - {excl: '', incl: 머중이와무현이}
@@ -2301,11 +2718,11 @@ BadWords:
 - {excl: '', incl: 연금술사김대중}
 - {excl: '', incl: 전두환박정희운구}
 - {excl: '', incl: 전장군땅끄}
-- {excl: '', incl: 전두환1여단장}
+- {excl: '', incl: 전땅크와계엄군들}
 - {excl: '', incl: 뽀큐}
-- {excl: '', incl: MichaeI_Wittmann}
+- {excl: '', incl: 보지핥아}
 - {excl: '', incl: 질내고속연발사정}
-- {excl: '', incl: 박근혜퇴진땅크}
+- {excl: '', incl: 월드오브두환}
 - {excl: '', incl: 박근혜카림}
 - {excl: '', incl: 광주는총길들고}
 - {excl: '', incl: 느금마오카이}
@@ -2313,59 +2730,74 @@ BadWords:
 - {excl: '', incl: 국군장성전두환}
 - {excl: '', incl: 파괴왕전땅크}
 - {excl: '', incl: 전두환사랑김대중}
-- {excl: '', incl: 노운짱지}
-- {excl: '', incl: 전슨상님탱크}
-- {excl: '', incl: 홍어지옥군주슨상}
+- {excl: '', incl: 씨이벌}
+- {excl: '', incl: Bear}
+- {excl: '', incl: 기호1번박근혜}
 - {excl: '', incl: 시박쉑히}
 - {excl: '', incl: 히틀러3세}
-- {excl: '', incl: 글로벌전땅크}
+- {excl: '', incl: 벌창같 은년}
+- {excl: '', incl: 버지구녕}
 - {excl: '', incl: 전장군님만세}
 - {excl: '', incl: GermanNazi}
 - {excl: '', incl: 전장군의외침}
 - {excl: '', incl: 앵글로섹쓰}
 - {excl: '', incl: 병신들}
-- {excl: '', incl: 몰바씨1발아}
-- {excl: '', incl: 부엉이Unji}
+- {excl: '', incl: 좃 넘}
+- {excl: '', incl: 개가 튼 뇬}
+- {excl: '', incl: 518운지}
+- {excl: '', incl: 자지 구녕}
+- {excl: '', incl: 느금마똥꼬}
+- {excl: '', incl: 미 틴 것}
 - {excl: '', incl: 시게노무현}
 - {excl: '', incl: 유우우방것}
-- {excl: '', incl: 땅크두환이}
+- {excl: '', incl: 니엄마광주출신}
 - {excl: '', incl: 오일팔이김폭동씨}
-- {excl: '', incl: x미하일비트만x}
+- {excl: '', incl: 땅크두환씨}
 - {excl: '', incl: gwangjupokdong}
 - {excl: '', incl: 히틀러_}
-- {excl: '', incl: 강간자범인빌리}
+- {excl: '', incl: 비트만미하일}
 - {excl: '', incl: 히틀러S}
 - {excl: '', incl: 김대중의홍어전차}
 - {excl: '', incl: 펜타킬두환}
+- {excl: '', incl: 씹 탱 이}
 - {excl: '', incl: 머슬전장군}
 - {excl: '', incl: 섹시두환}
 - {excl: '', incl: 히틀러짜응}
+- {excl: '', incl: 클리토 리스}
 - {excl: '', incl: 귀요미전두환}
 - {excl: '', incl: 전땅크유}
+- {excl: '', incl: 크리 토 리 스}
 - {excl: '', incl: 일베충진압땅크}
+- {excl: '', incl: 전장군의심판}
+- {excl: '', incl: '호로새 '}
 - {excl: '', incl: 전두환엉덩이땅크}
 - {excl: '', incl: 전땅끄장군}
 - {excl: '', incl: 전두환부대}
 - {excl: '', incl: 전장군땅끄요}
 - {excl: '', incl: 십팔새끼}
+- {excl: '', incl: f u c k y o u}
 - {excl: '', incl: 광주폭도진압작전}
 - {excl: '', incl: 김대중봇}
 - {excl: '', incl: 좌빨택시}
-- {excl: '', incl: 위대하신전두환}
+- {excl: '', incl: 탱크보이두환}
 - {excl: '', incl: 히틀러각하의땅크}
 - {excl: '', incl: Zl젼땅크전두환}
+- {excl: '', incl: '호루 자 '}
 - {excl: '', incl: 광주전본좌}
+- {excl: '', incl: 걸 레 보 지}
 - {excl: '', incl: 퍼킹니그로}
 - {excl: '', incl: 광주는포통이야}
 - {excl: '', incl: rommelhitler}
+- {excl: '', incl: 보지빨 어}
 - {excl: '', incl: 두환땡크}
 - {excl: '', incl: 전땅크계엄부대}
-- {excl: '', incl: 페니스}
+- {excl: '', incl: 쓰벌}
 - {excl: '', incl: 518폭동이야}
+- {excl: '', incl: 십팔새 끼}
 - {excl: '', incl: 대중찡무현찡}
 - {excl: '', incl: 느금마노노니엄마}
 - {excl: '', incl: 노운지부엉부엉}
-- {excl: '', incl: 전땅크나셧네}
+- {excl: '', incl: 좆만한년}
 - {excl: '', incl: 무현과대중과땅크}
 - {excl: '', incl: 땅크야광주가자}
 - {excl: '', incl: 전두환892}
@@ -2373,12 +2805,15 @@ BadWords:
 - {excl: '', incl: 닉부이치치느금마}
 - {excl: '', incl: 캡틴_전땅크}
 - {excl: '', incl: 육사11기전두환}
-- {excl: '', incl: Nazi_땅크}
+- {excl: '', incl: S E X}
+- {excl: '', incl: 광주는푸옥동}
 - {excl: '', incl: Aunty}
 - {excl: '', incl: 시게노현}
+- {excl: '', incl: 핑크전땅크}
 - {excl: '', incl: 만능섹스머신}
 - {excl: '', incl: 전땅크와홍어들}
 - {excl: '', incl: 전장군탱크}
+- {excl: '', incl: 씹 세}
 - {excl: '', incl: 전땅크오일팔}
 - {excl: '', incl: 하나의폭동518}
 - {excl: '', incl: 아덜프히틀러}
@@ -2386,6 +2821,7 @@ BadWords:
 - {excl: '', incl: Haraboji}
 - {excl: '', incl: mb18noma}
 - {excl: '', incl: 슈퍼폭군히틀러}
+- {excl: '', incl: 김대중석방운동}
 - {excl: '', incl: 전땅크로민주화}
 - {excl: '', incl: 전탱크and홍어}
 - {excl: '', incl: 탱크용사전두환}
@@ -2393,92 +2829,113 @@ BadWords:
 - {excl: '', incl: 소장_전두환}
 - {excl: '', incl: 폭동진압계엄탱크}
 - {excl: '', incl: 쓰바}
-- {excl: '', incl: 광주척살지역대}
-- {excl: '', incl: 패배의전두환}
+- {excl: '', incl: 광주분쇄기}
+- {excl: '', incl: 짱꼴라}
 - {excl: '', incl: 개시키야}
 - {excl: '', incl: 쓰발}
+- {excl: '', incl: 자지 쑤셔}
 - {excl: '', incl: 광주폭도진압군}
+- {excl: '', incl: 걸레보 지}
 - {excl: '', incl: 두환땅크오브월드}
 - {excl: '', incl: 나치아찌}
+- {excl: '', incl: 좆 만}
 - {excl: '', incl: 히틀러는나의것}
 - {excl: '', incl: L땅크보이전두환}
+- {excl: '', incl: 쪼다 새 끼}
 - {excl: '', incl: 느금마}
 - {excl: '', incl: 진압전차오일팔}
 - {excl: '', incl: 나치SS사단}
+- {excl: '', incl: 부엉이Unji}
 - {excl: '', incl: 싸가지}
 - {excl: '', incl: 느금마z포돌}
-- {excl: '', incl: 소장전두환}
+- {excl: '', incl: 김대중개섹히}
 - {excl: '', incl: 전두환전용전차}
 - {excl: '', incl: 히틀럿}
 - {excl: '', incl: 전장군의땅끄님}
-- {excl: '', incl: 전땅끄부르으응}
+- {excl: '', incl: 보1지털}
 - {excl: '', incl: 다카키마사오}
 - {excl: '', incl: 섹지보스}
 - {excl: '', incl: 섹스왕자}
 - {excl: '', incl: 계엄맨전땅크}
 - {excl: '', incl: 대통령전두환}
 - {excl: '', incl: 달려라전장군}
+- {excl: '', incl: 보지 빨어}
 - {excl: '', incl: 홍어는밀어야제맛}
+- {excl: '', incl: 광주는폭동헤}
+- {excl: '', incl: 씹 자지}
 - {excl: '', incl: 젓가슴}
-- {excl: '', incl: 광주는포폭도동}
+- {excl: '', incl: 4번타자김대중}
 - {excl: '', incl: 통수오브광주}
 - {excl: '', incl: 나전두환이야_}
 - {excl: '', incl: 좇같은}
 - {excl: '', incl: 전장의화신전두환}
+- {excl: '', incl: 씨 벌}
 - {excl: '', incl: 느금마빠이어}
 - {excl: '', incl: 나치전차}
+- {excl: '', incl: 콜오브전두환}
 - {excl: '', incl: 하일아돌프히틀러}
-- {excl: '', incl: 29만원전통령}
+- {excl: '', incl: 미 친 새 끼}
+- {excl: '', incl: 전장군의민주화}
+- {excl: '', incl: 씹 탱이}
+- {excl: '', incl: 좃 도}
 - {excl: '', incl: 포풍전땅크}
+- {excl: '', incl: 박정희딸근혜}
 - {excl: '', incl: 광주대작전}
 - {excl: '', incl: 씨이빡}
 - {excl: '', incl: 계엄군주전두환}
 - {excl: '', incl: 보지따먹기}
 - {excl: '', incl: 보지에자지껴}
+- {excl: '', incl: 호남영웅이호성}
 - {excl: '', incl: MMMM}
-- {excl: '', incl: unji_518}
+- {excl: '', incl: 호루자슥}
 - {excl: '', incl: 18새끼}
 - {excl: '', incl: 땅크타고폭동진압}
 - {excl: '', incl: 미띤}
 - {excl: '', incl: 이정희전땅크}
-- {excl: '', incl: 계엄파워전두환}
+- {excl: '', incl: 전장군애마1호}
 - {excl: '', incl: 근혜땅크}
 - {excl: '', incl: 짜라빠빠섹스}
 - {excl: '', incl: 니에미}
 - {excl: '', incl: 부릉부룽전땅크}
 - {excl: '', incl: 땅크boy전두환}
+- {excl: '', incl: 씹 새}
 - {excl: '', incl: 송중기정액팝니다}
+- {excl: '', incl: 좋만 한것}
 - {excl: '', incl: 제5공화국전두환}
 - {excl: '', incl: 폭동전땅크}
 - {excl: '', incl: 개같은놈}
 - {excl: '', incl: 강간마}
-- {excl: '', incl: 두환짱탱크라능}
+- {excl: '', incl: 흑인노예쓰}
 - {excl: '', incl: 전_땅끄부릉부릉}
 - {excl: '', incl: 사성장군전두환}
 - {excl: '', incl: 전장군의부릉부릉}
+- {excl: '', incl: 십 세이}
 - {excl: '', incl: 게슈타포ss}
 - {excl: '', incl: 운지부릉부릉땅크}
 - {excl: '', incl: 히틀러가자}
 - {excl: '', incl: 씨발롬}
-- {excl: '', incl: 시계무현}
+- {excl: '', incl: 씨 파 넘}
 - {excl: '', incl: 탱크마스터전두환}
-- {excl: '', incl: 박근혜각하의땅크}
+- {excl: '', incl: 시팔새끼}
 - {excl: '', incl: 광주는_폭똥}
-- {excl: '', incl: 니엄마광주출신}
+- {excl: '', incl: 땅크두환이}
 - {excl: '', incl: I아돌프히틀러I}
 - {excl: '', incl: 홍어대장김대중}
+- {excl: '', incl: 씨퐁보 지}
 - {excl: '', incl: 전땅크_땅땅땅빵}
 - {excl: '', incl: 개같은년}
 - {excl: '', incl: 홍어는폭동이야}
-- {excl: '', incl: 핑크전땅크}
-- {excl: '', incl: 김대중석방운동}
+- {excl: '', incl: '호로자 '}
+- {excl: '', incl: 홍어존슨}
+- {excl: '', incl: 땅크전사두환이}
+- {excl: '', incl: 시계무현}
 - {excl: '', incl: CODENAME___HITLER}
-- {excl: '', incl: 김대중개섹히}
+- {excl: '', incl: 소장전두환}
 - {excl: '', incl: 질내정액}
 - {excl: '', incl: 전두환땅땅땅빵}
 - {excl: '', incl: 전두환땅크s}
 - {excl: '', incl: 전두환땅크r}
-- {excl: '', incl: 4번타자김대중}
+- {excl: '', incl: 광주는포폭도동}
 - {excl: '', incl: 7시는홍어족}
 - {excl: '', incl: 전탱크와광주}
 - {excl: '', incl: 보안사령관전두환}
@@ -2490,473 +2947,60 @@ BadWords:
 - {excl: '', incl: 민주열사전두환}
 - {excl: '', incl: 전두환땅크_}
 - {excl: '', incl: 미친}
-- {excl: '', incl: 전두환444}
 - {excl: '', incl: 범죄자김대중}
-- {excl: '', incl: 싸가 지}
-- {excl: '', incl: 개 같 은년}
-- {excl: '', incl: 자 지 빨 어}
-- {excl: '', incl: '좆같 은 '}
-- {excl: '', incl: 시 팔 새끼}
-- {excl: '', incl: 후 라 덜 넘}
-- {excl: '', incl: 개후 라새끼}
-- {excl: '', incl: 쌕 쓰}
-- {excl: '', incl: 좆만한새 끼}
-- {excl: '', incl: '후라 '}
-- {excl: '', incl: '보 지 '}
-- {excl: '', incl: 싸 가지}
-- {excl: '', incl: 자 지 빨 아}
-- {excl: '', incl: 후라덜 넘}
-- {excl: '', incl: 시 방새}
-- {excl: '', incl: Dick Head}
-- {excl: '', incl: 니 미 랄}
-- {excl: '', incl: 호루 자}
-- {excl: '', incl: 니 미 럴}
-- {excl: '', incl: 성 폭행}
-- {excl: '', incl: 개 씨발자슥}
-- {excl: '', incl: 딸 딸이}
-- {excl: '', incl: 호 루 자 슥}
-- {excl: '', incl: 보지틀 래기}
-- {excl: '', incl: 튼 뇬}
-- {excl: '', incl: 후라 덜 넘}
-- {excl: '', incl: 같 은 년}
-- {excl: '', incl: 헐렁 보지}
-- {excl: '', incl: 1 8 년}
-- {excl: '', incl: 크리 토 리스}
-- {excl: '', incl: 좃 빠네}
-- {excl: '', incl: 개자 지}
-- {excl: '', incl: 좃 냄새}
-- {excl: '', incl: 헐렁 보 지}
-- {excl: '', incl: 좃 까}
-- {excl: '', incl: 1 8 놈}
-- {excl: '', incl: 성 폭 행}
-- {excl: '', incl: 보지틀래 기}
-- {excl: '', incl: 개 같 은 년}
-- {excl: '', incl: 시 팔 새 끼}
-- {excl: '', incl: '개가튼 '}
-- {excl: '', incl: 자지 빨 어}
-- {excl: '', incl: 좆만한 새 끼}
-- {excl: '', incl: 씨 부랄}
-- {excl: '', incl: 자 지 빨어}
-- {excl: '', incl: 개 보지}
-- {excl: '', incl: 유방 핥어}
-- {excl: '', incl: 보지 핥어}
-- {excl: '', incl: 시 방 새}
-- {excl: '', incl: '자 지 '}
-- {excl: '', incl: Mother Fucker}
-- {excl: '', incl: 씨 퐁 자}
-- {excl: '', incl: 씨 섹끼}
-- {excl: '', incl: 띠 블 넘}
-- {excl: '', incl: 성폭 행}
-- {excl: '', incl: 쓰 바 새끼}
-- {excl: '', incl: 빠구 리}
-- {excl: '', incl: 개 걸 레}
-- {excl: '', incl: 쪼 다 새끼}
-- {excl: '', incl: 개후라새 끼}
-- {excl: '', incl: 씹 창}
-- {excl: '', incl: 개 라 슥}
-- {excl: '', incl: 개 너 미}
-- {excl: '', incl: 십 새}
-- {excl: '', incl: 미친 새 끼}
-- {excl: '', incl: 개후라 년}
-- {excl: '', incl: '벌창같 '}
-- {excl: '', incl: 시 팔놈}
-- {excl: '', incl: 벌창 같은년}
-- {excl: '', incl: 좃 마무리}
-- {excl: '', incl: 개후 라}
-- {excl: '', incl: 쌍쌍 보지}
-- {excl: '', incl: 미친 년}
-- {excl: '', incl: '쌕 '}
-- {excl: '', incl: 클리토리 스}
-- {excl: '', incl: 좆같 은새끼}
-- {excl: '', incl: '개같 '}
-- {excl: '', incl: 1 8 새 끼}
-- {excl: '', incl: 좃간 년}
-- {excl: '', incl: 방 새}
-- {excl: '', incl: 씨 팔}
-- {excl: '', incl: 걸레 보 지}
-- {excl: '', incl: 개가 튼년}
-- {excl: '', incl: 시팔새 끼}
-- {excl: '', incl: 개후 라 새끼}
-- {excl: '', incl: 호로자 슥}
-- {excl: '', incl: 창 녀}
-- {excl: '', incl: Bent bastard}
-- {excl: '', incl: 씨 뎅}
-- {excl: '', incl: 좆같은 놈}
-- {excl: '', incl: 미친 눔}
-- {excl: '', incl: 고 치}
-- {excl: '', incl: 쓰바 새끼}
-- {excl: '', incl: 씨뱅 가 리}
-- {excl: '', incl: 보지 벌려}
-- {excl: '', incl: 보지 녀}
-- {excl: '', incl: 미친 놈}
-- {excl: '', incl: 자지 짤라}
-- {excl: '', incl: 보지 털}
-- {excl: '', incl: 자지 털}
-- {excl: '', incl: 씹 새}
-- {excl: '', incl: 개 고치}
-- {excl: '', incl: 개가 튼뇬}
-- {excl: '', incl: 개 불 랄}
-- {excl: '', incl: 개 자 지}
-- {excl: '', incl: 좆 만 한 새 끼}
-- {excl: '', incl: 씨 뱅 가리}
-- {excl: '', incl: fuck you}
-- {excl: '', incl: 보 지 빨 어}
-- {excl: '', incl: 버짓 물}
-- {excl: '', incl: 좆 먹 어}
-- {excl: '', incl: 벌 창 같 은 년}
-- {excl: '', incl: 시발 년}
-- {excl: '', incl: 개 너미}
-- {excl: '', incl: 걸레 같은년}
-- {excl: '', incl: 8 새끼}
-- {excl: '', incl: 씨 퐁넘}
-- {excl: '', incl: 개가튼 뇬}
-- {excl: '', incl: 호 로}
-- {excl: '', incl: 씨 불알}
-- {excl: '', incl: 미친 넘}
-- {excl: '', incl: 'Hair '}
-- {excl: '', incl: sex 해}
-- {excl: '', incl: 보지 벌리자}
-- {excl: '', incl: 개 년}
-- {excl: '', incl: 씨 블}
-- {excl: '', incl: 개후 라년}
-- {excl: '', incl: '미 친 '}
-- {excl: '', incl: 개 걸레}
-- {excl: '', incl: 좆같 은 새끼}
-- {excl: '', incl: '개 후 라 '}
-- {excl: '', incl: 주 글 년}
-- {excl: '', incl: 개 불랄}
-- {excl: '', incl: 병신 세 리}
-- {excl: '', incl: 개 고 치}
-- {excl: '', incl: 개 놈}
-- {excl: '', incl: 보지핥 아}
-- {excl: '', incl: 시 팔 놈}
-- {excl: '', incl: 1 8년}
-- {excl: '', incl: 씨퐁자 지}
-- {excl: '', incl: u c k}
-- {excl: '', incl: 씨 파넘}
-- {excl: '', incl: 빨 아}
-- {excl: '', incl: 호로새 끼}
-- {excl: '', incl: 니 미럴}
-- {excl: '', incl: 미 친 눔}
-- {excl: '', incl: 개 새끼}
-- {excl: '', incl: 좃 깟네}
-- {excl: '', incl: 쌕 스}
-- {excl: '', incl: '호냥 '}
-- {excl: '', incl: 크리토리 스}
-- {excl: '', incl: 미 친 놈}
-- {excl: '', incl: 개 부랄}
-- {excl: '', incl: 보 지 틀 래 기}
-- {excl: '', incl: 씨 발}
-- {excl: '', incl: 벌창같 은 년}
-- {excl: '', incl: 개 지 랄}
-- {excl: '', incl: 호 로 자식}
-- {excl: '', incl: 호 로 자 슥}
-- {excl: '', incl: 개같 은년}
-- {excl: '', incl: 보지 빨 아}
-- {excl: '', incl: 씹 지랄}
-- {excl: '', incl: '좃 '}
-- {excl: '', incl: '좆 만 '}
-- {excl: '', incl: 좆 만 한놈}
-- {excl: '', incl: 크리 토리스}
-- {excl: '', incl: 헐 렁 보 지}
-- {excl: '', incl: 18 새끼}
-- {excl: '', incl: 호로 자슥}
-- {excl: '', incl: 씨 부 랄}
-- {excl: '', incl: 씨 퐁뇬}
-- {excl: '', incl: 좆 만 한년}
-- {excl: '', incl: 걸레같 은 년}
-- {excl: '', incl: 18 새 끼}
-- {excl: '', incl: 미 친놈}
-- {excl: '', incl: 걸 레 같 은 년}
-- {excl: '', incl: 개후라 새 끼}
-- {excl: '', incl: 씨 퐁 자 지}
-- {excl: '', incl: 버지 쑤셔}
-- {excl: '', incl: 니 미랄}
-- {excl: '', incl: 시방 새}
-- {excl: '', incl: 씨 퐁 보지}
-- {excl: '', incl: 보지 물}
-- {excl: '', incl: 크리 토}
-- {excl: '', incl: 미 친 새끼}
-- {excl: '', incl: 시 팔 넘}
-- {excl: '', incl: 1 8 새끼}
-- {excl: '', incl: 후 라 덜}
-- {excl: '', incl: 신 셰리}
-- {excl: '', incl: 호 루 자슥}
-- {excl: '', incl: 시 팔 년}
-- {excl: '', incl: 냥 년}
-- {excl: '', incl: 개후라 들놈}
-- {excl: '', incl: 미친 새끼}
-- {excl: '', incl: 18 놈}
-- {excl: '', incl: 좆 만 한 년}
-- {excl: '', incl: 호루 자슥}
-- {excl: '', incl: 새 끼}
-- {excl: '', incl: 후장 꽂아}
-- {excl: '', incl: 호로 새 끼}
-- {excl: '', incl: 좆같 은}
-- {excl: '', incl: 쥐 랄}
-- {excl: '', incl: 좆 만아}
-- {excl: '', incl: 씨퐁 자지}
-- {excl: '', incl: '걸레같은 '}
-- {excl: '', incl: 좆 만 한 놈}
-- {excl: '', incl: Meat puppet}
-- {excl: '', incl: 보 지 핥 어}
-- {excl: '', incl: 후 라 덜넘}
-- {excl: '', incl: Fuck Off}
-- {excl: '', incl: 씹 자 지}
-- {excl: '', incl: 십 세 이}
-- {excl: '', incl: 보 지 핥아}
-- {excl: '', incl: 보 지 핥어}
-- {excl: '', incl: 개 자지}
-- {excl: '', incl: 자 지}
-- {excl: '', incl: 보 지 핥 아}
-- {excl: '', incl: 보지 벌리}
-- {excl: '', incl: 씨 섹 끼}
-- {excl: '', incl: 걸레 보}
-- {excl: '', incl: 주 글년}
-- {excl: '', incl: Fucking Bastard}
-- {excl: '', incl: 백보 지}
-- {excl: '', incl: 개 보 지}
-- {excl: '', incl: 씹 탱}
-- {excl: '', incl: 허벌 보지}
-- {excl: '', incl: 개 부달}
-- {excl: '', incl: 개후라 들 놈}
-- {excl: '', incl: 딸딸 이}
-- {excl: '', incl: 개 후 라}
-- {excl: '', incl: 호루자 슥}
-- {excl: '', incl: '크리 토 '}
-- {excl: '', incl: 걸레같 은년}
-- {excl: '', incl: 걸레 같 은 년}
-- {excl: '', incl: '미친 '}
-- {excl: '', incl: S EX}
-- {excl: '', incl: 보 지 빨아}
-- {excl: '', incl: 허벌자 지}
-- {excl: '', incl: 존 니}
-- {excl: '', incl: 쓰바새 끼}
-- {excl: '', incl: 핥 어}
-- {excl: '', incl: 보 지 빨어}
-- {excl: '', incl: 좃 빠 네}
-- {excl: '', incl: 좆같 은 놈}
-- {excl: '', incl: 존 나}
-- {excl: '', incl: 'fuck '}
-- {excl: '', incl: 씨 발 년}
-- {excl: '', incl: 1 8놈}
-- {excl: '', incl: 후 장}
-- {excl: '', incl: 가슴 쪼물딱}
-- {excl: '', incl: 쪼다새 끼}
-- {excl: '', incl: 걸레 같 은년}
-- {excl: '', incl: 또 라이}
-- {excl: '', incl: 보 지털}
-- {excl: '', incl: 렁 보 지}
-- {excl: '', incl: 좆 만 아}
-- {excl: '', incl: 벌창 같 은 년}
-- {excl: '', incl: 좃 만 아}
-- {excl: '', incl: 보 지녀}
-- {excl: '', incl: 보 지 빨 아}
-- {excl: '', incl: 개가튼 년}
-- {excl: '', incl: 페 니스}
-- {excl: '', incl: '걸레 보 '}
-- {excl: '', incl: '좆 '}
-- {excl: '', incl: 가슴 핥아}
-- {excl: '', incl: 쓰 벌}
-- {excl: '', incl: '씹 '}
-- {excl: '', incl: e x}
-- {excl: '', incl: 허 벌 자지}
-- {excl: '', incl: 벵 신}
-- {excl: '', incl: 자 지털}
-- {excl: '', incl: 헐렁보 지}
-- {excl: '', incl: 걸레같은 년}
-- {excl: '', incl: '걸레 같 '}
-- {excl: '', incl: 18 년}
-- {excl: '', incl: 개후 라 새 끼}
-- {excl: '', incl: 호 로 새 끼}
-- {excl: '', incl: 씨 퐁 보 지}
-- {excl: '', incl: 가슴 쪼물락}
-- {excl: '', incl: 애 무}
-- {excl: '', incl: 씨 발롬}
-- {excl: '', incl: 좃 대가리}
-- {excl: '', incl: 병신 세리}
-- {excl: '', incl: 18새 끼}
-- {excl: '', incl: 크 리 토 리 스}
-- {excl: '', incl: 보 짓 물}
-- {excl: '', incl: 쌍쌍보 지}
-- {excl: '', incl: 허벌 자 지}
-- {excl: '', incl: sex 하자}
-- {excl: '', incl: 후라 덜넘}
-- {excl: '', incl: 크리토 리스}
-- {excl: '', incl: '개후라 '}
-- {excl: '', incl: 좆 새 끼}
-- {excl: '', incl: 호로 자 슥}
-- {excl: '', incl: 개후 라 들 놈}
-- {excl: '', incl: 좆같은 새 끼}
-- {excl: '', incl: 걸레 같}
-- {excl: '', incl: 개 후 라 들 놈}
-- {excl: '', incl: 좆 도}
-- {excl: '', incl: '개가 '}
-- {excl: '', incl: 페 니 스}
-- {excl: '', incl: 호로 자 식}
-- {excl: '', incl: '씨 퐁 자 '}
-- {excl: '', incl: 미 친}
-- {excl: '', incl: 자 지 핥 어}
-- {excl: '', incl: 좋만 한 것}
-- {excl: '', incl: 보지 빨어}
-- {excl: '', incl: 벌창같은 년}
-- {excl: '', incl: 자 지 핥어}
-- {excl: '', incl: '쓰바 '}
-- {excl: '', incl: 허벌 자지}
-- {excl: '', incl: 걸 레 보지}
-- {excl: '', incl: 호로 새끼}
-- {excl: '', incl: 좆 먹어}
-- {excl: '', incl: 보지 빨아}
-- {excl: '', incl: 음 경}
-- {excl: '', incl: 십 녀}
-- {excl: '', incl: 보지빨 아}
-- {excl: '', incl: 좆같 은놈}
-- {excl: '', incl: 좆 털}
-- {excl: '', incl: 씹 쌔 끼}
-- {excl: '', incl: 좆 년}
-- {excl: '', incl: 개 후 라년}
-- {excl: '', incl: 자기핥 아}
-- {excl: '', incl: 자기 핥아}
-- {excl: '', incl: Dog Fucker}
-- {excl: '', incl: 백 보지}
-- {excl: '', incl: 호 냥년}
-- {excl: '', incl: f u c k}
-- {excl: '', incl: 미 친눔}
-- {excl: '', incl: 개 씨발넘}
-- {excl: '', incl: 블 넘}
-- {excl: '', incl: '쪼다 '}
-- {excl: '', incl: Fucking Asshole}
-- {excl: '', incl: 쪼 다 새 끼}
-- {excl: '', incl: 자 지 털}
-- {excl: '', incl: 자 지 빨아}
-- {excl: '', incl: 헐 렁 보지}
-- {excl: '', incl: 썅 년}
-- {excl: '', incl: 지 랄}
-- {excl: '', incl: 미 친년}
-- {excl: '', incl: 지 럴}
-- {excl: '', incl: 쓰 파}
-- {excl: '', incl: 가슴 핥어}
-- {excl: '', incl: 보 지 털}
-- {excl: '', incl: 보 짓물}
-- {excl: '', incl: 걸레 보지}
-- {excl: '', incl: 개같 은 년}
-- {excl: '', incl: 띠 블넘}
-- {excl: '', incl: 빠 네}
-- {excl: '', incl: '벌창 '}
-- {excl: '', incl: 씨 뱅 가 리}
-- {excl: '', incl: 자지 빨아}
-- {excl: '', incl: 씨 발 롬}
-- {excl: '', incl: '허벌 '}
-- {excl: '', incl: 개 씨 블}
-- {excl: '', incl: 개후라 새끼}
-- {excl: '', incl: 좆같 은 새 끼}
-- {excl: '', incl: 지 뢀}
-- {excl: '', incl: 호 로 새끼}
-- {excl: '', incl: 개걸 레}
-- {excl: '', incl: 은 년}
-- {excl: '', incl: 씹 지 랄}
-- {excl: '', incl: 개후 라들놈}
-- {excl: '', incl: 미 친넘}
-- {excl: '', incl: 보 지}
-- {excl: '', incl: '개후 라 '}
-- {excl: '', incl: 벌 자지}
-- {excl: '', incl: 개 부 랄}
-- {excl: '', incl: 좃 깟 네}
-- {excl: '', incl: 호루 자 슥}
-- {excl: '', incl: 씹탱 이}
-- {excl: '', incl: 쪼다 새끼}
-- {excl: '', incl: 빠 구리}
-- {excl: '', incl: 쓰바 새 끼}
-- {excl: '', incl: 띠발 뇬}
-- {excl: '', incl: 시 팔년}
-- {excl: '', incl: 니 애미}
-- {excl: '', incl: 또 라 이}
-- {excl: '', incl: 허벌 보 지}
-- {excl: '', incl: 개 씨 발}
-- {excl: '', incl: '개후 '}
-- {excl: '', incl: 호로자 식}
-- {excl: '', incl: 씨 파 넘}
-- {excl: '', incl: 좆만한 새끼}
-- {excl: '', incl: 라 들 놈}
-- {excl: '', incl: 좃 또}
-- {excl: '', incl: Sausage Jockey}
-- {excl: '', incl: 개 후 라 새 끼}
-- {excl: '', incl: 개같은 년}
-- {excl: '', incl: 쌔 끼}
-- {excl: '', incl: Fuck Head}
-- {excl: '', incl: 좆 밥}
-- {excl: '', incl: 니 애 미}
-- {excl: '', incl: 좆 새끼}
-- {excl: '', incl: 좃 도}
-- {excl: '', incl: 빠 구 리}
-- {excl: '', incl: 미 티 넘}
-- {excl: '', incl: 보 지물}
-- {excl: '', incl: 씹 새 끼}
-- {excl: '', incl: 개 새 끼}
-- {excl: '', incl: 호 냥 년}
-- {excl: '', incl: 좋만한 것}
-- {excl: '', incl: 자지 빨 아}
-- {excl: '', incl: 개후 라 들놈}
-- {excl: '', incl: '호로 '}
-- {excl: '', incl: 씹 새끼}
-- {excl: '', incl: 자지 빨어}
-- {excl: '', incl: 좆 물}
-- {excl: '', incl: 보지 빨 어}
-- {excl: '', incl: 호냥 년}
-- {excl: '', incl: u c k y o u}
-- {excl: '', incl: 싸 가 지}
-- {excl: '', incl: 육 갑}
-- {excl: '', incl: 씨 퐁 자지}
-- {excl: '', incl: 백 보 지}
-- {excl: '', incl: 개 부 달}
-- {excl: '', incl: 보지핥 어}
-- {excl: '', incl: 크리토 리 스}
-- {excl: '', incl: 호로 자식}
-- {excl: '', incl: 개 후 라 년}
-- {excl: '', incl: 씹 쌔끼}
-- {excl: '', incl: 개가 튼 년}
-- {excl: '', incl: 개후라들 놈}
-- {excl: '', incl: 허벌보 지}
-- {excl: '', incl: 벌창같 은년}
-- {excl: '', incl: 좃 넘}
-- {excl: '', incl: 개가 튼 뇬}
-- {excl: '', incl: 자지 구녕}
-- {excl: '', incl: 미 틴 것}
-- {excl: '', incl: 씹 탱 이}
-- {excl: '', incl: 클리토 리스}
-- {excl: '', incl: 크리 토 리 스}
-- {excl: '', incl: '호로새 '}
-- {excl: '', incl: f u c k y o u}
-- {excl: '', incl: '호루 자 '}
-- {excl: '', incl: 걸 레 보 지}
-- {excl: '', incl: 보지빨 어}
-- {excl: '', incl: 십팔새 끼}
-- {excl: '', incl: S E X}
-- {excl: '', incl: 씹 세}
-- {excl: '', incl: 자지 쑤셔}
-- {excl: '', incl: 걸레보 지}
-- {excl: '', incl: 좆 만}
-- {excl: '', incl: 쪼다 새 끼}
-- {excl: '', incl: 씨 발년}
-- {excl: '', incl: 벌창 같 은년}
-- {excl: '', incl: 씹 자지}
-- {excl: '', incl: 씨 벌}
-- {excl: '', incl: 미 친 새 끼}
-- {excl: '', incl: 씹 탱이}
-- {excl: '', incl: 성교 하자}
-- {excl: '', incl: 다 새 끼}
-- {excl: '', incl: '후 라 덜 '}
-- {excl: '', incl: 좋만 한것}
-- {excl: '', incl: 십 세이}
-- {excl: '', incl: 씨퐁보 지}
-- {excl: '', incl: '호로자 '}
+- {excl: '', incl: 전두환444}
+- {excl: '', incl: 쎅수}
+- {excl: '', incl: ^버러지새끼$}
+- {excl: '', incl: ^베충이$}
+- {excl: '', incl: ^통베충$}
+- {excl: '', incl: ^머중$}
+- {excl: '', incl: ^사람새끼$}
+- {excl: '', incl: ^머한$}
+- {excl: '', incl: ^盧$}
+- {excl: '', incl: ^조센징$}
+- {excl: '', incl: ^천안함$}
+- {excl: '', incl: ^일베$}
+- {excl: '', incl: ^벌레새끼$}
+- {excl: '', incl: ^미챙$}
+- {excl: '', incl: ^손고자$}
+- {excl: '', incl: ^염전노예$}
+- {excl: '', incl: ^피떡갈비$}
+- {excl: '', incl: ^세월호$}
+- {excl: '', incl: ^세월호선장$}
+- {excl: '', incl: ^처녀막$}
+- {excl: '', incl: ^홍어$}
+- {excl: '', incl: ^씹색끼$}
+- {excl: '', incl: ^네덕새끼$}
+- {excl: '', incl: ^일베충$}
+- {excl: '', incl: ^삼일한$}
+- {excl: '', incl: ^자홍어$}
+- {excl: '', incl: ^응디시티$}
+- {excl: '', incl: ^네다떡$}
+- {excl: '', incl: ^베츙이$}
+- {excl: '', incl: ^일본땅$}
+- {excl: '', incl: ^멍청도$}
+- {excl: '', incl: ^김치년$}
+- {excl: '', incl: ^네다홍$}
+- {excl: '', incl: ^김치녀$}
+- {excl: '', incl: ^전라디언$}
+- {excl: '', incl: ^개쌍도$}
+- {excl: '', incl: ^노알라$}
+- {excl: '', incl: ^중력절$}
+- {excl: '', incl: ^국뽕$}
+- {excl: '', incl: ^읍읍충$}
+- {excl: '', incl: ^풀발기$}
+- {excl: '', incl: ^단원고$}
+- {excl: '', incl: ^니앰홍$}
+- {excl: '', incl: ^운지$}
 DomainNames: []
 Equivalents: {}
+Exceptions:
+- {excl: '', incl: "(?-i)^Dick$"}
 NonAlphanumeric: '[\x00-\x1F!-/:-@\x5B-\x5E`\{-~]'
 Spacious:
 - {excl: '', incl: 가슴 핥어}
-- {excl: '', incl: 좃 도}
 - {excl: '', incl: 보 지 털}
+- {excl: '', incl: 후 라 덜}
 - {excl: '', incl: 싸가 지}
 - {excl: '', incl: 보 짓물}
 - {excl: '', incl: 걸레 보지}
@@ -2983,7 +3027,7 @@ Spacious:
 - {excl: '', incl: 시 팔 새끼}
 - {excl: '', incl: 후 라 덜 넘}
 - {excl: '', incl: 개 지 랄}
-- {excl: '', incl: '허벌 '}
+- {excl: '', incl: 쓰 벌}
 - {excl: '', incl: 개 걸레}
 - {excl: '', incl: 좆같 은 새끼}
 - {excl: '', incl: 개 씨 블}
@@ -2996,7 +3040,6 @@ Spacious:
 - {excl: '', incl: 쓰바새 끼}
 - {excl: '', incl: 개후 라새끼}
 - {excl: '', incl: 병신 세 리}
-- {excl: '', incl: '호로자 '}
 - {excl: '', incl: 유방 핥어}
 - {excl: '', incl: 핥 어}
 - {excl: '', incl: 좆같 은 새 끼}
@@ -3022,7 +3065,7 @@ Spacious:
 - {excl: '', incl: 보지핥 어}
 - {excl: '', incl: 가슴 핥아}
 - {excl: '', incl: 씨퐁자 지}
-- {excl: '', incl: 좆 물}
+- {excl: '', incl: 버지 쑤셔}
 - {excl: '', incl: 'fuck '}
 - {excl: '', incl: u c k}
 - {excl: '', incl: 미 친놈}
@@ -3031,7 +3074,7 @@ Spacious:
 - {excl: '', incl: 씨 파넘}
 - {excl: '', incl: 시 방새}
 - {excl: '', incl: 씨 발 년}
-- {excl: '', incl: 좆 만}
+- {excl: '', incl: 보지 벌리}
 - {excl: '', incl: Dick Head}
 - {excl: '', incl: 호로새 끼}
 - {excl: '', incl: 보 지 빨 어}
@@ -3047,7 +3090,7 @@ Spacious:
 - {excl: '', incl: 개 같 은년}
 - {excl: '', incl: 쪼다새 끼}
 - {excl: '', incl: 걸레 같 은년}
-- {excl: '', incl: '개후라 '}
+- {excl: '', incl: 니 미럴}
 - {excl: '', incl: 호 루 자 슥}
 - {excl: '', incl: 좆같 은놈}
 - {excl: '', incl: 벌 자지}
@@ -3078,7 +3121,6 @@ Spacious:
 - {excl: '', incl: 1 8 년}
 - {excl: '', incl: 시방 새}
 - {excl: '', incl: 크리 토 리스}
-- {excl: '', incl: 음 경}
 - {excl: '', incl: 개 부랄}
 - {excl: '', incl: 보 지 틀 래 기}
 - {excl: '', incl: 씨 발}
@@ -3086,7 +3128,7 @@ Spacious:
 - {excl: '', incl: 18 놈}
 - {excl: '', incl: '좆 '}
 - {excl: '', incl: 벌창같 은 년}
-- {excl: '', incl: 쓰 벌}
+- {excl: '', incl: '허벌 '}
 - {excl: '', incl: 또 라 이}
 - {excl: '', incl: 허벌 보 지}
 - {excl: '', incl: '씹 '}
@@ -3101,7 +3143,7 @@ Spacious:
 - {excl: '', incl: 씨 발년}
 - {excl: '', incl: 개자 지}
 - {excl: '', incl: 씨 벌}
-- {excl: '', incl: 새 끼}
+- {excl: '', incl: 씹 자지}
 - {excl: '', incl: '개후 '}
 - {excl: '', incl: 호로자 식}
 - {excl: '', incl: 십 세이}
@@ -3132,7 +3174,6 @@ Spacious:
 - {excl: '', incl: 호 로 새 끼}
 - {excl: '', incl: 개 후 라 새 끼}
 - {excl: '', incl: 개같은 년}
-- {excl: '', incl: 쌔 끼}
 - {excl: '', incl: 씨 퐁 보 지}
 - {excl: '', incl: 좆 만 한놈}
 - {excl: '', incl: 좆만한 새 끼}
@@ -3140,12 +3181,12 @@ Spacious:
 - {excl: '', incl: 씨 부랄}
 - {excl: '', incl: 자 지 빨어}
 - {excl: '', incl: 크리 토리스}
-- {excl: '', incl: 미친 새 끼}
+- {excl: '', incl: 보지 빨 어}
 - {excl: '', incl: 빨 아}
 - {excl: '', incl: 자지 빨 어}
-- {excl: '', incl: 호로 자 슥}
+- {excl: '', incl: 쌔 끼}
 - {excl: '', incl: Fuck Head}
-- {excl: '', incl: 보지 빨아}
+- {excl: '', incl: 쓰바 새끼}
 - {excl: '', incl: 좆 밥}
 - {excl: '', incl: 헐 렁 보 지}
 - {excl: '', incl: 애 무}
@@ -3155,13 +3196,14 @@ Spacious:
 - {excl: '', incl: 띠 블 넘}
 - {excl: '', incl: 씨 발롬}
 - {excl: '', incl: 니 애 미}
-- {excl: '', incl: '걸레같은 '}
+- {excl: '', incl: 니 애미}
 - {excl: '', incl: 보지 핥어}
 - {excl: '', incl: 개 고 치}
 - {excl: '', incl: 좆 새끼}
 - {excl: '', incl: 걸레 같은년}
 - {excl: '', incl: 개 너 미}
-- {excl: '', incl: 좆같은 새 끼}
+- {excl: '', incl: '벌창같 '}
+- {excl: '', incl: '개후 라 '}
 - {excl: '', incl: 시 방 새}
 - {excl: '', incl: '자 지 '}
 - {excl: '', incl: 18 새끼}
@@ -3192,23 +3234,24 @@ Spacious:
 - {excl: '', incl: 빠구 리}
 - {excl: '', incl: 개 걸 레}
 - {excl: '', incl: 쪼 다 새끼}
-- {excl: '', incl: 씹 탱}
+- {excl: '', incl: '쪼다 '}
 - {excl: '', incl: 호로 자식}
 - {excl: '', incl: 개후 라 들놈}
 - {excl: '', incl: 후라 덜넘}
 - {excl: '', incl: '호로 '}
 - {excl: '', incl: 보지 벌리자}
+- {excl: '', incl: 성교 하자}
 - {excl: '', incl: 씨 퐁 자 지}
 - {excl: '', incl: 버짓 물}
 - {excl: '', incl: 개후라새 끼}
 - {excl: '', incl: 자지 빨어}
 - {excl: '', incl: 크리토 리스}
 - {excl: '', incl: 시 팔 놈}
-- {excl: '', incl: 버지 쑤셔}
+- {excl: '', incl: 좆 물}
 - {excl: '', incl: 니 미랄}
 - {excl: '', incl: 좆 먹 어}
 - {excl: '', incl: 미 친 놈}
-- {excl: '', incl: 니 미럴}
+- {excl: '', incl: '개후라 '}
 - {excl: '', incl: 좃 깟 네}
 - {excl: '', incl: 씨 퐁 보지}
 - {excl: '', incl: 띠발 뇬}
@@ -3217,14 +3260,14 @@ Spacious:
 - {excl: '', incl: 개 라 슥}
 - {excl: '', incl: 보지 물}
 - {excl: '', incl: 보지 빨 아}
-- {excl: '', incl: '후 라 덜 '}
+- {excl: '', incl: 씹 새}
 - {excl: '', incl: 십 새}
-- {excl: '', incl: 보지 빨 어}
-- {excl: '', incl: 개 후 라 들 놈}
+- {excl: '', incl: 미친 새 끼}
+- {excl: '', incl: 호로 자 슥}
 - {excl: '', incl: 개후 라 들 놈}
 - {excl: '', incl: 개후라 년}
-- {excl: '', incl: '호로새 '}
-- {excl: '', incl: '벌창같 '}
+- {excl: '', incl: 보지 녀}
+- {excl: '', incl: 좆같은 새 끼}
 - {excl: '', incl: 시 팔놈}
 - {excl: '', incl: 호냥 년}
 - {excl: '', incl: 벌창 같은년}
@@ -3234,7 +3277,7 @@ Spacious:
 - {excl: '', incl: 시 팔 넘}
 - {excl: '', incl: 1 8 새끼}
 - {excl: '', incl: 싸 가 지}
-- {excl: '', incl: 후 라 덜}
+- {excl: '', incl: 개 후 라 들 놈}
 - {excl: '', incl: 개후 라}
 - {excl: '', incl: 쌍쌍 보지}
 - {excl: '', incl: 좆 도}
@@ -3245,7 +3288,7 @@ Spacious:
 - {excl: '', incl: 호 루 자슥}
 - {excl: '', incl: 자지 구녕}
 - {excl: '', incl: 씨 퐁 자지}
-- {excl: '', incl: 자지 빨아}
+- {excl: '', incl: 시 팔 년}
 - {excl: '', incl: 냥 년}
 - {excl: '', incl: 허벌보 지}
 - {excl: '', incl: 백 보 지}
@@ -3262,14 +3305,13 @@ Spacious:
 - {excl: '', incl: 개 후 라 년}
 - {excl: '', incl: 미친 새끼}
 - {excl: '', incl: 자 지 핥 어}
-- {excl: '', incl: 좆 털}
+- {excl: '', incl: f u c k y o u}
 - {excl: '', incl: 1 8 새 끼}
 - {excl: '', incl: 좋만 한 것}
 - {excl: '', incl: 좃간 년}
 - {excl: '', incl: 씨 팔}
 - {excl: '', incl: 좆 만 한 년}
 - {excl: '', incl: 씹 쌔끼}
-- {excl: '', incl: 개후라 들 놈}
 - {excl: '', incl: 보지 빨어}
 - {excl: '', incl: 호루 자슥}
 - {excl: '', incl: 걸레 보 지}
@@ -3280,13 +3322,14 @@ Spacious:
 - {excl: '', incl: 개후라들 놈}
 - {excl: '', incl: '쓰바 '}
 - {excl: '', incl: 좃 빠 네}
-- {excl: '', incl: 시 팔 년}
+- {excl: '', incl: 자지 빨아}
+- {excl: '', incl: 딸딸 이}
 - {excl: '', incl: 창 녀}
 - {excl: '', incl: Bent bastard}
 - {excl: '', incl: 씨 뎅}
 - {excl: '', incl: 딸 딸이}
 - {excl: '', incl: 시팔새 끼}
-- {excl: '', incl: 씹 쌔 끼}
+- {excl: '', incl: 좆같은 놈}
 - {excl: '', incl: 렁 보 지}
 - {excl: '', incl: 미친 눔}
 - {excl: '', incl: 같 은 년}
@@ -3300,30 +3343,30 @@ Spacious:
 - {excl: '', incl: 씨퐁 자지}
 - {excl: '', incl: 보 지물}
 - {excl: '', incl: 고 치}
-- {excl: '', incl: 쓰바 새끼}
+- {excl: '', incl: 보지 빨아}
 - {excl: '', incl: 좃 넘}
 - {excl: '', incl: 개가 튼 뇬}
-- {excl: '', incl: 니 애미}
+- {excl: '', incl: '걸레같은 '}
 - {excl: '', incl: 씨뱅 가 리}
 - {excl: '', incl: 좆 만 한 놈}
 - {excl: '', incl: 미 틴 것}
-- {excl: '', incl: Meat puppet}
+- {excl: '', incl: 음 경}
 - {excl: '', incl: 십 녀}
 - {excl: '', incl: 보지빨 아}
 - {excl: '', incl: 개 너미}
 - {excl: '', incl: 씹 탱 이}
 - {excl: '', incl: e x}
 - {excl: '', incl: 크리 토 리 스}
-- {excl: '', incl: 보지 녀}
+- {excl: '', incl: '호로새 '}
 - {excl: '', incl: '개같 '}
 - {excl: '', incl: 걸레 같}
 - {excl: '', incl: 미 친}
-- {excl: '', incl: f u c k y o u}
+- {excl: '', incl: 좆 털}
 - {excl: '', incl: 미친 놈}
 - {excl: '', incl: 개가 튼년}
-- {excl: '', incl: 보지 털}
+- {excl: '', incl: 십팔새 끼}
 - {excl: '', incl: 걸 레 보 지}
-- {excl: '', incl: 좆같은 놈}
+- {excl: '', incl: 씹 쌔 끼}
 - {excl: '', incl: 허벌 자지}
 - {excl: '', incl: 보 지 핥 어}
 - {excl: '', incl: 보지빨 어}
@@ -3332,7 +3375,7 @@ Spacious:
 - {excl: '', incl: 개 후 라년}
 - {excl: '', incl: Fuck Off}
 - {excl: '', incl: 씹 자 지}
-- {excl: '', incl: 십팔새 끼}
+- {excl: '', incl: 보지 털}
 - {excl: '', incl: 미 친넘}
 - {excl: '', incl: 십 세 이}
 - {excl: '', incl: 자지 짤라}
@@ -3355,7 +3398,7 @@ Spacious:
 - {excl: '', incl: 주 글 년}
 - {excl: '', incl: 백 보지}
 - {excl: '', incl: 걸레보 지}
-- {excl: '', incl: 보지 벌리}
+- {excl: '', incl: 좆 만}
 - {excl: '', incl: 씨 섹 끼}
 - {excl: '', incl: 쪼다 새 끼}
 - {excl: '', incl: 벌창 같 은년}
@@ -3365,45 +3408,46 @@ Spacious:
 - {excl: '', incl: 쌕 스}
 - {excl: '', incl: 개 자 지}
 - {excl: '', incl: 좆 만 한 새 끼}
-- {excl: '', incl: sex 하자}
 - {excl: '', incl: f u c k}
 - {excl: '', incl: 씨 뱅 가리}
-- {excl: '', incl: 씹 자지}
+- {excl: '', incl: 새 끼}
 - {excl: '', incl: fuck you}
 - {excl: '', incl: '좆 만 '}
 - {excl: '', incl: 주 글년}
 - {excl: '', incl: 미 친 새 끼}
 - {excl: '', incl: Fucking Bastard}
 - {excl: '', incl: 백보 지}
-- {excl: '', incl: 성교 하자}
+- {excl: '', incl: 좃 도}
 - {excl: '', incl: 개 보 지}
 - {excl: '', incl: 블 넘}
 - {excl: '', incl: 보지 벌려}
-- {excl: '', incl: '쪼다 '}
+- {excl: '', incl: 씹 탱}
 - {excl: '', incl: 다 새 끼}
 - {excl: '', incl: Fucking Asshole}
 - {excl: '', incl: 허벌 보지}
 - {excl: '', incl: 시발 년}
-- {excl: '', incl: 씹 새}
+- {excl: '', incl: '후 라 덜 '}
 - {excl: '', incl: 쪼 다 새 끼}
 - {excl: '', incl: 크리 토}
 - {excl: '', incl: 자 지 털}
 - {excl: '', incl: 신 셰리}
 - {excl: '', incl: 개 부달}
-- {excl: '', incl: 자 지 빨아}
+- {excl: '', incl: sex 하자}
 - {excl: '', incl: 헐 렁 보지}
-- {excl: '', incl: '개후 라 '}
+- {excl: '', incl: 개후라 들 놈}
 - {excl: '', incl: 8 새끼}
 - {excl: '', incl: 썅 년}
+- {excl: '', incl: 자 지 빨아}
 - {excl: '', incl: 지 랄}
 - {excl: '', incl: '호루 자 '}
 - {excl: '', incl: 걸 레 같 은 년}
-- {excl: '', incl: 딸딸 이}
+- {excl: '', incl: '호로자 '}
 - {excl: '', incl: 개 후 라}
 - {excl: '', incl: 호 로}
 - {excl: '', incl: 씨 불알}
 - {excl: '', incl: 자지 쑤셔}
 - {excl: '', incl: 호루자 슥}
+- {excl: '', incl: Meat puppet}
 - {excl: '', incl: 지 럴}
 - {excl: '', incl: 쓰 파}
 - {excl: '', incl: '미 친 '}

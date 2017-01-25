@@ -1,0 +1,72 @@
+Header:
+    version: "6"
+StyleSheets:
+-   selector: ".switch:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+-   selector: ".switch:disabled:selected .switch-left-part"
+    properties:
+        visible: true
+-   selector: ".switch:disabled:selected .switch-right-part"
+    properties:
+        visible: false
+-   selector: ".switch:disabled .switch-left-part"
+    properties:
+        visible: false
+-   selector: ".switch:disabled .switch-right-part"
+    properties:
+        visible: true
+Prototypes:
+-   class: "UISwitch"
+    name: "Switch"
+    size: [84.000000, 54.000000]
+    classes: "switch"
+    components:
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+            sprite: "~res:/Gfx/UI/SettingsScreen/button_swich_back"
+            leftRightStretchCap: 10.000000
+            topBottomStretchCap: 10.000000
+    children:
+    -   class: "UIControl"
+        name: "buttonRight"
+        size: [42.000000, 54.000000]
+        pivot: [1.000000, 0.000000]
+        noInput: true
+        classes: "switch-right-part"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
+                frame: 1
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "buttonLeft"
+        size: [42.000000, 54.000000]
+        noInput: true
+        classes: "switch-left-part"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "buttonToggle"
+        position: [39.000000, 0.000000]
+        size: [45.000000, 54.000000]
+        noInput: true
+        components:
+            Anchor:
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                sprite: "~res:/Gfx/UI/SettingsScreen/button_swich"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

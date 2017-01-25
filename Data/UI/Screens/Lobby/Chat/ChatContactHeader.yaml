@@ -1,0 +1,50 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Chat/ChatCommon.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIControl"
+    name: "ChatContactHeader"
+    size: [400.000000, 50.000000]
+    components:
+        Background:
+            drawType: "DRAW_TILED"
+            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            leftRightStretchCap: 6.000000
+            topBottomStretchCap: 5.000000
+    children:
+    -   class: "UIControl"
+        name: "Container"
+        noInput: true
+        components:
+            LinearLayout:
+                dynamicPadding: true
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIStaticText"
+            name: "Label"
+            size: [63.000000, 50.000000]
+            classes: "header4 text-color-white"
+            text: "#xchat/FriendsContacts"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "Icon"
+            size: [30.000000, 50.000000]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
+    -   prototype: "ChatCommon/UnreadIcon"
+        name: "UnreadIcon"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                vCenterAnchorEnabled: true

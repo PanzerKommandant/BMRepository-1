@@ -1,0 +1,9 @@
+Header:
+    version: "4"
+Controls:
+-   class: "UIParticles"
+    name: "Particle"
+    size: [32.000000, 32.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    autoStart: true

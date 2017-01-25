@@ -43,12 +43,22 @@
 		<id>7</id>
 		<userString>#other_vehicles:Akawara</userString>
 		<shortUserString>#other_vehicles:Akawara_short</shortUserString>
-		<price>7300<gold/>		
+		<price>7300<gold/>
 		</price>
-		<notInShop>true</notInShop>		
+		<notInShop>true</notInShop>
 		<tags>mediumTank enhancedTorsions3t_user mediumCaliberTankRammer_user wetCombatPack_class1_user aimingStabilizer_Mk1_user</tags>
 		<level>8</level>
 	</Akawara>
+	<WZ-135G_FT>
+		<id>8</id>
+		<userString>#other_vehicles:WZ-135G_FT</userString>
+		<shortUserString>#other_vehicles:WZ-135G_FT_short</shortUserString>
+		<price>5000<gold/> 
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG lightAT-SPG secret InGame mediumCaliberTankRammer_user wetCombatPack_class1_user enhancedTorsions1t_user</tags>
+		<level>7</level>
+	</WZ-135G_FT>
 	<AMX_dracula>
 		<id>248</id>
 		<userString>#other_vehicles:AMX_dracula</userString>

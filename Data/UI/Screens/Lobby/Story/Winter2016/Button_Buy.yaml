@@ -1,0 +1,16 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/StoryButtonPrototype.yaml"
+Controls:
+-   prototype: "StoryButtonPrototype/StoryButton"
+    name: "StoryButton"
+    children:
+    -   path: "Icon"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/NY_2016/lamp_2"
+    -   path: "Title"
+        text: "winter_event/Title"
+    -   path: "Type"
+        position: [182.000000, 7.000000]

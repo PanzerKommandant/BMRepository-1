@@ -1,8 +1,9 @@
 Header:
-    version: "1"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Common/SmartTextField.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "DialogBackground"
@@ -48,7 +49,7 @@ Controls:
                     children: []
                 -   path: "Middle/VerticalBox"
                     children:
-                    -   prototype: "LoginCommon/LoginTextField"
+                    -   prototype: "SmartTextField/SmartTextField"
                         name: "CodeTextField"
                         components:
                             Anchor:
@@ -65,7 +66,7 @@ Controls:
                                 leftAnchorEnabled: true
                                 rightAnchorEnabled: true
                         children:
-                        -   prototype: "Common/PopUpButton"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "CancelButton"
                             components:
                                 Anchor:
@@ -73,25 +74,18 @@ Controls:
                                     hCenterAnchorEnabled: true
                                     hCenterAnchor: -10.000000
                                     topAnchorEnabled: true
-                                NormalText:
-                                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
-                                    shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
-                                    text: "#bonus_code:Dialog_Add/Cancel"
-                        -   prototype: "Common/PopUpButton"
+                            children:
+                            -   path: "Caption"
+                                text: "#bonus_code:Dialog_Add/Cancel"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "ActivateButton"
-                            debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+                            classes: "button button-color-green"
                             components:
                                 Anchor:
                                     hCenterAnchorEnabled: true
                                     hCenterAnchor: 10.000000
                                     rightAnchorEnabled: true
                                     topAnchorEnabled: true
-                                Normal:
-                                    frame: 1
-                                    color: [1.000000, 1.000000, 1.000000, 1.000000]
-                                PressedInside:
-                                    frame: 1
-                                NormalText:
-                                    text: "#bonus_code:Dialog_Add/Ok"
-                                DisabledText:
-                                    text: "#bonus_code:Dialog_Add/Ok"
+                            children:
+                            -   path: "Caption"
+                                text: "#bonus_code:Dialog_Add/Ok"

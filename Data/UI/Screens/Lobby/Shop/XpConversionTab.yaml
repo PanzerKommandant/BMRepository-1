@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
 - "~res:/UI/Screens/Lobby/Shop/BaseShopTab.yaml"
@@ -7,6 +7,15 @@ ImportedPackages:
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
+StyleSheets:
+-   selector: ".size-hint-text"
+    properties:
+        sizePolicy-horizontalPolicy: "FixedSize"
+        sizePolicy-horizontalValue: 400.000000
+-   selector: ".size-hint-text.Desktop"
+    properties:
+        sizePolicy-horizontalPolicy: "PercentOfParent"
+        sizePolicy-horizontalValue: 90.000000
 Controls:
 -   class: "UIControl"
     customClass: "UIXpConversionTabControl"
@@ -158,12 +167,12 @@ Controls:
             children:
             -   prototype: "StyledButton/StyledButton"
                 name: "ConvertButton"
-                size: [250.000000, 70.000000]
+                size: [250.000000, 64.000000]
                 classes: "button button-color-green"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
-                        rightAnchor: 20.000000
+                        rightAnchor: 6.000000
                         vCenterAnchorEnabled: true
                 children:
                 -   path: "Caption"
@@ -653,13 +662,11 @@ Controls:
                             name: "Label"
                             size: [173.000000, 30.000000]
                             noInput: true
+                            classes: "header1 text-color-white"
                             textcolorInheritType: "COLOR_IGNORE_PARENT"
-                            shadowoffset: [0.000000, 1.000000]
-                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
                             textalign: ["LEFT", "VCENTER"]
                             textUseRtlAlign: "USE_BY_CONTENT"
                             text: "shop/ToTransferXP"
-                            font: "WarHeliosCondC_Bold_25"
                             components:
                                 SizePolicy:
                                     horizontalPolicy: "PercentOfContent"
@@ -690,13 +697,11 @@ Controls:
                         position: [421.500000, 106.000000]
                         size: [211.000000, 30.000000]
                         noInput: true
+                        classes: "header1 text-color-white"
                         textcolorInheritType: "COLOR_IGNORE_PARENT"
-                        shadowoffset: [0.000000, 1.000000]
-                        shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
                         textalign: ["LEFT", "VCENTER"]
                         textUseRtlAlign: "DONT_USE"
                         text: "shop/ToPay"
-                        font: "WarHeliosCondC_Bold_25"
                         components:
                             Anchor:
                                 hCenterAnchorEnabled: true
@@ -771,25 +776,20 @@ Controls:
                                 Focus: {}
                 -   class: "UIStaticText"
                     name: "Hint"
-                    position: [512.000000, 438.500000]
                     size: [400.000000, 95.000000]
                     pivot: [0.500000, 0.500000]
                     noInput: true
-                    textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    classes: "size-hint-text text1 text-color-blue"
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    shadowoffset: [0.000000, 1.000000]
-                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
                     multiline: "MULTILINE_ENABLED"
                     fitting: ["REDUCE"]
                     textalign: ["HCENTER", "BOTTOM"]
                     textUseRtlAlign: "DONT_USE"
                     text: "shop/Hint/XP"
-                    font: "WarHeliosCondC_21"
                     components:
                         SizePolicy: {}
                         Anchor:
                             hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
                             bottomAnchorEnabled: true
                             bottomAnchor: 3.000000
                         Background:

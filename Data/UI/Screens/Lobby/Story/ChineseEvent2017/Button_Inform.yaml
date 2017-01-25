@@ -1,0 +1,48 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Buy.yaml"
+Controls:
+-   prototype: "Button_Buy/StoryButton"
+    name: "StoryButton"
+    children:
+    -   path: "Back"
+        clip: true
+        children:
+        -   class: "UIParticles"
+            name: "fire"
+            position: [88.500000, 24.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Lunar_NY/Dragon_info_fire.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "glow"
+            position: [104.500000, 24.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Lunar_NY/Dragon_info_glow.sc2"
+            autoStart: true
+    -   path: "Icon"
+        position: [54.500000, -3.000000]
+        components:
+            Anchor:
+                topAnchorEnabled: false
+                bottomAnchorEnabled: true
+                bottomAnchor: 20.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Lunar_NY/Dragon_info"
+                frame: 0
+        children:
+        -   class: "UIParticles"
+            name: "Particle"
+            position: [42.500000, 39.250000]
+            size: [57.000000, 47.500000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: ""
+            autoStart: true
+    -   path: "Title"
+        text: "lunar_event/Title"

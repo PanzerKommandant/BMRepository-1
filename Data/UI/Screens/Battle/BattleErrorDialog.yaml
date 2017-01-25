@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
@@ -50,7 +50,7 @@ Controls:
                     align: ["LEFT", "TOP"]
         -   prototype: "StyledButton/StyledButton"
             name: "OkButton"
-            size: [192.000000, 70.000000]
+            size: [192.000000, 64.000000]
             components:
                 Anchor:
                     hCenterAnchorEnabled: true

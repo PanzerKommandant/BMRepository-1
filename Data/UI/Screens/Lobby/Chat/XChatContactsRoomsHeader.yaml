@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 Controls:
 -   class: "UIListCell"
     name: "XChatContectsRoomsHeader"
@@ -8,7 +8,7 @@ Controls:
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"
-        Normal:
+        Background:
             drawType: "DRAW_FILL"
             color: [0.000000, 0.000000, 0.000000, 1.000000]
     children:

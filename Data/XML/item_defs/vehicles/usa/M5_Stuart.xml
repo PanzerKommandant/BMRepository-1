@@ -51,8 +51,8 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>36.356007</turret_01>
-				<turret_02>33.933090</turret_02>
+				<turret_01>34.004620</turret_01>
+				<turret_02>33.994308</turret_02>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>
@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_13 armor_4</primaryArmor>
 		<weight>9680</weight>
-		<maxHealth>232</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>140</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -228,8 +228,8 @@
 			<drivingWheels>WD_L0 W_L4</drivingWheels>
 			<effects>
 				<lodDist>MEDIUM</lodDist>
-				<dust>mediumTankDust</dust>
-				<mud>mediumTankMud</mud>
+				<dust>smallTankDust</dust>
+				<mud>smallTankMud</mud>
 			</effects>
 			<sound>/vehicles/tanks/treads/treads_1</sound>
 			<hullPosition>0.000000 0.836116 0.000000</hullPosition>
@@ -348,8 +348,8 @@
 			<drivingWheels>WD_L0 W_L4</drivingWheels>
 			<effects>
 				<lodDist>MEDIUM</lodDist>
-				<dust>mediumTankDust</dust>
-				<mud>mediumTankMud</mud>
+				<dust>smallTankDust</dust>
+				<mud>smallTankMud</mud>
 			</effects>
 			<sound>/vehicles/tanks/treads/treads_1</sound>
 			<hullPosition>0.000000 0.836116 0.000000</hullPosition>
@@ -422,7 +422,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>1200</weight>
-			<maxHealth>58</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -609,7 +609,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>1350</weight>
-			<maxHealth>108</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>

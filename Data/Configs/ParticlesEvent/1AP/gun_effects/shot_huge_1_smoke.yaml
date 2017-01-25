@@ -40,7 +40,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [4.000000, 4.000000]
     sizeVariation: [0.200000, 0.200000]
-    sprite: "../../../../Gfx/Particles/1AP/smoke"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/smoke"
     startTime: 0.200000
     type: "layer"
 layer1:
@@ -74,6 +74,6 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
-    sprite: "../../../../Gfx/Particles/1AP/explosion"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/explosion"
     startTime: 0.000000
     type: "layer"

@@ -38,7 +38,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [3.000000, 3.000000], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../../Gfx/Particles/additive/hit_anim"
+    sprite: "../../../../../Data/Gfx/Particles/additive/hit_anim"
     startTime: 0.000000
     type: "layer"
     velocity: 0.010000

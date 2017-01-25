@@ -1,16 +1,17 @@
 Header:
-    version: "4"
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Common/Selection.yaml"
 Controls:
--   class: "UIButton"
+-   class: "UIControl"
     customClass: "UISkillControl"
     name: "SkillControl"
-    size: [90.000000, 90.000000]
-    debugDraw: false
+    size: [78.000000, 78.000000]
+    classes: "button"
     components:
         Anchor:
             vCenterAnchorEnabled: true
-        PressedInside:
-            color: [1.000000, 1.000000, 1.000000, 0.500000]
     children:
     -   class: "UIControl"
         name: "Content"
@@ -18,10 +19,10 @@ Controls:
         noInput: true
         components:
             Anchor:
-                hCenterAnchorEnabled: true
-                hCenterAnchor: 0.000000
-                vCenterAnchorEnabled: true
-                vCenterAnchor: 0.000000
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
             Background:
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
         children:
@@ -29,16 +30,18 @@ Controls:
             name: "State"
             size: [78.000000, 78.000000]
             noInput: true
+            classes: "color=button-color-green"
             components:
                 Anchor:
                     leftAnchorEnabled: true
-                    hCenterAnchorEnabled: false
                     rightAnchorEnabled: true
                     topAnchorEnabled: true
-                    vCenterAnchorEnabled: false
                     bottomAnchorEnabled: true
                 Background:
-                    sprite: "~res:/Gfx/UI/CrewSkills/skillsSelect"
+                    drawType: "DRAW_TILED_MULTILAYER"
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradientMode: "Overlay"
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
         -   class: "UIControl"
@@ -86,20 +89,15 @@ Controls:
                 Background:
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-        -   class: "UIControl"
+        -   prototype: "Selection/OrangeSelection"
             name: "Selection"
             visible: false
-            noInput: true
             components:
                 Anchor:
                     leftAnchorEnabled: true
                     rightAnchorEnabled: true
                     topAnchorEnabled: true
                     bottomAnchorEnabled: true
-                Background:
-                    sprite: "~res:/Gfx/UI/CrewSkills/skillsSelect"
-                    frame: 3
-                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
         -   class: "UIControl"
             name: "CheckMark"
             size: [90.000000, 90.000000]
@@ -117,6 +115,6 @@ Controls:
                     bottomAnchor: -12.000000
                 Background:
                     sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
-                    frame: 5
+                    frame: 2
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

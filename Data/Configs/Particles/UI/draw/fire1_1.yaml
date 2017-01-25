@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [25.000000, 25.000000]
     sizeVariation: [20.000000, 20.000000]
-    sprite: "../../../../Gfx/Particles/UI/fire"
+    sprite: "../../../../../Data/Gfx/Particles/UI/fire"
     startTime: 0.000000
     type: "layer"
     velocity: 15.000000
@@ -80,7 +80,7 @@ layer1:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../Gfx/Particles/UI/o2_fire_anim"
+    sprite: "../../../../../Data/Gfx/Particles/UI/o2_fire_anim"
     startTime: 0.000000
     type: "layer"
     velocity: 15.000000
@@ -122,7 +122,7 @@ layer2:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../Gfx/Particles/UI/fog"
+    sprite: "../../../../../Data/Gfx/Particles/UI/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000

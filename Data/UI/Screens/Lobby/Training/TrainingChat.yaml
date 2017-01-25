@@ -1,13 +1,23 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/TextFieldWithHint.yaml"
-- "~res:/UI/Screens/CommonStyles.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Chat/ChatMessageStyle.yaml"
+StyleSheets:
+-   selector: ".training-nick-owner-text-color"
+    properties:
+        text-textColor: [1.000000, 0.858824, 0.686275, 1.000000]
+-   selector: ".training-nick-self-text-color"
+    properties:
+        text-textColor: [0.862745, 0.807843, 0.729412, 1.000000]
+-   selector: ".training-nick-text-color"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
 Controls:
 -   class: "UIControl"
     customClass: "UITrainingChat"
-    name: "ChatWnd"
+    name: "ChatWindowFrame"
     position: [400.000000, 80.000000]
     size: [624.000000, 688.000000]
     noInput: true
@@ -48,6 +58,9 @@ Controls:
                     topAnchorEnabled: true
                     topAnchor: 10.000000
             children:
+            -   path: "TextField"
+                returnKeyType: "RETURN_KEY_SEND"
+                children: []
             -   path: "TextField/Hint"
                 text: "enterMessageHint"
         -   class: "UIControl"
@@ -80,7 +93,7 @@ Controls:
                     Background:
                         align: ["LEFT", "TOP"]
     -   class: "UIControl"
-        name: "chatBg"
+        name: "ChatMessageList"
         position: [0.000000, 70.000000]
         size: [624.000000, 618.000000]
         clip: true
@@ -102,69 +115,64 @@ Controls:
     size: [466.000000, 50.000000]
     children:
     -   class: "UIControl"
-        name: "chatMsgCell"
-        size: [466.000000, 50.000000]
+        name: "Bg"
         classes: "chat-background"
-        children:
-        -   class: "UIControl"
-            name: "Bg"
-            classes: "chat-background"
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 1.000000
-                Background:
-                    drawType: "DRAW_FILL"
-        -   class: "UIStaticText"
-            name: "fromName"
-            position: [10.000000, 12.000000]
-            size: [90.000000, 24.000000]
-            noInput: true
-            classes: "header4 textColor=chat-nick-text-color"
-            textcolorInheritType: "COLOR_IGNORE_PARENT"
-            fitting: ["POINTS"]
-            textalign: ["LEFT", "TOP"]
-            textUseRtlAlign: "DONT_USE"
-            components:
-                SizePolicy: {}
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 10.000000
-                    topAnchorEnabled: true
-                    topAnchor: 12.000000
-                Background:
-                    align: ["LEFT", "TOP"]
-        -   class: "UIStaticText"
-            name: "msgText"
-            position: [105.000000, 12.000000]
-            size: [288.000000, 23.000000]
-            noInput: true
-            classes: "text2 textColor=chat-msg-text-color"
-            textcolorInheritType: "COLOR_IGNORE_PARENT"
-            multiline: "MULTILINE_ENABLED"
-            textalign: ["LEFT", "TOP"]
-            textUseRtlAlign: "DONT_USE"
-            components:
-                Background:
-                    align: ["LEFT", "TOP"]
-        -   class: "UIStaticText"
-            name: "timeText"
-            position: [406.000000, 13.000000]
-            size: [50.000000, 24.000000]
-            noInput: true
-            classes: "text2 textColor=chat-date-text-color"
-            textcolorInheritType: "COLOR_IGNORE_PARENT"
-            fitting: ["REDUCE"]
-            textalign: ["RIGHT", "TOP"]
-            textUseRtlAlign: "DONT_USE"
-            components:
-                Anchor:
-                    rightAnchorEnabled: true
-                    rightAnchor: 10.000000
-                    topAnchorEnabled: true
-                    topAnchor: 13.000000
-                Background:
-                    align: ["LEFT", "TOP"]
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 1.000000
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "fromName"
+        position: [10.000000, 12.000000]
+        size: [90.000000, 24.000000]
+        noInput: true
+        classes: "header4 textColor=chat-nick-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["POINTS"]
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            SizePolicy: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                topAnchorEnabled: true
+                topAnchor: 12.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "msgText"
+        position: [105.000000, 12.000000]
+        size: [288.000000, 23.000000]
+        noInput: true
+        classes: "text2 textColor=chat-msg-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "timeText"
+        position: [406.000000, 13.000000]
+        size: [50.000000, 24.000000]
+        noInput: true
+        classes: "text2 textColor=chat-date-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["REDUCE"]
+        textalign: ["RIGHT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 10.000000
+                topAnchorEnabled: true
+                topAnchor: 13.000000
+            Background:
+                align: ["LEFT", "TOP"]

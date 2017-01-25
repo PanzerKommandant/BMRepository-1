@@ -1,0 +1,46 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIStaticText"
+    name: "Header1"
+    size: [105.000000, 32.000000]
+    classes: "header1 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Header1"
+-   class: "UIStaticText"
+    name: "Header2"
+    size: [105.000000, 32.000000]
+    classes: "header2 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Header1"
+-   class: "UIStaticText"
+    name: "Header3"
+    size: [105.000000, 32.000000]
+    classes: "header3 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Header1"
+-   class: "UIStaticText"
+    name: "Text1"
+    size: [105.000000, 32.000000]
+    classes: "text1 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Text1"
+-   class: "UIStaticText"
+    name: "Text2"
+    size: [105.000000, 32.000000]
+    classes: "text2 text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Text2"
+-   class: "UIStaticText"
+    name: "Text2Small"
+    size: [105.000000, 32.000000]
+    classes: "text2-small text-color-white"
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    text: "Text2 Small"
+-   class: "UIStaticText"
+    name: "Text3Small"
+    size: [105.000000, 32.000000]
+    classes: "text3-small"
+    text: "Text3Small"

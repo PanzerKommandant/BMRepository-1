@@ -1,19 +1,22 @@
 Header:
-    version: "1"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Styles/ButtonStyle.yaml"
 Controls:
 -   class: "UIControl"
     name: "IconButton"
-    size: [222.000000, 70.000000]
-    classes: "button"
+    size: [222.000000, 64.000000]
+    classes: "button button-color-gray"
     components:
         Background:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+            gradientMode: "Overlay"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
             align: ["HCENTER", "VCENTER"]
-            leftRightStretchCap: 9.000000
-            topBottomStretchCap: 9.000000
+            leftRightStretchCap: 20.000000
+            topBottomStretchCap: 20.000000
     children:
     -   class: "UIControl"
         name: "icon"

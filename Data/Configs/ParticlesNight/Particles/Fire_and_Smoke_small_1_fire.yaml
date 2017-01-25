@@ -44,7 +44,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/alpha/o2_fire_anim"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2_fire_anim"
     startTime: 0.000000
     type: "layer"
     velocity: 0.010000
@@ -88,7 +88,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [0.800000, 0.800000]
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fog"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 0.400000
@@ -128,7 +128,7 @@ layer2:
     scaleVelocityFactor: 0.000000
     size: [0.015000, 0.015000]
     sizeVariation: [0.005000, 0.005000]
-    sprite: "../../../Gfx/Particles/alpha/Iskr"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Iskr"
     startTime: 0.000000
     type: "layer"
     velocity: 0.010000

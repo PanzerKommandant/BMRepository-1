@@ -4,7 +4,6 @@ ImportedPackages:
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/FontsExceptions.yaml"
-- "~res:/UI/Screens/FontsExceptions.yaml"
 Controls:
 -   class: "UIControl"
     name: "DevConsole"
@@ -138,6 +137,7 @@ Controls:
                 name: "RequestSPAAuthToken"
                 position: [5.000000, 5.000000]
                 size: [282.000000, 46.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -147,7 +147,6 @@ Controls:
                         topAnchorEnabled: true
                         topAnchor: 5.000000
                     Background:
-                        frame: 2
                         topBottomStretchCap: 5.000000
                 children:
                 -   path: "Caption"
@@ -253,6 +252,7 @@ Controls:
             -   prototype: "StyledButton/StyledButton"
                 name: "CheckWGNPLogin"
                 size: [282.000000, 46.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -262,7 +262,6 @@ Controls:
                         topAnchorEnabled: true
                         topAnchor: 55.000000
                     Background:
-                        frame: 2
                         topBottomStretchCap: 5.000000
                 children:
                 -   path: "Caption"
@@ -270,6 +269,7 @@ Controls:
             -   prototype: "StyledButton/StyledButton"
                 name: "OpenForum"
                 size: [282.000000, 46.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -279,7 +279,6 @@ Controls:
                         topAnchorEnabled: true
                         topAnchor: 105.000000
                     Background:
-                        frame: 2
                         topBottomStretchCap: 5.000000
                 children:
                 -   path: "Caption"
@@ -287,6 +286,7 @@ Controls:
             -   prototype: "StyledButton/StyledButton"
                 name: "OpenSupport"
                 size: [282.000000, 46.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -296,7 +296,6 @@ Controls:
                         topAnchorEnabled: true
                         topAnchor: 155.000000
                     Background:
-                        frame: 2
                         topBottomStretchCap: 5.000000
                 children:
                 -   path: "Caption"
@@ -304,6 +303,7 @@ Controls:
             -   prototype: "StyledButton/StyledButton"
                 name: "RegisterForPushNotifications"
                 size: [282.000000, 46.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -313,10 +313,9 @@ Controls:
                         topAnchorEnabled: true
                         topAnchor: 205.000000
                     Background:
-                        frame: 2
                         topBottomStretchCap: 5.000000
                 children:
                 -   path: "Caption"
-                    classes: "header1 hacked-font text-color-white"
+                    classes: "header1 text-color-white"
                     fitting: ["REDUCE"]
                     text: "Register For Push Notifications"

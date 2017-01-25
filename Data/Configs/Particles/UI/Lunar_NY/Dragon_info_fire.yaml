@@ -1,0 +1,46 @@
+emitter:
+    size: [0.000000, 0.000000, 0.000000]
+    name: "Dragon_info_fire"
+    type: "point"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionVector: [-1.000000, 0.000000, 0.000000]
+    emissionRange: 90.000000
+layer0:
+    name: "fire"
+    enableFog: false
+    sprite: "../../../../../Data/Gfx/Particles/UI/explosion_smoke_white"
+    type: "layer"
+    isLong: true
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 1.000000
+    enableFrameBlend: true
+    scaleVelocityBase: 0.800000
+    scaleVelocityFactor: 0.110000
+    life: 5.000000
+    number: 5.000000
+    size: [28.000000, 28.000000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [1.200000, 1.200000]]
+    velocity: 10.000000
+    randomSpinDirection: false
+    angleVariation: 360.000000
+    alphaOverLife: [0.000000, 0.333399, 1.000000, 0.000000]
+    colorOverLife: [108.000000, 138.000000, 170.000000, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 5.000000
+    randomFrameOnStart: true
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 5.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1

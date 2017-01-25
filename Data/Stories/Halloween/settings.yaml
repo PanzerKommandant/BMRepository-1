@@ -2,18 +2,18 @@ stages:
  haloween_inform:
   name: "halloween_event/Title"
   timer_hint: "template_event/AnyStage/Start"
-  icon: "~res:/Gfx/UI/Story/Halloween/pumpkin"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Inform.yaml"
   info: "halloween-info"
  haloween_process:
   name: "halloween_event/Title"
   timer_hint: "template_event/AnyStage/Finish"
-  icon: "~res:/Gfx/UI/Story/Halloween/pumpkin"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Inform.yaml"
   info: "halloween-progress"
   tree: "Lobby/Story/HalloweenStoryTree"
  haloween_buy:
   name: "halloween_event/Title"
   timer_hint: "template_event/AnyStage/Finish"
-  icon: "~res:/Gfx/UI/Story/Halloween/pumpkin"
+  button: "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Inform.yaml"
   info: "halloween-progress"
   tree: "Lobby/Story/HalloweenStoryTree"
 currencyKeys:

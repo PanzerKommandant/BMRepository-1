@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 StyleSheets:
 -   selector: ".button"
     properties:
@@ -12,19 +12,36 @@ StyleSheets:
         bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
 -   selector: ".button-color-gray"
     properties:
-        bg-frame: 0
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient.txt"
 -   selector: ".button-color-red"
     properties:
-        bg-frame: 1
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/red_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/red_gradient.txt"
 -   selector: ".button-color-green"
     properties:
-        bg-frame: 2
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient.txt"
 -   selector: ".button-color-orange"
     properties:
-        bg-frame: 3
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/orange_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/orange_gradient.txt"
+-   selector: ".button-color-green-dark"
+    properties:
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_dark_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_dark_gradient.txt"
+-   selector: ".button-color-orange-dark"
+    properties:
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/orange_dark_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/orange_dark_gradient.txt"
 -   selector: ".button-color-white"
     properties:
         bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/white_contour.txt"
         bg-detail: "~res:/Gfx/UI/CommonUIElements/Button/white_detail.txt"
         bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/white_gradient.txt"
         bg-mask: "~res:/Gfx/UI/CommonUIElements/Button/white_mask.txt"
+-   selector: ".button-color-gray-dark"
+    properties:
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient.txt"
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]

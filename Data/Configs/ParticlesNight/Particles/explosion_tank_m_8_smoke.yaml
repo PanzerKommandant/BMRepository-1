@@ -48,7 +48,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
     spin: 5.000000
     spinVariation: 10.000000
-    sprite: "../../../Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
+    sprite: "../../../../Data/Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -95,7 +95,7 @@ layer1:
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
     spin: 5.000000
     spinVariation: 10.000000
-    sprite: "../../../Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
+    sprite: "../../../../Data/Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -141,7 +141,7 @@ layer2:
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
     spin: 5.000000
     spinVariation: 10.000000
-    sprite: "../../../Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
+    sprite: "../../../../Data/Gfx/Particles/17_karelia_hallowen/explosion_smoke_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

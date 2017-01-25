@@ -1,0 +1,21 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Tournament/TournamentTabControl.yaml"
+Controls:
+-   prototype: "TournamentTabControl/TabControl"
+    name: "TabStagePrototype"
+    children:
+    -   class: "UIStaticText"
+        name: "Label"
+        classes: "header3 text-color-white"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        fitting: ["POINTS"]
+        textMargins: [5.000000, 0.000000, 5.000000, 0.000000]
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true

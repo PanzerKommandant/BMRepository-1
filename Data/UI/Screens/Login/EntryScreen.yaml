@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Dialogs.yaml"
@@ -20,7 +20,7 @@ StyleSheets:
 -   selector: ".social-button:pressed_inside"
     properties:
         bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "SocialButton"
     size: [80.000000, 80.000000]
@@ -28,6 +28,7 @@ Controls:
     components:
         Anchor:
             vCenterAnchorEnabled: true
+Controls:
 -   prototype: "LoginCommon/ScreenBlank"
     name: "Screen"
     children:
@@ -89,7 +90,7 @@ Controls:
                     vCenterAnchor: -65.000000
         -   prototype: "StyledButton/StyledButton"
             name: "WGNLoginButton"
-            size: [462.000000, 70.000000]
+            size: [462.000000, 64.000000]
             components:
                 Anchor:
                     hCenterAnchorEnabled: true
@@ -97,13 +98,13 @@ Controls:
                     vCenterAnchor: 100.000000
             children:
             -   path: "Caption"
-                classes: "header1 text-color-white"
+                classes: "header3 text-color-white"
                 fitting: ["REDUCE"]
                 text: "#entry:button/wgnLogin"
         -   prototype: "StyledButton/StyledButton"
             name: "DemoLoginButton"
-            position: [281.000000, 529.000000]
-            size: [462.000000, 70.000000]
+            position: [281.000000, 532.000000]
+            size: [462.000000, 64.000000]
             components:
                 Anchor:
                     hCenterAnchorEnabled: true

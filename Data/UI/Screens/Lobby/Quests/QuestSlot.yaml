@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
 - "~res:/UI/Screens/Common.yaml"
@@ -61,48 +61,16 @@ StyleSheets:
 -   selector: ".button:disabled"
     properties:
         bg-color: [1.000000, 1.000000, 1.000000, 0.749020]
--   selector: ".many-rewards #Description"
+-   selector: ".many-rewards #Value"
     properties:
         visible: true
--   selector: ".few-rewards #Description"
+-   selector: ".few-rewards #Value"
     properties:
         visible: false
--   selector: ".many-rewards #RegularLayout #Reward #Description"
+-   selector: ".many-rewards #RegularLayout #Reward #Value"
     properties:
         visible: false
-Controls:
--   class: "UIControl"
-    name: "EventReward"
-    noInput: true
-    components:
-        LinearLayout:
-            spacing: 5.000000
-        SizePolicy:
-            horizontalPolicy: "PercentOfChildrenSum"
-            verticalPolicy: "FixedSize"
-            verticalValue: 31.000000
-    children:
-    -   class: "UIStaticText"
-        name: "Value"
-        classes: "header1 text-color-white"
-        shadowoffset: [0.000000, 1.000000]
-        text: "text"
-        components:
-            SizePolicy:
-                horizontalPolicy: "PercentOfContent"
-                verticalPolicy: "PercentOfContent"
-    -   class: "UIControl"
-        name: "Icon"
-        noInput: true
-        components:
-            SizePolicy:
-                horizontalPolicy: "FixedSize"
-                horizontalValue: 22.000000
-                verticalPolicy: "FixedSize"
-                verticalValue: 22.000000
-            Anchor:
-                vCenterAnchorEnabled: true
-                vCenterAnchor: 2.000000
+Prototypes:
 -   class: "UIControl"
     customClass: "UIQuestSlot"
     name: "QuestSlotInBattleResult"
@@ -254,7 +222,7 @@ Controls:
                                 drawType: "DRAW_ALIGNED"
                                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                     -   class: "UIStaticText"
-                        name: "Description"
+                        name: "Value"
                         size: [220.000000, 0.000000]
                         classes: "header2"
                         textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
@@ -452,68 +420,6 @@ Controls:
                         leftAnchorEnabled: true
                         rightAnchorEnabled: true
                         bottomAnchorEnabled: true
-    -   class: "UIControl"
-        name: "RewardAnimationHolder"
-        size: [220.000000, 100.000000]
-        visible: false
-        noInput: true
-        debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
-        components:
-            Anchor:
-                hCenterAnchorEnabled: true
-                topAnchorEnabled: true
-                topAnchor: 226.000000
-        children:
-        -   class: "UIControl"
-            name: "RewardScaling"
-            position: [110.000000, 28.000000]
-            size: [440.000000, 200.000000]
-            pivot: [0.500000, 0.280000]
-            noInput: true
-            children:
-            -   class: "UIParticles"
-                name: "glow"
-                position: [220.000000, 56.000000]
-                size: [10.000000, 10.000000]
-                pivot: [0.500000, 0.500000]
-                noInput: true
-                effectPath: "~res:/3d/FX/UI/Quests/Cards/glow.sc2"
-                autoStart: true
-                components:
-                    Anchor:
-                        hCenterAnchorEnabled: true
-                        vCenterAnchorEnabled: true
-                        vCenterAnchor: -44.000000
-                    Background:
-                        align: ["HCENTER", "VCENTER"]
-            -   class: "UIControl"
-                name: "Image"
-                size: [140.000000, 140.000000]
-                pivot: [0.500000, 0.500000]
-                noInput: true
-                components:
-                    Anchor:
-                        hCenterAnchorEnabled: true
-                        vCenterAnchorEnabled: true
-                        vCenterAnchor: -44.000000
-                    Background:
-                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-            -   class: "UIStaticText"
-                name: "Text"
-                position: [220.000000, 110.000000]
-                size: [440.000000, 82.000000]
-                pivot: [0.500000, 0.000000]
-                shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
-                textUseRtlAlign: "USE_BY_CONTENT"
-                font: "WarHeliosCondC_Bold_42"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                        topAnchorEnabled: true
-                        topAnchor: 110.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 8.000000
 -   prototype: "QuestSlotInBattleResult"
     name: "QuestSlot"
     children:
@@ -524,12 +430,43 @@ Controls:
         components:
             LinearLayout:
                 orientation: "RightToLeft"
-    -   path: "RewardAnimationHolder/RewardScaling/Text"
-        angle: 0.000000
     -   prototype: "StyledButton/StyledButton"
         name: "SkipButton"
-        classes: "button"
+        classes: "button button-color-gray"
         components:
             Anchor:
                 hCenterAnchorEnabled: true
                 bottomAnchorEnabled: true
+Controls:
+-   class: "UIControl"
+    name: "EventReward"
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: 5.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "FixedSize"
+            verticalValue: 31.000000
+    children:
+    -   class: "UIStaticText"
+        name: "Value"
+        classes: "header1 text-color-white"
+        shadowoffset: [0.000000, 1.000000]
+        text: "text"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+    -   class: "UIControl"
+        name: "Icon"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "FixedSize"
+                horizontalValue: 22.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 22.000000
+            Anchor:
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 2.000000

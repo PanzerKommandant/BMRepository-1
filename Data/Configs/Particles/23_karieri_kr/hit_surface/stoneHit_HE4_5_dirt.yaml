@@ -41,7 +41,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [1.500000, 1.500000]
     sizeOverLifeXY: [0.002500, [1.000000, 0.982500], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/fog"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -81,7 +81,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [1.500000, 1.500000]
     sizeOverLifeXY: [0.000000, [1.000000, 0.951800], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/Fx_DustSpray_two"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/Fx_DustSpray_two"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Screens/Common.yaml"
@@ -35,6 +35,12 @@ StyleSheets:
 -   selector: ".other #Nation"
     properties:
         bg-frame: 7
+-   selector: ".cell"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.000000]
+-   selector: ".cell:selected"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.996078]
 Controls:
 -   class: "UIControl"
     name: "Page"
@@ -250,12 +256,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "header3 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "BOTTOM"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist"
-                                    font: "WarHeliosCondC_Bold_21"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -271,12 +277,12 @@ Controls:
                                     position: [90.000000, 45.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "TOP"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Description"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -303,12 +309,12 @@ Controls:
                                     name: "Value"
                                     size: [70.000000, 48.000000]
                                     noInput: true
+                                    classes: "header4 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["RIGHT", "VCENTER"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "XXXX"
-                                    font: "WarHeliosCondC_Bold_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -322,12 +328,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 48.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "VCENTER"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Scout"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -371,12 +377,12 @@ Controls:
                                     name: "Value"
                                     size: [70.000000, 48.000000]
                                     noInput: true
+                                    classes: "header3 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["RIGHT", "VCENTER"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "YYYY"
-                                    font: "WarHeliosCondC_Bold_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -390,12 +396,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 48.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "VCENTER"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Track"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -439,12 +445,12 @@ Controls:
                                     name: "Value"
                                     size: [70.000000, 48.000000]
                                     noInput: true
+                                    classes: "header4 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["RIGHT", "VCENTER"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "YYYY"
-                                    font: "WarHeliosCondC_Bold_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -458,12 +464,13 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 48.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
+                                    fitting: ["REDUCE"]
                                     textalign: ["LEFT", "VCENTER"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Assist/Total"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -558,12 +565,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "header3 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "BOTTOM"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Detect"
-                                    font: "WarHeliosCondC_Bold_21"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -579,12 +586,12 @@ Controls:
                                     position: [90.000000, 45.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "TOP"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Detect/Description"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -710,12 +717,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "header3 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "BOTTOM"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage"
-                                    font: "WarHeliosCondC_Bold_21"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -731,12 +738,12 @@ Controls:
                                     position: [90.000000, 45.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "TOP"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Description"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -779,12 +786,12 @@ Controls:
                                     name: "Value"
                                     size: [70.000000, 48.000000]
                                     noInput: true
+                                    classes: "header4 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["RIGHT", "VCENTER"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "XXXX"
-                                    font: "WarHeliosCondC_Bold_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -798,12 +805,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 48.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "VCENTER"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Damage_Total"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -830,12 +837,12 @@ Controls:
                                     name: "Value"
                                     size: [70.000000, 48.000000]
                                     noInput: true
+                                    classes: "header4 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["RIGHT", "VCENTER"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "YYYY"
-                                    font: "WarHeliosCondC_Bold_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -849,12 +856,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 48.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "VCENTER"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Damage/Penetration_Total"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -946,12 +953,12 @@ Controls:
                                     position: [90.000000, 0.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "header3 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "BOTTOM"]
                                     textUseRtlAlign: "DONT_USE"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Destroy"
-                                    font: "WarHeliosCondC_Bold_21"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -967,12 +974,12 @@ Controls:
                                     position: [90.000000, 45.000000]
                                     size: [475.000000, 45.000000]
                                     noInput: true
+                                    classes: "text2 text-color-white"
                                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                                     shadowoffset: [0.000000, 1.000000]
                                     textalign: ["LEFT", "TOP"]
                                     textUseRtlAlign: "USE_BY_CONTENT"
                                     text: "#battle_results:DetailsPage/EfficiencyPage/Type_Destroy/Discription_Shot"
-                                    font: "WarHeliosCondC_19"
                                     components:
                                         Anchor:
                                             leftAnchorEnabled: true
@@ -1067,13 +1074,13 @@ Controls:
                                             name: "Header"
                                             size: [467.000000, 26.000000]
                                             noInput: true
+                                            classes: "header3 text-color-white"
                                             textcolorInheritType: "COLOR_IGNORE_PARENT"
                                             shadowoffset: [0.000000, 1.000000]
                                             multiline: "MULTILINE_ENABLED"
                                             textalign: ["LEFT", "BOTTOM"]
                                             textUseRtlAlign: "DONT_USE"
                                             text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module"
-                                            font: "WarHeliosCondC_Bold_21"
                                             components:
                                                 SizePolicy:
                                                     verticalPolicy: "PercentOfContent"
@@ -1086,13 +1093,13 @@ Controls:
                                             name: "Description"
                                             size: [472.000000, 46.000000]
                                             noInput: true
+                                            classes: "text2 text-color-white"
                                             textcolorInheritType: "COLOR_IGNORE_PARENT"
                                             shadowoffset: [0.000000, 1.000000]
                                             multiline: "MULTILINE_ENABLED"
                                             textalign: ["LEFT", "TOP"]
                                             textUseRtlAlign: "USE_BY_CONTENT"
                                             text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module/Description"
-                                            font: "WarHeliosCondC_19"
                                             components:
                                                 SizePolicy:
                                                     verticalPolicy: "PercentOfContent"
@@ -1342,12 +1349,12 @@ Controls:
                                             name: "Value"
                                             size: [70.000000, 48.000000]
                                             noInput: true
+                                            classes: "header4 text-color-white"
                                             textcolorInheritType: "COLOR_IGNORE_PARENT"
                                             shadowoffset: [0.000000, 1.000000]
                                             textalign: ["RIGHT", "VCENTER"]
                                             textUseRtlAlign: "DONT_USE"
                                             text: "XXXX"
-                                            font: "WarHeliosCondC_Bold_19"
                                             components:
                                                 Anchor:
                                                     leftAnchorEnabled: true
@@ -1361,12 +1368,12 @@ Controls:
                                             position: [90.000000, 0.000000]
                                             size: [467.000000, 48.000000]
                                             noInput: true
+                                            classes: "text2 text-color-white"
                                             textcolorInheritType: "COLOR_IGNORE_PARENT"
                                             shadowoffset: [0.000000, 1.000000]
                                             textalign: ["LEFT", "VCENTER"]
                                             textUseRtlAlign: "USE_BY_CONTENT"
                                             text: "#battle_results:DetailsPage/EfficiencyPage/Type_Module/Total"
-                                            font: "WarHeliosCondC_19"
                                             components:
                                                 Anchor:
                                                     leftAnchorEnabled: true
@@ -1439,11 +1446,11 @@ Controls:
         position: [0.000000, 433.500000]
         size: [1012.000000, 30.000000]
         noInput: true
+        classes: "header1 text-color-white"
         textcolorInheritType: "COLOR_IGNORE_PARENT"
         shadowoffset: [0.000000, 1.000000]
         shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
         text: "#battle_results:DetailsPage/EfficiencyPage/none"
-        font: "WarHeliosCondC_Bold_25"
         components:
             Anchor:
                 leftAnchorEnabled: true
@@ -1458,12 +1465,8 @@ Controls:
     customClass: "UIEfficiencyVehicleListCell"
     name: "Cell"
     size: [425.000000, 80.000000]
+    classes: "cell"
     identifier: "EfficiencyVehicleListCell"
-    components:
-        Normal:
-            color: [1.000000, 1.000000, 1.000000, 0.000000]
-        Selected:
-            color: [1.000000, 1.000000, 1.000000, 0.996078]
     children:
     -   class: "UIControl"
         name: "Background"

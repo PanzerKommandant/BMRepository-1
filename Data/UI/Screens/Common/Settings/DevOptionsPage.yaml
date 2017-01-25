@@ -1,5 +1,5 @@
 Header:
-    version: "1"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
 - "~res:/UI/Screens/Common/Settings/Settings.yaml"
@@ -45,7 +45,7 @@ Controls:
             size: [1025.000000, 688.000000]
             components:
                 LinearLayout:
-                    orientation: "Vertical"
+                    orientation: "TopDown"
                     spacing: 2.000000
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
@@ -98,6 +98,12 @@ Controls:
                 children:
                 -   path: "TextContainer/Text"
                     text: "CRASH APP"
+            -   prototype: "SettingsCommon/Button"
+                name: "ThrowUnobservedExceptionButton"
+                size: [1015.000000, 80.000000]
+                children:
+                -   path: "TextContainer/Text"
+                    text: "THROW UNOBSERVED TASK EXCEPTION"
             -   prototype: "SettingsCommon/Button"
                 name: "ActivateLiveTileButton"
                 size: [1015.000000, 80.000000]

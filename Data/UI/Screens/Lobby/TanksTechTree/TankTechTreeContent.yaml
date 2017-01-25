@@ -2,36 +2,8 @@ Header:
     version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/IconButton.yaml"
 Controls:
--   prototype: "StyledButton/DefaultStyledButton"
-    name: "LocalButton"
-    size: [88.000000, 72.000000]
-    classes: "button button-color-gray"
-    components:
-        Anchor:
-            vCenterAnchorEnabled: true
-        Background:
-            drawType: "DRAW_ALIGNED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
-    children:
-    -   class: "UIControl"
-        name: "info"
-        size: [88.000000, 72.000000]
-        noInput: true
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 0.000000
-                rightAnchorEnabled: true
-                rightAnchor: 0.000000
-                topAnchorEnabled: true
-                topAnchor: 0.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: 0.000000
-            Background:
-                sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
-                frame: 26
-                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
 -   class: "UIControl"
     name: "TankTechTreeContent"
     size: [1024.000000, 442.000000]
@@ -91,6 +63,13 @@ Controls:
                         vCenterAnchor: 0.000000
                     Background:
                         align: ["LEFT", "TOP"]
-            -   prototype: "LocalButton"
+            -   prototype: "IconButton/IconButton"
                 name: "InfoButton"
                 position: [111.000000, -4.000000]
+                size: [86.000000, 70.000000]
+                children:
+                -   path: "icon"
+                    components:
+                        Background:
+                            sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
+                            frame: 26

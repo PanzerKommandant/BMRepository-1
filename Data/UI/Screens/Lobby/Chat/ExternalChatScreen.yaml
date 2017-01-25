@@ -1,247 +1,15 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
-- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
-- "~res:/UI/Screens/Common/CommonInputField.yaml"
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanEmblem.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-- "~res:/UI/Screens/Lobby/Chat/ChatCommon.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-- "~res:/UI/Screens/CommonStyles.yaml"
-- "~res:/UI/Screens/Common/UnreadIcon.yaml"
-Controls:
--   class: "UIControl"
-    name: "ClanRoomHeader"
-    size: [400.000000, 81.000000]
-    children:
-    -   class: "UIControl"
-        name: "cellBack"
-        size: [400.000000, 82.000000]
-        noInput: true
-        children:
-        -   class: "UIControl"
-            name: "selBack"
-            size: [400.000000, 82.000000]
-            visible: false
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 0.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 0.000000
-                Background:
-                    drawType: "DRAW_FILL"
-                    color: [0.070600, 0.125500, 0.160800, 0.945100]
-            children:
-            -   class: "UIControl"
-                name: "selArrow"
-                size: [420.000000, 82.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: -20.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 0.000000
-                    Background:
-                        sprite: "~res:/Gfx/UI/XChat/BlueArrow"
-                        align: ["RIGHT", "VCENTER"]
-                        leftRightStretchCap: 20.000000
-        -   class: "UIControl"
-            name: "bottomDivider"
-            position: [0.000000, 81.000000]
-            size: [400.000000, 1.000000]
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    bottomAnchorEnabled: true
-                Background:
-                    drawType: "DRAW_FILL"
-                    color: [1.000000, 1.000000, 1.000000, 0.247059]
-        -   class: "UIControl"
-            name: "clanRoomView"
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-            children:
-            -   prototype: "StyledButton/DefaultStyledButton"
-                name: "expandBtn"
-                size: [84.000000, 70.000000]
-                classes: "button button-color-gray"
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 13.000000
-                        vCenterAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "icon"
-                    position: [0.000000, 0.000000]
-                    size: [84.000000, 70.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_ALIGNED"
-                            sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
-                            frame: 14
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   prototype: "ChatCommon/UnreadIcon"
-                    name: "UnreadIcon"
-                    size: [16.000000, 16.000000]
-                    components:
-                        Anchor:
-                            rightAnchorEnabled: true
-                            rightAnchor: 4.000000
-                            topAnchorEnabled: true
-                            topAnchor: 4.000000
-                        Background:
-                            drawType: "DRAW_SCALE_PROPORTIONAL"
-            -   class: "UIControl"
-                name: "titlesParent"
-                noInput: true
-                components:
-                    LinearLayout:
-                        orientation: "TopDown"
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                        rightAnchor: 100.000000
-                        topAnchorEnabled: true
-                        bottomAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "clansRoomTitle"
-                    size: [260.000000, 41.000000]
-                    noInput: true
-                    debugDraw: false
-                    components:
-                        SizePolicy:
-                            verticalPolicy: "PercentOfParent"
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 20.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 20.000000
-                            vCenterAnchorEnabled: true
-                            bottomAnchorEnabled: false
-                            bottomAnchor: 0.000000
-                    children:
-                    -   class: "UIStaticText"
-                        name: "name"
-                        size: [260.000000, 41.000000]
-                        visible: true
-                        noInput: true
-                        classes: "header4 text-color-white"
-                        debugDraw: false
-                        fitting: ["POINTS"]
-                        textalign: ["LEFT", "VCENTER"]
-                        text: "#xchat/ClanChat"
-                        components:
-                            Anchor:
-                                leftAnchorEnabled: true
-                                rightAnchorEnabled: true
-                                topAnchorEnabled: true
-                                bottomAnchorEnabled: true
-                -   class: "UIStaticText"
-                    name: "onlineCountText"
-                    position: [20.000000, 41.000000]
-                    size: [200.000000, 41.000000]
-                    noInput: true
-                    classes: "text1 text-color-blue"
-                    textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    multiline: "MULTILINE_ENABLED"
-                    textalign: ["LEFT", "TOP"]
-                    textUseRtlAlign: "DONT_USE"
-                    text: "12 онлайн"
-                    components:
-                        SizePolicy:
-                            verticalPolicy: "PercentOfParent"
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 20.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 80.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 15.000000
-                        Background:
-                            align: ["LEFT", "TOP"]
-            -   prototype: "UnreadIcon/UnreadIcon"
-                name: "alertText"
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 110.000000
-                        vCenterAnchorEnabled: true
-                        vCenterAnchor: 1.000000
--   class: "UIControl"
-    name: "ChatContactHeader"
-    size: [400.000000, 50.000000]
-    components:
-        Background:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
-            leftRightStretchCap: 6.000000
-            topBottomStretchCap: 5.000000
-    children:
-    -   class: "UIControl"
-        name: "Container"
-        noInput: true
-        components:
-            LinearLayout:
-                dynamicPadding: true
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-                bottomAnchorEnabled: true
-        children:
-        -   class: "UIStaticText"
-            name: "Label"
-            size: [56.000000, 50.000000]
-            classes: "header4 text-color-white"
-            text: "Друзья"
-            components:
-                SizePolicy:
-                    horizontalPolicy: "PercentOfContent"
-        -   class: "UIControl"
-            name: "Icon"
-            size: [30.000000, 50.000000]
-            noInput: true
-            components:
-                Background:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
-    -   prototype: "ChatCommon/UnreadIcon"
-        name: "UnreadIcon"
-        components:
-            Anchor:
-                rightAnchorEnabled: true
-                rightAnchor: 5.000000
-                vCenterAnchorEnabled: true
+- "~res:/UI/Screens/Lobby/Chat/ClanRoomHeader.yaml"
+- "~res:/UI/Screens/Lobby/Chat/ChatContactHeader.yaml"
+- "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
+- "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+Prototypes:
 -   class: "UIControl"
     name: "PopUpElement"
     size: [340.000000, 64.000000]
@@ -261,17 +29,7 @@ Controls:
                 rightAnchorEnabled: true
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
--   prototype: "StyledButton/StyledButton"
-    name: "LocalButton"
-    classes: "button button-color-gray"
-    components:
-        Anchor:
-            leftAnchorEnabled: true
-            leftAnchor: 20.000000
-            rightAnchorEnabled: true
-            rightAnchor: 20.000000
-        Background:
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+Controls:
 -   class: "UIControl"
     name: "ExternalChatScreen"
     size: [1024.000000, 768.000000]
@@ -282,60 +40,288 @@ Controls:
             rightAnchorEnabled: true
             topAnchorEnabled: true
             bottomAnchorEnabled: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.125490, 0.160784, 0.847059]
     children:
     -   class: "UIControl"
-        name: "background"
-        position: [0.000000, 80.000000]
-        size: [1024.000000, 688.000000]
-        noInput: true
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 0.000000
-                rightAnchorEnabled: true
-                rightAnchor: 0.000000
-                topAnchorEnabled: true
-                topAnchor: 80.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: 0.000000
-            Background:
-                drawType: "DRAW_FILL"
-                color: [0.070600, 0.125500, 0.160800, 0.847100]
-    -   prototype: "LobbyHeader/Header"
-        name: "header"
+        customClass: "UIXChatTopBarRight"
+        name: "Header"
+        position: [0.000000, 0.000000]
         size: [1024.000000, 80.000000]
         components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 0.000000
-                rightAnchorEnabled: true
-                rightAnchor: 0.000000
-                topAnchorEnabled: true
-                topAnchor: 0.000000
+            LinearLayout: {}
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 80.000000
         children:
-        -   path: "Layout/leftContent"
-            debugDraw: false
-            components:
-                SizePolicy:
-                    horizontalPolicy: "FixedSize"
-                    horizontalValue: 304.000000
-            children: []
-        -   path: "Layout/rightContent"
-            debugDraw: false
-            components:
-                SizePolicy:
-                    horizontalPolicy: "PercentOfParent"
-                Anchor:
-                    leftAnchorEnabled: false
-                    leftAnchor: 400.000000
-                    rightAnchorEnabled: false
-                    rightAnchor: 0.000000
+        -   prototype: "LobbyHeader/Header"
+            name: "HeaderBase"
+            children:
+            -   path: "Layout"
+                children:
+                -   class: "UIControl"
+                    name: "topBarLeft"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "FixedSize"
+                            horizontalValue: 308.000000
+                            verticalPolicy: "PercentOfParent"
+                    children:
+                    -   class: "UIControl"
+                        name: "contactListMenuBtn"
+                        size: [140.000000, 76.000000]
+                        exclusiveInput: true
+                        components:
+                            LinearLayout: {}
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                                verticalPolicy: "PercentOfMaxChild"
+                            Anchor:
+                                leftAnchorEnabled: true
+                                topAnchorEnabled: true
+                        children:
+                        -   class: "UIStaticText"
+                            name: "listName"
+                            size: [100.000000, 76.000000]
+                            noInput: true
+                            classes: "header1 text-color-white"
+                            textcolorInheritType: "COLOR_IGNORE_PARENT"
+                            shadowoffset: [1.000000, 1.000000]
+                            shadowcolor: [0.000000, 0.000000, 0.000000, 0.294100]
+                            textalign: ["RIGHT", "VCENTER"]
+                            textUseRtlAlign: "DONT_USE"
+                            text: "XChatConversation"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfContent"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 0.000000
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 40.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    align: ["LEFT", "TOP"]
+                        -   class: "UIControl"
+                            name: "dropArrow"
+                            position: [100.000000, 0.000000]
+                            size: [40.000000, 76.000000]
+                            noInput: true
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    rightAnchor: 0.000000
+                                    topAnchorEnabled: true
+                                    topAnchor: 0.000000
+                                    bottomAnchorEnabled: true
+                                    bottomAnchor: 0.000000
+                                Background:
+                                    sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
+                -   prototype: "Common/WhiteLine"
+                    name: "WhiteLine"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 2.000000
+                -   class: "UIControl"
+                    name: "RightControl"
+                    size: [619.000000, 78.000000]
+                    noInput: true
+                    components:
+                        LinearLayout:
+                            padding: 7.000000
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                        Anchor:
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 2.000000
+                    children:
+                    -   class: "UIControl"
+                        name: "contactActionsBtn"
+                        size: [184.000000, 76.000000]
+                        exclusiveInput: true
+                        components:
+                            LinearLayout:
+                                padding: 3.000000
+                                spacing: 10.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfChildrenSum"
+                            Anchor:
+                                leftAnchorEnabled: true
+                        children:
+                        -   prototype: "ClanEmblem/ClanEmblem"
+                            name: "clanEmblem"
+                            size: [32.000000, 32.000000]
+                            components:
+                                Anchor:
+                                    vCenterAnchorEnabled: true
+                                Background:
+                                    drawType: "DRAW_SCALE_TO_RECT"
+                        -   class: "UIControl"
+                            name: "Vertical"
+                            noInput: true
+                            components:
+                                LinearLayout:
+                                    orientation: "TopDown"
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfMaxChild"
+                                    verticalPolicy: "PercentOfChildrenSum"
+                                Anchor:
+                                    leftAnchorEnabled: true
+                                    leftAnchor: 10.000000
+                                    vCenterAnchorEnabled: true
+                            children:
+                            -   class: "UIControl"
+                                name: "Horizontal"
+                                noInput: true
+                                components:
+                                    LinearLayout: {}
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfChildrenSum"
+                                        verticalPolicy: "PercentOfMaxChild"
+                                children:
+                                -   class: "UIStaticText"
+                                    name: "ContactName"
+                                    text: "PlayerName"
+                                    font: "WarHeliosCondC_Bold_19_markers"
+                                    components:
+                                        SizePolicy:
+                                            horizontalPolicy: "PercentOfContent"
+                                            verticalPolicy: "PercentOfContent"
+                                        Anchor:
+                                            vCenterAnchorEnabled: true
+                                -   class: "UIControl"
+                                    name: "dropArrow"
+                                    position: [89.000000, 2.000000]
+                                    size: [40.000000, 20.000000]
+                                    noInput: true
+                                    components:
+                                        Anchor:
+                                            rightAnchorEnabled: false
+                                            rightAnchor: 0.000000
+                                            topAnchorEnabled: false
+                                            topAnchor: 0.000000
+                                            vCenterAnchorEnabled: true
+                                            bottomAnchorEnabled: false
+                                            bottomAnchor: 0.000000
+                                        Background:
+                                            sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
+                            -   class: "UIStaticText"
+                                name: "ClanName"
+                                classes: "header4 clan-name"
+                                text: "[Tag]Name of Clan"
+                                components:
+                                    SizePolicy:
+                                        horizontalPolicy: "PercentOfContent"
+                                        verticalPolicy: "PercentOfContent"
+                    -   class: "UIControl"
+                        name: "Buttons"
+                        size: [421.000000, 78.000000]
+                        noInput: true
+                        components:
+                            LinearLayout:
+                                orientation: "RightToLeft"
+                                spacing: 6.000000
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfParent"
+                                verticalPolicy: "PercentOfParent"
+                        children:
+                        -   prototype: "StyledButton/StyledButton"
+                            name: "ClanProfileBtn"
+                            classes: "button button-color-gray"
+                            components:
+                                Anchor:
+                                    rightAnchorEnabled: true
+                                    vCenterAnchorEnabled: true
+                            children:
+                            -   path: "Caption"
+                                classes: "header2 text-color-white"
+                                text: "#xchat/Header/ClanProfileButton"
+                        -   class: "UIControl"
+                            name: "TrainingRoomControls"
+                            size: [607.000000, 78.000000]
+                            visible: false
+                            noInput: true
+                            components:
+                                LinearLayout:
+                                    spacing: 7.000000
+                                SizePolicy:
+                                    horizontalPolicy: "PercentOfChildrenSum"
+                                    verticalPolicy: "PercentOfParent"
+                            children:
+                            -   prototype: "StyledButton/StyledButton"
+                                name: "InviteToTrainingRoomBtn"
+                                size: [300.000000, 64.000000]
+                                classes: "button button-color-gray"
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        vCenterAnchorEnabled: true
+                                children:
+                                -   path: "Caption"
+                                    fitting: ["REDUCE"]
+                                    text: "CHAT_INVITE_TO_ROOM"
+                            -   prototype: "StyledButton/StyledButton"
+                                name: "GoToTrainingRoomBtn"
+                                size: [300.000000, 64.000000]
+                                classes: "button button-color-gray"
+                                components:
+                                    Anchor:
+                                        rightAnchorEnabled: true
+                                        vCenterAnchorEnabled: true
+                                children:
+                                -   path: "Caption"
+                                    fitting: ["REDUCE"]
+                                    text: "CHAT_VISIT_ROOM"
+                        -   prototype: "StyledButton/StyledButton"
+                            name: "InviteToTeamButton"
+                            visible: false
+                            classes: "button button-color-gray"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "FixedSize"
+                                    horizontalValue: 190.000000
+                                Anchor:
+                                    vCenterAnchorEnabled: true
+                            children:
+                            -   path: "Caption"
+                                text: "TEAM_CHAT_SEND_INVITE"
+                        -   prototype: "StyledButton/StyledButton"
+                            name: "squadButton"
+                            size: [190.000000, 64.000000]
+                            visible: false
+                            classes: "button color=button-color-gray"
+                            components:
+                                SizePolicy:
+                                    horizontalPolicy: "FixedSize"
+                                    horizontalValue: 190.000000
+                                Anchor:
+                                    vCenterAnchorEnabled: true
+                            children:
+                            -   path: "Caption"
+                                multiline: "MULTILINE_ENABLED"
+                                fitting: ["REDUCE"]
+            -   path: "Layout/leftContent"
+                visible: false
+                children: []
+            -   path: "Layout/rightContent"
+                visible: false
     -   class: "UIControl"
-        name: "chatWnd"
+        name: "ChatWindowFrame"
         position: [400.000000, 80.000000]
         size: [624.000000, 688.000000]
         noInput: true
         components:
+            LinearLayout:
+                orientation: "TopDown"
             Anchor:
                 leftAnchorEnabled: true
                 leftAnchor: 400.000000
@@ -351,15 +337,11 @@ Controls:
         children:
         -   class: "UIControl"
             name: "bottomBar"
-            size: [624.000000, 90.000000]
             components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 0.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 90.000000
                 Background:
                     drawType: "DRAW_SCALE_TO_RECT"
                     align: ["LEFT", "VCENTER"]
@@ -404,6 +386,7 @@ Controls:
                     size: [568.000000, 50.000000]
                     font: "WarHeliosCondC_21"
                     shadowcolor: [0.000000, 0.000000, 0.000000, 0.294100]
+                    returnKeyType: "RETURN_KEY_SEND"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
@@ -441,140 +424,303 @@ Controls:
                         Background:
                             align: ["LEFT", "TOP"]
         -   class: "UIControl"
-            name: "chatBg"
-            position: [0.000000, 90.000000]
-            size: [624.000000, 598.000000]
-            clip: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 90.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 0.000000
-                Background:
-                    color: [0.960800, 0.968600, 0.960800, 1.000000]
-        -   class: "UIControl"
-            name: "SquadNotification"
-            position: [0.000000, 90.000000]
-            size: [624.000000, 105.000000]
+            name: "ChatNotification"
+            size: [624.000000, 0.000000]
             visible: true
+            noInput: true
             components:
                 LinearLayout:
                     orientation: "TopDown"
-                    spacing: 8.000000
                 SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
                     verticalPolicy: "PercentOfChildrenSum"
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 90.000000
             children:
             -   class: "UIControl"
-                name: "Background"
-                size: [624.000000, 42.000000]
+                name: "SquadNotification"
+                position: [0.000000, 0.000000]
+                size: [624.000000, 105.000000]
+                visible: false
                 components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "UIControl5"
-                    position: [312.000000, 0.000000]
-                    size: [312.000000, 42.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-                            spriteModification: ["FLIP_HORIZONTAL"]
-                -   class: "UIControl"
-                    name: "UIControl4"
-                    size: [312.000000, 42.000000]
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-            -   class: "UIStaticText"
-                name: "Text"
-                size: [624.000000, 42.000000]
-                noInput: true
-                classes: "text1 text-color-blue"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                shadowoffset: [1.000000, 1.000000]
-                text: "SQUAD_CHAT_INVITE_SENT"
-                components:
-                    IgnoreLayout: {}
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 8.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
                     Anchor:
                         leftAnchorEnabled: true
                         leftAnchor: 0.000000
                         rightAnchorEnabled: true
                         rightAnchor: 0.000000
                         topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: false
-                        bottomAnchor: 0.000000
-                    Background:
-                        align: ["LEFT", "TOP"]
-            -   class: "UIStaticText"
-                name: "ClanPointsSquadNote"
-                classes: "text2 text-color-blue"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                multiline: "MULTILINE_ENABLED"
-                text: "#clans:ProfileScreen/ClanSupply/Note"
+                        topAnchor: 90.000000
+                children:
+                -   class: "UIControl"
+                    name: "Background"
+                    size: [624.000000, 42.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "UIControl5"
+                        position: [312.000000, 0.000000]
+                        size: [312.000000, 42.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                    -   class: "UIControl"
+                        name: "UIControl4"
+                        size: [312.000000, 42.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [624.000000, 42.000000]
+                    noInput: true
+                    classes: "text1 text-color-blue"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    text: "SQUAD_CHAT_INVITE_SENT"
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: false
+                            bottomAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "ClanPointsSquadNote"
+                    classes: "text2 text-color-blue"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    multiline: "MULTILINE_ENABLED"
+                    text: "#clans:ProfileScreen/ClanSupply/Note"
+                    components:
+                        SizePolicy:
+                            verticalPolicy: "PercentOfContent"
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 30.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 30.000000
+                            topAnchorEnabled: true
+                            topAnchor: 10.000000
+                -   prototype: "Common/WhiteLine"
+                    name: "WhiteLine"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+            -   class: "UIControl"
+                name: "InvitationToTrainingBanner"
+                position: [0.000000, 105.000000]
+                size: [624.000000, 42.000000]
+                visible: false
                 components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 8.000000
                     SizePolicy:
-                        verticalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfChildrenSum"
                     Anchor:
                         leftAnchorEnabled: true
-                        leftAnchor: 30.000000
+                        leftAnchor: 0.000000
                         rightAnchorEnabled: true
-                        rightAnchor: 30.000000
+                        rightAnchor: 0.000000
                         topAnchorEnabled: true
-                        topAnchor: 10.000000
-            -   prototype: "Common/WhiteLine"
-                name: "WhiteLine"
+                        topAnchor: 90.000000
+                children:
+                -   class: "UIControl"
+                    name: "Background"
+                    size: [624.000000, 42.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "UIControl5"
+                        position: [312.000000, 0.000000]
+                        size: [312.000000, 42.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                    -   class: "UIControl"
+                        name: "UIControl4"
+                        size: [312.000000, 42.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [624.000000, 42.000000]
+                    noInput: true
+                    classes: "text1 text-color-blue"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    fitting: ["POINTS"]
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: false
+                            bottomAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "InvitationToTeamBanner"
+                position: [0.000000, 147.000000]
+                size: [624.000000, 42.000000]
+                visible: false
                 components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 8.000000
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
                     Anchor:
                         leftAnchorEnabled: true
+                        leftAnchor: 0.000000
                         rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        topAnchorEnabled: true
+                        topAnchor: 90.000000
+                children:
+                -   class: "UIControl"
+                    name: "Background"
+                    size: [624.000000, 42.000000]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            rightAnchorEnabled: true
+                    children:
+                    -   class: "UIControl"
+                        name: "UIControl5"
+                        position: [312.000000, 0.000000]
+                        size: [312.000000, 42.000000]
+                        noInput: true
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                                spriteModification: ["FLIP_HORIZONTAL"]
+                    -   class: "UIControl"
+                        name: "UIControl4"
+                        size: [312.000000, 42.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 0.000000
+                                hCenterAnchorEnabled: true
+                                hCenterAnchor: 0.000000
+                                topAnchorEnabled: true
+                                topAnchor: 0.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 0.000000
+                            Background:
+                                drawType: "DRAW_SCALE_TO_RECT"
+                                sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
+                -   class: "UIStaticText"
+                    name: "Text"
+                    size: [624.000000, 42.000000]
+                    noInput: true
+                    classes: "text1 text-color-blue"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    shadowoffset: [1.000000, 1.000000]
+                    fitting: ["POINTS"]
+                    components:
+                        IgnoreLayout: {}
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: false
+                            bottomAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
         -   class: "UIControl"
             name: "clanNote"
             size: [624.000000, 180.000000]
+            visible: false
             components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    vCenterAnchorEnabled: true
-                    vCenterAnchor: 0.000000
+                LinearLayout:
+                    orientation: "TopDown"
+                    dynamicPadding: true
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
             children:
             -   class: "UIStaticText"
                 name: "clanNoteTitle"
-                position: [0.000000, 0.000000]
+                position: [0.000000, 8.000000]
                 size: [624.000000, 40.000000]
                 noInput: true
                 classes: "header3 text-color-white"
@@ -621,351 +767,13 @@ Controls:
                 -   path: "Caption"
                     text: "#xchat/Header/ClansFunctionButton"
         -   class: "UIControl"
-            name: "InvitationToTrainingBanner"
-            position: [0.000000, 90.000000]
-            size: [624.000000, 42.000000]
-            visible: true
+            name: "ChatMessageList"
+            clip: true
             components:
-                LinearLayout:
-                    orientation: "TopDown"
-                    spacing: 8.000000
                 SizePolicy:
-                    verticalPolicy: "PercentOfChildrenSum"
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 90.000000
-            children:
-            -   class: "UIControl"
-                name: "Background"
-                size: [624.000000, 42.000000]
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "UIControl5"
-                    position: [312.000000, 0.000000]
-                    size: [312.000000, 42.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-                            spriteModification: ["FLIP_HORIZONTAL"]
-                -   class: "UIControl"
-                    name: "UIControl4"
-                    size: [312.000000, 42.000000]
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-            -   class: "UIStaticText"
-                name: "Text"
-                size: [624.000000, 42.000000]
-                noInput: true
-                classes: "text1 text-color-blue"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                shadowoffset: [1.000000, 1.000000]
-                components:
-                    IgnoreLayout: {}
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: false
-                        bottomAnchor: 0.000000
-                    Background:
-                        align: ["LEFT", "TOP"]
-        -   class: "UIControl"
-            name: "InvitationToTeamBanner"
-            position: [0.000000, 90.000000]
-            size: [624.000000, 42.000000]
-            visible: true
-            components:
-                LinearLayout:
-                    orientation: "TopDown"
-                    spacing: 8.000000
-                SizePolicy:
-                    verticalPolicy: "PercentOfChildrenSum"
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 90.000000
-            children:
-            -   class: "UIControl"
-                name: "Background"
-                size: [624.000000, 42.000000]
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "UIControl5"
-                    position: [312.000000, 0.000000]
-                    size: [312.000000, 42.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-                            spriteModification: ["FLIP_HORIZONTAL"]
-                -   class: "UIControl"
-                    name: "UIControl4"
-                    size: [312.000000, 42.000000]
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                            sprite: "~res:/Gfx/UI/XChat/SquadHeaderChat"
-            -   class: "UIStaticText"
-                name: "Text"
-                size: [624.000000, 42.000000]
-                noInput: true
-                classes: "text1 text-color-blue"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                shadowoffset: [1.000000, 1.000000]
-                components:
-                    IgnoreLayout: {}
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: false
-                        bottomAnchor: 0.000000
-                    Background:
-                        align: ["LEFT", "TOP"]
-    -   class: "UIControl"
-        customClass: "UIXChatTopBarRight"
-        name: "topBarRight"
-        position: [0.000000, 0.000000]
-        size: [1020.000000, 76.000000]
-        debugDraw: false
-        debugDrawColor: [1.000000, 1.000000, 0.000000, 1.000000]
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                rightAnchor: 4.000000
-        children:
-        -   class: "UIControl"
-            name: "contactActionsBtn"
-            size: [156.000000, 76.000000]
-            exclusiveInput: true
-            components:
-                LinearLayout:
-                    padding: 10.000000
-                    spacing: 10.000000
-                SizePolicy:
-                    horizontalPolicy: "PercentOfMaxChild"
-                Anchor:
-                    leftAnchorEnabled: true
-            children:
-            -   prototype: "ClanCommon/ClanEmblem"
-                name: "clanEmblem"
-                size: [32.000000, 32.000000]
-                components:
-                    Anchor:
-                        vCenterAnchorEnabled: true
-                    Background:
-                        drawType: "DRAW_SCALE_TO_RECT"
-            -   class: "UIControl"
-                name: "Vertical"
-                noInput: true
-                components:
-                    LinearLayout:
-                        orientation: "TopDown"
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
-                        verticalPolicy: "PercentOfChildrenSum"
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 10.000000
-                        vCenterAnchorEnabled: true
-                children:
-                -   class: "UIControl"
-                    name: "Horizontal"
-                    noInput: true
-                    components:
-                        LinearLayout: {}
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfChildrenSum"
-                            verticalPolicy: "PercentOfMaxChild"
-                    children:
-                    -   class: "UIStaticText"
-                        name: "ContactName"
-                        text: "PlayerName"
-                        font: "WarHeliosCondC_Bold_19_markers"
-                        components:
-                            SizePolicy:
-                                horizontalPolicy: "PercentOfContent"
-                                verticalPolicy: "PercentOfContent"
-                            Anchor:
-                                vCenterAnchorEnabled: true
-                    -   class: "UIControl"
-                        name: "dropArrow"
-                        position: [89.000000, 2.000000]
-                        size: [40.000000, 20.000000]
-                        noInput: true
-                        components:
-                            Anchor:
-                                rightAnchorEnabled: false
-                                rightAnchor: 0.000000
-                                topAnchorEnabled: false
-                                topAnchor: 0.000000
-                                vCenterAnchorEnabled: true
-                                bottomAnchorEnabled: false
-                                bottomAnchor: 0.000000
-                            Background:
-                                sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
-                -   class: "UIStaticText"
-                    name: "ClanName"
-                    classes: "header4 clan-name"
-                    text: "[Tag]Name of Clan"
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-        -   prototype: "StyledButton/StyledButton"
-            name: "ClanProfileBtn"
-            classes: "button button-color-gray"
-            components:
-                Anchor:
-                    rightAnchorEnabled: true
-                    vCenterAnchorEnabled: true
-            children:
-            -   path: "Caption"
-                classes: "header2 text-color-white"
-                text: "#xchat/Header/ClanProfileButton"
-        -   prototype: "Common/WhiteLine"
-            name: "WhiteLine"
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-        -   class: "UIControl"
-            name: "RightGroup"
-            size: [680.000000, 70.000000]
-            noInput: true
-            components:
-                LinearLayout: {}
-                SizePolicy:
-                    horizontalPolicy: "PercentOfChildrenSum"
-                    verticalPolicy: "PercentOfMaxChild"
-                Anchor:
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-            children:
-            -   class: "UIControl"
-                name: "TrainingRoomControls"
-                size: [300.000000, 70.000000]
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "FixedSize"
-                        horizontalValue: 300.000000
-                    Anchor:
-                        vCenterAnchorEnabled: true
-                children:
-                -   prototype: "StyledButton/StyledButton"
-                    name: "InviteToTrainingRoomBtn"
-                    size: [300.000000, 70.000000]
-                    classes: "button button-color-gray"
-                    components:
-                        Anchor:
-                            rightAnchorEnabled: true
-                            vCenterAnchorEnabled: true
-                    children:
-                    -   path: "Caption"
-                        fitting: ["REDUCE"]
-                        text: "CHAT_INVITE_TO_ROOM"
-                -   prototype: "StyledButton/StyledButton"
-                    name: "GoToTrainingRoomBtn"
-                    size: [300.000000, 70.000000]
-                    classes: "button button-color-gray"
-                    components:
-                        Anchor:
-                            rightAnchorEnabled: true
-                            vCenterAnchorEnabled: true
-                    children:
-                    -   path: "Caption"
-                        fitting: ["REDUCE"]
-                        text: "CHAT_VISIT_ROOM"
-            -   prototype: "StyledButton/StyledButton"
-                name: "InviteToTeamButton"
-                classes: "button button-color-gray"
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "FixedSize"
-                        horizontalValue: 190.000000
-                    Anchor:
-                        vCenterAnchorEnabled: true
-                children:
-                -   path: "Caption"
-                    text: "TEAM_CHAT_SEND_INVITE"
-            -   prototype: "StyledButton/StyledButton"
-                name: "squadButton"
-                size: [190.000000, 70.000000]
-                classes: "button color=button-color-gray"
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "FixedSize"
-                        horizontalValue: 190.000000
-                    Anchor:
-                        vCenterAnchorEnabled: true
-                children:
-                -   path: "Caption"
-                    multiline: "MULTILINE_ENABLED"
-                    fitting: ["REDUCE"]
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Anchor: {}
     -   class: "UIControl"
         name: "leftPane"
         position: [0.000000, 80.000000]
@@ -1118,10 +926,19 @@ Controls:
                                 topAnchorEnabled: true
                                 bottomAnchorEnabled: true
                         children:
-                        -   prototype: "ClanRoomHeader"
+                        -   prototype: "ClanRoomHeader/ClanRoomHeader"
                             name: "ClanRoomHeader"
-                        -   prototype: "ChatContactHeader"
+                        -   prototype: "ChatContactHeader/ChatContactHeader"
                             name: "FriendsHeader"
+                            classes: "button-color-gray"
+                            components:
+                                Background:
+                                    drawType: "DRAW_TILED_MULTILAYER"
+                                    sprite: ""
+                                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                                    gradientMode: "Overlay"
+                                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                             children:
                             -   path: "Container/Label"
                                 text: "#xchat/FriendsContacts"
@@ -1144,7 +961,6 @@ Controls:
                                 size: [400.000000, 417.000000]
                                 clip: false
                                 orientation: "ORIENTATION_VERTICAL"
-                                aggregatorPath: "~res:/UI/Screens/Lobby/Chat/XChatContactCell.yaml"
                                 components:
                                     SizePolicy:
                                         verticalPolicy: "PercentOfParent"
@@ -1160,8 +976,17 @@ Controls:
                                         rightAnchor: 20.000000
                                         topAnchorEnabled: true
                                         bottomAnchorEnabled: true
-                        -   prototype: "ChatContactHeader"
+                        -   prototype: "ChatContactHeader/ChatContactHeader"
                             name: "ChannelsHeader"
+                            classes: "button-color-gray"
+                            components:
+                                Background:
+                                    drawType: "DRAW_TILED_MULTILAYER"
+                                    sprite: ""
+                                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                                    gradientMode: "Overlay"
+                                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                             children:
                             -   path: "Container/Label"
                                 text: "XChatChannels"
@@ -1186,7 +1011,6 @@ Controls:
                             size: [400.000000, 598.000000]
                             clip: false
                             orientation: "ORIENTATION_VERTICAL"
-                            aggregatorPath: "~res:/UI/Screens/Lobby/Chat/XChatContactCell.yaml"
                             components:
                                 Anchor:
                                     leftAnchorEnabled: true
@@ -1241,7 +1065,6 @@ Controls:
                     size: [400.000000, 598.000000]
                     clip: false
                     orientation: "ORIENTATION_VERTICAL"
-                    aggregatorPath: "~res:/UI/Screens/Lobby/Chat/XChatContactCell.yaml"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
@@ -1633,359 +1456,3 @@ Controls:
                     children:
                     -   path: "Text"
                         text: "#xchat/InviteFriends"
-    -   class: "UIControl"
-        name: "topBarLeft"
-        position: [210.000000, 0.000000]
-        size: [200.000000, 80.000000]
-        components:
-            Anchor:
-                topAnchorEnabled: true
-                topAnchor: 0.000000
-        children:
-        -   class: "UIControl"
-            name: "contactListMenuBtn"
-            size: [140.000000, 76.000000]
-            exclusiveInput: true
-            components:
-                LinearLayout: {}
-                SizePolicy:
-                    horizontalPolicy: "PercentOfChildrenSum"
-                    verticalPolicy: "PercentOfMaxChild"
-                Anchor:
-                    leftAnchorEnabled: true
-                    topAnchorEnabled: true
-            children:
-            -   class: "UIStaticText"
-                name: "listName"
-                size: [100.000000, 76.000000]
-                noInput: true
-                classes: "header1 text-color-white"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                shadowoffset: [1.000000, 1.000000]
-                shadowcolor: [0.000000, 0.000000, 0.000000, 0.294100]
-                textalign: ["RIGHT", "VCENTER"]
-                textUseRtlAlign: "DONT_USE"
-                text: "XChatConversation"
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfContent"
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 40.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 0.000000
-                    Background:
-                        align: ["LEFT", "TOP"]
-            -   class: "UIControl"
-                name: "dropArrow"
-                position: [100.000000, 0.000000]
-                size: [40.000000, 76.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 0.000000
-                    Background:
-                        sprite: "~res:/Gfx/UI/CommonUIElements/IconArrowDropDownMenu"
-    -   class: "UIControl"
-        name: "banPopup"
-        size: [1024.000000, 768.000000]
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 0.000000
-                rightAnchorEnabled: true
-                rightAnchor: 0.000000
-                topAnchorEnabled: true
-                topAnchor: 0.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: 0.000000
-            Background:
-                drawType: "DRAW_FILL"
-                color: [0.000000, 0.000000, 0.000000, 0.498000]
-                leftRightStretchCap: 7.000000
-                topBottomStretchCap: 7.000000
-        children:
-        -   class: "UIControl"
-            name: "banPopupBg"
-            position: [424.000000, 80.000000]
-            size: [500.000000, 500.000000]
-            noInput: true
-            components:
-                Anchor:
-                    rightAnchorEnabled: true
-                    rightAnchor: 100.000000
-                    topAnchorEnabled: true
-                    topAnchor: 80.000000
-                Background:
-                    drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/XChat/PopupTile"
-                    color: [0.470600, 0.470600, 0.470600, 1.000000]
-                    leftRightStretchCap: 7.000000
-                    topBottomStretchCap: 7.000000
-            children:
-            -   class: "UIControl"
-                name: "Middle"
-                size: [500.000000, 500.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 0.000000
-                    Background:
-                        drawType: "DRAW_TILED"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
-                        leftRightStretchCap: 4.000000
-                        topBottomStretchCap: 4.000000
-                children:
-                -   class: "UIStaticText"
-                    name: "UIStaticText1"
-                    position: [20.000000, 66.000000]
-                    size: [330.000000, 64.000000]
-                    noInput: true
-                    classes: "header3 text-color-white"
-                    textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    textalign: ["LEFT", "VCENTER"]
-                    text: "XChatBanPeriod"
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 20.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 150.000000
-                            topAnchorEnabled: true
-                            topAnchor: 66.000000
-                -   class: "UIControl"
-                    customClass: "UINumericSpinner"
-                    name: "banPeriod"
-                    position: [379.000000, 66.000000]
-                    size: [101.000000, 64.000000]
-                    components:
-                        Anchor:
-                            rightAnchorEnabled: true
-                            rightAnchor: 20.000000
-                            topAnchorEnabled: true
-                            topAnchor: 66.000000
-                        Background:
-                            drawType: "DRAW_FILL"
-                    children:
-                    -   class: "UIStaticText"
-                        name: "banPeriodText"
-                        size: [101.000000, 64.000000]
-                        noInput: true
-                        textcolorInheritType: "COLOR_IGNORE_PARENT"
-                        text: "--"
-                        font: "Font_1A445E35"
-                        components:
-                            Anchor:
-                                leftAnchorEnabled: true
-                                leftAnchor: 0.000000
-                                rightAnchorEnabled: true
-                                rightAnchor: 0.000000
-                                topAnchorEnabled: true
-                                topAnchor: 0.000000
-                                bottomAnchorEnabled: true
-                                bottomAnchor: 0.000000
-                -   prototype: "CommonInputField/CommonInputField"
-                    name: "banReason"
-                    position: [20.000000, 146.000000]
-                    size: [460.000000, 70.000000]
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 20.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 20.000000
-                            topAnchorEnabled: true
-                            topAnchor: 146.000000
-                    children:
-                    -   path: "UIControl1/inputMsgHint"
-                        classes: "text-color-blue"
-                        textalign: ["HCENTER", "VCENTER"]
-            -   class: "UIControl"
-                name: "Top"
-                size: [500.000000, 56.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                    Background:
-                        drawType: "DRAW_TILED"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackTop"
-                        leftRightStretchCap: 4.000000
-                children:
-                -   class: "UIStaticText"
-                    name: "banUserNick"
-                    position: [0.000000, 10.000000]
-                    size: [500.000000, 36.000000]
-                    noInput: true
-                    classes: "header1 text-color-white"
-                    textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    shadowoffset: [0.000000, 1.000000]
-                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
-                    text: "Warning"
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 10.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 10.000000
-                        Background:
-                            align: ["LEFT", "TOP"]
-            -   prototype: "LocalButton"
-                name: "banBtn"
-                size: [460.000000, 70.000000]
-                classes: "button button-color-red"
-                components:
-                    Anchor:
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 20.000000
-                children:
-                -   path: "Caption"
-                    text: "XChatBan"
-            -   prototype: "LocalButton"
-                name: "cancelBtn"
-                size: [460.000000, 70.000000]
-                components:
-                    Anchor:
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 192.000000
-                children:
-                -   path: "Caption"
-                    text: "Cancel"
-            -   prototype: "LocalButton"
-                name: "warningBtn"
-                size: [460.000000, 70.000000]
-                classes: "button button-color-orange"
-                components:
-                    Anchor:
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 110.000000
-                children:
-                -   path: "Caption"
-                    text: "XChatWarning"
--   class: "UIControl"
-    customClass: "UIXChatInviteFriendsDialog"
-    name: "InviteFriendsDialog"
-    size: [1024.000000, 768.000000]
-    components:
-        Anchor:
-            leftAnchorEnabled: true
-            leftAnchor: 0.000000
-            rightAnchorEnabled: true
-            rightAnchor: 0.000000
-            topAnchorEnabled: true
-            topAnchor: 0.000000
-            bottomAnchorEnabled: true
-            bottomAnchor: 0.000000
-        Background:
-            drawType: "DRAW_FILL"
-            color: [0.000000, 0.000000, 0.000000, 0.498000]
-            leftRightStretchCap: 7.000000
-            topBottomStretchCap: 7.000000
-    children:
-    -   prototype: "Common/Dialog"
-        name: "InternalDialog"
-        components:
-            SizePolicy:
-                verticalPolicy: "PercentOfMaxChild"
-            Anchor:
-                hCenterAnchorEnabled: true
-                vCenterAnchorEnabled: true
-        children:
-        -   path: "Middle"
-            components:
-                LinearLayout:
-                    orientation: "TopDown"
-                    padding: 0.000000
-                    spacing: 15.000000
-                SizePolicy:
-                    verticalPolicy: "PercentOfChildrenSum"
-                Anchor:
-                    bottomAnchorEnabled: false
-            children:
-            -   class: "UIControl"
-                name: "Streatcher"
-                size: [10.000000, 59.000000]
-            -   prototype: "StyledButton/StyledButton"
-                name: "inviteWithGameCenter"
-                enabled: false
-                classes: "button button-color-green"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 20.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                children:
-                -   path: "Caption"
-                    text: "#common:DialogButton/GameCenter"
-            -   prototype: "StyledButton/StyledButton"
-                name: "inviteWithFacebook"
-                enabled: false
-                classes: "button button-color-green"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 20.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                children:
-                -   path: "Caption"
-                    text: "#common:DialogButton/Facebook"
-            -   prototype: "StyledButton/StyledButton"
-                name: "inviteWithGoogle"
-                enabled: false
-                classes: "button button-color-green"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 20.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                children:
-                -   path: "Caption"
-                    text: "#common:DialogButton/Google"
-            -   prototype: "StyledButton/StyledButton"
-                name: "Cancel"
-                classes: "button button-color-hray"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 20.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                children:
-                -   path: "Caption"
-                    text: "#common:DialogButton/Cancel"
-            -   class: "UIControl"
-                name: "Spacer"
-        -   path: "Top"
-            visible: true
-            enabled: true
-            children: []
-        -   path: "Top/TitleText"
-            text: "#xchat/InviteFriends"

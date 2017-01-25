@@ -1,0 +1,110 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: "#TextField.highlight-error #Hint"
+    properties:
+        text-textColor: [1.000000, 0.310000, 0.000000, 1.000000]
+-   selector: "#TextField #Hint"
+    properties:
+        text-textColor: [0.600000, 0.600000, 0.600000, 1.000000]
+Controls:
+-   class: "UIControl"
+    customClass: "UILoginTextField"
+    name: "SmartTextField"
+    size: [450.000000, 62.000000]
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfMaxChild"
+    children:
+    -   class: "UIControl"
+        name: "VerticalBox"
+        size: [450.000000, 62.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                spacing: 16.000000
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "Background"
+            size: [450.000000, 62.000000]
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
+                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    leftRightStretchCap: 5.000000
+            children:
+            -   class: "UITextField"
+                customClass: "UITextFieldWithHint"
+                name: "TextField"
+                font: "WarHeliosCondC_25_tf"
+                autoCapitalizationType: "AUTO_CAPITALIZATION_TYPE_NONE"
+                autoCorrectionType: "AUTO_CORRECTION_TYPE_NO"
+                spellCheckingType: "SPELL_CHECKING_TYPE_NO"
+                keyboardType: "KEYBOARD_TYPE_EMAIL_ADDRESS"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 45.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                    Focus: {}
+                children:
+                -   class: "UIStaticText"
+                    name: "Hint"
+                    classes: "text1"
+                    fitting: ["REDUCE"]
+                    textalign: ["LEFT", "VCENTER"]
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 5.000000
+                            rightAnchorEnabled: true
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
+            -   class: "UIControl"
+                name: "ClearButton"
+                size: [60.000000, 60.000000]
+                components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: -5.000000
+                        vCenterAnchorEnabled: true
+                    Background:
+                        sprite: "~res:/Gfx/UI/LobbyCommon/InputClear"
+        -   class: "UIStaticText"
+            name: "ErrorText"
+            size: [450.000000, 26.000000]
+            visible: false
+            classes: "text1 text-color-red"
+            textColor: [1.000000, 0.305882, 0.000000, 1.000000]
+            multiline: "MULTILINE_ENABLED"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+        -   class: "UIStaticText"
+            name: "NoteText"
+            size: [450.000000, 26.000000]
+            visible: false
+            classes: "text1 text-color-blue"
+            multiline: "MULTILINE_ENABLED"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true

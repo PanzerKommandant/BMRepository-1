@@ -283,6 +283,8 @@ cedar_undergrowth:
                     scale: [0.9, 0.45]
                 MS-1:
                     scale: [0.7, 0.35]
+                R107_LTB:
+                    scale: [0.755505, 0.683655]
                 T-127:
                     scale: [0.7, 0.35]
                 T-26:
@@ -302,6 +304,8 @@ centennial_oak:
                     scale: [0.9, 0.45]
                 MS-1:
                     scale: [0.8, 0.4]
+                R107_LTB:
+                    scale: [0.838408, 0.777612]
                 T-127:
                     scale: [0.8, 0.4]
                 T-26:
@@ -347,6 +351,11 @@ china_wise_turtle:
     scale: [0.518965, 0.529641]
     texture: "china/china_d_02"
 christmas2017:
+    override:
+        ussr:
+            override:
+                R107_LTB:
+                    scale: [0.987634, 0.921311]
     scale: [0.518222, 0.513637]
     texture: "common/christmas2017"
 clan_9:
@@ -379,6 +388,8 @@ desert_oasis:
                     scale: [0.888, 0.444]
                 MS-1:
                     scale: [0.888462, 0.444]
+                R107_LTB:
+                    scale: [0.821827, 0.8163]
                 T-127:
                     scale: [0.888, 0.444]
                 T-26:
@@ -449,6 +460,8 @@ desert_tan:
                     scale: [1.125, 0.594231]
                 MS-1:
                     scale: [1.107692, 0.585]
+                R107_LTB:
+                    scale: [0.971054, 0.915785]
                 T-127:
                     scale: [1.17, 0.585]
                 T-26:
@@ -534,6 +547,8 @@ dry_fallen_trees:
                     scale: [1.0, 0.5]
                 MS-1:
                     scale: [0.8, 0.4]
+                R107_LTB:
+                    scale: [0.915785, 0.904731]
                 T-127:
                     scale: [0.7, 0.35]
                 T-26:
@@ -544,6 +559,11 @@ dry_fallen_trees:
     scale: [0.6, 0.6]
     texture: "common/summer/c_s_03"
 esport_asia:
+    override:
+        ussr:
+            override:
+                R107_LTB:
+                    scale: [0.683655, 0.866042]
     scale: [0.421131, 0.398054]
     texture: "common/esport_jap"
 esport_eu:
@@ -556,6 +576,10 @@ esport_event:
                 E50_Ausf_M:
                     alpha: 0.85
                     scale: [0.398077, 0.403846]
+        ussr:
+            override:
+                R107_LTB:
+                    scale: [0.749978, 0.805247]
     scale: [0.444, 0.444]
     specularity: 0.312
     texture: "common/esport"
@@ -1241,6 +1265,13 @@ skin_IS-7_legendary:
                     iconBig: "~res:/Gfx/UI/BigTankIcons/ussr-IS-7_skin.tex"
                     preset: "legendary"
     type: 1
+skin_akawara_Gundam:
+    override:
+        other:
+            override:
+                Akawara:
+                    preset: "Gundam"
+    type: 1
 skin_armored_persona:
     override:
         japan:
@@ -1680,6 +1711,11 @@ snowy_forest:
     scale: [0.45, 0.45]
     texture: "ussr/ussr_w_02"
 steam:
+    override:
+        ussr:
+            override:
+                R107_LTB:
+                    scale: [1.236366, 1.192151]
     scale: [0.680747, 0.680747]
     specularity: 0.438447
     texture: "common/steam"
@@ -1726,6 +1762,82 @@ steppe_taiga:
             specularity: 0.5
     scale: [0.490272, 0.490272]
     texture: "ussr/ussr_s_01"
+superbowlbrawlers:
+    alpha: 0.90899
+    override:
+        japan:
+            override:
+                Chi_Ri:
+                    scale: [0.472791, 0.472791]
+        uk:
+            override:
+                GB10_Black_Prince:
+                    scale: [0.382689, 0.382689]
+                GB13_FV215b:
+                    scale: [0.421287, 0.421287]
+                GB63_TOG_II:
+                    scale: [0.399851, 0.399851]
+            scale: [0.60149, 0.60578]
+    scale: [0.7, 0.7]
+    specularity: 0.4
+    texture: "common/superbowlBrawlers"
+superbowlphantoms:
+    alpha: 0.897936
+    override:
+        japan:
+            override:
+                Chi_Ri:
+                    scale: [0.472791, 0.472791]
+        uk:
+            override:
+                GB10_Black_Prince:
+                    scale: [0.382689, 0.382689]
+                GB13_FV215b:
+                    scale: [0.421287, 0.421287]
+                GB63_TOG_II:
+                    scale: [0.399851, 0.399851]
+            scale: [0.60149, 0.60149]
+    scale: [0.7, 0.7]
+    specularity: 0.4
+    texture: "common/superbowlPhantoms"
+superbowlrackers:
+    alpha: 0.886882
+    override:
+        japan:
+            override:
+                Chi_Ri:
+                    scale: [0.472791, 0.472791]
+        uk:
+            override:
+                GB10_Black_Prince:
+                    scale: [0.382689, 0.382689]
+                GB13_FV215b:
+                    scale: [0.421287, 0.421287]
+                GB63_TOG_II:
+                    scale: [0.399851, 0.399851]
+            scale: [0.60578, 0.60149]
+    scale: [0.7, 0.7]
+    specularity: 0.4
+    texture: "common/superbowlRackers"
+superbowltrackers:
+    alpha: 0.897936
+    override:
+        japan:
+            override:
+                Chi_Ri:
+                    scale: [0.472791, 0.472791]
+        uk:
+            override:
+                GB10_Black_Prince:
+                    scale: [0.382689, 0.382689]
+                GB13_FV215b:
+                    scale: [0.421287, 0.421287]
+                GB63_TOG_II:
+                    scale: [0.399851, 0.399851]
+            scale: [0.60149, 0.60578]
+    scale: [0.7, 0.7]
+    specularity: 0.4
+    texture: "common/superbowlTrackers"
 swamp_alligator:
     alpha: 0.649985
     override:

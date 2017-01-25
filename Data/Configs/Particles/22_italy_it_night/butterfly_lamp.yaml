@@ -41,7 +41,7 @@ layer0:
     sizeVariation: [0.020000, 0.020000]
     spin: 140.000000
     spinVariation: [0.000000, 70.000000, 0.020000, 100.000000, 0.050000, 60.000000]
-    sprite: "../../../Gfx/Particles/22_italy_it_night/butterfly"
+    sprite: "../../../../Data/Gfx/Particles/22_italy_it_night/butterfly"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

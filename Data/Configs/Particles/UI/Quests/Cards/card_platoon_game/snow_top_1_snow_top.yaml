@@ -40,7 +40,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.003000
     size: [4.000000, 6.000000]
-    sprite: "../../../../../../Gfx/Particles/UI/Blur"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Blur"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

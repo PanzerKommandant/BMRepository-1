@@ -1,9 +1,9 @@
 Header:
-    version: "0"
-ImportedPackages: []
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
 Controls:
 -   class: "UIControl"
-    customClass: "XpTankCell"
     customClass: "XpTankCell"
     name: "cell"
     size: [270.000000, 100.000000]
@@ -18,39 +18,46 @@ Controls:
         position: [10.000000, 15.000000]
         size: [70.000000, 70.000000]
         noInput: true
-        leftAlignEnabled: true
-        leftAlign: 10.000000
-        vcenterAlignEnabled: true
-        vcenterAlign: 0.000000
         components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
             Background:
                 sprite: "~res:/Gfx/UI/CommonUIElements/ButtonCheckBox"
     -   class: "UIControl"
         name: "bg"
-        position: [85.000000, 20.500000]
+        position: [85.000000, 17.500000]
         size: [173.000000, 65.000000]
         noInput: true
-        leftAlignEnabled: true
-        leftAlign: 85.000000
-        vcenterAlignEnabled: true
-        vcenterAlign: 3.000000
+        classes: "button-color-green"
         components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 85.000000
+                vCenterAnchorEnabled: true
             Background:
-                sprite: "~res:/Gfx/UI/ShopScreen/BackgroundTanks"
-                frame: 2
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
+                leftRightStretchCap: 20.000000
+                topBottomStretchCap: 20.000000
         children:
         -   class: "UIControl"
             name: "Icon"
             position: [36.000000, 4.000000]
             size: [97.000000, 60.000000]
             noInput: true
-            bottomAlignEnabled: true
-            bottomAlign: 1.000000
-            topAlignEnabled: true
-            topAlign: 4.000000
-            hcenterAlignEnabled: true
-            hcenterAlign: -2.000000
             components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: -2.000000
+                    topAnchorEnabled: true
+                    topAnchor: 4.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 1.000000
                 Background:
                     drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
                     sprite: "~res:/Gfx/UI/BigTankIcons/germany-Lowe"
@@ -59,11 +66,12 @@ Controls:
             position: [4.000000, 5.000000]
             size: [26.000000, 26.000000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 4.000000
-            topAlignEnabled: true
-            topAlign: 5.000000
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
                 Background:
                     sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
         -   class: "UIControl"
@@ -71,11 +79,12 @@ Controls:
             position: [4.000000, 5.000000]
             size: [26.000000, 26.000000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 4.000000
-            topAlignEnabled: true
-            topAlign: 5.000000
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 5.000000
                 Background:
                     sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesSmall"
                     frame: 1
@@ -84,11 +93,12 @@ Controls:
             position: [26.000000, 1.000000]
             size: [38.000000, 32.000000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 26.000000
-            topAlignEnabled: true
-            topAlign: 1.000000
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 26.000000
+                    topAnchorEnabled: true
+                    topAnchor: 1.000000
                 Background:
                     sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
         -   class: "UIStaticText"
@@ -96,23 +106,24 @@ Controls:
             position: [8.000000, 32.500000]
             size: [135.000000, 28.500000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 8.000000
-            rightAlignEnabled: true
-            rightAlign: 30.000000
-            bottomAlignEnabled: true
-            bottomAlign: 4.000000
-            vcenterAlignEnabled: true
-            vcenterAlign: 0.000000
-            text: "LOWE"
-            font: "Font_18_bold"
             textcolorInheritType: "COLOR_IGNORE_PARENT"
             shadowoffset: [0.000000, 1.000000]
             shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
             fitting: ["REDUCE"]
             textalign: ["LEFT", "BOTTOM"]
-            textUseRtlAlign: DONT_USE
+            textUseRtlAlign: "DONT_USE"
+            text: "LOWE"
+            font: "Font_18_bold"
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 8.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 30.000000
+                    vCenterAnchorEnabled: true
+                    vCenterAnchor: 0.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 4.000000
                 Background:
                     align: ["LEFT", "TOP"]
         -   class: "UIControl"
@@ -120,30 +131,33 @@ Controls:
             position: [44.000000, 3.000000]
             size: [125.000000, 25.000000]
             noInput: true
-            rightAlignEnabled: true
-            rightAlign: 4.000000
-            topAlignEnabled: true
-            topAlign: 3.000000
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    topAnchorEnabled: true
+                    topAnchor: 3.000000
             children:
             -   class: "UIStaticText"
                 name: "Value"
                 position: [0.000000, -1.000000]
                 size: [101.000000, 26.000000]
                 noInput: true
-                leftAlignEnabled: true
-                leftAlign: 0.000000
-                rightAlignEnabled: true
-                rightAlign: 24.000000
-                bottomAlignEnabled: true
-                bottomAlign: 0.000000
-                text: "999"
-                font: "Font_18_bold"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 shadowoffset: [0.000000, 1.000000]
                 shadowcolor: [0.000000, 0.000000, 0.000000, 0.749000]
                 textalign: ["RIGHT", "VCENTER"]
-                textUseRtlAlign: DONT_USE
+                textUseRtlAlign: "DONT_USE"
+                text: "999"
+                font: "Font_18_bold"
                 components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 24.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
                     Background:
                         align: ["LEFT", "TOP"]
             -   class: "UIControl"
@@ -151,11 +165,12 @@ Controls:
                 position: [103.000000, 1.500000]
                 size: [22.000000, 22.000000]
                 noInput: true
-                rightAlignEnabled: true
-                rightAlign: 0.000000
-                vcenterAlignEnabled: true
-                vcenterAlign: 0.000000
                 components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        vCenterAnchorEnabled: true
+                        vCenterAnchor: 0.000000
                     Background:
                         sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsSmall"
                         frame: 3

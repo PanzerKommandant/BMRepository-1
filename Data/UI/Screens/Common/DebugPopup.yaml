@@ -1,7 +1,8 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "Popup"
@@ -75,6 +76,26 @@ Controls:
                 rightAnchor: 5.000000
                 bottomAnchorEnabled: true
     -   class: "UIStaticText"
+        name: "ControlsCount"
+        position: [834.000000, 728.000000]
+        size: [185.000000, 20.000000]
+        noInput: true
+        classes: "text1"
+        shadowoffset: [0.000000, 1.000000]
+        textalign: ["RIGHT", "VCENTER"]
+        text: "Controls Total Count: 0"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 5.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 20.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.596078, 0.650980, 1.000000, 0.705882]
+    -   class: "UIStaticText"
         name: "soundMemory"
         position: [539.000000, 688.000000]
         size: [480.000000, 20.000000]
@@ -88,3 +109,33 @@ Controls:
                 rightAnchor: 5.000000
                 bottomAnchorEnabled: true
                 bottomAnchor: 60.000000
+    -   prototype: "StyledButton/StyledButton"
+        name: "OverlayButton"
+        position: [954.000000, 0.000000]
+        size: [70.000000, 70.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 0.784314]
+        children:
+        -   path: "Caption"
+            classes: "text2-small text-color-white"
+            text: "Overlay"
+    -   prototype: "StyledButton/StyledButton"
+        name: "ConsoleButton"
+        position: [954.000000, 80.000000]
+        size: [70.000000, 70.000000]
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 80.000000
+                vCenterAnchorEnabled: false
+            Background:
+                color: [1.000000, 1.000000, 1.000000, 0.784314]
+        children:
+        -   path: "Caption"
+            classes: "text2-small text-color-white"
+            text: "Console"

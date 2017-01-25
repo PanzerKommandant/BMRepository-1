@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Lobby/Crew/CrewScreenBlank.yaml"
@@ -446,7 +446,7 @@ Controls:
                         children:
                         -   class: "UIControl"
                             name: "lightTank"
-                            size: [0.000000, 137.250000]
+                            size: [20.000000, 137.250000]
                             noInput: true
                             components:
                                 SizePolicy:
@@ -456,11 +456,13 @@ Controls:
                             -   class: "UIControl"
                                 name: "SkillsContainer"
                                 position: [0.000000, 68.625000]
-                                size: [0.000000, 102.000000]
+                                size: [20.000000, 102.000000]
                                 pivot: [0.000000, 0.500000]
                                 noInput: true
                                 components:
-                                    LinearLayout: {}
+                                    LinearLayout:
+                                        padding: 10.000000
+                                        spacing: 12.000000
                                     SizePolicy:
                                         horizontalPolicy: "PercentOfChildrenSum"
                                     Anchor:
@@ -469,7 +471,7 @@ Controls:
                         -   class: "UIControl"
                             name: "mediumTank"
                             position: [0.000000, 137.250000]
-                            size: [0.000000, 137.250000]
+                            size: [20.000000, 137.250000]
                             noInput: true
                             components:
                                 SizePolicy:
@@ -479,12 +481,14 @@ Controls:
                             -   class: "UIControl"
                                 name: "SkillsContainer"
                                 position: [0.000000, 68.625000]
-                                size: [0.000000, 102.000000]
+                                size: [20.000000, 102.000000]
                                 pivot: [0.000000, 0.500000]
                                 noInput: true
                                 tag: 1
                                 components:
-                                    LinearLayout: {}
+                                    LinearLayout:
+                                        padding: 10.000000
+                                        spacing: 12.000000
                                     SizePolicy:
                                         horizontalPolicy: "PercentOfChildrenSum"
                                     Anchor:
@@ -502,12 +506,14 @@ Controls:
                             -   class: "UIControl"
                                 name: "SkillsContainer"
                                 position: [0.000000, 68.625000]
-                                size: [0.000000, 102.000000]
+                                size: [20.000000, 102.000000]
                                 pivot: [0.000000, 0.500000]
                                 noInput: true
                                 tag: 2
                                 components:
-                                    LinearLayout: {}
+                                    LinearLayout:
+                                        padding: 10.000000
+                                        spacing: 12.000000
                                     SizePolicy:
                                         horizontalPolicy: "PercentOfChildrenSum"
                                     Anchor:
@@ -525,12 +531,14 @@ Controls:
                             -   class: "UIControl"
                                 name: "SkillsContainer"
                                 position: [0.000000, 68.625000]
-                                size: [0.000000, 102.000000]
+                                size: [20.000000, 102.000000]
                                 pivot: [0.000000, 0.500000]
                                 noInput: true
                                 tag: 4
                                 components:
-                                    LinearLayout: {}
+                                    LinearLayout:
+                                        padding: 10.000000
+                                        spacing: 12.000000
                                     SizePolicy:
                                         horizontalPolicy: "PercentOfChildrenSum"
                                     Anchor:

@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
@@ -16,6 +16,8 @@ ImportedPackages:
 - "~res:/UI/Screens/Common/UnreadIcon.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TournamentButton.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TournamentCurrency.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackButton.yaml"
 StyleSheets:
 -   selector: ".back-image-placeholder"
     properties:
@@ -130,10 +132,12 @@ Controls:
                 Background:
                     drawType: "DRAW_STRETCH_BOTH"
                     sprite: "~res:/Gfx/UI/Tournament/gradient"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                    leftRightStretchCap: 1.000000
         -   class: "UIControl"
             name: "ButtonsContainer"
-            position: [161.500000, 234.000000]
-            size: [701.000000, 130.000000]
+            position: [162.000000, 240.000000]
+            size: [700.000000, 124.000000]
             classes: ""
             components:
                 LinearLayout:
@@ -151,8 +155,8 @@ Controls:
             children:
             -   class: "UIControl"
                 name: "ButtonsContainerCenter"
-                position: [0.000000, 0.000000]
-                size: [701.000000, 68.000000]
+                position: [125.000000, 0.000000]
+                size: [450.000000, 64.000000]
                 classes: ""
                 components:
                     LinearLayout:
@@ -169,19 +173,17 @@ Controls:
                 children:
                 -   prototype: "StyledButton/DefaultStyledButton"
                     name: "ParticipateButton"
-                    size: [220.000000, 68.000000]
+                    size: [220.000000, 64.000000]
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
                             hCenterAnchorEnabled: false
                             vCenterAnchorEnabled: false
-                        Background:
-                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                            frame: 2
                     children:
                     -   class: "UIStaticText"
                         name: "Caption"
-                        size: [220.000000, 68.000000]
+                        size: [220.000000, 64.000000]
                         classes: "header4 text-color-white"
                         text: "tournaments/Button/Participate"
                         components:
@@ -192,19 +194,17 @@ Controls:
                                 bottomAnchorEnabled: true
                 -   prototype: "StyledButton/DefaultStyledButton"
                     name: "MyTeamButton"
-                    size: [220.000000, 68.000000]
+                    size: [220.000000, 64.000000]
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
                             hCenterAnchorEnabled: false
                             vCenterAnchorEnabled: false
-                        Background:
-                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                            frame: 2
                     children:
                     -   class: "UIStaticText"
                         name: "Caption"
-                        size: [220.000000, 68.000000]
+                        size: [220.000000, 64.000000]
                         classes: "header4 text-color-white"
                         text: "tournaments/Button/MyTeam"
                         components:
@@ -213,111 +213,55 @@ Controls:
                                 rightAnchorEnabled: true
                                 topAnchorEnabled: true
                                 bottomAnchorEnabled: true
-                -   prototype: "StyledButton/DefaultStyledButton"
-                    name: "TeamsButton"
-                    size: [241.000000, 68.000000]
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: false
-                            rightAnchorEnabled: true
-                            vCenterAnchorEnabled: false
-                        Background:
-                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                            frame: 0
-                    children:
-                    -   class: "UIControl"
-                        name: "Container"
-                        size: [89.000000, 24.000000]
-                        noInput: true
-                        components:
-                            LinearLayout:
-                                spacing: 6.000000
-                            SizePolicy:
-                                horizontalPolicy: "PercentOfChildrenSum"
-                                verticalPolicy: "PercentOfMaxChild"
-                            Anchor:
-                                hCenterAnchorEnabled: true
-                                hCenterAnchor: 20.000000
-                                vCenterAnchorEnabled: true
-                        children:
-                        -   class: "UIStaticText"
-                            name: "Caption"
-                            position: [0.000000, 0.000000]
-                            size: [83.000000, 24.000000]
-                            classes: "header4 text-color-white"
-                            text: "tournaments/FutureTournaments/Tabs/Teams"
-                            components:
-                                SizePolicy:
-                                    horizontalPolicy: "PercentOfContent"
-                                    verticalPolicy: "PercentOfContent"
-                                Anchor:
-                                    vCenterAnchorEnabled: true
-                        -   class: "UIStaticText"
-                            name: "TeamsCount"
-                            position: [89.000000, 12.000000]
-                            classes: "text2 text-color-white"
-                            fitting: ["ENLARGE"]
-                            components:
-                                SizePolicy:
-                                    horizontalPolicy: "PercentOfContent"
-                                    verticalPolicy: "PercentOfContent"
-                                Anchor:
-                                    vCenterAnchorEnabled: true
-                    -   class: "UIControl"
-                        name: "icon"
-                        position: [11.000000, 14.799999]
-                        size: [38.400002, 38.400002]
-                        noInput: true
-                        components:
-                            SizePolicy:
-                                horizontalPolicy: "PercentOfContent"
-                                horizontalValue: 60.000000
-                                verticalPolicy: "PercentOfContent"
-                                verticalValue: 60.000000
-                            Anchor:
-                                vCenterAnchorEnabled: true
-                                vCenterAnchor: 0.000000
-                            Background:
-                                sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
-                                frame: 10
             -   class: "UIControl"
                 name: "ButtonsContainerTable"
-                position: [80.500000, 78.000000]
-                size: [540.000000, 52.000000]
-                classes: ""
+                position: [0.000000, 74.000000]
+                size: [700.000000, 50.000000]
                 components:
                     LinearLayout:
                         dynamicPadding: true
+                        spacing: 2.000000
                     SizePolicy:
                         horizontalPolicy: "FixedSize"
-                        horizontalValue: 540.000000
+                        horizontalValue: 700.000000
                         verticalPolicy: "PercentOfMaxChild"
                     Anchor:
                         leftAnchorEnabled: false
                         hCenterAnchorEnabled: true
-                        rightAnchorEnabled: false
-                        bottomAnchorEnabled: false
                 children:
                 -   prototype: "TournamentButton/Button"
-                    name: "TableTeamsButton"
+                    name: "TeamsButton"
                     components:
-                        SizePolicy:
-                            verticalPolicy: "FixedSize"
-                            verticalValue: 52.000000
+                        LinearLayout:
+                            dynamicPadding: true
+                            spacing: 10.000000
                     children:
                     -   path: "Caption"
-                        classes: "header4 hacked-font text-color-white"
                         text: "tournaments/CurrentTournaments/Table/Teams"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
+                    -   class: "UIStaticText"
+                        name: "TeamsCount"
+                        classes: "header4 text-color-white"
+                        fitting: ["ENLARGE"]
+                        text: "1024/512"
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfParent"
                 -   prototype: "TournamentButton/Button"
                     name: "TableButton"
-                    components:
-                        SizePolicy:
-                            verticalPolicy: "FixedSize"
-                            verticalValue: 52.000000
+                    children:
+                    -   path: "Caption"
+                        text: "tournaments/CurrentTournaments/Table/Brackets"
+                -   prototype: "TournamentButton/Button"
+                    name: "RewardButton"
                     children:
                     -   path: "Caption"
                         classes: "header4 hacked-font text-color-white"
-                        text: "tournaments/CurrentTournaments/Table/Brackets"
+                        text: "tournaments/CurrentTournaments/Table/Rewards"
         -   class: "UIControl"
             name: "TitleContainer"
             components:
@@ -342,7 +286,7 @@ Controls:
                         hCenterAnchorEnabled: true
             -   class: "UIControl"
                 name: "RoundContainer"
-                size: [209.000000, 21.000000]
+                size: [107.000000, 21.000000]
                 classes: "stageType=none"
                 components:
                     LinearLayout:
@@ -367,7 +311,6 @@ Controls:
                 -   class: "UIStaticText"
                     name: "RoundText"
                     classes: "text2-small time-ui time-ui-reg"
-                    text: "#training_rooms:RoomScreen/StageTour/Qualification"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfContent"
@@ -453,13 +396,14 @@ Controls:
             name: "EffectsContainer"
         -   class: "UIControl"
             name: "PrizeContainer"
-            size: [1024.000000, 70.000000]
+            position: [0.000000, -4.000000]
+            size: [1024.000000, 40.000000]
             noInput: true
-            classes: ""
             components:
                 SizePolicy:
                     horizontalPolicy: "PercentOfParent"
-                    verticalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "FixedSize"
+                    verticalValue: 40.000000
                 Anchor:
                     hCenterAnchorEnabled: true
                     topAnchorEnabled: true
@@ -467,7 +411,7 @@ Controls:
             children:
             -   class: "UIControl"
                 name: "Lenta"
-                size: [1024.000000, 70.000000]
+                size: [1024.000000, 40.000000]
                 noInput: true
                 components:
                     Anchor:
@@ -483,7 +427,7 @@ Controls:
                 -   class: "UIControl"
                     name: "RightImagePart"
                     position: [512.000000, 0.000000]
-                    size: [512.000000, 70.000000]
+                    size: [512.000000, 40.000000]
                     noInput: true
                     components:
                         Anchor:
@@ -491,14 +435,16 @@ Controls:
                             hCenterAnchor: 0.000000
                             rightAnchorEnabled: true
                             rightAnchor: 0.000000
-                            vCenterAnchorEnabled: true
-                            vCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
                         Background:
                             drawType: "DRAW_SCALE_TO_RECT"
                             sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsRight"
+                            color: [1.000000, 1.000000, 1.000000, 0.900000]
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                 -   class: "UIControl"
                     name: "LeftImagePart"
-                    size: [512.000000, 70.000000]
+                    size: [512.000000, 40.000000]
                     noInput: true
                     components:
                         Anchor:
@@ -506,13 +452,16 @@ Controls:
                             leftAnchor: 0.000000
                             hCenterAnchorEnabled: true
                             hCenterAnchor: 0.000000
-                            vCenterAnchorEnabled: true
-                            vCenterAnchor: 0.000000
+                            topAnchorEnabled: true
+                            bottomAnchorEnabled: true
                         Background:
                             drawType: "DRAW_SCALE_TO_RECT"
                             sprite: "~res:/Gfx/UI/LobbyCommon/bgMedalsLeft"
+                            color: [1.000000, 1.000000, 1.000000, 0.900000]
+                            colorInherit: "COLOR_MULTIPLY_ON_PARENT"
             -   class: "UIControl"
                 name: "TextContainer"
+                position: [415.500000, 4.500000]
                 noInput: true
                 classes: ""
                 components:
@@ -531,32 +480,32 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "PrizeText"
-                    position: [0.000000, 10.000000]
-                    size: [100.000000, 42.000000]
-                    classes: "header5"
-                    multiline: "MULTILINE_ENABLED"
+                    position: [0.000000, -1.000000]
+                    size: [183.000000, 31.000000]
+                    classes: "header1"
                     textalign: ["LEFT", "VCENTER"]
                     text: "tournaments/CurrentTournaments/PrizeFund"
                     components:
                         SizePolicy:
-                            horizontalPolicy: "FixedSize"
-                            horizontalValue: 100.000000
+                            horizontalPolicy: "PercentOfContent"
                             verticalPolicy: "PercentOfContent"
                         Anchor:
                             vCenterAnchorEnabled: true
-                -   class: "UIStaticText"
-                    name: "PrizeTitle"
-                    classes: "header1"
-                    fitting: ["ENLARGE"]
-                    text: "9 000"
+                            vCenterAnchor: -1.000000
+                -   class: "UIControl"
+                    name: "RewardContainer"
+                    position: [193.000000, 15.500000]
+                    noInput: true
+                    classes: ""
                     components:
+                        LinearLayout:
+                            spacing: 10.000000
+                            useRtl: true
                         SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            horizontalValue: 200.000000
-                            verticalPolicy: "PercentOfContent"
-                            verticalValue: 200.000000
-                -   prototype: "TournamentCurrency/CurrencyIcon"
-                    name: "CurrencyIcon"
+                            horizontalPolicy: "PercentOfChildrenSum"
+                            verticalPolicy: "PercentOfMaxChild"
+                        Anchor:
+                            vCenterAnchorEnabled: true
         -   class: "UIControl"
             name: "DescriptionContainer"
             position: [102.399994, 90.000000]
@@ -628,7 +577,6 @@ Controls:
                             verticalPolicy: "PercentOfParent"
                         Background:
                             drawType: "DRAW_FILL"
-                            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
                             color: [0.207843, 0.274510, 0.325490, 0.501961]
                             colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                 -   class: "UIStaticText"
@@ -673,36 +621,9 @@ Controls:
                 Anchor:
                     hCenterAnchorEnabled: true
                     bottomAnchorEnabled: true
-    -   prototype: "StyledButton/DefaultStyledButton"
+    -   prototype: "StyledBackButton/StyledBackButton"
         name: "BackButton"
-        size: [92.000000, 76.000000]
-        components:
-            Background:
-                drawType: "DRAW_ALIGNED"
-                sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
-                leftRightStretchCap: 0.000000
         children:
-        -   class: "UIControl"
-            name: "icon"
-            position: [0.000000, 0.000000]
-            size: [92.000000, 76.000000]
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 0.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 0.000000
-                Background:
-                    drawType: "DRAW_ALIGNED"
-                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
-                    frame: 3
-                    mask: ""
-                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
         -   prototype: "UnreadIcon/UnreadIcon"
             name: "UnreadNews"
             visible: false
@@ -710,4 +631,6 @@ Controls:
             components:
                 Anchor:
                     rightAnchorEnabled: true
+                    rightAnchor: -6.000000
                     topAnchorEnabled: true
+                    topAnchor: -6.000000

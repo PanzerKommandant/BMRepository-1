@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/ussr-SU100Y.sc2</collisionMesh>
 		<exclusionMask>Camouflages/ussr/CamouflageMasks/SU100Y_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USSR_SU-100Y</shopIconPath>
 	</blitz>
 	<crew>
 		<commander>radioman</commander>
@@ -53,7 +54,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>79.945694</turret_01>
+				<turret_01>83.104713</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

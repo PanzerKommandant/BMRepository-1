@@ -36,7 +36,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [600.000000, 100.000000]
     sizeVariation: [10.000000, 10.000000]
-    sprite: "../../../../../Gfx/Particles/UI/fire_line"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/fire_line"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

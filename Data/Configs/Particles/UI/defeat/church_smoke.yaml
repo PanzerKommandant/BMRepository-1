@@ -46,7 +46,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [4.000000, 4.000000]]
     sizeVariation: [0.000000, [2.000000, 2.000000], 7.190000, [2.000000, 2.000000]]
     spinVariation: -8.000000
-    sprite: "../../../../Gfx/Particles/UI/Fx_DustSpray_two"
+    sprite: "../../../../../Data/Gfx/Particles/UI/Fx_DustSpray_two"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000
@@ -88,7 +88,7 @@ layer1:
     size: [25.000000, 25.000000]
     sizeOverLifeXY: [0.000000, [0.483200, 0.483200], 0.179700, [0.636600, 0.636600], 1.000000, [1.297900, 1.297900]]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../../../Gfx/Particles/UI/dum_anim"
+    sprite: "../../../../../Data/Gfx/Particles/UI/dum_anim"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000

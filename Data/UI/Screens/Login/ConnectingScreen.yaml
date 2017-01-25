@@ -3,7 +3,7 @@ Header:
 ImportedPackages:
 - "~res:/UI/Screens/Common/LoadingControl.yaml"
 - "~res:/UI/Screens/Common/AOGASControl.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
+- "~res:/UI/Screens/Login/RegionSelector.yaml"
 Controls:
 -   prototype: "LoadingControl/LoadingControl"
     name: "ConnectingScreen"
@@ -13,7 +13,7 @@ Controls:
         visible: false
     -   prototype: "AOGASControl/AOGASControl"
         name: "AOGASControl"
-    -   prototype: "LoginCommon/RegionSelector"
+    -   prototype: "RegionSelector/RegionSelector"
         name: "RegionSelector"
         position: [368.000000, 693.000000]
         visible: false

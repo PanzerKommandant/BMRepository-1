@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 Controls:
 -   class: "UIControl"
     customClass: "UIScalableKeyArt"
@@ -79,230 +79,58 @@ Controls:
                             sprite: "~res:/Gfx/UI/KeyArt/keyart_middle"
                             frame: 0
                 -   class: "UIParticles"
-                    name: "FireBig1"
-                    position: [885.000000, 305.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle"
+                    position: [-166.000015, 642.000244]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/fire_big1.4.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/big_smoke.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Glow"
-                    position: [972.000000, 305.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle5"
+                    position: [123.333344, 749.999878]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/heaven_glow1.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/glow.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Smoke"
-                    position: [460.000000, 197.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle6"
+                    position: [271.777771, 730.000000]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/big_smoke_sky.sc2"
-                    autoStart: true
-            -   class: "UIControl"
-                name: "Layer1"
-                size: [1024.000000, 768.000000]
-                noInput: true
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
-                        verticalPolicy: "PercentOfMaxChild"
-                children:
-                -   class: "UIControl"
-                    name: "LeftPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_left"
-                            frame: 1
-                -   class: "UIControl"
-                    name: "RightPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            rightAnchorEnabled: true
-                            rightAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_right"
-                            frame: 1
-                -   class: "UIControl"
-                    name: "MiddlePart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_middle"
-                            frame: 1
-                -   class: "UIParticles"
-                    name: "FireBig2"
-                    position: [297.000000, 352.000000]
-                    size: [32.000000, 32.000000]
-                    noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/fire_big2.5.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks1.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Flag"
-                    position: [860.500000, 146.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle3"
+                    position: [963.333374, 768.000000]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/flag.sc2"
-                    autoStart: true
-            -   class: "UIControl"
-                name: "Layer2"
-                noInput: true
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
-                        verticalPolicy: "PercentOfMaxChild"
-                children:
-                -   class: "UIControl"
-                    name: "MiddlePart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_middle"
-                            frame: 2
-                -   class: "UIParticles"
-                    name: "Fire2"
-                    position: [726.000000, 464.000000]
-                    size: [32.000000, 32.000000]
-                    noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/fire2_5.sc2"
-                    autoStart: true
-            -   class: "UIControl"
-                name: "Layer3"
-                noInput: true
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
-                        verticalPolicy: "PercentOfMaxChild"
-                children:
-                -   class: "UIControl"
-                    name: "MiddlePart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_middle"
-                            frame: 3
-                -   class: "UIControl"
-                    name: "RightPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            rightAnchorEnabled: true
-                            rightAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_right"
-                            frame: 2
-                -   class: "UIControl"
-                    name: "LeftPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_left"
-                            frame: 2
-                -   class: "UIParticles"
-                    name: "Fog"
-                    position: [845.000000, 414.000000]
-                    size: [32.000000, 32.000000]
-                    noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/fog.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks5.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Fire3"
-                    position: [687.000000, 450.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle4"
+                    position: [963.333374, 768.000000]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/fire3.5.sc2"
-                    autoStart: true
-            -   class: "UIControl"
-                name: "Layer4"
-                noInput: true
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
-                        verticalPolicy: "PercentOfMaxChild"
-                children:
-                -   class: "UIControl"
-                    name: "MiddlePart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_middle"
-                            frame: 4
-                -   class: "UIControl"
-                    name: "RightPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            rightAnchorEnabled: true
-                            rightAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_right"
-                            frame: 3
-                -   class: "UIControl"
-                    name: "LeftPart"
-                    noInput: true
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfContent"
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: -170.000000
-                        Background:
-                            sprite: "~res:/Gfx/UI/KeyArt/keyart_left"
-                            frame: 3
-                -   class: "UIParticles"
-                    name: "Sparks1"
-                    position: [1199.000000, 768.000000]
-                    size: [32.000000, 32.000000]
-                    noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/sparks_test1.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks3.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Sparks2"
-                    position: [268.000000, 766.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle1"
+                    position: [-155.555725, 757.333191]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/sparks_test2.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks2.sc2"
                     autoStart: true
                 -   class: "UIParticles"
-                    name: "Sparks3"
-                    position: [1144.000000, 713.000000]
-                    size: [32.000000, 32.000000]
+                    name: "Particle2"
+                    position: [-155.555725, 757.333191]
+                    size: [81.333328, 76.000000]
+                    pivot: [0.500000, 0.500000]
                     noInput: true
-                    effectPath: "~res:/3d/FX/UI/Login3.0/sparks_test3.sc2"
+                    effectPath: "~res:/3d/FX/UI/Default_KeyArt/sparks4.sc2"
                     autoStart: true

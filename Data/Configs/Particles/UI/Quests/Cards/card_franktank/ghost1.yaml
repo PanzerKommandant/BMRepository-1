@@ -38,7 +38,7 @@ layer0:
     size: [50.000000, 50.000000]
     sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [1.500000, 2.000000]]
     sizeVariation: [20.000000, 20.000000]
-    sprite: "../../../../../../Gfx/Particles/UI/ghost1"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/ghost1"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

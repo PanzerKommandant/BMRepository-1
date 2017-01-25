@@ -1,9 +1,11 @@
 Header:
-    version: "3"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Battle/Tips.yaml"
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "Dialog"
@@ -78,18 +80,9 @@ Controls:
                     align: ["HCENTER", "TOP"]
         -   prototype: "Tips/hint"
             name: "hint"
-        -   prototype: "Common/DefaultButton"
+        -   prototype: "StyledBackButton/StyledBackButton"
             name: "OkButton"
-            size: [80.000000, 71.000000]
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 20.000000
-                    topAnchorEnabled: true
-                    topAnchor: 20.000000
-                NormalText:
-                    text: "Back"
-        -   prototype: "Common/DefaultButton"
+        -   prototype: "StyledButton/StyledButton"
             name: "NextTipButton"
             components:
                 Anchor:
@@ -97,8 +90,9 @@ Controls:
                     rightAnchor: 20.000000
                     bottomAnchorEnabled: true
                     bottomAnchor: 180.000000
-                NormalText:
-                    text: "Next Tip"
+            children:
+            -   path: "Caption"
+                text: "Next Tip"
         -   class: "UIControl"
             name: "SupremacyBattles"
             position: [15.000000, 240.000000]

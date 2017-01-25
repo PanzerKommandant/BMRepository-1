@@ -45,7 +45,7 @@ layer0:
     spin: 140.000000
     spinOverLife: [0.000000, 0.000000, 0.820000, 0.000000, 0.830000, 1.000000]
     spinVariation: 90.000000
-    sprite: "../../../Gfx/Particles/alpha/concrete_debris_anim_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/concrete_debris_anim_one"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

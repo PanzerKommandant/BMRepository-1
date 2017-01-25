@@ -1,0 +1,136 @@
+emitter:
+    size: [2.000000, 2.000000, 2.000000]
+    name: "debris"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionRange: 60.000000
+layer0:
+    name: "debris2"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 60.000000
+    spinVariation: 60.000000
+    size: [0.500000, 0.050000]
+    velocity: 4.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 120.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [121.957199, 97.898834, 112.000000, 255.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 20.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]
+layer1:
+    name: "debris3"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 10.000000
+    spinVariation: 60.000000
+    size: [0.250000, 0.500000]
+    velocity: 4.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [103.478600, 83.120621, 94.996109, 255.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 15.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]
+layer2:
+    name: "debris4"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 40.000000
+    spinVariation: 60.000000
+    size: [0.250000, 0.050000]
+    sizeVariation: [0.050000, 0.400000]
+    velocity: 5.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [101.015564, 81.143967, 92.735405, 255.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 26.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]

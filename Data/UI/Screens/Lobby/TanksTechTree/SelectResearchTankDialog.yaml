@@ -1,0 +1,89 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "SelectDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+        ModalInput: {}
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.070588, 0.090196, 0.113725, 0.784314]
+    children:
+    -   class: "UIControl"
+        name: "Dialog"
+        size: [499.000000, 239.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+                padding: 20.000000
+                spacing: 30.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
+                leftRightStretchCap: 4.000000
+                topBottomStretchCap: 4.000000
+        children:
+        -   class: "UIStaticText"
+            name: "Description"
+            size: [399.200012, 69.000000]
+            classes: "text2 text-color-blue"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            multiline: "MULTILINE_ENABLED"
+            text: "#hangar_showcase:ChooseVehicle/Dialog"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    horizontalValue: 80.000000
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            customClass: "UITanksTreeContent"
+            name: "TankNodes"
+            size: [440.000000, 0.000000]
+            noInput: true
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+        -   class: "UIControl"
+            name: "Buttons"
+            size: [499.000000, 70.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 20.000000
+                    dynamicPadding: true
+                    spacing: 15.000000
+                    dynamicSpacing: false
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Anchor:
+                    leftAnchor: 20.000000
+                    rightAnchor: 20.000000
+            children:
+            -   prototype: "StyledButton/StyledButton"
+                name: "CancelButton"
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Cancel"
+            -   prototype: "StyledButton/StyledButton"
+                name: "SelectButton"
+                components:
+                    Background:
+                        frame: 2
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Choose"

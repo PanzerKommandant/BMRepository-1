@@ -1,0 +1,181 @@
+emitter:
+    size: [1.000000, 1.000000, 0.000000]
+    name: "debris"
+    type: "shockwave"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionRange: 70.000000
+layer0:
+    name: "debris_car"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_one"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 30.000000
+    spinVariation: 60.000000
+    size: [0.200000, 0.100000]
+    sizeVariation: [0.179300, 0.080800]
+    velocity: 2.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [125.653694, 68.494164, 88.206223, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 16.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]
+layer1:
+    name: "debris_car2"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_three"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 40.000000
+    spinVariation: 60.000000
+    size: [0.200000, 0.200000]
+    sizeVariation: [0.050000, 0.050000]
+    velocity: 3.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [149.058365, 80.708168, 104.700386, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 20.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]
+layer2:
+    name: "debris_glass"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass_one"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 15.000000
+    spinVariation: 60.000000
+    size: [0.150000, 0.150000]
+    sizeVariation: [0.200000, 0.200000]
+    velocity: 4.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [120.249023, 124.420235, 111.910507, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 15.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]
+layer3:
+    name: "debris_glass2"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass_two"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 100.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 4.000000
+    number: 20.000000
+    spinVariation: 60.000000
+    size: [0.025000, 0.250000]
+    sizeVariation: [0.050000, 0.050000]
+    velocity: 3.000000
+    forceOverLife0: [0.000000, 0.000000, 0.990000, 30.000000]
+    velocityOverLife: [0.000000, 1.000000, 0.480000, 0.300000, 0.990000, 1.003400]
+    spin: 60.000000
+    randomSpinDirection: true
+    angleVariation: 100.000000
+    colorOverLife: [122.630348, 126.883270, 114.124512, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 26.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.300000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 0.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -1.000000]

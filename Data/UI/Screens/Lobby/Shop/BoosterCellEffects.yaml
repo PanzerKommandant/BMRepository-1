@@ -1,0 +1,96 @@
+Header:
+    version: "7"
+Prototypes:
+-   class: "UIControl"
+    name: "GenericEffect"
+    size: [241.000000, 274.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            hCenterAnchorEnabled: true
+            vCenterAnchorEnabled: true
+    children:
+    -   class: "UIParticles"
+        name: "FireParticles"
+        position: [133.000000, 167.000000]
+        pivot: [4.656250, 5.718750]
+        noInput: true
+        effectPath: ""
+        autoStart: true
+    -   class: "UIParticles"
+        name: "GlowParticles"
+        position: [70.000000, 72.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        effectPath: ""
+        autoStart: true
+    -   class: "UIParticles"
+        name: "SparksParticles"
+        position: [170.000000, 195.000000]
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        effectPath: ""
+        autoStart: true
+    -   class: "UIControl"
+        name: "Control"
+        size: [241.000000, 274.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Background:
+                sprite: "~res:/Gfx/UI/ShopScreen/booster_cards/booster_experience0"
+                frame: 1
+Controls:
+-   prototype: "GenericEffect"
+    name: "XpEffect"
+    children:
+    -   path: "FireParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/blue_fire.sc2"
+    -   path: "GlowParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/blue_glow.sc2"
+    -   path: "SparksParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/blue_sparks.sc2"
+-   prototype: "GenericEffect"
+    name: "FreeXpEffect"
+    children:
+    -   path: "FireParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/gold_fire.sc2"
+    -   path: "GlowParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/gold_glow.sc2"
+    -   path: "SparksParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/gold_sparks.sc2"
+    -   path: "Control"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/ShopScreen/booster_cards/booster_experience1"
+-   prototype: "GenericEffect"
+    name: "CrewXpEffect"
+    children:
+    -   path: "FireParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/green_fire.sc2"
+    -   path: "GlowParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/green_glow.sc2"
+    -   path: "SparksParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/green_sparks.sc2"
+    -   path: "Control"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/ShopScreen/booster_cards/booster_experience2"
+-   prototype: "GenericEffect"
+    name: "GrandEffect"
+    children:
+    -   path: "FireParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/red_fire.sc2"
+    -   path: "GlowParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/red_glow.sc2"
+    -   path: "SparksParticles"
+        effectPath: "~res:/3d/FX/UI/Shop/booster_cards/red_sparks.sc2"
+    -   path: "Control"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/ShopScreen/booster_cards/booster_experience3"

@@ -96,7 +96,7 @@ password_too_easy: "كلمة المرور ليست قوية بما يكفي."
 password_too_short: "كلمة المرور قصيرة جدًا."
 password_is_good: "كلمة المرور قوية بما يكفي."
 "Connecting...": "جارٍ الاتصال..."
-login copyright: "Wargaming.net 2008–2016. جميع الحقوق محفوظة."
+login copyright: "Wargaming.net 2008–2017. جميع الحقوق محفوظة."
 "#hangar:regionInfo/serverName": "الخادم: %(serverName)"
 login update: "تحديث"
 LOGIN_SKIP_TUTORIAL: "خيارات المقطع التعليمي"
@@ -209,7 +209,7 @@ SQUAD_DIALOG_NOT_READY: "غير مستعد!"
 SQUAD_DIALOG_CANCEL: "إلغاء الأمر"
 SQUAD_DIALOG_DISBAND: "تسريح"
 SQUAD_DIALOG_CHAT: "دردشة الفصيلة"
-SQUAD_DIALOG_TIP_NOT_READY_MISMATCH: "للنجاح في اللعب ضمن فريق، حدد المركبات من المستوى %ls."
+SQUAD_DIALOG_TIP_NOT_READY_MISMATCH: "للنجاح في اللعب ضمن فريق، حدد المركبات من المستوى %(levels)."
 SQUAD_DIALOG_TIP_NOT_READY_MATCH: "تأكيد الاستعداد للانضمام إلى المعركة."
 SQUAD_DIALOG_TIP_WAIT_FOR_TEAMMATE: "انتظر حتى يحدد اللاعب الآخر مركبة."
 SQUAD_DIALOG_TIP_TEAM_READY: "اضغط على \"بدء المعركة\"! للانضمام إليها."
@@ -315,18 +315,23 @@ hangar base account: "الحساب الرئيسي"
 "#hangar:notification/adminTitle": "إشعارات الخدمة"
 "#hangar:notification/bonusAvailable": "تنبيه! المهام المحدثة وبونص الخبرة %(m)%(xp) متاحة."
 "#hangar:button/Achievements": "تسجيل"
+hangar/premiumTime: "%(time) من الحساب المميز"
+hangar/buyPremium: "شراء مميز"
+hangar/gold: "الذهب"
+hangar/credits: "الرصيد"
+hangar/freeXP: "نقاط الخبرة الحرة"
 NEWS_NOTIFICATION_INVOICE_FINANCIAL: "المعاملات المالية"
 NEWS_NOTIFICATION_INVOICE_PREMIUM: "المميز"
 NEWS_NOTIFICATION_INVOICE_FREE_XP: "نقاط الخبرة الحرة"
 NEWS_NOTIFICATION_INVOICE: "الايصال"
 NEWS_NOTIFICATION_GOLD_RECEIVED: "المستلم "
-NEWS_NOTIFICATION_INVOICE_ACCRUED: "مضافة "
-NEWS_NOTIFICATION_INVOICE_DEBITED: "مخصومة "
+NEWS_NOTIFICATION_INVOICE_ACCRUED: "مضافة:"
+NEWS_NOTIFICATION_INVOICE_DEBITED: "مخصومة:"
 NEWS_NOTIFICATION_INVOICE_PREMIUM_DAYS: "أيام الحساب المميز: "
 NEWS_NOTIFICATION_INVOICE_ITEMS_FORMAT: "%ls \"%ls\"\u00A0— %d item(s)."
 NEWS_NOTIFICATION_INVOICE_VEHICLES: "المركبات: "
-NEWS_NOTIFICATION_INVOICE_SLOTS: "الأماكن: "
-NEWS_NOTIFICATION_COMPENSATION: "التعويض المدفوع مقابل %ls "
+NEWS_NOTIFICATION_INVOICE_SLOTS: "الأماكن"
+NEWS_NOTIFICATION_COMPENSATION: "التعويض المدفوع مقابل "
 NEWS_NOTIFICATION_COMPENSATION_WITH_GOLD: "الذهب: %ls"
 NEWS_NOTIFICATION_COMPENSATION_WITH_CREDITS: "الرصيد: %ls"
 "Loading...": "جاري التحميل..."
@@ -400,7 +405,7 @@ tank descr circular vision radius: "نطاق الرؤية (م)"
 "#hangar_showcase:ResearchTitle": "فحص مركبة"
 "#hangar_showcase:ResearchDescription": "هل تريد فحص المركبة؟"
 "#hangar_showcase:ResearchOkButton": "الفحص"
-"#hangar_showcase:ResearchFailTitle" : "الشراء غير متاح"
+"#hangar_showcase:ResearchFailTitle" : "الفحص غير متاح"
 "#hangar_showcase:PurchaseTitle": "شراء مركبة"
 "#hangar_showcase:PurchaseDescription": "هل تريد شراء المركبة؟"
 "#hangar_showcase:PurchaseOkButton": "الشراء"
@@ -427,6 +432,7 @@ tank descr circular vision radius: "نطاق الرؤية (م)"
 "#hangar_showcase:Congratulation/Mastery": "يُعتد بالتفوق في التحكم في المركبة عند نسبة %(mastery) من الحد الأقصى. ويؤثر تفوق الطاقم مباشرة على خصائص المركبة.\nقم بالانضمام إلى المعارك أو تمكين التدريب السريع للطاقم، لتحسين تفوق الطاقم."
 "#hangar_showcase:Congratulation/Mastery100": "التدريب بكفاءة تصل إلى 100%. استخدم نقاط الخبرة المكتسبة بهذه المركبة للتدرب على مهارات الطاقم."
 "#hangar_showcase:Camouflage": "تمويه"
+"#hangar_showcase:ChooseVehicle/Dialog": "حدد مركبة لاستخدام خبرتها في فحص %(vehicleName)."
 tank descr Protectability: "الحماية"
 tank descr FirePower: "القوة النارية"
 tank descr ShotEfficiency: "فعالية الطلقات"
@@ -592,6 +598,9 @@ hangar menu community: "المجتمع"
 "#hangar_tutorial:hangar/tank_info/hint": "يمكنك الحصول على جميع المعلومات عن المركبات المحددة من هنا."
 "#hangar_tutorial:hangar/shop/hint": "يمكنك شراء الذهب والمركبات المميزة أو تمديد حسابك المميز من هنا."
 "#hangar_tutorial:hangar/BattleStats/hint": "يتم عرض أداء المعركة والإنجازات هنا"
+"#hangar_tutorial:boosters/InstallBoosters/hint": "ثم بتثبيت المعززات في أماكن فارغة واستخدامها في معركة لربح المزيد من العملات وتحسين الأداء داخل اللعبة.\nيمكنك شراء المعززات في المتجر أو تلقيها مقابل إكمال المهام"
+"#hangar_tutorial:boosters/BoosterImpact/hint": "سيتم عرض تأثير معزز على الربح والأداء هنا بعد تثبيته في مكان فارغ"
+"#hangar_tutorial:boosters/UninstalledBoosters/hint": "المعززات غير المثبتة تبقى في المخزن"
 vehicle: "الدبابة"
 vehicleChassis: "عازل الصدمات"
 vehicleTurret: "البرج"
@@ -831,9 +840,9 @@ Battle finished.: "لقد انتهت المعركة"
 "#battle_results:SpecialOffer/Description": "للأداء المميز في المعركة"
 "#battle_results:SpecialOffer/Cost": "التكلفة"
 "#battle_results:SpecialOffer/Premium": "الحساب المميز\n يوم واحد"
-"#battle_results:Reason_MaxScore_Win": "ربح فريقك أقصى عدد من نقاط الانتصار"
+"#battle_results:Reason_MaxScore_Win": "ربخ فريقك 1,000 من نقاط الانتصار"
 "#battle_results:Reason_BiggerScore_Win": "ربح فريقك نقاط انتصار أكثر من العدو في نهاية المعركة"
-"#battle_results:Reason_MaxScore_Lose": "ربح فريق العدو أقصى عدد من نقاط الانتصار"
+"#battle_results:Reason_MaxScore_Lose": "ربح فريق العدو 1,000 من نقاط الانتصار"
 "#battle_results:Reason_BiggerScore_Lose": "ربح فريق العدو نقاط انتصار أكثر من فريقك في نهاية المعركة"
 "#battle_results:DetailsPage/StatisticPage/ScoreEarned": "تم ربح نقاط الانتصار"
 "#battle_results:DetailsPage/StatisticPage/ScoreDetracted": "تم الحصول على نقاط انتصار من العدو"
@@ -847,10 +856,12 @@ Battle finished.: "لقد انتهت المعركة"
 "#battle_results:DetailsPage/CreditsExperiencePage/heroReward": "رصيد قتال البواسل"
 "#battle_results:DetailsPage/ExperiencePage/heroRewardXp": "تجربة قتال البواسل"
 "#battle_results:ItemsReceived": "المتلقى في المعركة"
+"#battle_results:DetailsPage/ExperiencePage/TotalWithBoosters": "الإجمالي مع المعززات"
+"#battle_results:DetailsPage/CreditsExperiencePage/BoosterImpact": "مع المعزز"
 "#arenas:type/domination/name": "معركة مواجهة"
 "#arenas:type/domination/description": "المهمة: الاستيلاء على القاعدة أو تدمير جميع مركبات العدو."
 "#arenas:type/supremacy/name": "التفوق"
-"#arenas:type/supremacy/description": "المهمة: السيطرة على القواعد وربح 1,000 من نقاط الانتصار\nقبل فريق العدو، أوتدمير كل مركبات العدو."
+"#arenas:type/supremacy/description": "المهمة: السيطرة على القواعد وتدمير مركبات العدو."
 "#arenas:type/random/name": "وضع العشوائي"
 "#hangar:OneTimeOffer/Title": "عرض لمرة واحدة"
 "#hangar:OneTimeOffer/CancelWarning": "هل تريد رفض هذا العرض؟ لن يكون متوفرًا مرة أخرى في المستقبل."
@@ -942,12 +953,12 @@ chatCommand/preparing_shot: "الاستعداد! القذائف المتبقية
 chatCommand/ready_for_shot: "جاهز لإطلاق النار!"
 chatCommand/shells_left: "جاهز! القذائف: %(number)."
 chatCommand/no_shells: "من القذائف."
-recoverkit_in_cooldown: "جارٍ تحضير حزمة الاستعادة..."
-afterburning_in_cooldown: "تهدئة زيادة قوة المحرك..."
-berserk_in_cooldown: "تهدئة الأدرينالين..."
-auto_extinguisher_in_cooldown: "تهدئة طفاية حريق أوتوماتيكية..."
-medkit_in_cooldown: "تهدئة حقيبة الإسعافات الأولية..."
-repairkit_in_cooldown: "تهدئة طقم الإصلاحات"
+recoverkit_in_cooldown: "تهدئة حزمة الإصلاح."
+afterburning_in_cooldown: "تهدئة زيادة قوة المحرك."
+berserk_in_cooldown: "تهدئة الأدرينالين."
+auto_extinguisher_in_cooldown: "تهدئة طفاية حريق أوتوماتيكية."
+medkit_in_cooldown: "تهدئة حقيبة الإسعافات الأولية."
+repairkit_in_cooldown: "تهدئة طقم الإصلاحات."
 follow_aim_in_sniper_disabled: "التصويب التلقائي معطل في وضع القناص."
 follow_aim_in_arcade_disabled: "التصويب التلقائي معطل في وضع الممرات."
 crew_healed: "تم علاج الطاقم."
@@ -961,7 +972,7 @@ speedometerValue: "كم/س"
 "#maps:23_karieri_kr/23_karieri_kr.sc2": "كوبرفيلد"
 "#maps:21_mountain_mnt/21_mountain_mnt.sc2": "الذهب الأسود"
 "#maps:05_amigosville_am/05_amigosville_am.sc2": "فولز كريك"
-"#maps:medvedkovo/medvedkovo.sc2": "ديد ريل"
+"#maps:04_medvedkovo_md/04_medvedkovo_md.sc2": "ديد ريل"
 "#maps:09_savanna_sv/09_savanna_sv.sc2": "واحة النخيل"
 "#maps:01_tutorial_tut/01_tutorial_tut.sc2": "ساحة تدريب"
 "#maps:06_rudniki_rd/06_rudniki_rd.sc2": "مناجم"
@@ -981,7 +992,6 @@ speedometerValue: "كم/س"
 "#maps:22_italy_it_night/22_italy_it_night.sc2": "حقول الكروم"
 "#maps:24_milibase_mlb/24_milibase_mlb.sc2": "ميناء ياماتو"
 "#maps:25_canyon_ca/25_canyon_ca.sc2": "الوادي"
-"#maps:04_medvedkovo_md_test/04_medvedkovo_md_test.sc2": "ديد ريل_TEST"
 controls editor back: "الرجوع"
 controls editor reset: "افتراضي"
 controls editor help: "إعادة ترتيب وحدات التحكم الخاصة بالمركبة وإعادة تحديد حجمها"
@@ -1003,7 +1013,7 @@ controls editor scale: "حجم الرمز"
 "#settings:Graphics/Quality/Medium": "متوسط"
 "#settings:Graphics/Quality/High": "مرتفع"
 "#settings:Graphics/Quality/Customized": "يدوي"
-"#settings:Graphics/Quality/Saving/Notification": "تم تغيير إعدادات الرسم. هل تريد حفظ التغييرات؟"
+"#settings:Graphics/Quality/Saving/Notification": "تم تغيير إعدادات الرسم والصوت. هل تريد حفظ التغييرات؟"
 "#settings:Graphics/Quality/Saving/OK": "حفظ"
 "#settings:Graphics/Quality/Saving/Cancel": "إلغاء الأمر"
 "#settings:Graphics/Resolution/Title": "الدقة"
@@ -1168,7 +1178,7 @@ controls editor scale: "حجم الرمز"
 "#settings:Controls/ControlType/Touch": "اللمس"
 "#settings:Controls/ControlType/MouseKeyboard": "لوحة المفاتيح والماوس"
 "#settings:Graphics/FPSLimit30/Title": "30 إطارًا في الثانية (FPS)"
-"#settings:Graphics/FPSLimit30/Description": "يوفر شحن البطارية ويعمل على تحسين سلوك الكاميرا في الأجهزة ضعيفة القدرات."
+"#settings:Graphics/FPSLimit30/Description": "يوفر شحن البطارية ويعمل على تحسين سلوك الكاميرا في الأجهزة ضعيفة القدرات"
 "#settings:Controls/InvertedMouse/Title": "عكس حركة الماوس الرأسية"
 "#settings:Other/ReloadTimer/Title": "إعادة تحميل الميقاتي"
 "#settings:Other/ReloadTimer/Description": "يوضح وقت إعادة التحميل المتبقي"
@@ -1181,12 +1191,12 @@ controls editor scale: "حجم الرمز"
 "#settings:Other/SkillsDisplay/Description": "يتيح عرض مهارات الطاقم والمعدات المستخدمة في المعركة"
 "#settings:Other/Rangefinder/Title": "جهاز تحديد المدى"
 "#settings:Other/Rangefinder/Description": "يوضح المسافة إلى الهدف عندما يكون الغطاء الشبكي عليه"
-"#settings:Controls/AttackPointA/Title": "الاستحواذ على القاعدة A"
-"#settings:Controls/AttackPointB/Title": "الاستحواذ على القاعدة B"
-"#settings:Controls/AttackPointC/Title": "الاستحواذ على القاعدة C"
-"#settings:Controls/AttackPointD/Title": "الاستحواذ على القاعدة D"
-"#settings:Controls/AttackPointE/Title": "الاستحواذ على القاعدة E"
-"#settings:Controls/AttackPointF/Title": "الاستحواذ على القاعدة F"
+"#settings:Controls/InBattleCommands/AttackPointA/Title": "القيادة إلى القاعدة A"
+"#settings:Controls/InBattleCommands/AttackPointB/Title": "القيادة إلى القاعدة B"
+"#settings:Controls/InBattleCommands/AttackPointC/Title": "القيادة إلى القاعدى C"
+"#settings:Controls/InBattleCommands/AttackPointD/Title": "القيادة إلى القاعدة D"
+"#settings:Controls/InBattleCommands/AttackPointE/Title": "القيادة إلى القاعدة E"
+"#settings:Controls/InBattleCommands/AttackPointF/Title": "القيادة إلى القاعدة F"
 "#settings:Other/Supremacy/Title": "وضع المتفوق"
 "#settings:Other/Supremacy/Description": "اجعل هذا الوضع متاحًا بداية من مستوى المركبة V"
 "#settings:Graphics/MetalAPI/Title": "معالجة جديدة"
@@ -1250,9 +1260,21 @@ shop/Error/EnableSteam: "لإجراء عمليات الشراء، قم بتفع�
 shop/TimeLeft/Days: "الوقت المتبقي:%d يومًا."
 shop/TimeLeft/Hours: "الوقت المتبقي:%d ساعة."
 shop/TimeLeft/Minutes: "الوقت المتبقي:%d دقيقة."
-shop/TooMuchPremium: "لقد اشتريت حسابًا مميزًا لمدة%d d.\nستكون قادرًا على تمديد حسابك المميز في غضون%d d."
+shop/TooMuchPremium: "لقد اشتريت حسابًا مميزًا لمدة %d d.\nستكون قادرًا على تمديد حسابك المميز في غضون %d d."
 shop/DaysFree: "يوم مجاني"
 shop/Days: "يوم"
+shop/Buy/Vehicles: "المركبات"
+shop/Hint/Vehicles: "المركبات المميزة هي مركبات فريدة تقدم المزيد من الرصيد لكل معركة."
+shop/Buy/Vehicles/NothingAvailable: "تم شراء كل المركبات المميزة بالفعل.\nيمكنك العثور على المزيد من المركبات المميزة في الحزم."
+shop/Boosters: "معززات"
+shop/Boosters/BattleXPBooster/Title: "معززات نقاط خبرة القتال (\u061C+60%)"
+shop/Boosters/FreeXPBooster/Title: "معززات نقاط الخبرة الحرة (\u061C+350%)"
+shop/Boosters/CrewXPBooster/Title: "معززات خبرة الطاقم (\u061C+150%)"
+shop/Boosters/BattleXPBooster/ShortDescr: "معززات نقاط خبرة القتال %(number)"
+shop/Boosters/FreeXPBooster/ShortDescr: "معززات نقاط الخبرة الحرة %(number)"
+shop/Boosters/CrewXPBooster/ShortDescr: "معززات نقاط خبرة الطاقم %(number)"
+shop/Boosters/UniversalPack/Title: "حزمة المعزز الدولي"
+shop/Boosters/UniversalPack/ShortDescr: "%(number) معززات نقاط خبرة القتال + %(number) معززات نقاط الخبرة الحرة + %(number) معززات خبرة الطاقم"
 Transaction_in_progress: "جارِ معالجة عملية الشراء...\nItقد تستغرق عملية الشراء بعض الوقت كي تتوافر العناصر التي تم شراؤها."
 "#battle_tutorial:welcome/header": "مرحبًا بكم في معسكر التدريب!"
 "#battle_tutorial:welcome/comment": "ستحصل على المهارات الأساسية اللازمة في المعركة من هنا."
@@ -1321,7 +1343,7 @@ xchatContacts: "جهات الاتصال"
 lobbyChatConnecting: "جارٍ الاتصال..."
 XChatSearchNoResult: "تعذر العثور على نتائج."
 XChatSearchHint: "البحث عن اللاعبين"
-XChatSearchError: "الطول غير صحيح أو هناك حرف غير صالح. عدد الأحرف الصالحة من 2 إلى 24."
+XChatSearchError: "الطول غير صحيح أو هناك حرف غير صالح. أدخل من فضلك 2 إلى 24 حرفًا."
 XChatSearchCooldown: "الرجاء الانتظار 5 ثوانِ بين عمليات البحث."
 XChatEnterUserNameHint: "إدخال اسم مستخدم"
 XChatAddFriendBtn: "إضافة إلى الأصدقاء"
@@ -1382,7 +1404,7 @@ AMMO_INFO_COUNT: "قذائف في الذخيرة"
 INVENTORY_TO_PAY: "الدفع:"
 INVENTORY_TO_GET: "إعادة المال:"
 SUMMARY_PRICE: "إجمالي:"
-INVENTORY_OPTIONAL_DEVICE_WEIGHT: "الوزن:%d كجم"
+INVENTORY_OPTIONAL_DEVICE_WEIGHT: "الوزن: %d كجم"
 INVENTORY_OPTIONAL_DEVICE_PURCHASE_NOTE: "ستوفر لك المعدات المفكوكة 50% من التكلفة الحالية."
 INVENTORY_OPTIONAL_DEVICE_PURCHASE_CONFIRM: "هل ترغب في شراء المعدات مقابل %(value)؟"
 INVENTORY_OPTIONAL_DEVICE_SELL_CONFIRM: "هل ترغب في بيع المعدات مقابل %(value)؟"
@@ -1899,9 +1921,9 @@ SETTINGS_BUTTON_LANGUAGE: "إعداد اللغة"
 "#clans:NotificationScreen/Messages/PlayerLeft": "غادر %(userName) العشيرة."
 "#clans:NotificationScreen/Messages/InviteAccepted": "انضم %(userName) إلى العشيرة."
 "#clans:NotificationScreen/Messages/PlayerDismissed": "تم استبعاد %(userName) من العشيرة."
-"#clans:ProfileScreen/CannotJoin/Notification": "لا يمكن قبول دعوة الانضمام إلى عشيرة %(clanNameWithTag)، وذلك لأنه قد تم بالفعل تجنيد الحد الأقصى من %(max) اللاعبين في العشيرة."
+"#clans:ProfileScreen/CannotJoin/Notification": "لا يمكن قبول الدعوة إلى عشيرة %(clanNameWithTag). تضم العشيرة بالفعل العدد الأقصى %(max) من اللاعبين."
 "#clans:ProfileScreen/CannotJoin/Button": "تم التأكيد!"
-"#clans:StaffScreen/CannotAccept/Notification": "لا يمكن قبول طلب الانضمام إلى عشيرة %(clanNameWithTag)، وذلك لأنه قد تم بالفعل تجنيد الحد الأقصى %(max) من اللاعبين في العشيرة."
+"#clans:StaffScreen/CannotAccept/Notification": "لا يمكن قبول طلب الانضمام إلى عشيرة %(clanNameWithTag).تضم العشيرة بالفعل العدد الأقصى %(max) من اللاعبين."
 "#clans:StaffScreen/CannotAccept/Button": "تم التأكيد!"
 "#clans:APIErrors/CommonError/ActionUnavailable": "العملية غير متاحة. يرجى إعادة المحاولة مرة أخرى في وقت لاحق."
 "#clans:APIErrors/Button/OK": "تم التأكيد!"
@@ -2024,7 +2046,7 @@ SETTINGS_BUTTON_LANGUAGE: "إعداد اللغة"
 "#clans:NotificationScreen/Messages/PassSurvey": "يُرجى إكمال الاستبيان بخصوص عشائر \"Blitz\". رأيك يهمنا للغاية."
 "#clans:NotificationScreen/Messages/DecisionMaker": "القرار الذي تم اتخاذه بواسطة %(userName)"
 "#clans:SearchScreen/Error/NeedMoreSymbols": "يُرجى إدخال ما لا يقل عن %(number) من الحروف لإجراء بحث دقيق."
-"#clans:RecruitingScreen/ParamsComment": "لا يمكن أن تتجاوز أقصى قيمة لمعلمات التجنيد التلقائي سجل خدمة العشيرة بأكثر من 10%."
+"#clans:RecruitingScreen/ParamsComment": "لا يمكن أن تتجاوز أقصى قيمة معلمات سجل خدمة العشيرة بأكثر من 10%."
 "#clans:PollScreen/PostponeButton": "تأجيل"
 "#clans:PollScreen/OKButton": "مشاركة"
 "#clans:ProfileScreen/HonoursBoard/BattlesperDay": "أفضل 3: المعارك لكل يوم"
@@ -2062,7 +2084,7 @@ SETTINGS_BUTTON_LANGUAGE: "إعداد اللغة"
 "#clans:SupplyScreen/NoData/Notification": "لا توجد إحصاءات متاحة"
 "#clans:SupplyScreen/FirstLevel": "الإمداد هو مجموعة من الخصومات والمكافآت والعروض الخاصة المتميزة المتاحة لأفراد العشيرة فقط.\nيحصل كل فرد في العشيرة على وصول شخصي إلى الإمداد بناء على مقدار الخبرة التي حصل عليها."
 "#clans:SupplyScreen/FirstLevel/AboutSupply/Button": "حول الإمداد"
-"#clans:SupplyScreen/AboutSupply/Description": "انضم إلى المعارك متخذًا مركبة من المستوى V أو أعلى وقم بالمساهمة في فتح مستويات جديدة للإمدادات من أجل عشيرتك.\n\nالإمداد هو مجموعة من الخصومات الفريدة على المعدات، والمواد الاستهلاكية، والمركبات، فضلاً عن المكافآت والعروض الخاصة المتوفرة فقط لأفراد العشيرة. يعتمد مستوى إمدادات العشيرة على مقدار نقاط الخبرة التي يكتسبها أفرادها. كلما ارتفع مستوى الإمدادات، تتوفر المزيد من المنافع لأفراد العشيرة.\n\nيُمنح كل فرد بالعشيرة إمكانية وصول شخصية إلى الإمدادات. يعتمد مستوى الوصول الشخصي على مقدار نقاط الخبرة التي اكتسبتها.كلما ارتفع مستوى الوصول الشخصي، يتوفر لك المزيد من مكافآت الإمدادات.\n\n\t•إذا بلغ مستوى الوصول الشخصي المستوى نفسه لإمدادات العشيرة أو زاد عنه، بإمكانك التمتع بكل المنافع المُقدمة من أعلى مستوى للإمدادات تفتحه عشيرتك.\n\t•إذا كان مستوى الوصول الشخصي أقل من مستوى إمدادات عشيرتك، بإمكانك فقط استخدام مكافآت الإمدادات المتاحة في مستوى الوصول الشخصي الخاص بك.\n\nاستخدم نقاط الخبرة الحرة لزيادة سرعة تقدم الوصول الشخصي."
+"#clans:SupplyScreen/AboutSupply/Description": "انضم إلى المعارك متخذًا مركبة من المستوى V أو أعلى وقم بالمساهمة في فتح مستويات جديدة للإمدادات من أجل عشيرتك.\n\nالإمداد هو مجموعة من الخصومات الفريدة على المعدات، والمواد الاستهلاكية، والمؤن والتمويهات والمركبات، فضلاً عن المكافآت والعروض الخاصة المتوفرة فقط لأفراد العشيرة. يعتمد مستوى إمدادات العشيرة على مقدار نقاط الخبرة التي يكتسبها أفرادها. كلما ارتفع مستوى الإمدادات، تتوفر المزيد من المنافع لأفراد العشيرة.\n\nيُمنح كل فرد بالعشيرة إمكانية وصول شخصية إلى الإمدادات. يعتمد مستوى الوصول الشخصي على مقدار نقاط الخبرة التي اكتسبتها.كلما ارتفع مستوى الوصول الشخصي، يتوفر لك المزيد من مكافآت الإمدادات.\n\n\t•إذا بلغ مستوى الوصول الشخصي المستوى نفسه لإمدادات العشيرة أو زاد عنه، بإمكانك التمتع بكل المنافع المُقدمة من أعلى مستوى للإمدادات تفتحه عشيرتك.\n\t•إذا كان مستوى الوصول الشخصي أقل من مستوى إمدادات عشيرتك، بإمكانك فقط استخدام مكافآت الإمدادات المتاحة في مستوى الوصول الشخصي الخاص بك.\n\nاستخدم نقاط الخبرة الحرة لزيادة سرعة تقدم الوصول الشخصي."
 "#clans:SupplyScreen/SupplyLevel/Header": "مستوى الإمداد %(level)"
 "#clans:SupplyScreen/SupplyLevel/PersonalAccess/Button": "الوصول الشخصي"
 "#clans:SupplyScreen/SupplyLevel/PersonalAccess/Available": "متاح"
@@ -2082,7 +2104,7 @@ SETTINGS_BUTTON_LANGUAGE: "إعداد اللغة"
 "#clans:SupplyScreen/PersonalAccess/Congratulation": "لقد فتحت مستوى الوصول الشخصي %(level)."
 "#clans:SupplyScreen/PersonalAccess/Congratulation/Motivation": "استمر في القتال بالمركبات من المستوى V أو أعلى لفتح المزيد من المكافآت والعروض الخاصة في المستويات التالية."
 "#clans:SupplyScreen/ClanAccess/Congratulation/Header": "تهانينا!"
-"#clans:SupplyScreen/ClanAccess/Congratulation": "بحثت عشيرتك عن مستوى الإمداد% (level)."
+"#clans:SupplyScreen/ClanAccess/Congratulation": "بحثت عشيرتك عن مستوى الإمداد %(level)."
 "#clans:SupplyScreen/ClanAccess/Congratulation/Motivation": "ادخل المعارك بمركبة من المستوى V أو أعلى وساهم في فتح مستويات \"إمداد\" جديدة لعشيرتك. كلما زاد مستوى الإمداد، زادت المكافآت والعروض الخاصة المتاحة لأفراد عشيرتك."
 "#clans:SupplyScreen/Supply/SpeedUp/Title": "فتح مستوى المؤن بنسبة %(level) أسرع"
 "#clans:SupplyScreen/Supply/SpeedUp/Comment": "نسبة التقدم في المستوى %(level):"
@@ -2293,6 +2315,13 @@ XChatOtherChannel: "أخرى"
 "#vehicle_customization:camouflage/IS7/Descr": "طلاء حربي لـ IS-7.\n\u061C+%(number)% لإخفاء المركبة على الخرائط المتعلقة بالمكان المحدد."
 "#vehicle_customization:camouflage/IS2Berlin/Name": "برلين"
 "#vehicle_customization:camouflage/IS2Berlin/Description": "مهدى إلى موكب انتصار برلين في 1945.\n\u061C+%(number)% إلى إخفاء المركبة على الخرائط المتعلقة بالمكان المحدد."
+"#vehicle_customization:camouflage/akawara_Gundam/Name": "ميكا فينيكس"
+"#vehicle_customization:camouflage/akawara_Gundam/Descr": "صعود أسطورة من اللهب. طلاء الحرب لـ O-47.\n\u061C+%(number)% لإخفاء المركبة على الخرائط ذات الصلة بالمكان المحدد."
+"#vehicle_customization:camouflage/Superbowl/Descr": "مخصص لمحبي كرة القدم الأمريكية.\n\u061C+%(number)% لإخفاء المركبات على الخرائط ذات الصلة بالمكان المحدد."
+"#vehicle_customization:camouflage/SuperbowlBrawlers/Name": "مشاكسو \"Blitz\""
+"#vehicle_customization:camouflage/SuperbowlRackers/Name": "راكرز روكفيلد"
+"#vehicle_customization:camouflage/SuperbowlTrackers/Name": "تراكرز ديد ريل"
+"#vehicle_customization:camouflage/SuperbowlPhantoms/Name": "شبح السراب"
 "#videoAds:NewVideo/Header": "لا يوجد فيديو"
 "#videoAds:NewVideo/Descr": "جائزة لمشاهدة إعلان فيديو: %(reward).\nعدد الإعلانات المتاحة 10 في اليوم."
 "#videoAds:NewVideo/WatchButton": "مشاهدة الفيديو"
@@ -2417,7 +2446,7 @@ hangar comment in training : "أنت في وضع التدريب"
 "#training_rooms:JoinError/WrongPass": "كلمة مرور."
 "#training_rooms:CreationScreen/Mode": "الوضع"
 "#training_rooms:ModeScreen/Title": "الأوضاع"
-"#training_rooms:ModeScreen/Notification/ModeUnavailable": "غير متاح على الخريطة المحددة."
+"#training_rooms:ModeScreen/Notification/ModeUnavailable": "غير متاح على هذه الخريطة."
 "#training_rooms:RoomScreen/Mode": "الوضع:"
 "#vehicle_birthday:Congratulations/Title": "تهانينا!"
 "#vehicle_birthday:Congratulations/OneVehicle": "للاحتفال بعيد ميلاد\n%(vehicleName)\n تمت زيادة الخبرة والرصيد المكتسبة لأول انتصار في اليوم:"
@@ -2435,11 +2464,11 @@ supremacy/Status/NeutralPoint/CaughtByAllies: "يستحوذ الحلفاء عل�
 supremacy/Status/NeutralPoint/CaughtByEnemies: "يستحوذ العدو على قاعدة %(base)!"
 supremacy/Status/AllyPoint/CaughtByEnemies: "يستحوذ العدو على قاعدة حليفة %(base)!"
 supremacy/Status/EnemyPoint/CaughtByAllies: "يستحوذ الحلفاء على قاعدة العدو %(base)!"
-supremacy/Status/PointCaught/ByAllies: "قاعدة الحلفاء المسيطر عليها %(base)!"
-supremacy/Status/PointCaught/ByEnemies: "قاعدة العدو تحت الاستحواذ %(base)!"
-supremacy/Status/CloseVictory/Allies: "فريقك قريب من النصر!"
-supremacy/Status/CloseVictory/Enemies: "فريق العدو قريب من النصر!"
-supremacy/Status/CatchPoint: "الاستحواذ على القاعدة %(base)!"
+supremacy/Status/PointCaught/ByAllies: "يحصل فريقك على نقاط النصر من القاعدة %(base)!"
+supremacy/Status/PointCaught/ByEnemies: "يحصل العدو على نقاط النصر من القاعدة %(base)!"
+supremacy/Status/CloseVictory/Allies: "قريقك قريب من 1,000 من نقاط النصر!"
+supremacy/Status/CloseVictory/Enemies: "فريق العدو قريب من 1,000 من نقاط النصر!"
+supremacy/Status/CatchPoint: "القيادة إلى القاعدة %(base)!"
 supremacy/Status/DefendPoint: "السيطرة على القاعدة %(base)!"
 NEWS_NOTIFICATION_TRAINING_BATTLE: "معركة تدريبية"
 CHAT_INVITE_TO_ROOM: "دعوة إلى الغرفة"
@@ -2563,7 +2592,7 @@ shop/Congrats/360days: "360 يومًا"
 "#artefacts:chocolate/name": "شوكولاتة"
 "#artefacts:coatedOptics/name": "البصريات المغطاة"
 "#artefacts:cocacola/name": "علبة كولا"
-"#artefacts:enhancedAimDrives/descr": "\u061C+%(percent)% على سرعة التصويب."
+"#artefacts:enhancedAimDrives/descr": "\u061C-%(percent)% لوقت التصويب."
 "#artefacts:enhancedAimDrives/name": "تسديد مدفع محسّن"
 "#artefacts:enhancedBelwillWashers/name": "تم تحسين وردات بيليفيل"
 "#artefacts:enhancedLevers/name": "تم تحسين الرافعات"
@@ -2626,9 +2655,9 @@ shop/Congrats/360days: "360 يومًا"
 "#artefacts:field_ration/name": "حصص الميدان"
 "#artefacts:field_ration/descr": "\u061C+%(crewLevelIncrease)%لإتقان الطاقم. \nالمنشط تلقائيا. تأثير دائم خلال معركة واحدة.\nتقييد: مركبات الأمة المختلطة."
 "#artefacts:regular_fuel/name": "وقود معياري"
-"#artefacts:regular_fuel/descr": "\u061C+%(enginePowerIncrease)% على قوة المحرك و+%(turretRotationSpeedIncrease)% على سرعة دوران البرج.\nيتم التنشيط تلقائيًا. أثر دائم على مدار معركة واحدة."
+"#artefacts:regular_fuel/descr": "\u061C+%(enginePowerIncrease)% على قوة المحرك و\n\u061C+%(turretRotationSpeedIncrease)% على سرعة دوران البرج.\nيتم التنشيط تلقائيًا. أثر دائم على مدار معركة واحدة."
 "#artefacts:improved_fuel/name": "وقود محسّن"
-"#artefacts:improved_fuel/descr": "\u061C+%(enginePowerIncrease)% على قوة المحرك و+%(turretRotationSpeedIncrease)% على سرعة دوران البرج.\nيتم التنشيط تلقائيًا. أثر دائم على مدار معركة واحدة."
+"#artefacts:improved_fuel/descr": "\u061C+%(enginePowerIncrease)% على قوة المحرك و\n\u061C+%(turretRotationSpeedIncrease)% على سرعة دوران البرج.\nيتم التنشيط تلقائيًا. أثر دائم على مدار معركة واحدة."
 "#artefacts:field_test_set/name": "عدة اختبار الميدان"
 "#artefacts:field_test_set/descr": "-10% في وقت تهدئة أي من المواد المستهلكة.\nيتم التنشيط تلقائيًا. أثر دائم على مدار معركة واحدة."
 "#artefacts:safety_set/name": "عدة الوقاية"
@@ -2651,7 +2680,7 @@ shop/Congrats/360days: "360 يومًا"
 "#achievements:firstVictory_descr": "الفوز بأول معركة عشوائية مع اللاعبين الآخرين."
 "#achievements:armorPiercer_condition": "• تم تحطيم سلسلة عن طريق الخطأ، أو بسبب عدم القدرة على الاختراق، أو بسبب الشظايا. ويمكن أن تستمر سلسلة الانتصارات في المعركة التالية باستخدام المركبة نفسها.\n• لكل مركبة سلسلة الانتصارات الخاصة بها. ويُعتد فقط بأطول سلسلة."
 "#achievements:armorPiercer_descr": "عليك تسجيل 10 ضربات متتالية على الأقل موجهة لدروع مركبات العدو."
-"#achievements:beasthunter_condition": "\t\u061C• Tiger II\n\t• Panther\n\t• Panther II\n\t• Panther/M10\n\t• Jagdpanther\n\t• Jagdpanther II\n\t• Tiger \u202A(P)\u202C\n\t• Tiger I\n\t• Jagdtiger\n\t• Jagdtiger 8,8\n\t• Snowstorm Jagdtiger 8,8\n\t• Leopard Prototyp A\n\t• Leopard 1\n\t• Löwe\n\t• Kuro Mori Mine\n\t• VK 16.02 Leopard\n\n• تم تضمين إجمالي النتائج المحققة باستخدام جميع المركبات.\n• تمت إضافة الجوائز المستلمة مؤخرًا معًا."
+"#achievements:beasthunter_condition": "\t\u061C• Tiger II\n\t• Panther\n\t• Panther II\n\t• Panther/M10\n\t• Jagdpanther\n\t• Jagdpanther II\n\t• Tiger\u202A(P)\u202C\n\t• Tiger I\n\t• Jagdtiger\n\t• Jagdtiger 8,8\n\t• Snowstorm Jagdtiger 8,8\n\t• Leopard Prototyp A\n\t• Leopard 1\n\t• Löwe\n\t• Kuro Mori Mine\n\t• VK 16.02 Leopard\n\n• تم تضمين إجمالي النتائج المحققة باستخدام جميع المركبات.\n• تمت إضافة الجوائز المستلمة مؤخرًا معًا."
 "#achievements:bombardier_condition": "• تمت إضافة سلاسل الانتصار المحققة باستخدام جميع المركبات معًا."
 "#achievements:defender_condition": "إن قلل لاعبان أو أكثر عددًا مساويًا من نقاط السيطرة، يتم تحقيق الإنجاز للاعب الذي اكتسب أكثر الخبرة في المعركة.\n• تتم مكافئتك الإنجاز مرة في المعركة.\n• نقاط السيطرة المكتسبة في وضع التفوق ليست متضمنة."
 "#achievements:diehard_condition": "• تستمر سلسلة الانتصارات المتواصلة في المعركة التالية باستخدام المركبة نفسها.\n• لكل مركبة سلسلة انتصارات خاصة بها. ولا يُعتد إلا بالسلسلة الأطول فقط."
@@ -2842,7 +2871,7 @@ shop/Congrats/360days: "360 يومًا"
 "#achievements:supremeVictory_descr": "انضم إلى معركتك الأولى في وضع التفوق."
 "#achievements:medalSupremacy": "وسام المتفوق"
 "#achievements:medalSupremacy_descr": "لعدد نقاط النصر المكتسبة في وضع المتفوق."
-"#achievements:medalSupremacy_condition": "• الأوسمة التراكمية.\nكل نقاط النصر المكتسبة في وضع التفوق متضمنة.\n\n• الدرجة IV–10,000\n• الدرجة II–100,000\n• الدرجة II–1,000,000\n• الدرجة I–10,000,000"
+"#achievements:medalSupremacy_condition": "• الأوسمة التراكمية.\n• كل نقاط النصر المكتسبة في وضع التفوق متضمنة.\n\n• الدرجة IV–10,000\n• الدرجة II–100,000\n• الدرجة II–1,000,000\n• الدرجة I–10,000,000"
 "#achievements:olimpicBronze": "Blitz Games: برونز"
 "#achievements:olimpicBronze_descr": "• جائزة فريدة لحدث ألعاب Blitz Games 2016 العالمي.\n• مكافأة تمنح للمشاركين في Blitz Games عندما يصل شريط التقدم إلى نسبة اكتمال 1/3."
 "#achievements:olimpicSilver": "Blitz Games: فضة"
@@ -2963,6 +2992,12 @@ shop/Congrats/360days: "360 يومًا"
 "#account:GoldInfo/Purchased": "الذهب الذي تم شراؤه:"
 "#account:GoldInfo/Received": "الذهب الذي تم الحصول عليه:"
 "#account:GoldInfo/Total": "الإجمالي:"
+"#account:CurrencyInfo/Header": "العملات"
+"#account:CurrencyInfo/Purchased": "المشتراة:"
+"#account:CurrencyInfo/Received": "المتلقاة:"
+"#account:CurrencyInfo/Total": "الإجمالي:"
+"#account:CurrencyInfo/Gold": "الذهب"
+"#account:CurrencyInfo/Credits": "الرصيد"
 "#eula:notice": "بتسجيل الدخول، تكون قد وافقت على قواعد اللعبة فضلاً عن حالة %(link)."
 "#eula:notice_link": "اتفاقية ترخيص المستخدم النهائي"
 "#postbattle:SpectatorMode/Header": "نمط المشاهد"
@@ -3101,6 +3136,8 @@ tips/supremacy_catch_point: "للاستحواذ على قاعدة محايدة �
 tips/supremacy_xp_for_capture: "في وضع المتفوق، يكتسب اللاعبون الخبرة عن نقاط النصر المتلقاة من القاعدة التي استحوذوا عليها."
 tips/supremacy_team_bonus: "في وضع المتفوق، بعد نهاية المعركة فإن كل اللاعبين يحصلون على مكافأة لنقاط النصر المكتسبة بواسطة الفريق الصديق."
 tips/top_modules: "ترقية مركبة على الفور يتيح لك ركوب أعلى الوحدات في مركبتك وحفظ التجربة لفحص مركبات جديدة."
+tips/economical_boosters: "تزيد معززات الاقتصاد من كمية الخبرة والعملات المكتسبة، وهذا يُسرع من تقدم اللعب."
+tips/battle_boosters: "تقلل معززات القتال من سرعة  التهدئة الاستهلاكية، وهذا يتيح استخدام العناصر الاستهلاكية أكثر في المعركة."
 "#ban_reason:auto": "تلقائي"
 "#usa_vehicles:Chassis_A104_M4A3E8A": "M4A3E8 Fury"
 "#usa_vehicles:Turret_1_A104_M4A3E8A": "M4A3E8 Fury"
@@ -3194,7 +3231,7 @@ tips/top_modules: "ترقية مركبة على الفور يتيح لك ركو�
 "#achievements:medalWittmann_descr": "عليك تدمير 7 مركبات للعدو أو أكثر بدبابة أو مدمرة دبابة، أو 10 مركبات أو أكثر بمدفع ذاتي الحركة."
 "#achievements:medalWittmann_heroInfo": "كان يوهانز بولتر واحدًا من أنجح محترفي استخدام الدبابة الألمان الذين شاركوا في الحرب العالمية الثانية. حيث شارك في عمليات غزو بولندا وفرنسا واليونان والاتحاد السوفيتي فضلاًعن الدفاع عن فرنسا."
 "#achievements:pattonValley": "وادي باتن"
-"#achievements:pattonValley_condition": "\t\u061C• M46 Patton\n\t• M48A1 Patton III\n\n• تتم إضافة سلسلة الانتصارات المحققة في جميع المركبات.\n• وتتم إضافة الجوائز المستلمة مؤخرًا معًا."
+"#achievements:pattonValley_condition": "\t\u061C• M46 Patton\n\t• M48A1 Patton III\n\t• M60\n\n• تتم إضافة سلسلة الانتصارات المحققة في جميع المركبات.\n• وتتم إضافة الجوائز المستلمة مؤخرًا معًا."
 "#achievements:pattonValley_descr": "عليك تدمير 100 دبابة Patton، بما في ذلك:"
 "#achievements:scout": "استطلاع"
 "#achievements:sinai": "أسد سيناء"
@@ -3242,7 +3279,6 @@ tips/top_modules: "ترقية مركبة على الفور يتيح لك ركو�
 "#common:AnnonatedButton/Invite": "دعوة"
 "#common:DialogButton/Use": "استخدام"
 "#common:DialogButton/Quests": "المهام"
-"#common:DialogButton/Details": "مشاهدة المزيد"
 "#common:Grade/Standard": "القياسي"
 "#common:Grade/Rare": "نادر"
 "#common:Grade/Special": "الخاص"
@@ -3251,6 +3287,8 @@ tips/top_modules: "ترقية مركبة على الفور يتيح لك ركو�
 "#common:Time/Hours": "ساعة"
 "#common:Time/Days": "يوم"
 "#common:Storage/Non_Breaking_Space": "%(value)\u00A0%(units)"
+"#common:DialogButton/Choose": "تحديد"
+"#common:DialogButton/Packages": "الحزم"
 tournaments/Button/Participate: "مشاركة"
 tournaments/Button/MyTeam: "فريقي"
 tournaments/Button/ChooseTeam: "تحديد فريق"
@@ -3266,11 +3304,13 @@ tournaments/Button/Registration: "التسجيل"
 tournaments/Button/Register: "تسجيل"
 tournaments/Button/CancelRegistration: "إلغاء التسجيل"
 tournaments/Button/Dissolve: "تسريح"
-tournaments/Button/GoToAssistant: "في BLITZ ASSISTANT"
+tournaments/Button/GoToAssistant/Line1: "مشاهدة المزيد"
+tournaments/Button/GoToAssistant/Line2: "في BLITZ ASSISTANT"
 tournaments/Button/Results: "النتائج"
 tournaments/Button/ToTournamentRoom: "إلى غرفة البطولة"
 tournaments/Button/ToTeam: "إلى الفريق"
-tournaments/Sign/ClanParticipate: "المشاركين في البطولة"
+tournaments/Sign/ClanParticipate: "اشتركت عشيرتك"
+tournaments/Sign/ParticipateMyself: "شارك!"
 tournaments/Notification/CannotInvite: "لا يمكن إرسال دعوة: يمتلك الفريق الحد الأقصى من الأعضاء."
 tournaments/Notification/AlreadyJoined: "لا يمكن إرسال دعوة: اللاعب %(userName) عضو بالفعل في فريق مشارك في البطولة."
 tournaments/SearchHint: "ابدأ في إدخال اسم أو شعار الفريق"
@@ -3298,11 +3338,14 @@ tournaments/Notification/VehicleLevel: "تم تضمينك في قائمة أعض
 tournaments/Notification/TeamRegistrationUnavailable: "لا يمكن التسجيل لبطولة %(tournamentName): قائمة الفرق مكتملة. راقب عدد المشاركين وانضم إن قام أحد الفرق بإلغاء التسجيل."
 tournaments/HomeScreen/Header: "البطولات"
 tournaments/HomeScreen/PassedTournaments: "السابق"
-tournaments/HomeScreen/PassedTournaments/NoPassed: "لا توجد بطولات سابقة ليتم عرضها.\nلم تكتمل بطولات بعد. يمكنك عرض البطولات المستقبلية الحالية."
+tournaments/HomeScreen/PassedTournaments/NoPassed: "لا توجد بطولات سابقة ليتم عرضها."
+tournaments/HomeScreen/PassedTournaments/NoPassed/Description: "لم تكتمل بطولات بعد. يمكنك عرض البطولات الحالية أو المستقبلية."
 tournaments/HomeScreen/CurrentTournaments: "الحالي"
-tournaments/HomeScreen/CurrentTournaments/NoCurrent: "لا توجد بطولات حالية للعرض.\nلا توجد بطولات قائمة حاليًا.يمكنك عرض قائمة البطولات أو الانضمام إلى البطولات المستقبلية."
+tournaments/HomeScreen/CurrentTournaments/NoCurrent: "لا توجد بطولات حالية للعرض."
+tournaments/HomeScreen/CurrentTournaments/NoCurrent/Description: "لا توجد بطولات قائمة حاليًا.يمكنك عرض نتائج البطولات السابقة أو الانضمام لبطولات مستقبلية."
 tournaments/HomeScreen/FutureTournaments: "المستقبل"
-tournaments/HomeScreen/FutureTournaments/NoFuture: "لا توجد بطولات حالية للعرض.\nيمكنك الانتظار للبطولة التالية، اعرض البطولات الحالية، أو شاهد نتائج البطولات السابقة."
+tournaments/HomeScreen/FutureTournaments/NoFuture: "لا توجد بطولات حالية للعرض."
+tournaments/HomeScreen/FutureTournaments/NoFuture/Description: "يمكنك الانتظار للبطولة التالية أو عرض البطولات الحالية أو مشاهدة نتائج البطولات السابقة."
 tournaments/FutureTournaments/Status/RegistrationEnd: "إغلاق التسجيل:"
 tournaments/FutureTournaments/Status/TeamRegistrationStart: "سيبدأ تسجيل الفريق:"
 tournaments/FutureTournaments/Tabs/Teams: "الفرق"
@@ -3489,11 +3532,10 @@ tournaments/TournamentTableScreen/Unavailable: "سيظهر جدول البطول
 tournaments/SearchHint/GroupNumber: "أدخل رقم المجموعة"
 "#training_rooms:RoomScreen/StageTour/Group": "المجموعة %(name)."
 tournaments/Notification/AlreadyInTournamentRoom: "تعذر إنشاء غرفة تدريب: أنت في غرفة بطولة بالفعل."
-tournaments/Notification/WrongControlType: "العملية غير متاحة: وضع التحكم لديك لا يتوافق مع شروط البطولة. يلزم الوضع: %(type)."
-tournaments/Notification/WrongVehicleTier: "العملية غير متاحة: مستويات مركباتك لا تتوافق مع شروط البطولة. يلزم المستوى: %(level1)–%(level2)."
-tournaments/TeamListScreen/TimeParams/DaysLeft: "الوقت المتبقي: %(days) يوم %(hours) ساعة"
-tournaments/TeamListScreen/TimeParams/HoursLeft: "الوقت المتبقي: %(hours) ساعة %(min) دقيقة"
-tournaments/TeamListScreen/TimeParams/Left: "الباقي"
+tournaments/Notification/WrongControlType: "العملية غير متاحة: وضع التحكم لديك لا يتوافق مع شروط البطولة.\nيلزم الوضع: %(type)."
+tournaments/Notification/WrongVehicleTier: "العملية غير متاحة: مستويات مركباتك لا تتوافق مع شروط البطولة.\nيلزم المستوى: %(level1)–%(level2)."
+tournaments/TeamListScreen/TimeParams/DaysLeft: "%(days) يوم %(hours) ساعة"
+tournaments/TeamListScreen/TimeParams/Left: "الوقت المتبقي:"
 "#training_rooms:RoomScreen/StageTour/LastNumber": "جولة %(round)"
 tournaments/TeamListScreen/Winner: "الفائز:"
 tournaments/TeamListScreen/Reward: "جوائز:"
@@ -3509,6 +3551,39 @@ tournaments/TournamentTableScreen/UpdatesInMinutes: "يتم تحديث الجد�
 tournaments/TournamentTableScreen/UnavailableBeforeDrawing: "سيظهر جدول البطولة بعد تحديد الفرق."
 tournaments/Notification/OpenAssistant: "ستتم إعادة توجيهك إلى WoT Blitz Assistant لعرض الإصدار الكامل من جدول البطولة."
 tournaments/Notification/AlreadyJoinedParallelTournament/AnotherPlayer: "العملية غير متاحة. %(playerName) مشارك بالفعل في بطولة أخرى: %(tournamentName)."
+"#clans:Notification/CannotLeaveClan": "لا يمكنك مغادرة القبيلة لأنك عضو في فريق مشارك في البطولة."
+"#clans:Notification/CannotDismissFromClan": "لا يمكن إزالة %(playerName) من القبيلة لأن هذا اللاعب هو عضو في فريق مشارك في البطولة."
+chat/tournamentTeam/sendInvite/Line1: "دعوة"
+chat/tournamentTeam/sendInvite/Line2: "إلى الفريق"
+chat/platoon/sendInvite/Line1: "دعوة"
+chat/platoon/sendInvite/Line2: "إلى الفصيلة"
+tournaments/CurrentTournaments/Table/Rewards: "الجوائز"
+tournaments/RewardScreen/StepPlace/Header: "%(step). %(tournamentPlace) المركز"
+tournaments/RewardScreen/Description: "يتم توفير هذه الجوائز لكل عضو في الفريق."
+tournaments/RewardScreen/TeamRewards/Header: "جائزة الفريق"
+tournaments/RewardScreen/PersonalRewards/Header: "جائزة شخصية"
+NEWS_NOTIFICATION_REWARD_RECEIVED: "تم استلام الجائزة!"
+tournaments/NotificationScreen/TournamentName: "%(tournamentName)."
+tournaments/NotificationScreen/Step: "%(step)."
+tournaments/NotificationScreen/Tour: "%(tour)"
+NEWS_NOTIFICATION_REWARD_PLACE: "لموقع:"
+tournaments/TournamentRewardsScreen/Header: "جوائز البطولة"
+tournaments/TournamentRewardsScreen/Table/Place: "المركز"
+tournaments/TournamentRewardsScreen/Table/PersonalReward: "جائزة شخصية"
+tournaments/TournamentRewardsScreen/Table/TeamReward: "جائزة الفريق"
+tournaments/TournamentRewardsScreen/ExtraRewards: "\u061C+ %(count) إضافية"
+tournaments/TournamentRewardsScreen/Details/Button: "التفاصيل"
+tournaments/RewardsScreen/NoRewardsForStep: "لا يتم تقديم جوائز لهذه المرحلة."
+tournaments/DoubleElimination/LowerBracket: "فئة أدنى"
+tournaments/DoubleElimination/UpperBracket: "فئة أعلى"
+"#clans:Notification/CannotJoinClan": "لا يمكنك الانضمام إلى هذه العشيرة أنت عضو بالفعل في فريق بطولة مع عشيرة أخرى."
+"#clans:Notification/CannotCreateClan": "لا يمكنك إنشاء عشيرة أنت عضو بالفعل في فريق بطولة مع عشيرة أخرى."
+tournaments/SearchHint/ClanTag: "أدخل شعار العشيرة"
+tournaments/SearchHint/TeamName: "أدخل اسم الفريق"
+tournaments/SearchHint/ClanTag/Header: "البحث بشعار العشيرة"
+tournaments/SearchHint/TeamName/Header: "البحث باسم الفريق"
+tournaments/SearchHint/GroupNumber/Header: "البحث برقم المجموعة"
+tournaments/SearchHint/GroupNumber/Comment: "المثال: 12"
 template_event/AnyStage/Start: "ستبدأ المرحلة التالية خلال:"
 template_event/AnyStage/Finish: "ستنتهي المرحلة الحالية خلال:"
 template_event/ProgressStage/StepTree/Comment: "اكتسب عملات خاصة من المعارك والمهام لإكمال مراحل الحدث."
@@ -3531,6 +3606,7 @@ template_event/CompleteStep/StepScreen/Reward: "جوائز إكمال المرح
 template_event/CompleteStep/StepScreen/Currencies: "شروط تلقي العملة"
 template_event/FinalStage/Hint/BuyCurrenciesToComplete: "إمكانية اكتساب العملات غير متاحة.\nلإكمال المراحل الباقية، قم بشراء الكمية المفقودة من العملات."
 template_event/FinalStage/Hint/BuyCurrenciesForGold: "يمكنك شراء الكمية المفقودة من العملات باستخدام الذهب."
+template_event/ProgressStage/StepTree/Header: "مراحل الحدث"
 halloween_event/Title: "مطاردة ليلية"
 halloween_event/Reward/Credits/Title: "الرصيد"
 halloween_event/Reward/Credits/Description: "%(credits) من الرصيد"
@@ -3544,7 +3620,7 @@ halloween_event/Currencies/lightSigns/Terms: "• الخبرة المكتسبة 
 halloween_event/Currencies/darkSeals/Terms: "• يمكن اكتساب أختام الظلام بإكمال المهام.\n• عدد الأختام يتوقف على مستوى المركبة المستخدم لإكمال المهام: كلما ارتفع المستوى، ستزداد العملات المكتسبة.\n•لا ينطبق بونص الحساب المميز على أختام الظلام."
 halloween_event/Currencies/lightSigns: "رموز الضوء"
 halloween_event/Currencies/darkSeals: "أختام الظلام"
-winter_event/Title: "معرض BLITZ"
+winter_event/Title: "معرض \"BLITZ\""
 winter_event/Currencies/tickets: "التذاكر"
 winter_event/Currencies/cases: "الذحيرة"
 winter_event/Currencies/streamers: "الرايات"
@@ -3553,6 +3629,11 @@ winter_event/Currencies/cases/Terms: "• يمكن اكتساب الذحيرة �
 winter_event/Currencies/streamers/Terms: "• الخبرة المكتسبة في المعركة، تتضمن مكافأة الحساب المميز وتُستثنى مكافأة الخبرة في النصر الأول، تجلب كمية مساوية من الرايات يتم احتساب خبرة القتال فقط.\n• الخبرة المكتسبة لإكمال المهام غير متضمنة."
 winter_event/GoToWeb/Button: "المعرض على البوابة"
 winter_event/GoToWeb/Comment: "اشترك في معرض \"Blitz\" على البوابة واستخدم تذاكرك لشراء مركبات مميزة نادرة في المزاد أو الصناديق."
+lunar_event/Title: "قمر جديد"
+lunar_event/Currencies/Charms: "تعويذات قمرية"
+lunar_event/Currencies/Tusks: "أنياب التنين"
+lunar_event/Currencies/Charms/Terms: "• تقدم لك الخبرة المكتسبة في المعركة كمية متساوية من التعويذات القمرية.\n• يتم احتساب خبرة المعركة فقط.\n• بونص الحساب المميز متضمن.\n• لا يتم تضمين المعززات والخبرة المكتسبة لإكمال المهام وبونص الخبرة للنصر الأول."
+lunar_event/Currencies/Tusks/Terms: "• يمكن اكتساب أنياب التنين بإكمال المهام.\n• كلما ارتفع مستوى المركبة المستخدمة في إكمال المهمة، ستزداد أنياب التنين المكتسبة.\n• لا يتم تطبيق بونص الحساب المميز على أنياب التنين."
 storage/Title: "المخزن"
 storage/certificates/Title: "شهادات"
 storage/other/Title: "أخرى"
@@ -3566,7 +3647,7 @@ storage/Items/Features: "التفاصيل:"
 storage/Items/Obtainment: "حالة الاستلام:"
 storage/Items/PremiumCertificate/Title: "شهادة مقابل %(time) من الحساب المميز"
 storage/Items/PremiumCertificate/Description: "يفعّل الحساب المميز لمدة %(time)."
-storage/Items/Certificate/Obtainment: "المخزن/العناصر/الشهادة/تم الحصول على قوائم توصية استبدال العناصر المتحصل عليها مقابل إكمال المهام."
+storage/Items/Certificate/Obtainment: "استبدل رموز التوصية المتحصل عليها مقابل إكمال مهام محددة."
 storage/Items/PremiumCertificate/Confirmation: "استخدم الشهادة؟\nسيتم تنشيط الحساب المميز لمدة %(time)."
 storage/Items/VehicleCertificate/Title: "شهادة مقابل %(vehicleName)"
 storage/Items/VehicleCertificate/Description: "يضيف %(vehicleName) إلى المرآب."
@@ -3577,15 +3658,15 @@ storage/Items/SlotCertificate/Title: "شهادة مقابل مكان"
 storage/Items/SlotCertificate/Description: "يضيف أماكن مركبة شاغرة (%(slot) من القطع) إلى المرآب."
 storage/Items/GoldCertificate/Title: "شهادة مقابل %(gold) من الذهب"
 storage/Items/GoldCertificate/Description: "تمنح %(gold) من الذهب."
-storage/Items/CommendationListPremium/Title: "قائمة التوصية مقابل %(time) من الحساب المميز"
+storage/Items/CommendationListPremium/Title: "رمز التوصية مقابل %(time) من الحساب المميز"
 storage/Items/CommendationListPremium/Description: "جزء من الشهادة مقابل %(time) من الحساب المميز."
-storage/Items/CommendationListVehicle/Title: "قائمة التوصية مقابل %(vehicleName)"
+storage/Items/CommendationListVehicle/Title: "رمز التوصية مقابل %(vehicleName)"
 storage/Items/CommendationListVehicle/Description: "جزء من الشهادة مقابل %(vehicleName)."
-storage/Items/CommendationListSlot/Title: "قائمة التوصية مقابل مكان"
+storage/Items/CommendationListSlot/Title: "رمز التوصية مقابل مكان في المرآب"
 storage/Items/CommendationListSlot/Description: "جزء من الشهادة مقابل أماكن مركبة شاغرة (%(slot) من القطع) في المرآب."
-storage/Items/CommendationListGold/Title: "قائمة التوصية مقابل %(gold) من الذهب"
+storage/Items/CommendationListGold/Title: "رمز توصية مقابل %(gold) من الذهب"
 storage/Items/CommendationListGold/Description: "جزء من الشهادة للذهب."
-storage/Items/CommendationList/Features: "يمكن استبدال قوائم التوصية  (%(number) من القطع) مقابل شهادة."
+storage/Items/CommendationList/Features: "اجمع رموز التوصية (%(number) من القطع) واستبدلها مقابل شهادة."
 storage/Items/CommonObtainment: "إكمال مهام محددة"
 storage/Items/Warning/NotEnoughItems: "تعذر إصدار شهادة: لا توجد عناصر كافية."
 storage/Items/Ticket/Title: "تذكرة"
@@ -3598,8 +3679,56 @@ storage/Items/Case/Obtainment: "أكمل مهمة"
 storage/Items/Streamer/Title: "راية"
 storage/Items/Streamer/Description: "عملة من أجل حدث معرض \"Blitz\""
 storage/Items/Streamer/Obtainment: "اكتسب خبرة المعركة"
-NEWS_NOTIFICATION_INVOICE_PREMIUM_STORAGE: "الحساب المميز: "
-HANGAR_NOTIFICATION_PREMIUM_TIME: "مدة الحساب المميز المستلمة: %(time)"
+NEWS_NOTIFICATION_INVOICE_PREMIUM_STORAGE: "حساب مميز"
+HANGAR_NOTIFICATION_PREMIUM_TIME: "تم تلقي حساب مميز: %(time)."
+HANGAR_NOTIFICATION_CAMOUFLAGE: "تم استلام: "
+storage/Items/Tusk/Title: "ناب التنين"
+storage/Items/Tusk/Description: "عملة لحدث القمر الجديد."
+storage/Items/Tusk/Obtainment: "أكمل مهمة"
+storage/Items/Charm/Title: "تعويذة قمرية"
+storage/Items/Charm/Description: "عملة لحدث القمر الجديد."
+storage/Items/Charm/Obtainment: "اكتسب خبرة المعركة."
+storage/Items/CreditsBooster/Regular/Title: "معزز الرصيد"
+storage/Items/CreditsBooster/Enforced/Title: "معزز الرصيد المتوسط"
+storage/Items/CreditsBooster/Intense/Title: "معزز الرصيد الكبير"
+storage/Items/CreditsBooster/Powerful/Title: "معزز الرصيد المُطلق"
+storage/Items/CreditsBooster/Description: "يزيد كمية الرصيد المكتسبة لكل معركة بمقدار \u061C%(credistBoostFactor)."
+storage/Items/BattleXPBooster/Regular/Title: "معزز خبرة القتال"
+storage/Items/BattleXPBooster/Enforced/Title: "معزز خبرة القتال المتوسط"
+storage/Items/BattleXPBooster/Intense/Title: "معزز خبرة القتال الكبير"
+storage/Items/BattleXPBooster/Powerful/Title: "معزز خبرة القتال المُطلق"
+storage/Items/BattleXPBooster/Description: "يزيد كمية نقاط خبرة القتال المكتسبة لكل معركة بمقدار \u061C%(xpBoostFactor)."
+storage/Items/FreeXPBooster/Regular/Title: "معزز نقاط الخبرة الحرة"
+storage/Items/FreeXPBooster/Enforced/Title: "معزز نقاط الخبرة الحرة المتوسط"
+storage/Items/FreeXPBooster/Intense/Title: "معزز نقاط الخبرة الحرة الكبير"
+storage/Items/FreeXPBooster/Powerful/Title: "معزز نقاط الخبرة الحرة المُطلق"
+storage/Items/FreeXPBooster/Description: "يزيد كمية نقاط الخبرة الحرة المكتسبة لكل معركة بمقدار \u061C%(xpFreeBoostFactor)."
+storage/Items/CrewXPBooster/Regular/Title: "معزز خبرةالطاقم"
+storage/Items/CrewXPBooster/Enforced/Title: "معزز خبرة الطاقم المتوسط"
+storage/Items/CrewXPBooster/Intense/Title: "معزز خبرة الطاقم الكبير"
+storage/Items/CrewXPBooster/Powerful/Title: "معزز خبرة الطاقم المُطلق"
+storage/Items/CrewXPBooster/Description: "يزيد كمية خبرة الطاقم المكتسبة لكل معركة بمقدار \u061C%(xpAvBoostFactor)."
+storage/Items/ReloadingTimeBooster/Regular/Title: "معزز فترة التهدئة"
+storage/Items/ReloadingTimeBooster/Enforced/Title: "معزز فترة التهدئة المتوسط"
+storage/Items/ReloadingTimeBooster/Intense/Title: "معزز فترة التهدئة الكبير"
+storage/Items/ReloadingTimeBooster/Powerful/Title: "معزز فترة التهدئة المُطلق"
+storage/Items/ReloadingTimeBooster/Description: "يزيد سرعة التهدئة الاستهلاكية بمقدار \u061C%(reloadEqFactor)."
+storage/Items/Booster/Features: "فعّال لمدة معركة واحدة.\nلتفعيل المعزز، قم بتثبيته في المكان المخصص على شاشة المعزز."
+renderingError/Common: "خطأ المعالجة %(errorCode): %(errorDescr)."
+renderingError/ProgramWillTerminate: "تعذر متابعة التطبيق وسيتم إغلاقه."
+renderingError/VideoDriver: "خطأ في برنامج تعريف الفيديو."
+renderingError/ShaderModelNotSupported: "بطاقة الفيديو المحدد لا تدعم Shader Model 3.0."
+boosters/Title: "معززات"
+boosters/Economical/Title: "معززات الاقتصاد"
+boosters/Battle/Title: "معززات المعركة"
+boosters/Impact/Title: "تأثير المعزز"
+boosters/Impact/Credits: "الرصيد"
+boosters/Impact/BattleXP: "نقاط الخبرة القتالية"
+boosters/Impact/FreeXP: "نقاط الخبرة الحرة"
+boosters/Impact/CrewXP: "نقاط خبرة الطاقم"
+boosters/Impact/ReloadingTime: "فترة تهدئة استهلاكية"
+boosters/InstallBoosters/Header: "تثبيت المعززات"
+boosters/RemoveBoosters/Header: "إزالة المعززات"
 hangar tutorial tap hint: "اضغط على الشاشة لمواصلة التدريب"
 hangar tutorial welcome: "مرحبًا بك في مرآبك الخاص!\nيمكنك ترك المركبات المقاتلة هنا."
 hangar tutorial welcome2: "حدد دبابة من أي بلد متوفرة ثم اضغط على \"بدء المعركة!\""
@@ -3688,11 +3817,6 @@ WGN_CONNECT: "الاتصال"
 EXTERN_CONNECT: "الاتصال"
 WGN_LOGIN_DIALOG_RESTORE: "هل تعذر عليك تسجيل الدخول؟"
 WGN_CREATE_ACCOUNT: "إنشاء WG.NET ID"
-NEW_PLAYER_CONNECT: "لاعب جديد"
-NEW_PLAYER_TEXT: "هل جربت لعبة World of Tanks من قبل؟"
-GC_NICKNAME_CONFIRM_DIALOG_TITLE: "اسم المستخدم الخاص بك"
-GC_NICKNAME_CONFIRM_DIALOG_TEXT: "سيقوم اسم المستخدم بتعريفك للاعبين الآخرين."
-GC_NICKNAME_CONFIRM_DIALOG_BUTTON: "تأكيد اسم المستخدم"
 SETTINGS_CAPTION: "الإعدادات"
 SETTINGS_GENERAL: "عام"
 SETTINGS_CONTROLS: "وحدات التحكم"
@@ -3959,6 +4083,7 @@ chat_shortcuts_preparing_shot: "Готовлюсь к выстрелу! Оста
 chat_shortcuts_ready_for_shot: "К выстрелу готов!"
 chat_shortcuts_shells_left: "К выстрелу готов! Осталось снарядов: %(number)."
 tournaments/TeamDescrScreen/Notification/NoMembers: "Состав команды пуст.\nВы можете добавить участников из списка претендентов или пригласить игроков в чате, нажав на соответствующую кнопку."
+tournaments/TeamListScreen/TimeParams/HoursLeft: "الوقت المتبقي: %(hours) ساعة %(min) دقيقة"
 "#settings:Graphics/Quality/Reboot/Notification/OK": "الاستمرار"
 "#settings:Graphics/Quality/Reboot//Notification/Cancel": "إلغاء الأمر"
 "#battle_results:Excellent_Battle/bonus": "احصل على نقاط خبرة ورصيد أكثر بنسبة 50% إضافة لبونص!"
@@ -6793,9 +6918,96 @@ tournaments/TeamDescrScreen/Notification/NoMembers: "Состав команды
 "#france_vehicles:AMX_50_100_short": "AMX 50 100"
 "#france_vehicles:AMX_50_100": "AMX 50 100"
 "#france_vehicles:Turret_1_AMX_50_100": "AMX 50 100"
-tournaments/SearchHint/ClanTag: "Введите тег клана"
-tournaments/SearchHint/TeamName: "Введите название команды"
-tournaments/SearchHint/ClanTag/Header: "Поиск по тегу клана"
-tournaments/SearchHint/TeamName/Header: "Поиск по названию команды"
-tournaments/SearchHint/GroupNumber/Header: "Поиск по номеру группы"
-tournaments/SearchHint/GroupNumber/Comment: "Пример: 12"
+"#china_vehicles:_122-mm_D25-TA": "122 mm D-25TA"
+"#china_vehicles:Chassis_Ch23_112": "112"
+"#china_vehicles:Ch23_112": "Glacial 112"
+"#china_vehicles:Turret_1_Ch23_112": "112"
+"#france_vehicles:Turret_2_B1": "B1 APX 4"
+"#france_vehicles:Renault_BDR": "Renault BDR"
+"#france_vehicles:Renault_Naeder-FIEUX_short": "Renault\nNaeder-FIEUX"
+"#france_vehicles:Turret_1_B1": "B1 APX 1"
+"#france_vehicles:Renault_Naeder-FIEUX": "Renault Naeder-FIEUX"
+"#france_vehicles:Chassis_B1": "B1"
+"#france_vehicles:B1": "B1"
+"#france_vehicles:B1_short": "B1"
+"#france_vehicles:Chassis_B1_2": "B1 bis"
+"#france_vehicles:Chassis_AMX_M4_1945_2": "AMX M4 mle. 45 bis"
+"#france_vehicles:Turret_1_AMX_M4_1945": "ARL 44"
+"#france_vehicles:Chassis_AMX_M4_1945": "AMX M4 mle. 45"
+"#france_vehicles:AMX_M4_1945_short": "AMX M4 45"
+"#france_vehicles:AMX_M4_1945": "AMX M4 mle. 45"
+"#france_vehicles:Turret_2_AMX_M4_1945": "AMX M4 mle. 45"
+"#other_vehicles:chinaNY": "#other_vehicles:chinaNY"
+"#other_vehicles:chinaNY_short": "#other_vehicles:chinaNY_short"
+"#france_vehicles:Chassis_AMX_50_68t": "AMX 50 B"
+"#france_vehicles:AMX_50_68t_short": "AMX 50 B"
+"#france_vehicles:Turret_1_AMX_50_68t": "AMX 50 B"
+"#france_vehicles:AMX_50_68t": "AMX 50 B"
+"#france_vehicles:Maybach_HL_295_F": "Maybach HL 295 F"
+"#germany_vehicles:Pz-V_Standardketten_short": "Pz.Kpfw. Panther\nAusf. A"
+"#germany_vehicles:Pz-V_Standardturm_short": "Pz.Kpfw. Panther\nAusf. G"
+"#germany_vehicles:Pz-V_Shmallturm_short": "Pz.Kpfw. Panther\nSchmalturm"
+"#germany_vehicles:Pz-V_Vetstaerktketten_short": "Pz.Kpfw. Panther\nAusf. G"
+"#germany_vehicles:Continental_AOS-895-3": "#germany_vehicles:Continental_AOS-895-3"
+"#germany_vehicles:_90mm_HEAT_T_108": "#germany_vehicles:_90mm_HEAT_T_108"
+"#germany_vehicles:G120_M41_90_short": "#germany_vehicles:G120_M41_90_short"
+"#germany_vehicles:_90_76mm_US_Kanone_M_32": "#germany_vehicles:_90_76mm_US_Kanone_M_32"
+"#germany_vehicles:G120_M41_90": "#germany_vehicles:G120_M41_90"
+"#germany_vehicles:Continental_AOS-895-3_short": "#germany_vehicles:Continental_AOS-895-3_short"
+"#germany_vehicles:_90mm_AP_T_33": "#germany_vehicles:_90mm_AP_T_33"
+"#germany_vehicles:Turret_1_G120_M41_90": "#germany_vehicles:Turret_1_G120_M41_90"
+"#germany_vehicles:_90mm_HEP_T_142": "#germany_vehicles:_90mm_HEP_T_142"
+"#germany_vehicles:Chassis_G120_M41_90": "#germany_vehicles:Chassis_G120_M41_90"
+"#usa_vehicles:_105mm_AT_Gun_T5A": "Gun T5 عيار 105 ملم"
+"#usa_vehicles:A102_T28_concept_short": "T28 HTC"
+"#usa_vehicles:Chassis_A102_T28_concept": "T28 Concept"
+"#usa_vehicles:Turret_1_A102_T28_concept": "T28 Concept"
+"#usa_vehicles:Wright_G200_m_781C9GC5_short": "Wright G200\nM781C9GC5"
+"#usa_vehicles:A102_T28_concept": "T28 Concept"
+"#other_vehicles:WZ-135G_FT": "Blaze WZ 135G FT"
+"#other_vehicles:WZ-135G_FT_short": "Blaze WZ"
+"#other_vehicles:_122mm_D-25CA": "122 mm D-25CA"
+"#other_vehicles:Turret_WZ-135G FT": "WZ-135G FT"
+"#other_vehicles:Chassis_WZ-135G FT": "WZ-135G FT"
+"#other_vehicles:8V135-2": "8V135-2"
+"#other_vehicles:_122mm_Type_57": "type 57"
+"#other_vehicles:_122mm_Type_64": "type 64"
+"#other_vehicles:_122mm_Type_68": "type 68"
+"#usa_vehicles:_2x44E24_V-8_Cadillac_short": "#usa_vehicles:_2x44E24_V-8_Cadillac_short"
+"#usa_vehicles:Continental_AOS-895-1_short": "Continental\nAOS-895-1"
+"#other_vehicles:Chassis_1st_april": "#other_vehicles:Chassis_1st_april"
+"#other_vehicles:First_april": "#other_vehicles:First_april"
+"#other_vehicles:Turret_1_1st_april": "#other_vehicles:Turret_1_1st_april"
+"#other_vehicles:First_april_short": "#other_vehicles:First_april_short"
+"#usa_vehicles:Turret_1_M41_Bulldog": "M41"
+"#usa_vehicles:Chassis_M41_Bulldog": "M41"
+"#usa_vehicles:_76mm_Gun_M32_late": "Gun M32 late عيار 76 ملم"
+"#usa_vehicles:Chassis_M41_Bulldog_2": "M41A1"
+"#usa_vehicles:_76mm_Gun_M32": "Gun M32 عيار 76 ملم"
+"#usa_vehicles:Turret_2_M41_Bulldog": "M41A1"
+"#usa_vehicles:_76mm_Gun_T91": "Gun T91 عيار 76 ملم"
+"#usa_vehicles:M41_Bulldog": "M41 Walker Bulldog"
+"#usa_vehicles:M41_Bulldog_short": "M41 Bulldog"
+"#usa_vehicles:_76mm_Gun_T91E5": "Gun T91E5 عيار 76 ملم"
+"#usa_vehicles:T37_short": "T37"
+"#usa_vehicles:Turret_2_T37": "T41 pilot number 1"
+"#usa_vehicles:Chassis_T37_2": "T41 pilot number 1"
+"#usa_vehicles:Turret_1_T37": "T37"
+"#usa_vehicles:Chassis_T37": "T37"
+"#usa_vehicles:_76mm_Gun_T102": "Gun T102 عيار 76 ملم"
+"#usa_vehicles:T37": "T37"
+"#gb_vehicles:Leyland_L60_No_4": "#gb_vehicles:Leyland_L60_No_4"
+"#gb_vehicles:_90mm_AP_M318": "#gb_vehicles:_90mm_AP_M318"
+"#gb_vehicles:Chassis_GB87_Chieftain_T95_turret": "#gb_vehicles:Chassis_GB87_Chieftain_T95_turret"
+"#gb_vehicles:_90mm_HE_T340": "#gb_vehicles:_90mm_HE_T340"
+"#gb_vehicles:_90mm_Gun_T208_rifled": "#gb_vehicles:_90mm_Gun_T208_rifled"
+"#gb_vehicles:GB87_Chieftain_T95_turret": "#gb_vehicles:GB87_Chieftain_T95_turret"
+"#gb_vehicles:GB87_Chieftain_T95_turret_short": "#gb_vehicles:GB87_Chieftain_T95_turret_short"
+"#gb_vehicles:Turret_1_GB87_Chieftain_T95_turret": "#gb_vehicles:Turret_1_GB87_Chieftain_T95_turret"
+"#gb_vehicles:_90mm_APFSDS_T320": "#gb_vehicles:_90mm_APFSDS_T320"
+"#vehicle_customization:camouflage/DragonGold/Name": "#vehicle_customization:camouflage/DragonGold/Name"
+"#vehicle_customization:camouflage/DragonGold/Description": "#vehicle_customization:camouflage/DragonGold/Description"
+"#vehicle_customization:camouflage/Android_cam/Name": "#vehicle_customization:camouflage/Android_cam/Name"
+"#vehicle_customization:camouflage/Android_cam/Descr": "#vehicle_customization:camouflage/Android_cam/Descr"
+"#vehicle_customization:camouflage/apple_cam/Name": "#vehicle_customization:camouflage/apple_cam/Name"
+"#vehicle_customization:camouflage/apple_cam/Descr": "#vehicle_customization:camouflage/apple_cam/Descr"

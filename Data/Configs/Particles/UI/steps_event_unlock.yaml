@@ -40,6 +40,6 @@ layer0:
     size: [250.000000, 250.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [1.300000, 1.300000]]
     spin: -15.000000
-    sprite: "../../../Gfx/Particles/UI/glow_anim_min"
+    sprite: "../../../../Data/Gfx/Particles/UI/glow_anim_min"
     startTime: 0.000000
     type: "layer"

@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
 - "~res:/UI/Screens/Common.yaml"
@@ -14,14 +14,14 @@ StyleSheets:
         bg-color: [0.274510, 0.368627, 0.431373, 1.000000]
         bg-drawType: "DRAW_FILL"
         text-font: "WarHeliosCondC_19"
-        text-textColor: [0.627451, 0.725490, 0.800000, 1.000000]
         text-textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text-textColor: [0.627451, 0.725490, 0.800000, 1.000000]
 -   selector: ".table-inv-data-info"
     properties:
         bg-drawType: "DRAW_ALIGNED"
         text-font: "WarHeliosCondC_Bold_19"
-        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
         text-textcolorInheritType: "COLOR_IGNORE_PARENT"
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selector: ".transparent-on-press:pressed_inside"
     properties:
         bg-color: [1.000000, 1.000000, 1.000000, 0.058824]
@@ -305,8 +305,6 @@ Controls:
         Anchor:
             leftAnchorEnabled: true
             rightAnchorEnabled: true
-        Background:
-            drawType: "DRAW_FILL"
     children:
     -   class: "UIStaticText"
         name: "Number"

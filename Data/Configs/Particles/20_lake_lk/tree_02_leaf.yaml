@@ -47,7 +47,7 @@ layer0:
     spin: 100.000000
     spinOverLife: [0.000000, 1.000000, 1.000000, 0.000000]
     spinVariation: 100.000000
-    sprite: "../../../Gfx/Particles/alpha/leaf_two"
+    sprite: "../../../../Data/Gfx/Particles/alpha/leaf_two"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000

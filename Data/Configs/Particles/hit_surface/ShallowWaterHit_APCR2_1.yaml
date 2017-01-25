@@ -42,7 +42,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [1.000000, 0.980800], 1.000000, [2.428000, 4.293400]]
     spin: 5.000000
     spinVariation: 5.000000
-    sprite: "../../../Gfx/Particles/alpha/dust_water"
+    sprite: "../../../../Data/Gfx/Particles/alpha/dust_water"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000

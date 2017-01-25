@@ -45,7 +45,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [1.500000, 1.500000]]
     spin: 30.000000
     spinVariation: 15.000000
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/smoke"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/smoke"
     startTime: 0.100000
     type: "layer"
     velocity: 150.000000

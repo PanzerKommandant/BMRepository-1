@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [2.000000, 2.000000]
     spin: 100.000000
     spinVariation: 30.000000
-    sprite: "../../../../../Gfx/Particles/UI/burned_paper"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/burned_paper"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

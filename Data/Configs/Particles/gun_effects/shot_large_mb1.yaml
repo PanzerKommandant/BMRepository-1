@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000
@@ -75,7 +75,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 6.000000
@@ -111,7 +111,7 @@ layer2:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 8.000000

@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Styles/Lobby/Story/StoryRewardsStyles.yaml"
@@ -54,7 +54,7 @@ StyleSheets:
 -   selector: ".bonusItem.has-count #ItemCount"
     properties:
         visible: true
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "BonusIcon"
     size: [98.000000, 98.000000]
@@ -85,6 +85,87 @@ Controls:
                 vCenterAnchorEnabled: true
             Background:
                 drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   class: "UIScrollView"
+    name: "StepScrollView"
+    size: [1027.000000, 768.000000]
+    autoUpdate: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIScrollViewContainer"
+        name: "scrollContainerControl"
+        position: [0.000000, 0.000000]
+        components:
+            LinearLayout:
+                orientation: "TopDown"
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIScrollBar"
+        name: "VerticalScrollbar"
+        size: [10.000000, 758.000000]
+        noInput: true
+        orientation: "ORIENTATION_VERTICAL"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 10.000000
+        children:
+        -   class: "UIControl"
+            name: "slider"
+            size: [10.000000, 20.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_VERTICAL"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                    topBottomStretchCap: 10.000000
+    -   class: "UIScrollBar"
+        name: "HorizontalScrollbar"
+        position: [10.000000, 758.000000]
+        size: [1017.000000, 10.000000]
+        noInput: true
+        orientation: "ORIENTATION_HORIZONTAL"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                rightAnchorEnabled: true
+                rightAnchor: 0.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 0.000000
+        children:
+        -   class: "UIControl"
+            name: "slider"
+            size: [20.000000, 10.000000]
+            noInput: true
+            components:
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/HorizontalScroll"
+                    leftRightStretchCap: 10.000000
+-   class: "UIControl"
+    name: "Rewards"
+    position: [188.500000, 54.000000]
+    size: [650.000000, 40.000000]
+    components:
+        FlowLayout:
+            hDynamicInLinePadding: true
+            hSpacing: 20.000000
+            vPadding: 20.000000
+            vSpacing: 20.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfChildrenSum"
+        Anchor:
+            hCenterAnchorEnabled: true
+Controls:
 -   class: "UIControl"
     name: "BonusItemDetailed"
     size: [200.000000, 200.000000]
@@ -145,7 +226,7 @@ Controls:
     -   class: "UIControl"
         name: "DescriptionWrap"
         position: [0.000000, 122.000000]
-        size: [200.000000, 47.000000]
+        size: [200.000000, 54.000000]
         components:
             LinearLayout:
                 orientation: "TopDown"
@@ -162,7 +243,7 @@ Controls:
         -   class: "UIStaticText"
             name: "Description"
             position: [5.000000, 0.000000]
-            size: [190.000000, 47.000000]
+            size: [190.000000, 54.000000]
             clip: true
             classes: "text2 text-color-blue"
             multiline: "MULTILINE_ENABLED"
@@ -305,86 +386,6 @@ Controls:
         SizePolicy:
             horizontalPolicy: "PercentOfChildrenSum"
             horizontalMax: 900.000000
-            verticalPolicy: "PercentOfChildrenSum"
-        Anchor:
-            hCenterAnchorEnabled: true
--   class: "UIScrollView"
-    name: "StepScrollView"
-    size: [1027.000000, 768.000000]
-    autoUpdate: true
-    components:
-        SizePolicy:
-            horizontalPolicy: "PercentOfParent"
-            verticalPolicy: "PercentOfParent"
-    children:
-    -   class: "UIScrollViewContainer"
-        name: "scrollContainerControl"
-        position: [0.000000, 0.000000]
-        components:
-            LinearLayout:
-                orientation: "TopDown"
-            SizePolicy:
-                horizontalPolicy: "PercentOfParent"
-                verticalPolicy: "PercentOfChildrenSum"
-            Anchor:
-                hCenterAnchorEnabled: true
-    -   class: "UIScrollBar"
-        name: "VerticalScrollbar"
-        size: [10.000000, 758.000000]
-        noInput: true
-        orientation: "ORIENTATION_VERTICAL"
-        components:
-            Anchor:
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-                topAnchor: 0.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: 10.000000
-        children:
-        -   class: "UIControl"
-            name: "slider"
-            size: [10.000000, 20.000000]
-            noInput: true
-            components:
-                Background:
-                    drawType: "DRAW_STRETCH_VERTICAL"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
-                    topBottomStretchCap: 10.000000
-    -   class: "UIScrollBar"
-        name: "HorizontalScrollbar"
-        position: [10.000000, 758.000000]
-        size: [1017.000000, 10.000000]
-        noInput: true
-        orientation: "ORIENTATION_HORIZONTAL"
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 10.000000
-                rightAnchorEnabled: true
-                rightAnchor: 0.000000
-                bottomAnchorEnabled: true
-                bottomAnchor: 0.000000
-        children:
-        -   class: "UIControl"
-            name: "slider"
-            size: [20.000000, 10.000000]
-            noInput: true
-            components:
-                Background:
-                    drawType: "DRAW_STRETCH_HORIZONTAL"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/HorizontalScroll"
-                    leftRightStretchCap: 10.000000
--   class: "UIControl"
-    name: "Rewards"
-    position: [188.500000, 54.000000]
-    size: [650.000000, 40.000000]
-    components:
-        FlowLayout:
-            hDynamicInLinePadding: true
-            hSpacing: 20.000000
-            vPadding: 20.000000
-            vSpacing: 20.000000
-        SizePolicy:
             verticalPolicy: "PercentOfChildrenSum"
         Anchor:
             hCenterAnchorEnabled: true

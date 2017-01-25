@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 10.000000
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/fog"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 70.000000

@@ -45,7 +45,7 @@ layer0:
     size: [3.500000, 3.500000]
     spin: 10.000000
     spinVariation: 10.000000
-    sprite: "../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000
@@ -88,7 +88,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
-    sprite: "../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.000000
     type: "layer"
     velocity: 14.000000
@@ -128,7 +128,7 @@ layer2:
     size: [3.500000, 3.500000]
     spin: 10.000000
     spinVariation: 10.000000
-    sprite: "../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

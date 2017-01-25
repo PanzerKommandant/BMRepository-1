@@ -1,11 +1,11 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/DialogView.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TeamsList.yaml"
 - "~res:/UI/Screens/CommonStyles.yaml"
-- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanEmblem.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/CellSelectionFrame.yaml"
 Controls:
 -   prototype: "DialogView/WarningDialog"
@@ -109,7 +109,7 @@ Controls:
                         horizontalPolicy: "PercentOfParent"
                         verticalPolicy: "PercentOfParent"
                 children:
-                -   prototype: "ClanCommon/ClanEmblem"
+                -   prototype: "ClanEmblem/ClanEmblem"
                     name: "ClanEmblem"
                     size: [32.000000, 32.000000]
                     visible: true

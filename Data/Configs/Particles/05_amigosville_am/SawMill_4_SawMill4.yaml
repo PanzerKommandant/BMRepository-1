@@ -41,6 +41,6 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     spin: 1200.000000
-    sprite: "../../../Gfx/Particles/alpha/R_dust_density"
+    sprite: "../../../../Data/Gfx/Particles/alpha/R_dust_density"
     startTime: 0.000000
     type: "layer"

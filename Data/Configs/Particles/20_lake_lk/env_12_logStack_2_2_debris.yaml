@@ -44,7 +44,7 @@ layer0:
     size: [0.200000, 0.400000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/log_wood_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/log_wood_one"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000
@@ -88,7 +88,7 @@ layer1:
     sizeVariation: [0.000000, 0.100000]
     spin: 200.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/log_wood"
+    sprite: "../../../../Data/Gfx/Particles/alpha/log_wood"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -132,7 +132,7 @@ layer2:
     sizeVariation: [0.050000, 0.400000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

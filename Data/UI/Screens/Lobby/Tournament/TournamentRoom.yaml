@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
@@ -25,8 +25,8 @@ StyleSheets:
 -   selector: "#VehicleLevel"
     properties:
         anchor-leftAnchor: -20.000000
-        anchor-topAnchor: 5.000000
         text-textalign: ["RIGHT", "TOP"]
+        anchor-topAnchor: 5.000000
 -   selector: ".not-ready #VehicleName"
     properties:
         text-textColor: [0.627451, 0.600000, 0.800000, 0.941176]
@@ -43,18 +43,18 @@ StyleSheets:
         text-textalign: ["RIGHT", "TOP"]
 -   selector: "#VehicleIcon"
     properties:
-        anchor-leftAnchor: 0.000000
-        anchor-leftAnchorEnabled: false
+        scale: [1.000000, 1.000000]
         anchor-rightAnchor: 0.000000
         anchor-rightAnchorEnabled: true
-        scale: [1.000000, 1.000000]
+        anchor-leftAnchorEnabled: false
+        anchor-leftAnchor: 0.000000
 -   selector: ".right-to-left ? #VehicleIcon"
     properties:
-        anchor-leftAnchor: 0.000000
-        anchor-leftAnchorEnabled: true
+        scale: [1.000000, 1.000000]
         anchor-rightAnchor: 0.000000
         anchor-rightAnchorEnabled: false
-        scale: [1.000000, 1.000000]
+        anchor-leftAnchorEnabled: true
+        anchor-leftAnchor: 0.000000
 -   selector: ".right-to-left ? #VehicleLevel"
     properties:
         text-textalign: ["LEFT", "TOP"]
@@ -66,36 +66,36 @@ StyleSheets:
         visible: false
 -   selector: ".selected .selector"
     properties:
-        bg-color: [0.960784, 0.650980, 0.133333, 1.000000]
         visible: true
+        bg-color: [0.960784, 0.650980, 0.133333, 1.000000]
 -   selector: "#bottomSelector"
     properties:
-        bg-color: [1.000000, 1.000000, 1.000000, 0.141176]
         sizePolicy-verticalValue: 1.000000
+        bg-color: [1.000000, 1.000000, 1.000000, 0.141176]
 -   selector: ".selected #bottomSelector"
     properties:
         sizePolicy-verticalValue: 2.000000
 -   selector: "#MouseIcon"
     properties:
-        anchor-bottomAnchor: 4.000000
-        anchor-bottomAnchorEnabled: true
         anchor-rightAnchor: -4.000000
         anchor-rightAnchorEnabled: true
+        anchor-bottomAnchorEnabled: true
+        anchor-bottomAnchor: 4.000000
 -   selector: ".right-to-left ? #MouseIcon"
     properties:
-        anchor-leftAnchorEnabled: true
         anchor-rightAnchorEnabled: false
+        anchor-leftAnchorEnabled: true
 -   selector: ".ready"
     properties:
-        bg-color: [0.200000, 0.321569, 0.274510, 1.000000]
         bg-drawType: "DRAW_FILL"
+        bg-color: [0.200000, 0.321569, 0.274510, 1.000000]
 -   selector: ".ready:pressed_inside"
     properties:
         bg-color: [0.200000, 0.321569, 0.274510, 0.686275]
 -   selector: ".not-ready:pressed_inside"
     properties:
-        bg-color: [0.000000, 0.000000, 0.000000, 0.098039]
         bg-drawType: "DRAW_FILL"
+        bg-color: [0.000000, 0.000000, 0.000000, 0.098039]
 -   selector: "#TraineeName #spacer"
     properties:
         visible: false
@@ -104,20 +104,20 @@ StyleSheets:
         visible: true
 -   selector: ".button:disabled"
     properties:
-        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
         bg-frame: 0
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
 -   selector: ".set-vertical-size"
     properties:
-        sizePolicy-verticalPolicy: "FixedSize"
         sizePolicy-verticalValue: 64.000000
+        sizePolicy-verticalPolicy: "FixedSize"
 -   selector: ".map-random"
     properties:
-        bg-color: [0.200000, 0.274510, 0.321569, 0.862745]
         bg-drawType: "DRAW_FILL"
+        bg-color: [0.200000, 0.274510, 0.321569, 0.862745]
 -   selector: ".map-specific"
     properties:
-        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
         bg-drawType: "DRAW_SCALE_TO_RECT"
+        bg-color: [1.000000, 1.000000, 1.000000, 1.000000]
 -   selector: ".queue #TraineeList"
     properties:
         anchor-topAnchor: 40.000000
@@ -170,6 +170,152 @@ StyleSheets:
 -   selector: ".red-mark"
     properties:
         bg-frame: 1
+Prototypes:
+-   class: "UIControl"
+    customClass: "UITrainingRoomQueue"
+    name: "TeamA"
+    size: [250.000000, 488.000000]
+    classes: "queue"
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+            verticalMax: 488.000000
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            topAnchorEnabled: true
+    children:
+    -   class: "UIList"
+        name: "TraineeList"
+        size: [250.000000, 448.000000]
+        classes: "panel-background"
+        components:
+            SizePolicy: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "Header"
+        position: [0.000000, 0.000000]
+        size: [250.000000, 40.000000]
+        classes: "text1"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.274510, 0.368627, 0.431373, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "ListLine"
+            size: [250.000000, 1.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.141176]
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "TeamMark"
+            size: [32.000000, 32.000000]
+            classes: "green-mark"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Training/image_clan"
+        -   class: "UIControl"
+            name: "TeamNameWithTag"
+            size: [250.000000, 40.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 15.000000
+                    spacing: 5.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIStaticText"
+                name: "Tag"
+                size: [0.000000, 40.000000]
+                classes: "header4 clan-tag"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            -   class: "UIStaticText"
+                name: "Name"
+                position: [20.000000, 0.000000]
+                size: [0.000000, 40.000000]
+                classes: "header4"
+                fitting: ["POINTS"]
+                textalign: ["LEFT", "VCENTER"]
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Bottom"
+        size: [250.000000, 1.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Left"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Right"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
 Controls:
 -   class: "UIControl"
     customClass: "UITournamentRoom"
@@ -473,8 +619,8 @@ Controls:
                 children:
                 -   prototype: "StyledSmallButton/StyledSmallButton"
                     name: "ButtonToTeamA"
-                    position: [97.000000, 12.000000]
-                    classes: "button left-green-icon"
+                    position: [127.000000, 15.000000]
+                    classes: "button button-color-gray left-green-icon"
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
@@ -558,9 +704,9 @@ Controls:
                         horizontalPolicy: "PercentOfParent"
                         verticalPolicy: "PercentOfParent"
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "SelectVehicle"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     components:
                         Anchor:
                             leftAnchorEnabled: true
@@ -571,9 +717,9 @@ Controls:
                         classes: "header3 text-color-white"
                         fitting: ["REDUCE"]
                         text: "#training_rooms:RoomScreen/ChooseButton"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "NotReady"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     components:
                         Anchor:
                             rightAnchorEnabled: true
@@ -583,17 +729,16 @@ Controls:
                     -   path: "Caption"
                         classes: "header3 text-color-white"
                         text: "#training_rooms:RoomScreen/NotReadyButton"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "ReadyButton"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     visible: true
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             rightAnchorEnabled: true
                             rightAnchor: 10.000000
                             vCenterAnchorEnabled: true
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         visible: true
@@ -721,6 +866,15 @@ Controls:
                         hCenterAnchorEnabled: true
             -   class: "UIStaticText"
                 name: "RoundTitle"
+                classes: "text2 text-color-blue"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+                        verticalPolicy: "PercentOfContent"
+                    Anchor:
+                        hCenterAnchorEnabled: true
+            -   class: "UIStaticText"
+                name: "BracketTitle"
                 classes: "text2 text-color-blue"
                 components:
                     SizePolicy:

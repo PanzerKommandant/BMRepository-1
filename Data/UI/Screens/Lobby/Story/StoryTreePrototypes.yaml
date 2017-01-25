@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
@@ -62,13 +62,16 @@ StyleSheets:
         noInput: false
 -   selector: ".step.completed #NormalState #Button"
     properties:
-        bg-frame: 2
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient.psd"
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_contour.psd"
 -   selector: ".step #ExpandedState #Button #Background"
     properties:
-        bg-frame: 0
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour.psd"
 -   selector: ".step.completed #ExpandedState #Button #Background"
     properties:
-        bg-frame: 2
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient.psd"
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_contour.psd"
 -   selector: ".step #NormalState #CheckMark"
     properties:
         visible: false
@@ -81,7 +84,7 @@ StyleSheets:
 -   selector: ".step #ExpandedState #Button #CaptionTerms, .step.completed #ExpandedState #Button #CaptionRewards"
     properties:
         visible: true
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "HorizontalLine"
     size: [100.000000, 2.000000]
@@ -209,8 +212,12 @@ Controls:
                 verticalPolicy: "PercentOfParent"
                 verticalValue: 139.000000
             Background:
-                drawType: "DRAW_TILED"
-                sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
+                gradientMode: "Overlay"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                 leftRightStretchCap: 10.000000
                 margins: [1.000000, 1.000000, 1.000000, 1.000000]
@@ -269,8 +276,12 @@ Controls:
             noInput: true
             components:
                 Background:
-                    drawType: "DRAW_TILED"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                    drawType: "DRAW_TILED_MULTILAYER"
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                    contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
+                    gradientMode: "Overlay"
                     color: [0.400000, 0.400000, 0.400000, 1.000000]
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
                     leftRightStretchCap: 10.000000
@@ -326,11 +337,14 @@ Controls:
         size: [85.000000, 70.000000]
         noInput: true
         children:
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "Button"
             size: [85.000000, 70.000000]
+            classes: "button"
             components:
                 Background:
+                    gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                    contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
             children:
             -   path: "Caption"
@@ -439,8 +453,12 @@ Controls:
             components:
                 SizePolicy: {}
                 Background:
-                    drawType: "DRAW_TILED"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+                    drawType: "DRAW_TILED_MULTILAYER"
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                    contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
+                    gradientMode: "Overlay"
                     color: [0.400000, 0.400000, 0.400000, 1.000000]
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                     leftRightStretchCap: 10.000000
@@ -478,8 +496,7 @@ Controls:
                 Anchor:
                     hCenterAnchorEnabled: true
                     topAnchorEnabled: true
-                    topAnchor: 33.000000
-                    vCenterAnchorEnabled: false
+                    topAnchor: 50.000000
                 Background:
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
         -   class: "UIControl"
@@ -497,14 +514,13 @@ Controls:
         size: [130.500000, 105.000000]
         noInput: true
         children:
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "Button"
             position: [0.000000, 0.000000]
             size: [87.000000, 70.000000]
             scale: [1.500000, 1.500000]
             components:
                 Background:
-                    drawType: "DRAW_TILED"
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
             children:
             -   path: "Caption"

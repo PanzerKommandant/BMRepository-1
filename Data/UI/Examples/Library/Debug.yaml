@@ -1,0 +1,43 @@
+Header:
+    version: "4"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [640.000000, 480.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.129412, 0.223529, 0.223529, 1.000000]
+-   class: "UIControl"
+    name: "RedRect"
+    size: [100.000000, 100.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [1.000000, 0.000000, 0.000000, 1.000000]
+-   class: "UIControl"
+    name: "GreenRect"
+    size: [100.000000, 100.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 1.000000, 0.000000, 1.000000]
+-   class: "UIControl"
+    name: "BlueRect"
+    size: [100.000000, 100.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 1.000000, 1.000000]
+-   class: "UIControl"
+    name: "BlackRect"
+    size: [100.000000, 100.000000]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 1.000000]

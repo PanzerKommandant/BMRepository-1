@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Styles/ButtonStyle.yaml"
@@ -7,28 +7,34 @@ ImportedPackages:
 StyleSheets:
 -   selector: ".button-payment"
     properties:
-        bg-frame: 2
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient.txt"
 -   selector: ".button-sell"
     properties:
-        bg-frame: 1
-Controls:
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/red_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/red_gradient.txt"
+Prototypes:
 -   class: "UIControl"
     name: "Button"
-    size: [222.000000, 70.000000]
-    classes: "button"
+    size: [222.000000, 64.000000]
+    classes: "button button-color-gray"
     components:
         Background:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+            gradientMode: "Overlay"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
             align: ["HCENTER", "VCENTER"]
-            leftRightStretchCap: 10.000000
+            leftRightStretchCap: 20.000000
+            topBottomStretchCap: 20.000000
             margins: [1.000000, 1.000000, 1.000000, 1.000000]
     children:
     -   class: "UIStaticText"
         name: "Caption"
         position: [0.000000, 0.000000]
-        size: [222.000000, 70.000000]
-        classes: "header1 text-color-white"
+        size: [222.000000, 64.000000]
+        classes: "header3 text-color-white"
         components:
             Anchor:
                 leftAnchorEnabled: true
@@ -37,21 +43,24 @@ Controls:
                 bottomAnchorEnabled: true
 -   class: "UIControl"
     name: "DefaultStyledButton"
-    size: [222.000000, 70.000000]
-    classes: "button"
+    size: [222.000000, 64.000000]
+    classes: "button button-color-gray"
     components:
         Background:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonDefault"
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+            gradientMode: "Overlay"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
             align: ["HCENTER", "VCENTER"]
-            leftRightStretchCap: 9.000000
+            leftRightStretchCap: 20.000000
+            topBottomStretchCap: 20.000000
 -   prototype: "DefaultStyledButton"
     name: "StyledButton"
-    classes: "button"
     children:
     -   class: "UIStaticText"
         name: "Caption"
-        classes: "header1 hacked-font text-color-white"
+        classes: "header3 text-color-white"
         components:
             Anchor:
                 leftAnchorEnabled: true

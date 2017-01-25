@@ -41,6 +41,6 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [300.000000, 300.000000]
-    sprite: "../../../../Gfx/Particles/UI/Fx_DustSpray_two"
+    sprite: "../../../../../Data/Gfx/Particles/UI/Fx_DustSpray_two"
     startTime: 0.000000
     type: "layer"

@@ -35,6 +35,6 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [240.000000, 273.000000]
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/glow_flag"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/glow_flag"
     startTime: 0.000000
     type: "layer"

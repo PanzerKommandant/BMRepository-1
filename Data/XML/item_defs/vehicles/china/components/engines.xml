@@ -2,6 +2,7 @@
 	<ids>
 		<NORINCO_12150L7>0</NORINCO_12150L7>
 		<_12150L-3_V-12>1</_12150L-3_V-12>
+		<_12150LS_1>27</_12150LS_1>
 	</ids>
 	<shared>
 		<NORINCO_12150L7>
@@ -34,5 +35,20 @@
 			<repairCost>4</repairCost>
 			<fireStartingChance>0.12</fireStartingChance>
 		</_12150L-3_V-12>
+		<_12150LS_1>
+			<userString>#china_vehicles:_12150LS</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<soundPC>/vehicles/tanks_pc/medium/tiger</soundPC>
+			<soundNPC>/vehicles/tanks_npc/medium/tiger</soundNPC>
+			<power>580</power>
+			<weight>1068</weight>
+			<maxHealth>260</maxHealth>
+			<maxRegenHealth>130</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>0.12</fireStartingChance>
+		</_12150LS_1>
 	</shared>
 </root>

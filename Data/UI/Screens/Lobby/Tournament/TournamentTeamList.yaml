@@ -1,15 +1,14 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
-- "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/CommonStyles.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TournamentBackground.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TournamentTabControl.yaml"
 - "~res:/UI/Screens/Common/UnreadIcon.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/TeamsList.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "Content"
@@ -25,6 +24,7 @@ Controls:
         name: "EffectsContainer"
     -   class: "UIControl"
         name: "View"
+        position: [0.000000, 0.000000]
         size: [1024.000000, 768.000000]
         components:
             LinearLayout:
@@ -38,6 +38,7 @@ Controls:
         children:
         -   class: "UIControl"
             name: "Header"
+            position: [0.000000, 0.000000]
             size: [1024.000000, 80.000000]
             components:
                 Anchor:
@@ -58,50 +59,15 @@ Controls:
                     Background:
                         drawType: "DRAW_SCALE_TO_RECT"
                         sprite: "~res:/Gfx/UI/Tournament/gradient"
-            -   prototype: "StyledButton/DefaultStyledButton"
+            -   prototype: "TournamentBackButton/BackButton"
                 name: "BackButton"
-                size: [92.000000, 76.000000]
-                components:
-                    Background:
-                        drawType: "DRAW_ALIGNED"
-                        sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
-                        leftRightStretchCap: 0.000000
-                children:
-                -   class: "UIControl"
-                    name: "icon"
-                    position: [0.000000, 0.000000]
-                    size: [92.000000, 76.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Background:
-                            drawType: "DRAW_ALIGNED"
-                            sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
-                            frame: 3
-                            mask: ""
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   prototype: "UnreadIcon/UnreadIcon"
-                    name: "UnreadNews"
-                    visible: false
-                    classes: "header3 bg-color=tournament-unread-bg"
-                    components:
-                        Anchor:
-                            rightAnchorEnabled: true
-                            topAnchorEnabled: true
             -   class: "UIControl"
                 name: "TournamentInfo"
                 size: [324.000000, 72.000000]
                 components:
                     LinearLayout:
                         orientation: "TopDown"
+                        dynamicPadding: true
                     SizePolicy:
                         horizontalPolicy: "PercentOfMaxChild"
                         verticalPolicy: "PercentOfParent"
@@ -148,6 +114,7 @@ Controls:
                 -   class: "UIControl"
                     name: "Bottom"
                     size: [299.000000, 36.000000]
+                    visible: true
                     components:
                         LinearLayout:
                             spacing: 20.000000
@@ -225,36 +192,35 @@ Controls:
                                     vCenterAnchorEnabled: true
             -   prototype: "StyledButton/StyledButton"
                 name: "MyTeamButton"
-                size: [240.000000, 70.000000]
+                size: [240.000000, 64.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
-                        rightAnchor: 2.000000
+                        rightAnchor: 8.000000
                         topAnchorEnabled: true
-                        topAnchor: 2.000000
-                    Background:
-                        frame: 2
+                        topAnchor: 8.000000
                 children:
                 -   path: "Caption"
                     position: [0.000000, 0.000000]
                     text: "tournaments/Button/MyTeam"
             -   prototype: "StyledButton/StyledButton"
                 name: "CreateTeamButton"
-                size: [240.000000, 70.000000]
+                size: [240.000000, 64.000000]
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
-                        rightAnchor: 2.000000
+                        rightAnchor: 8.000000
                         topAnchorEnabled: true
-                        topAnchor: 2.000000
-                    Background:
-                        frame: 2
+                        topAnchor: 8.000000
                 children:
                 -   path: "Caption"
                     position: [0.000000, 0.000000]
                     text: "tournaments/Button/CreateTeam"
         -   class: "UIControl"
             name: "ListOfTeams"
+            position: [237.000000, 100.000000]
             size: [550.000000, 668.000000]
             noInput: true
             components:
@@ -349,15 +315,13 @@ Controls:
                                 hCenterAnchorEnabled: true
                     -   prototype: "StyledButton/StyledButton"
                         name: "CreateTeamButton"
-                        size: [240.000000, 70.000000]
+                        size: [240.000000, 64.000000]
+                        classes: "button button-color-green"
                         components:
                             Anchor:
                                 hCenterAnchorEnabled: true
-                            Background:
-                                frame: 2
                         children:
                         -   path: "Caption"
-                            position: [0.000000, 0.000000]
                             text: "tournaments/Button/CreateTeam"
                 -   prototype: "TeamsList/TeamsListContainer"
                     name: "TeamsContainer"
@@ -365,127 +329,3 @@ Controls:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
                             verticalPolicy: "PercentOfParent"
--   class: "UIListCell"
-    name: "TeamEntry"
-    size: [350.000000, 64.000000]
-    noInput: true
-    classes: ""
-    components:
-        SizePolicy:
-            horizontalPolicy: "PercentOfParent"
-    children:
-    -   class: "UIControl"
-        name: "Button"
-        size: [350.000000, 64.000000]
-        classes: "button"
-        components:
-            SizePolicy:
-                horizontalPolicy: "PercentOfParent"
-                verticalPolicy: "PercentOfParent"
-        children:
-        -   class: "UIControl"
-            name: "Back"
-            size: [350.000000, 64.000000]
-            noInput: true
-            classes: "panel-background"
-            components:
-                SizePolicy:
-                    horizontalPolicy: "PercentOfParent"
-                    verticalPolicy: "PercentOfParent"
-                Background:
-                    drawType: "DRAW_FILL"
-                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-        -   class: "UIControl"
-            name: "Content"
-            size: [350.000000, 64.000000]
-            noInput: true
-            components:
-                LinearLayout: {}
-                SizePolicy:
-                    horizontalPolicy: "PercentOfParent"
-                    verticalPolicy: "PercentOfParent"
-            children:
-            -   class: "UIControl"
-                name: "ClanDescr"
-                size: [250.000000, 64.000000]
-                noInput: true
-                components:
-                    LinearLayout:
-                        padding: 10.000000
-                        spacing: 10.000000
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfParent"
-                        verticalPolicy: "PercentOfParent"
-                children:
-                -   prototype: "ClanCommon/ClanEmblem"
-                    name: "ClanEmblem"
-                    size: [32.000000, 32.000000]
-                    visible: true
-                    components:
-                        Anchor:
-                            vCenterAnchorEnabled: true
-                        Background:
-                            drawType: "DRAW_SCALE_TO_RECT"
-                -   class: "UIStaticText"
-                    name: "Tag"
-                    size: [52.000000, 64.000000]
-                    classes: "header3 clan-tag"
-                    text: "[AS-S]"
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfContent"
-                            verticalPolicy: "PercentOfParent"
-                -   class: "UIStaticText"
-                    name: "Name"
-                    size: [126.000000, 64.000000]
-                    classes: "header3"
-                    fitting: ["POINTS"]
-                    textalign: ["LEFT", "VCENTER"]
-                    text: "TEST Team Name"
-                    components:
-                        SizePolicy:
-                            horizontalPolicy: "PercentOfParent"
-                            verticalPolicy: "PercentOfParent"
-            -   class: "UIStaticText"
-                name: "Players"
-                size: [100.000000, 64.000000]
-                classes: "header3 text-color-blue"
-                text: "7"
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "FixedSize"
-                        horizontalValue: 100.000000
-                        verticalPolicy: "PercentOfParent"
-    -   class: "UIControl"
-        name: "bottomSelector"
-        size: [350.000000, 1.000000]
-        noInput: true
-        classes: "selector"
-        components:
-            IgnoreLayout: {}
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                bottomAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-                color: [1.000000, 1.000000, 1.000000, 0.141176]
-                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
--   class: "UIListCell"
-    name: "LoadingEntry"
-    size: [1024.000000, 64.000000]
-    noInput: true
-    components:
-        SizePolicy:
-            horizontalPolicy: "PercentOfParent"
-    children:
-    -   class: "UIStaticText"
-        name: "LoadingLabel"
-        size: [1024.000000, 64.000000]
-        classes: "text1 text-color-blue"
-        text: "Loading..."
-        font: "WarHeliosCondC_21"
-        components:
-            SizePolicy:
-                horizontalPolicy: "PercentOfParent"
-                verticalPolicy: "PercentOfParent"

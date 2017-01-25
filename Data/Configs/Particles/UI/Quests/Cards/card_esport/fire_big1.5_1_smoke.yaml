@@ -49,7 +49,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [3.000000, 3.000000]]
     sizeVariation: [20.000000, 20.000000]
     spinVariation: -8.000000
-    sprite: "../../../../../../Gfx/Particles/UI/Fx_DustSpray_two"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Fx_DustSpray_two"
     startTime: 0.000000
     type: "layer"
     velocity: 15.000000

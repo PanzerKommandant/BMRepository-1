@@ -147,6 +147,7 @@ options:
                 MSAA: MSAA_4X
     -   name: Camouflage
         type: selector
+        limitByDevicePreset: false
         values:
             - Off:
                 camouflageVisibilityValue: DISABLED
@@ -208,6 +209,7 @@ options:
                 HDSounds: true
     -   name: HalfResolution
         type: switch
+        limitByDevicePreset: false
         values:
             - false:
                 resolutionMultiplierInHangar: 1.0
@@ -217,6 +219,7 @@ options:
                 resolutionMultiplierInBattle: 0.5
     -   name: FPSLimit30
         type: switch
+        limitByDevicePreset: false
         values:
             - false:
                 fpsLimit: 60
@@ -227,6 +230,7 @@ options:
         supportedValues: "metalAPISupport"
         hideIfNotAvailable: true
         requiresReboot: true
+        limitByDevicePreset: false
         values:
             - false:
                 renderer: "gles2"

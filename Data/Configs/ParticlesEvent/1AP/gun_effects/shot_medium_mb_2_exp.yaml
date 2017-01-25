@@ -38,7 +38,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [1.600000, 1.600000]]
-    sprite: "../../../../Gfx/Particles/1AP/bubbles"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/bubbles"
     startTime: 0.000000
     type: "layer"
     velocity: 50.000000
@@ -75,7 +75,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [2.300000, 2.300000]
     sizeOverLifeXY: [0.000000, [0.300000, 0.300000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/glow_low2"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/glow_low2"
     startTime: 0.000000
     type: "layer"
     velocity: 50.000000

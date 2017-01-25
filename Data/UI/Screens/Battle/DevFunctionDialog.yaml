@@ -1,8 +1,13 @@
 Header:
-    version: "2"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Common.yaml"
+StyleSheets:
+-   selector: ".cell:pressed_inside"
+    properties:
+        bg-drawType: "DRAW_FILL"
+        bg-color: [0.500000, 0.500000, 0.500000, 1.000000]
 Controls:
 -   class: "UIControl"
     customClass: "DevFunctionsUIDialog"
@@ -28,7 +33,7 @@ Controls:
                 vCenterAnchor: 0.000000
             Background:
                 drawType: "DRAW_STRETCH_BOTH"
-                sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                 leftRightStretchCap: 5.000000
                 topBottomStretchCap: 5.000000
         children:
@@ -48,7 +53,7 @@ Controls:
                     topAnchor: 0.000000
                 Background:
                     align: ["LEFT", "TOP"]
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "closeButton"
             components:
                 Anchor:
@@ -75,7 +80,7 @@ Controls:
                     bottomAnchor: 100.000000
                 Background:
                     drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                     leftRightStretchCap: 5.000000
                     topBottomStretchCap: 5.000000
             children:
@@ -103,13 +108,11 @@ Controls:
 -   class: "UIListCell"
     name: "CellPrototype"
     size: [380.000000, 50.000000]
+    classes: "cell"
     identifier: "Option cell"
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"
-        PressedInside:
-            drawType: "DRAW_FILL"
-            color: [0.500000, 0.500000, 0.500000, 1.000000]
     children:
     -   class: "UIStaticText"
         name: "Title"

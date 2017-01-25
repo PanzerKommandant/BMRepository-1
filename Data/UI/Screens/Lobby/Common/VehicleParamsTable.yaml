@@ -1,12 +1,47 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
-Controls:
+StyleSheets:
+-   selector: ".number-param-prototype.up ? ? #deltaValueUpDown, .number-param-prototype.down ? ? #deltaValueUpDown"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Hangar/CharacterArrow"
+        visible: true
+-   selector: ".number-param-prototype.up.worse ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 1
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".number-param-prototype.down.worse ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 1
+-   selector: ".number-param-prototype.up.better ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 0
+        bg-spriteModification: []
+-   selector: ".number-param-prototype.down.better ? ? #deltaValueUpDown"
+    properties:
+        bg-frame: 0
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".number-param-prototype.worse ? ? #deltaValue"
+    properties:
+        text-textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".number-param-prototype.better ? ? #deltaValue"
+    properties:
+        text-textColor: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selector: ".number-param-prototype.down, .number-param-prototype.up"
+    properties:
+        visible: true
+-   selector: ".number-param-prototype.visible.visible"
+    properties:
+        visible: true
+-   selector: ".number-param-prototype.invisible.invisible"
+    properties:
+        visible: false
+Prototypes:
 -   class: "UIControl"
     customClass: "UIHangarParamsTable"
     name: "VehicleParamsTable"
-    size: [250.000000, 3790.000000]
+    size: [250.000000, 3608.000000]
     noInput: true
     components:
         LinearLayout:
@@ -21,7 +56,6 @@ Controls:
     children:
     -   class: "UIControl"
         name: "BaseParam"
-        noInput: true
         components:
             LinearLayout:
                 orientation: "TopDown"
@@ -70,8 +104,7 @@ Controls:
                 visible: false
     -   class: "UIControl"
         name: "DetalesParam"
-        size: [250.000000, 1544.000000]
-        noInput: true
+        size: [250.000000, 1440.000000]
         components:
             LinearLayout:
                 orientation: "TopDown"
@@ -329,8 +362,7 @@ Controls:
                     text: "tank descr circular vision radius"
     -   class: "UIControl"
         name: "ModulesParam"
-        size: [250.000000, 1926.000000]
-        noInput: true
+        size: [250.000000, 1848.000000]
         components:
             LinearLayout:
                 orientation: "TopDown"
@@ -343,7 +375,6 @@ Controls:
         -   class: "UIControl"
             name: "Gun"
             noInput: true
-            classes: "number-param-prototype"
             components:
                 LinearLayout:
                     orientation: "TopDown"
@@ -486,7 +517,6 @@ Controls:
         -   class: "UIControl"
             name: "Engine"
             noInput: true
-            classes: "number-param-prototype"
             components:
                 LinearLayout:
                     orientation: "TopDown"
@@ -529,7 +559,6 @@ Controls:
         -   class: "UIControl"
             name: "Turret"
             noInput: true
-            classes: "number-param-prototype"
             components:
                 LinearLayout:
                     orientation: "TopDown"
@@ -608,7 +637,6 @@ Controls:
         -   class: "UIControl"
             name: "Chassi"
             noInput: true
-            classes: "number-param-prototype"
             components:
                 LinearLayout:
                     orientation: "TopDown"

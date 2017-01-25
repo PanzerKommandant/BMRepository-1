@@ -43,7 +43,7 @@ layer0:
     size: [0.200000, 0.050000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/metal_plate"
+    sprite: "../../../../Data/Gfx/Particles/alpha/metal_plate"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000
@@ -86,7 +86,7 @@ layer1:
     size: [0.100000, 0.100000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/metal_plate"
+    sprite: "../../../../Data/Gfx/Particles/alpha/metal_plate"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -129,7 +129,7 @@ layer2:
     size: [0.250000, 0.050000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fragment_car_three"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_three"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -172,7 +172,7 @@ layer3:
     size: [0.250000, 0.150000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fragment_car_three"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fragment_car_three"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

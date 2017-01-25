@@ -1,0 +1,133 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+Controls:
+-   class: "UIStaticText"
+    name: "PrototypeStyle"
+    size: [200.000000, 50.000000]
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    textalign: ["LEFT", "VCENTER"]
+-   class: "UIStaticText"
+    name: "PrototypeExempleText"
+    size: [0.000000, 50.000000]
+    textcolorInheritType: "COLOR_IGNORE_PARENT"
+    textalign: ["LEFT", "VCENTER"]
+    text: "NEWS_NOTIFICATION_BATTLE_DETAILS_NOT_AVAILABLE"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+-   class: "UIControl"
+    name: "row"
+    size: [280.000000, 50.000000]
+    components:
+        LinearLayout:
+            padding: 40.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+    children:
+    -   prototype: "PrototypeStyle"
+        name: "PrototypeStyle"
+    -   prototype: "PrototypeExempleText"
+        name: "PrototypeExempleText"
+-   class: "UIControl"
+    name: "FontExemple"
+    size: [792.000000, 550.000000]
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfChildrenSum"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.054902, 0.113725, 0.101961, 1.000000]
+    children:
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header1"
+            text: "header1"
+        -   path: "PrototypeExempleText"
+            classes: "header1"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header2"
+            text: "header2"
+        -   path: "PrototypeExempleText"
+            classes: "header2"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header3"
+            text: "header3"
+        -   path: "PrototypeExempleText"
+            classes: "header3"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header3 text-color-blue"
+            text: "header3blue"
+        -   path: "PrototypeExempleText"
+            classes: "header3 text-color-blue"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header4"
+            text: "heared4"
+        -   path: "PrototypeExempleText"
+            classes: "header4"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "header5"
+            text: "header5"
+        -   path: "PrototypeExempleText"
+            classes: "header5"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "text1"
+            text: "text1"
+        -   path: "PrototypeExempleText"
+            classes: "text1"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "text2 text-color-blue"
+            text: "text2blue"
+        -   path: "PrototypeExempleText"
+            classes: "text2 text-color-blue"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "text2 text-color-red"
+            text: "text3Red"
+        -   path: "PrototypeExempleText"
+            classes: "text2 text-color-red"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "text2 text-color-gold"
+            text: "text4Gold"
+        -   path: "PrototypeExempleText"
+            classes: "text2 text-color-gold"
+    -   prototype: "row"
+        name: "row"
+        children:
+        -   path: "PrototypeStyle"
+            classes: "text2-small text-color-white"
+            text: "text5Small"
+        -   path: "PrototypeExempleText"
+            classes: "text2-small text-color-white"

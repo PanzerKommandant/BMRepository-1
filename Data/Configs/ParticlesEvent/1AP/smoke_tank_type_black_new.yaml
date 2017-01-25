@@ -63,7 +63,7 @@ layer0:
     spin: -90.000000
     spinOverLife: [0.000400, 1.000000, 1.000000, 0.000000]
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.000000
     type: "layer"
     velocity:
@@ -116,7 +116,7 @@ layer1:
     sizeVariation: [0.100000, 0.100000]
     spin: -180.000000
     spinVariation: 90.000000
-    sprite: "../../../Gfx/Particles/1AP/chamomile"
+    sprite: "../../../../Data/Gfx/Particles/1AP/chamomile"
     startTime: 0.000000
     type: "layer"
     velocity:
@@ -170,7 +170,7 @@ layer2:
     sizeVariation: [0.100000, 0.100000]
     spin: 180.000000
     spinVariation: 90.000000
-    sprite: "../../../Gfx/Particles/alpha/leaf_two"
+    sprite: "../../../../Data/Gfx/Particles/alpha/leaf_two"
     startTime: 0.000000
     type: "layer"
     velocity:
@@ -224,7 +224,7 @@ layer3:
     sizeVariation: [0.100000, 0.100000]
     spin: 180.000000
     spinVariation: 90.000000
-    sprite: "../../../Gfx/Particles/alpha/leaf"
+    sprite: "../../../../Data/Gfx/Particles/alpha/leaf"
     startTime: 0.000000
     type: "layer"
     velocity:

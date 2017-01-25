@@ -2185,14 +2185,14 @@
 					<speed>1050</speed>
 					<gravity>9.81</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>170 162</piercingPower>
+					<piercingPower>150 143</piercingPower>
 				</_85mm_UBR-365KBM100>
 				<_85mm_UBR-365PBM100>
 					<defaultPortion>0.0</defaultPortion>
 					<speed>1313</speed>
 					<gravity>9.81</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>216 187</piercingPower>
+					<piercingPower>200 173</piercingPower>
 				</_85mm_UBR-365PBM100>
 				<_85mm_UOF-365BM100>
 					<defaultPortion>0.20</defaultPortion>

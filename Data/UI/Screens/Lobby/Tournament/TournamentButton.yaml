@@ -1,23 +1,37 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-Controls:
--   prototype: "StyledButton/StyledButton"
+- "~res:/UI/Screens/Fonts.yaml"
+Prototypes:
+-   class: "UIControl"
     name: "Button"
+    size: [222.000000, 50.000000]
+    classes: "button"
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"
-        Anchor:
-            vCenterAnchorEnabled: true
+            verticalPolicy: "FixedSize"
+            verticalValue: 50.000000
         Background:
             drawType: "DRAW_TILED_MULTILAYER"
-            sprite: ""
             mask: "~res:/Gfx/UI/LobbyCommon/Button/white_mask"
             detail: "~res:/Gfx/UI/LobbyCommon/Button/white_detail"
             gradient: "~res:/Gfx/UI/LobbyCommon/Button/white_gradient"
             contour: "~res:/Gfx/UI/LobbyCommon/Button/white_contour"
             gradientMode: "Overlay"
+            leftRightStretchCap: 20.000000
     children:
-    -   path: "Caption"
-        text: "Button"
+    -   class: "UIStaticText"
+        name: "Caption"
+        size: [222.000000, 51.000000]
+        classes: "header3 text-color-white"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        text: "Header1"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true

@@ -1,0 +1,38 @@
+Header:
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Screens/Common/AnnotatedButton.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Screen"
+    size: [500.000000, 200.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+            dynamicPadding: true
+            dynamicSpacing: true
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.129412, 0.223529, 0.223529, 1.000000]
+    children:
+    -   prototype: "AnnotatedButton/AnnotatedButton"
+        name: "AnnotatedButton"
+        classes: "button button-color-white size-compacted"
+        children:
+        -   path: "Container/Icon"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    frame: 13
+    -   prototype: "AnnotatedButton/AnnotatedButton"
+        name: "AnnotatedButton"
+        classes: "button button-color-white size-stretched"
+        children:
+        -   path: "Container/Icon"
+            components:
+                Background:
+                    drawType: "DRAW_SCALE_TO_RECT"
+                    sprite: "~res:/Gfx/UI/Hangar/SidebarIcons"
+                    frame: 13

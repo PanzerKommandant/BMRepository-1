@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
@@ -13,6 +13,135 @@ ImportedPackages:
 - "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
 - "~res:/UI/Screens/Lobby/Training/TrainingRoomStyles.yaml"
 - "~res:/UI/Styles/Battle/BattleHUD.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "ActionsPopupButton"
+    size: [200.000000, 60.000000]
+    exclusiveInput: true
+    classes: "button"
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            rightAnchorEnabled: true
+    children:
+    -   class: "UIStaticText"
+        name: "Text"
+        size: [200.000000, 32.000000]
+        classes: "header3 text-color-white"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+-   class: "UIControl"
+    customClass: "UITrainingRoomQueue"
+    name: "TeamA"
+    size: [250.000000, 488.000000]
+    classes: "queue"
+    components:
+        SizePolicy:
+            verticalPolicy: "PercentOfParent"
+            verticalMax: 488.000000
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            topAnchorEnabled: true
+    children:
+    -   class: "UIList"
+        name: "TraineeList"
+        size: [250.000000, 448.000000]
+        classes: "panel-background"
+        components:
+            SizePolicy: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "Header"
+        position: [0.000000, 0.000000]
+        size: [250.000000, 40.000000]
+        classes: "text1"
+        text: "#training_rooms:CreationScreen/NameTeams/TeamA"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.274510, 0.368627, 0.431373, 1.000000]
+        children:
+        -   class: "UIControl"
+            name: "ListLine"
+            size: [250.000000, 1.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_FILL"
+                    color: [1.000000, 1.000000, 1.000000, 0.141176]
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        -   class: "UIControl"
+            name: "TeamMark"
+            size: [32.000000, 32.000000]
+            classes: "green-mark"
+            components:
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 4.000000
+                    vCenterAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/Training/image_clan"
+    -   class: "UIControl"
+        name: "Bottom"
+        size: [250.000000, 1.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Left"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "Right"
+        size: [1.000000, 488.000000]
+        noInput: true
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
 Controls:
 -   class: "UIControl"
     customClass: "UITrainingRoom"
@@ -253,9 +382,9 @@ Controls:
                     drawType: "DRAW_FILL"
                     color: [0.200000, 0.274510, 0.321569, 0.705882]
             children:
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "EditButton"
-                size: [70.000000, 70.000000]
+                size: [64.000000, 64.000000]
                 components:
                     Anchor:
                         hCenterAnchorEnabled: false
@@ -264,7 +393,7 @@ Controls:
                         vCenterAnchorEnabled: true
                 children:
                 -   path: "Caption"
-                    size: [70.000000, 70.000000]
+                    size: [64.000000, 64.000000]
                     components:
                         Background:
                             sprite: "~res:/Gfx/UI/Training/icon_edit"
@@ -279,9 +408,9 @@ Controls:
                 Background:
                     drawType: "DRAW_FILL"
             children:
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "ToChat"
-                size: [230.000000, 70.000000]
+                size: [230.000000, 64.000000]
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -293,9 +422,9 @@ Controls:
                 -   path: "Caption"
                     classes: "header3"
                     text: "#training_rooms:RoomScreen/BackToChat"
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "ToQueue"
-                size: [230.000000, 70.000000]
+                size: [230.000000, 64.000000]
                 visible: true
                 components:
                     Anchor:
@@ -368,8 +497,8 @@ Controls:
                 children:
                 -   prototype: "StyledSmallButton/StyledSmallButton"
                     name: "ButtonToTeamA"
-                    position: [0.000000, 12.000000]
-                    classes: "button buttonMarkType=left-green-icon"
+                    position: [0.000000, 15.000000]
+                    classes: "button button-color-gray buttonMarkType=left-green-icon"
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
@@ -400,13 +529,12 @@ Controls:
                     children:
                     -   prototype: "StyledSmallButton/StyledSmallButton"
                         name: "ButtonKick"
-                        size: [70.000000, 70.000000]
+                        size: [70.000000, 64.000000]
+                        classes: "button button-color-red"
                         components:
                             Anchor:
                                 hCenterAnchorEnabled: true
                                 vCenterAnchorEnabled: true
-                            Background:
-                                frame: 1
                         children:
                         -   path: "icon"
                             components:
@@ -418,8 +546,6 @@ Controls:
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
-                        Background:
-                            frame: 0
                     children:
                     -   path: "icon"
                         components:
@@ -428,7 +554,7 @@ Controls:
                                 frame: 4
                 -   prototype: "StyledSmallButton/StyledSmallButton"
                     name: "ButtonToTeamB"
-                    classes: "button buttonMarkType=right-red-icon"
+                    classes: "button button-color-gray buttonMarkType=right-red-icon"
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
@@ -439,25 +565,30 @@ Controls:
                                 sprite: "~res:/Gfx/UI/Training/icon_team_controls"
                 -   class: "UIControl"
                     name: "ObserverModeContainer"
-                    size: [260.000000, 70.000000]
+                    size: [260.000000, 64.000000]
                     components:
                         Anchor:
                             hCenterAnchorEnabled: true
                             vCenterAnchorEnabled: true
                     children:
-                    -   prototype: "StyledButton/Button"
+                    -   prototype: "StyledButton/StyledButton"
                         name: "ButtonObserverMode"
-                        classes: "button observer-button-both"
+                        classes: "button button-color-gray observer-button-both"
                         components:
                             LinearLayout:
                                 padding: 10.000000
                             SizePolicy:
                                 horizontalPolicy: "PercentOfParent"
                                 verticalPolicy: "PercentOfParent"
+                            Background:
+                                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                                gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                                contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
                         children:
                         -   path: "Caption"
                             position: [10.000000, 0.000000]
-                            size: [190.000000, 70.000000]
+                            size: [190.000000, 64.000000]
                             fitting: ["REDUCE"]
                             textalign: ["HCENTER", "VCENTER"]
                             text: "#training_rooms:RoomScreen/SpectatorButton"
@@ -479,7 +610,7 @@ Controls:
                                     sprite: "~res:/Gfx/UI/Training/icon_spectator_big"
                     -   class: "UIStaticText"
                         name: "Hint"
-                        size: [260.000000, 70.000000]
+                        size: [260.000000, 64.000000]
                         visible: true
                         classes: "header3 text-color-white"
                         multiline: "MULTILINE_ENABLED"
@@ -546,9 +677,9 @@ Controls:
                     Anchor:
                         rightAnchorEnabled: true
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "NotReady"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
@@ -556,9 +687,9 @@ Controls:
                     -   path: "Caption"
                         classes: "header3 text-color-white"
                         text: "#training_rooms:RoomScreen/NotReadyButton"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "SelectVehicle"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
@@ -567,29 +698,27 @@ Controls:
                         classes: "header3 text-color-white"
                         fitting: ["REDUCE"]
                         text: "#training_rooms:RoomScreen/ChooseButton"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "ReadyButton"
-                    size: [200.000000, 70.000000]
+                    size: [200.000000, 64.000000]
                     visible: true
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             vCenterAnchorEnabled: true
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         visible: true
                         classes: "header3 text-color-white"
                         text: "#training_rooms:RoomScreen/ReadyButton"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "ButtonApply"
                     visible: true
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             hCenterAnchorEnabled: true
                             vCenterAnchorEnabled: true
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "Apply"
@@ -645,25 +774,6 @@ Controls:
                         topAnchorEnabled: true
                         bottomAnchorEnabled: true
 -   class: "UIControl"
-    name: "ActionsPopupButton"
-    size: [200.000000, 60.000000]
-    exclusiveInput: true
-    classes: "button"
-    components:
-        Anchor:
-            leftAnchorEnabled: true
-            rightAnchorEnabled: true
-    children:
-    -   class: "UIStaticText"
-        name: "Text"
-        size: [200.000000, 32.000000]
-        classes: "header3 text-color-white"
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                vCenterAnchorEnabled: true
--   class: "UIControl"
     customClass: "UITrainingRoomTitle"
     name: "Title"
     size: [400.000000, 76.000000]
@@ -709,12 +819,15 @@ Controls:
             name: "Button"
             size: [45.000000, 45.000000]
             noInput: true
+            classes: "button-color-gray"
             components:
                 Anchor:
                     vCenterAnchorEnabled: true
                 Background:
-                    drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/ButtonPopUp"
+                    drawType: "DRAW_TILED_MULTILAYER"
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradientMode: "Overlay"
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                     leftRightStretchCap: 4.000000
                     topBottomStretchCap: 4.000000
@@ -795,115 +908,6 @@ Controls:
                             topAnchorEnabled: true
                         Background:
                             color: [0.188235, 0.254902, 0.298039, 1.000000]
--   class: "UIControl"
-    customClass: "UITrainingRoomQueue"
-    name: "TeamA"
-    size: [250.000000, 488.000000]
-    classes: "queue"
-    components:
-        SizePolicy:
-            verticalPolicy: "PercentOfParent"
-            verticalMax: 488.000000
-        Anchor:
-            leftAnchorEnabled: true
-            leftAnchor: 0.000000
-            topAnchorEnabled: true
-    children:
-    -   class: "UIList"
-        name: "TraineeList"
-        size: [250.000000, 448.000000]
-        classes: "panel-background"
-        components:
-            SizePolicy: {}
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-                bottomAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-    -   class: "UIStaticText"
-        name: "Header"
-        position: [0.000000, 0.000000]
-        size: [250.000000, 40.000000]
-        classes: "text1"
-        text: "#training_rooms:CreationScreen/NameTeams/TeamA"
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-                color: [0.274510, 0.368627, 0.431373, 1.000000]
-        children:
-        -   class: "UIControl"
-            name: "ListLine"
-            size: [250.000000, 1.000000]
-            noInput: true
-            components:
-                IgnoreLayout: {}
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    bottomAnchorEnabled: true
-                Background:
-                    drawType: "DRAW_FILL"
-                    color: [1.000000, 1.000000, 1.000000, 0.141176]
-                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-        -   class: "UIControl"
-            name: "TeamMark"
-            size: [32.000000, 32.000000]
-            classes: "green-mark"
-            components:
-                Anchor:
-                    rightAnchorEnabled: true
-                    rightAnchor: 4.000000
-                    vCenterAnchorEnabled: true
-                Background:
-                    sprite: "~res:/Gfx/UI/Training/image_clan"
-    -   class: "UIControl"
-        name: "Bottom"
-        size: [250.000000, 1.000000]
-        noInput: true
-        components:
-            IgnoreLayout: {}
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                bottomAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-                color: [1.000000, 1.000000, 1.000000, 0.141176]
-                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-    -   class: "UIControl"
-        name: "Left"
-        size: [1.000000, 488.000000]
-        noInput: true
-        components:
-            IgnoreLayout: {}
-            Anchor:
-                leftAnchorEnabled: true
-                topAnchorEnabled: true
-                bottomAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-                color: [1.000000, 1.000000, 1.000000, 0.141176]
-                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-    -   class: "UIControl"
-        name: "Right"
-        size: [1.000000, 488.000000]
-        noInput: true
-        components:
-            IgnoreLayout: {}
-            Anchor:
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-                bottomAnchorEnabled: true
-            Background:
-                drawType: "DRAW_FILL"
-                color: [1.000000, 1.000000, 1.000000, 0.141176]
-                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
 -   prototype: "TeamA"
     name: "TeamB"
     classes: "right-to-left queue"
@@ -958,7 +962,7 @@ Controls:
         components:
             Anchor:
                 bottomAnchorEnabled: false
-    -   prototype: "StyledButton/Button"
+    -   prototype: "StyledButton/StyledButton"
         name: "InviteButton"
         components:
             Anchor:
@@ -967,7 +971,7 @@ Controls:
                 rightAnchorEnabled: true
                 rightAnchor: -2.000000
                 topAnchorEnabled: true
-                topAnchor: 45.000000
+                topAnchor: 48.000000
         children:
         -   path: "Caption"
             text: "CHAT_INVITE_TO_ROOM"
@@ -1285,20 +1289,18 @@ Controls:
     children:
     -   prototype: "StyledButton/DefaultStyledButton"
         name: "BackButton"
-        size: [92.000000, 70.000000]
+        size: [84.000000, 68.000000]
         components:
             Anchor:
                 leftAnchorEnabled: true
+                leftAnchor: 2.000000
                 topAnchorEnabled: true
                 topAnchor: 2.000000
-            Background:
-                drawType: "DRAW_ALIGNED"
-                sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
         children:
         -   class: "UIControl"
             name: "icon"
             position: [0.000000, 0.000000]
-            size: [92.000000, 70.000000]
+            size: [84.000000, 68.000000]
             noInput: true
             components:
                 Anchor:

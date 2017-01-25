@@ -1,184 +1,10 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
-- "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
-- "~res:/UI/Screens/Common/StyledButton.yaml"
-StyleSheets:
--   selector: ".text-color-blue"
-    properties:
-        text-textColor: [0.619608, 0.713726, 0.800000, 1.000000]
--   selector: ".text1.vi"
-    properties:
-        text-font: "WarHeliosCondC_19"
-        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+- "~res:/UI/Screens/Login/RegionSelector.yaml"
+- "~res:/UI/Screens/Common/EULANotice.yaml"
 Controls:
--   class: "UIControl"
-    customClass: "UIRegionSelector"
-    name: "RegionSelector"
-    size: [287.000000, 70.000000]
-    components:
-        LinearLayout:
-            spacing: 10.000000
-            useRtl: true
-        SizePolicy:
-            horizontalPolicy: "PercentOfChildrenSum"
-    children:
-    -   class: "UIStaticText"
-        name: "Label"
-        size: [103.000000, 20.000000]
-        classes: "text1 text-color-blue"
-        textalign: ["LEFT", "VCENTER"]
-        textUseRtlAlign: "USE_BY_CONTENT"
-        text: "#login:footer/region"
-        components:
-            SizePolicy:
-                horizontalPolicy: "PercentOfContent"
-            Anchor:
-                vCenterAnchorEnabled: true
-    -   class: "UIStaticText"
-        name: "RegionName"
-        size: [60.000000, 20.000000]
-        classes: "text1 text-color-white"
-        textalign: ["LEFT", "VCENTER"]
-        textUseRtlAlign: "USE_BY_CONTENT"
-        text: "Россия"
-        components:
-            SizePolicy:
-                horizontalPolicy: "PercentOfContent"
-            Anchor:
-                vCenterAnchorEnabled: true
-    -   class: "UIControl"
-        name: "Spacer"
-        size: [10.000000, 10.000000]
-    -   prototype: "StyledButton/DefaultStyledButton"
-        name: "RegionButton"
-        size: [84.000000, 70.000000]
-        children:
-        -   class: "UIControl"
-            name: "RegionIcon"
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-                Background:
-                    sprite: "~res:/Gfx/UI/LobbyCommon/IconRegion"
-                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
--   class: "UIControl"
-    customClass: "UILoginTextField"
-    name: "LoginTextField"
-    size: [450.000000, 62.000000]
-    components:
-        SizePolicy:
-            verticalPolicy: "PercentOfMaxChild"
-    children:
-    -   class: "UIControl"
-        name: "VerticalBox"
-        size: [450.000000, 62.000000]
-        debugDraw: false
-        components:
-            LinearLayout:
-                orientation: "TopDown"
-                spacing: 16.000000
-            SizePolicy:
-                verticalPolicy: "PercentOfChildrenSum"
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-        children:
-        -   class: "UIControl"
-            name: "Background"
-            size: [450.000000, 62.000000]
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                Background:
-                    drawType: "DRAW_STRETCH_HORIZONTAL"
-                    sprite: "~res:/Gfx/UI/LobbyCommon/InputField"
-                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
-                    leftRightStretchCap: 5.000000
-            children:
-            -   class: "UITextField"
-                customClass: "UITextFieldWithHint"
-                name: "TextField"
-                debugDraw: false
-                text: ""
-                font: "WarHeliosCondC_25_tf"
-                autoCapitalizationType: "AUTO_CAPITALIZATION_TYPE_NONE"
-                autoCorrectionType: "AUTO_CORRECTION_TYPE_NO"
-                spellCheckingType: "SPELL_CHECKING_TYPE_NO"
-                keyboardType: "KEYBOARD_TYPE_EMAIL_ADDRESS"
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 10.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 45.000000
-                        topAnchorEnabled: true
-                        topAnchor: 5.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 5.000000
-                    Focus: {}
-                children:
-                -   class: "UIStaticText"
-                    name: "Hint"
-                    debugDraw: false
-                    textColor: [0.600000, 0.600000, 0.600000, 1.000000]
-                    fitting: ["REDUCE"]
-                    textalign: ["LEFT", "VCENTER"]
-                    text: ""
-                    font: "WarHeliosCondC_21"
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 5.000000
-                            rightAnchorEnabled: true
-                            topAnchorEnabled: true
-                            bottomAnchorEnabled: true
-            -   class: "UIControl"
-                name: "ClearButton"
-                size: [60.000000, 60.000000]
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: -5.000000
-                        vCenterAnchorEnabled: true
-                    Background:
-                        sprite: "~res:/Gfx/UI/LobbyCommon/InputClear"
-        -   class: "UIStaticText"
-            name: "ErrorText"
-            size: [450.000000, 26.000000]
-            visible: false
-            classes: "text-color-red"
-            textColor: [1.000000, 0.305882, 0.000000, 1.000000]
-            multiline: "MULTILINE_ENABLED"
-            text: ""
-            font: "WarHeliosCondC_21"
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-        -   class: "UIStaticText"
-            name: "NoteText"
-            size: [450.000000, 26.000000]
-            visible: false
-            classes: "text1 text-color-blue"
-            multiline: "MULTILINE_ENABLED"
-            text: ""
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
--   class: "UIControl"
-    customClass: "UIEULANotice"
-    name: "EULANotice"
-    size: [512.000000, 32.000000]
 -   class: "UIControl"
     name: "ScreenBlank"
     size: [1024.000000, 768.000000]
@@ -192,6 +18,7 @@ Controls:
     children:
     -   class: "UIControl"
         name: "Background"
+        position: [0.000000, 0.000000]
         components:
             Anchor:
                 leftAnchorEnabled: true
@@ -201,14 +28,14 @@ Controls:
         children:
         -   prototype: "StyledBackButton/StyledBackButton"
             name: "BackButton"
-        -   prototype: "RegionSelector"
+        -   prototype: "RegionSelector/RegionSelector"
             name: "RegionSelector"
             components:
                 Anchor:
                     hCenterAnchorEnabled: true
                     bottomAnchorEnabled: true
                     bottomAnchor: 37.000000
-        -   prototype: "EULANotice"
+        -   prototype: "EULANotice/EULANotice"
             name: "EULANotice"
             size: [512.000000, 37.000000]
             components:

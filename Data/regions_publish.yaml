@@ -199,6 +199,9 @@ ClanEmblems:
         7:
             Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-5.png"
             Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-5.png"
+        8:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-6.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-6.png"
         10001:
             Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10001.png"
             Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10001.png"

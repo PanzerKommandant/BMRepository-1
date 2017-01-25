@@ -1,11 +1,7 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-StyleSheets:
--   selector: ".header1"
-    properties:
-        text-font: "Font_18_bold"
 Controls:
 -   prototype: "StyledButton/StyledButton"
     name: "LocalButton"
@@ -20,6 +16,12 @@ Controls:
         Background:
             topBottomStretchCap: 5.000000
     children:
+    -   path: "Caption"
+        fitting: ["REDUCE"]
+        textalign: ["HCENTER", "VCENTER"]
+        components:
+            Anchor:
+                leftAnchor: 40.000000
     -   class: "UIControl"
         name: "icon"
         position: [5.000000, 4.000000]
@@ -33,6 +35,7 @@ Controls:
                 vCenterAnchor: 0.000000
             Background:
                 sprite: "~res:/Gfx/UI/DamagedModules/DamagedModulesDamageCrew"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
 -   class: "UIControl"
     customClass: "TankmenUIDialog"
     name: "DevFunctionTankmenDialog"
@@ -46,9 +49,12 @@ Controls:
     -   class: "UIControl"
         customClass: "DraggableDialog"
         name: "tankmenDialog"
-        position: [405.000000, 109.500000]
-        size: [214.000000, 515.000000]
+        position: [405.000000, 95.500000]
+        size: [214.000000, 543.000000]
         components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfMaxChild"
+                verticalPolicy: "PercentOfMaxChild"
             Anchor:
                 hCenterAnchorEnabled: true
                 hCenterAnchor: 0.000000
@@ -57,195 +63,183 @@ Controls:
         children:
         -   class: "UIControl"
             name: "Background"
-            size: [214.000000, 515.000000]
             noInput: true
             components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 0.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 0.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfMaxChild"
+                    verticalPolicy: "PercentOfMaxChild"
             children:
             -   class: "UIControl"
                 name: "Middle"
-                position: [0.000000, 42.000000]
-                size: [214.000000, 455.000000]
+                position: [0.000000, 0.000000]
+                size: [214.000000, 543.000000]
                 noInput: true
                 components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        verticalPolicy: "PercentOfChildrenSum"
                     Anchor:
                         leftAnchorEnabled: true
                         leftAnchor: 0.000000
                         rightAnchorEnabled: true
                         rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 42.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 18.000000
                     Background:
                         drawType: "DRAW_STRETCH_BOTH"
-                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableMiddle"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                         align: ["HCENTER", "TOP"]
                         leftRightStretchCap: 10.000000
-                        topBottomStretchCap: 2.000000
-            -   class: "UIControl"
-                name: "Top"
-                size: [214.000000, 42.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        topAnchorEnabled: true
-                        topAnchor: 0.000000
-                    Background:
-                        drawType: "DRAW_STRETCH_HORIZONTAL"
-                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableTop"
-                        align: ["HCENTER", "TOP"]
-                        leftRightStretchCap: 10.000000
-            -   class: "UIControl"
-                name: "Bottom"
-                position: [0.000000, 497.000000]
-                size: [214.000000, 18.000000]
-                noInput: true
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 0.000000
-                        rightAnchorEnabled: true
-                        rightAnchor: 0.000000
-                        bottomAnchorEnabled: true
-                        bottomAnchor: 0.000000
-                    Background:
-                        drawType: "DRAW_STRETCH_HORIZONTAL"
-                        sprite: "~res:/Gfx/UI/BattleScreenHUD/Menu/MenuTableBottom"
-                        align: ["HCENTER", "BOTTOM"]
-                        leftRightStretchCap: 10.000000
-        -   prototype: "StyledButton/StyledButton"
-            name: "cancelButton"
-            size: [190.000000, 49.000000]
-            visible: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 12.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 12.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 15.000000
-                Background:
-                    frame: 3
-                    topBottomStretchCap: 5.000000
-            children:
-            -   path: "Caption"
-                text: "Back to Game"
-        -   class: "UIStaticText"
-            name: "titleText"
-            position: [10.000000, 5.000000]
-            size: [194.000000, 30.000000]
-            noInput: true
-            classes: "header1 text-color-white"
-            textcolorInheritType: "COLOR_IGNORE_PARENT"
-            text: "Tankmen"
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 10.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 10.000000
-                    topAnchorEnabled: true
-                    topAnchor: 5.000000
-                Background:
-                    align: ["LEFT", "TOP"]
-        -   class: "UIControl"
-            name: "verticalBox"
-            position: [107.000000, 45.000000]
-            size: [196.000000, 400.000000]
-            pivot: [0.494898, 0.000000]
-            noInput: true
-            components:
-                LinearLayout:
-                    orientation: "TopDown"
-                    spacing: 1.000000
-                SizePolicy: {}
-                Anchor:
-                    topAnchorEnabled: true
-                    topAnchor: 45.000000
-            children:
-            -   prototype: "LocalButton"
-                name: "commanderButton"
+                        topBottomStretchCap: 10.000000
                 children:
-                -   path: "Caption"
-                    text: "Commander"
-                -   path: "icon"
+                -   class: "UIControl"
+                    name: "Top"
+                    size: [214.000000, 42.000000]
+                    noInput: true
                     components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
                         Background:
-                            frame: 9
-            -   prototype: "LocalButton"
-                name: "gunner1Button"
-                children:
-                -   path: "Caption"
-                    text: "Gunner"
-                -   path: "icon"
+                            drawType: "DRAW_TILED"
+                            sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackTop"
+                            align: ["HCENTER", "TOP"]
+                            leftRightStretchCap: 10.000000
+                    children:
+                    -   class: "UIStaticText"
+                        name: "titleText"
+                        position: [10.000000, 5.000000]
+                        size: [194.000000, 30.000000]
+                        noInput: true
+                        classes: "header3 text-color-white"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        text: "Tankmen"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 10.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 10.000000
+                                topAnchorEnabled: true
+                                topAnchor: 5.000000
+                            Background:
+                                align: ["LEFT", "TOP"]
+                -   class: "UIControl"
+                    name: "verticalBox"
+                    position: [107.000000, 42.000000]
+                    size: [196.000000, 501.000000]
+                    pivot: [0.494898, 0.000000]
+                    noInput: true
                     components:
-                        Background:
-                            frame: 8
-            -   prototype: "LocalButton"
-                name: "gunner2Button"
-                children:
-                -   path: "Caption"
-                    text: "Gunner"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 8
-            -   prototype: "LocalButton"
-                name: "driverButton"
-                children:
-                -   path: "Caption"
-                    text: "Driver"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 7
-            -   prototype: "LocalButton"
-                name: "radioman1Button"
-                children:
-                -   path: "Caption"
-                    text: "Radioman"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 6
-            -   prototype: "LocalButton"
-                name: "radioman2Button"
-                children:
-                -   path: "Caption"
-                    text: "Radioman"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 6
-            -   prototype: "LocalButton"
-                name: "loader1Button"
-                children:
-                -   path: "Caption"
-                    text: "Loader"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 5
-            -   prototype: "LocalButton"
-                name: "loader2Button"
-                children:
-                -   path: "Caption"
-                    text: "Loader"
-                -   path: "icon"
-                    components:
-                        Background:
-                            frame: 5
+                        LinearLayout:
+                            orientation: "TopDown"
+                            padding: 10.000000
+                            spacing: 5.000000
+                        SizePolicy:
+                            verticalPolicy: "PercentOfChildrenSum"
+                        Anchor:
+                            topAnchorEnabled: true
+                            topAnchor: 45.000000
+                    children:
+                    -   prototype: "LocalButton"
+                        name: "commanderButton"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Commander"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 9
+                    -   prototype: "LocalButton"
+                        name: "gunner1Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Gunner"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 8
+                    -   prototype: "LocalButton"
+                        name: "gunner2Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Gunner"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 8
+                    -   prototype: "LocalButton"
+                        name: "driverButton"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Driver"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 7
+                    -   prototype: "LocalButton"
+                        name: "radioman1Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Radioman"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 6
+                    -   prototype: "LocalButton"
+                        name: "radioman2Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Radioman"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 6
+                    -   prototype: "LocalButton"
+                        name: "loader1Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Loader"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 5
+                    -   prototype: "LocalButton"
+                        name: "loader2Button"
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Loader"
+                        -   path: "icon"
+                            components:
+                                Background:
+                                    frame: 5
+                    -   prototype: "StyledButton/StyledButton"
+                        name: "cancelButton"
+                        size: [192.000000, 49.000000]
+                        visible: true
+                        classes: "button button-color-orange"
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                leftAnchor: 2.000000
+                                rightAnchorEnabled: true
+                                rightAnchor: 2.000000
+                                bottomAnchorEnabled: true
+                                bottomAnchor: 15.000000
+                            Background:
+                                topBottomStretchCap: 5.000000
+                        children:
+                        -   path: "Caption"
+                            fitting: ["REDUCE"]
+                            text: "Back to Game"

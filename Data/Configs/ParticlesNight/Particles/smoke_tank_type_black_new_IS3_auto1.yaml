@@ -44,7 +44,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [0.800000, 0.200000]
-    sprite: "../../../Gfx/Particles/alpha/electricity4"
+    sprite: "../../../../Data/Gfx/Particles/alpha/electricity4"
     startTime: 0.050000
     type: "layer"
     velocityOverLife: [0.000000, 1.000000, 1.000000, -1.000000]

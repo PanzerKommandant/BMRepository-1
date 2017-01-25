@@ -1,0 +1,59 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Shop/ShopItemCell.yaml"
+- "~res:/UI/Screens/Lobby/Shop/BoosterPreview.yaml"
+StyleSheets:
+-   selector: ".selected #Selection"
+    properties:
+        visible: true
+-   selector: "#Selection"
+    properties:
+        visible: false
+Controls:
+-   prototype: "ShopItemCell/ItemCell"
+    name: "ItemCell"
+    components:
+        Anchor:
+            vCenterAnchorEnabled: true
+    children:
+    -   path: "ImageHolder"
+        size: [230.000000, 263.000000]
+        clip: true
+        components:
+            Background:
+                drawType: "DRAW_ALIGNED"
+    -   path: "priceLabel"
+        components:
+            LinearLayout:
+                spacing: 10.000000
+        children: []
+    -   path: "priceLabel/imageGold"
+        size: [24.000000, 42.000000]
+        noInput: true
+    -   path: "description"
+        fitting: ["REDUCE"]
+    -   path: "pricesRegularSale"
+        visible: false
+        children: []
+    -   path: "pricesRegularSale/regularPriceText/strike"
+        visible: false
+    -   path: "RibbonNew"
+        visible: false
+    -   path: "RibbonHot"
+        visible: false
+    -   path: "Sale"
+        visible: false
+        children: []
+    -   path: "ExpireTimer"
+        visible: false
+        children: []
+    -   path: "VehicleInfo"
+        visible: false
+        children: []
+    -   class: "UIStaticText"
+        name: "BoostersNumber"
+        position: [71.000000, 250.000000]
+        size: [168.000000, 53.000000]
+        classes: "header0"
+        textalign: ["RIGHT", "BOTTOM"]

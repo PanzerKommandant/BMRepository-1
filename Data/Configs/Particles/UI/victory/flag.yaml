@@ -35,6 +35,6 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [25.000000, 25.000000]
-    sprite: "../../../../Gfx/Particles/flag/flag"
+    sprite: "../../../../../Data/Gfx/Particles/flag/flag"
     startTime: 0.000000
     type: "layer"

@@ -6,6 +6,7 @@
 		<_85mm_Twin_X-Barrel_mod1>4</_85mm_Twin_X-Barrel_mod1>
 		<_90mm_Phantom>5</_90mm_Phantom>
 		<_90mm_Gun_MMP80>6</_90mm_Gun_MMP80>
+		<_122mm-D25_SA>7</_122mm-D25_SA>
 	</ids>
 	<shared>
 		<_75mm_L56_5_kan_Strv_74>
@@ -342,5 +343,59 @@
 				</_90mm_HE_SB80L>
 			</shots>
 		</_90mm_Gun_MMP80>
+		<_122mm-D25_SA>
+			<userString>#other_vehicles:_122mm_D-25CA</userString>
+			<description>#other_vehicles:_122mm_D-25CA</description>
+			<tags/>
+			<level>8</level>
+			<price>135000</price>
+			<notInShop>true</notInShop>
+			<impulse>0.62</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.62</amplitude>
+				<backoffTime>0.1</backoffTime>
+				<returnTime>0.58</returnTime>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<pitchLimits>-25 6</pitchLimits>
+			<rotationSpeed>26.25</rotationSpeed>
+			<reloadTime>12.34285714285710</reloadTime>
+			<maxAmmo>24</maxAmmo>
+			<aimingTime>3.42857142857143</aimingTime>
+			<weight>2590</weight>
+			<maxHealth>192</maxHealth>
+			<maxRegenHealth>96</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<shotDispersionRadius>0.45714285714286</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>0.16</turretRotation>
+				<afterShot>4.0</afterShot>
+				<whileGunDamaged>2.0</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_122mm_Type_57>
+					<defaultPortion>0.60</defaultPortion>
+					<speed>800</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>175 152</piercingPower>
+				</_122mm_Type_57>
+				<_122mm_Type_64>
+					<defaultPortion>0.0</defaultPortion>
+					<speed>1000</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>217 204</piercingPower>
+				</_122mm_Type_64>
+				<_122mm_Type_68>
+					<defaultPortion>0.40</defaultPortion>
+					<speed>800</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>64 64</piercingPower>
+				</_122mm_Type_68>
+			</shots>
+		</_122mm-D25_SA>
 	</shared>
 </root>

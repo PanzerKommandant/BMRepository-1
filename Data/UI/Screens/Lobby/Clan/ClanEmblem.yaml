@@ -1,0 +1,77 @@
+Header:
+    version: "5"
+Controls:
+-   class: "UIControl"
+    customClass: "UIClanEmblemView"
+    name: "ClanEmblem"
+    noInput: true
+    components:
+        Background:
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    children:
+    -   class: "UIControl"
+        name: "BorderTop"
+        position: [-1.000000, -1.000000]
+        size: [2.000000, 1.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderBottom"
+        size: [2.000000, 1.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderLeft"
+        size: [1.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: -1.000000
+                rightAnchorEnabled: false
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "BorderRight"
+        size: [1.000000, 2.000000]
+        noInput: true
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: -1.000000
+                topAnchorEnabled: true
+                topAnchor: -1.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: -1.000000
+            Background:
+                drawType: "DRAW_FILL"
+                color: [0.313726, 0.384314, 0.423529, 1.000000]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

@@ -61,11 +61,10 @@ Controls:
                 text: "Close"
         -   prototype: "StyledButton/StyledButton"
             name: "btnBuy"
+            classes: "button button-color-green"
             components:
                 Anchor:
                     vCenterAnchorEnabled: true
-                Background:
-                    frame: 2
             children:
             -   path: "Caption"
                 text: "Purchase"

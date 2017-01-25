@@ -44,7 +44,7 @@ layer0:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../../../Gfx/Particles/UI/fog"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

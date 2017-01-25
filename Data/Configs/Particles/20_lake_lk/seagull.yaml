@@ -36,7 +36,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 0.700000]
-    sprite: "../../../Gfx/Particles/20_lake_lk/seagull"
+    sprite: "../../../../Data/Gfx/Particles/20_lake_lk/seagull"
     startTime: 0.000000
     type: "layer"
     velocity: -6.000000

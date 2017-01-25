@@ -118,7 +118,7 @@ Controls:
                 font: "WarHeliosCondC_19"
             -   prototype: "StyledButton/StyledButton"
                 name: "SpeedUpButton"
-                classes: "button"
+                classes: "button button-color-green"
                 components:
                     Anchor:
                         enabled: true

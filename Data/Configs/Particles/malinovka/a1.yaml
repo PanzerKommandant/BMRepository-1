@@ -34,7 +34,7 @@ layer0:
     scaleVelocityBase: 1.0000
     scaleVelocityFactor: 0.0000
     size: [2.0000, 1.0000]
-    sprite: "../../../Gfx/Particles/malinovka/foto"
+    sprite: "../../../../Data/Gfx/Particles/malinovka/foto"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

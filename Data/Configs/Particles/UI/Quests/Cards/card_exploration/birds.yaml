@@ -39,7 +39,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [3.500000, 3.500000]
-    sprite: "../../../../../../Gfx/Particles/UI/birds_pigeon"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/birds_pigeon"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

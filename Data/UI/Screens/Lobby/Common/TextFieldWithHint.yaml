@@ -1,5 +1,7 @@
 Header:
-    version: "2"
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
 Controls:
 -   class: "UIControl"
     name: "TextFieldWithHint"
@@ -16,7 +18,6 @@ Controls:
         name: "TextField"
         size: [370.000000, 40.000000]
         font: "WarHeliosCondC_19"
-        textalign: ["LEFT", "VCENTER"]
         maxLength: 25
         returnKeyType: "RETURN_KEY_SEARCH"
         components:
@@ -31,16 +32,13 @@ Controls:
                 bottomAnchor: 5.000000
             Focus: {}
             Background:
-                drawType: "DRAW_ALIGNED"
-                sprite: "~res:/Gfx/UI/LobbyCommon/textfield_back"
                 leftRightStretchCap: 4.000000
                 topBottomStretchCap: 4.000000
         children:
         -   class: "UIStaticText"
             name: "Hint"
-            textColor: [0.647059, 0.725490, 0.800000, 1.000000]
+            classes: "text2 text-color-blue"
             textalign: ["HCENTER", "VCENTER"]
-            font: "WarHeliosCondC_19"
             components:
                 Anchor:
                     leftAnchorEnabled: true

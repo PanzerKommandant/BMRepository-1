@@ -1,9 +1,9 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common.yaml"
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "TeamsListContainer"
     size: [550.000000, 598.000000]
@@ -40,7 +40,7 @@ Controls:
             name: "Players"
             size: [120.000000, 50.000000]
             classes: "text1 text-color-blue"
-            textalign: ["RIGHT", "VCENTER"]
+            textalign: ["HCENTER", "VCENTER"]
             textMargins: [0.000000, 0.000000, 10.000000, 0.000000]
             text: "tournaments/TeamScreen/Table/Members"
     -   class: "UIControl"

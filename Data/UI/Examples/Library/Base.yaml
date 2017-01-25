@@ -1,0 +1,65 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Common/Settings/SettingsCommon.yaml"
+- "~res:/UI/Screens/Common/Spinner.yaml"
+- "~res:/UI/Screens/Common/Switch.yaml"
+- "~res:/UI/Screens/Common/Selection.yaml"
+- "~res:/UI/Screens/Common/UnreadIcon.yaml"
+- "~res:/UI/Screens/Lobby/Common/HeaderWithLines.yaml"
+Controls:
+-   class: "UIControl"
+    name: "Control"
+    size: [32.000000, 32.000000]
+    noInput: true
+-   prototype: "SettingsCommon/Slider"
+    name: "Slider"
+-   prototype: "Switch/Switch"
+    name: "Switch"
+-   prototype: "Spinner/Spinner"
+    name: "Spinner"
+    children:
+    -   path: "content/spinnerText"
+        text: "Text"
+-   prototype: "UnreadIcon/UnreadIcon"
+    name: "BadgeBigRed"
+    size: [32.000000, 32.000000]
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -4.000000
+            topAnchorEnabled: true
+            topAnchor: -4.000000
+-   prototype: "UnreadIcon/UnreadIcon"
+    name: "badgeSmallRed"
+    size: [16.000000, 16.000000]
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -2.000000
+            topAnchorEnabled: true
+            topAnchor: -2.000000
+        Background:
+            drawType: "DRAW_STRETCH_BOTH"
+-   prototype: "HeaderWithLines/HeaderWithLines"
+    name: "HeaderWithLines"
+-   prototype: "UnreadIcon/UnreadIcon"
+    name: "TournamentBadge"
+    size: [32.000000, 32.000000]
+    classes: "header3 bg-color=tournament-unread-bg"
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -4.000000
+            topAnchorEnabled: true
+            topAnchor: -4.000000
+-   prototype: "UnreadIcon/UnreadIcon"
+    name: "SquadBadge"
+    size: [32.000000, 32.000000]
+    classes: "header3 bg-color=squad-unread-bg"
+    components:
+        Anchor:
+            rightAnchorEnabled: true
+            rightAnchor: -4.000000
+            topAnchorEnabled: true
+            topAnchor: -4.000000

@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/uk-GB71_AT_15A.sc2</collisionMesh>
 		<exclusionMask>Camouflages/uk/CamouflageMasks/GB71_AT_15A_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/GB_AT_15A</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>
@@ -53,7 +54,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>147.587433</turret_01>
+				<turret_01>140.104156</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

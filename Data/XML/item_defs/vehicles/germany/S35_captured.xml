@@ -10,6 +10,7 @@
 		<fireEffectPathAlive>FX/SmokeFire_tank_movement_new.sc2</fireEffectPathAlive>
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/germany-S35_captured.sc2</collisionMesh>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/Ger_Pz_S35</shopIconPath>
 	</blitz>
 	<crew>
 		<commander>gunner

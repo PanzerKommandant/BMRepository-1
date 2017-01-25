@@ -1,5 +1,5 @@
 Header:
-    version: "1"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
 Controls:
@@ -38,7 +38,7 @@ Controls:
                 text: "#battle_results:DetailsPage/StatisticPage"
         -   prototype: "LobbyCommon/TabControl"
             name: "EfficiencyTab"
-            position: [122.000000, 0.000000]
+            position: [256.500000, 0.000000]
             tag: 1
             children:
             -   path: "selected"
@@ -47,7 +47,7 @@ Controls:
                 text: "#battle_results:DetailsPage/EfficiencyPage"
         -   prototype: "LobbyCommon/TabControl"
             name: "CreditsTab"
-            position: [244.000000, 0.000000]
+            position: [513.000000, 0.000000]
             tag: 2
             children:
             -   path: "selected"
@@ -56,7 +56,7 @@ Controls:
                 text: "#battle_results:DetailsPage/CreditsPage"
         -   prototype: "LobbyCommon/TabControl"
             name: "ExperienceTab"
-            position: [366.000000, 0.000000]
+            position: [769.500000, 0.000000]
             tag: 3
             children:
             -   path: "selected"

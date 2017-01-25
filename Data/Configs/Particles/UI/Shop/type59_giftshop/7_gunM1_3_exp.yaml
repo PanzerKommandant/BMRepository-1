@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.001000
     size: [16.000000, 16.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [13.000000, 13.000000]]
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/exp_anim_L"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 350.000000
@@ -76,7 +76,7 @@ layer1:
     scaleVelocityFactor: 0.001000
     size: [16.000000, 16.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [13.000000, 13.000000]]
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/gun"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/gun"
     startTime: 0.000000
     type: "layer"
     velocity: 400.000000
@@ -112,7 +112,7 @@ layer2:
     scaleVelocityFactor: 0.001000
     size: [16.000000, 16.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [13.000000, 13.000000]]
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/exp_anim_L"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 350.000000
@@ -150,7 +150,7 @@ layer3:
     scaleVelocityFactor: 0.001000
     size: [35.000000, 35.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [13.000000, 13.000000]]
-    sprite: "../../../../../Gfx/Particles/UI/Shop/type59_giftshop/o2_expGlowB"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Shop/type59_giftshop/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
     velocity: 350.000000

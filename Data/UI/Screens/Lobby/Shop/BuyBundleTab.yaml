@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Shop/BaseIAPTab.yaml"
 - "~res:/UI/Screens/Lobby/Shop/ShopItemCell.yaml"
@@ -164,3 +164,6 @@ Controls:
         position: [0.000000, 0.000000]
 -   prototype: "ShopItemCell/ItemCell"
     name: "ItemCell"
+    children:
+    -   path: "description"
+        fitting: ["REDUCE"]

@@ -193,60 +193,6 @@ keyedArchive:
                         float: 1.0000
                     value: 
                         int32: 200
-    Free Camera: 
-        keyedArchive: 
-            Look at gunpoint in sniper:
-                keyedArchive: 
-                    value: 
-                        bool: true
-            Return after: 
-                keyedArchive: 
-                    max: 
-                        float: 5.0000
-                    min: 
-                        float: 0.0000
-                    value: 
-                        float: 0.0000
-            Return camera to gun:
-                keyedArchive: 
-                    value: 
-                        bool: true
-            Return gun to camera:
-                keyedArchive: 
-                    value: 
-                        bool: false
-            Return gun to camera speed: 
-                keyedArchive: 
-                    max: 
-                        float: 10.0000
-                    min: 
-                        float: 0.0000
-                    value: 
-                        float: 1.0000
-            Return camera to gun speed: 
-                keyedArchive: 
-                    max: 
-                        float: 1000.0000
-                    min: 
-                        float: 10.0000
-                    value: 
-                        float: 100.0000
-            Return camera to gun in const time:
-                keyedArchive: 
-                    value: 
-                        bool: true
-            Show freecam zone:
-                keyedArchive: 
-                    value: 
-                        bool: true
-            Touch zone alpha: 
-                keyedArchive: 
-                    max: 
-                        float: 1.0000
-                    min: 
-                        float: 0.0000
-                    value: 
-                        float: 0.3000
     HUD: 
         keyedArchive: 
             Chat commands text margin up:
@@ -517,6 +463,60 @@ keyedArchive:
                 keyedArchive: 
                     value: 
                         bool: false
+    Debug and profiler:
+        keyedArchive:
+            Enable Profiler: 
+                keyedArchive: 
+                    value: 
+                        bool: false
+            Frame Time Threshold:
+                keyedArchive:
+                    min:
+                        float: 30
+                    max:
+                        float: 100
+                    value:
+                        float: 40
+            Profiler dump level: 
+                keyedArchive: 
+                    count: 
+                        int32: 4
+                    selected: 
+                        int32: 0
+                    type: 
+                        string: "combo"
+                    value0: 
+                        string: "None"
+                    value1: 
+                        string: ">90ms"
+                    value2: 
+                        string: ">50ms"
+                    value3: 
+                        string: "All"
+            Show debug popup:
+                keyedArchive:
+                    value:
+                        bool: false
+            Show dev console button:
+                keyedArchive:
+                    value:
+                        bool: true
+            Show FPS:
+                keyedArchive:
+                    value:
+                        bool: false
+            Show memory usage:
+                keyedArchive:
+                    value:
+                        bool: false
+            Show number of controls on screen:
+                keyedArchive:
+                    value:
+                        bool: false
+            Show profiler overlay button:
+                keyedArchive:
+                    value:
+                        bool: false
     View Scale:
         keyedArchive:
             Whole scale: 
@@ -658,10 +658,6 @@ keyedArchive:
                     value:
                         bool: false
             Joypad zone accepts camera input:
-                keyedArchive:
-                    value:
-                        bool: false
-            Show version details popup:
                 keyedArchive:
                     value:
                         bool: false
@@ -1283,10 +1279,6 @@ keyedArchive:
                 keyedArchive:
                     value: 
                         bool: false
-            Analogue:
-                keyedArchive:
-                    value: 
-                        bool: true
     Joypad dissected: 
         keyedArchive:
             Sector1 degr: 
@@ -1503,6 +1495,30 @@ keyedArchive:
                         float: 0.0000
                     value: 
                         float: 50.0000
+            Angular Speed modifier:
+                keyedArchive: 
+                    max: 
+                        float: 50.0000
+                    min: 
+                        float: 0.0000
+                    value: 
+                        float: 9.0000
+            Angular Speed modifier Precise:
+                keyedArchive: 
+                    max: 
+                        float: 50.0000
+                    min: 
+                        float: 0.0000
+                    value: 
+                        float: 30.0000
+            Instant Move: 
+                keyedArchive: 
+                    value: 
+                        bool: false
+            Integrate Camera: 
+                keyedArchive: 
+                    value: 
+                        bool: false
     Enemy Markers:
         keyedArchive:                      
             Enable Enemy Markers:
@@ -1834,6 +1850,62 @@ keyedArchive:
                     value:
                         float: 0
             camo target z:
+                keyedArchive:
+                    min:
+                        float: -40
+                    max:
+                        float: 40
+                    value:
+                        float: 1.0
+            showcase radius:
+                keyedArchive:
+                    min:
+                        float: 1.0
+                    max:
+                        float: 50.0
+                    value:
+                        float: 9.0
+            showcase yaw:
+                keyedArchive:
+                    min:
+                        float: -359.0
+                    max:
+                        float: 359.0
+                    value:
+                        float: -60
+            showcase pitch:
+                keyedArchive:
+                    min:
+                        float: 20
+                    max:
+                        float: 90
+                    value:
+                        float: 25
+            showcase fov:
+                keyedArchive:
+                    min:
+                        float: 10
+                    max:
+                        float: 120
+                    value:
+                        float: 64
+            showcase target x:
+                keyedArchive:
+                    min:
+                        float: -40
+                    max:
+                        float: 40
+                    value:
+                        float: 0
+            showcase target y:
+                keyedArchive:
+                    min:
+                        float: -40
+                    max:
+                        float: 40
+                    value:
+                        float: 0
+            showcase target z:
                 keyedArchive:
                     min:
                         float: -40

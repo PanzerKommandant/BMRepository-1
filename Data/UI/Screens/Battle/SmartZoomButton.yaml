@@ -1,0 +1,19 @@
+Header:
+    version: "5"
+StyleSheets:
+-   selector: ".zoom-button"
+    properties:
+        exclusiveInput: true
+-   selector: ".zoom-button:disabled"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
+Controls:
+-   class: "UIButton"
+    customClass: "UITransparentButton"
+    name: "zoomButton"
+    size: [72.000000, 72.000000]
+    classes: "zoom-button"
+    components:
+        Normal:
+            drawType: "DRAW_SCALE_TO_RECT"
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/SmartZoomButton"

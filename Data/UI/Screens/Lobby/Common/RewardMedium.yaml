@@ -1,0 +1,123 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Common/Reward/Grade.yaml"
+StyleSheets:
+-   selector: ".reward-vehicle #Back #Icon"
+    properties:
+        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+-   selector: ".reward-gold #Back #Icon"
+    properties:
+        bg-frame: 0
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-unlock #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_cam.txt"
+-   selector: ".reward-free-xp #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-premium #Back #Icon"
+    properties:
+        bg-frame: 2
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge.psd"
+-   selector: ".reward-xp #Back #Icon"
+    properties:
+        bg-frame: 3
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-crew-xp #Back #Icon"
+    properties:
+        bg-frame: 4
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-credit #Back #Icon"
+    properties:
+        bg-frame: 1
+        bg-sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsHuge"
+-   selector: ".reward-stuff #Back #Icon"
+    properties: {}
+-   selector: ".reward-slot #Back #Icon"
+    properties: {}
+-   selector: ".common #Back"
+    properties:
+        bg-frame: 0
+-   selector: ".rare #Back"
+    properties:
+        bg-frame: 3
+-   selector: ".unique #Back"
+    properties:
+        bg-frame: 1
+-   selector: ".legendary #Back"
+    properties:
+        bg-frame: 2
+-   selector: ".reward ? #Grade"
+    properties:
+        visible: false
+-   selector: ".reward-stuff #Back #Grade"
+    properties:
+        visible: true
+Prototypes:
+-   class: "UIControl"
+    name: "NewReward"
+    size: [55.000000, 50.000000]
+    noInput: true
+    classes: "reward reward-type=reward-credit"
+    components:
+        LinearLayout:
+            spacing: 5.000000
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfMaxChild"
+    children:
+    -   class: "UIStaticText"
+        name: "Value"
+        classes: "header1"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                vCenterAnchorEnabled: true
+                vCenterAnchor: -1.000000
+    -   class: "UIControl"
+        name: "Back"
+        position: [5.000000, 0.000000]
+        size: [50.000000, 50.000000]
+        noInput: true
+        components:
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                sprite: "~res:/Gfx/UI/Quests/items_reward_back"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "Grade"
+            size: [38.000000, 38.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            classes: "grade"
+            components:
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                    sprite: "~res:/Gfx/UI/Storage/Items_back_circle"
+        -   class: "UIControl"
+            name: "Icon"
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    horizontalValue: 65.000000
+                    verticalPolicy: "PercentOfParent"
+                    verticalValue: 65.000000
+                Anchor:
+                    hCenterAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_SCALE_PROPORTIONAL"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

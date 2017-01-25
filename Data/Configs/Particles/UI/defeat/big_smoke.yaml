@@ -40,7 +40,7 @@ layer0:
     size: [300.000000, 300.000000]
     spin: 5.000000
     spinVariation: 10.000000
-    sprite: "../../../../Gfx/Particles/UI/Fx_DustSpray_two"
+    sprite: "../../../../../Data/Gfx/Particles/UI/Fx_DustSpray_two"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000

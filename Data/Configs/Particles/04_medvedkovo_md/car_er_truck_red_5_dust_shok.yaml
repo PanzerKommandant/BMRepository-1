@@ -1,0 +1,54 @@
+emitter:
+    size: [0.000000, 0.000000, 0.000000]
+    name: "dust_shok"
+    type: "shockwave"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 60.000000
+    emissionRange: 180.000000
+    emissionVector: [0.100000, -0.010000, 2.000000]
+    radius: 0.500000
+layer0:
+    name: "dust_shok"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
+    type: "layer"
+    lifeVariation: 0.500000
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 2
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 180.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 1.000000
+    number: 300.000000
+    spinVariation: 10.000000
+    size: [0.500000, 0.500000]
+    sizeVariation: [0.250000, 0.250000]
+    velocityVariation: 1.000000
+    sizeOverLifeXY: [0.000000, [2.000000, 2.000000], 0.542100, [3.217500, 3.217500], 1.000000, [6.000000, 6.000000]]
+    velocity: 3.000000
+    velocityOverLife: [0.000000, 3.000000, 0.052500, 0.587800, 0.434800, 0.450000, 0.906400, 0.497700]
+    spin: 20.000000
+    randomSpinDirection: false
+    angleVariation: 180.000000
+    alphaOverLife: [0.000000, 0.000000, 0.050000, 1.000000, 0.571900, 0.259900, 0.990000, 0.000000]
+    colorOverLife: [202.000000, 206.000000, 238.000000, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 16.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.060000
+    endTime: 0.200000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 6.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [0, 1, 0, 0]
+    effectFormat: 1

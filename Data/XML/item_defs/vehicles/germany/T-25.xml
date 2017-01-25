@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/germany-T-25.sc2</collisionMesh>
 		<exclusionMask>Camouflages/germany/CamouflageMasks/T-25_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/Ger_T-25</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>

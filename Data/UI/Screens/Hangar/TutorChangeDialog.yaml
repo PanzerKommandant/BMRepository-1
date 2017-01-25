@@ -1,6 +1,7 @@
 Header:
-    version: "0"
-ImportedPackages: []
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "Content"
@@ -10,96 +11,74 @@ Controls:
         name: "Dialog"
         position: [-225.000000, -135.000000]
         size: [450.000000, 270.000000]
-        hcenterAlignEnabled: true
-        hcenterAlign: 0.000000
-        vcenterAlignEnabled: true
-        vcenterAlign: 0.000000
         components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                hCenterAnchor: 0.000000
+                vCenterAnchorEnabled: true
+                vCenterAnchor: 0.000000
             Background:
                 drawType: "DRAW_STRETCH_BOTH"
-                sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                 color: [1.000000, 1.000000, 1.000000, 1.000000]
                 leftRightStretchCap: 10.000000
                 topBottomStretchCap: 10.000000
         children:
-        -   class: "UIButton"
+        -   prototype: "StyledButton/StyledButton"
             name: "CancelButton"
-            position: [15.000000, 206.000000]
             size: [192.000000, 49.000000]
-            leftAlignEnabled: true
-            leftAlign: 15.000000
-            bottomAlignEnabled: true
-            bottomAlign: 15.000000
             components:
-                Normal:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 0
-                    spriteModification: 0
-                PressedInside:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 1
-                    spriteModification: 0
-                Disabled:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 2
-                    spriteModification: 0
-                Selected:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 0
-                    spriteModification: 0
-                NormalText:
-                    text: "Cancel"
-                    font: "Font_18_bold"
-                    textColor: [0.796100, 0.796100, 0.800000, 1.000000]
-                    textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    shadowoffset: [0.000000, 1.000000]
-                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
-        -   class: "UIButton"
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 15.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 15.000000
+                Background:
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradient: "~res:/Gfx/UI/CommonUIElements/Button/gray_gradient"
+                    contour: "~res:/Gfx/UI/CommonUIElements/Button/gray_contour"
+            children:
+            -   path: "Caption"
+                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                fitting: ["REDUCE"]
+                text: "Cancel"
+                font: "WarHeliosCondC_Bold_21"
+        -   prototype: "StyledButton/StyledButton"
             name: "OkButton"
-            position: [243.000000, 206.000000]
             size: [192.000000, 49.000000]
-            rightAlignEnabled: true
-            rightAlign: 15.000000
-            bottomAlignEnabled: true
-            bottomAlign: 15.000000
+            classes: "button"
             components:
-                Normal:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 0
-                    spriteModification: 0
-                PressedInside:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 1
-                    spriteModification: 0
-                Disabled:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 2
-                    spriteModification: 0
-                Selected:
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
-                    frame: 0
-                    spriteModification: 0
-                NormalText:
-                    text: "OK"
-                    font: "Font_18_bold"
-                    textColor: [0.796100, 0.796100, 0.800000, 1.000000]
-                    textcolorInheritType: "COLOR_IGNORE_PARENT"
-                    shadowoffset: [0.000000, 1.000000]
-                    shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+                Anchor:
+                    rightAnchorEnabled: true
+                    rightAnchor: 15.000000
+                    bottomAnchorEnabled: true
+                    bottomAnchor: 15.000000
+                Background:
+                    mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                    detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                    gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient"
+                    contour: "~res:/Gfx/UI/CommonUIElements/Button/green_dark_contour"
+            children:
+            -   path: "Caption"
+                textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+                fitting: ["REDUCE"]
+                text: "OK"
+                font: "WarHeliosCondC_Bold_21"
         -   class: "UIControl"
             name: "TutorStep"
             position: [15.000000, 140.000000]
             size: [420.000000, 60.000000]
-            leftAlignEnabled: true
-            leftAlign: 15.000000
-            rightAlignEnabled: true
-            rightAlign: 15.000000
-            topAlignEnabled: true
-            topAlign: 140.000000
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 15.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 15.000000
+                    topAnchorEnabled: true
+                    topAnchor: 140.000000
                 Background:
                     drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/BottomLayer"
                     leftRightStretchCap: 5.000000
                     topBottomStretchCap: 5.000000
             children:
@@ -107,14 +86,15 @@ Controls:
                 name: "Slider"
                 position: [45.000000, 15.000000]
                 size: [330.000000, 30.000000]
-                bottomAlignEnabled: true
-                bottomAlign: 15.000000
-                hcenterAlignEnabled: true
-                hcenterAlign: 0.000000
                 minValue: 0.000000
                 maxValue: 100.000000
                 value: 50.000000
                 components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
                     Background:
                         sprite: "~res:/Gfx/UI/QueueScreen/SlideBar"
                     min:
@@ -140,14 +120,15 @@ Controls:
                 position: [365.000000, 15.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                rightAlignEnabled: true
-                rightAlign: 0.000000
-                bottomAlignEnabled: true
-                bottomAlign: 15.000000
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Max"
                 font: "Font_18_bold"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 components:
+                    Anchor:
+                        rightAnchorEnabled: true
+                        rightAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
                     Background:
                         align: ["LEFT", "TOP"]
             -   class: "UIStaticText"
@@ -155,14 +136,15 @@ Controls:
                 position: [0.000000, 15.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                leftAlignEnabled: true
-                leftAlign: 0.000000
-                bottomAlignEnabled: true
-                bottomAlign: 15.000000
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Min"
                 font: "Font_18_bold"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 15.000000
                     Background:
                         align: ["LEFT", "TOP"]
             -   class: "UIStaticText"
@@ -171,30 +153,32 @@ Controls:
                 size: [60.000000, 30.000000]
                 pivot: [0.000000, 1.000000]
                 noInput: true
-                hcenterAlignEnabled: true
-                hcenterAlign: 0.000000
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Curr"
                 font: "Font_18_bold"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
                 components:
+                    Anchor:
+                        hCenterAnchorEnabled: true
+                        hCenterAnchor: 0.000000
                     Background:
                         align: ["LEFT", "TOP"]
         -   class: "UIStaticText"
             name: "TitleText"
             size: [450.000000, 40.000000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 0.000000
-            rightAlignEnabled: true
-            rightAlign: 0.000000
-            topAlignEnabled: true
-            topAlign: 0.000000
-            text: "Change Tutor Step"
-            font: "Font_8D81019B"
             textcolorInheritType: "COLOR_IGNORE_PARENT"
             shadowoffset: [0.000000, 1.000000]
             shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+            text: "Change Tutor Step"
+            font: "Font_8D81019B"
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 0.000000
                 Background:
                     align: ["LEFT", "TOP"]
         -   class: "UIStaticText"
@@ -202,17 +186,18 @@ Controls:
             position: [0.000000, 40.000000]
             size: [450.000000, 70.000000]
             noInput: true
-            leftAlignEnabled: true
-            leftAlign: 0.000000
-            rightAlignEnabled: true
-            rightAlign: 0.000000
-            topAlignEnabled: true
-            topAlign: 40.000000
-            text: "Select active tutor step"
-            font: "Font_8D81019B"
             textcolorInheritType: "COLOR_IGNORE_PARENT"
             shadowoffset: [0.000000, 1.000000]
             shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
+            text: "Select active tutor step"
+            font: "Font_8D81019B"
             components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 0.000000
+                    rightAnchorEnabled: true
+                    rightAnchor: 0.000000
+                    topAnchorEnabled: true
+                    topAnchor: 40.000000
                 Background:
                     align: ["LEFT", "TOP"]

@@ -1,5 +1,5 @@
 1
-texture1.tex
+texture0.tex
 48 48
 1
-957 209 47 47 1 1 0 frame0
+1775 1948 47 47 1 1 0 frame0

@@ -36,7 +36,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [6.500000, 12.500000]
-    sprite: "../../Gfx/Particles/01_tutorial_tut/arrow_tut"
+    sprite: "../../../Data/Gfx/Particles/01_tutorial_tut/arrow_tut"
     startTime: 0.000000
     type: "layer"
     velocity: 0.800000

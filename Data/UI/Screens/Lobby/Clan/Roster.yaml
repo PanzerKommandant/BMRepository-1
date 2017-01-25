@@ -1,8 +1,7 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Styles/ButtonStyle.yaml"
@@ -162,7 +161,7 @@ Controls:
     children:
     -   prototype: "Common/PopUp"
         name: "Popup"
-        size: [320.000000, 256.000000]
+        size: [320.000000, 252.000000]
         pivot: [1.000000, 0.500000]
         components:
             SizePolicy:
@@ -180,7 +179,7 @@ Controls:
                     vCenterAnchorEnabled: true
         -   class: "UIControl"
             name: "VerticalBox"
-            size: [320.000000, 256.000000]
+            size: [320.000000, 252.000000]
             components:
                 LinearLayout:
                     orientation: "TopDown"
@@ -219,7 +218,7 @@ Controls:
                             bottomAnchorEnabled: true
             -   class: "UIControl"
                 name: "PromoteButton"
-                position: [0.000000, 64.000000]
+                position: [0.000000, 60.000000]
                 size: [320.000000, 64.000000]
                 components:
                     Anchor:
@@ -245,7 +244,7 @@ Controls:
                             bottomAnchorEnabled: true
             -   class: "UIControl"
                 name: "AbaseButton"
-                position: [0.000000, 128.000000]
+                position: [0.000000, 124.000000]
                 size: [320.000000, 64.000000]
                 components:
                     Anchor:
@@ -271,7 +270,7 @@ Controls:
                             bottomAnchorEnabled: true
             -   class: "UIControl"
                 name: "ExcludeButton"
-                position: [0.000000, 192.000000]
+                position: [0.000000, 188.000000]
                 size: [320.000000, 64.000000]
                 components:
                     Anchor:
@@ -304,11 +303,11 @@ Controls:
         components:
             Anchor:
                 rightAnchorEnabled: true
-                rightAnchor: 5.000000
+                rightAnchor: 6.000000
                 vCenterAnchorEnabled: true
         children:
         -   path: "Caption"
-            classes: "header1 hacked-font text-color-white"
+            classes: "header3 text-color-white"
             text: "#clans:StaffScreen/RecruitingButton"
 -   class: "UIControl"
     name: "CommanderActionsPopupButton"

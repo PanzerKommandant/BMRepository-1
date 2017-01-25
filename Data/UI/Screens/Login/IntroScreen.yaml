@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Common/AOGASControl.yaml"
@@ -46,13 +46,11 @@ Controls:
             children:
             -   prototype: "StyledButton/DefaultStyledButton"
                 name: "EntryButton"
-                size: [182.000000, 70.000000]
+                size: [176.000000, 64.000000]
                 components:
                     Anchor:
-                        leftAnchorEnabled: true
-                        leftAnchor: 3.000000
-                        topAnchorEnabled: true
-                        topAnchor: 2.000000
+                        hCenterAnchorEnabled: true
+                        vCenterAnchorEnabled: true
                 children:
                 -   class: "UIStaticText"
                     name: "Text"

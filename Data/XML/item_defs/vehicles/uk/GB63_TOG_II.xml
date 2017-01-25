@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/uk-GB63_TOG_II.sc2</collisionMesh>
 		<exclusionMask>Camouflages/uk/CamouflageMasks/GB63_TOG_II_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/GB_TOG_II</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>

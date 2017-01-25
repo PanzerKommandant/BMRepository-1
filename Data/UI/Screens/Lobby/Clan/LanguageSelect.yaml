@@ -2,7 +2,6 @@ Header:
     version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
@@ -321,7 +320,7 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "Cancel"
                     classes: "button button-color-gray"
                     components:
@@ -330,7 +329,7 @@ Controls:
                     children:
                     -   path: "Caption"
                         text: "#clans:CreationScreen/InsertDescription/Cancel"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "Submit"
                     classes: "button button-color-green"
                     components:

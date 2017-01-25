@@ -1,0 +1,62 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+Prototypes:
+-   class: "UIControl"
+    name: "HeaderWithLines"
+    size: [550.000000, 1.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            spacing: 10.000000
+        SizePolicy:
+            verticalPolicy: "PercentOfMaxChild"
+        Anchor:
+            hCenterAnchorEnabled: true
+    children:
+    -   class: "UIControl"
+        name: "LineLeft"
+        size: [265.000000, 1.000000]
+        noInput: true
+        classes: "panel-background"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 50.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 1.000000
+            Anchor:
+                leftAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "HeaderText"
+        size: [0.000000, 0.000000]
+        classes: "header3 text-color-white"
+        textcolorInheritType: "COLOR_MULTIPLY_ALPHA_ONLY"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "LineRight"
+        size: [265.000000, 1.000000]
+        noInput: true
+        classes: "panel-background"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 50.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 1.000000
+            Anchor:
+                rightAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"

@@ -5,11 +5,9 @@ ImportedPackages:
 Controls:
 -   prototype: "IconButton/IconButton"
     name: "StyledSmallButton"
-    size: [100.000000, 70.000000]
+    size: [80.000000, 64.000000]
     components:
         Background:
-            drawType: "DRAW_TILED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
             leftRightStretchCap: 10.000000
             topBottomStretchCap: 0.000000
             margins: [1.000000, 1.000000, 1.000000, 1.000000]

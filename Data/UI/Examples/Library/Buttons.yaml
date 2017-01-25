@@ -1,0 +1,62 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
+- "~res:/UI/Screens/Common/StyledMenuButton.yaml"
+- "~res:/UI/Screens/Common/AnnotatedButton.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentButton.yaml"
+- "~res:/UI/Screens/Common/IconButton.yaml"
+- "~res:/UI/Screens/Common/BattleButton.yaml"
+Controls:
+-   prototype: "StyledBackButton/StyledBackButton"
+    name: "BackButton"
+-   prototype: "StyledMenuButton/StyledMenuButton"
+    name: "MenuButton"
+    children:
+    -   path: "UnreadNews"
+        visible: false
+-   prototype: "AnnotatedButton/AnnotatedButton"
+    name: "AnnotatedButton"
+-   prototype: "StyledBackButton/StyledBackButton"
+    name: "BackButtonWithBadge"
+-   prototype: "IconButton/IconButton"
+    name: "ButtonWithIconSmall"
+    size: [80.000000, 64.000000]
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonGray"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonGreen"
+    classes: "button button-color-green"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonDarkGreen"
+    classes: "button button-color-green-dark"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonRed"
+    classes: "button button-color-red"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonOrange"
+    classes: "button button-color-orange"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "StyledButton/StyledButton"
+    name: "ButtonDarkOrange"
+    classes: "button button-color-orange-dark"
+    children:
+    -   path: "Caption"
+        text: "Button"
+-   prototype: "TournamentButton/Button"
+    name: "ButtonWhite"

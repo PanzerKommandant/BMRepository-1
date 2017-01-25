@@ -3,7 +3,7 @@ Common:
     public: "false"
     realmDetect: "http://wgnwn.wgnt.iv/realm/detect"
     wotBlitzPortal: "http://wotblitz.com"
-    storyInteractions: "http://wbp.wotb.com.wots.iv/%s/fair/"
+    storyInteractions: "http://wbp.wotb.com.wots.pw/%s/fair/"
     communityUrls:
         http:
             vk: "https://vk.com/wotblitz"
@@ -48,14 +48,17 @@ Regions:
         dlc: "http://by1-builddlc-01.corp.wargaming.local/DLC_Blitz"
         csis: "http://csis.wott.iv/csis/wotblitz713"
         wgnwn: "https://us.wgnwn.wgnt.iv"
-        news: "http://wbp.wotb.com.wots.iv/%s/rss/news/"
-        contentPages: "http://wbp.wotb.com.wots.iv/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
         eula: "http://wotblitz.ru/%s/mobile/user_agreement/"
         partnerAnalytics: "http://mob.wgnt.iv/wotcpu_mobile/pubapi"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
         clientId: "L6gcNOtLWE0HyYgpZpMExU3zaMtGmC9Wt292h0kb"
         externalClientId: "RdngLIlyc7JETxsXcmY9p17wvi7fDyyEUB4dnMtO"
+        communityUrls:
+            http:
+                portal: "http://wbp.wotb.com.wots.pw"
         realm: "us"
         flag: "us"
         defaultLanguage: "en"
@@ -63,7 +66,7 @@ Regions:
         hosts:
             TRUNK_QA_P1:
                 peripheryID: 1
-                url: "by1-dp-vm27.corp.wargaming.local:62710"
+                url: "by1-wotblitz-31.corp.wargaming.local:25000"
             TRUNK_QA_P2:
                 peripheryID: 2
                 url: "by1-wotblitz-17.corp.wargaming.local:25000"
@@ -141,7 +144,7 @@ Regions:
         hosts:
             TRUNK_QA_P1:
                 peripheryID: 1
-                url: "by1-dp-vm27.corp.wargaming.local:62710"
+                url: "by1-wotblitz-31.corp.wargaming.local:25000"
             TRUNK_QA_P2:
                 peripheryID: 2
                 url: "by1-wotblitz-17.corp.wargaming.local:25000"
@@ -162,7 +165,7 @@ Regions:
         hosts:
             TRUNK_QA_P1:
                 peripheryID: 1
-                url: "by1-dp-vm27.corp.wargaming.local:62710"
+                url: "by1-wotblitz-31.corp.wargaming.local:25000"
             TRUNK_QA_P2:
                 peripheryID: 2
                 url: "by1-wotblitz-17.corp.wargaming.local:25000"
@@ -183,7 +186,7 @@ Regions:
         hosts:
             TRUNK_QA_P1:
                 peripheryID: 1
-                url: "by1-dp-vm27.corp.wargaming.local:62710"
+                url: "by1-wotblitz-31.corp.wargaming.local:25000"
             TRUNK_QA_P2:
                 peripheryID: 2
                 url: "by1-wotblitz-17.corp.wargaming.local:25000"
@@ -204,7 +207,7 @@ Regions:
         hosts:
             TRUNK_QA_P1:
                 peripheryID: 1
-                url: "by1-dp-vm27.corp.wargaming.local:62710"
+                url: "by1-wotblitz-31.corp.wargaming.local:25000"
             TRUNK_QA_P2:
                 peripheryID: 2
                 url: "by1-wotblitz-17.corp.wargaming.local:25000"
@@ -222,9 +225,9 @@ Regions:
     EU_Trunk:
         realm: "eu"
         flag: "eu"
-        news: "http://wbp.wotb.com.wots.iv/%s/rss/news/"
-        contentPages: "http://wbp.wotb.com.wots.iv/%s/content/blitz-client/%s/"
-        eula: "http://wbp.wotb.com.wots.iv/%s/mobile/user_agreement/"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        eula: "http://wbp.wotb.com.wots.pw/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
         popupNews: "http://wbp.wotb.eu.wots.iv/%s/promo/"
         wgnwn: "https://eu.wgnwn.wgnt.iv"
@@ -235,17 +238,15 @@ Regions:
         wgnwn: "https://us.wgnwn.wgns.iv"
         clientId: "HeAllbdCpUZ31rClTJSNOmLX88zA6eERisRoACwx"
         externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
-        news: "http://wbp.wotb.com.wots.iv/%s/rss/news/"
-        contentPages: "http://wbp.wotb.com.wots.iv/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
-        eula: "http://wbp.wotb.com.wots.iv/%s/mobile/user_agreement/"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
+        eula: "http://wbp.wotb.com.wots.pw/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
-        clientId: "HeAllbdCpUZ31rClTJSNOmLX88zA6eERisRoACwx"
-        externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
         realm: "us"
         flag: "us"
         defaultLanguage: "en"
-        storyInteractions: "http://wbp.wotb.com.wots.iv/%s/fair/"
+        storyInteractions: "http://wbp.wotb.com.wots.pw/%s/fair/"
         adColonyZoneAlias: "web_stable"
         hosts:
             WEB_STABLE:
@@ -257,10 +258,8 @@ Regions:
         news: "http://wbp.wotb.ru.wots.iv/%s/rss/news/"
         contentPages: "http://wbp.wotb.ru.wots.iv/%s/content/blitz-client/%s/"
         popupNews: "http://wbp.wotb.ru.wots.iv/%s/promo/"
-        eula: "http://wbp.wotb.com.wots.iv/%s/mobile/user_agreement/"
+        eula: "http://wbp.wotb.com.wots.pw/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
-        clientId: "HeAllbdCpUZ31rClTJSNOmLX88zA6eERisRoACwx"
-        externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
         realm: "us"
         flag: "us"
         defaultLanguage: "en"
@@ -305,13 +304,11 @@ Regions:
         externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
         news: "http://wotblitz.com/%s/rss/news/"
         contentPages: "http://wotblitz.com/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
         eula: "http://wotblitz.com/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
-        clientId: "HeAllbdCpUZ31rClTJSNOmLX88zA6eERisRoACwx"
-        externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
         wotBlitzPortal: "http://wotblitz.com"
-        storyInteractions: "http://wbp.wotb.com.wots.iv/%s/fair/"
+        storyInteractions: "http://wbp.wotb.com.wots.pw/%s/fair/"
         realm: "us"
         flag: "us"
         defaultLanguage: "en"
@@ -491,6 +488,20 @@ Regions:
             by1-wotblitz-28:
                 url: "by1-wotblitz-28.corp.wargaming.local:25000"
     by1-wotblitz-29:
+        wgnwn: "https://us.wgnwn.wgnt.iv"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
+        eula: "http://wotblitz.ru/%s/mobile/user_agreement/"
+        partnerAnalytics: "http://mob.wgnt.iv/wotcpu_mobile/pubapi"
+        clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
+        clientId: "L6gcNOtLWE0HyYgpZpMExU3zaMtGmC9Wt292h0kb"
+        externalClientId: "RdngLIlyc7JETxsXcmY9p17wvi7fDyyEUB4dnMtO"
+        communityUrls:
+            http:
+                portal: "http://wbp.wotb.com.wots.pw"
+        defaultLanguage: "en"
+        adColonyZoneAlias: "trunk_qa"
         realm: "us"
         flag: "us"
         hosts:
@@ -586,7 +597,7 @@ Regions:
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
         hosts:
             WEB_DEPENDENCIES:
-                url: "by1-dp-vm22.corp.wargaming.local:62202"
+                url: "by1-wotblitz-21.corp.wargaming.local:25000"
     DEV8:
         realm: "us"
         flag: "us"
@@ -595,16 +606,16 @@ Regions:
                 url: "by1-wotblitz-22.corp.wargaming.local:25000"
     DEV9:
         wgnwn: "https://asia.wgnwn.wgnt.iv"
-        news: "http://wbp.wotb.com.wots.iv/%s/rss/news/"
-        contentPages: "http://wbp.wotb.com.wots.iv/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
         eula: "http://wotblitz.com/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
         realm: "us"
         flag: "us"
         hosts:
             DEV9:
-                url: "by1-dp-vm22.corp.wargaming.local:62204"
+                url: "by1-wotblitz-23.corp.wargaming.local:25000"
     DEV10:
         realm: "us"
         flag: "us"
@@ -662,11 +673,32 @@ Regions:
             DEV17:
                 url: "by1-dp-vm27.corp.wargaming.local:62703"
     DEV18:
-        realm: "us"
-        flag: "us"
+        wgnwn: "https://eu.wgnwn.wgns.iv"
+        news: "http://wotblitz.eu/%s/rss/news/"
+        contentPages: "http://wotblitz.eu/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.eu.wots.iv/%s/promo/"
+        eula: "http://wotblitz.eu/%s/mobile/user_agreement/"
+        clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
+        wotBlitzPortal: "http://wotblitz.eu"
+        storyInteractions: "http://wbp.wotb.eu.wots.iv/%s/fair/"
+        realm: "eu"
+        flag: "eu"
+        defaultLanguage: "en"
         hosts:
             DEV18:
                 url: "by1-dp-vm27.corp.wargaming.local:62704"
+        communityUrls:
+            http:
+                facebook: "https://www.facebook.com/wotblitz"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "https://twitter.com/WoTBlitz"
+                forum: "http://forum.wotblitz.eu"
+                portal: "http://www.wotblitz.eu"
+                wargaming: "http://www.wargaming.net"
+            native:
+                facebook: "fb://profile/572143336148627"
+                youtube: "https://www.youtube.com/channel/UCLQd4upg6HQNjiXJYUJdxFw"
+                twitter: "twitter://user?id=1134245654"
     DEV19:
         realm: "us"
         flag: "us"
@@ -933,9 +965,9 @@ Regions:
             SDEV11:
                 url: "by1-wotsd-11.corp.wargaming.local:63211"
     PROTOTYPING:
-        news: "http://wbp.wotb.com.wots.iv/%s/rss/news/"
-        contentPages: "http://wbp.wotb.com.wots.iv/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
+        news: "http://wbp.wotb.com.wots.pw/%s/rss/news/"
+        contentPages: "http://wbp.wotb.com.wots.pw/%s/content/blitz-client/%s/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
         eula: "http://wotblitz.ru/%s/mobile/user_agreement/"
         partnerAnalytics: "http://mob.wgnt.iv/wotcpu_mobile/pubapi"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
@@ -950,11 +982,11 @@ Regions:
         externalClientId: "XkYVQ7B5rkokXYOVVEdxXh2cUFHqpCXLDmEsFYE4"
         news: "http://wotblitz.com/%s/rss/news/"
         contentPages: "http://wotblitz.com/%s/content/blitz-client/%s/"
-        popupNews: "http://wbp.wotb.com.wots.iv/%s/promo/"
+        popupNews: "http://wbp.wotb.com.wots.pw/%s/promo/"
         eula: "http://wotblitz.com/%s/mobile/user_agreement/"
         clansEULA: "http://forum.wotblitz.eu/index.php?/forum-208/announcement-9-world-of-tanks-blitz-game-rules/"
         wotBlitzPortal: "http://wotblitz.com"
-        storyInteractions: "http://wbp.wotb.com.wots.iv/%s/fair/"
+        storyInteractions: "http://wbp.wotb.com.wots.pw/%s/fair/"
         realm: "us"
         flag: "us"
         hosts:
@@ -1258,6 +1290,9 @@ ClanEmblems:
         7:
             Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-5.png"
             Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-5.png"
+        8:
+            Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-6.png"
+            Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-6.png"
         10001:
             Gfx: "http://dl-wotblitz.wargaming.net/icons/clanIcons1x/clan-icon-v2-10001.png"
             Gfx2: "http://dl-wotblitz.wargaming.net/icons/clanIcons2x/clan-icon-v2-10001.png"

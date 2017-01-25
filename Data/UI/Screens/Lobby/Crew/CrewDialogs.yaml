@@ -1,11 +1,11 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
 - "~res:/UI/Screens/Lobby/Crew/CrewCommon.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "CrewDialog"
     position: [0.000000, 0.000000]
@@ -33,7 +33,7 @@ Controls:
         children:
         -   prototype: "StyledButton/StyledButton"
             name: "BtnSelectSkill"
-            size: [286.000000, 71.000000]
+            size: [286.000000, 64.000000]
             classes: "button button-color-green"
             components:
                 Anchor:
@@ -42,11 +42,10 @@ Controls:
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 hacked-font text-color-white"
                 text: "#crew:mastery/congratulation/selectSkill"
         -   prototype: "StyledButton/StyledButton"
             name: "BtnRecommendedSkill"
-            size: [449.000000, 71.000000]
+            size: [286.000000, 64.000000]
             classes: "button button-color-gray"
             components:
                 Anchor:
@@ -55,7 +54,6 @@ Controls:
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 button-color-green text-color-white"
                 text: "#crew:mastery/congratulation/recomendedSkill"
     -   class: "UIControl"
         name: "Content"
@@ -67,10 +65,14 @@ Controls:
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
                 bottomAnchor: 85.000000
+Controls:
 -   prototype: "CrewDialog"
     customClass: "UISkillTrainedDialog"
     name: "SkillTrainedDialog"
     children:
+    -   path: "Footer"
+        position: [0.000000, 683.000000]
+        children: []
     -   path: "Content"
         components:
             LinearLayout:

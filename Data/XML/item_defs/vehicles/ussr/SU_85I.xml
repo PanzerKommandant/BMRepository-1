@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/ussr-SU_85I.sc2</collisionMesh>
 		<exclusionMask>Camouflages/ussr/CamouflageMasks/SU_85I_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USSR_SU_85I</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>
@@ -52,7 +53,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>50.502583</turret_01>
+				<turret_01>52.254116</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

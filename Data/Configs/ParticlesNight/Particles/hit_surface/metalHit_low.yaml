@@ -37,7 +37,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -71,6 +71,6 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 0.000000
     type: "layer"

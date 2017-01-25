@@ -12,9 +12,6 @@ Controls:
         Anchor:
             leftAnchorEnabled: true
             bottomAnchorEnabled: true
-        Background:
-            drawType: "DRAW_ALIGNED"
-            sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
     children:
     -   path: "Caption"
         classes: "text1 text-color-white"
@@ -251,9 +248,11 @@ Controls:
             children:
             -   prototype: "RefreshButton"
                 name: "RefreshButton"
+                size: [92.000000, 64.000000]
                 components:
-                    Background:
-                        sprite: "~res:/Gfx/UI/CommonUIElements/ButtonSmall/ButtonSmall"
+                    Anchor:
+                        leftAnchor: 4.000000
+                        bottomAnchor: 4.000000
             -   class: "UIControl"
                 name: "CheckboxContainer"
                 position: [265.000000, 5.500000]

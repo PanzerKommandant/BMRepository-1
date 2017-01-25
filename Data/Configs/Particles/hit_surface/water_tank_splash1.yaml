@@ -43,7 +43,7 @@ layer0:
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [5.0000, 5.0000]]
     spin: 5.0000
     spinVariation: 5.0000
-    sprite: "../../../Gfx/Particles/dust_water"
+    sprite: "../../../../Data/Gfx/Particles/dust_water"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -91,7 +91,7 @@ layer1:
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [5.0000, 5.0000]]
     spin: 5.0000
     spinVariation: 5.0000
-    sprite: "../../../Gfx/Particles/water"
+    sprite: "../../../../Data/Gfx/Particles/water"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

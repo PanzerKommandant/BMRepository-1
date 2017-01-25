@@ -39,6 +39,6 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [200.000000, 150.000000]
     sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 0.990000, [1.300000, 1.300000]]
-    sprite: "../../../Gfx/Particles/UI/o2_expGlowB"
+    sprite: "../../../../Data/Gfx/Particles/UI/o2_expGlowB"
     startTime: 0.000000
     type: "layer"

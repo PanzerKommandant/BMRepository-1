@@ -1,11 +1,12 @@
 Header:
-    version: "2"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
 - "~res:/UI/Screens/Common/LoadingSpinner.yaml"
 - "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-Controls:
+- "~res:/UI/Screens/Lobby/Shop/VehicleInfo.yaml"
+Prototypes:
 -   class: "UIListCell"
     customClass: "UIShopItemCell"
     name: "ItemCell"
@@ -285,6 +286,14 @@ Controls:
                     bottomAnchor: 4.000000
     -   prototype: "ExpireTimer/ExpireTimer"
         name: "ExpireTimer"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 25.000000
+                bottomAnchorEnabled: true
+                bottomAnchor: 75.000000
+    -   prototype: "VehicleInfo/VehicleInfo"
+        name: "VehicleInfo"
         components:
             Anchor:
                 leftAnchorEnabled: true

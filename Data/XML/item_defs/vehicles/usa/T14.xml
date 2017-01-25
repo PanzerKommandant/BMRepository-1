@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/usa-T14.sc2</collisionMesh>
 		<exclusionMask>Camouflages/usa/CamouflageMasks/T14_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USA_T14</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>

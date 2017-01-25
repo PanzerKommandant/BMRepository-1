@@ -40,7 +40,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.500000
     size: [0.100000, 0.100000]
-    sprite: "../../../../Gfx/Particles/1AP/sparks1"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/sparks1"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -76,7 +76,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.200000
     size: [0.160000, 0.160000]
-    sprite: "../../../../Gfx/Particles/1AP/sparks1"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/sparks1"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -115,7 +115,7 @@ layer2:
     scaleVelocityFactor: 1.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/glow_anim_low"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/glow_anim_low"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -154,7 +154,7 @@ layer3:
     scaleVelocityFactor: 1.000000
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -195,7 +195,7 @@ layer4:
     sizeVariation: [0.150000, 0.150000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/1AP/treil"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/treil"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeaderLight.yaml"
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"

@@ -47,7 +47,7 @@ layer0:
     spin: -90.000000
     spinOverLife: [0.000400, 1.000000, 1.000000, 0.000000]
     spinVariation: 60.000000
-    sprite: "../../../../Gfx/Particles/alpha/explosion_smoke_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/explosion_smoke_white"
     startTime: 0.100000
     type: "layer"
     velocity: 1.000000
@@ -83,7 +83,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.990000, [3.000000, 3.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/expqF"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/expqF"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

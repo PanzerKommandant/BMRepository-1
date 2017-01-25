@@ -42,7 +42,7 @@ layer0:
     size: [0.300000, 0.300000]
     sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.505100, [6.407100, 6.407100], 1.000000, [4.364100, 4.364100]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../../../../../Gfx/Particles/UI/Blur_sparks"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Blur_sparks"
     startTime: 0.000000
     type: "layer"
     velocity: 150.000000
@@ -81,7 +81,7 @@ layer1:
     size: [0.300000, 0.300000]
     sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.505100, [6.407100, 6.407100], 1.000000, [4.364100, 4.364100]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../../../../../Gfx/Particles/UI/Blur"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Blur"
     startTime: 0.000000
     type: "layer"
     velocity: 100.000000
@@ -120,7 +120,7 @@ layer2:
     size: [0.300000, 0.300000]
     sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.505100, [6.407100, 6.407100], 1.000000, [4.364100, 4.364100]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../../../../../Gfx/Particles/UI/Blur_sparks"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Blur_sparks"
     startTime: 0.000000
     type: "layer"
     velocity: 150.000000

@@ -108,7 +108,148 @@ Controls:
             shadowcolor: [0.003922, 0.003922, 0.003922, 0.196078]
             text: "0"
 -   class: "UIControl"
+    name: "TeamPointsBar"
+    position: [0.000000, 0.000000]
+    size: [176.000000, 19.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfContent"
+            verticalPolicy: "PercentOfContent"
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+            spriteModification: ["FLIP_HORIZONTAL"]
+    children:
+    -   class: "UIControl"
+        name: "Progress"
+        size: [172.000000, 19.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 2.000000
+                rightAnchorEnabled: true
+                rightAnchor: 2.000000
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "PaleProgress"
+            size: [172.000000, 15.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar_fill"
+                    frame: 0
+                    color: [1.000000, 1.000000, 1.000000, 0.250000]
+        -   class: "UIControl"
+            name: "ActualProgress"
+            size: [172.000000, 15.000000]
+            noInput: true
+            classes: "progress-bar"
+            components:
+                SizePolicy:
+                    verticalPolicy: "PercentOfContent"
+                Anchor:
+                    leftAnchorEnabled: true
+                    vCenterAnchorEnabled: true
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    frame: 0
+            children:
+            -   class: "UIControl"
+                name: "VictoryAnimation"
+                size: [172.000000, 15.000000]
+                visible: false
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                    Background:
+                        drawType: "DRAW_STRETCH_BOTH"
+                        sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar_glow"
+                        spriteModification: ["FLIP_HORIZONTAL"]
+    -   class: "UIControl"
+        name: "Separators"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                sprite: "~res:/Gfx/UI/BattleScreenHUD/base_stutus_bar"
+                frame: 1
+                spriteModification: ["FLIP_HORIZONTAL"]
+    -   class: "UIStaticText"
+        name: "Points"
+        position: [131.000000, 0.000000]
+        size: [44.000000, 16.000000]
+        classes: "battle-points"
+        text: "1000"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 1.000000
+-   class: "UIControl"
     name: "UISupremacyPointsStatus"
+    size: [352.000000, 19.000000]
+    noInput: true
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+            verticalPolicy: "PercentOfFirstChild"
+    children:
+    -   prototype: "TeamPointsBar"
+        name: "AllyPoints"
+    -   prototype: "TeamPointsBar"
+        name: "EnemyPoints"
+        children:
+        -   path: "Progress/PaleProgress"
+            components:
+                Anchor:
+                    leftAnchorEnabled: false
+                    rightAnchorEnabled: true
+                Background:
+                    frame: 1
+        -   path: "Progress/ActualProgress"
+            components:
+                Anchor:
+                    leftAnchorEnabled: false
+                    rightAnchorEnabled: true
+                Background:
+                    frame: 1
+            children: []
+        -   path: "Progress/ActualProgress/VictoryAnimation"
+            components:
+                Anchor:
+                    leftAnchorEnabled: false
+                    rightAnchorEnabled: true
+                Background:
+                    spriteModification: []
+        -   path: "Separators"
+            position: [0.000000, 0.000000]
+            components:
+                Background:
+                    spriteModification: []
+        -   path: "Points"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 1.000000
+                    rightAnchorEnabled: false
+                    rightAnchor: 0.000000
+-   class: "UIControl"
+    name: "UISupremacyPointsStatus_old"
     size: [352.000000, 19.000000]
     noInput: true
     components:
@@ -276,7 +417,6 @@ Controls:
         components:
             Background:
                 sprite: "~res:/Gfx/UI/BattleScreenHUD/MinimapBaseIcon"
-                align: ["RIGHT", "VCENTER"]
     -   class: "UIStaticText"
         name: "Letter"
         visible: true

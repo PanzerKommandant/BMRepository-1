@@ -40,7 +40,7 @@ layer0:
     size: [15.0000, 15.0000]
     sizeOverLifeXY: [0.0000, [0.8000, 0.8000], 0.4700, [1.0000, 1.0000], 0.9900, [0.8000, 0.8000]]
     spin: 4.0000
-    sprite: "../../Gfx/Particles/hangar/glow_low"
+    sprite: "../../../Data/Gfx/Particles/hangar/glow_low"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -76,7 +76,7 @@ layer1:
     scaleVelocityFactor: 0.0000
     size: [15.0000, 15.0000]
     spin: 3.0000
-    sprite: "../../Gfx/Particles/hangar/glow_low"
+    sprite: "../../../Data/Gfx/Particles/hangar/glow_low"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.1000
     type: "layer"
@@ -112,7 +112,7 @@ layer2:
     scaleVelocityFactor: 0.0000
     size: [18.0000, 18.0000]
     spin: 4.0000
-    sprite: "../../Gfx/Particles/hangar/glow_low2"
+    sprite: "../../../Data/Gfx/Particles/hangar/glow_low2"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -147,7 +147,7 @@ layer3:
     scaleVelocityFactor: 0.0000
     size: [13.0000, 13.0000]
     spin: 4.0000
-    sprite: "../../Gfx/Particles/hangar/glow_low2"
+    sprite: "../../../Data/Gfx/Particles/hangar/glow_low2"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

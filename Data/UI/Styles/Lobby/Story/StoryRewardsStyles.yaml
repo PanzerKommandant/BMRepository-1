@@ -25,4 +25,4 @@ StyleSheets:
         bg-frame: 4
 -   selector: ".reward_icon"
     properties:
-        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200%"
+        bg-sprite: "~res:/Gfx/UI/Quests/AddCurrencyIconsHuge_200percent"

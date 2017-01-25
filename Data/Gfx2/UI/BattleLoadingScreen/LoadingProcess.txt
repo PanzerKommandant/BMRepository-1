@@ -1,5 +1,0 @@
-1
-LoadingProcess0.tex
-52 52
-1
-0 0 50 51 1 0 0 frame0

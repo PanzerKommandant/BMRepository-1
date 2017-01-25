@@ -44,7 +44,7 @@ layer0:
     sizeVariation: [0.050000, 0.350000]
     spin: 120.000000
     spinVariation: 180.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -87,7 +87,7 @@ layer1:
     sizeVariation: [0.050000, 0.250000]
     spin: 90.000000
     spinVariation: 180.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -125,7 +125,7 @@ layer2:
     scaleVelocityFactor: 0.000000
     size: [1.500000, 1.500000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [3.000000, 3.000000]]
-    sprite: "../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

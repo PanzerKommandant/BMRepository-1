@@ -46,7 +46,7 @@ layer0:
     sizeVariation: [20.000000, 20.000000]
     spin: 40.000000
     spinVariation: 20.000000
-    sprite: "../../../../../../Gfx/Particles/UI/exp_anim_L"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000
@@ -89,7 +89,7 @@ layer1:
     sizeVariation: [20.000000, 20.000000]
     spin: 20.000000
     spinVariation: 20.000000
-    sprite: "../../../../../../Gfx/Particles/UI/exp_anim_fire"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/exp_anim_fire"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000

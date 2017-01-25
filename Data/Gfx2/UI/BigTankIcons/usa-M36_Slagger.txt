@@ -2,4 +2,4 @@
 usa-M36_Slagger0.tex
 320 200
 1
-0 0 305 200 11 0 0 frame0
+0 0 305 200 8 0 0 frame0

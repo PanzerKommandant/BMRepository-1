@@ -1,17 +1,46 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Lobby/Common/ShopFooter.yaml"
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
+StyleSheets:
+-   selector: ".tab #selected"
+    properties:
+        visible: false
+-   selector: ".tab #unselected"
+    properties:
+        visible: true
+-   selector: ".tab #invisible"
+    properties:
+        visible: false
+-   selector: ".tab:selected #selected"
+    properties:
+        visible: true
+-   selector: ".tab:selected #unselected"
+    properties:
+        visible: false
+-   selector: ".tab:selected #invisible"
+    properties:
+        visible: false
+-   selector: ".tab:disabled #selected"
+    properties:
+        visible: false
+-   selector: ".tab:disabled #unselected"
+    properties:
+        visible: false
+-   selector: ".tab:disabled #invisible"
+    properties:
+        visible: true
 Controls:
 -   class: "UIControl"
     name: "InventoryTab"
     position: [0.000000, 0.000000]
     size: [340.000000, 70.000000]
     noInput: true
+    classes: "tab"
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"
@@ -162,6 +191,7 @@ Controls:
                 children:
                 -   prototype: "InventoryTab"
                     name: "Consumables"
+                    position: [0.000000, 0.000000]
                     children:
                     -   path: "selected"
                         text: "#lobby:MainScreen/Consumables/Title"
@@ -185,6 +215,7 @@ Controls:
                         text: "#lobby:MainScreen/Ammunition/Title"
                 -   prototype: "InventoryTab"
                     name: "Equipment"
+                    position: [769.500000, 0.000000]
                     tag: 3
                     children:
                     -   path: "selected"

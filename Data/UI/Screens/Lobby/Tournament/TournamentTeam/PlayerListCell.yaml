@@ -1,0 +1,159 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/CellSelectionFrame.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+StyleSheets:
+-   selector: ".role-captain #Free, .role-member #Free, .role-invited #Free, .role-pending #Free, .role-free #Button"
+    properties:
+        visible: false
+-   selector: ".role-captain #Button, .role-member #Button, .role-invited #Button, .role-pending #Button, .role-free #Free"
+    properties:
+        visible: true
+-   selector: ".player:selected #Selection"
+    properties:
+        visible: true
+-   selector: ".player #Selection"
+    properties:
+        visible: false
+Controls:
+-   class: "UIListCell"
+    name: "PlayerEntry"
+    size: [350.000000, 64.000000]
+    enabled: true
+    selected: false
+    noInput: true
+    classes: "selectable player role=role-captain"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 64.000000
+    children:
+    -   class: "UIControl"
+        name: "Button"
+        size: [350.000000, 64.000000]
+        classes: "button"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        children:
+        -   class: "UIControl"
+            name: "Back"
+            size: [350.000000, 64.000000]
+            noInput: true
+            classes: "panel-background"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            name: "Content"
+            size: [350.000000, 64.000000]
+            noInput: true
+            components:
+                LinearLayout:
+                    padding: 10.000000
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+            children:
+            -   class: "UIControl"
+                name: "PlayerStatus"
+                size: [235.000000, 64.000000]
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        padding: 10.000000
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIStaticText"
+                    name: "Name"
+                    size: [235.000000, 22.000000]
+                    classes: "header3"
+                    fitting: ["POINTS"]
+                    textalign: ["LEFT", "VCENTER"]
+                    textMargins: [10.000000, 0.000000, 0.000000, 0.000000]
+                    text: "Player Name"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "Status"
+                    size: [235.000000, 22.000000]
+                    classes: "text2 text-color-blue"
+                    fitting: ["POINTS"]
+                    textalign: ["LEFT", "VCENTER"]
+                    textMargins: [10.000000, 0.000000, 0.000000, 0.000000]
+                    text: "Player Name"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+            -   class: "UIControl"
+                name: "Flag"
+                size: [25.000000, 64.000000]
+                noInput: true
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 25.000000
+                        verticalPolicy: "PercentOfParent"
+                    Background:
+                        sprite: "~res:/Gfx/UI/Tournament/wins"
+            -   class: "UIStaticText"
+                name: "Rate"
+                size: [70.000000, 64.000000]
+                classes: "header3"
+                fitting: ["REDUCE"]
+                textalign: ["LEFT", "VCENTER"]
+                text: "71.21%"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 70.000000
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "Free"
+        size: [350.000000, 64.000000]
+        classes: "text2 background-light-tab text-color-blue"
+        text: "tournaments/TeamDescrScreen/Members/PlaceAvailable"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+            Background:
+                drawType: "DRAW_FILL"
+    -   prototype: "CellSelectionFrame/SelectionFrame"
+        name: "SelectionFrame"
+    -   class: "UIControl"
+        name: "bottomSelector"
+        size: [350.000000, 1.000000]
+        noInput: true
+        classes: "selector"
+        components:
+            IgnoreLayout: {}
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                bottomAnchorEnabled: true
+            Background:
+                drawType: "DRAW_FILL"
+                color: [1.000000, 1.000000, 1.000000, 0.141176]
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

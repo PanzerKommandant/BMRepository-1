@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/ussr-Matilda_II_LL.sc2</collisionMesh>
 		<exclusionMask>Camouflages/ussr/CamouflageMasks/Matilda_II_LL_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USSR_Matilda_IV</shopIconPath>
 	</blitz>
 	<crew>
 		<commander>radioman</commander>

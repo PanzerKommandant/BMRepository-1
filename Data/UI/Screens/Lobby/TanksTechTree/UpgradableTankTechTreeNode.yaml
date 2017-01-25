@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
@@ -42,15 +42,14 @@ Controls:
                 children:
                 -   prototype: "StyledButton/StyledButton"
                     name: "UpgradeButton"
-                    size: [194.000000, 54.000000]
+                    size: [194.000000, 50.000000]
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             hCenterAnchorEnabled: true
                             bottomAnchorEnabled: true
                             bottomAnchor: 3.000000
                         Background:
-                            sprite: "~res:/Gfx/UI/CommonUIElements/Button"
-                            frame: 2
                             topBottomStretchCap: 3.000000
                     children:
                     -   path: "Caption"

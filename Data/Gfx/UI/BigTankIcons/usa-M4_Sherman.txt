@@ -2,4 +2,4 @@
 usa-M4_Sherman0.tex
 160 100
 1
-0 0 144 100 14 0 0 frame0
+0 0 143 100 9 0 0 frame0

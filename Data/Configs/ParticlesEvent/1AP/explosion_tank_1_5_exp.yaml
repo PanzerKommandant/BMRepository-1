@@ -40,7 +40,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [7.000000, 7.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [1.500000, 1.500000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.200000
     type: "layer"
     velocity: 1.000000

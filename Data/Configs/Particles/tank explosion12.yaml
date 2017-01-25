@@ -24,7 +24,7 @@ layer0:
     pivotPoint: [0.0000, 0.0000]
     size: [8.0000, 8.0000]
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.9900, [2.0000, 2.0000]]
-    sprite: "../../Gfx/Particles/vzryv"
+    sprite: "../../../Data/Gfx/Particles/vzryv"
     startTime: 0.1300
     type: "layer"
     velocity: [0.0000, 0.0000, 0.1000, 0.0100]

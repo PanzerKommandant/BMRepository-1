@@ -2,4 +2,4 @@
 ussr-ISU122_Berlin0.tex
 160 100
 1
-0 0 157 100 3 0 0 frame0
+0 0 158 96 0 4 0 frame0

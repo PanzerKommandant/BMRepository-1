@@ -1,15 +1,8 @@
 Header:
     version: "5"
 ImportedPackages:
-- "~res:/UI/Styles/Lobby/Story/StoryCurrencyIconsStyles.yaml"
 - "~res:/UI/Screens/Lobby/Storage/RewardItemControl.yaml"
 Controls:
--   prototype: "RewardItemControl/RewardItemBigIcon"
-    name: "CurrencyBigIcon"
-    classes: "currency_icon big"
--   prototype: "RewardItemControl/RewardItemSmallIcon"
-    name: "CurrencySmallIcon"
-    classes: "currency_icon small"
 -   class: "UIControl"
     name: "CurrencyItem"
     size: [88.000000, 32.000000]
@@ -38,5 +31,6 @@ Controls:
                 vCenterAnchorEnabled: true
             Background:
                 align: ["LEFT", "TOP"]
-    -   prototype: "CurrencySmallIcon"
+    -   prototype: "RewardItemControl/RewardItemIcon"
         name: "Icon"
+        classes: "item_icon small"

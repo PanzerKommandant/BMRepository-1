@@ -742,7 +742,7 @@ keyedArchive:
                             tank marker: 
                                 string: "spawn23"
                             highlight sniper button:
-                                bool: true
+                                bool: false
                     step 3: 
                         keyedArchive: 
                             type: 

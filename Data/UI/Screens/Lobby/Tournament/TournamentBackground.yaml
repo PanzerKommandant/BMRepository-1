@@ -1,41 +1,5 @@
 Header:
-    version: "4"
-ImportedPackages:
-- "~res:/UI/Screens/Common/StyledButton.yaml"
-- "~res:/UI/Styles/DesktopStyles.yaml"
-- "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
-- "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
-- "~res:/UI/Screens/CommonStyles.yaml"
-- "~res:/UI/Screens/Fonts.yaml"
-- "~res:/UI/Screens/Common/StyledSmallButton.yaml"
-- "~res:/UI/Screens/Dialogs.yaml"
-- "~res:/UI/Screens/Common/PlayerNameWithTag.yaml"
-StyleSheets:
--   selector: ".registration-from #Before"
-    properties:
-        visible: true
--   selector: ".registration-from #Till"
-    properties:
-        visible: false
--   selector: ".registration-till #Before"
-    properties:
-        visible: false
--   selector: ".registration-till #Till"
-    properties:
-        visible: true
--   selector: ".back-image-placeholder"
-    properties:
-        bg-drawType: "DRAW_SCALE_TO_RECT"
--   selector: ".registration-invisible #Before"
-    properties:
-        visible: false
--   selector: ".registration-invisible #Till"
-    properties:
-        visible: false
--   selector: ".back-image-crop"
-    properties:
-        bg-drawType: "DRAW_SCALE_PROPORTIONAL_ONE"
+    version: "5"
 Controls:
 -   class: "UIControl"
     name: "EffectsContainer"

@@ -1,65 +1,18 @@
 Header:
-    version: "2"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Hangar/StatsInfo.yaml"
 - "~res:/UI/Screens/Hangar/Account/SocialNetworks.yaml"
-Controls:
--   class: "UIControl"
-    name: "AccountScreenBlock"
-    size: [200.000000, 200.000000]
-    noInput: true
-    debugDraw: false
-    components:
-        Anchor:
-            leftAnchorEnabled: false
-            hCenterAnchorEnabled: false
-            rightAnchorEnabled: false
-            topAnchorEnabled: false
-            topAnchor: 0.000000
-    children:
-    -   class: "UIControl"
-        name: "SubHeader"
-        size: [200.000000, 50.000000]
-        noInput: true
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-            Background:
-                drawType: "DRAW_STRETCH_HORIZONTAL"
-                sprite: "~res:/Gfx/UI/CrewSkills/plashka"
-        children:
-        -   class: "UIStaticText"
-            name: "Title"
-            debugDraw: false
-            textColor: [0.615686, 0.709804, 0.800000, 1.000000]
-            textcolorInheritType: "COLOR_IGNORE_PARENT"
-            shadowcolor: [0.000000, 0.000000, 0.000000, 1.000000]
-            textalign: ["LEFT", "VCENTER"]
-            text: ""
-            font: "WarHeliosCondC_Bold_25"
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 20.000000
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-    -   class: "UIControl"
-        name: "Content"
-        noInput: true
-        debugDraw: false
-        debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
-        components:
-            SizePolicy:
-                verticalPolicy: "PercentOfChildrenSum"
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                topAnchorEnabled: true
-                topAnchor: 50.000000
-                bottomAnchorEnabled: true
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+StyleSheets:
+-   selector: ".transparent-bg"
+    properties:
+        bg-color: [1.000000, 1.000000, 1.000000, 0.188235]
+        bg-drawType: "DRAW_FILL"
+Prototypes:
 -   class: "UIControl"
     name: "GoldBlockParam"
     size: [200.000000, 40.000000]
@@ -106,6 +59,147 @@ Controls:
                 vCenterAnchorEnabled: true
             Background:
                 sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+-   class: "UIControl"
+    name: "AccountScreenBlockBase"
+    size: [200.000000, 200.000000]
+    noInput: true
+    debugDraw: false
+    components:
+        Anchor:
+            leftAnchorEnabled: false
+            hCenterAnchorEnabled: false
+            rightAnchorEnabled: false
+            topAnchorEnabled: false
+            topAnchor: 0.000000
+    children:
+    -   class: "UIControl"
+        name: "SubHeader"
+        size: [200.000000, 50.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+            Background:
+                drawType: "DRAW_STRETCH_BOTH"
+                sprite: "~res:/Gfx/UI/CrewSkills/plashka"
+    -   class: "UIControl"
+        name: "Content"
+        noInput: true
+        debugDraw: false
+        debugDrawColor: [1.000000, 0.000000, 0.000000, 1.000000]
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfChildrenSum"
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 50.000000
+                bottomAnchorEnabled: true
+-   prototype: "AccountScreenBlockBase"
+    name: "AccountScreenBlock"
+    children:
+    -   path: "SubHeader"
+        children:
+        -   class: "UIStaticText"
+            name: "Title"
+            size: [180.000000, 50.000000]
+            classes: "header1 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            text: "Header1"
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    leftAnchor: 20.000000
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "CurrencyRow"
+    position: [0.000000, 0.000000]
+    size: [366.000000, 40.000000]
+    noInput: true
+    components:
+        LinearLayout:
+            padding: 20.000000
+            useRtl: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIStaticText"
+        name: "Header3"
+        size: [108.666664, 32.000000]
+        classes: "text1 text-color-blue"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        textalign: ["LEFT", "VCENTER"]
+        text: "purchased"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+    -   class: "UIControl"
+        name: "Gold"
+        size: [108.666664, 40.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                orientation: "LeftToRight"
+                useRtl: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIStaticText"
+            name: "Value"
+            size: [78.666664, 40.000000]
+            classes: "header2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_SYSTEM"
+            text: "0"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "Icon"
+            position: [78.666664, 0.000000]
+            size: [30.000000, 40.000000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+    -   class: "UIControl"
+        name: "Credits"
+        size: [108.666664, 40.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                useRtl: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+        children:
+        -   class: "UIStaticText"
+            name: "Value"
+            size: [78.666664, 40.000000]
+            classes: "header2 text-color-white"
+            textcolorInheritType: "COLOR_IGNORE_PARENT"
+            textalign: ["RIGHT", "VCENTER"]
+            textUseRtlAlign: "USE_BY_SYSTEM"
+            text: "0"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "Icon"
+            position: [78.666664, 0.000000]
+            size: [30.000000, 40.000000]
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
+                    frame: 1
+Controls:
 -   class: "UIControl"
     name: "Screen"
     size: [1024.000000, 688.000000]
@@ -159,13 +253,7 @@ Controls:
                             leftAnchorEnabled: true
                             rightAnchorEnabled: true
                     children:
-                    -   path: "SubHeader"
-                        components:
-                            Background:
-                                drawType: "DRAW_STRETCH_BOTH"
-                        children: []
                     -   path: "SubHeader/Title"
-                        textColor: [0.615686, 0.709804, 0.800000, 1.000000]
                         text: "#account:Blocks/Nickname/Header"
                     -   path: "Content"
                         children:
@@ -189,19 +277,16 @@ Controls:
                                     vCenterAnchorEnabled: true
                                 Background:
                                     color: [1.000000, 1.000000, 1.000000, 1.000000]
-                        -   prototype: "Common/DefaultButton"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "ChangeNickname"
                             components:
                                 Anchor:
                                     rightAnchorEnabled: true
                                     rightAnchor: 15.000000
                                     vCenterAnchorEnabled: true
-                                Normal:
-                                    color: [1.000000, 1.000000, 1.000000, 1.000000]
-                                NormalText:
-                                    textColor: [1.000000, 1.000000, 1.000000, 1.000000]
-                                    text: "#account:Blocks/Nickname/Button"
-                                    font: "WarHeliosCondC_Bold_25"
+                            children:
+                            -   path: "Caption"
+                                text: "#account:Blocks/Nickname/Button"
                 -   prototype: "AccountScreenBlock"
                     name: "ExternalsBlock"
                     debugDraw: false
@@ -212,11 +297,6 @@ Controls:
                             leftAnchorEnabled: true
                             rightAnchorEnabled: true
                     children:
-                    -   path: "SubHeader"
-                        components:
-                            Background:
-                                drawType: "DRAW_STRETCH_BOTH"
-                        children: []
                     -   path: "SubHeader/Title"
                         text: "#account:Blocks/Externals/Header"
                     -   path: "Content"
@@ -249,8 +329,8 @@ Controls:
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
         children:
-        -   prototype: "AccountScreenBlock"
-            name: "GoldBlock"
+        -   prototype: "AccountScreenBlockBase"
+            name: "CurrencyBlock"
             size: [512.000000, 180.000000]
             visible: true
             components:
@@ -260,11 +340,43 @@ Controls:
             children:
             -   path: "SubHeader"
                 components:
-                    Background:
-                        drawType: "DRAW_STRETCH_BOTH"
-                children: []
-            -   path: "SubHeader/Title"
-                text: "#account:GoldInfo/Header"
+                    LinearLayout:
+                        padding: 20.000000
+                        useRtl: true
+                children:
+                -   class: "UIStaticText"
+                    name: "CurrencyHeader"
+                    size: [157.333328, 50.000000]
+                    classes: "header1 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["LEFT", "VCENTER"]
+                    text: "#account:CurrencyInfo/Header"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "GoldHeader"
+                    size: [157.333328, 50.000000]
+                    classes: "header1 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["RIGHT", "VCENTER"]
+                    text: "#account:CurrencyInfo/Gold"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "CreditsHeader"
+                    size: [157.333328, 50.000000]
+                    classes: "header1 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["RIGHT", "VCENTER"]
+                    text: "#account:CurrencyInfo/Credits"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
             -   path: "Content"
                 components:
                     LinearLayout:
@@ -272,24 +384,22 @@ Controls:
                         padding: 5.000000
                         spacing: 2.000000
                 children:
-                -   prototype: "GoldBlockParam"
+                -   prototype: "CurrencyRow"
                     name: "Purchased"
                     children:
-                    -   path: "Label"
-                        textUseRtlAlign: "USE_BY_SYSTEM"
-                        text: "#account:GoldInfo/Purchased"
-                -   prototype: "GoldBlockParam"
+                    -   path: "Header3"
+                        text: "#account:CurrencyInfo/Purchased"
+                -   prototype: "CurrencyRow"
                     name: "Received"
+                    classes: "transparent-bg"
                     children:
-                    -   path: "Label"
-                        textUseRtlAlign: "USE_BY_SYSTEM"
-                        text: "#account:GoldInfo/Received"
-                -   prototype: "GoldBlockParam"
+                    -   path: "Header3"
+                        text: "#account:CurrencyInfo/Received"
+                -   prototype: "CurrencyRow"
                     name: "Total"
                     children:
-                    -   path: "Label"
-                        textUseRtlAlign: "USE_BY_SYSTEM"
-                        text: "#account:GoldInfo/Total"
+                    -   path: "Header3"
+                        text: "#account:CurrencyInfo/Total"
         -   prototype: "AccountScreenBlock"
             name: "WargamingBlock"
             position: [0.000000, 180.000000]
@@ -306,7 +416,6 @@ Controls:
                 visible: true
                 components:
                     Background:
-                        drawType: "DRAW_STRETCH_BOTH"
                         margins: [0.000000, 0.000000, 0.000000, 0.000000]
                 children:
                 -   class: "UIControl"
@@ -460,9 +569,9 @@ Controls:
                             Background:
                                 sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
                                 frame: 39
-                -   prototype: "Common/DefaultButton"
+                -   prototype: "StyledButton/StyledButton"
                     name: "CompleteButton"
-                    size: [492.000000, 70.000000]
+                    classes: "button button-color-green"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
@@ -471,17 +580,12 @@ Controls:
                             rightAnchor: 10.000000
                             bottomAnchorEnabled: true
                             bottomAnchor: 10.000000
-                        Normal:
-                            frame: 2
-                        PressedInside:
-                            frame: 2
-                        Disabled:
-                            frame: 4
-                        NormalText:
-                            text: "#account:Blocks/Wargaming/Button/Complete"
-                -   prototype: "Common/DefaultButton"
+                    children:
+                    -   path: "Caption"
+                        text: "#account:Blocks/Wargaming/Button/Complete"
+                -   prototype: "StyledButton/StyledButton"
                     name: "ChangePasswordButton"
-                    size: [492.000000, 70.000000]
+                    classes: "button button-color-gray"
                     components:
                         Anchor:
                             leftAnchorEnabled: true
@@ -490,8 +594,9 @@ Controls:
                             rightAnchor: 10.000000
                             bottomAnchorEnabled: true
                             bottomAnchor: 10.000000
-                        NormalText:
-                            text: "#account:Blocks/Wargaming/Button/ChangePwd"
+                    children:
+                    -   path: "Caption"
+                        text: "#account:Blocks/Wargaming/Button/ChangePwd"
                 -   class: "UIControl"
                     name: "Wargaming"
                     size: [512.000000, 148.000000]
@@ -591,9 +696,8 @@ Controls:
                     leftAnchorEnabled: true
                     rightAnchorEnabled: true
             children:
-            -   prototype: "Common/DefaultButton"
+            -   prototype: "StyledButton/StyledButton"
                 name: "BonusCodeButton"
-                size: [492.000000, 70.000000]
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -601,8 +705,9 @@ Controls:
                         rightAnchorEnabled: true
                         rightAnchor: 10.000000
                         vCenterAnchorEnabled: true
-                    NormalText:
-                        text: "#bonus_code:Profile_Update_Dialog/Activate"
+                children:
+                -   path: "Caption"
+                    text: "#bonus_code:Profile_Update_Dialog/Activate"
     -   class: "UIControl"
         name: "Border"
         size: [1.000000, 688.000000]

@@ -1,11 +1,12 @@
 Header:
-    version: "5"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Lobby/Quests/QuestDescription.yaml"
 - "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanEmblem.yaml"
 - "~res:/UI/Screens/Lobby/Clan/Supply.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Screens/Lobby/Clan/Supply/BonusIcons.yaml"
@@ -24,12 +25,12 @@ StyleSheets:
         bg-drawType: "DRAW_SCALE_PROPORTIONAL"
         sizePolicy-horizontalPolicy: "FixedSize"
         sizePolicy-horizontalValue: 32.000000
-        sizePolicy-verticalPolicy: "FixedSize"
         sizePolicy-verticalValue: 32.000000
+        sizePolicy-verticalPolicy: "FixedSize"
 -   selector: ".small-container"
     properties:
         linearLayout-spacing: 5.000000
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "BattleEfficiencyItem"
     size: [164.000000, 160.000000]
@@ -96,6 +97,7 @@ Controls:
                 topAnchorEnabled: true
             Background:
                 sprite: "~res:/Gfx/UI/Clan/info_butt"
+Controls:
 -   class: "UIControl"
     name: "Profile"
     size: [1024.000000, 768.000000]
@@ -131,7 +133,7 @@ Controls:
                     rightAnchor: 160.000000
                     topAnchorEnabled: true
                     bottomAnchorEnabled: true
-        -   prototype: "ClanCommon/ClanEmblem"
+        -   prototype: "ClanEmblem/ClanEmblem"
             name: "ClanEmblem"
             size: [64.000000, 64.000000]
             noInput: true
@@ -387,11 +389,11 @@ Controls:
             name: "ListLine"
         -   prototype: "StyledButton/StyledButton"
             name: "RosterButton"
-            size: [176.000000, 70.000000]
+            size: [176.000000, 64.000000]
             components:
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 5.000000
+                    rightAnchor: 8.000000
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
@@ -403,7 +405,9 @@ Controls:
                 components:
                     Anchor:
                         rightAnchorEnabled: true
+                        rightAnchor: -4.000000
                         topAnchorEnabled: true
+                        topAnchor: -4.000000
     -   class: "UIScrollView"
         name: "scrollableArea"
         classes: "limited-width"
@@ -802,17 +806,17 @@ Controls:
         children:
         -   prototype: "StyledButton/StyledButton"
             name: "SendApplicationButton"
-            size: [240.000000, 70.000000]
+            size: [240.000000, 64.000000]
             visible: false
             classes: "button button-color-gray"
             components:
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 5.000000
+                    rightAnchor: 8.000000
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 hacked-font text-color-white"
+                classes: "header3 text-color-white"
                 text: "#clans:ProfileScreen/SendRequestButton"
         -   prototype: "StyledButton/StyledButton"
             name: "AcceptInviteButton"
@@ -821,11 +825,11 @@ Controls:
             components:
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 5.000000
+                    rightAnchor: 8.000000
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 hacked-font text-color-white"
+                classes: "header3 text-color-white"
                 text: "#clans:ProfileScreen/AcceprInviteButton"
         -   prototype: "StyledButton/StyledButton"
             name: "JoinButton"
@@ -834,11 +838,11 @@ Controls:
             components:
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 5.000000
+                    rightAnchor: 8.000000
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 hacked-font text-color-white"
+                classes: "header3 text-color-white"
                 text: "#clans:ProfileScreen/AcceprInviteButton"
         -   class: "UIStaticText"
             name: "ApplicationSent"
@@ -858,6 +862,7 @@ Controls:
             Anchor:
                 leftAnchorEnabled: true
                 rightAnchorEnabled: true
+                rightAnchor: 8.000000
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
         children:
@@ -866,10 +871,11 @@ Controls:
             components:
                 Anchor:
                     leftAnchorEnabled: false
+                    leftAnchor: 0.000000
                     rightAnchorEnabled: true
                     rightAnchor: 94.000000
-                    topAnchorEnabled: false
-                    vCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 8.000000
             children:
             -   path: "icon"
                 components:
@@ -881,9 +887,10 @@ Controls:
             components:
                 Anchor:
                     leftAnchorEnabled: false
+                    leftAnchor: 0.000000
                     rightAnchorEnabled: true
-                    topAnchorEnabled: false
-                    vCenterAnchorEnabled: true
+                    topAnchorEnabled: true
+                    topAnchor: 8.000000
             children:
             -   path: "icon"
                 components:
@@ -1069,7 +1076,7 @@ Controls:
                 hCenterAnchorEnabled: true
                 vCenterAnchorEnabled: true
         children:
-        -   prototype: "ClanCommon/ClanEmblem"
+        -   prototype: "ClanEmblem/ClanEmblem"
             name: "ClanEmblem"
             size: [128.000000, 128.000000]
             components:

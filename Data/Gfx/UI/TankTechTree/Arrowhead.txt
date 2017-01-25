@@ -2,5 +2,5 @@
 texture0.tex
 6 6
 2
-302 209 5 6 1 0 0 frame0
-302 217 5 6 1 0 0 frame1
+33 4 5 6 1 0 0 frame0
+33 12 5 6 1 0 0 frame1

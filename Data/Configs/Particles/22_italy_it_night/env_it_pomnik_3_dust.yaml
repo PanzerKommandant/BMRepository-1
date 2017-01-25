@@ -47,7 +47,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [3.445100, 3.445100], 0.355700, [3.504900, 3.504900], 0.993300, [5.040900, 5.040900]]
     spin: [0.000000, 5.000000, 0.100000, 3.333300]
     spinOverLife: [0.000000, 1.000000, 0.300000, 0.000000]
-    sprite: "../../../Gfx/Particles/alpha/o2SMOKEB"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2SMOKEB"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

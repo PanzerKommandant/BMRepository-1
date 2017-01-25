@@ -243,9 +243,7 @@ Controls:
                     text: "OK"
             -   prototype: "StyledButton/StyledButton"
                 name: "Buy"
-                components:
-                    Background:
-                        frame: 2
+                classes: "button button-color-green"
                 children:
                 -   path: "Caption"
                     text: "#common:DialogButton/Buy"

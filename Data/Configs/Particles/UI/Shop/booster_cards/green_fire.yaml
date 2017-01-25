@@ -1,0 +1,50 @@
+emitter:
+    size: [300.000000, 0.000000, 20.000000]
+    name: "green_fire"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [-0.600000, -1.000000, 0.000000]
+    emissionRange: 60.000000
+layer0:
+    name: "fire2"
+    enableFog: true
+    sprite: "../../../../../../Data/Gfx/Particles/UI/smoke"
+    type: "layer"
+    isLong: true
+    layerType: "particles"
+    blending: 3
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 90.000000
+    enableFrameBlend: true
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 1.500000
+    number: 80.000000
+    spinVariation: 30.000000
+    size: [60.000000, 60.000000]
+    sizeVariation: [20.000000, 20.000000]
+    velocity: 16.000000
+    velocityVariation: 16.000000
+    spin: 30.000000
+    randomSpinDirection: true
+    angleVariation: 90.000000
+    alphaOverLife: [0.000000, 0.000000, 0.140000, 0.800000, 0.476764, 0.796496, 0.757315, 0.804672, 1.000000, 0.000000]
+    colorOverLife: [38.000000, 229.000000, 49.000000, 255.000000]
+    frameOverLifeEnabled: true
+    frameOverLifeFPS: 20.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: false
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 1000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1

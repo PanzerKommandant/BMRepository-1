@@ -1,0 +1,88 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Lobby/Chat/ChatMessageStyle.yaml"
+StyleSheets:
+-   selector: ".training-nick-owner-text-color"
+    properties:
+        text-textColor: [1.000000, 0.858824, 0.686275, 1.000000]
+-   selector: ".training-nick-self-text-color"
+    properties:
+        text-textColor: [0.862745, 0.807843, 0.729412, 1.000000]
+-   selector: ".training-nick-text-color"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".chat-background"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.705882]
+Controls:
+-   class: "UIControl"
+    name: "ChatCell"
+    size: [466.000000, 50.000000]
+    children:
+    -   class: "UIControl"
+        name: "Bg"
+        classes: "chat-background"
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                rightAnchorEnabled: true
+                topAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 1.000000
+            Background:
+                drawType: "DRAW_FILL"
+    -   class: "UIStaticText"
+        name: "fromName"
+        position: [10.000000, 12.000000]
+        size: [90.000000, 24.000000]
+        noInput: true
+        classes: "header4 textColor=chat-nick-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["POINTS"]
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        text: "wot188"
+        components:
+            SizePolicy: {}
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 10.000000
+                topAnchorEnabled: true
+                topAnchor: 12.000000
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "msgText"
+        position: [105.000000, 12.000000]
+        size: [288.000000, 23.000000]
+        noInput: true
+        classes: "text2 textColor=chat-msg-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        text: "test"
+        components:
+            Background:
+                align: ["LEFT", "TOP"]
+    -   class: "UIStaticText"
+        name: "timeText"
+        position: [406.000000, 13.000000]
+        size: [50.000000, 24.000000]
+        noInput: true
+        classes: "text2 textColor=chat-date-text-color"
+        textcolorInheritType: "COLOR_IGNORE_PARENT"
+        fitting: ["REDUCE"]
+        textalign: ["RIGHT", "TOP"]
+        textUseRtlAlign: "DONT_USE"
+        text: "18:20"
+        components:
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 10.000000
+                topAnchorEnabled: true
+                topAnchor: 13.000000
+            Background:
+                align: ["LEFT", "TOP"]

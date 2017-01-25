@@ -193,13 +193,21 @@ NewIos:  # A8 cpu
     - "iPad Mini 4 Cellular"
     - "iPad 6 WiFi"
     - "iPad 6 Cellular"
+    - "iPhone 6"
+    - "iPhone 6 Plus"
+A9Ios:  # A9 cpu
+  base: High
+  options:
+    GrassQuality: Low
+  optionsMax:
+    AnisotropicFiltering: 4X
+    Antialiasing: 4X
+  devices: 
     - "iPad Pro WiFi"
     - "iPad Pro Cellular"
     - "iPad Pro 9.7 WiFi"
     - "iPad Pro 9.7 Cellular"
     - "iPhone SE"
-    - "iPhone 6"
-    - "iPhone 6 Plus"
     - "iPhone 6s"
     - "iPhone 6s Plus"
     - "iPhone 7 CDMA"

@@ -1,10 +1,10 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
+- "~res:/UI/Screens/Lobby/Clan/ClanEmblem.yaml"
 - "~res:/UI/Screens/Lobby/Clan/Roster.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Screens/CommonStyles.yaml"
@@ -19,12 +19,18 @@ StyleSheets:
     properties:
         bg-drawType: "DRAW_STRETCH_BOTH"
         bg-leftRightStretchCap: 4.000000
-        bg-topBottomStretchCap: 4.000000
         text-font: "WarHeliosCondC_Bold_21"
+        bg-topBottomStretchCap: 4.000000
         text-textColor: [0.647059, 0.725490, 0.800000, 1.000000]
 -   selector: ".recomended-clans-btn:pressed_inside, .recomended-clans-btn:selected"
     properties:
         bg-sprite: "~res:/Gfx/UI/Clan/search_back"
+-   selector: ".cell"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.705882]
+-   selector: ".cell:pressed_inside"
+    properties:
+        bg-color: [0.200000, 0.274510, 0.321569, 0.313726]
 Controls:
 -   class: "UIControl"
     customClass: "UIClanSearch"
@@ -89,17 +95,14 @@ Controls:
     customClass: "UISearchResultItem"
     name: "ClanSearchResultItem"
     size: [1024.000000, 64.000000]
+    classes: "cell"
     identifier: "ClanSearchItem"
     components:
         Anchor:
             leftAnchorEnabled: true
             rightAnchorEnabled: true
-        Normal:
+        Background:
             drawType: "DRAW_FILL"
-            color: [0.200000, 0.274510, 0.321569, 0.705882]
-        PressedInside:
-            drawType: "DRAW_FILL"
-            color: [0.200000, 0.274510, 0.321569, 0.313726]
     children:
     -   class: "UIStaticText"
         name: "ClanSize"
@@ -116,7 +119,7 @@ Controls:
                 rightAnchor: 20.000000
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
-    -   prototype: "ClanCommon/ClanEmblem"
+    -   prototype: "ClanEmblem/ClanEmblem"
         name: "Emblem"
         size: [32.000000, 32.000000]
         noInput: true
@@ -452,6 +455,7 @@ Controls:
             children:
             -   class: "UIStaticText"
                 name: "Text"
+                classes: "header3"
                 text: "#clans:SearchScreen/NextClans"
                 components:
                     SizePolicy:
@@ -497,8 +501,8 @@ Controls:
                         frame: 0
             -   class: "UIStaticText"
                 name: "Text"
-                text: "#clans:SearchScreen/NextClans"
-                font: "WarHeliosCondC_Bold_21"
+                classes: "header3"
+                text: "#clans:SearchScreen/PreviousClans"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfContent"
@@ -653,7 +657,7 @@ Controls:
                 horizontalPolicy: "PercentOfParent"
                 verticalPolicy: "PercentOfParent"
         children:
-        -   prototype: "ClanCommon/ClanEmblem"
+        -   prototype: "ClanEmblem/ClanEmblem"
             name: "emblem"
             size: [32.000000, 32.000000]
             components:
@@ -740,12 +744,13 @@ Controls:
     children:
     -   prototype: "StyledButton/StyledButton"
         name: "ShowTextSearchButton"
-        size: [250.000000, 70.000000]
+        size: [250.000000, 64.000000]
         components:
             Anchor:
                 rightAnchorEnabled: true
-                rightAnchor: 5.000000
-                vCenterAnchorEnabled: true
+                rightAnchor: 8.000000
+                topAnchorEnabled: true
+                topAnchor: 8.000000
         children:
         -   path: "Caption"
             text: "#clans:SearchScreen/NameSearch/Header"

@@ -1,0 +1,10 @@
+Header:
+    version: "1"
+ImportedPackages:
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   prototype: "StyledButton/StyledButton"
+    name: "StyledButton"
+    children:
+    -   path: "Caption"
+        text: "Caption"

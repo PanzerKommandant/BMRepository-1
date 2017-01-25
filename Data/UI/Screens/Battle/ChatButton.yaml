@@ -1,12 +1,13 @@
 Header:
-    version: "3"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Battle/HotKey.yaml"
 - "~res:/UI/Screens/Common/IconButton.yaml"
 StyleSheets:
 -   selector: ".chat_button:selected"
     properties:
-        bg-frame: 2
+        bg-contour: "~res:/Gfx/UI/CommonUIElements/Button/green_contour.txt"
+        bg-gradient: "~res:/Gfx/UI/CommonUIElements/Button/green_gradient.txt"
 -   selector: ".chat_button"
     properties:
         sizePolicy-horizontalValue: 90.000000
@@ -19,7 +20,7 @@ Controls:
 -   prototype: "IconButton/IconButton"
     name: "ChatButton"
     exclusiveInput: false
-    classes: "button chat_button"
+    classes: "button chat_button button-color-gray"
     components:
         SizePolicy:
             horizontalPolicy: "FixedSize"

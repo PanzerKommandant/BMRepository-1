@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/germany-Panther_M10.sc2</collisionMesh>
 		<exclusionMask>Camouflages/germany/CamouflageMasks/Panther_M10_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/Ger_Panther-M10</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>
@@ -52,7 +53,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>71.298065</turret_01>
+				<turret_01>72.291039</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

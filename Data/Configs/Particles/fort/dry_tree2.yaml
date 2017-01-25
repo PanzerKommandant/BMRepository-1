@@ -45,7 +45,7 @@ layer0:
     sizeVariation: [0.250000, 0.000000]
     spin: 120.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/Awood_chips"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Awood_chips"
     startTime: 0.000000
     type: "layer"
     velocity: 4.000000
@@ -89,7 +89,7 @@ layer1:
     sizeVariation: [0.050000, 0.400000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000
@@ -133,7 +133,7 @@ layer2:
     sizeVariation: [0.050000, 0.400000]
     spin: 60.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000

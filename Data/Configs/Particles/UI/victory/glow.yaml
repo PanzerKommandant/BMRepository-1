@@ -38,7 +38,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [600.000000, 600.000000]
     spin: -5.000000
-    sprite: "../../../../Gfx/Particles/UI/glow_anim"
+    sprite: "../../../../../Data/Gfx/Particles/UI/glow_anim"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -72,6 +72,6 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [600.000000, 400.000000]
     sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 0.460000, [1.000000, 1.000000], 1.000000, [0.522600, 0.522600]]
-    sprite: "../../../../Gfx/Particles/UI/glow_anim"
+    sprite: "../../../../../Data/Gfx/Particles/UI/glow_anim"
     startTime: 0.000000
     type: "layer"

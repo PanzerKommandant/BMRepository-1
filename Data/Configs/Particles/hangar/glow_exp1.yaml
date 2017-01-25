@@ -44,7 +44,7 @@ layer0:
     scaleVelocityBase: 1.0000
     scaleVelocityFactor: 0.0000
     size: [0.0200, 0.3000]
-    sprite: "../../../Gfx/Particles/hangar/Iskr"
+    sprite: "../../../../Data/Gfx/Particles/hangar/Iskr"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -85,7 +85,7 @@ layer1:
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 0.4600, [1.5000, 1.5000], 1.0000, [0.0000, 0.0000]]
     sizeVariation: [2.0000, 2.0000]
     spin: 2.0000
-    sprite: "../../../Gfx/Particles/hangar/glow_lamp"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_lamp"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

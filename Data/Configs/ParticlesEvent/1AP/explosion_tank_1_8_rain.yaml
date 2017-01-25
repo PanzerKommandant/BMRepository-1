@@ -37,7 +37,7 @@ layer0:
     scaleVelocityBase: 0.000000
     scaleVelocityFactor: 0.700000
     size: [0.060000, 0.100000]
-    sprite: "../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 5.000000
     type: "layer"
     velocity: 10.000000

@@ -36,7 +36,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [0.150000, 0.800000]
     spin: 60.000000
-    sprite: "../../../Gfx/Particles/14_port_pt/arrow"
+    sprite: "../../../../Data/Gfx/Particles/14_port_pt/arrow"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

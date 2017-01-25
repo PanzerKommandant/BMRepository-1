@@ -39,6 +39,6 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [1.200000, 1.000000]
     sizeOverLifeXY: [0.000000, [4.000000, 4.000000], 1.000000, [6.000000, 6.000000]]
-    sprite: "../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"

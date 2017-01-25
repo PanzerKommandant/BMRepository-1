@@ -5,6 +5,7 @@
 		<SN-230TRM>4</SN-230TRM>
 		<Redcell_Mk1>5</Redcell_Mk1>
 		<Minkovsky_engine>6</Minkovsky_engine>
+		<_8V135_2>7</_8V135_2>
 		<Aether_W-20>66</Aether_W-20>
 	</ids>
 	<shared>
@@ -81,6 +82,19 @@
 			<rpm_min>404</rpm_min>
 			<rpm_max>2305</rpm_max>
 		</Minkovsky_engine>
+		<_8V135_2>
+			<userString>#other_vehicles:8V135-2</userString>
+			<tags>gasoline</tags>
+			<level>7</level>
+			<price>0</price>
+			<sound>/vehicles/tanks/medium/tiger</sound>
+			<power>520</power>
+			<weight>556</weight>
+			<maxHealth>338</maxHealth>
+			<maxRegenHealth>169</maxRegenHealth>
+			<repairCost>6</repairCost>
+			<fireStartingChance>0.2</fireStartingChance>
+		</_8V135_2>
 		<Aether_W-20>
 			<userString>#other_vehicles:Aether_W-20</userString>
 			<tags>gasoline</tags>

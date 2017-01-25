@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyBaseScreen.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"

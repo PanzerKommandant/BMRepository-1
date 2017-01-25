@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 StyleSheets:
 -   selector: ".battleButton:disabled"
     properties:
@@ -16,7 +16,7 @@ StyleSheets:
 Controls:
 -   class: "UIControl"
     name: "battleButton"
-    size: [200.000000, 74.000000]
+    size: [190.000000, 64.000000]
     exclusiveInput: true
     classes: "battleButton"
     components:
@@ -29,7 +29,7 @@ Controls:
     children:
     -   class: "UIStaticText"
         name: "Caption"
-        size: [200.000000, 74.000000]
+        size: [190.000000, 64.000000]
         shadowoffset: [0.000000, -1.000000]
         shadowcolor: [0.494118, 0.164706, 0.000000, 0.752941]
         text: "BATTLE"
@@ -47,9 +47,13 @@ Controls:
         components:
             Anchor:
                 leftAnchorEnabled: true
+                leftAnchor: -5.000000
                 rightAnchorEnabled: true
+                rightAnchor: -5.000000
                 topAnchorEnabled: true
+                topAnchor: -5.000000
                 bottomAnchorEnabled: true
+                bottomAnchor: -5.000000
         children:
         -   class: "UIControl"
             name: "highlight"

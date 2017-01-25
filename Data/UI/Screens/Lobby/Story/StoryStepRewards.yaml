@@ -2,7 +2,6 @@ Header:
     version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
-- "~res:/UI/Styles/Lobby/Story/StoryCurrencyIconsStyles.yaml"
 - "~res:/UI/Screens/Lobby/Story/StoryRewardPrototypes.yaml"
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
 Controls:

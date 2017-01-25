@@ -8,6 +8,16 @@
 		<level>8</level>
 		<notInShop>true</notInShop>
 	</Ch01_Type59>
+	<Ch23_112>
+		<id>252</id>
+		<userString>#china_vehicles:Ch23_112</userString>
+		<description>#china_vehicles:Ch23_112_descr</description>
+		<price>7500<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank enhancedTorsions5t_user largeCaliberTankRammer_user wetCombatPack_class2_user aimingStabilizer_Mk2_user</tags>
+		<level>8</level>
+	</Ch23_112>
 	<Ch02_Type62>
 		<id>255</id>
 		<userString>#china_vehicles:Ch02_Type62</userString>

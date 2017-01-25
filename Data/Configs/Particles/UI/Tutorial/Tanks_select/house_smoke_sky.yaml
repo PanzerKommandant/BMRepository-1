@@ -48,7 +48,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.604400, [2.441900, 2.441900], 0.990000, [6.000000, 6.000000]]
     sizeVariation: [20.000000, 20.000000]
     spinVariation: -8.000000
-    sprite: "../../../../../Gfx/Particles/UI/Fx_DustSpray_two"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/Fx_DustSpray_two"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

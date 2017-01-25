@@ -1,0 +1,49 @@
+emitter:
+    size: [100.000000, 100.000000, 0.000000]
+    name: "big_smoke"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [1.000000, 0.000000, 0.000000]
+    emissionRange: 20.000000
+layer0:
+    name: "smoke3"
+    enableFog: false
+    sprite: "../../../../../Data/Gfx/Particles/UI/Default_KeyArt/fog_white"
+    type: "layer"
+    isLong: true
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 1.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.010000
+    life: 8.000000
+    number: 2.000000
+    spinVariation: 10.000000
+    size: [400.000000, 400.000000]
+    velocity: 150.000000
+    velocityVariation: 30.000000
+    spin: 5.000000
+    randomSpinDirection: true
+    angleVariation: 360.000000
+    alphaOverLife: [0.000000, 0.000000, 0.320000, 0.100000, 0.990000, 0.000000]
+    colorOverLife: [112.101166, 106.964981, 98.089493, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 1000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1

@@ -36,6 +36,11 @@ Controls:
                     frame: 2
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "NormalState/Button"
+        components:
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        children: []
     -   path: "NormalState/Image"
         components:
             Background:
@@ -99,6 +104,11 @@ Controls:
                     frame: 2
                     colorInherit: "COLOR_MULTIPLY_ON_PARENT"
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   path: "NormalState/Button"
+        components:
+            Background:
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+        children: []
     -   path: "NormalState/Image"
         components:
             Background:

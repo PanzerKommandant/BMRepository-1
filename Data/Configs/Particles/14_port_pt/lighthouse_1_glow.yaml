@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [15.000000, 15.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.500000, [2.000000, 2.000000], 0.997000, [0.000000, 0.000000]]
-    sprite: "../../../Gfx/Particles/additive/glow_two"
+    sprite: "../../../../Data/Gfx/Particles/additive/glow_two"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -74,6 +74,6 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [40.000000, 7.500000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 0.500000, [2.000000, 2.000000], 0.997000, [0.000000, 0.000000]]
-    sprite: "../../../Gfx/Particles/additive/glow_two"
+    sprite: "../../../../Data/Gfx/Particles/additive/glow_two"
     startTime: 0.000000
     type: "layer"

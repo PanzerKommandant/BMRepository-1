@@ -3,7 +3,7 @@ Header:
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Lobby/Story/StoryRewardPrototypes.yaml"
-- "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
+- "~res:/UI/Screens/Lobby/Storage/RewardItemControl.yaml"
 Controls:
 -   class: "UIControl"
     name: "Content"
@@ -157,8 +157,9 @@ Controls:
             leftAnchorEnabled: true
             topAnchorEnabled: true
     children:
-    -   prototype: "StoryCurrencyControl/CurrencySmallIcon"
+    -   prototype: "RewardItemControl/RewardItemIcon"
         name: "Icon"
+        classes: "item_icon small"
     -   class: "UIStaticText"
         name: "Description"
         size: [858.000000, 0.000000]

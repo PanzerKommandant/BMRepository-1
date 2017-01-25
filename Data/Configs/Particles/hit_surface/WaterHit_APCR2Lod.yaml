@@ -41,7 +41,7 @@ layer0:
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.000000, [0.500000, 3.000000], 1.000000, [1.000000, 4.000000]]
     sizeVariation: [0.100000, 0.100000]
-    sprite: "../../../Gfx/Particles/alpha/water_splash"
+    sprite: "../../../../Data/Gfx/Particles/alpha/water_splash"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

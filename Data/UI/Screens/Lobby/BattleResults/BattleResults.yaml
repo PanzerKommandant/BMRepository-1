@@ -1,10 +1,24 @@
 Header:
-    version: "1"
+    version: "5"
+StyleSheets:
+-   selector: ".tab #selected"
+    properties:
+        visible: false
+-   selector: ".tab:selected #selected"
+    properties:
+        visible: true
+-   selector: ".tab #unselected"
+    properties:
+        visible: true
+-   selector: ".tab:selected #unselected"
+    properties:
+        visible: false
 Controls:
 -   class: "UIControl"
     name: "TabControl"
     size: [120.000000, 77.000000]
     noInput: true
+    classes: "tab"
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"

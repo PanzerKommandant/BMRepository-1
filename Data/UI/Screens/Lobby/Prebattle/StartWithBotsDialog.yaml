@@ -28,7 +28,7 @@ Controls:
                 vCenterAnchor: 0.000000
             Background:
                 drawType: "DRAW_STRETCH_BOTH"
-                sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                 leftRightStretchCap: 10.000000
                 topBottomStretchCap: 10.000000
         children:
@@ -41,9 +41,6 @@ Controls:
                     leftAnchor: 15.000000
                     bottomAnchorEnabled: true
                     bottomAnchor: 15.000000
-                Background:
-                    drawType: "DRAW_ALIGNED"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
             children:
             -   path: "Caption"
                 text: "Cancel"
@@ -56,9 +53,6 @@ Controls:
                     rightAnchor: 15.000000
                     bottomAnchorEnabled: true
                     bottomAnchor: 15.000000
-                Background:
-                    drawType: "DRAW_ALIGNED"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/grayButton190px"
             children:
             -   path: "Caption"
                 text: "OK"
@@ -75,8 +69,6 @@ Controls:
                     topAnchorEnabled: true
                     topAnchor: 140.000000
                 Background:
-                    drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/BottomLayer"
                     leftRightStretchCap: 5.000000
                     topBottomStretchCap: 5.000000
             children:
@@ -85,13 +77,12 @@ Controls:
                 position: [10.000000, 0.000000]
                 size: [200.000000, 30.000000]
                 noInput: true
-                textColor: [0.321600, 0.345100, 0.364700, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 shadowcolor: [0.000000, 0.000000, 0.000000, 0.000000]
                 textalign: ["LEFT", "VCENTER"]
                 textUseRtlAlign: "DONT_USE"
                 text: "Allies"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -137,10 +128,9 @@ Controls:
                 position: [365.000000, 55.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                textColor: [0.415700, 0.427500, 0.392200, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Max"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
@@ -154,10 +144,9 @@ Controls:
                 position: [0.000000, 55.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                textColor: [0.321600, 0.345100, 0.364700, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Min"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -172,10 +161,9 @@ Controls:
                 size: [60.000000, 30.000000]
                 pivot: [0.000000, 1.000000]
                 noInput: true
-                textColor: [0.415700, 0.427500, 0.392200, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Curr"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         hCenterAnchorEnabled: true
@@ -195,8 +183,6 @@ Controls:
                     topAnchorEnabled: true
                     topAnchor: 250.000000
                 Background:
-                    drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/BottomLayer"
                     leftRightStretchCap: 5.000000
                     topBottomStretchCap: 5.000000
             children:
@@ -205,13 +191,12 @@ Controls:
                 position: [10.000000, 0.000000]
                 size: [200.000000, 30.000000]
                 noInput: true
-                textColor: [0.321600, 0.345100, 0.364700, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 shadowcolor: [0.000000, 0.000000, 0.000000, 0.000000]
                 textalign: ["LEFT", "VCENTER"]
                 textUseRtlAlign: "DONT_USE"
                 text: "Enemies"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -257,10 +242,9 @@ Controls:
                 position: [0.000000, 55.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                textColor: [0.321600, 0.345100, 0.364700, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Min"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         leftAnchorEnabled: true
@@ -274,10 +258,9 @@ Controls:
                 position: [365.000000, 55.000000]
                 size: [55.000000, 30.000000]
                 noInput: true
-                textColor: [0.415700, 0.427500, 0.392200, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Max"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         rightAnchorEnabled: true
@@ -292,10 +275,9 @@ Controls:
                 size: [60.000000, 30.000000]
                 pivot: [0.000000, 1.000000]
                 noInput: true
-                textColor: [0.415700, 0.427500, 0.392200, 1.000000]
+                classes: "header1 text-color-white"
                 textcolorInheritType: "COLOR_IGNORE_PARENT"
                 text: "Curr"
-                font: "Font_18_bold"
                 components:
                     Anchor:
                         hCenterAnchorEnabled: true
@@ -306,7 +288,7 @@ Controls:
             name: "TitleText"
             size: [450.000000, 40.000000]
             noInput: true
-            textColor: [0.796100, 0.796100, 0.800000, 1.000000]
+            classes: "header1 text-color-white"
             textcolorInheritType: "COLOR_IGNORE_PARENT"
             shadowoffset: [0.000000, 1.000000]
             shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
@@ -327,7 +309,7 @@ Controls:
             position: [0.000000, 40.000000]
             size: [450.000000, 100.000000]
             noInput: true
-            textColor: [0.796100, 0.796100, 0.800000, 1.000000]
+            classes: "header1 text-color-white"
             textcolorInheritType: "COLOR_IGNORE_PARENT"
             shadowoffset: [0.000000, 1.000000]
             shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]

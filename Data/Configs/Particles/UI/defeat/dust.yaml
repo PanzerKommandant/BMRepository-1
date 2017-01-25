@@ -40,7 +40,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
     sizeVariation: [3.000000, 3.000000]
-    sprite: "../../../../Gfx/Particles/UI/fog"
+    sprite: "../../../../../Data/Gfx/Particles/UI/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000

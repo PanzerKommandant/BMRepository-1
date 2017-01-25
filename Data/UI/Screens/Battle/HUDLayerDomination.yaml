@@ -75,7 +75,6 @@ Controls:
             Background:
                 sprite: "~res:/Gfx/UI/BattleScreenHUD/capturebaseminimapicon"
                 perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
-                align: ["RIGHT", "VCENTER"]
     -   class: "UIControl"
         name: "Flag"
         size: [20.000000, 20.000000]

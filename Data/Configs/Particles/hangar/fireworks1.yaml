@@ -40,7 +40,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 1.000000
     size: [0.050000, 0.050000]
-    sprite: "../../../Gfx/Particles/hangar/sparks1"
+    sprite: "../../../../Data/Gfx/Particles/hangar/sparks1"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000
@@ -76,7 +76,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [0.090000, 0.090000]
-    sprite: "../../../Gfx/Particles/hangar/sparks1"
+    sprite: "../../../../Data/Gfx/Particles/hangar/sparks1"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000
@@ -115,7 +115,7 @@ layer2:
     scaleVelocityFactor: 1.000000
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../Gfx/Particles/hangar/glow_anim_low"
+    sprite: "../../../../Data/Gfx/Particles/hangar/glow_anim_low"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000
@@ -154,7 +154,7 @@ layer3:
     scaleVelocityFactor: 1.000000
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../Gfx/Particles/UI/fog_white"
+    sprite: "../../../../Data/Gfx/Particles/UI/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000

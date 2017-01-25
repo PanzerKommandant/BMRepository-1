@@ -37,7 +37,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.100000
     size: [70.000000, 70.000000]
-    sprite: "../../../../../Gfx/Particles/UI/dust_water"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/dust_water"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

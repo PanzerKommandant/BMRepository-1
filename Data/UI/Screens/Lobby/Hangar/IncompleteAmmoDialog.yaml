@@ -123,8 +123,9 @@ Controls:
             children:
             -   class: "UIControl"
                 name: "Control"
-                size: [500.000000, 70.000000]
+                size: [500.000000, 64.000000]
                 noInput: true
+                classes: "button button-color-green"
                 components:
                     LinearLayout:
                         padding: 20.000000
@@ -135,25 +136,23 @@ Controls:
                 children:
                 -   prototype: "StyledButton/Button"
                     name: "negativeButton"
+                    classes: "button button-color-orange"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
-                        Background:
-                            frame: 3
                     children:
                     -   path: "Caption"
                         text: "BATTLE"
                 -   prototype: "StyledButton/Button"
                     name: "positiveButton"
+                    classes: "button button-color-green"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "Resupply"
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "cancelButton"
                 components:
                     Anchor:

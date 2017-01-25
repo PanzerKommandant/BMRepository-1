@@ -1,5 +1,5 @@
 Header:
-    version: "3"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
@@ -323,6 +323,7 @@ Controls:
         children:
         -   class: "UIControl"
             name: "titleContainer"
+            noInput: true
             components:
                 LinearLayout:
                     spacing: 10.000000

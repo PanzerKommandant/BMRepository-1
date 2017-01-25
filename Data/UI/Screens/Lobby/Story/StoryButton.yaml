@@ -24,7 +24,7 @@ StyleSheets:
 Controls:
 -   class: "UIControl"
     name: "StoryButton"
-    size: [209.000000, 90.000000]
+    size: [209.000000, 84.000000]
     classes: "button story-button type=inform"
     components:
         SizePolicy:
@@ -34,19 +34,22 @@ Controls:
     -   class: "UIControl"
         name: "Back"
         position: [0.000000, 0.000000]
-        size: [209.000000, 90.000000]
+        size: [209.000000, 84.000000]
         noInput: true
+        classes: "button-color-gray"
         components:
-            SizePolicy:
-                verticalPolicy: "PercentOfContent"
+            SizePolicy: {}
             Background:
-                drawType: "DRAW_TILED"
-                sprite: "~res:/Gfx/UI/Story/button_garage"
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
                 leftRightStretchCap: 4.000000
     -   class: "UIParticles"
         name: "ButtonEffect"
-        position: [104.500000, 45.000000]
+        position: [104.500000, 42.000000]
         size: [32.000000, 32.000000]
         pivot: [0.500000, 0.500000]
         noInput: true

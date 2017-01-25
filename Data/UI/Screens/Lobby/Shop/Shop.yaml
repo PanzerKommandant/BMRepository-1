@@ -1,7 +1,26 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
+StyleSheets:
+-   selector: ".tab #selected"
+    properties:
+        visible: false
+-   selector: ".tab:selected #selected"
+    properties:
+        visible: true
+-   selector: ".tab #unselected"
+    properties:
+        visible: true
+-   selector: ".tab:selected #unselected"
+    properties:
+        visible: false
+-   selector: ".buy_mode #tabGoldConversion, .buy_mode #tabXpTransfer"
+    properties:
+        visible: false
+-   selector: ".exchange_mode #tabPackages, .exchange_mode #tabBuyGold, .exchange_mode #tabBuyPremium, .exchange_mode #tabBoosters, .exchange_mode #tabVehicles"
+    properties:
+        visible: false
 Controls:
 -   class: "UIControl"
     name: "Screen"
@@ -24,11 +43,6 @@ Controls:
                 rightAnchor: 0.000000
                 topAnchorEnabled: true
                 topAnchor: 0.000000
-        children:
-        -   class: "UIControl"
-            name: ""
-        -   class: "UIControl"
-            name: ""
     -   class: "UIControl"
         name: "Background"
         components:
@@ -80,10 +94,11 @@ Controls:
             children:
             -   class: "UIControl"
                 name: "tabPackages"
-                position: [820.799988, 0.000000]
-                size: [203.199997, 70.000000]
+                position: [0.000000, 0.000000]
+                size: [144.571426, 70.000000]
                 noInput: true
                 tag: 4
+                classes: "tab"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
@@ -97,7 +112,7 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "selected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/Packages"
@@ -116,7 +131,7 @@ Controls:
                             align: ["LEFT", "TOP"]
                 -   class: "UIStaticText"
                     name: "unselected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textColor: [0.627451, 0.725490, 0.803922, 1.000000]
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
@@ -137,10 +152,12 @@ Controls:
                             color: [0.000000, 0.000000, 0.000000, 1.000000]
                             align: ["LEFT", "TOP"]
             -   class: "UIControl"
-                name: "tabBuyGold"
-                position: [615.599976, 0.000000]
-                size: [203.199997, 70.000000]
+                name: "tabVehicles"
+                position: [146.571426, 0.000000]
+                size: [144.571426, 70.000000]
                 noInput: true
+                tag: 5
+                classes: "tab"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
@@ -154,7 +171,65 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "selected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "shop/Buy/Vehicles"
+                    font: "WarHeliosCondC_Bold_21_tab"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "unselected"
+                    size: [144.571426, 70.000000]
+                    noInput: true
+                    textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "shop/Buy/Vehicles"
+                    font: "WarHeliosCondC_Bold_21_tab"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [0.000000, 0.000000, 0.000000, 1.000000]
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "tabBuyGold"
+                position: [293.142853, 0.000000]
+                size: [144.571426, 70.000000]
+                noInput: true
+                classes: "tab"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                children:
+                -   class: "UIStaticText"
+                    name: "selected"
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/Buy/Gold"
@@ -173,7 +248,7 @@ Controls:
                             align: ["LEFT", "TOP"]
                 -   class: "UIStaticText"
                     name: "unselected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textColor: [0.627451, 0.725490, 0.803922, 1.000000]
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
@@ -195,10 +270,11 @@ Controls:
                             align: ["LEFT", "TOP"]
             -   class: "UIControl"
                 name: "tabBuyPremium"
-                position: [410.399963, 0.000000]
-                size: [203.199997, 70.000000]
+                position: [439.714294, 0.000000]
+                size: [144.571426, 70.000000]
                 noInput: true
                 tag: 1
+                classes: "tab"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
@@ -212,7 +288,7 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "selected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/Buy/Premium"
@@ -231,7 +307,7 @@ Controls:
                             align: ["LEFT", "TOP"]
                 -   class: "UIStaticText"
                     name: "unselected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textColor: [0.627451, 0.725490, 0.803922, 1.000000]
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
@@ -253,10 +329,11 @@ Controls:
                             align: ["LEFT", "TOP"]
             -   class: "UIControl"
                 name: "tabGoldConversion"
-                position: [205.199966, 0.000000]
-                size: [203.199997, 70.000000]
+                position: [586.285706, 0.000000]
+                size: [144.571426, 70.000000]
                 noInput: true
                 tag: 2
+                classes: "tab"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
@@ -270,7 +347,7 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "selected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/GoldConversion"
@@ -289,7 +366,7 @@ Controls:
                             align: ["LEFT", "TOP"]
                 -   class: "UIStaticText"
                     name: "unselected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textColor: [0.627451, 0.725490, 0.803922, 1.000000]
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
@@ -311,10 +388,11 @@ Controls:
                             align: ["LEFT", "TOP"]
             -   class: "UIControl"
                 name: "tabXpTransfer"
-                position: [-0.000031, 0.000000]
-                size: [203.199997, 70.000000]
+                position: [732.857117, 0.000000]
+                size: [144.571426, 70.000000]
                 noInput: true
                 tag: 3
+                classes: "tab"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
@@ -328,7 +406,7 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "selected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/XpTransfer"
@@ -347,11 +425,70 @@ Controls:
                             align: ["LEFT", "TOP"]
                 -   class: "UIStaticText"
                     name: "unselected"
-                    size: [203.199997, 70.000000]
+                    size: [144.571426, 70.000000]
                     noInput: true
                     textColor: [0.627451, 0.725490, 0.803922, 1.000000]
                     textcolorInheritType: "COLOR_IGNORE_PARENT"
                     text: "shop/XpTransfer"
+                    font: "WarHeliosCondC_Bold_21_tab"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            drawType: "DRAW_FILL"
+                            color: [0.000000, 0.000000, 0.000000, 1.000000]
+                            align: ["LEFT", "TOP"]
+            -   class: "UIControl"
+                name: "tabBoosters"
+                position: [879.428528, 0.000000]
+                size: [144.571426, 70.000000]
+                noInput: true
+                tag: 6
+                classes: "tab"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+                    Background:
+                        drawType: "DRAW_STRETCH_HORIZONTAL"
+                children:
+                -   class: "UIStaticText"
+                    name: "selected"
+                    size: [144.571426, 70.000000]
+                    noInput: true
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "shop/Boosters"
+                    font: "WarHeliosCondC_Bold_21_tab"
+                    components:
+                        Anchor:
+                            leftAnchorEnabled: true
+                            leftAnchor: 0.000000
+                            rightAnchorEnabled: true
+                            rightAnchor: 0.000000
+                            topAnchorEnabled: true
+                            topAnchor: 0.000000
+                            bottomAnchorEnabled: true
+                            bottomAnchor: 0.000000
+                        Background:
+                            align: ["LEFT", "TOP"]
+                -   class: "UIStaticText"
+                    name: "unselected"
+                    size: [144.571426, 70.000000]
+                    noInput: true
+                    textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    text: "shop/Boosters"
                     font: "WarHeliosCondC_Bold_21_tab"
                     components:
                         Anchor:

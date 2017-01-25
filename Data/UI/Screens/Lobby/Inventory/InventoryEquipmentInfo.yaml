@@ -4,7 +4,7 @@ ImportedPackages:
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Styles/Lobby/Inventory/InventoryBigStyles.yaml"
 - "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
-- "~res:/UI/Screens/Lobby/Common/VehicleCharacteristicsInfluence.yaml"
+- "~res:/UI/Screens/Lobby/Common/VehicleParamsTable.yaml"
 StyleSheets:
 -   selector: ".inventory-item-slot #icon"
     properties:
@@ -21,6 +21,9 @@ StyleSheets:
 -   selector: ".params-header-background"
     properties:
         bg-sprite: "~res:/Gfx/UI/Hangar/InfoGradients.txt"
+-   selector: ".number-param-prototype"
+    properties:
+        visible: false
 Controls:
 -   class: "UIControl"
     name: "Slot"
@@ -282,23 +285,12 @@ Controls:
                         horizontalPolicy: "PercentOfParent"
                         verticalPolicy: "FixedSize"
                         verticalValue: 7.000000
-            -   prototype: "VehicleCharacteristicsInfluence/VehicleCharacteristicsInfluence"
-                name: "VehicleCharacteristicsInfluence"
+            -   prototype: "VehicleParamsTable/VehicleParamsTable"
+                name: "VehicleParamsTable"
                 children:
-                -   path: "DetalesParam/ProtectabilityParams/HeaderStrength/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "DetalesParam/MobilityParams/HeaderMobility/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "DetalesParam/GunParams/HeaderDetaleGun/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "ModulesParam/Gun/HeaderGun/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "ModulesParam/Engine/HeaderEngine/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "ModulesParam/Turret/HeaderTurret/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
-                -   path: "ModulesParam/Chassi/HeaderChassi/bg/title"
-                    textalign: ["LEFT", "VCENTER"]
+                -   path: "BaseParam"
+                    visible: false
+                    children: []
         -   class: "UIScrollBar"
             name: "InfoScrollBar"
             size: [6.000000, 380.000000]

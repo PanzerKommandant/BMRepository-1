@@ -1,0 +1,18 @@
+Header:
+    version: "6"
+Prototypes:
+-   class: "UIControl"
+    name: "OrangeSelection"
+    position: [242.148468, 143.785019]
+    size: [258.351563, 45.215012]
+    noInput: true
+    components:
+        Background:
+            drawType: "DRAW_TILED_MULTILAYER"
+            mask: "~res:/Gfx/UI/CommonUIElements/Selection/mask"
+            detail: "~res:/Gfx/UI/CommonUIElements/Selection/detail"
+            gradient: "~res:/Gfx/UI/CommonUIElements/Selection/gradient"
+            contour: "~res:/Gfx/UI/CommonUIElements/Selection/contour"
+            gradientMode: "Alpha blend"
+            leftRightStretchCap: 20.000000
+            topBottomStretchCap: 20.000000

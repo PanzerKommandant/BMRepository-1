@@ -1,0 +1,140 @@
+emitter:
+    size: [0.000000, 0.000000, 0.000000]
+    name: "Dragon_battle"
+    type: "point"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionVector: [-1.000000, 0.000000, 0.000000]
+    emissionRange: 0.000000
+layer0:
+    name: "glow_water"
+    enableFog: false
+    sprite: "../../../../../Data/Gfx/Particles/UI/o2_expGlowB"
+    type: "layer"
+    isLong: false
+    layerType: "single"
+    blending: 3
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    number: 1.000000
+    size: [200.000000, 200.000000]
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.500000, 1.000000, 1.000000, 0.000000]
+    colorOverLife: [43.906612, 103.688713, 112.101166, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 10000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1
+layer1:
+    name: "glow_fire"
+    enableFog: false
+    sprite: "../../../../../Data/Gfx/Particles/UI/o2_expGlowB"
+    type: "layer"
+    isLong: false
+    layerType: "single"
+    blending: 3
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    number: 1.000000
+    size: [200.000000, 200.000000]
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.480000, 1.000000, 1.000000, 0.000000]
+    colorOverLife: [255.000000, 167.143967, 3.984436, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 2.500000
+    endTime: 10000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1
+layer2:
+    name: "water"
+    enableFog: true
+    sprite: "../../../../../Data/Gfx/Particles/UI/Lunar_NY/water"
+    type: "layer"
+    isLong: false
+    layerType: "single"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    size: [95.000000, 58.000000]
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.500000, 1.000000, 0.998073, 0.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 10000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1
+layer3:
+    name: "fire"
+    enableFog: true
+    sprite: "../../../../../Data/Gfx/Particles/UI/Lunar_NY/fire"
+    type: "layer"
+    isLong: false
+    layerType: "single"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    size: [95.000000, 58.000000]
+    randomSpinDirection: false
+    alphaOverLife: [0.000000, 0.000000, 0.500000, 1.000000, 1.000000, 0.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 2.500000
+    endTime: 10000.000000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 100.000000
+    inheritPosition: true
+    particleOrientation: 1
+    activeLODS: [1, 1, 1, 1]
+    effectFormat: 1

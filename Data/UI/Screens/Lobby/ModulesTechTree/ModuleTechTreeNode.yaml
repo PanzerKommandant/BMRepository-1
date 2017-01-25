@@ -1,5 +1,7 @@
 Header:
-    version: "2"
+    version: "4"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
 StyleSheets:
 -   selector: ".button"
     properties: {}
@@ -15,9 +17,10 @@ Controls:
     children:
     -   class: "UIControl"
         name: "Background"
-        position: [-13.000000, -18.000000]
-        size: [100.000000, 100.000000]
+        position: [0.000000, 0.000000]
+        size: [74.000000, 64.000000]
         noInput: true
+        classes: "color=button-color-green"
         components:
             Anchor:
                 hCenterAnchorEnabled: true
@@ -25,8 +28,10 @@ Controls:
                 vCenterAnchorEnabled: true
                 vCenterAnchor: 0.000000
             Background:
-                sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
-                frame: 2
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
     -   class: "UIControl"
         name: "Content"
@@ -160,7 +165,7 @@ Controls:
                     bottomAnchor: 0.000000
                 Background:
                     sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
-                    frame: 3
+                    frame: 0
         -   class: "UIControl"
             name: "highlight"
             position: [50.000000, 50.000000]
@@ -191,7 +196,7 @@ Controls:
                     bottomAnchor: 0.000000
                 Background:
                     sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
-                    frame: 5
+                    frame: 2
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
         -   class: "UIControl"
             name: "DrumAmmo"
@@ -210,5 +215,5 @@ Controls:
                     bottomAnchor: 0.000000
                 Background:
                     sprite: "~res:/Gfx/UI/ModulesTechTree/BackgroundModules"
-                    frame: 4
+                    frame: 1
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

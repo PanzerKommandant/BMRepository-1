@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [0.100000, 0.100000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/1AP/bubbles"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/bubbles"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

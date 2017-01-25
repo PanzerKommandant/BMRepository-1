@@ -1,7 +1,8 @@
 Header:
-    version: "1"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
 -   class: "UIControl"
     customClass: "GameMenuUI"
@@ -40,99 +41,63 @@ Controls:
             position: [0.000000, 0.000000]
             size: [246.000000, 558.000000]
             children:
-            -   prototype: "Common/DefaultButton"
+            -   prototype: "StyledButton/StyledButton"
                 name: "exitButton"
-                position: [12.000000, 16.000000]
+                size: [226.000000, 70.000000]
+                classes: "button button-color-red"
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        frame: 1
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    PressedInside:
-                        frame: 1
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    Disabled:
-                        frame: 1
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    NormalText:
-                        fitting: ["REDUCE"]
-                        text: "Exit to Hangar"
-                    DisabledText:
-                        fitting: ["REDUCE"]
-                        text: "Exit to Hangar"
-            -   prototype: "Common/DefaultButton"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Exit to Hangar"
+            -   prototype: "StyledButton/StyledButton"
                 name: "optionsButton"
-                position: [12.000000, 102.000000]
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    PressedInside:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    Disabled:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    NormalText:
-                        fitting: ["REDUCE"]
-                        text: "Dev Options"
-                    DisabledText:
-                        fitting: ["REDUCE"]
-                        text: "Dev Options"
-            -   prototype: "Common/DefaultButton"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Dev Options"
+            -   prototype: "StyledButton/StyledButton"
                 name: "playerOptionsButton"
-                position: [12.000000, 188.000000]
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    PressedInside:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    Disabled:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    NormalText:
-                        fitting: ["REDUCE"]
-                        text: "Options"
-                    DisabledText:
-                        fitting: ["REDUCE"]
-                        text: "Options"
-            -   prototype: "Common/DefaultButton"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Options"
+            -   prototype: "StyledButton/StyledButton"
                 name: "devFunctionsButton"
-                position: [12.000000, 274.000000]
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    PressedInside:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    Disabled:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    NormalText:
-                        fitting: ["REDUCE"]
-                        text: "Dev Functions"
-                    DisabledText:
-                        fitting: ["REDUCE"]
-                        text: "Dev Functions"
-            -   prototype: "Common/DefaultButton"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Dev Functions"
+            -   prototype: "StyledButton/StyledButton"
                 name: "graphicsOptionsButton"
-                position: [12.000000, 360.000000]
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    PressedInside:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    Disabled:
-                        margins: [-4.000000, 0.000000, -4.000000, 0.000000]
-                    NormalText:
-                        fitting: ["REDUCE"]
-                        text: "Graphics Options"
-                    DisabledText:
-                        fitting: ["REDUCE"]
-                        text: "Graphics Options"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Graphics Options"
             -   class: "UIControl"
                 name: "Empty"
                 position: [73.000000, 446.000000]
@@ -140,19 +105,15 @@ Controls:
                 components:
                     Anchor:
                         hCenterAnchorEnabled: true
-            -   prototype: "Common/DefaultButton"
+            -   prototype: "StyledButton/StyledButton"
                 name: "cancelButton"
-                position: [12.000000, 472.000000]
+                classes: "button button-color-orange"
                 components:
                     Anchor:
-                        hCenterAnchorEnabled: true
-                    Normal:
-                        frame: 3
-                    PressedInside:
-                        frame: 3
-                    Disabled:
-                        frame: 3
-                    NormalText:
-                        text: "Back to Game"
-                    DisabledText:
-                        text: "Back to Game"
+                        leftAnchorEnabled: true
+                        leftAnchor: 10.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 10.000000
+                children:
+                -   path: "Caption"
+                    text: "Back to Game"

@@ -50,7 +50,7 @@ layer0:
     sizeVariation: [1.000000, 1.000000]
     spin: 5.000000
     spinVariation: 5.000000
-    sprite: "../../../Gfx/Particles/alpha/rich_water"
+    sprite: "../../../../Data/Gfx/Particles/alpha/rich_water"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000
@@ -98,7 +98,7 @@ layer1:
     sizeVariation: [1.000000, 1.000000]
     spin: 5.000000
     spinVariation: 5.000000
-    sprite: "../../../Gfx/Particles/alpha/water_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/water_one"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000
@@ -146,7 +146,7 @@ layer2:
     sizeVariation: [1.000000, 1.000000]
     spin: 5.000000
     spinVariation: 5.000000
-    sprite: "../../../Gfx/Particles/alpha/dust_water"
+    sprite: "../../../../Data/Gfx/Particles/alpha/dust_water"
     startTime: 0.000000
     type: "layer"
     velocity: 10.000000

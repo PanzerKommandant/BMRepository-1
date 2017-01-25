@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common/StyledMenuButton.yaml"
@@ -64,6 +64,7 @@ Controls:
             children:
             -   class: "UIScrollViewContainer"
                 name: "scrollContainerControl"
+                position: [0.000000, 364.000000]
                 components:
                     LinearLayout:
                         orientation: "TopDown"
@@ -101,7 +102,7 @@ Controls:
                                 hCenterAnchorEnabled: true
                     -   class: "UIStaticText"
                         name: "HintBuy"
-                        size: [661.000000, 52.000000]
+                        size: [579.000000, 52.000000]
                         classes: "text1 text-color-red"
                         textcolorInheritType: "COLOR_IGNORE_PARENT"
                         multiline: "MULTILINE_ENABLED"
@@ -124,7 +125,8 @@ Controls:
                             hCenterAnchorEnabled: true
                 -   class: "UIControl"
                     name: "WebInteraction"
-                    size: [821.599976, 142.000000]
+                    size: [821.599976, 136.000000]
+                    visible: false
                     noInput: true
                     components:
                         LinearLayout:

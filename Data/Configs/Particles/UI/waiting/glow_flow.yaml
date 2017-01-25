@@ -42,7 +42,7 @@ layer0:
     size: [30.000000, 30.000000]
     sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.495000, [5.000200, 5.000200], 1.000000, [4.364100, 4.364100]]
     sizeVariation: [30.000000, 30.000000]
-    sprite: "../../../../Gfx/Particles/UI/glow_blur"
+    sprite: "../../../../../Data/Gfx/Particles/UI/glow_blur"
     startTime: 0.000000
     type: "layer"
     velocity: 14.000000

@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/usa-T26_E4_SuperPershing.sc2</collisionMesh>
 		<exclusionMask>Camouflages/usa/CamouflageMasks/T26_E4_SuperPershing_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USA_T26E4</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>
@@ -52,7 +53,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>121.048462</turret_01>
+				<turret_01>119.503754</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

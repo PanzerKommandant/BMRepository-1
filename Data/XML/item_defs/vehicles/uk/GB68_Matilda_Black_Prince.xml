@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/uk-GB68_Matilda_Black_Prince.sc2</collisionMesh>
 		<exclusionMask>Camouflages/uk/CamouflageMasks/GB68_Matilda_Black_Prince_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/GB_Matilda_BP</shopIconPath>
 	</blitz>
 	<crew>
 		<commander>radioman</commander>
@@ -51,7 +52,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>77.859863</turret_01>
+				<turret_01>81.454277</turret_01>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

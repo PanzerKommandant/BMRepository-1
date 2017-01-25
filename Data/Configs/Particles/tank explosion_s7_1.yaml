@@ -40,7 +40,7 @@ layer0:
     scaleVelocityFactor: 0.0000
     size: [0.3000, 0.3000]
     spin: 180.0000
-    sprite: "../../Gfx/Particles/tank_element_two"
+    sprite: "../../../Data/Gfx/Particles/tank_element_two"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -80,7 +80,7 @@ layer1:
     sizeOverLifeXY: [0.0000, [0.5000, 0.5000], 0.9900, [1.0000, 1.0000]]
     spin: 90.0000
     spinVariation: 90.0000
-    sprite: "../../Gfx/Particles/explosion_smoke_white"
+    sprite: "../../../Data/Gfx/Particles/explosion_smoke_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

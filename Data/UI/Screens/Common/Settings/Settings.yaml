@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/LobbyHeader.yaml"
 - "~res:/UI/Screens/Lobby/LobbyCommon.yaml"
@@ -12,12 +12,25 @@ StyleSheets:
 -   selector: "#TouchTab ? #text"
     properties:
         bg-frame: 5
+-   selector: ".tab #selected"
+    properties:
+        visible: false
+-   selector: ".tab:selected #selected"
+    properties:
+        visible: true
+-   selector: ".tab #unselected"
+    properties:
+        visible: true
+-   selector: ".tab:selected #unselected"
+    properties:
+        visible: false
 Controls:
 -   class: "UIControl"
     name: "SettingsTabControl"
     size: [150.000000, 74.000000]
     noInput: true
     tag: 0
+    classes: "tab"
     components:
         SizePolicy:
             horizontalPolicy: "PercentOfParent"

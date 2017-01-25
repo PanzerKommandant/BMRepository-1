@@ -48,7 +48,7 @@ layer0:
     size: [0.500000, 0.500000]
     sizeOverLifeXY: [0.001912, [1.863564, 1.863564], 1.000000, [11.552044, 11.552044]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../../Gfx/Particles/alpha/R_dust_density"
+    sprite: "../../../../Data/Gfx/Particles/alpha/R_dust_density"
     startTime: 0.000000
     type: "layer"
     velocity: 0.461300

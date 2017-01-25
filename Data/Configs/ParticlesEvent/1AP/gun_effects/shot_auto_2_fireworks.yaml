@@ -39,7 +39,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.200000
     size: [0.090000, 0.090000]
-    sprite: "../../../../Gfx/Particles/1AP/sparks1"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/sparks1"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -78,7 +78,7 @@ layer1:
     scaleVelocityFactor: 1.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/glow_anim_low"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/glow_anim_low"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -117,7 +117,7 @@ layer2:
     scaleVelocityFactor: 1.000000
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [2.000000, 2.000000]]
-    sprite: "../../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000
@@ -158,7 +158,7 @@ layer3:
     sizeVariation: [0.100000, 0.100000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/1AP/small_gun"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/small_gun"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

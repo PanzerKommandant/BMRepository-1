@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Crew/ScreenBlank.yaml"
 - "~res:/UI/Screens/Lobby/Crew/CrewCommon.yaml"
@@ -284,7 +284,7 @@ Controls:
         children:
         -   prototype: "StyledButton/StyledButton"
             name: "DistributeXp"
-            size: [290.000000, 71.000000]
+            size: [290.000000, 64.000000]
             classes: "button button-color-green"
             components:
                 Anchor:
@@ -293,7 +293,6 @@ Controls:
                     vCenterAnchorEnabled: true
             children:
             -   path: "Caption"
-                classes: "header1 hacked-font text-color-white"
                 text: "#crew:skills/skillDescription/convert"
         -   class: "UIStaticText"
             name: "Description"

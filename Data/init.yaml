@@ -1,0 +1,107 @@
+keyedArchive:
+#    device:
+#        string: "iPhone4"
+#    locale:
+#        string: "ru"
+#    renderer:
+#        string: "gles2" # dx9, dx11, gles2, metal
+    iPad:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1024
+            height:
+                int32: 768
+            deviceKind:
+                string: "Tablet"
+    iPadMini:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1024
+            height:
+                int32: 768
+            deviceKind:
+                string: "MiniTablet"
+    iPhone4:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 960
+            height:
+                int32: 640
+            deviceKind:
+                string: "Phone"
+    iPhone5:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1136
+            height:
+                int32: 640
+            deviceKind:
+                string: "Phone"
+    iPhone6:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1334
+            height:
+                int32: 750
+            deviceKind:
+                string: "Phone"
+    iPhone6Plus:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1920
+            height:
+                int32: 1080
+            deviceKind:
+                string: "Phone"
+    AndroidTablet:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1280
+            height:
+                int32: 720
+            deviceKind:
+                string: "Tablet"
+    AndroidTablet2:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1920
+            height:
+                int32: 1200
+            deviceKind:
+                string: "Tablet"
+    AndroidPhone:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1280
+            height:
+                int32: 720
+            deviceKind:
+                string: "Phone"
+    WinMac:
+        keyedArchive:
+            fullscreen:
+                int32: 0
+            width:
+                int32: 1800
+            height:
+                int32: 1000
+            deviceKind:
+                string: "Desktop"

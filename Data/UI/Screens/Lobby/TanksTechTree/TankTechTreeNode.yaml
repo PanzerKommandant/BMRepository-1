@@ -1,18 +1,19 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-Controls:
+- "~res:/UI/Screens/Common/Selection.yaml"
+Prototypes:
 -   class: "UIControl"
     customClass: "UIVehicleTechTreeNode"
     name: "VehicleTechTreeNode"
-    size: [173.000000, 64.000000]
+    size: [172.000000, 64.000000]
     classes: "button"
     children:
     -   class: "UIControl"
         name: "PanelPlaceholder"
-        size: [173.000000, 64.000000]
+        size: [172.000000, 64.000000]
         noInput: true
         components:
             Anchor:
@@ -22,19 +23,24 @@ Controls:
                 bottomAnchorEnabled: true
     -   class: "UIControl"
         name: "Background"
-        position: [-14.500000, -18.000000]
-        size: [200.000000, 100.000000]
+        position: [0.000000, -0.500000]
+        size: [172.000000, 65.000000]
         noInput: true
+        classes: "color=button-color-green-dark"
         components:
             Anchor:
                 hCenterAnchorEnabled: true
-                hCenterAnchor: -1.000000
                 vCenterAnchorEnabled: true
                 vCenterAnchor: 0.000000
             Background:
-                sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
-                frame: 1
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                leftRightStretchCap: 20.000000
+                topBottomStretchCap: 20.000000
     -   class: "UIControl"
         name: "Content"
         size: [173.000000, 65.000000]
@@ -227,36 +233,27 @@ Controls:
                         frame: 3
     -   class: "UIControl"
         name: "Foreground"
-        position: [-14.500000, -18.000000]
+        position: [-16.000000, -18.000000]
         size: [200.000000, 100.000000]
         noInput: true
         components:
             Anchor:
                 hCenterAnchorEnabled: true
-                hCenterAnchor: -1.000000
+                hCenterAnchor: -2.000000
                 vCenterAnchorEnabled: true
-                vCenterAnchor: 0.000000
             Background:
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
         children:
-        -   class: "UIControl"
+        -   prototype: "Selection/OrangeSelection"
             name: "Selection"
-            size: [200.000000, 100.000000]
-            visible: false
-            noInput: true
+            size: [174.000000, 67.000000]
             components:
                 Anchor:
-                    leftAnchorEnabled: true
-                    leftAnchor: 0.000000
-                    rightAnchorEnabled: true
-                    rightAnchor: 0.000000
-                    topAnchorEnabled: true
-                    topAnchor: 0.000000
-                    bottomAnchorEnabled: true
-                    bottomAnchor: 0.000000
+                    hCenterAnchorEnabled: true
+                    hCenterAnchor: 2.000000
+                    vCenterAnchorEnabled: true
                 Background:
-                    sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
-                    frame: 5
+                    perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
         -   prototype: "DiscountLabel/DiscountLabel"
             name: "Discount"
             components:
@@ -267,17 +264,17 @@ Controls:
                     topAnchor: 16.000000
         -   class: "UIControl"
             name: "highlight"
-            position: [100.500000, 50.000000]
-            size: [193.000000, 86.000000]
+            position: [102.000000, 50.000000]
+            size: [192.000000, 86.000000]
             pivot: [0.500000, 0.500000]
             visible: false
             noInput: true
             components:
                 Anchor:
                     leftAnchorEnabled: true
-                    leftAnchor: 4.000000
+                    leftAnchor: 6.000000
                     rightAnchorEnabled: true
-                    rightAnchor: 3.000000
+                    rightAnchor: 2.000000
                     topAnchorEnabled: true
                     topAnchor: 7.000000
                     bottomAnchorEnabled: true
@@ -304,5 +301,4 @@ Controls:
                     bottomAnchor: 0.000000
                 Background:
                     sprite: "~res:/Gfx/UI/TankTechTree/BackgroundTanks"
-                    frame: 6
                     perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

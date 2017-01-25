@@ -520,7 +520,7 @@
 							<crash>-0.000000 -0.514409 -2.097334</crash>
 						</points>
 					</blitz>
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>42</maxAmmo>
 					<unlocks>
 						<vehicle>T54E1<cost>170000</cost>
 						</vehicle>

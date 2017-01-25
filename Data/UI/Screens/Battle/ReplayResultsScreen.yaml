@@ -1,5 +1,5 @@
 Header:
-    version: "1"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
@@ -31,7 +31,7 @@ Controls:
         name: "ResultsContainer"
         components:
             LinearLayout:
-                orientation: "Vertical"
+                orientation: "TopDown"
                 spacing: 50.000000
             Anchor:
                 leftAnchorEnabled: true
@@ -88,7 +88,7 @@ Controls:
                     rightAnchorEnabled: true
     -   prototype: "StyledButton/StyledButton"
         name: "CloseButton"
-        size: [180.000000, 70.000000]
+        size: [180.000000, 64.000000]
         components:
             Anchor:
                 rightAnchorEnabled: true

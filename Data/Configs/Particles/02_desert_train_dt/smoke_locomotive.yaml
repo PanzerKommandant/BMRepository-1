@@ -50,7 +50,7 @@ layer0:
     sizeVariation: [0.500000, 0.500000]
     spin: 120.000000
     spinVariation: 30.000000
-    sprite: "../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 0.461300

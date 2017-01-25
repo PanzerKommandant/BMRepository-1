@@ -43,7 +43,7 @@ layer0:
     size: [0.050000, 0.050000]
     sizeOverLifeXY: [0.000000, [1.500000, 1.500000], 0.990000, [0.000000, 0.000000]]
     sizeVariation: [0.030000, 0.040000]
-    sprite: "../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000

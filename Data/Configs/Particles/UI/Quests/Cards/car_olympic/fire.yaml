@@ -36,7 +36,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [6.000000, 5.000000]
     sizeOverLifeXY: [12.000000, 12.000000]
-    sprite: "../../../../../../Gfx/Particles/ParticlesHigh/FireBig/fireBig"
+    sprite: "../../../../../../../Data/Gfx/Particles/ParticlesHigh/FireBig/fireBig"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -69,6 +69,6 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [6.000000, 5.000000]
     sizeOverLifeXY: [12.000000, 12.000000]
-    sprite: "../../../../../../Gfx/Particles/ParticlesHigh/FireBig/fireBig"
+    sprite: "../../../../../../../Data/Gfx/Particles/ParticlesHigh/FireBig/fireBig"
     startTime: 0.000000
     type: "layer"

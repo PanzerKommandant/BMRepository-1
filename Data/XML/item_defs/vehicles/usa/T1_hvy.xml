@@ -53,8 +53,8 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_01>84.786613</turret_01>
-				<turret_02>87.411514</turret_02>
+				<turret_01>91.534843</turret_01>
+				<turret_02>94.370537</turret_02>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

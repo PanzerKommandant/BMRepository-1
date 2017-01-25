@@ -47,7 +47,7 @@ layer0:
     scaleVelocityBase: 1.0000
     scaleVelocityFactor: 0.0000
     size: [3.0000, 3.0000]
-    sprite: "../../Gfx/Particles/o2_fire_anim"
+    sprite: "../../../Data/Gfx/Particles/o2_fire_anim"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -97,7 +97,7 @@ layer1:
     scaleVelocityFactor: 0.0000
     size: [2.0000, 2.0000]
     spinVariation: 60.0000
-    sprite: "../../Gfx/Particles/fog"
+    sprite: "../../../Data/Gfx/Particles/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -147,7 +147,7 @@ layer2:
     scaleVelocityFactor: 0.0000
     size: [2.0000, 2.0000]
     spinVariation: 60.0000
-    sprite: "../../Gfx/Particles/fog"
+    sprite: "../../../Data/Gfx/Particles/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

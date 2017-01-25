@@ -1,10 +1,12 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-Controls:
+- "~res:/UI/Screens/Common/SmartTextField.yaml"
+- "~res:/UI/Screens/Common/Switch.yaml"
+- "~res:/UI/Styles/DesktopStyles.yaml"
+Prototypes:
 -   class: "UIControl"
     name: "SettingItem"
     size: [1024.000000, 80.000000]
@@ -30,327 +32,231 @@ Controls:
                 leftAnchorEnabled: true
                 leftAnchor: 20.000000
                 vCenterAnchorEnabled: true
+Controls:
 -   class: "UIControl"
     customClass: "UITrainingRoomSettings"
     name: "Content"
-    size: [1024.000000, 688.000000]
-    classes: "limited-width"
+    size: [1224.000000, 688.000000]
     components:
         LinearLayout:
             orientation: "TopDown"
-            spacing: 2.000000
         SizePolicy:
             horizontalPolicy: "PercentOfParent"
-            horizontalMax: 1350.000000
             verticalPolicy: "PercentOfParent"
-        Anchor:
-            hCenterAnchorEnabled: true
-            topAnchorEnabled: true
     children:
     -   class: "UIControl"
         name: "Settings"
-        classes: "sliders-container"
+        position: [62.000000, 0.000000]
+        size: [1100.000000, 588.000000]
+        classes: "limited-width"
         components:
             LinearLayout:
-                orientation: "TopDown"
-                padding: 0.000000
+                orientation: "LeftToRight"
                 spacing: 2.000000
             SizePolicy:
-                verticalPolicy: "PercentOfChildrenSum"
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
             Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
+                hCenterAnchorEnabled: true
         children:
-        -   prototype: "SettingItem"
-            name: "Title"
+        -   class: "UIScrollView"
+            name: "ScrollView"
+            size: [1094.000000, 588.000000]
+            autoUpdate: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
             children:
-            -   path: "Caption"
-                text: "#training_rooms:CreationScreen/EnterName"
-            -   prototype: "LoginCommon/LoginTextField"
-                name: "TextField"
+            -   class: "UIScrollViewContainer"
+                name: "scrollContainerControl"
                 components:
-                    Anchor:
-                        hCenterAnchorEnabled: true
-                        vCenterAnchorEnabled: true
-                children:
-                -   path: "VerticalBox/Background/TextField"
-                    maxLength: 50
-                    keyboardType: "KEYBOARD_TYPE_DEFAULT"
-                    children: []
-            -   class: "UIStaticText"
-                name: "ErrorNote"
-                size: [0.000000, 0.000000]
-                classes: "text1 text-color-red"
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                multiline: "MULTILINE_ENABLED"
-                textalign: ["RIGHT", "VCENTER"]
-                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        spacing: 2.000000
                     SizePolicy:
-                        horizontalPolicy: "PercentOfContent"
-                        verticalPolicy: "PercentOfContent"
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 15.000000
-                        vCenterAnchorEnabled: true
-        -   prototype: "SettingItem"
-            name: "Description"
-            children:
-            -   path: "Caption"
-                text: "#training_rooms:CreationScreen/EnterDescr"
-            -   prototype: "LoginCommon/LoginTextField"
-                name: "TextField"
-                components:
-                    Anchor:
-                        hCenterAnchorEnabled: true
-                        vCenterAnchorEnabled: true
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
                 children:
-                -   path: "VerticalBox/Background/TextField"
-                    maxLength: 400
-                    keyboardType: "KEYBOARD_TYPE_DEFAULT"
-                    children: []
-                -   path: "VerticalBox/Background/TextField/Hint"
-                    position: [5.000000, 0.000000]
-                    text: "#training_rooms:CreationScreen/EnterDescr/Hint"
-        -   prototype: "SettingItem"
-            name: "Map"
+                -   prototype: "SettingItem"
+                    name: "Title"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:CreationScreen/EnterName"
+                    -   prototype: "SmartTextField/SmartTextField"
+                        name: "TextField"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                        children:
+                        -   path: "VerticalBox/Background/TextField"
+                            maxLength: 50
+                            keyboardType: "KEYBOARD_TYPE_DEFAULT"
+                            children: []
+                    -   class: "UIStaticText"
+                        name: "ErrorNote"
+                        size: [0.000000, 0.000000]
+                        classes: "text1 text-color-red"
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        multiline: "MULTILINE_ENABLED"
+                        textalign: ["RIGHT", "VCENTER"]
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 15.000000
+                                vCenterAnchorEnabled: true
+                -   prototype: "SettingItem"
+                    name: "Description"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:CreationScreen/EnterDescr"
+                    -   prototype: "SmartTextField/SmartTextField"
+                        name: "TextField"
+                        components:
+                            Anchor:
+                                hCenterAnchorEnabled: true
+                                vCenterAnchorEnabled: true
+                        children:
+                        -   path: "VerticalBox/Background/TextField"
+                            maxLength: 400
+                            keyboardType: "KEYBOARD_TYPE_DEFAULT"
+                            children: []
+                        -   path: "VerticalBox/Background/TextField/Hint"
+                            position: [5.000000, 0.000000]
+                            text: "#training_rooms:CreationScreen/EnterDescr/Hint"
+                -   prototype: "SettingItem"
+                    name: "Map"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:CreationScreen/ChooseMap"
+                    -   class: "UIControl"
+                        name: "Select"
+                        size: [1094.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                    -   class: "UIStaticText"
+                        name: "Name"
+                        classes: "header4"
+                        textColor: [0.803922, 0.811765, 0.631373, 1.000000]
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        textalign: ["RIGHT", "VCENTER"]
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 50.000000
+                                vCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "Arrow"
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 20.000000
+                                vCenterAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Training/arrow_settings"
+                                colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                -   prototype: "SettingItem"
+                    name: "Mode"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:CreationScreen/Mode"
+                        font: "WarHeliosCondC_Bold_21"
+                    -   class: "UIControl"
+                        name: "Select"
+                        size: [1094.000000, 80.000000]
+                        components:
+                            Anchor:
+                                leftAnchorEnabled: true
+                                rightAnchorEnabled: true
+                                topAnchorEnabled: true
+                                bottomAnchorEnabled: true
+                    -   class: "UIStaticText"
+                        name: "Name"
+                        classes: "header4"
+                        textColor: [0.803922, 0.811765, 0.631373, 1.000000]
+                        textcolorInheritType: "COLOR_IGNORE_PARENT"
+                        textalign: ["RIGHT", "VCENTER"]
+                        components:
+                            SizePolicy:
+                                horizontalPolicy: "PercentOfContent"
+                                verticalPolicy: "PercentOfContent"
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 50.000000
+                                vCenterAnchorEnabled: true
+                    -   class: "UIControl"
+                        name: "Arrow"
+                        noInput: true
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 20.000000
+                                vCenterAnchorEnabled: true
+                            Background:
+                                sprite: "~res:/Gfx/UI/Training/arrow_settings"
+                                colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                -   prototype: "SettingItem"
+                    name: "Password"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:CreationScreen/SetPass"
+                    -   prototype: "Switch/Switch"
+                        name: "Switch"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 10.000000
+                                vCenterAnchorEnabled: true
+                -   prototype: "SettingItem"
+                    name: "TeamKill"
+                    children:
+                    -   path: "Caption"
+                        text: "#training_rooms:SettingsScreen/TeamKill"
+                    -   prototype: "Switch/Switch"
+                        name: "Switch"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                                rightAnchor: 10.000000
+                                vCenterAnchorEnabled: true
+        -   class: "UIScrollBar"
+            name: "ScrollBar"
+            size: [4.000000, 588.000000]
+            noInput: true
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 4.000000
+                    verticalPolicy: "PercentOfParent"
             children:
-            -   path: "Caption"
-                text: "#training_rooms:CreationScreen/ChooseMap"
             -   class: "UIControl"
-                name: "Select"
-                size: [1024.000000, 80.000000]
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                        topAnchorEnabled: true
-                        bottomAnchorEnabled: true
-            -   class: "UIStaticText"
-                name: "Name"
-                classes: "header4"
-                textColor: [0.803922, 0.811765, 0.631373, 1.000000]
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                textalign: ["RIGHT", "VCENTER"]
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfContent"
-                        verticalPolicy: "PercentOfContent"
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 50.000000
-                        vCenterAnchorEnabled: true
-            -   class: "UIControl"
-                name: "Arrow"
+                name: "slider"
+                size: [4.000000, 8.000000]
                 noInput: true
                 components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                        vCenterAnchorEnabled: true
                     Background:
-                        sprite: "~res:/Gfx/UI/Training/arrow_settings"
-                        colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
-        -   prototype: "SettingItem"
-            name: "Mode"
-            children:
-            -   path: "Caption"
-                text: "#training_rooms:CreationScreen/Mode"
-                font: "WarHeliosCondC_Bold_21"
-            -   class: "UIControl"
-                name: "Select"
-                size: [1024.000000, 80.000000]
-                components:
-                    Anchor:
-                        leftAnchorEnabled: true
-                        rightAnchorEnabled: true
-                        topAnchorEnabled: true
-                        bottomAnchorEnabled: true
-            -   class: "UIStaticText"
-                name: "Name"
-                classes: "header4"
-                textColor: [0.803922, 0.811765, 0.631373, 1.000000]
-                textcolorInheritType: "COLOR_IGNORE_PARENT"
-                textalign: ["RIGHT", "VCENTER"]
-                components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfContent"
-                        verticalPolicy: "PercentOfContent"
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 50.000000
-                        vCenterAnchorEnabled: true
-            -   class: "UIControl"
-                name: "Arrow"
-                noInput: true
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 20.000000
-                        vCenterAnchorEnabled: true
-                    Background:
-                        sprite: "~res:/Gfx/UI/Training/arrow_settings"
-                        colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
-        -   prototype: "SettingItem"
-            name: "Password"
-            children:
-            -   path: "Caption"
-                text: "#training_rooms:CreationScreen/SetPass"
-            -   class: "UISwitch"
-                name: "Switch"
-                size: [84.000000, 54.000000]
-                selected: true
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 10.000000
-                        vCenterAnchorEnabled: true
-                    Background:
-                        drawType: "DRAW_STRETCH_BOTH"
-                        sprite: "~res:/Gfx/UI/SettingsScreen/button_swich_back"
-                        leftRightStretchCap: 10.000000
-                        topBottomStretchCap: 10.000000
-                children:
-                -   class: "UIButton"
-                    name: "buttonRight"
-                    position: [84.000000, 0.000000]
-                    size: [42.000000, 54.000000]
-                    pivot: [1.000000, 0.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
-                            frame: 1
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   class: "UIButton"
-                    name: "buttonLeft"
-                    size: [42.000000, 54.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   class: "UIButton"
-                    name: "buttonToggle"
-                    position: [39.000000, 0.000000]
-                    size: [45.000000, 54.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/button_swich"
-                            frame: 0
-                            spriteModification: []
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                        NormalText:
-                            textcolorInheritType: "COLOR_IGNORE_PARENT"
-                            font: "Font_on_off"
-        -   prototype: "SettingItem"
-            name: "TeamKill"
-            children:
-            -   path: "Caption"
-                text: "#training_rooms:SettingsScreen/TeamKill"
-            -   class: "UISwitch"
-                name: "Switch"
-                size: [84.000000, 54.000000]
-                selected: true
-                components:
-                    Anchor:
-                        rightAnchorEnabled: true
-                        rightAnchor: 10.000000
-                        vCenterAnchorEnabled: true
-                    Background:
-                        drawType: "DRAW_STRETCH_BOTH"
-                        sprite: "~res:/Gfx/UI/SettingsScreen/button_swich_back"
-                        leftRightStretchCap: 10.000000
-                        topBottomStretchCap: 10.000000
-                children:
-                -   class: "UIButton"
-                    name: "buttonRight"
-                    position: [84.000000, 0.000000]
-                    size: [42.000000, 54.000000]
-                    pivot: [1.000000, 0.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            rightAnchorEnabled: true
-                            rightAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
-                            frame: 1
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   class: "UIButton"
-                    name: "buttonLeft"
-                    size: [42.000000, 54.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            leftAnchorEnabled: true
-                            leftAnchor: 0.000000
-                            hCenterAnchorEnabled: true
-                            hCenterAnchor: 0.000000
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/on_off"
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                -   class: "UIButton"
-                    name: "buttonToggle"
-                    position: [39.000000, 0.000000]
-                    size: [45.000000, 54.000000]
-                    noInput: true
-                    components:
-                        Anchor:
-                            topAnchorEnabled: true
-                            topAnchor: 0.000000
-                            bottomAnchorEnabled: true
-                            bottomAnchor: 0.000000
-                        Normal:
-                            sprite: "~res:/Gfx/UI/SettingsScreen/button_swich"
-                            frame: 0
-                            spriteModification: []
-                            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-                        NormalText:
-                            textcolorInheritType: "COLOR_IGNORE_PARENT"
-                            font: "Font_on_off"
+                        drawType: "DRAW_STRETCH_VERTICAL"
+                        sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
+                        topBottomStretchCap: 2.000000
     -   class: "UIControl"
         name: "Footer"
-        size: [1024.000000, 100.000000]
+        size: [1224.000000, 100.000000]
         components:
-            IgnoreLayout: {}
-            Anchor:
-                leftAnchorEnabled: true
-                rightAnchorEnabled: true
-                bottomAnchorEnabled: true
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
             Background:
                 drawType: "DRAW_FILL"
                 color: [0.000000, 0.000000, 0.000000, 1.000000]
@@ -358,13 +264,12 @@ Controls:
         -   prototype: "StyledButton/StyledButton"
             name: "CreateRoomButton"
             size: [250.000000, 70.000000]
+            classes: "button button-color-green"
             components:
                 IgnoreLayout: {}
                 Anchor:
                     hCenterAnchorEnabled: true
                     vCenterAnchorEnabled: true
-                Background:
-                    frame: 2
             children:
             -   path: "Caption"
                 text: "#clans:CreationScreen/OKButton"

@@ -37,7 +37,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1500.000000, 1500.000000]
-    sprite: "../../../../Gfx/Particles/UI/Tournaments/o2_expGlowB"
+    sprite: "../../../../../Data/Gfx/Particles/UI/Tournaments/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
     velocity: 140.000000

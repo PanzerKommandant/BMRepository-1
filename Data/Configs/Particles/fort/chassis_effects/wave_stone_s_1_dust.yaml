@@ -44,7 +44,7 @@ layer0:
     sizeOverLifeXY: [0.000000, [1.179200, 1.179200], 0.087700, [1.282900, 1.282900], 0.990000, [3.000000, 3.000000]]
     spin: 50.000000
     spinVariation: 15.000000
-    sprite: "../../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 50.000000
@@ -84,7 +84,7 @@ layer1:
     sizeOverLifeXY: [0.000000, [1.179200, 1.179200], 0.087700, [1.282900, 1.282900], 0.990000, [3.000000, 3.000000]]
     spin: 50.000000
     spinVariation: 15.000000
-    sprite: "../../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 50.000000

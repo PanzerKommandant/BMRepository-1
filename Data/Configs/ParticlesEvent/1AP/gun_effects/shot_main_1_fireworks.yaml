@@ -41,7 +41,7 @@ layer0:
     sizeVariation: [0.200000, 0.200000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/1AP/butterfly"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/butterfly"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -82,7 +82,7 @@ layer1:
     sizeVariation: [0.100000, 0.100000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/alpha/leaf"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/leaf"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -123,7 +123,7 @@ layer2:
     sizeVariation: [0.100000, 0.100000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/alpha/leaf_one"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/leaf_one"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -164,7 +164,7 @@ layer3:
     sizeVariation: [0.100000, 0.100000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/alpha/leaf"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/leaf"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000
@@ -201,7 +201,7 @@ layer4:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [0.150000, 0.150000]
-    sprite: "../../../../Gfx/Particles/alpha/leaf_two"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/leaf_two"
     startTime: 0.000000
     type: "layer"
     velocity: 12.000000

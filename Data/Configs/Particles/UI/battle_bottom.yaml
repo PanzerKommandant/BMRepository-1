@@ -39,6 +39,6 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [90.000000, 5.000000]
     sizeOverLifeXY: [0.000000, [0.500000, 1.000000], 0.470000, [3.000000, 1.000000], 1.000000, [0.500000, 1.000000]]
-    sprite: "../../../Gfx/Particles/alpha/blursnow"
+    sprite: "../../../../Data/Gfx/Particles/alpha/blursnow"
     startTime: 0.000000
     type: "layer"

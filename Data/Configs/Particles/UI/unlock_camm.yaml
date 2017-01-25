@@ -38,7 +38,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [90.000000, 90.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [1.300000, 1.300000]]
-    sprite: "../../../Gfx/Particles/UI/camm"
+    sprite: "../../../../Data/Gfx/Particles/UI/camm"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -74,6 +74,6 @@ layer1:
     size: [250.000000, 250.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [1.700000, 1.700000]]
     spin: -15.000000
-    sprite: "../../../Gfx/Particles/UI/glow_anim_min"
+    sprite: "../../../../Data/Gfx/Particles/UI/glow_anim_min"
     startTime: 0.000000
     type: "layer"

@@ -1,0 +1,7 @@
+<root>
+	<credistBoostFactor>50</credistBoostFactor>
+	<xpFreeBoostFactor>550</xpFreeBoostFactor>
+	<xpAvBoostFactor>300</xpAvBoostFactor>
+	<xpBoostFactor>140</xpBoostFactor>
+	<reloadEqFactor>15</reloadEqFactor>
+</root>

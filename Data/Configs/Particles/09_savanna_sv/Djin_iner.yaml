@@ -38,6 +38,6 @@ layer0:
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [0.500000, 0.500000], 1.000000, [1.500000, 2.000000]]
     sizeVariation: [0.500000, 0.500000]
-    sprite: "../../../Gfx/Particles/09_savanna_sv/Djin"
+    sprite: "../../../../Data/Gfx/Particles/09_savanna_sv/Djin"
     startTime: 0.000000
     type: "layer"

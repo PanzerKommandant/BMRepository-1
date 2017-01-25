@@ -1,0 +1,49 @@
+emitter:
+    size: [5.000000, 5.000000, 3.000000]
+    name: "dust"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionRange: 1.000000
+layer0:
+    name: "dust"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 2
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 180.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    number: 300.000000
+    spinVariation: 5.000000
+    size: [1.500000, 1.500000]
+    sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
+    velocity: 0.100000
+    spin: 5.000000
+    randomSpinDirection: true
+    angleVariation: 180.000000
+    alphaOverLife: [0.000000, 0.757500, 1.000000, 0.000000]
+    colorOverLife: [89.000000, 88.000000, 85.000000, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 6.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [0, 1, 1, 0]
+    effectFormat: 1

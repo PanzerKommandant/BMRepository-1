@@ -226,6 +226,7 @@
 		</loader2Health>
 		<ration_other>NoneExtra : Stimulator</ration_other>
 		<regular_ration_other>NoneExtra : Stimulator</regular_ration_other>
+		<battleBoosters>NoneExtra : Boosters</battleBoosters>
 	</extras>
 	<deviceExtras>
 		<devices>
@@ -393,6 +394,22 @@
 			<increasedVulnerabilityFactor>1.1</increasedVulnerabilityFactor>
 			<continueTraceIfNoHit>false</continueTraceIfNoHit>
 		</engine>
+		<transmission>
+			<extra>engineHealth</extra>
+			<vehicleDamageFactor>1.0</vehicleDamageFactor>
+			<useArmorHomogenization>false</useArmorHomogenization>
+			<useHitAngle>false</useHitAngle>
+			<useAntifragmentationLining>false</useAntifragmentationLining>
+			<mayRicochet>false</mayRicochet>
+			<collideOnceOnly>true</collideOnceOnly>
+			<damageKind>device</damageKind>
+			<chanceToHitByProjectile>0.45</chanceToHitByProjectile>
+			<chanceToHitByExplosion>0.45</chanceToHitByExplosion>
+			<chanceToHitByExplosion>0.45</chanceToHitByExplosion>
+			<increasedVulnerabilityFactor>1.1</increasedVulnerabilityFactor>
+			<continueTraceIfNoHit>false</continueTraceIfNoHit>
+			<incombustible/>
+		</transmission>
 		<ammoBay>
 			<extra>ammoBayHealth</extra>
 			<vehicleDamageFactor>1.0</vehicleDamageFactor>

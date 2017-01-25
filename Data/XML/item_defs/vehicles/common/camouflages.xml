@@ -52,6 +52,7 @@
             <usa>
                 <A104_M4A3E8A>0.03</A104_M4A3E8A>
                 <T34_hvy_Freedom>0.02</T34_hvy_Freedom>
+                <M60>0.03</M60>
             </usa>
             <ussr>
                 <R116_ISU122C_Berlin>0.04</R116_ISU122C_Berlin>
@@ -64,11 +65,15 @@
                 <GB44_Archer_Custom>0.04</GB44_Archer_Custom>
                 <GB_Mark_I>0.02</GB_Mark_I>
             </uk>
+            <china>
+                <Ch23_112>0.02</Ch23_112>
+            </china>
             <other>
                 <Sega_Edelweiss>0.03</Sega_Edelweiss>
                 <Sega_Nameless>0.02</Sega_Nameless>
                 <AMX_dracula>0.03</AMX_dracula>
                 <Van_Helsing>0.04</Van_Helsing>
+                <WZ-135G_FT>0.04</WZ-135G_FT>
             </other>
         </uniqueVehicles>
     </invisibility>
@@ -743,7 +748,7 @@
             <userString>#vehicle_customization:camouflage/GoldLighting/Name</userString>
             <description>#vehicle_customization:Camouflage/Universal/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <group>improved</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>expensive</unlockCostCategory>
@@ -757,7 +762,7 @@
             <userString>#vehicle_customization:camouflage/GoldCheap/Name</userString>
             <description>#vehicle_customization:Camouflage/Universal/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <group>improved</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>cheap</unlockCostCategory>
@@ -785,7 +790,7 @@
             <userString>#vehicle_customization:camouflage/name/Inferno</userString>
             <description>#vehicle_customization:Camouflage/Universal/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>false</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -799,7 +804,7 @@
             <userString>#vehicle_customization:camouflage/name/IceShatters</userString>
             <description>#vehicle_customization:Camouflage/Universal/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>false</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -855,7 +860,7 @@
             <userString>#vehicle_customization:camouflage/eSportRegionRU/Name</userString>
             <description>#vehicle_customization:camouflage/eSportRegion/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>true</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -867,7 +872,7 @@
             <userString>#vehicle_customization:camouflage/eSportRegionUSA/Name</userString>
             <description>#vehicle_customization:camouflage/eSportRegion/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>true</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -879,7 +884,7 @@
             <userString>#vehicle_customization:camouflage/eSportRegionEU/Name</userString>
             <description>#vehicle_customization:camouflage/eSportRegion/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>true</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -891,7 +896,7 @@
             <userString>#vehicle_customization:camouflage/eSportRegionASIA/Name</userString>
             <description>#vehicle_customization:camouflage/eSportRegion/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>true</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -918,7 +923,7 @@
             <userString>#vehicle_customization:camouflage/Steam/Name</userString>
             <description>#vehicle_customization:camouflage/Steam/Descr</description>
             <icon/>
-            <category>disposable</category>
+            <category>free</category>
             <notInShop>true</notInShop>
             <group>improved</group>
             <kind>desert summer winter</kind>
@@ -955,6 +960,60 @@
             </vehicleFilter>
             <script>Camouflage</script>
         </christmas2017>
+        <superbowlphantoms>
+            <id>79</id>
+            <userString>#vehicle_customization:camouflage/SuperbowlPhantoms/Name</userString>
+            <description>#vehicle_customization:camouflage/Superbowl/Descr</description>
+            <icon/>
+            <category>free</category>
+            <notInShop>false</notInShop>
+            <group>improved</group>
+            <kind>desert summer winter</kind>
+            <unlockCostCategory>expensive-real</unlockCostCategory>	
+            <vehicleFilter/>
+            <script>Camouflage</script>
+        </superbowlphantoms>
+        <superbowlrackers>
+            <id>80</id>
+            <userString>#vehicle_customization:camouflage/SuperbowlRackers/Name</userString>
+            <description>#vehicle_customization:camouflage/Superbowl/Descr</description>
+            <icon/>
+            <category>free</category>
+            <notInShop>false</notInShop>
+            <group>improved</group>
+            <kind>desert summer winter</kind>
+            <unlockCostCategory>expensive-real</unlockCostCategory>
+            <unlockQuest/>
+            <vehicleFilter/>
+            <script>Camouflage</script>
+        </superbowlrackers>
+        <superbowlbrawlers>
+            <id>81</id>
+            <userString>#vehicle_customization:camouflage/SuperbowlBrawlers/Name</userString>
+            <description>#vehicle_customization:camouflage/Superbowl/Descr</description>
+            <icon/>
+            <category>free</category>
+            <notInShop>false</notInShop>
+            <group>improved</group>
+            <kind>desert summer winter</kind>
+            <unlockCostCategory>expensive-real</unlockCostCategory>
+            <unlockQuest/>
+            <vehicleFilter/>
+            <script>Camouflage</script>
+        </superbowlbrawlers>
+        <superbowltrackers>
+            <id>82</id>
+            <userString>#vehicle_customization:camouflage/SuperbowlTrackers/Name</userString>
+            <description>#vehicle_customization:camouflage/Superbowl/Descr</description>
+            <icon/>
+            <category>free</category>
+            <notInShop>false</notInShop>
+            <group>improved</group>
+            <kind>desert summer winter</kind>
+            <unlockCostCategory>expensive-real</unlockCostCategory>
+            <vehicleFilter/>
+            <script>Camouflage</script>
+        </superbowltrackers>
         <skin_e25>
             <id>255</id>
             <userString>#vehicle_customization:camouflage/Number1/Name</userString>
@@ -1018,7 +1077,7 @@
             <userString>#vehicle_customization:camouflage/Starchaser/Name</userString>
             <description>#vehicle_customization:camouflage/Starchaser/Description</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/tiefighter.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockShopBundle/>
@@ -1037,7 +1096,7 @@
             <userString>#vehicle_customization:camouflage/Liliam/Name</userString>
             <description>#vehicle_customization:camouflage/Liliam/Description</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/france-FCM_50t_football.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>				
@@ -1057,10 +1116,10 @@
             <userString>#vehicle_customization:camouflage/FWhite/Name</userString>
             <description>#vehicle_customization:camouflage/FWhite/Description</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/FCM_50t_football_white.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
-            <unlockCostCategory>skin</unlockCostCategory>					
+            <unlockCostCategory>skin</unlockCostCategory>				
             <unlockShopBundle/>
             <notInShop>true</notInShop>
             <vehicleFilter>
@@ -1077,10 +1136,10 @@
             <userString>#vehicle_customization:camouflage/CromwellBerlin/Name</userString>
             <description>#vehicle_customization:camouflage/CromwellBerlin/Description</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/cromwellBerlin.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
-            <unlockCostCategory>skin</unlockCostCategory>					
+            <unlockCostCategory>skin</unlockCostCategory>				
             <unlockShopBundle/>
             <notInShop>true</notInShop>
             <vehicleFilter>
@@ -1097,7 +1156,7 @@
             <userString>#vehicle_customization:camouflage/VictoryTank/Name</userString>
             <description>#vehicle_customization:camouflage/VictoryTank/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/germany-VK3601H_victory.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1116,7 +1175,7 @@
             <userString>#vehicle_customization:camouflage/FuryBear/Name</userString>
             <description>#vehicle_customization:camouflage/FuryBear/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/ussr-KV1s_bear.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1135,7 +1194,7 @@
             <userString>#vehicle_customization:camouflage/ImpetuouesLion/Name</userString>
             <description>#vehicle_customization:camouflage/ImpetuouesLion/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/britsh-Cromwell_lion.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1154,11 +1213,11 @@
             <userString>#vehicle_customization:camouflage/Nomad/Name</userString>
             <description>#vehicle_customization:camouflage/Nomad/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/T23E34_Nomad.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <notInShop>true</notInShop>
-            <unlockCostCategory>skin</unlockCostCategory>					
+            <unlockCostCategory>skin</unlockCostCategory>				
             <unlockShopBundle/> 
             <vehicleFilter>
                 <include>
@@ -1174,7 +1233,7 @@
             <userString>#vehicle_customization:camouflage/Valor/Name</userString>
             <description>#vehicle_customization:camouflage/Valor/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/M36_Slagger_Volar.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1193,7 +1252,7 @@
             <userString>#vehicle_customization:camouflage/Gamescom/Name</userString>
             <description>#vehicle_customization:camouflage/Gamescom/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/PzVI_Gamescom.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1212,7 +1271,7 @@
             <userString>#vehicle_customization:camouflage/ArcticAnimal/Name</userString>
             <description>#vehicle_customization:camouflage/ArcticAnimal/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/SU76I_IceClaw.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <notInShop>true</notInShop>
@@ -1231,7 +1290,7 @@
             <userString>#vehicle_customization:camouflage/Ha_Go_GuP/Name</userString>
             <description>#vehicle_customization:camouflage/Ha_Go_GuP/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/Ha_Go_GuP.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1251,7 +1310,7 @@
             <userString>#vehicle_customization:camouflage/IS2Berlin/Name</userString>
             <description>#vehicle_customization:camouflage/IS2Berlin/Description</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/IS2_Berlin.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>skin</unlockCostCategory>
@@ -1271,7 +1330,7 @@
             <userString>#vehicle_customization:camouflage/ArmoredPersona/Name</userString>
             <description>#vehicle_customization:camouflage/ArmoredPersona/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/STA_Armored.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <unlockCostCategory>armored_persona</unlockCostCategory>
@@ -1290,7 +1349,7 @@
             <userString>#vehicle_customization:camouflage/IS7/Name</userString>
             <description>#vehicle_customization:camouflage/IS7/Descr</description>
             <icon>~res:/Gfx/UI/CamouflagesShop/Skin/IS-7_legendary.txt</icon>
-            <category>disposable</category>
+            <category>free</category>
             <group>legendary</group>
             <kind>desert summer winter</kind>
             <notInShop>true</notInShop>
@@ -1304,5 +1363,23 @@
             </vehicleFilter>
             <script>Camouflage</script>
         </skin_IS-7_legendary>
+        <skin_akawara_Gundam>
+            <id>235</id>
+            <userString>#vehicle_customization:camouflage/akawara_Gundam/Name</userString>
+            <description>#vehicle_customization:camouflage/akawara_Gundam/Descr</description>
+            <icon>~res:/Gfx/UI/CamouflagesShop/Skin/other-AkawaraGundam.txt</icon>
+            <category>free</category>
+            <group>legendary</group>
+            <kind>desert summer winter</kind>
+            <unlockShopBundle/>
+            <vehicleFilter>
+                <include>
+                <vehicle>
+                    <name>other:Akawara</name>
+                  </vehicle>
+                </include>
+            </vehicleFilter>
+            <script>Camouflage</script>
+        </skin_akawara_Gundam>
     </camouflages>
 </root>

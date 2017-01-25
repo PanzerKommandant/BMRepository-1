@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
 Controls:
@@ -39,10 +39,6 @@ Controls:
                 color: [0.070600, 0.125500, 0.160800, 0.851000]
     -   prototype: "StyledBackButton/StyledBackButton"
         name: "menuButton"
-        components:
-            Anchor:
-                leftAnchor: 2.000000
-                topAnchor: 2.000000
     -   class: "UIControl"
         name: "Content"
         position: [112.000000, 0.000000]

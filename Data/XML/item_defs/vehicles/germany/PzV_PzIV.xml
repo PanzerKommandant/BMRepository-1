@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/germany-PzV_PzIV.sc2</collisionMesh>
 		<exclusionMask>Camouflages/germany/CamouflageMasks/PzV_PzIV_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/Ger_Ger_Pz_V_IV</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>

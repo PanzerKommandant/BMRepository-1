@@ -3,8 +3,7 @@
         <id>1</id>
         <tags>currency</tags>
         <eventStages>haloween_process haloween_buy</eventStages>
-        <icon>currency_halloween_huge</icon>
-        <visibleInStorage>true</visibleInStorage>
+        <visibleInStorage>false</visibleInStorage>
         <tabId>certificates</tabId>
         <grade>legendary</grade>
         <sellPrices/>
@@ -22,8 +21,7 @@
         <id>2</id>
         <tags>currency</tags>
         <eventStages>haloween_process haloween_buy</eventStages>
-        <icon>currency_halloween_huge</icon>
-        <visibleInStorage>true</visibleInStorage>
+        <visibleInStorage>false</visibleInStorage>
         <tabId>certificates</tabId>
         <grade>rare</grade>
         <sellPrices/>
@@ -40,6 +38,7 @@
     <part_for_fusion>
         <id>3</id>
         <code>stuff_fusion</code>
+        <purePrototype/>
         <params>
                 <required>0</required>
                 <reward>credits</reward>
@@ -54,6 +53,7 @@
     <certificate>
         <id>4</id>
         <code>certificate_bonus</code>
+        <purePrototype/>
          <params>
                 <credits>0</credits>
                 <gold>0</gold>
@@ -72,7 +72,7 @@
             <required>20</required>
             <reward>certificate_premium_1h</reward>
         </params>
-        <icon>BattleReport1</icon>
+        <icon>PremCertificate_0</icon>
         <titleString>storage/Items/CommendationListPremium/Title</titleString>
         <descriptionString>storage/Items/CommendationListPremium/Description</descriptionString>
         <type>certificate_premium_part</type>
@@ -83,7 +83,7 @@
         <params>
             <premium>0.0416</premium>
         </params>
-        <icon>PremCertificate2</icon>
+        <icon>PremCertificate_1</icon>
         <type>certificate_premium</type>
         <titleString>storage/Items/PremiumCertificate/Title</titleString>
         <descriptionString>storage/Items/PremiumCertificate/Description</descriptionString>
@@ -95,7 +95,7 @@
             <required>20</required>
             <reward>certificate_premium_9h</reward>
         </params>
-        <icon>BattleReport1</icon>
+        <icon>PremCertificate_0</icon>
         <titleString>storage/Items/CommendationListPremium/Title</titleString>
         <descriptionString>storage/Items/CommendationListPremium/Description</descriptionString>
         <type>certificate_premium_part</type>
@@ -107,7 +107,7 @@
         <params>
             <premium>0.375</premium>
         </params>
-        <icon>PremCertificate2</icon>
+        <icon>PremCertificate_1</icon>
         <type>certificate_premium</type>
         <titleString>storage/Items/PremiumCertificate/Title</titleString>
         <descriptionString>storage/Items/PremiumCertificate/Description</descriptionString>
@@ -120,7 +120,7 @@
             <required>20</required>
             <reward>certificate_premium_24h</reward>
         </params>
-        <icon>BattleReport1</icon>
+        <icon>PremCertificate_0</icon>
         <titleString>storage/Items/CommendationListPremium/Title</titleString>
         <descriptionString>storage/Items/CommendationListPremium/Description</descriptionString>
         <type>certificate_premium_part</type>
@@ -132,7 +132,7 @@
         <params>
             <premium>1</premium>
         </params>
-        <icon>PremCertificate2</icon>
+        <icon>PremCertificate_1</icon>
         <type>certificate_premium</type>
         <titleString>storage/Items/PremiumCertificate/Title</titleString>
         <descriptionString>storage/Items/PremiumCertificate/Description</descriptionString>
@@ -146,7 +146,7 @@
             <reward>certificate_gold_100</reward>
         </params>
         <grade>unique</grade>
-        <icon>BattleReport3</icon>
+        <icon>GoldCertificate_0</icon>
         <titleString>storage/Items/CommendationListGold/Title</titleString>
         <descriptionString>storage/Items/CommendationListGold/Description</descriptionString>
         <type>certificate_gold_part</type>
@@ -158,7 +158,7 @@
             <gold>100</gold>
         </params>
         <grade>unique</grade>
-        <icon>GoldCertificate_2</icon>
+        <icon>GoldCertificate_1</icon>
         <titleString>storage/Items/GoldCertificate/Title</titleString>
         <descriptionString>storage/Items/GoldCertificate/Description</descriptionString>
         <type>certificate_gold</type>
@@ -170,6 +170,7 @@
             <required>5</required>
             <reward>certificate_slot_1</reward>
         </params>
+        <icon>SlotCertificate_0</icon>
         <titleString>storage/Items/CommendationListSlot/Title</titleString>
         <descriptionString>storage/Items/CommendationListSlot/Description</descriptionString>
         <type>certificate_slot_part</type>
@@ -180,44 +181,47 @@
         <params>
             <slots>1</slots>
         </params>
+        <icon>SlotCertificate_1</icon>
         <titleString>storage/Items/SlotCertificate/Title</titleString>
         <descriptionString>storage/Items/SlotCertificate/Description</descriptionString>
         <type>certificate_slot</type>
     </certificate_slot_1>
-    <certificate_IS8_part>
+    <certificate_T2_lt_part>
         <id>15</id>
         <prototype>part_for_fusion</prototype>
         <params>
             <required>5</required>
-            <reward>certificate_IS8</reward>
+            <reward>certificate_T2_lt</reward>
         </params>
+        <icon>TankCertificate_0</icon>
         <titleString>storage/Items/CommendationListVehicle/Title</titleString>
         <descriptionString>storage/Items/CommendationListVehicle/Description</descriptionString>
         <type>certificate_vehicle_part</type>
-    </certificate_IS8_part>
-    <certificate_IS8>
+    </certificate_T2_lt_part>
+    <certificate_T2_lt>
         <id>16</id>
         <code>certificate_for_vehicle</code>
         <prototype>certificate</prototype>
         <params>
-            <vehicle>ussr:IS8</vehicle>
+            <vehicle>usa:T2_lt</vehicle>
             <withSlot>0</withSlot>
             <withModules>0</withModules>
             <withShells>0</withShells>
             <crewLevel>100</crewLevel>
             <compensationStuff>credits</compensationStuff>
-            <compensationAmount>1000000</compensationAmount>
+            <compensationAmount>260000</compensationAmount>
         </params>
+        <icon>TankCertificate_1</icon>
         <titleString>storage/Items/VehicleCertificate/Title</titleString>
         <descriptionString>storage/Items/VehicleCertificate/Description</descriptionString>
         <type>certificate_vehicle</type>
-    </certificate_IS8>
+    </certificate_T2_lt>
     <ticket>
         <id>17</id>
         <tags>currency</tags>
         <code/>
         <eventStages>winter2016_process winter2016_buy</eventStages>
-		<icon>NY_2016/tickets</icon>
+        <icon>NY_2016/tickets</icon>
         <sellPrices/>
         <buyPrices/>
         <extractPrices>credits:15000</extractPrices>
@@ -225,49 +229,339 @@
         <params>
         </params>
         <tabId>other</tabId>
-        <titleString>winter_event/Currencies/tickets</titleString>
-        <descriptionString>winter_event/Currencies/tickets/Terms</descriptionString>
-        <script>Stuff</script>
+        <titleString>storage/Items/Ticket/Title</titleString>
+        <descriptionString>storage/Items/Ticket/Description</descriptionString>
+        <obtainingMethods>storage/Items/Ticket/Obtainment</obtainingMethods>
+        <featuresString>storage/Items/Ticket/Features</featuresString>
+        <icon>NY_2016/tickets</icon>
         <visibleInStorage>true</visibleInStorage>
-		<type>resource</type>
-		<grade>legendary</grade>
+        <type>resource</type>
+        <grade>legendary</grade>
     </ticket>
     <snowflake>
         <id>18</id>
         <tags>currency</tags>
         <eventStages>winter2016_process winter2016_buy</eventStages>
-		<icon>NY_2016/Patron</icon>
+        <icon>NY_2016/Patron</icon>
         <sellPrices/>
         <buyPrices>gold:0.087</buyPrices>
         <extractPrices/>
         <params>
             <battleQuestReward>200</battleQuestReward>
         </params>
-		<tabId>other</tabId>
-        <titleString>winter_event/Currencies/cases</titleString>
-        <descriptionString>winter_event/Currencies/cases/Terms</descriptionString>
+        <tabId>other</tabId>
+        <titleString>storage/Items/Case/Title</titleString>
+        <descriptionString>storage/Items/Case/Description</descriptionString>
+        <obtainingMethods>storage/Items/Case/Obtainment</obtainingMethods>
         <script>Stuff</script>
+        <icon>NY_2016/Patron</icon>
         <visibleInStorage>true</visibleInStorage>
-		<type>resource</type>
-		<grade>unique</grade>
+        <type>resource</type>
+        <grade>unique</grade>
     </snowflake>
-	<star>
+    <star>
         <id>19</id>
         <tags>currency</tags>
         <eventStages>winter2016_process winter2016_buy</eventStages>
-		<icon>NY_2016/Flag</icon>
+        <icon>NY_2016/Flag</icon>
         <sellPrices/>
         <buyPrices>gold:0.022</buyPrices>
         <extractPrices/>
         <params>
             <battleXpConvert>1.0</battleXpConvert>
         </params>
-		<tabId>other</tabId>
-		<titleString>winter_event/Currencies/streamers</titleString>
-		<descriptionString>winter_event/Currencies/streamers/Terms</descriptionString>
+        <tabId>other</tabId>
+        <titleString>storage/Items/Streamer/Title</titleString>
+        <descriptionString>storage/Items/Streamer/Description</descriptionString>
+        <obtainingMethods>storage/Items/Streamer/Obtainment</obtainingMethods>
+        <icon>NY_2016/Flag</icon>
+        <visibleInStorage>true</visibleInStorage>
+        <type>resource</type>
+        <grade>unique</grade>
+    </star>
+    <fangs>
+        <id>20</id>
+        <tags>currency</tags>
+        <eventStages>lunar_process lunar_buy</eventStages>
+        <icon>Lunar_2017/Fangs</icon>
+        <sellPrices/>
+        <buyPrices>gold:0.094</buyPrices>
+        <extractPrices/>
+        <params>
+            <battleQuestReward>200</battleQuestReward>
+        </params>
+        <tabId>other</tabId>
+        <titleString>storage/Items/Tusk/Title</titleString>
+        <descriptionString>storage/Items/Tusk/Description</descriptionString>
+        <obtainingMethods>storage/Items/Tusk/Obtainment</obtainingMethods>
         <script>Stuff</script>
         <visibleInStorage>true</visibleInStorage>
-		<type>resource</type>
-		<grade>unique</grade>
-    </star>
+        <type>resource</type>
+        <grade>unique</grade>
+    </fangs>
+    <mascot>
+        <id>21</id>
+        <tags>currency</tags>
+        <eventStages>lunar_process lunar_buy</eventStages>
+        <icon>Lunar_2017/Mascot</icon>
+        <sellPrices/>
+        <buyPrices>gold:0.0114</buyPrices>
+        <extractPrices/>
+        <params>
+            <battleXpConvert>1.0</battleXpConvert>
+        </params>
+        <tabId>other</tabId>
+        <titleString>storage/Items/Charm/Title</titleString>
+        <descriptionString>storage/Items/Charm/Description</descriptionString>
+        <obtainingMethods>storage/Items/Charm/Obtainment</obtainingMethods>
+        <visibleInStorage>true</visibleInStorage>
+        <type>resource</type>
+        <grade>unique</grade>
+    </mascot>
+    <booster>
+        <id>22</id>
+        <purePrototype/>
+        <params>
+        </params>
+        <type>resource</type>
+        <tabId>other</tabId>
+        <visibleInStorage>true</visibleInStorage>
+    </booster>
+    <economicBooster>
+        <id>23</id>
+        <purePrototype/>
+        <prototype>booster</prototype>
+        <params>
+            <boosterGroup>economic</boosterGroup>            
+        </params>
+    </economicBooster>
+    <boosterForXp>
+        <id>24</id>
+        <prototype>economicBooster</prototype>
+        <params>            
+            <boosterSlot>0</boosterSlot>
+        </params>
+        <icon>Boosters/boster_experience1</icon>
+        <descriptionString>storage/Items/BattleXPBooster/Description</descriptionString>
+    </boosterForXp>
+    <commonBoosterForXp>
+        <id>25</id>
+        <prototype>boosterForXp</prototype>
+        <params>
+            <xpBoostFactor>1.25</xpBoostFactor>   
+        </params>
+        <grade>common</grade>
+        <titleString>storage/Items/BattleXPBooster/Regular/Title</titleString>
+    </commonBoosterForXp>
+    <rareBoosterForXp>
+        <id>26</id>
+        <prototype>boosterForXp</prototype>
+        <params>
+            <xpBoostFactor>1.6</xpBoostFactor>   
+        </params>
+        <grade>rare</grade>
+        <titleString>storage/Items/BattleXPBooster/Enforced/Title</titleString>
+    </rareBoosterForXp>
+    <uniqueBoosterForXp>
+        <id>27</id>
+        <prototype>boosterForXp</prototype>
+        <params>
+            <xpBoostFactor>1.9</xpBoostFactor>
+        </params>
+        <grade>unique</grade>
+        <titleString>storage/Items/BattleXPBooster/Intense/Title</titleString>
+    </uniqueBoosterForXp>
+    <legendaryBoosterForXp>
+        <id>28</id>
+        <prototype>boosterForXp</prototype>
+        <params>
+            <xpBoostFactor>2.0</xpBoostFactor>
+        </params>
+        <grade>legendary</grade>
+        <notInShop>true</notInShop>
+    </legendaryBoosterForXp>
+    <boosterForFreeXp>
+        <id>29</id>
+        <prototype>economicBooster</prototype>
+        <params>            
+            <boosterSlot>1</boosterSlot>
+        </params>
+        <icon>Boosters/boster_experience0</icon>
+        <descriptionString>storage/Items/FreeXPBooster/Description</descriptionString>
+    </boosterForFreeXp>
+    <commonBoosterForFreeXp>
+        <id>30</id>
+        <prototype>boosterForFreeXp</prototype>
+        <params>
+            <xpFreeBoostFactor>2.5</xpFreeBoostFactor>
+        </params>
+        <grade>common</grade>
+        <titleString>storage/Items/FreeXPBooster/Regular/Title</titleString>
+    </commonBoosterForFreeXp>
+    <rareBoosterForFreeXp>
+        <id>31</id>
+        <prototype>boosterForFreeXp</prototype>
+        <params>
+            <xpFreeBoostFactor>4.5</xpFreeBoostFactor>
+        </params>
+        <grade>rare</grade>
+        <titleString>storage/Items/FreeXPBooster/Enforced/Title</titleString>
+    </rareBoosterForFreeXp>
+    <uniqueBoosterForFreeXp>
+        <id>32</id>
+        <prototype>boosterForFreeXp</prototype>
+        <params>
+            <xpFreeBoostFactor>6.0</xpFreeBoostFactor>
+        </params>
+        <grade>unique</grade>
+        <titleString>storage/Items/FreeXPBooster/Intense/Title</titleString>
+    </uniqueBoosterForFreeXp>
+    <legendaryBoosterForFreeXp>
+        <id>33</id>
+        <prototype>boosterForFreeXp</prototype>
+        <params>
+            <xpFreeBoostFactor>7.5</xpFreeBoostFactor>
+        </params>
+        <grade>legendary</grade>
+        <notInShop>true</notInShop>
+    </legendaryBoosterForFreeXp>
+    <boosterForCrewXp>
+        <id>34</id>
+        <prototype>economicBooster</prototype>
+        <params>            
+            <boosterSlot>2</boosterSlot>
+        </params>
+        <icon>Boosters/boster_experience2</icon>
+        <descriptionString>storage/Items/CrewXPBooster/Description</descriptionString>
+    </boosterForCrewXp>
+    <commonBoosterForCrewXp>
+        <id>35</id>
+        <prototype>boosterForCrewXp</prototype>
+        <params>
+            <xpAvBoostFactor>1.6</xpAvBoostFactor>
+        </params>
+        <grade>common</grade>
+        <titleString>storage/Items/CrewXPBooster/Regular/Title</titleString>
+    </commonBoosterForCrewXp>
+    <rareBoosterForCrewXp>
+        <id>36</id>
+        <prototype>boosterForCrewXp</prototype>
+        <params>
+            <xpAvBoostFactor>2.5</xpAvBoostFactor>
+        </params>
+        <grade>rare</grade>
+        <titleString>storage/Items/CrewXPBooster/Enforced/Title</titleString>
+    </rareBoosterForCrewXp>
+    <uniqueBoosterForCrewXp>
+        <id>37</id>
+        <prototype>boosterForCrewXp</prototype>
+        <params>
+            <xpAvBoostFactor>3.5</xpAvBoostFactor>
+        </params>
+        <grade>unique</grade>
+        <titleString>storage/Items/CrewXPBooster/Intense/Title</titleString>
+    </uniqueBoosterForCrewXp>
+    <legendaryBoosterForCrewXp>
+        <id>38</id>
+        <prototype>boosterForCrewXp</prototype>
+        <params>
+            <xpAvBoostFactor>2.35</xpAvBoostFactor>
+        </params>
+        <grade>legendary</grade>
+        <notInShop>true</notInShop>
+    </legendaryBoosterForCrewXp>
+    <boosterForCredits>
+        <id>39</id>
+        <prototype>economicBooster</prototype>
+        <params>            
+            <boosterSlot>3</boosterSlot>
+        </params>
+        <icon>Boosters/boster_credit</icon>
+    </boosterForCredits>
+    <commonBoosterForCredits>
+        <id>40</id>
+        <prototype>boosterForCredits</prototype>
+        <params>
+            <credistBoostFactor>1.2</credistBoostFactor>
+        </params>
+        <grade>common</grade>
+    </commonBoosterForCredits>
+    <rareBoosterForCredits>
+        <id>41</id>
+        <prototype>boosterForCredits</prototype>
+        <params>
+            <credistBoostFactor>1.4</credistBoostFactor>
+        </params>
+        <grade>rare</grade>
+    </rareBoosterForCredits>
+    <uniqueBoosterForCredits>
+        <id>42</id>
+        <prototype>boosterForCredits</prototype>
+        <params>
+            <credistBoostFactor>1.8</credistBoostFactor>
+        </params>
+        <grade>unique</grade>
+    </uniqueBoosterForCredits>
+    <legendaryBoosterForCredits>
+        <id>43</id>
+        <prototype>boosterForCredits</prototype>
+        <params>
+            <credistBoostFactor>2.0</credistBoostFactor>
+        </params>
+        <grade>legendary</grade>
+    </legendaryBoosterForCredits>
+    <battleBooster>
+        <id>44</id>
+        <purePrototype/>
+        <prototype>booster</prototype>
+        <params>
+            <boosterGroup>battle</boosterGroup>
+        </params>
+    </battleBooster>
+    <boosterCrew>
+        <id>45</id>
+        <prototype>battleBooster</prototype>
+        <params>
+            <crewLevelIncrease>30</crewLevelIncrease>
+            <boosterSlot>1</boosterSlot>
+        </params>
+        <icon>Boosters/boster_battle0</icon>
+        <notInShop>true</notInShop>
+    </boosterCrew>
+    <boosterRecharge>
+        <id>46</id>
+        <prototype>battleBooster</prototype>
+        <params>
+            <boosterSlot>0</boosterSlot>
+        </params>
+        <icon>Boosters/boster_battle0</icon>
+        <descriptionString>storage/Items/ReloadingTimeBooster/Description</descriptionString>
+    </boosterRecharge>
+    <commonBoosterRecharge>
+        <id>47</id>
+        <prototype>boosterRecharge</prototype>
+        <params>
+            <reloadEqFactor>0.05</reloadEqFactor>
+        </params>
+        <grade>common</grade>
+        <titleString>storage/Items/ReloadingTimeBooster/Regular/Title</titleString>
+    </commonBoosterRecharge>
+    <rareBoosterRecharge>
+        <id>48</id>
+        <prototype>boosterRecharge</prototype>
+        <params>
+            <reloadEqFactor>0.1</reloadEqFactor>
+        </params>
+        <grade>rare</grade>
+        <titleString>storage/Items/ReloadingTimeBooster/Enforced/Title</titleString>
+    </rareBoosterRecharge>
+    <uniqueBoosterRecharge>
+        <id>49</id>
+        <prototype>boosterRecharge</prototype>
+        <params>
+            <reloadEqFactor>0.15</reloadEqFactor>
+        </params>
+        <grade>unique</grade>
+        <titleString>storage/Items/ReloadingTimeBooster/Intense/Title</titleString>
+    </uniqueBoosterRecharge>
 </root>

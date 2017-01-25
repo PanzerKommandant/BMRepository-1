@@ -38,7 +38,7 @@ layer0:
     scaleVelocityBase: 0.0000
     scaleVelocityFactor: 0.0000
     size: [3.0000, 1.0000]
-    sprite: "../../../Gfx/Particles/gun_small_front"
+    sprite: "../../../../Data/Gfx/Particles/gun_small_front"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

@@ -37,7 +37,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/alpha/glow_anim_low"
+    sprite: "../../../../Data/Gfx/Particles/alpha/glow_anim_low"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -71,6 +71,6 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.200000, 1.200000]
-    sprite: "../../../Gfx/Particles/alpha/glow_low2"
+    sprite: "../../../../Data/Gfx/Particles/alpha/glow_low2"
     startTime: 0.000000
     type: "layer"

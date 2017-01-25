@@ -1,0 +1,108 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Common.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+Controls:
+-   class: "UIControl"
+    customClass: "UIXChatInviteFriendsDialog"
+    name: "InviteFriendsDialog"
+    size: [1024.000000, 768.000000]
+    components:
+        Anchor:
+            leftAnchorEnabled: true
+            leftAnchor: 0.000000
+            rightAnchorEnabled: true
+            rightAnchor: 0.000000
+            topAnchorEnabled: true
+            topAnchor: 0.000000
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 0.498000]
+            leftRightStretchCap: 7.000000
+            topBottomStretchCap: 7.000000
+    children:
+    -   prototype: "Common/Dialog"
+        name: "InternalDialog"
+        components:
+            SizePolicy:
+                verticalPolicy: "PercentOfMaxChild"
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Middle"
+            components:
+                LinearLayout:
+                    orientation: "TopDown"
+                    padding: 0.000000
+                    spacing: 15.000000
+                SizePolicy:
+                    verticalPolicy: "PercentOfChildrenSum"
+                Anchor:
+                    bottomAnchorEnabled: false
+            children:
+            -   class: "UIControl"
+                name: "Streatcher"
+                size: [10.000000, 59.000000]
+            -   prototype: "StyledButton/StyledButton"
+                name: "inviteWithGameCenter"
+                enabled: false
+                classes: "button button-color-green"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/GameCenter"
+            -   prototype: "StyledButton/StyledButton"
+                name: "inviteWithFacebook"
+                enabled: false
+                classes: "button button-color-green"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Facebook"
+            -   prototype: "StyledButton/StyledButton"
+                name: "inviteWithGoogle"
+                enabled: false
+                classes: "button button-color-green"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Google"
+            -   prototype: "StyledButton/StyledButton"
+                name: "Cancel"
+                classes: "button button-color-gray"
+                components:
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                children:
+                -   path: "Caption"
+                    text: "#common:DialogButton/Cancel"
+            -   class: "UIControl"
+                name: "Spacer"
+        -   path: "Top"
+            visible: true
+            enabled: true
+            children: []
+        -   path: "Top/TitleText"
+            text: "#xchat/InviteFriends"

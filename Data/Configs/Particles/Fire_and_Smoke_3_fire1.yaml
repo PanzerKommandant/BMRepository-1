@@ -42,7 +42,7 @@ layer0:
     size: [0.400000, 0.400000]
     spin: 5.000000
     spinVariation: 10.000000
-    sprite: "../../Gfx/Particles/exp_anim_L"
+    sprite: "../../../Data/Gfx/Particles/exp_anim_L"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

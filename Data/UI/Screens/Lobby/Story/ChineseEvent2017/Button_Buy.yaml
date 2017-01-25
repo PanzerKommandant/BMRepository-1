@@ -1,0 +1,37 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/StoryButtonPrototype.yaml"
+Controls:
+-   prototype: "StoryButtonPrototype/StoryButton"
+    name: "StoryButton"
+    children:
+    -   path: "Back"
+        clip: true
+        children:
+        -   class: "UIParticles"
+            name: "fire"
+            position: [104.500000, 24.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Lunar_NY/Dragon_buy_fire.sc2"
+            autoStart: true
+        -   class: "UIParticles"
+            name: "glow"
+            position: [104.500000, 24.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/Lunar_NY/Dragon_buy_glow.sc2"
+            autoStart: true
+    -   path: "Icon"
+        clip: true
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Lunar_NY/Dragon_buy"
+                frame: -3
+    -   path: "Title"
+        text: "lunar_event/Title"
+    -   path: "Type"
+        position: [182.000000, 7.000000]

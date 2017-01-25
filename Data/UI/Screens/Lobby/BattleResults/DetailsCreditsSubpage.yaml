@@ -1,10 +1,10 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Lobby/BattleResults/DetailsRewardSubpage.yaml"
 - "~res:/UI/Screens/Lobby/BattleResults/BattleResultsCommon.yaml"
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "CreditsRewardRow"
     size: [740.000000, 32.000000]
@@ -12,7 +12,7 @@ Controls:
     children:
     -   class: "UIControl"
         name: "LabelContainer"
-        size: [228.000000, 32.000000]
+        size: [251.000000, 32.000000]
         components:
             LinearLayout:
                 spacing: 5.000000
@@ -43,7 +43,7 @@ Controls:
                     topAnchor: 0.000000
         -   class: "UIControl"
             name: "ClanSupplyDiscount"
-            size: [89.000000, 35.000000]
+            size: [112.000000, 35.000000]
             visible: true
             components:
                 LinearLayout:
@@ -53,9 +53,9 @@ Controls:
             children:
             -   class: "UIStaticText"
                 name: "Value"
-                size: [35.000000, 33.000000]
+                size: [58.000000, 33.000000]
                 textalign: ["RIGHT", "VCENTER"]
-                text: "-2%"
+                text: "-NaN%"
                 font: "WarHeliosCondC_Bold_21"
                 components:
                     SizePolicy:
@@ -98,10 +98,12 @@ Controls:
                 drawType: "DRAW_SCALE_TO_RECT"
                 sprite: "~res:/Gfx/UI/BattleResultsScreen/TableLine"
                 perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+Controls:
 -   prototype: "DetailsRewardSubpage/Page"
     name: "Page"
     children:
     -   path: "Content"
+        position: [0.000000, 0.000000]
         components:
             Background:
                 color: [0.000000, 0.000000, 0.498039, 1.000000]
@@ -209,13 +211,33 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 0.000000
         -   prototype: "DetailsRewardSubpage/RewardRow"
+            name: "BoosterReward"
+            children:
+            -   path: "Label"
+                text: "#battle_results:DetailsPage/CreditsExperiencePage/BoosterImpact"
+            -   class: "UIStaticText"
+                name: "LabelXpFactor"
+                position: [185.000000, 0.000000]
+                size: [370.000000, 32.000000]
+                noInput: true
+                textcolorInheritType: "COLOR_IGNORE_PARENT"
+                textalign: ["LEFT", "VCENTER"]
+                textUseRtlAlign: "DONT_USE"
+                font: "WarHeliosCondC_21"
+                components:
+                    Anchor:
+                        topAnchorEnabled: true
+                        topAnchor: 0.000000
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 0.000000
+        -   prototype: "DetailsRewardSubpage/RewardRow"
             name: "HeroReward"
             children:
             -   path: "Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/heroReward"
         -   prototype: "DetailsRewardSubpage/RewardRow"
             name: "QuestsReward"
-            position: [0.000000, 64.000000]
+            position: [0.000000, 96.000000]
             children:
             -   path: "Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/Quest_Reward"
@@ -223,7 +245,7 @@ Controls:
             name: "AutoRepair"
         -   prototype: "DetailsRewardSubpage/RewardRow"
             name: "AutoLoad"
-            position: [0.000000, 128.000000]
+            position: [0.000000, 160.000000]
             children:
             -   path: "Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Ammo"
@@ -232,9 +254,6 @@ Controls:
             children:
             -   path: "LabelContainer/Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Equipment"
-            -   path: "LabelContainer/ClanSupplyDiscount"
-                visible: false
-                children: []
             -   path: "LabelContainer/ClanSupplyDiscount/Value"
                 visible: false
         -   prototype: "CreditsRewardRow"
@@ -242,15 +261,12 @@ Controls:
             children:
             -   path: "LabelContainer/Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Provisions"
-            -   path: "LabelContainer/ClanSupplyDiscount"
-                visible: false
-                children: []
             -   path: "LabelContainer/ClanSupplyDiscount/Value"
                 visible: false
-        -   prototype: "DetailsRewardSubpage/RewardRow"
+        -   prototype: "CreditsRewardRow"
             name: "AutoCamo"
             children:
-            -   path: "Label"
+            -   path: "LabelContainer/Label"
                 text: "#battle_results:DetailsPage/CreditsExperiencePage/Refill_Camouflage"
     -   path: "Content/UIScrollView/scrollContainerControl/Container/Total/Label"
         textalign: ["LEFT", "VCENTER"]

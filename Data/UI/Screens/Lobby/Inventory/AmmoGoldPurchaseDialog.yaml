@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 Controls:
@@ -135,7 +135,7 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "OkButton"
                     components:
                         LinearLayout:
@@ -146,6 +146,7 @@ Controls:
                             horizontalMin: 100.000000
                     children:
                     -   path: "Caption"
+                        position: [20.000000, 0.000000]
                         text: "#common:DialogButton/Cancel"
                         font: "WarHeliosCondC_Bold_21"
                         components:
@@ -154,7 +155,7 @@ Controls:
                             Anchor:
                                 leftAnchorEnabled: false
                                 rightAnchorEnabled: false
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "CreditsButton"
                     components:
                         LinearLayout:
@@ -173,8 +174,9 @@ Controls:
                             Anchor:
                                 leftAnchorEnabled: false
                                 rightAnchorEnabled: false
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "GoldButton"
+                    classes: "button button-color-green"
                     components:
                         LinearLayout:
                             padding: 20.000000
@@ -182,6 +184,8 @@ Controls:
                         SizePolicy:
                             horizontalPolicy: "PercentOfMaxChild"
                             horizontalMin: 100.000000
+                        Background:
+                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "BUY_GOLD"

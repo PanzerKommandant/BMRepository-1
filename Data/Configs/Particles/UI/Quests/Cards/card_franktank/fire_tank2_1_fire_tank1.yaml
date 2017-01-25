@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../../../Gfx/Particles/UI/fog"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -85,7 +85,7 @@ layer1:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../../../Gfx/Particles/UI/smoke"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/smoke"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -126,7 +126,7 @@ layer2:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../../../Gfx/Particles/UI/fire1"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/fire1"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

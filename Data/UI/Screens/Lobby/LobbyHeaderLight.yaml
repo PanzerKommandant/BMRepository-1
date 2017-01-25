@@ -1,9 +1,9 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledMenuButton.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "Header"
     position: [0.000000, 0.000000]
@@ -75,18 +75,16 @@ Controls:
             LinearLayout: {}
             Anchor:
                 leftAnchorEnabled: true
+                leftAnchor: 4.000000
                 rightAnchorEnabled: true
                 topAnchorEnabled: true
                 bottomAnchorEnabled: true
         children:
         -   prototype: "StyledMenuButton/StyledMenuButton"
             name: "menuButton"
-            components:
-                Anchor:
-                    leftAnchorEnabled: false
         -   class: "UIControl"
             name: "CustomContent"
-            size: [932.000000, 80.000000]
+            size: [940.000000, 80.000000]
             noInput: true
             components:
                 SizePolicy:

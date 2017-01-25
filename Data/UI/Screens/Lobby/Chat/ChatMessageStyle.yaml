@@ -1,0 +1,39 @@
+Header:
+    version: "5"
+StyleSheets:
+-   selector: ".chat-date-text-color"
+    properties:
+        text-textColor: [0.439216, 0.494118, 0.537255, 1.000000]
+-   selector: ".chat-msg-text-color"
+    properties:
+        text-textColor: [0.627451, 0.725490, 0.803922, 1.000000]
+-   selector: ".chat-msg-sys-positive-text-color"
+    properties:
+        text-textColor: [0.580392, 0.764706, 0.000000, 1.000000]
+-   selector: ".chat-msg-sys-negative-text-color"
+    properties:
+        text-textColor: [0.768627, 0.023529, 0.043137, 1.000000]
+-   selector: ".chat-nick-text-color"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".chat-nick-moderator-text-color"
+    properties:
+        text-textColor: [0.980392, 0.537255, 0.000000, 1.000000]
+-   selector: ".chat-nick-self-text-color"
+    properties:
+        text-textColor: [0.854902, 0.796078, 0.733333, 1.000000]
+-   selector: ".chat-nick-clan-admin-text-color"
+    properties:
+        text-textColor: [1.000000, 0.858824, 0.686275, 1.000000]
+-   selector: ".chat-nick-clan-eofficer-text-color"
+    properties:
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+-   selector: ".chat-nick-volunteer-text-color"
+    properties:
+        text-textColor: [0.678431, 0.674510, 0.250980, 1.000000]
+-   selector: ".chat-nick-ally-text-color"
+    properties:
+        text-textColor: [0.725490, 0.788235, 0.658824, 1.000000]
+-   selector: ".chat-nick-enemy-text-color"
+    properties:
+        text-textColor: [0.839216, 0.635294, 0.576471, 1.000000]

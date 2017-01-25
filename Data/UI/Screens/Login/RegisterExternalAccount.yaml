@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Login/LoginCommon.yaml"
@@ -26,7 +26,7 @@ Controls:
             children:
             -   class: "UIScrollViewContainer"
                 name: "scrollContainerControl"
-                size: [500.000000, 462.000000]
+                size: [500.000000, 252.000000]
                 components:
                     SizePolicy:
                         verticalPolicy: "PercentOfFirstChild"
@@ -117,8 +117,9 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "LoginButton"
+                    classes: "button button-color-green"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
@@ -127,12 +128,10 @@ Controls:
                             leftAnchor: 20.000000
                             rightAnchorEnabled: true
                             rightAnchor: 20.000000
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "#externalRegistration:button/wgId"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "RegisterDemoButton"
                     components:
                         SizePolicy:
@@ -163,7 +162,7 @@ Controls:
     children:
     -   prototype: "Common/ResizableDialog"
         name: "ResizableDialog"
-        size: [500.000000, 502.000000]
+        size: [500.000000, 334.000000]
         components:
             Anchor:
                 hCenterAnchorEnabled: true
@@ -209,8 +208,9 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "RetryButton"
+                    classes: "button button-color-green"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
@@ -219,12 +219,10 @@ Controls:
                             leftAnchor: 20.000000
                             rightAnchorEnabled: true
                             rightAnchor: 20.000000
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "#externalRegistration:button/retry"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "RegisterDemoButton"
                     components:
                         SizePolicy:

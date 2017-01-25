@@ -1,10 +1,10 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Hangar/HangarBaseScreen.yaml"
 - "~res:/UI/Screens/Lobby/Common/DiscountLabel.yaml"
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "SlotPurchaseItem"
     size: [240.000000, 313.000000]
@@ -21,7 +21,12 @@ Controls:
         size: [240.000000, 273.000000]
         components:
             Background:
+                drawType: "DRAW_ALIGNED"
                 sprite: "~res:/Gfx/UI/SlotPurchase/tank_slot1x"
+                mask: ""
+                detail: ""
+                gradient: ""
+                contour: ""
         children:
         -   class: "UIControl"
             name: "Selection"
@@ -134,6 +139,7 @@ Controls:
                         sprite: "~res:/Gfx/UI/LobbyCommon/ButtonConvertCurrency"
                         frame: 1
                         colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+Controls:
 -   prototype: "HangarBaseScreen/Screen"
     name: "Screen"
     children:
@@ -228,12 +234,19 @@ Controls:
                 children:
                 -   prototype: "SlotPurchaseItem"
                     name: "SlotPurchase1"
+                    children:
+                    -   path: "Button"
+                        components:
+                            Background:
+                                drawType: "DRAW_ALIGNED"
+                        children: []
                 -   prototype: "SlotPurchaseItem"
                     name: "SlotPurchase5"
                     children:
                     -   path: "Button"
                         components:
                             Background:
+                                drawType: "DRAW_ALIGNED"
                                 sprite: "~res:/Gfx/UI/SlotPurchase/tank_slot5x"
                         children: []
                 -   prototype: "SlotPurchaseItem"
@@ -242,6 +255,7 @@ Controls:
                     -   path: "Button"
                         components:
                             Background:
+                                drawType: "DRAW_ALIGNED"
                                 sprite: "~res:/Gfx/UI/SlotPurchase/tank_slot10x"
                         children: []
             -   class: "UIStaticText"
@@ -280,7 +294,7 @@ Controls:
         children:
         -   prototype: "StyledButton/StyledButton"
             name: "PurchaseButton"
-            size: [250.000000, 70.000000]
+            size: [220.000000, 64.000000]
             classes: "button button-color-green"
             components:
                 Anchor:
@@ -290,17 +304,16 @@ Controls:
             children:
             -   path: "Caption"
                 text: "SLOT_BUY"
-                font: "Font_3234CE22"
         -   class: "UIControl"
             name: "Cost"
-            size: [159.000000, 32.000000]
+            size: [158.000000, 32.000000]
             components:
                 LinearLayout: {}
                 SizePolicy:
                     horizontalPolicy: "PercentOfChildrenSum"
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 285.000000
+                    rightAnchor: 255.000000
                     vCenterAnchorEnabled: true
                     vCenterAnchor: -20.000000
             children:
@@ -336,7 +349,7 @@ Controls:
                     horizontalPolicy: "PercentOfChildrenSum"
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 285.000000
+                    rightAnchor: 255.000000
                     vCenterAnchorEnabled: true
                     vCenterAnchor: -20.000000
             children:
@@ -370,7 +383,7 @@ Controls:
                         sprite: "~res:/Gfx/UI/LobbyCommon/DiscountClanSmall"
         -   class: "UIControl"
             name: "Price"
-            position: [669.000000, 46.000000]
+            position: [699.000000, 46.000000]
             size: [75.000000, 32.000000]
             noInput: true
             components:
@@ -380,7 +393,7 @@ Controls:
                     verticalPolicy: "PercentOfMaxChild"
                 Anchor:
                     rightAnchorEnabled: true
-                    rightAnchor: 280.000000
+                    rightAnchor: 250.000000
                     vCenterAnchorEnabled: true
                     vCenterAnchor: 15.000000
             children:

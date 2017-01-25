@@ -1,0 +1,72 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+StyleSheets:
+-   selector: ".text-color-spec-blue"
+    properties:
+        text-textColor: [0.615686, 0.788235, 1.000000, 1.000000]
+-   selector: ".text1.vi"
+    properties:
+        text-font: "WarHeliosCondC_19"
+        text-textColor: [1.000000, 1.000000, 1.000000, 1.000000]
+Prototypes:
+-   class: "UIControl"
+    customClass: "UIRegionSelector"
+    name: "RegionSelector"
+    size: [283.000000, 70.000000]
+    components:
+        LinearLayout:
+            spacing: 10.000000
+            useRtl: true
+        SizePolicy:
+            horizontalPolicy: "PercentOfChildrenSum"
+    children:
+    -   class: "UIStaticText"
+        name: "Label"
+        size: [103.000000, 20.000000]
+        classes: "text1 text-color-spec-blue"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "#login:footer/region"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+            Anchor:
+                vCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "RegionName"
+        size: [60.000000, 20.000000]
+        classes: "text1 text-color-white"
+        textalign: ["LEFT", "VCENTER"]
+        textUseRtlAlign: "USE_BY_CONTENT"
+        text: "Россия"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+            Anchor:
+                vCenterAnchorEnabled: true
+    -   class: "UIControl"
+        name: "Spacer"
+        size: [10.000000, 10.000000]
+    -   prototype: "StyledButton/DefaultStyledButton"
+        name: "RegionButton"
+        size: [80.000000, 64.000000]
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   class: "UIControl"
+            name: "RegionIcon"
+            noInput: true
+            components:
+                Anchor:
+                    leftAnchorEnabled: true
+                    rightAnchorEnabled: true
+                    topAnchorEnabled: true
+                    bottomAnchorEnabled: true
+                Background:
+                    sprite: "~res:/Gfx/UI/LobbyCommon/IconRegion"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"

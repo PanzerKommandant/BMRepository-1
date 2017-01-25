@@ -1,8 +1,7 @@
 Header:
-    version: "2"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
-- "~res:/UI/Screens/Login/LoginCommon.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Dialogs.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
@@ -14,12 +13,6 @@ Controls:
         Anchor:
             leftAnchorEnabled: true
             rightAnchorEnabled: true
-        Normal:
-            color: [0.007843, 0.007843, 0.007843, 0.313726]
-            colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
-            leftRightStretchCap: 9.000000
-        PressedInside:
-            sprite: ""
     children:
     -   class: "UIControl"
         name: "Box"
@@ -174,17 +167,16 @@ Controls:
                         bottomAnchorEnabled: true
                         bottomAnchor: 20.000000
                 children:
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "ApplyButton"
+                    classes: "button button-color-green"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"
-                        Background:
-                            frame: 2
                     children:
                     -   path: "Caption"
                         text: "#language:Selection/Accept"
-                -   prototype: "StyledButton/Button"
+                -   prototype: "StyledButton/StyledButton"
                     name: "CancelButton"
                     components:
                         SizePolicy:

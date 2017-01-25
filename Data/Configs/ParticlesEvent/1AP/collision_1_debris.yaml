@@ -46,7 +46,7 @@ layer0:
     sizeVariation: [0.025000, 0.025000]
     spin: 400.000000
     spinVariation: 90.000000
-    sprite: "../../../Gfx/Particles/1AP/coin"
+    sprite: "../../../../Data/Gfx/Particles/1AP/coin"
     startTime: 0.000000
     type: "layer"
     velocity: 5.000000

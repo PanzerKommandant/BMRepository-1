@@ -1,17 +1,17 @@
 BadWords:
 - {excl: '', incl: smeg}
-- {excl: '', incl: niquer}
-- {excl: '', incl: queef}
+- {excl: '', incl: carpetmuncher}
+- {excl: '', incl: cockburger}
+- {excl: '', incl: schlong}
 - {excl: '', incl: shitstain}
 - {excl: '', incl: sakra}
 - {excl: '', incl: skhlampe}
 - {excl: '', incl: whoreface}
 - {excl: '', incl: slvt.*}
 - {excl: '', incl: assnigger}
-- {excl: '', incl: Scheißhaus}
 - {excl: '', incl: Schwuchtel}
+- {excl: '', incl: ^Du$}
 - {excl: '', incl: kraavo}
-- {excl: '', incl: ^vank.*}
 - {excl: '', incl: sadlst.*}
 - {excl: '', incl: suckass}
 - {excl: '', incl: Scheiße}
@@ -23,42 +23,40 @@ BadWords:
 - {excl: '', incl: Salope}
 - {excl: '', incl: plllv.*}
 - {excl: '', incl: shitdick}
-- {excl: '', incl: cuntass}
+- {excl: '', incl: ashole.*}
 - {excl: '', incl: spook}
-- {excl: '', incl: fag}
+- {excl: '', incl: coon}
 - {excl: '', incl: tabernac}
 - {excl: '', incl: domlnatrl.*}
-- {excl: '', incl: fanny}
+- {excl: '', incl: skank.*}
 - {excl: '', incl: Zmrd}
 - {excl: '', incl: nigger}
-- {excl: '', incl: schlong}
 - {excl: '', incl: assbandit}
 - {excl: '', incl: dickmonger}
 - {excl: '', incl: dicktickler}
 - {excl: '', incl: assmuncher}
-- {excl: '', incl: Asshole}
 - {excl: '', incl: faen}
 - {excl: '', incl: Idiota}
 - {excl: '', incl: penvs.*}
 - {excl: '', incl: dookie}
 - {excl: '', incl: buttfucka}
 - {excl: '', incl: sphenkter}
-- {excl: '', incl: dumshit}
-- {excl: '', incl: sierota}
+- {excl: '', incl: cockjockey}
+- {excl: '', incl: cunnilingus}
 - {excl: '', incl: Arschloch}
 - {excl: '', incl: flkken}
-- {excl: 'Flttlng', incl: ^fltt.*}
 - {excl: '', incl: cockmongruel}
-- {excl: '', incl: fellatio}
+- {excl: '', incl: ^dike$}
 - {excl: '', incl: .*shlt.*}
 - {excl: '', incl: devka}
-- {excl: '', incl: jebak}
+- {excl: '', incl: ekto}
 - {excl: '', incl: monklelgh}
 - {excl: '', incl: fucks}
 - {excl: ^hearse.*, incl: arse.*}
 - {excl: '', incl: schwanz}
 - {excl: '', incl: pekker}
 - {excl: '', incl: shemale}
+- {excl: '', incl: ^muff$}
 - {excl: '', incl: skrlbs}
 - {excl: '', incl: bumblefuck}
 - {excl: '', incl: chinc}
@@ -69,14 +67,15 @@ BadWords:
 - {excl: '', incl: Arsch}
 - {excl: '', incl: mcfagget}
 - {excl: '', incl: flamer}
-- {excl: '', incl: ^splk$}
 - {excl: '', incl: shiznit}
 - {excl: '', incl: shitbagger}
 - {excl: '', incl: Cwel}
 - {excl: '', incl: gvlena}
+- {excl: '', incl: bololas}
 - {excl: '', incl: Churak}
 - {excl: '', incl: motherfucking}
 - {excl: '', incl: kozojeb}
+- {excl: '', incl: ^splk$}
 - {excl: '', incl: cocksmith}
 - {excl: '', incl: kooch}
 - {excl: 'pakl[fea]', incl: pakl.*}
@@ -86,17 +85,16 @@ BadWords:
 - {excl: '', incl: arschgefickter}
 - {excl: '', incl: .*stvrba.*}
 - {excl: '', incl: Wixer}
-- {excl: '', incl: Kurwa}
 - {excl: '', incl: skhlong}
 - {excl: '', incl: cunthole}
 - {excl: '', incl: bvketa}
 - {excl: '', incl: feg}
 - {excl: '', incl: kunt}
 - {excl: '', incl: rozpierdol}
-- {excl: '', incl: punanny}
+- {excl: '', incl: mvle}
 - {excl: '', incl: Dupek}
 - {excl: '', incl: sharmvt.*}
-- {excl: '', incl: spierdolie}
+- {excl: '', incl: sandnigger}
 - {excl: '', incl: asses}
 - {excl: '', incl: kasso}
 - {excl: '', incl: falg.*}
@@ -104,6 +102,7 @@ BadWords:
 - {excl: '', incl: asswipe}
 - {excl: '', incl: pvle}
 - {excl: '', incl: assgoblin}
+- {excl: '', incl: ^krap$}
 - {excl: '', incl: ^yed}
 - {excl: '', incl: abschaum}
 - {excl: '', incl: helvete}
@@ -118,24 +117,26 @@ BadWords:
 - {excl: '', incl: plmpls}
 - {excl: '', incl: douche}
 - {excl: '', incl: gaytard}
-- {excl: 'Enll', incl: nllg.*}
-- {excl: '', incl: gringo}
-- {excl: '^(prlke|prlkes)', incl: prlk}
+- {excl: Enll, incl: nllg.*}
+- {excl: '', incl: Felkher}
+- {excl: ^(prlke|prlkes), incl: prlk}
 - {excl: '', incl: renob}
 - {excl: '', incl: Encule}
 - {excl: '', incl: cocknugget}
+- {excl: '', incl: fag.*}
 - {excl: '', incl: asslick}
 - {excl: '', incl: Schwul}
-- {excl: '', incl: wank}
+- {excl: '', incl: merd.*}
+- {excl: '', incl: Gswno}
 - {excl: '', incl: masoklst}
 - {excl: '', incl: fuck}
 - {excl: '', incl: homofuerst}
-- {excl: '', incl: cocksniffer}
+- {excl: '', incl: vop.*}
 - {excl: '', incl: boner}
+- {excl: '', incl: Asshole}
 - {excl: '', incl: rektvm}
 - {excl: '', incl: dyke}
 - {excl: '', incl: dickface}
-- {excl: '', incl: nasls}
 - {excl: '', incl: Skurwysyn}
 - {excl: '', incl: muffdiver}
 - {excl: '', incl: cocksucker}
@@ -148,34 +149,34 @@ BadWords:
 - {excl: '', incl: blov.*job}
 - {excl: '', incl: Pizda}
 - {excl: '', incl: xrated}
-- {excl: '', incl: fuckbrain}
-- {excl: '', incl: dickwad}
+- {excl: '', incl: skrevlng}
+- {excl: '', incl: kokk.*}
 - {excl: '', incl: ciota}
-- {excl: ^plssa$, incl: plss.*}
+- {excl: '', incl: fart}
 - {excl: '', incl: nlgvr.*}
 - {excl: '', incl: shitface}
 - {excl: '', incl: rekktvm}
-- {excl: '', incl: queer}
 - {excl: '', incl: gaybob}
 - {excl: '', incl: pizda}
-- {excl: '', incl: cumdumpster}
+- {excl: '', incl: mothafuckin'}
 - {excl: '', incl: nvtsakk}
 - {excl: '', incl: chier}
-- {excl: ^flvktvat.*, incl: ^tvat$}
-- {excl: '', incl: wankjob}
+- {excl: '', incl: douchewaffle}
+- {excl: '', incl: vetbakk.*}
 - {excl: '', incl: asswad}
 - {excl: '', incl: mlbvn}
 - {excl: '', incl: gayfuck}
 - {excl: '', incl: fuckup}
 - {excl: '', incl: vyser}
 - {excl: '', incl: dickmilk}
-- {excl: '', incl: Enculer}
-- {excl: '', incl: nastt}
+- {excl: '', incl: minge}
+- {excl: '', incl: dickfucker}
+- {excl: '', incl: assface}
 - {excl: '', incl: fuckoff}
 - {excl: '', incl: bvtthole}
 - {excl: '', incl: masokhlst}
 - {excl: '', incl: Zickig}
-- {excl: '', incl: fkvk}
+- {excl: '', incl: nasls}
 - {excl: '', incl: buttfucker}
 - {excl: '', incl: asscock}
 - {excl: '', incl: Huhrensohn}
@@ -184,12 +185,13 @@ BadWords:
 - {excl: '', incl: skrotvm}
 - {excl: '', incl: unclefucker}
 - {excl: '', incl: dslvka}
-- {excl: '', incl: coon}
+- {excl: '', incl: fag}
 - {excl: '', incl: dllldo.*}
 - {excl: '', incl: twatlips}
 - {excl: '', incl: gook}
-- {excl: '', incl: ^dike$}
+- {excl: '', incl: asssucker}
 - {excl: '', incl: fuckface}
+- {excl: '', incl: ^čůrák$}
 - {excl: '', incl: niglet}
 - {excl: '', incl: knts}
 - {excl: '', incl: bullshit}
@@ -197,20 +199,18 @@ BadWords:
 - {excl: '', incl: dickwod}
 - {excl: '', incl: kacken}
 - {excl: '', incl: dlldo.*}
+- {excl: Flttlng, incl: ^fltt.*}
 - {excl: '', incl: honkey}
-- {excl: '', incl: ^muff$}
 - {excl: '', incl: ^sex.*}
 - {excl: '', incl: ^tit$}
-- {excl: '', incl: kootch}
+- {excl: '', incl: Scheißhaus}
 - {excl: '', incl: Debile}
 - {excl: '', incl: cipka}
-- {excl: '', incl: huj}
+- {excl: '', incl: Vole}
 - {excl: '', incl: skank}
 - {excl: '', incl: Schwuler}
 - {excl: '', incl: fllpplng the blrd}
-- {excl: '', incl: ^krap$}
 - {excl: '', incl: nigaboo}
-- {excl: '', incl: ^semen$}
 - {excl: '', incl: kabron}
 - {excl: '', incl: Peecha}
 - {excl: '', incl: vlkhser}
@@ -219,28 +219,32 @@ BadWords:
 - {excl: '', incl: Arschfotze}
 - {excl: '', incl: Hure}
 - {excl: '', incl: shithead}
-- {excl: '', incl: shit}
+- {excl: '', incl: jebak}
 - {excl: '', incl: khraa}
 - {excl: '', incl: Dummkopf}
 - {excl: '', incl: boobs}
 - {excl: '', incl: motherfucker}
 - {excl: '', incl: dickweasel}
-- {excl: '', incl: kokk.*}
+- {excl: '', incl: dickwad}
 - {excl: '', incl: fatass}
 - {excl: '', incl: Schwanzlutscher}
-- {excl: '', incl: mothafucka}
 - {excl: '', incl: dickfuck}
 - {excl: '', incl: cockknoker}
-- {excl: '', incl: fart}
+- {excl: '', incl: ^semen$}
+- {excl: klon, incl: dlke.*}
 - {excl: '', incl: clitfuck}
+- {excl: '', incl: ^vank.*}
 - {excl: '', incl: merde}
 - {excl: '', incl: srachka}
 - {excl: '', incl: Spierdalaj}
 - {excl: '', incl: fuckin}
-- {excl: '', incl: minge}
+- {excl: '', incl: Enculer}
+- {excl: ^come.*, incl: ^com$}
 - {excl: '', incl: feltch}
+- {excl: '', incl: ^tvrd$}
 - {excl: '', incl: fuckwad}
 - {excl: '', incl: twat}
+- {excl: '', incl: ^spic$}
 - {excl: '', incl: Salaud}
 - {excl: '', incl: bitch}
 - {excl: '', incl: aylr.*}
@@ -253,32 +257,32 @@ BadWords:
 - {excl: '', incl: arsehole}
 - {excl: '', incl: foutre}
 - {excl: '', incl: ^dlke.*}
-- {excl: '', incl: fag.*}
+- {excl: '', incl: Kurwa}
 - {excl: '', incl: dumbass}
 - {excl: '', incl: shlpal}
 - {excl: '', incl: Suce}
 - {excl: '', incl: ejakkvlat.*}
 - {excl: '', incl: fvk.*}
-- {excl: '(?-i)D(?i)ick', incl: ^dick$}
 - {excl: '', incl: assshit}
+- {excl: '', incl: dumshit}
 - {excl: '', incl: titfuck}
 - {excl: '', incl: assfucker}
-- {excl: '', incl: shlt}
-- {excl: '', incl: shitass}
+- {excl: '', incl: ^pvta$}
+- {excl: '', incl: huj}
 - {excl: '', incl: snatch}
+- {excl: '', incl: ^kretén$}
 - {excl: '', incl: llpshlt.*}
 - {excl: '', incl: .*damn}
-- {excl: '', incl: Fotze}
+- {excl: '', incl: bollocks}
 - {excl: '', incl: cunnie}
-- {excl: '', incl: mothafuckin'}
+- {excl: '', incl: cumdumpster}
 - {excl: '', incl: orafls}
 - {excl: '', incl: foreskln}
-- {excl: '', incl: Gswno}
 - {excl: '', incl: fucknutt}
+- {excl: '', incl: dickhead}
 - {excl: '', incl: gaydo}
 - {excl: '', incl: fotse}
 - {excl: '', incl: ravtenberg}
-- {excl: '', incl: ^pvta$}
 - {excl: '', incl: pvto}
 - {excl: '', incl: kutas}
 - {excl: '', incl: ^ass$}
@@ -294,66 +298,68 @@ BadWords:
 - {excl: '', incl: arskhlokh.*}
 - {excl: '', incl: penls.*}
 - {excl: '', incl: bastard}
-- {excl: '', incl: bvttvlpe}
+- {excl: '', incl: blovjob.*}
 - {excl: '', incl: lardass}
 - {excl: '', incl: suka}
-- {excl: '', incl: .*strba.*}
+- {excl: '', incl: doochbag}
 - {excl: '', incl: Kackbratze}
 - {excl: '', incl: baise}
 - {excl: '', incl: faggotcock}
 - {excl: '', incl: ^dicks$}
+- {excl: '', incl: cockfucker}
 - {excl: '', incl: asshole}
-- {excl: '', incl: ^Du$}
 - {excl: '', incl: Schlampe}
-- {excl: '', incl: kurwy}
+- {excl: '', incl: bitches}
 - {excl: '', incl: prick}
 - {excl: '', incl: ^ekto$}
 - {excl: '', incl: scheissekopf}
 - {excl: '', incl: Schwänze}
+- {excl: '', incl: shlt}
 - {excl: '', incl: shithouse}
 - {excl: '', incl: shitter}
-- {excl: '', incl: Trottel}
+- {excl: '', incl: shitass}
 - {excl: '', incl: ekrem.*}
 - {excl: '', incl: clusterfuck}
+- {excl: '', incl: ^vyhul$}
 - {excl: '', incl: dumbshit}
 - {excl: '', incl: Lude}
 - {excl: '', incl: Spieprzaj}
-- {excl: '', incl: spick}
+- {excl: '', incl: orgas.*}
 - {excl: '', incl: matkojebca}
-- {excl: '', incl: kurwa}
+- {excl: '', incl: fuckhead}
 - {excl: '', incl: pipa}
-- {excl: '', incl: skhaffer}
+- {excl: '', incl: dipshit}
 - {excl: '', incl: pvvke.*}
-- {excl: '', incl: nutsack}
+- {excl: '', incl: mick}
 - {excl: '', incl: pokurwiony}
 - {excl: '', incl: Ficken}
 - {excl: '', incl: beaner}
-- {excl: '', incl: carpetmuncher}
-- {excl: '', incl: jizz}
+- {excl: '', incl: niquer}
+- {excl: '', incl: queef}
 - {excl: '', incl: assmunch}
 - {excl: '', incl: queerbait}
 - {excl: '', incl: cuntlicker}
 - {excl: '', incl: cockass}
-- {excl: '', incl: ashole.*}
+- {excl: '', incl: cuntass}
 - {excl: '', incl: jagoff}
 - {excl: '', incl: dupe}
 - {excl: '', incl: assclown}
 - {excl: '', incl: dupa}
-- {excl: '', incl: cockjockey}
+- {excl: '', incl: queer}
 - {excl: '', incl: qveer.*}
 - {excl: '', incl: Zicke}
+- {excl: '', incl: ^n.srat$}
 - {excl: '', incl: dumbfuck}
-- {excl: '', incl: Fettbacke}
 - {excl: '', incl: Szmata}
 - {excl: '', incl: gaywad}
 - {excl: '', incl: fagtard}
 - {excl: '', incl: basstard.*}
-- {excl: '', incl: Kutas}
-- {excl: '', incl: cumguzzler}
+- {excl: '', incl: penas}
+- {excl: '', incl: ^cul$}
 - {excl: '', incl: nllgr.*}
 - {excl: '', incl: jakkoff}
 - {excl: '', incl: shitbrains}
-- {excl: '', incl: assface}
+- {excl: '', incl: nastt}
 - {excl: '', incl: kike}
 - {excl: '', incl: polakk}
 - {excl: '', incl: bastard.*}
@@ -362,19 +368,17 @@ BadWords:
 - {excl: '', incl: skhelss.*}
 - {excl: '', incl: qahbeh}
 - {excl: '', incl: Horst}
-- {excl: '', incl: Sraška}
 - {excl: '', incl: enema}
 - {excl: '', incl: fekes}
 - {excl: '', incl: prdel}
-- {excl: '', incl: penas}
 - {excl: '', incl: basterd.*}
 - {excl: '', incl: whorebag}
-- {excl: '', incl: Connard}
+- {excl: '', incl: asshopper}
 - {excl: '', incl: fucktard}
-- {excl: '', incl: dickhead}
+- {excl: '', incl: fkvk}
 - {excl: ^participa.*, incl: Cipa}
 - {excl: '', incl: fickdich}
-- {excl: '', incl: blovjob.*}
+- {excl: '', incl: bvttvlpe}
 - {excl: '', incl: fucktart}
 - {excl: '', incl: cocknose}
 - {excl: '', incl: anvs.*}
@@ -382,6 +386,7 @@ BadWords:
 - {excl: '', incl: Branleur}
 - {excl: '', incl: alfons}
 - {excl: '', incl: chode}
+- {excl: '', incl: Couilles}
 - {excl: '', incl: Schweinepriester}
 - {excl: '', incl: cockmaster}
 - {excl: '', incl: shittiest}
@@ -389,49 +394,45 @@ BadWords:
 - {excl: '', incl: fuckwitt}
 - {excl: '', incl: Schweinehund}
 - {excl: '', incl: faggit}
+- {excl: '', incl: ^damn$}
 - {excl: '', incl: Scheisse}
 - {excl: '', incl: vaglna.*}
 - {excl: '', incl: asshat}
 - {excl: '', incl: vvlva}
 - {excl: '', incl: amklk.*}
 - {excl: '', incl: skhmvkk}
-- {excl: ^come.*, incl: ^com$}
 - {excl: '', incl: fuckbag}
 - {excl: '', incl: Suka}
 - {excl: '', incl: dicksucker}
 - {excl: '', incl: ^hoe$}
 - {excl: '', incl: ahole.*}
 - {excl: '', incl: cumjockey}
-- {excl: '', incl: asspirate}
 - {excl: '', incl: dickslap}
 - {excl: '', incl: pvss.*}
 - {excl: '', incl: Fick}
+- {excl: '', incl: bollokk.*}
 - {excl: '', incl: gayass}
 - {excl: '', incl: munging}
 - {excl: ^(korkskrev|skrevdrlver|skrevball|skreved).*, incl: skrev}
 - {excl: '', incl: Muschi}
 - {excl: '', incl: qveef.*}
 - {excl: '', incl: fuckstick}
-- {excl: '', incl: ^pute$}
-- {excl: '', incl: ^damn$}
+- {excl: '', incl: cunt}
 - {excl: '', incl: gayfuckist}
 - {excl: '', incl: puto}
-- {excl: '', incl: jackass}
+- {excl: '', incl: mothafucka}
 - {excl: '', incl: dziwka}
 - {excl: '', incl: Muterfiker}
-- {excl: '', incl: dlrsa}
+- {excl: '', incl: vhor.*}
 - {excl: '', incl: gay}
 - {excl: '', incl: bampot}
 - {excl: '', incl: dildo}
-- {excl: '', incl: ^spic$}
 - {excl: '', incl: svka}
-- {excl: '', incl: Abruti}
 - {excl: '', incl: Arschgeige}
 - {excl: '', incl: Pica}
-- {excl: '', incl: cunt}
+- {excl: '', incl: Fettbacke}
 - {excl: '', incl: slutbag}
 - {excl: '', incl: fudgepacker}
-- {excl: '', incl: ^cracker$}
 - {excl: '', incl: kavk}
 - {excl: '', incl: plmmel}
 - {excl: '', incl: blatkh.*}
@@ -443,15 +444,14 @@ BadWords:
 - {excl: '', incl: cock}
 - {excl: '', incl: ^homo$}
 - {excl: '', incl: Bastard}
-- {excl: '', incl: sandnigger}
+- {excl: '', incl: spierdolie}
 - {excl: '', incl: tittyfuck}
 - {excl: '', incl: fuckersucker}
 - {excl: '', incl: assfuck}
-- {excl: '', incl: Felkher}
-- {excl: '', incl: Putain}
+- {excl: '', incl: gringo}
 - {excl: '', incl: whore}
 - {excl: '', incl: cuntrag}
-- {excl: '', incl: skrevlng}
+- {excl: '', incl: fuckbrain}
 - {excl: '', incl: jebany}
 - {excl: '', incl: thundercunt}
 - {excl: '', incl: cockmongler}
@@ -462,50 +462,49 @@ BadWords:
 - {excl: '', incl: fuckbutt}
 - {excl: '', incl: cockhead}
 - {excl: '', incl: chesticle}
+- {excl: '', incl: breasts}
 - {excl: '', incl: Drecksack}
 - {excl: '', incl: fucker}
-- {excl: '', incl: asssucker}
 - {excl: '', incl: preteen}
 - {excl: '', incl: fuckass}
 - {excl: '', incl: cockshit}
 - {excl: '', incl: fucked}
-- {excl: '', incl: cockfucker}
+- {excl: '', incl: Abruti}
 - {excl: '', incl: shitting}
 - {excl: '', incl: retard}
 - {excl: '', incl: lesb.*}
-- {excl: '', incl: shitspitter}
+- {excl: '', incl: blowjob}
 - {excl: '', incl: Wichser}
 - {excl: '', incl: fuckwit}
 - {excl: '', incl: szmata}
 - {excl: '', incl: asshead}
 - {excl: '', incl: assbanger}
-- {excl: '', incl: dipshit}
-- {excl: '', incl: Sheisse}
+- {excl: '', incl: skhaffer}
+- {excl: ^flvktvat.*, incl: ^tvat$}
 - {excl: '', incl: rimjob}
 - {excl: '', incl: pipka}
 - {excl: '', incl: smvt}
 - {excl: '', incl: Scheissen}
 - {excl: '', incl: emmerde}
 - {excl: '', incl: twatwaffle}
-- {excl: '', incl: Couilles}
+- {excl: '', incl: wank}
+- {excl: '', incl: ^idiot$}
 - {excl: '', incl: niggers}
 - {excl: '', incl: pierdol}
-- {excl: '', incl: bollokk.*}
+- {excl: '', incl: Kutas}
 - {excl: '', incl: humping}
 - {excl: '', incl: vlttv}
-- {excl: '', incl: ^cum$}
-- {excl: '', incl: ^cul$}
 - {excl: '', incl: Kurde}
 - {excl: '', incl: assbag}
 - {excl: '', incl: gaylord}
 - {excl: '', incl: twats}
 - {excl: '', incl: cockmuncher}
 - {excl: '', incl: shitty}
-- {excl: '', incl: blowjob}
+- {excl: '', incl: shitspitter}
 - {excl: '', incl: burdel}
 - {excl: '', incl: dicksucking}
 - {excl: '', incl: kvnt.*}
-- {excl: '', incl: cockburger}
+- {excl: '', incl: asspirate}
 - {excl: '', incl: bltkh.*}
 - {excl: '', incl: lafirynda}
 - {excl: '', incl: ejakvlat.*}
@@ -517,45 +516,48 @@ BadWords:
 - {excl: '', incl: vvllva}
 - {excl: '', incl: sabovrah}
 - {excl: '', incl: nigga}
+- {excl: '', incl: ^cum$}
 - {excl: '', incl: trouduc}
 - {excl: '', incl: fuckhole}
 - {excl: '', incl: fucking}
-- {excl: '', incl: assmonkey}
+- {excl: '(?-i)D(?i)ick', incl: ^dick$}
 - {excl: '', incl: ^arse}
 - {excl: '', incl: Debil}
 - {excl: '', incl: shitcunt}
+- {excl: '', incl: ^cracker$}
 - {excl: '', incl: bvtt-plrate}
 - {excl: '', incl: .*sterba.*}
 - {excl: '', incl: hajzl}
 - {excl: '', incl: douchebag}
+- {excl: '', incl: ^srát$}
 - {excl: '', incl: gooch}
 - {excl: '', incl: Jebac}
 - {excl: '', incl: piicha}
 - {excl: '', incl: Eier}
 - {excl: '', incl: shitfaced}
-- {excl: '', incl: skank.*}
-- {excl: '', incl: cunnilingus}
-- {excl: '', incl: ^kvm$}
-- {excl: '', incl: ^tvrd$}
+- {excl: '', incl: fanny}
+- {excl: '', incl: sierota}
+- {excl: '', incl: fellatio}
 - {excl: '', incl: skeet}
 - {excl: '', incl: bassterd.*}
 - {excl: '', incl: cumbubble}
 - {excl: '', incl: slut}
 - {excl: '', incl: shitcanned}
-- {excl: '', incl: bololas}
+- {excl: '', incl: kootch}
 - {excl: '', incl: Depp}
-- {excl: '', incl: mvle}
+- {excl: '', incl: punanny}
 - {excl: '', incl: salope}
 - {excl: '', incl: dickhole}
 - {excl: '', incl: fllkker}
 - {excl: '', incl: dumass}
 - {excl: '', incl: panooch}
-- {excl: '', incl: vop.*}
+- {excl: '', incl: cocksniffer}
 - {excl: '', incl: mofo}
 - {excl: '', incl: Cholera}
-- {excl: '', incl: asshopper}
+- {excl: ^plssa$, incl: plss.*}
 - {excl: '', incl: plerdol.*}
-- {excl: '', incl: vetbakk.*}
+- {excl: '', incl: wankjob}
+- {excl: '', incl: Trottel}
 - {excl: '', incl: ^dyke}
 - {excl: '', incl: pussy}
 - {excl: '', incl: mvlkkv}
@@ -564,24 +566,25 @@ BadWords:
 - {excl: '', incl: przejebane}
 - {excl: '', incl: Wypierdalaj}
 - {excl: '', incl: cockface}
+- {excl: '', incl: ^pute$}
 - {excl: '', incl: kunda}
 - {excl: '', incl: nlgr.*}
-- {excl: '', incl: bollocks}
+- {excl: '', incl: Fotze}
 - {excl: '', incl: Palant}
 - {excl: '', incl: paki}
-- {excl: '', incl: doochbag}
-- {excl: '', incl: bitches}
+- {excl: '', incl: .*strba.*}
+- {excl: '', incl: kurwy}
 - {excl: '', incl: Ficker}
-- {excl: '', incl: dickfucker}
-- {excl: '', incl: orgas.*}
-- {excl: '', incl: fuckhead}
-- {excl: '', incl: mick}
+- {excl: '', incl: assmonkey}
+- {excl: '', incl: spick}
+- {excl: '', incl: kurwa}
+- {excl: '', incl: nutsack}
 - {excl: '', incl: huju}
 - {excl: '', incl: handjob}
 - {excl: '', incl: shithole}
-- {excl: '', incl: Vole}
+- {excl: '', incl: cumguzzler}
 - {excl: '', incl: cumtart}
-- {excl: '', incl: cockwaffle}
+- {excl: '', incl: jackass}
 - {excl: '', incl: dickjuice}
 - {excl: '', incl: conneries}
 - {excl: '', incl: skvrvysyn}
@@ -590,36 +593,41 @@ BadWords:
 - {excl: '', incl: Hovno}
 - {excl: '', incl: fuckboy}
 - {excl: '', incl: faggot}
-- {excl: '', incl: ^pvla$}
+- {excl: '', incl: Sraška}
 - {excl: '', incl: Truie}
 - {excl: '', incl: poonany}
 - {excl: '', incl: cocksmoke}
 - {excl: '', incl: Chatte}
-- {excl: '', incl: vhor.*}
+- {excl: '', incl: nasl}
+- {excl: '', incl: dlrsa}
 - {excl: '', incl: choad}
 - {excl: '', incl: shitbag}
 - {excl: '', incl: shiz}
 - {excl: '', incl: poonani}
 - {excl: '', incl: swinia}
 - {excl: '', incl: poonanl}
+- {excl: '', incl: ^pvla$}
 - {excl: '', incl: poontang}
-- {excl: '', incl: merd.*}
+- {excl: '', incl: shit}
 - {excl: '', incl: fankvlo}
 - {excl: '', incl: bollox}
-- {excl: '', incl: douchewaffle}
+- {excl: '', incl: Putain}
 - {excl: '', incl: Pisser}
 - {excl: '', incl: pierdole}
 - {excl: '', incl: Chuj}
 - {excl: '', incl: pakkl.*}
 - {excl: '', incl: Sukinsyn}
 - {excl: '', incl: tits}
+- {excl: '', incl: cockwaffle}
 - {excl: '', incl: .*dyke}
+- {excl: '', incl: jizz}
 - {excl: '', incl: poop}
 - {excl: '', incl: Casse-toi}
 - {excl: '', incl: andskota.*}
-- {excl: '', incl: breasts}
+- {excl: '', incl: Sheisse}
 - {excl: '', incl: Arschgesicht}
 - {excl: '', incl: clitface}
+- {excl: '', incl: pussies}
 - {excl: '', incl: Cipka}
 - {excl: '', incl: Luder}
 - {excl: '', incl: plsda}
@@ -631,37 +639,2440 @@ BadWords:
 - {excl: '', incl: dickbag}
 - {excl: '', incl: splooge}
 - {excl: '', incl: junglebunny}
-- {excl: '', incl: pussies}
+- {excl: '', incl: ^kvm$}
 - {excl: '', incl: teets}
 - {excl: '', incl: splerdalaj}
 - {excl: '', incl: enmerder}
 - {excl: '', incl: queerhole}
 - {excl: '', incl: garce}
 - {excl: '', incl: poontsee}
-- {excl: '', incl: nasl}
-- {excl: '', incl: ekto}
-- {excl: 'klon', incl: dlke.*}
-- {excl: '', incl: ^idiot$}
-- {excl: '', incl: ^n.srat$}
-- {excl: '', incl: ^srát$}
-- {excl: '', incl: ^vyhul$}
-- {excl: '', incl: ^čůrák$}
-- {excl: '', incl: ^kretén$}
-- {excl: '', incl: ^idiot$}
-- {excl: '', incl: ^n.srat$}
-- {excl: '', incl: ^srát$}
-- {excl: '', incl: ^vyhul$}
-- {excl: '', incl: ^čůrák$}
-- {excl: '', incl: ^kretén$}
+- {excl: '', incl: Connard}
+- {excl: '', incl: ^skurwielem$}
+- {excl: '', incl: ^flange$}
+- {excl: '', incl: ^chinetoc$}
+- {excl: '', incl: ^crappify$}
+- {excl: '', incl: ^bitchily$}
+- {excl: '', incl: ^tits-up$}
+- {excl: '', incl: ^zajebistym$}
+- {excl: '', incl: ^doxosophe$}
+- {excl: '', incl: ^bourdille$}
+- {excl: '', incl: ^titwank$}
+- {excl: '', incl: ^puta$}
+- {excl: '', incl: ^picusi$}
+- {excl: '', incl: ^zajebią$}
+- {excl: '', incl: ^kurwach$}
+- {excl: '', incl: ^choda$}
+- {excl: '', incl: ^boche$}
+- {excl: '', incl: ^skurwysyn$}
+- {excl: '', incl: ^dammit$}
+- {excl: '', incl: ^wypieprzac$}
+- {excl: '', incl: ^spierdalający$}
+- {excl: '', incl: ^fiotte$}
+- {excl: '', incl: ^Connecticunt$}
+- {excl: '', incl: ^pieprzniety$}
+- {excl: '', incl: ^tapette$}
+- {excl: '', incl: ^dopierdalać$}
+- {excl: '', incl: ^psychobitch$}
+- {excl: '', incl: ^sokayim$}
+- {excl: '', incl: ^fuckpole$}
+- {excl: '', incl: ^popierdala$}
+- {excl: '', incl: ^jebnął$}
+- {excl: '', incl: ^przyjebała$}
+- {excl: '', incl: ^zajebat$}
+- {excl: '', incl: ^popierdolić$}
+- {excl: '', incl: ^ESAD$}
+- {excl: '', incl: ^fumier$}
+- {excl: '', incl: ^pico$}
+- {excl: '', incl: ^cheesedick$}
+- {excl: '', incl: ^Christfag$}
+- {excl: '', incl: ^kurwo$}
+- {excl: '', incl: ^fuckmaster$}
+- {excl: '', incl: ^huso$}
+- {excl: '', incl: ^putois$}
+- {excl: '', incl: ^blowbang$}
+- {excl: '', incl: ^blbý$}
+- {excl: '', incl: ^zajebista$}
+- {excl: '', incl: ^pojebanych$}
+- {excl: '', incl: ^amq$}
+- {excl: '', incl: ^kahpe$}
+- {excl: '', incl: ^FF$}
+- {excl: '', incl: ^chujnia$}
+- {excl: '', incl: ^camelfucker$}
+- {excl: '', incl: ^wankstain$}
+- {excl: '', incl: ^kebab$}
+- {excl: '', incl: ^fagling$}
+- {excl: '', incl: ^craphouse$}
+- {excl: '', incl: ^tantouserie$}
+- {excl: '', incl: ^hell$}
+- {excl: '', incl: ^headfuckery$}
+- {excl: '', incl: ^Polacke$}
+- {excl: '', incl: ^vaurien$}
+- {excl: '', incl: ^matkojebcami$}
+- {excl: '', incl: ^cum-guzzler$}
+- {excl: '', incl: ^fucknut$}
+- {excl: '', incl: ^zapierdoliła$}
+- {excl: '', incl: ^bitchwad$}
+- {excl: '', incl: ^hard-ass$}
+- {excl: '', incl: ^microdick$}
+- {excl: '', incl: ^spieprzają$}
+- {excl: '', incl: ^lardbutt$}
+- {excl: '', incl: ^ratfucker$}
+- {excl: '', incl: ^gaupe$}
+- {excl: '', incl: ^trasvestido$}
+- {excl: '', incl: ^demence$}
+- {excl: '', incl: ^batshittery$}
+- {excl: '', incl: ^podpierdolic$}
+- {excl: '', incl: ^hure$}
+- {excl: '', incl: ^sikerim$}
+- {excl: '', incl: ^popierdolonego$}
+- {excl: '', incl: ^culo$}
+- {excl: '', incl: ^assmouth$}
+- {excl: '', incl: ^najebany$}
+- {excl: '', incl: ^rear$}
+- {excl: '', incl: ^przyjebać$}
+- {excl: '', incl: ^prick$}
+- {excl: '', incl: ^przypierdolic$}
+- {excl: '', incl: ^wypieprzać$}
+- {excl: '', incl: ^blb$}
+- {excl: '', incl: ^FML$}
+- {excl: '', incl: ^zprcal$}
+- {excl: '', incl: ^kurwik$}
+- {excl: '', incl: ^rod$}
+- {excl: '', incl: ^bell-end$}
+- {excl: '', incl: ^odpierdoliła$}
+- {excl: '', incl: ^napierdalający$}
+- {excl: '', incl: ^posrat$}
+- {excl: '', incl: ^zkurvena$}
+- {excl: '', incl: ^assfuck$}
+- {excl: '', incl: ^yarragim$}
+- {excl: '', incl: ^fritz$}
+- {excl: '', incl: ^spieprzaja$}
+- {excl: '', incl: ^asswhore$}
+- {excl: '', incl: ^wypierdolą$}
+- {excl: '', incl: ^fuckable$}
+- {excl: '', incl: ^analize$}
+- {excl: '', incl: ^cuntslut$}
+- {excl: '', incl: ^fag$}
+- {excl: '', incl: ^puss$}
+- {excl: '', incl: ^vymrdane$}
+- {excl: '', incl: ^fuckbrain$}
+- {excl: '', incl: ^goddamn$}
+- {excl: '', incl: ^journalope$}
+- {excl: '', incl: ^poophole$}
+- {excl: '', incl: ^matkojebcach$}
+- {excl: '', incl: ^moricaud$}
+- {excl: '', incl: ^cuntward$}
+- {excl: '', incl: ^pierdzieć$}
+- {excl: '', incl: ^kurwie$}
+- {excl: '', incl: ^zmrdane$}
+- {excl: '', incl: ^fuckology$}
+- {excl: '', incl: ^satrouille$}
+- {excl: '', incl: ^zasraný$}
+- {excl: '', incl: ^nuts$}
+- {excl: '', incl: ^pierdolnela$}
+- {excl: '', incl: ^pizdnąć$}
+- {excl: '', incl: ^dopierdalal$}
+- {excl: '', incl: ^gangbanger$}
+- {excl: '', incl: ^boudin$}
+- {excl: '', incl: ^pigfucker$}
+- {excl: '', incl: ^wichser$}
+- {excl: '', incl: ^przepierdalajaca$}
+- {excl: '', incl: ^crétin$}
+- {excl: '', incl: ^vymrdam$}
+- {excl: '', incl: ^pussyless$}
+- {excl: '', incl: ^cype$}
+- {excl: '', incl: ^bougnoul$}
+- {excl: '', incl: ^kurevski$}
+- {excl: '', incl: ^cretino$}
+- {excl: '', incl: ^podpierdolić$}
+- {excl: '', incl: ^cousincest$}
+- {excl: '', incl: ^sürtük$}
+- {excl: '', incl: ^pizdnac$}
+- {excl: '', incl: ^blue-baller$}
+- {excl: '', incl: ^spierdoli$}
+- {excl: '', incl: ^négro$}
+- {excl: '', incl: ^ROFLMGDMFAO$}
+- {excl: '', incl: ^pipina$}
+- {excl: '', incl: ^big-ass$}
+- {excl: '', incl: ^wkurwiają$}
+- {excl: '', incl: ^empapaouté$}
+- {excl: '', incl: ^cheese$}
+- {excl: '', incl: ^najebia$}
+- {excl: '', incl: ^podpierdalac$}
+- {excl: '', incl: ^zmrdany$}
+- {excl: '', incl: ^rozpierdole$}
+- {excl: '', incl: ^sokarım$}
+- {excl: '', incl: ^hujek$}
+- {excl: '', incl: ^fuckdoll$}
+- {excl: '', incl: ^cuntdom$}
+- {excl: '', incl: ^cowshit$}
+- {excl: '', incl: ^odpierdolił$}
+- {excl: '', incl: ^dopierdolić$}
+- {excl: '', incl: ^idiota$}
+- {excl: '', incl: ^gogol$}
+- {excl: '', incl: ^Lappen$}
+- {excl: '', incl: ^pojeb$}
+- {excl: '', incl: ^zapierdalajacy$}
+- {excl: '', incl: ^zkurvit$}
+- {excl: '', incl: ^hard-assed$}
+- {excl: '', incl: ^zorra$}
+- {excl: '', incl: ^ebesini$}
+- {excl: '', incl: ^clunge$}
+- {excl: '', incl: ^three-legged$}
+- {excl: '', incl: ^zasranym$}
+- {excl: '', incl: ^emmanché$}
+- {excl: '', incl: ^kurwiarz$}
+- {excl: '', incl: ^assholism$}
+- {excl: '', incl: ^spieprzaj$}
+- {excl: '', incl: ^cuntlicker$}
+- {excl: '', incl: ^zajebali$}
+- {excl: '', incl: ^assholey$}
+- {excl: '', incl: ^poufiasse$}
+- {excl: '', incl: ^youpinisation$}
+- {excl: '', incl: ^strejdomrd$}
+- {excl: '', incl: ^opierdalajacy$}
+- {excl: '', incl: ^koňomrd$}
+- {excl: '', incl: ^yarraklar$}
+- {excl: '', incl: ^fiddlefuck$}
+- {excl: '', incl: ^enfoiré$}
+- {excl: '', incl: ^yarrağım$}
+- {excl: '', incl: ^przyjebali$}
+- {excl: '', incl: ^opíchat$}
+- {excl: '', incl: ^opierdol$}
+- {excl: '', incl: ^przypierdalać$}
+- {excl: '', incl: ^napierdolic$}
+- {excl: '', incl: ^whorehouse$}
+- {excl: '', incl: ^piss$}
+- {excl: '', incl: ^šoustat$}
+- {excl: '', incl: ^aptal$}
+- {excl: '', incl: ^mierdoso$}
+- {excl: '', incl: ^screw$}
+- {excl: '', incl: ^pieprzony$}
+- {excl: '', incl: ^orospuçocuğu$}
+- {excl: '', incl: ^cricri$}
+- {excl: '', incl: ^fatherfucker$}
+- {excl: '', incl: ^sukinsynów$}
+- {excl: '', incl: ^fuckheadery$}
+- {excl: '', incl: ^cuntlips$}
+- {excl: '', incl: ^wyjebiecie$}
+- {excl: '', incl: ^whorefucker$}
+- {excl: '', incl: ^odpierdolila$}
+- {excl: '', incl: ^Pfosten$}
+- {excl: '', incl: ^wyjebią$}
+- {excl: '', incl: ^coños$}
+- {excl: '', incl: ^spieprzajaca$}
+- {excl: '', incl: ^najebią$}
+- {excl: '', incl: ^refuck$}
+- {excl: '', incl: ^pierdolił$}
+- {excl: '', incl: ^fatassed$}
+- {excl: '', incl: ^cunthood$}
+- {excl: '', incl: ^hitler$}
+- {excl: '', incl: ^jebnac$}
+- {excl: '', incl: ^pisspot$}
+- {excl: '', incl: ^cockaholic$}
+- {excl: '', incl: ^tantouze$}
+- {excl: '', incl: ^wypierdalac$}
+- {excl: '', incl: ^przejebac$}
+- {excl: '', incl: ^fuckload$}
+- {excl: '', incl: ^faggotface$}
+- {excl: '', incl: ^fuckheadedly$}
+- {excl: '', incl: ^wypieprzyl$}
+- {excl: '', incl: ^POC$}
+- {excl: '', incl: ^cuntass$}
+- {excl: '', incl: ^fuckheadese$}
+- {excl: '', incl: ^yarrak$}
+- {excl: '', incl: ^cuntfuck$}
+- {excl: '', incl: ^cocked$}
+- {excl: '', incl: ^pojebat$}
+- {excl: '', incl: ^counifle$}
+- {excl: '', incl: ^pisshole$}
+- {excl: '', incl: ^empafé$}
+- {excl: '', incl: ^cockmeat$}
+- {excl: '', incl: ^šuk$}
+- {excl: '', incl: ^pisser$}
+- {excl: '', incl: ^upfuckery$}
+- {excl: '', incl: ^piss-take$}
+- {excl: '', incl: ^gauchisme$}
+- {excl: '', incl: ^cabrón$}
+- {excl: '', incl: ^nut$}
+- {excl: '', incl: ^glandeur$}
+- {excl: '', incl: ^vykokoteny$}
+- {excl: '', incl: ^tata$}
+- {excl: '', incl: ^sračka$}
+- {excl: '', incl: ^package$}
+- {excl: '', incl: ^nigga$}
+- {excl: '', incl: ^skurwysynu$}
+- {excl: '', incl: ^vymrdal$}
+- {excl: '', incl: ^mindfucked$}
+- {excl: '', incl: ^odpierdoli$}
+- {excl: '', incl: ^deviace$}
+- {excl: '', incl: ^abruti$}
+- {excl: '', incl: ^wkurwiacie$}
+- {excl: '', incl: ^naopierdalac$}
+- {excl: '', incl: ^fuccboi$}
+- {excl: '', incl: ^kavat$}
+- {excl: '', incl: ^gouine$}
+- {excl: '', incl: ^pojebać$}
+- {excl: '', incl: ^dojebałem$}
+- {excl: '', incl: ^pierdolnął$}
+- {excl: '', incl: ^chuff$}
+- {excl: '', incl: ^sukinsyn$}
+- {excl: '', incl: ^pimp-slap$}
+- {excl: '', incl: ^hovnoksicht$}
+- {excl: '', incl: ^bacon-faced$}
+- {excl: '', incl: ^spierdalać$}
+- {excl: '', incl: ^wypieprzy$}
+- {excl: '', incl: ^arsemunch$}
+- {excl: '', incl: ^wkurwic$}
+- {excl: '', incl: ^wypieprzyla$}
+- {excl: '', incl: ^ROMFFLMMFAO$}
+- {excl: '', incl: ^cockaludicrous$}
+- {excl: '', incl: ^craphead$}
+- {excl: '', incl: ^cornhole$}
+- {excl: '', incl: ^kokotsky$}
+- {excl: '', incl: ^jebaka$}
+- {excl: '', incl: ^mongol$}
+- {excl: '', incl: ^skurwielu$}
+- {excl: '', incl: ^zapieprzy$}
+- {excl: '', incl: ^ball-buster$}
+- {excl: '', incl: ^pierdolenie$}
+- {excl: '', incl: ^przypieprzajacy$}
+- {excl: '', incl: ^niakoué$}
+- {excl: '', incl: ^cum-soaked$}
+- {excl: '', incl: ^pierdolnik$}
+- {excl: '', incl: ^craphole$}
+- {excl: '', incl: ^cock$}
+- {excl: '', incl: ^kurwę$}
+- {excl: '', incl: ^dojebal$}
+- {excl: '', incl: ^zapierdalala$}
+- {excl: '', incl: ^-fucking-$}
+- {excl: '', incl: ^bitchload$}
+- {excl: '', incl: ^wypierdal$}
+- {excl: '', incl: ^porcas$}
+- {excl: '', incl: ^pierdolona$}
+- {excl: '', incl: ^cuntfucker$}
+- {excl: '', incl: ^branleur$}
+- {excl: '', incl: ^fuckass$}
+- {excl: '', incl: ^makoumé$}
+- {excl: '', incl: ^wixer$}
+- {excl: '', incl: ^cuntbiscuit$}
+- {excl: '', incl: ^ATM$}
+- {excl: '', incl: ^amk$}
+- {excl: '', incl: ^Cuntingham$}
+- {excl: '', incl: ^fuckheadism$}
+- {excl: '', incl: ^ojebala$}
+- {excl: '', incl: ^cockblock$}
+- {excl: '', incl: ^rozjebią$}
+- {excl: '', incl: ^porcasse$}
+- {excl: '', incl: ^teabagger$}
+- {excl: '', incl: ^horseshit$}
+- {excl: '', incl: ^fucker$}
+- {excl: '', incl: ^gayerluflo$}
+- {excl: '', incl: ^magot$}
+- {excl: '', incl: ^wankface$}
+- {excl: '', incl: ^odpierdolic$}
+- {excl: '', incl: ^wankered$}
+- {excl: '', incl: ^spieprzający$}
+- {excl: '', incl: ^midfuck$}
+- {excl: '', incl: ^merde$}
+- {excl: '', incl: ^zajebiście$}
+- {excl: '', incl: ^jebat$}
+- {excl: '', incl: ^zajebiał$}
+- {excl: '', incl: ^kurwą$}
+- {excl: '', incl: ^emmerdeuse$}
+- {excl: '', incl: ^joder$}
+- {excl: '', incl: ^garce$}
+- {excl: '', incl: ^vert-de-gris$}
+- {excl: '', incl: ^zamrdany$}
+- {excl: '', incl: ^fuckface$}
+- {excl: '', incl: ^matkojebca$}
+- {excl: '', incl: ^effable$}
+- {excl: '', incl: ^dopieprzac$}
+- {excl: '', incl: ^jeannette$}
+- {excl: '', incl: ^sapık$}
+- {excl: '', incl: ^srając$}
+- {excl: '', incl: ^dopierdalajacy$}
+- {excl: '', incl: ^upierdoleni$}
+- {excl: '', incl: ^overfuck$}
+- {excl: '', incl: ^chuja$}
+- {excl: '', incl: ^zjebana$}
+- {excl: '', incl: ^ripopée$}
+- {excl: '', incl: ^piehole$}
+- {excl: '', incl: ^rack$}
+- {excl: '', incl: ^cons$}
+- {excl: '', incl: ^pussyhole$}
+- {excl: '', incl: ^feist$}
+- {excl: '', incl: ^fuckfaced$}
+- {excl: '', incl: ^fuckhead$}
+- {excl: '', incl: ^fuckheaded$}
+- {excl: '', incl: ^niac$}
+- {excl: '', incl: ^wyjebia$}
+- {excl: '', incl: ^şırfıntı$}
+- {excl: '', incl: ^duschnock$}
+- {excl: '', incl: ^bic$}
+- {excl: '', incl: ^farthole$}
+- {excl: '', incl: ^fucken$}
+- {excl: '', incl: ^zapiceny$}
+- {excl: '', incl: ^enflure$}
+- {excl: '', incl: ^merdouillard$}
+- {excl: '', incl: ^ROFLMMFGDAO$}
+- {excl: '', incl: ^pignouf$}
+- {excl: '', incl: ^opierdolić$}
+- {excl: '', incl: ^opierdalac$}
+- {excl: '', incl: ^jebanym$}
+- {excl: '', incl: ^bouffon$}
+- {excl: '', incl: ^siktir$}
+- {excl: '', incl: ^kurwiszony$}
+- {excl: '', incl: ^picomrd$}
+- {excl: '', incl: ^prickface$}
+- {excl: '', incl: ^ojebal$}
+- {excl: '', incl: ^wypierdolicie$}
+- {excl: '', incl: ^sıç$}
+- {excl: '', incl: ^srajacy$}
+- {excl: '', incl: ^zajebana$}
+- {excl: '', incl: ^cuntal$}
+- {excl: '', incl: ^odpierdolić$}
+- {excl: '', incl: ^bougnoulisation$}
+- {excl: '', incl: ^obsrywać$}
+- {excl: '', incl: ^fuck-knuckle$}
+- {excl: '', incl: ^kráva$}
+- {excl: '', incl: ^mindfuckings$}
+- {excl: '', incl: ^jebut$}
+- {excl: '', incl: ^kurevsky$}
+- {excl: '', incl: ^dojebany$}
+- {excl: '', incl: ^angut$}
+- {excl: '', incl: ^salaud$}
+- {excl: '', incl: ^jebcie$}
+- {excl: '', incl: ^pierdolony$}
+- {excl: '', incl: ^knobhead$}
+- {excl: '', incl: ^raton$}
+- {excl: '', incl: ^vide-couilles$}
+- {excl: '', incl: ^wiz$}
+- {excl: '', incl: ^quim$}
+- {excl: '', incl: ^dojebat$}
+- {excl: '', incl: ^load$}
+- {excl: '', incl: ^pecque$}
+- {excl: '', incl: ^porozpierdala$}
+- {excl: '', incl: ^jebnij$}
+- {excl: '', incl: ^zapierniczać$}
+- {excl: '', incl: ^jebia$}
+- {excl: '', incl: ^barse$}
+- {excl: '', incl: ^débile$}
+- {excl: '', incl: ^pisspants$}
+- {excl: '', incl: ^kutas$}
+- {excl: '', incl: ^ananı$}
+- {excl: '', incl: ^popierdolonym$}
+- {excl: '', incl: ^spasti$}
+- {excl: '', incl: ^nawpierdalala$}
+- {excl: '', incl: ^chujovy$}
+- {excl: '', incl: ^PD$}
+- {excl: '', incl: ^děvka$}
+- {excl: '', incl: ^skurwysynem$}
+- {excl: '', incl: ^zapierdola$}
+- {excl: '', incl: ^pierdoli$}
+- {excl: '', incl: ^rosbif$}
+- {excl: '', incl: ^cuntily$}
+- {excl: '', incl: ^crappy$}
+- {excl: '', incl: ^ibne$}
+- {excl: '', incl: ^vypiceny$}
+- {excl: '', incl: ^przepierdalać$}
+- {excl: '', incl: ^nuttensohn$}
+- {excl: '', incl: ^dupcia$}
+- {excl: '', incl: ^berk$}
+- {excl: '', incl: ^opierdalający$}
+- {excl: '', incl: ^balls-up$}
+- {excl: '', incl: ^sikmek$}
+- {excl: '', incl: ^desgraciado$}
+- {excl: '', incl: ^sukinsynow$}
+- {excl: '', incl: ^najebał$}
+- {excl: '', incl: ^gilipollas$}
+- {excl: '', incl: ^rozpierdalac$}
+- {excl: '', incl: ^godsdamn$}
+- {excl: '', incl: ^ROTFLMMFGDAO$}
+- {excl: '', incl: ^fuckedness$}
+- {excl: '', incl: ^bitch$}
+- {excl: '', incl: ^wjebią$}
+- {excl: '', incl: ^cookie$}
+- {excl: '', incl: ^bogging$}
+- {excl: '', incl: ^Hitler$}
+- {excl: '', incl: ^ROTMFFLMMFAO$}
+- {excl: '', incl: ^hail$}
+- {excl: '', incl: ^tarlouze$}
+- {excl: '', incl: ^faglet$}
+- {excl: '', incl: ^hovňous$}
+- {excl: '', incl: ^picus$}
+- {excl: '', incl: ^gammy$}
+- {excl: '', incl: ^buzerovat$}
+- {excl: '', incl: ^zjebią$}
+- {excl: '', incl: ^zajebać$}
+- {excl: '', incl: ^blbko$}
+- {excl: '', incl: ^vyjebal$}
+- {excl: '', incl: ^clitwad$}
+- {excl: '', incl: ^crapfest$}
+- {excl: '', incl: ^cockface$}
+- {excl: '', incl: ^leak$}
+- {excl: '', incl: ^fingerfuck$}
+- {excl: '', incl: ^zapierdolić$}
+- {excl: '', incl: ^kurwiszonem$}
+- {excl: '', incl: ^vykurvenci$}
+- {excl: '', incl: ^pissass$}
+- {excl: '', incl: ^bok$}
+- {excl: '', incl: ^pierdolaca$}
+- {excl: '', incl: ^underfucked$}
+- {excl: '', incl: ^cafre$}
+- {excl: '', incl: ^child-fucker$}
+- {excl: '', incl: ^imbécil$}
+- {excl: '', incl: ^pomrdat$}
+- {excl: '', incl: ^fucketh$}
+- {excl: '', incl: ^kurwidołek$}
+- {excl: '', incl: ^ovcomrd$}
+- {excl: '', incl: ^cuntfest$}
+- {excl: '', incl: ^bollocky$}
+- {excl: '', incl: ^in-fucking-credible$}
+- {excl: '', incl: ^debilove$}
+- {excl: '', incl: ^przepierdalający$}
+- {excl: '', incl: ^picovsky$}
+- {excl: '', incl: ^nawpierdalać$}
+- {excl: '', incl: ^bitchcunt$}
+- {excl: '', incl: ^koorwa$}
+- {excl: '', incl: ^poya$}
+- {excl: '', incl: ^qrwa$}
+- {excl: '', incl: ^kurwiszcze$}
+- {excl: '', incl: ^pochcaný$}
+- {excl: '', incl: ^gap-lapper$}
+- {excl: '', incl: ^zajebanym$}
+- {excl: '', incl: ^dojebię$}
+- {excl: '', incl: ^pierdolą$}
+- {excl: '', incl: ^roid$}
+- {excl: '', incl: ^gerzek$}
+- {excl: '', incl: ^pisscutter$}
+- {excl: '', incl: ^wkurwiali$}
+- {excl: '', incl: ^plough$}
+- {excl: '', incl: ^pizdę$}
+- {excl: '', incl: ^bangability$}
+- {excl: '', incl: ^jebak$}
+- {excl: '', incl: ^mamomrd$}
+- {excl: '', incl: ^cuntlike$}
+- {excl: '', incl: ^spierdalac$}
+- {excl: '', incl: ^pokurvila$}
+- {excl: '', incl: ^arse-kisser$}
+- {excl: '', incl: ^nutsack$}
+- {excl: '', incl: ^birdshit$}
+- {excl: '', incl: ^fuck-a-doodle-doo$}
+- {excl: '', incl: ^ROMFFLMAO$}
+- {excl: '', incl: ^niquer$}
+- {excl: '', incl: ^ratshit$}
+- {excl: '', incl: ^poon$}
+- {excl: '', incl: ^cockshot$}
+- {excl: '', incl: ^zapierdalac$}
+- {excl: '', incl: ^rozjebała$}
+- {excl: '', incl: ^opierdolą$}
+- {excl: '', incl: ^cuntery$}
+- {excl: '', incl: ^fuckmachine$}
+- {excl: '', incl: ^dupe$}
+- {excl: '', incl: ^orospu$}
+- {excl: '', incl: ^jug$}
+- {excl: '', incl: ^lavette$}
+- {excl: '', incl: ^cuntwhore$}
+- {excl: '', incl: ^dement$}
+- {excl: '', incl: ^pork$}
+- {excl: '', incl: ^jebany$}
+- {excl: '', incl: ^rosbeef$}
+- {excl: '', incl: ^fucklord$}
+- {excl: '', incl: ^fanfuckingtastic$}
+- {excl: '', incl: ^pici$}
+- {excl: '', incl: ^rozjebać$}
+- {excl: '', incl: ^fuckjuice$}
+- {excl: '', incl: ^najebala$}
+- {excl: '', incl: ^wanker$}
+- {excl: '', incl: ^pierdolący$}
+- {excl: '', incl: ^rocks$}
+- {excl: '', incl: ^cunt-buster$}
+- {excl: '', incl: ^chode$}
+- {excl: '', incl: ^manche$}
+- {excl: '', incl: ^fireship$}
+- {excl: '', incl: ^fuckedupness$}
+- {excl: '', incl: ^hurentochter$}
+- {excl: '', incl: ^unfuck$}
+- {excl: '', incl: ^nutbag$}
+- {excl: '', incl: ^cocktease$}
+- {excl: '', incl: ^windfucker$}
+- {excl: '', incl: ^sraj$}
+- {excl: '', incl: ^asshole$}
+- {excl: '', incl: ^wkurwia$}
+- {excl: '', incl: ^jebiąca$}
+- {excl: '', incl: ^spierdolic$}
+- {excl: '', incl: ^juice$}
+- {excl: '', incl: ^zkurvili$}
+- {excl: '', incl: ^vyšukat$}
+- {excl: '', incl: ^cuntlicking$}
+- {excl: '', incl: ^burnes$}
+- {excl: '', incl: ^podpierdoli$}
+- {excl: '', incl: ^crapper$}
+- {excl: '', incl: ^wypierdolimy$}
+- {excl: '', incl: ^wazoo$}
+- {excl: '', incl: ^Bimbo$}
+- {excl: '', incl: ^scheiße$}
+- {excl: '', incl: ^pizdzie$}
+- {excl: '', incl: ^jebane$}
+- {excl: '', incl: ^rozpierducha$}
+- {excl: '', incl: ^curaku$}
+- {excl: '', incl: ^pootie$}
+- {excl: '', incl: ^frigging$}
+- {excl: '', incl: ^beaver$}
+- {excl: '', incl: ^pica$}
+- {excl: '', incl: ^sıçmak$}
+- {excl: '', incl: ^przyjebał$}
+- {excl: '', incl: ^eşşek$}
+- {excl: '', incl: ^asswagon$}
+- {excl: '', incl: ^bitch-slap$}
+- {excl: '', incl: ^blbecku$}
+- {excl: '', incl: ^najebal$}
+- {excl: '', incl: ^skurwysynski$}
+- {excl: '', incl: ^pojebanymi$}
+- {excl: '', incl: ^prasomrd$}
+- {excl: '', incl: ^posera$}
+- {excl: '', incl: ^gash$}
+- {excl: '', incl: ^opierdalać$}
+- {excl: '', incl: ^odpierdolil$}
+- {excl: '', incl: ^kurwe$}
+- {excl: '', incl: ^pojebanego$}
+- {excl: '', incl: ^jerk$}
+- {excl: '', incl: ^craptastically$}
+- {excl: '', incl: ^prdeloid$}
+- {excl: '', incl: ^dopierdala$}
+- {excl: '', incl: ^asstastic$}
+- {excl: '', incl: ^asslifter$}
+- {excl: '', incl: ^nawpierdalała$}
+- {excl: '', incl: ^cockmaster$}
+- {excl: '', incl: ^popierdolonemu$}
+- {excl: '', incl: ^Limpdick$}
+- {excl: '', incl: ^fagazine$}
+- {excl: '', incl: ^wankhead$}
+- {excl: '', incl: ^dopierdoli$}
+- {excl: '', incl: ^bukvice$}
+- {excl: '', incl: ^dopierdalał$}
+- {excl: '', incl: ^vůl$}
+- {excl: '', incl: ^zjebac$}
+- {excl: '', incl: ^fuckhole$}
+- {excl: '', incl: ^asshattish$}
+- {excl: '', incl: ^escoria$}
+- {excl: '', incl: ^fooking$}
+- {excl: '', incl: ^wkurwiać$}
+- {excl: '', incl: ^zapieprzył$}
+- {excl: '', incl: ^artfuck$}
+- {excl: '', incl: ^cocksucker$}
+- {excl: '', incl: ^şerefsiz$}
+- {excl: '', incl: ^opierdala$}
+- {excl: '', incl: ^catfucker$}
+- {excl: '', incl: ^zpiceny$}
+- {excl: '', incl: ^cockhead$}
+- {excl: '', incl: ^espingoin$}
+- {excl: '', incl: ^zapierdolic$}
+- {excl: '', incl: ^bitchy$}
+- {excl: '', incl: ^assclownery$}
+- {excl: '', incl: ^Nazisau$}
+- {excl: '', incl: ^zajebiscie$}
+- {excl: '', incl: ^spierdalała$}
+- {excl: '', incl: ^bearshit$}
+- {excl: '', incl: ^kutasami$}
+- {excl: '', incl: ^piç$}
+- {excl: '', incl: ^gobble$}
+- {excl: '', incl: ^vymrdana$}
+- {excl: '', incl: ^wad$}
+- {excl: '', incl: ^zapierdolą$}
+- {excl: '', incl: ^jebnal$}
+- {excl: '', incl: ^espèce$}
+- {excl: '', incl: ^schlong$}
+- {excl: '', incl: ^zapieprzysz$}
+- {excl: '', incl: ^nawpierdalac$}
+- {excl: '', incl: ^jebiacy$}
+- {excl: '', incl: ^eşek$}
+- {excl: '', incl: ^huju$}
+- {excl: '', incl: ^pollón$}
+- {excl: '', incl: ^enculer$}
+- {excl: '', incl: ^Bastardo$}
+- {excl: '', incl: ^sausage$}
+- {excl: '', incl: ^amuş$}
+- {excl: '', incl: ^fuckings$}
+- {excl: '', incl: ^zajebistych$}
+- {excl: '', incl: ^wpierdalać$}
+- {excl: '', incl: ^przypieprzająca$}
+- {excl: '', incl: ^chintok$}
+- {excl: '', incl: ^jebać$}
+- {excl: '', incl: ^trouduc$}
+- {excl: '', incl: ^rotwijf$}
+- {excl: '', incl: ^cumshot$}
+- {excl: '', incl: ^dementi$}
+- {excl: '', incl: ^opierdoli$}
+- {excl: '', incl: ^courtaud$}
+- {excl: '', incl: ^upierdola$}
+- {excl: '', incl: ^rozpierdolic$}
+- {excl: '', incl: ^pierdołki$}
+- {excl: '', incl: ^teubé$}
+- {excl: '', incl: ^zjebala$}
+- {excl: '', incl: ^gueule$}
+- {excl: '', incl: ^schleu$}
+- {excl: '', incl: ^unbefuckinglievable$}
+- {excl: '', incl: ^rozjebie$}
+- {excl: '', incl: ^pooper$}
+- {excl: '', incl: ^kwitcherbitchin$}
+- {excl: '', incl: ^obsrywający$}
+- {excl: '', incl: ^picusove$}
+- {excl: '', incl: ^prdel$}
+- {excl: '', incl: ^craporama$}
+- {excl: '', incl: ^chuju$}
+- {excl: '', incl: ^wypierdalal$}
+- {excl: '', incl: ^neger$}
+- {excl: '', incl: ^limp-dick$}
+- {excl: '', incl: ^wkurwiająca$}
+- {excl: '', incl: ^chuj$}
+- {excl: '', incl: ^przepierdolić$}
+- {excl: '', incl: ^bounioul$}
+- {excl: '', incl: ^humping$}
+- {excl: '', incl: ^chickenshit$}
+- {excl: '', incl: ^bougnouliser$}
+- {excl: '', incl: ^pierdolnal$}
+- {excl: '', incl: ^invertido$}
+- {excl: '', incl: ^pokurvena$}
+- {excl: '', incl: ^nutte$}
+- {excl: '', incl: ^skurwysyństwo$}
+- {excl: '', incl: ^najebać$}
+- {excl: '', incl: ^Maricón$}
+- {excl: '', incl: ^opierdolic$}
+- {excl: '', incl: ^soplanucas$}
+- {excl: '', incl: ^traînée$}
+- {excl: '', incl: ^pokurvil$}
+- {excl: '', incl: ^dojebala$}
+- {excl: '', incl: ^kurewski$}
+- {excl: '', incl: ^behindi$}
+- {excl: '', incl: ^wypieprzyła$}
+- {excl: '', incl: ^MF$}
+- {excl: '', incl: ^wkurwiajaca$}
+- {excl: '', incl: ^naopierdalać$}
+- {excl: '', incl: ^uncunt$}
+- {excl: '', incl: ^curacku$}
+- {excl: '', incl: ^smažka$}
+- {excl: '', incl: ^mindfucking$}
+- {excl: '', incl: ^fuckpig$}
+- {excl: '', incl: ^cipą$}
+- {excl: '', incl: ^pierdole$}
+- {excl: '', incl: ^ripshit$}
+- {excl: '', incl: ^gangbang$}
+- {excl: '', incl: ^wypieprzal$}
+- {excl: '', incl: ^enculés$}
+- {excl: '', incl: ^Kackbratze$}
+- {excl: '', incl: ^chujowe$}
+- {excl: '', incl: ^fucknugget$}
+- {excl: '', incl: ^jebankiem$}
+- {excl: '', incl: ^dojebalem$}
+- {excl: '', incl: ^blowen$}
+- {excl: '', incl: ^fuckingly$}
+- {excl: '', incl: ^blowess$}
+- {excl: '', incl: ^prefuck$}
+- {excl: '', incl: ^ballsucker$}
+- {excl: '', incl: ^crapperific$}
+- {excl: '', incl: ^am$}
+- {excl: '', incl: ^prickish$}
+- {excl: '', incl: ^chucklefuck$}
+- {excl: '', incl: ^scheissdreck$}
+- {excl: '', incl: ^zapierdolił$}
+- {excl: '', incl: ^dupą$}
+- {excl: '', incl: ^femcunt$}
+- {excl: '', incl: ^encunt$}
+- {excl: '', incl: ^motherfucka$}
+- {excl: '', incl: ^titsucker$}
+- {excl: '', incl: ^pissbaby$}
+- {excl: '', incl: ^whore$}
+- {excl: '', incl: ^fuckoff$}
+- {excl: '', incl: ^unbangable$}
+- {excl: '', incl: ^fouteur$}
+- {excl: '', incl: ^fingerbang$}
+- {excl: '', incl: ^popierdalać$}
+- {excl: '', incl: ^foutre$}
+- {excl: '', incl: ^wkurwi$}
+- {excl: '', incl: ^zajebanych$}
+- {excl: '', incl: ^whorey$}
+- {excl: '', incl: ^artfag$}
+- {excl: '', incl: ^turdpile$}
+- {excl: '', incl: ^bobbar$}
+- {excl: '', incl: ^dupeczka$}
+- {excl: '', incl: ^poundé$}
+- {excl: '', incl: ^chujowy$}
+- {excl: '', incl: ^fahişe$}
+- {excl: '', incl: ^travesti$}
+- {excl: '', incl: ^cuntbitch$}
+- {excl: '', incl: ^wpierdalający$}
+- {excl: '', incl: ^twat$}
+- {excl: '', incl: ^spacken$}
+- {excl: '', incl: ^zajebia$}
+- {excl: '', incl: ^ujebana$}
+- {excl: '', incl: ^homofaggot$}
+- {excl: '', incl: ^enculé$}
+- {excl: '', incl: ^unbe-fucking-lievable$}
+- {excl: '', incl: ^lopette$}
+- {excl: '', incl: ^fartless$}
+- {excl: '', incl: ^przypierdala$}
+- {excl: '', incl: ^infuckingcredible$}
+- {excl: '', incl: ^kurwiszon$}
+- {excl: '', incl: ^puşt$}
+- {excl: '', incl: ^dojebałam$}
+- {excl: '', incl: ^bog$}
+- {excl: '', incl: ^beave$}
+- {excl: '', incl: ^vyprcat$}
+- {excl: '', incl: ^conasse$}
+- {excl: '', incl: ^wjebac$}
+- {excl: '', incl: ^dopierdalac$}
+- {excl: '', incl: ^assbutt$}
+- {excl: '', incl: ^wjebiecie$}
+- {excl: '', incl: ^tache$}
+- {excl: '', incl: ^trump$}
+- {excl: '', incl: ^pierdolnąć$}
+- {excl: '', incl: ^dojebała$}
+- {excl: '', incl: ^arseholed$}
+- {excl: '', incl: ^téteux$}
+- {excl: '', incl: ^cock-stand$}
+- {excl: '', incl: ^sicmak$}
+- {excl: '', incl: ^trim$}
+- {excl: '', incl: ^sale$}
+- {excl: '', incl: ^nip$}
+- {excl: '', incl: ^fotze$}
+- {excl: '', incl: ^blbe$}
+- {excl: '', incl: ^wjebie$}
+- {excl: '', incl: ^gourde$}
+- {excl: '', incl: ^kurvi$}
+- {excl: '', incl: ^hatefuck$}
+- {excl: '', incl: ^piss-weak$}
+- {excl: '', incl: ^pierdolić$}
+- {excl: '', incl: ^wkurwicie$}
+- {excl: '', incl: ^pédoque$}
+- {excl: '', incl: ^pissed$}
+- {excl: '', incl: ^turdlicker$}
+- {excl: '', incl: ^blbove$}
+- {excl: '', incl: ^anal$}
+- {excl: '', incl: ^arsebreath$}
+- {excl: '', incl: ^zajebanymi$}
+- {excl: '', incl: ^whorehound$}
+- {excl: '', incl: ^ujebał$}
+- {excl: '', incl: ^jizbag$}
+- {excl: '', incl: ^nawpierdalał$}
+- {excl: '', incl: ^wypierdolili$}
+- {excl: '', incl: ^cockfucker$}
+- {excl: '', incl: ^LMFAO$}
+- {excl: '', incl: ^najebana$}
+- {excl: '', incl: ^postfuck$}
+- {excl: '', incl: ^odpierdalająca$}
+- {excl: '', incl: ^kozomrd$}
+- {excl: '', incl: ^jebaną$}
+- {excl: '', incl: ^envaselineur$}
+- {excl: '', incl: ^pokurvene$}
+- {excl: '', incl: ^beotch$}
+- {excl: '', incl: ^skurwysynstwo$}
+- {excl: '', incl: ^zesrywający$}
+- {excl: '', incl: ^rosebud$}
+- {excl: '', incl: ^wankaholic$}
+- {excl: '', incl: ^chier$}
+- {excl: '', incl: ^salak$}
+- {excl: '', incl: ^Missgeburt$}
+- {excl: '', incl: ^podpierdala$}
+- {excl: '', incl: ^unshaggable$}
+- {excl: '', incl: ^motherfuck$}
+- {excl: '', incl: ^epeen$}
+- {excl: '', incl: ^bloody$}
+- {excl: '', incl: ^cuntify$}
+- {excl: '', incl: ^schnock$}
+- {excl: '', incl: ^spierdalajacy$}
+- {excl: '', incl: ^cockmunch$}
+- {excl: '', incl: ^bitchfucker$}
+- {excl: '', incl: ^zapierdalała$}
+- {excl: '', incl: ^endauffer$}
+- {excl: '', incl: ^kutasem$}
+- {excl: '', incl: ^zamrdat$}
+- {excl: '', incl: ^piss-poor$}
+- {excl: '', incl: ^Japscat$}
+- {excl: '', incl: ^wkurwiał$}
+- {excl: '', incl: ^poruchac$}
+- {excl: '', incl: ^Schwanzlutscher$}
+- {excl: '', incl: ^buzna$}
+- {excl: '', incl: ^zajebial$}
+- {excl: '', incl: ^fagdom$}
+- {excl: '', incl: ^vymrdat$}
+- {excl: '', incl: ^rimming$}
+- {excl: '', incl: ^imbecil$}
+- {excl: '', incl: ^chujowa$}
+- {excl: '', incl: ^birdfucker$}
+- {excl: '', incl: ^chcát$}
+- {excl: '', incl: ^pussylicker$}
+- {excl: '', incl: ^whiz$}
+- {excl: '', incl: ^bite$}
+- {excl: '', incl: ^bitchette$}
+- {excl: '', incl: ^pop$}
+- {excl: '', incl: ^pierdolniety$}
+- {excl: '', incl: ^cipa$}
+- {excl: '', incl: ^bollock$}
+- {excl: '', incl: ^clitted$}
+- {excl: '', incl: ^péquenaud$}
+- {excl: '', incl: ^fatfuck$}
+- {excl: '', incl: ^fuckin$}
+- {excl: '', incl: ^zjeby$}
+- {excl: '', incl: ^subnormal$}
+- {excl: '', incl: ^tang$}
+- {excl: '', incl: ^Mongo$}
+- {excl: '', incl: ^fuckbunny$}
+- {excl: '', incl: ^motherfuckerdom$}
+- {excl: '', incl: ^tosspiece$}
+- {excl: '', incl: ^pojebala$}
+- {excl: '', incl: ^ujebała$}
+- {excl: '', incl: ^picu$}
+- {excl: '', incl: ^balls-deep$}
+- {excl: '', incl: ^śmierdziel$}
+- {excl: '', incl: ^pindick$}
+- {excl: '', incl: ^srać$}
+- {excl: '', incl: ^facefuck$}
+- {excl: '', incl: ^jebał$}
+- {excl: '', incl: ^wankery$}
+- {excl: '', incl: ^vykurvena$}
+- {excl: '', incl: ^spierdalalcie$}
+- {excl: '', incl: ^zajebal$}
+- {excl: '', incl: ^whoremonger$}
+- {excl: '', incl: ^cumsicle$}
+- {excl: '', incl: ^ROTFLMGDMFAO$}
+- {excl: '', incl: ^race$}
+- {excl: '', incl: ^cuntwardly$}
+- {excl: '', incl: ^ujebie$}
+- {excl: '', incl: ^vymrdano$}
+- {excl: '', incl: ^chinetoque$}
+- {excl: '', incl: ^przepierdala$}
+- {excl: '', incl: ^jizzrag$}
+- {excl: '', incl: ^zjeb$}
+- {excl: '', incl: ^Mistgeburt$}
+- {excl: '', incl: ^facturd$}
+- {excl: '', incl: ^gang-fuck$}
+- {excl: '', incl: ^vymrdly$}
+- {excl: '', incl: ^arsed$}
+- {excl: '', incl: ^hurensohn$}
+- {excl: '', incl: ^wanky$}
+- {excl: '', incl: ^wyjebie$}
+- {excl: '', incl: ^truie$}
+- {excl: '', incl: ^panoufle$}
+- {excl: '', incl: ^andouille$}
+- {excl: '', incl: ^pochčiju$}
+- {excl: '', incl: ^prcat$}
+- {excl: '', incl: ^spast$}
+- {excl: '', incl: ^lick$}
+- {excl: '', incl: ^zapierdalający$}
+- {excl: '', incl: ^plouc$}
+- {excl: '', incl: ^kurwaa$}
+- {excl: '', incl: ^LMB$}
+- {excl: '', incl: ^pizda$}
+- {excl: '', incl: ^kurwic$}
+- {excl: '', incl: ^cocksuckers$}
+- {excl: '', incl: ^moinaille$}
+- {excl: '', incl: ^Cuntada$}
+- {excl: '', incl: ^chingadera$}
+- {excl: '', incl: ^batshit$}
+- {excl: '', incl: ^bobar$}
+- {excl: '', incl: ^demente$}
+- {excl: '', incl: ^řiťopich$}
+- {excl: '', incl: ^wypierdalaj$}
+- {excl: '', incl: ^zamrdana$}
+- {excl: '', incl: ^pene$}
+- {excl: '', incl: ^dopierdolic$}
+- {excl: '', incl: ^wjebać$}
+- {excl: '', incl: ^frisé$}
+- {excl: '', incl: ^vaginaless$}
+- {excl: '', incl: ^assholic$}
+- {excl: '', incl: ^odpieprzył$}
+- {excl: '', incl: ^whore-fucking$}
+- {excl: '', incl: ^zapierdalali$}
+- {excl: '', incl: ^manbitch$}
+- {excl: '', incl: ^picusem$}
+- {excl: '', incl: ^headlight$}
+- {excl: '', incl: ^bitchzilla$}
+- {excl: '', incl: ^pullon$}
+- {excl: '', incl: ^obsrywajacy$}
+- {excl: '', incl: ^fire-crotch$}
+- {excl: '', incl: ^cockweed$}
+- {excl: '', incl: ^asscunt$}
+- {excl: '', incl: ^tossing$}
+- {excl: '', incl: ^cuntiness$}
+- {excl: '', incl: ^mal$}
+- {excl: '', incl: ^maricon$}
+- {excl: '', incl: ^odpieprzac$}
+- {excl: '', incl: ^connasse$}
+- {excl: '', incl: ^skurwysynow$}
+- {excl: '', incl: ^pojebac$}
+- {excl: '', incl: ^spierdola$}
+- {excl: '', incl: ^jebie$}
+- {excl: '', incl: ^przepierdalajacy$}
+- {excl: '', incl: ^poser$}
+- {excl: '', incl: ^napierdalać$}
+- {excl: '', incl: ^tonguefucker$}
+- {excl: '', incl: ^salope$}
+- {excl: '', incl: ^thundercunt$}
+- {excl: '', incl: ^grandmotherfucker$}
+- {excl: '', incl: ^hard-on$}
+- {excl: '', incl: ^wypierdalał$}
+- {excl: '', incl: ^jebana$}
+- {excl: '', incl: ^faggot$}
+- {excl: '', incl: ^zajebany$}
+- {excl: '', incl: ^jebna$}
+- {excl: '', incl: ^ujebac$}
+- {excl: '', incl: ^zapierniczający$}
+- {excl: '', incl: ^cabron$}
+- {excl: '', incl: ^stéarique$}
+- {excl: '', incl: ^zapierdalał$}
+- {excl: '', incl: ^anaconda$}
+- {excl: '', incl: ^šukat$}
+- {excl: '', incl: ^dupie$}
+- {excl: '', incl: ^twunt$}
+- {excl: '', incl: ^dojebana$}
+- {excl: '', incl: ^matkojebcy$}
+- {excl: '', incl: ^przyjebal$}
+- {excl: '', incl: ^cuntfaced$}
+- {excl: '', incl: ^jebnela$}
+- {excl: '', incl: ^vyjebu$}
+- {excl: '', incl: ^cunt$}
+- {excl: '', incl: ^salop$}
+- {excl: '', incl: ^absofuckinglutely$}
+- {excl: '', incl: ^jebanka$}
+- {excl: '', incl: ^fuckmobile$}
+- {excl: '', incl: ^bazonga$}
+- {excl: '', incl: ^jebanej$}
+- {excl: '', incl: ^ficker$}
+- {excl: '', incl: ^vykurvenec$}
+- {excl: '', incl: ^zapierdalaja$}
+- {excl: '', incl: ^spieprza$}
+- {excl: '', incl: ^wypieprzała$}
+- {excl: '', incl: ^cuntbucket$}
+- {excl: '', incl: ^wpierdalajacy$}
+- {excl: '', incl: ^bag$}
+- {excl: '', incl: ^kutasach$}
+- {excl: '', incl: ^napierdalac$}
+- {excl: '', incl: ^chujem$}
+- {excl: '', incl: ^wypieprzył$}
+- {excl: '', incl: ^fuckfest$}
+- {excl: '', incl: ^odpierdalajaca$}
+- {excl: '', incl: ^dafuq$}
+- {excl: '', incl: ^Judensau$}
+- {excl: '', incl: ^kórwa$}
+- {excl: '', incl: ^pierdolic$}
+- {excl: '', incl: ^clem$}
+- {excl: '', incl: ^schlampe$}
+- {excl: '', incl: ^headfuck$}
+- {excl: '', incl: ^zajebala$}
+- {excl: '', incl: ^pigfucking$}
+- {excl: '', incl: ^biatch$}
+- {excl: '', incl: ^popierdoleni$}
+- {excl: '', incl: ^ROTMFFLMAO$}
+- {excl: '', incl: ^titter$}
+- {excl: '', incl: ^zapieprzyła$}
+- {excl: '', incl: ^kidfucker$}
+- {excl: '', incl: ^pédé$}
+- {excl: '', incl: ^whaleshit$}
+- {excl: '', incl: ^ratfuck$}
+- {excl: '', incl: ^piss-up$}
+- {excl: '', incl: ^boulet$}
+- {excl: '', incl: ^wypierdoli$}
+- {excl: '', incl: ^ujebać$}
+- {excl: '', incl: ^cunny$}
+- {excl: '', incl: ^zapierdolila$}
+- {excl: '', incl: ^horniness$}
+- {excl: '', incl: ^pissing$}
+- {excl: '', incl: ^dupa$}
+- {excl: '', incl: ^pierdolacy$}
+- {excl: '', incl: ^dojebalam$}
+- {excl: '', incl: ^fuckity$}
+- {excl: '', incl: ^avorton$}
+- {excl: '', incl: ^asshatty$}
+- {excl: '', incl: ^skurwysyna$}
+- {excl: '', incl: ^zajebiala$}
+- {excl: '', incl: ^crapness$}
+- {excl: '', incl: ^kurvy$}
+- {excl: '', incl: ^anormal$}
+- {excl: '', incl: ^FTMFW$}
+- {excl: '', incl: ^cuntless$}
+- {excl: '', incl: ^kurvo$}
+- {excl: '', incl: ^wypierdala$}
+- {excl: '', incl: ^zkurvene$}
+- {excl: '', incl: ^kuřbuřt$}
+- {excl: '', incl: ^unshitty$}
+- {excl: '', incl: ^cumbucket$}
+- {excl: '', incl: ^bitchwhore$}
+- {excl: '', incl: ^şirret$}
+- {excl: '', incl: ^viédase$}
+- {excl: '', incl: ^przejebać$}
+- {excl: '', incl: ^ducon$}
+- {excl: '', incl: ^whoreshit$}
+- {excl: '', incl: ^sagouin$}
+- {excl: '', incl: ^jebiącej$}
+- {excl: '', incl: ^przypierdalający$}
+- {excl: '', incl: ^porozpierdalac$}
+- {excl: '', incl: ^babooning$}
+- {excl: '', incl: ^mimsy$}
+- {excl: '', incl: ^pojeba$}
+- {excl: '', incl: ^S.O.L.$}
+- {excl: '', incl: ^bedicked$}
+- {excl: '', incl: ^upierdalac$}
+- {excl: '', incl: ^bitchy-pants$}
+- {excl: '', incl: ^pigass$}
+- {excl: '', incl: ^assholery$}
+- {excl: '', incl: ^cuntshit$}
+- {excl: '', incl: ^battner$}
+- {excl: '', incl: ^twatty$}
+- {excl: '', incl: ^kurwami$}
+- {excl: '', incl: ^srajac$}
+- {excl: '', incl: ^turdis$}
+- {excl: '', incl: ^omrdany$}
+- {excl: '', incl: ^zajebisty$}
+- {excl: '', incl: ^orchidoclaste$}
+- {excl: '', incl: ^fuckmate$}
+- {excl: '', incl: ^firebox$}
+- {excl: '', incl: ^fuckpad$}
+- {excl: '', incl: ^rat$}
+- {excl: '', incl: ^bastid$}
+- {excl: '', incl: ^zapieprzyć$}
+- {excl: '', incl: ^wyjebały$}
+- {excl: '', incl: ^dojebał$}
+- {excl: '', incl: ^pice$}
+- {excl: '', incl: ^omrdat$}
+- {excl: '', incl: ^wpierdolic$}
+- {excl: '', incl: ^fuck-off$}
+- {excl: '', incl: ^pussywhipped$}
+- {excl: '', incl: ^wyjebać$}
+- {excl: '', incl: ^pissbreath$}
+- {excl: '', incl: ^ballbag$}
+- {excl: '', incl: ^motherfucker$}
+- {excl: '', incl: ^kozomrdi$}
+- {excl: '', incl: ^fartface$}
+- {excl: '', incl: ^fucknuckle$}
+- {excl: '', incl: ^cockshaft$}
+- {excl: '', incl: ^jebiący$}
+- {excl: '', incl: ^jebnie$}
+- {excl: '', incl: ^pissbrain$}
+- {excl: '', incl: ^fell$}
+- {excl: '', incl: ^odpierdalać$}
+- {excl: '', incl: ^kurwa$}
+- {excl: '', incl: ^mauviette$}
+- {excl: '', incl: ^bitchlet$}
+- {excl: '', incl: ^przypierdolić$}
+- {excl: '', incl: ^wypieprzala$}
+- {excl: '', incl: ^poontang$}
+- {excl: '', incl: ^FIGMO$}
+- {excl: '', incl: ^zajebała$}
+- {excl: '', incl: ^najebała$}
+- {excl: '', incl: ^fripouille$}
+- {excl: '', incl: ^poruchać$}
+- {excl: '', incl: ^fuckball$}
+- {excl: '', incl: ^pakos$}
+- {excl: '', incl: ^Vollpfosten$}
+- {excl: '', incl: ^bollocksed$}
+- {excl: '', incl: ^hasiktir$}
+- {excl: '', incl: ^ksicht$}
+- {excl: '', incl: ^gland$}
+- {excl: '', incl: ^mrd$}
+- {excl: '', incl: ^pierdolil$}
+- {excl: '', incl: ^nabarłożyć$}
+- {excl: '', incl: ^blbost$}
+- {excl: '', incl: ^popierdolone$}
+- {excl: '', incl: ^zesrywać$}
+- {excl: '', incl: ^vier$}
+- {excl: '', incl: ^ujebany$}
+- {excl: '', incl: ^clackas$}
+- {excl: '', incl: ^dopierdole$}
+- {excl: '', incl: ^zejebaly$}
+- {excl: '', incl: ^zkurveni$}
+- {excl: '', incl: ^arschloch$}
+- {excl: '', incl: ^spieprzac$}
+- {excl: '', incl: ^curak$}
+- {excl: '', incl: ^ignoranus$}
+- {excl: '', incl: ^conchier$}
+- {excl: '', incl: ^tebé$}
+- {excl: '', incl: ^fuckmeat$}
+- {excl: '', incl: ^assface$}
+- {excl: '', incl: ^sous-$}
+- {excl: '', incl: ^cunty$}
+- {excl: '', incl: ^marchandot$}
+- {excl: '', incl: ^crapass$}
+- {excl: '', incl: ^everycunt$}
+- {excl: '', incl: ^kretenismus$}
+- {excl: '', incl: ^spieprzająca$}
+- {excl: '', incl: ^przypieprzac$}
+- {excl: '', incl: ^obsrywac$}
+- {excl: '', incl: ^ass-pull$}
+- {excl: '', incl: ^pish$}
+- {excl: '', incl: ^footfuck$}
+- {excl: '', incl: ^spierdalal$}
+- {excl: '', incl: ^pojebem$}
+- {excl: '', incl: ^kutasie$}
+- {excl: '', incl: ^fucked$}
+- {excl: '', incl: ^étron$}
+- {excl: '', incl: ^jebanko$}
+- {excl: '', incl: ^mrdůch$}
+- {excl: '', incl: ^arseface$}
+- {excl: '', incl: ^jebal$}
+- {excl: '', incl: ^rozpierdoli$}
+- {excl: '', incl: ^odpierdol$}
+- {excl: '', incl: ^assweed$}
+- {excl: '', incl: ^Froschfresser$}
+- {excl: '', incl: ^glandu$}
+- {excl: '', incl: ^zjebany$}
+- {excl: '', incl: ^Jude$}
+- {excl: '', incl: ^kurwiszona$}
+- {excl: '', incl: ^jerkoff$}
+- {excl: '', incl: ^ROTFLMMFAO$}
+- {excl: '', incl: ^merdeux$}
+- {excl: '', incl: ^bougre$}
+- {excl: '', incl: ^rimmer$}
+- {excl: '', incl: ^sukinsyny$}
+- {excl: '', incl: ^pisslike$}
+- {excl: '', incl: ^arsehead$}
+- {excl: '', incl: ^rabbitfucker$}
+- {excl: '', incl: ^freaking$}
+- {excl: '', incl: ^queeb$}
+- {excl: '', incl: ^fuckless$}
+- {excl: '', incl: ^wpizdu$}
+- {excl: '', incl: ^GFE$}
+- {excl: '', incl: ^clitsucker$}
+- {excl: '', incl: ^fark$}
+- {excl: '', incl: ^kurvák$}
+- {excl: '', incl: ^zjebała$}
+- {excl: '', incl: ^arseholery$}
+- {excl: '', incl: ^debil$}
+- {excl: '', incl: ^kurevska$}
+- {excl: '', incl: ^tonguefuck$}
+- {excl: '', incl: ^huja$}
+- {excl: '', incl: ^zasrywać$}
+- {excl: '', incl: ^cocking$}
+- {excl: '', incl: ^pierdolnęła$}
+- {excl: '', incl: ^cojones$}
+- {excl: '', incl: ^bicot$}
+- {excl: '', incl: ^spierdoliło$}
+- {excl: '', incl: ^motherfuckerhood$}
+- {excl: '', incl: ^fat-ass$}
+- {excl: '', incl: ^cocksucking$}
+- {excl: '', incl: ^pouf$}
+- {excl: '', incl: ^zajebac$}
+- {excl: '', incl: ^zajebani$}
+- {excl: '', incl: ^kripl$}
+- {excl: '', incl: ^pierdel$}
+- {excl: '', incl: ^podpierdalający$}
+- {excl: '', incl: ^goatfucker$}
+- {excl: '', incl: ^beyinsiz$}
+- {excl: '', incl: ^marsouin$}
+- {excl: '', incl: ^sadfuck$}
+- {excl: '', incl: ^kurwica$}
+- {excl: '', incl: ^cumslut$}
+- {excl: '', incl: ^conejo$}
+- {excl: '', incl: ^wankfest$}
+- {excl: '', incl: ^wkurwial$}
+- {excl: '', incl: ^FFS$}
+- {excl: '', incl: ^zapierdoli$}
+- {excl: '', incl: ^pierdola$}
+- {excl: '', incl: ^hujem$}
+- {excl: '', incl: ^GDM$}
+- {excl: '', incl: ^sic$}
+- {excl: '', incl: ^sack$}
+- {excl: '', incl: ^arseholic$}
+- {excl: '', incl: ^pošuk$}
+- {excl: '', incl: ^jebnać$}
+- {excl: '', incl: ^cooze$}
+- {excl: '', incl: ^nigger$}
+- {excl: '', incl: ^pic$}
+- {excl: '', incl: ^chleuh$}
+- {excl: '', incl: ^kutasy$}
+- {excl: '', incl: ^twatted$}
+- {excl: '', incl: ^pochcat$}
+- {excl: '', incl: ^duconnot$}
+- {excl: '', incl: ^FO$}
+- {excl: '', incl: ^przyjebala$}
+- {excl: '', incl: ^cunting$}
+- {excl: '', incl: ^fembitch$}
+- {excl: '', incl: ^doryphore$}
+- {excl: '', incl: ^horsefucker$}
+- {excl: '', incl: ^spierdolą$}
+- {excl: '', incl: ^crouille$}
+- {excl: '', incl: ^wypierdalać$}
+- {excl: '', incl: ^fuck$}
+- {excl: '', incl: ^skurwysynów$}
+- {excl: '', incl: ^skurwić$}
+- {excl: '', incl: ^cockserver$}
+- {excl: '', incl: ^ammını$}
+- {excl: '', incl: ^pojebalo$}
+- {excl: '', incl: ^čubka$}
+- {excl: '', incl: ^woody$}
+- {excl: '', incl: ^wyjebac$}
+- {excl: '', incl: ^bellend$}
+- {excl: '', incl: ^cockbrain$}
+- {excl: '', incl: ^popierdolony$}
+- {excl: '', incl: ^pissaphone$}
+- {excl: '', incl: ^horn$}
+- {excl: '', incl: ^cockmuncher$}
+- {excl: '', incl: ^upierdala$}
+- {excl: '', incl: ^cumguzzler$}
+- {excl: '', incl: ^connard$}
+- {excl: '', incl: ^caldoche$}
+- {excl: '', incl: ^hamburger$}
+- {excl: '', incl: ^vykurveny$}
+- {excl: '', incl: ^zasrywający$}
+- {excl: '', incl: ^NTM$}
+- {excl: '', incl: ^trou$}
+- {excl: '', incl: ^he-whore$}
+- {excl: '', incl: ^fingerbanger$}
+- {excl: '', incl: ^mantit$}
+- {excl: '', incl: ^przypieprzać$}
+- {excl: '', incl: ^zajebie$}
+- {excl: '', incl: ^polla$}
+- {excl: '', incl: ^podpierdalać$}
+- {excl: '', incl: ^sukinsynowi$}
+- {excl: '', incl: ^skurwysyński$}
+- {excl: '', incl: ^catshit$}
+- {excl: '', incl: ^wjebia$}
+- {excl: '', incl: ^jill$}
+- {excl: '', incl: ^wjebiemy$}
+- {excl: '', incl: ^odpieprzyla$}
+- {excl: '', incl: ^kokotina$}
+- {excl: '', incl: ^fuckee$}
+- {excl: '', incl: ^hate-boner$}
+- {excl: '', incl: ^chachar$}
+- {excl: '', incl: ^przypierdalajacy$}
+- {excl: '', incl: ^fuckling$}
+- {excl: '', incl: ^gleet$}
+- {excl: '', incl: ^jebac$}
+- {excl: '', incl: ^chagasse$}
+- {excl: '', incl: ^gazonga$}
+- {excl: '', incl: ^patarin$}
+- {excl: '', incl: ^fuckathon$}
+- {excl: '', incl: ^bâtard$}
+- {excl: '', incl: ^goatfuck$}
+- {excl: '', incl: ^crevure$}
+- {excl: '', incl: ^jebanych$}
+- {excl: '', incl: ^przypierdalac$}
+- {excl: '', incl: ^napierdolić$}
+- {excl: '', incl: ^blbecci$}
+- {excl: '', incl: ^przypierdoli$}
+- {excl: '', incl: ^úchyl$}
+- {excl: '', incl: ^dopierdolil$}
+- {excl: '', incl: ^pokurvili$}
+- {excl: '', incl: ^monacaille$}
+- {excl: '', incl: ^zapierdala$}
+- {excl: '', incl: ^vyjeb$}
+- {excl: '', incl: ^hassiktir$}
+- {excl: '', incl: ^abaza$}
+- {excl: '', incl: ^langer$}
+- {excl: '', incl: ^Godon$}
+- {excl: '', incl: ^schmuck$}
+- {excl: '', incl: ^curaci$}
+- {excl: '', incl: ^fucking$}
+- {excl: '', incl: ^kepaze$}
+- {excl: '', incl: ^curacek$}
+- {excl: '', incl: ^picha$}
+- {excl: '', incl: ^Jewfucker$}
+- {excl: '', incl: ^hujnia$}
+- {excl: '', incl: ^zajebistymi$}
+- {excl: '', incl: ^pussyfication$}
+- {excl: '', incl: ^schwuchtel$}
+- {excl: '', incl: ^turdball$}
+- {excl: '', incl: ^porc$}
+- {excl: '', incl: ^joputa$}
+- {excl: '', incl: ^pokable$}
+- {excl: '', incl: ^cuntboy$}
+- {excl: '', incl: ^najebane$}
+- {excl: '', incl: ^przypieprzajaca$}
+- {excl: '', incl: ^zapieprza$}
+- {excl: '', incl: ^blbouni$}
+- {excl: '', incl: ^pussyfucker$}
+- {excl: '', incl: ^root$}
+- {excl: '', incl: ^eyefuck$}
+- {excl: '', incl: ^asshat$}
+- {excl: '', incl: ^crapface$}
+- {excl: '', incl: ^pierdolnie$}
+- {excl: '', incl: ^ujebal$}
+- {excl: '', incl: ^siegheil$}
+- {excl: '', incl: ^cuntbutt$}
+- {excl: '', incl: ^spierdala$}
+- {excl: '', incl: ^zapieprzyla$}
+- {excl: '', incl: ^fuckery$}
+- {excl: '', incl: ^crack$}
+- {excl: '', incl: ^chauffard$}
+- {excl: '', incl: ^naopierdalał$}
+- {excl: '', incl: ^kunda$}
+- {excl: '', incl: ^pierdolnac$}
+- {excl: '', incl: ^outfuck$}
+- {excl: '', incl: ^matkojebcą$}
+- {excl: '', incl: ^ass-rape$}
+- {excl: '', incl: ^jebiacej$}
+- {excl: '', incl: ^vymrdala$}
+- {excl: '', incl: ^kurew$}
+- {excl: '', incl: ^upierdolić$}
+- {excl: '', incl: ^unfucked$}
+- {excl: '', incl: ^zprcat$}
+- {excl: '', incl: ^cipe$}
+- {excl: '', incl: ^odpierdalający$}
+- {excl: '', incl: ^gourgandine$}
+- {excl: '', incl: ^zkurvila$}
+- {excl: '', incl: ^gai$}
+- {excl: '', incl: ^wkurwić$}
+- {excl: '', incl: ^whorish$}
+- {excl: '', incl: ^youpin$}
+- {excl: '', incl: ^doxosophie$}
+- {excl: '', incl: ^blbci$}
+- {excl: '', incl: ^cumball$}
+- {excl: '', incl: ^zasrać$}
+- {excl: '', incl: ^zapieprzyc$}
+- {excl: '', incl: ^fagness$}
+- {excl: '', incl: ^cat$}
+- {excl: '', incl: ^cuntbreath$}
+- {excl: '', incl: ^corpsefucker$}
+- {excl: '', incl: ^skurwiela$}
+- {excl: '', incl: ^assholish$}
+- {excl: '', incl: ^zajebiste$}
+- {excl: '', incl: ^asscheek$}
+- {excl: '', incl: ^vag$}
+- {excl: '', incl: ^clithead$}
+- {excl: '', incl: ^badass$}
+- {excl: '', incl: ^clacka$}
+- {excl: '', incl: ^dementni$}
+- {excl: '', incl: ^crap$}
+- {excl: '', incl: ^grognasse$}
+- {excl: '', incl: ^dojebać$}
+- {excl: '', incl: ^fuckhouse$}
+- {excl: '', incl: ^kozy$}
+- {excl: '', incl: ^pojebanym$}
+- {excl: '', incl: ^wypieprza$}
+- {excl: '', incl: ^scheisse$}
+- {excl: '', incl: ^schnoque$}
+- {excl: '', incl: ^przejebane$}
+- {excl: '', incl: ^mindfuck$}
+- {excl: '', incl: ^vošoust$}
+- {excl: '', incl: ^roger$}
+- {excl: '', incl: ^pierdol$}
+- {excl: '', incl: ^opieprzający$}
+- {excl: '', incl: ^srający$}
+- {excl: '', incl: ^amcık$}
+- {excl: '', incl: ^schnoc$}
+- {excl: '', incl: ^cream$}
+- {excl: '', incl: ^cockbreath$}
+- {excl: '', incl: ^pourriture$}
+- {excl: '', incl: ^arsehole$}
+- {excl: '', incl: ^odpieprzyl$}
+- {excl: '', incl: ^zjebać$}
+- {excl: '', incl: ^ball-breaker$}
+- {excl: '', incl: ^wypierdolic$}
+- {excl: '', incl: ^wyjebał$}
+- {excl: '', incl: ^youtre$}
+- {excl: '', incl: ^assgasm$}
+- {excl: '', incl: ^wkurwiający$}
+- {excl: '', incl: ^clit$}
+- {excl: '', incl: ^huj$}
+- {excl: '', incl: ^unfuckable$}
+- {excl: '', incl: ^queer$}
+- {excl: '', incl: ^dopierdolę$}
+- {excl: '', incl: ^zapieprzymy$}
+- {excl: '', incl: ^fuckbag$}
+- {excl: '', incl: ^dümbük$}
+- {excl: '', incl: ^pissface$}
+- {excl: '', incl: ^kurwy$}
+- {excl: '', incl: ^przypieprzający$}
+- {excl: '', incl: ^kurewską$}
+- {excl: '', incl: ^wankerdom$}
+- {excl: '', incl: ^craptacular$}
+- {excl: '', incl: ^fagmo$}
+- {excl: '', incl: ^vymrdany$}
+- {excl: '', incl: ^niggerfaggot$}
+- {excl: '', incl: ^ballsy$}
+- {excl: '', incl: ^Cumberbitch$}
+- {excl: '', incl: ^Homo$}
+- {excl: '', incl: ^yavşak$}
+- {excl: '', incl: ^bitchslut$}
+- {excl: '', incl: ^putain$}
+- {excl: '', incl: ^cuntface$}
+- {excl: '', incl: ^knob$}
+- {excl: '', incl: ^wypierdalala$}
+- {excl: '', incl: ^jackassed$}
+- {excl: '', incl: ^spierdoliła$}
+- {excl: '', incl: ^cuntsucker$}
+- {excl: '', incl: ^big-dicked$}
+- {excl: '', incl: ^Schisser$}
+- {excl: '', incl: ^zmrdana$}
+- {excl: '', incl: ^cipę$}
+- {excl: '', incl: ^wankjob$}
+- {excl: '', incl: ^dugenoux$}
+- {excl: '', incl: ^clusterfuck$}
+- {excl: '', incl: ^zapieprzą$}
+- {excl: '', incl: ^chirla$}
+- {excl: '', incl: ^zjebali$}
+- {excl: '', incl: ^cacky$}
+- {excl: '', incl: ^Schwulibert$}
+- {excl: '', incl: ^abso-fucking-lutely$}
+- {excl: '', incl: ^naopierdalal$}
+- {excl: '', incl: ^debilita$}
+- {excl: '', incl: ^cockhole$}
+- {excl: '', incl: ^fuckbait$}
+- {excl: '', incl: ^zkurvil$}
+- {excl: '', incl: ^youpine$}
+- {excl: '', incl: ^bitchtits$}
+- {excl: '', incl: ^pierdoliła$}
+- {excl: '', incl: ^pierdolisz$}
+- {excl: '', incl: ^fucko$}
+- {excl: '', incl: ^wkurwiajacy$}
+- {excl: '', incl: ^fuck-me$}
+- {excl: '', incl: ^piczka$}
+- {excl: '', incl: ^hundesohn$}
+- {excl: '', incl: ^scheißdreck$}
+- {excl: '', incl: ^B$}
+- {excl: '', incl: ^unclefucker$}
+- {excl: '', incl: ^pocketpussy$}
+- {excl: '', incl: ^crapton$}
+- {excl: '', incl: ^najebie$}
+- {excl: '', incl: ^cocklicker$}
+- {excl: '', incl: ^amcik$}
+- {excl: '', incl: ^najebac$}
+- {excl: '', incl: ^pieprznięty$}
+- {excl: '', incl: ^wyjebiemy$}
+- {excl: '', incl: ^fuckaduck$}
+- {excl: '', incl: ^dojebane$}
+- {excl: '', incl: ^wankerish$}
+- {excl: '', incl: ^cumsoaked$}
+- {excl: '', incl: ^pierdolone$}
+- {excl: '', incl: ^Nazi$}
+- {excl: '', incl: ^queerdo$}
+- {excl: '', incl: ^upierdolic$}
+- {excl: '', incl: ^beans$}
+- {excl: '', incl: ^assbrain$}
+- {excl: '', incl: ^queefer$}
+- {excl: '', incl: ^tittyfuck$}
+- {excl: '', incl: ^OMFG$}
+- {excl: '', incl: ^blue-ball$}
+- {excl: '', incl: ^asstunnel$}
+- {excl: '', incl: ^zapieprzyl$}
+- {excl: '', incl: ^spieprzajacy$}
+- {excl: '', incl: ^kurwiska$}
+- {excl: '', incl: ^kutasow$}
+- {excl: '', incl: ^fart$}
+- {excl: '', incl: ^kanacke$}
+- {excl: '', incl: ^scheißhaufen$}
+- {excl: '', incl: ^jebiacego$}
+- {excl: '', incl: ^debilni$}
+- {excl: '', incl: ^vyjebany$}
+- {excl: '', incl: ^fsck$}
+- {excl: '', incl: ^soplapollas$}
+- {excl: '', incl: ^zjebal$}
+- {excl: '', incl: ^muerdealmohadas$}
+- {excl: '', incl: ^cuntishness$}
+- {excl: '', incl: ^fuckover$}
+- {excl: '', incl: ^cuntling$}
+- {excl: '', incl: ^knob-gobbler$}
+- {excl: '', incl: ^truiasse$}
+- {excl: '', incl: ^kurewstwo$}
+- {excl: '', incl: ^jerkface$}
+- {excl: '', incl: ^margouilliste$}
+- {excl: '', incl: ^wypierdalała$}
+- {excl: '', incl: ^rozpierdalać$}
+- {excl: '', incl: ^unfuckupable$}
+- {excl: '', incl: ^assclown$}
+- {excl: '', incl: ^FU$}
+- {excl: '', incl: ^przepierdalająca$}
+- {excl: '', incl: ^piece$}
+- {excl: '', incl: ^piss-warm$}
+- {excl: '', incl: ^bollocks$}
+- {excl: '', incl: ^boukak$}
+- {excl: '', incl: ^cowfucker$}
+- {excl: '', incl: ^przepierdalac$}
+- {excl: '', incl: ^scheiss$}
+- {excl: '', incl: ^vypičit$}
+- {excl: '', incl: ^kurestwo$}
+- {excl: '', incl: ^nawpierdalal$}
+- {excl: '', incl: ^pierdlu$}
+- {excl: '', incl: ^blumpkin$}
+- {excl: '', incl: ^wypierdoliła$}
+- {excl: '', incl: ^dopierdalala$}
+- {excl: '', incl: ^cockwad$}
+- {excl: '', incl: ^fanny$}
+- {excl: '', incl: ^Thénardier$}
+- {excl: '', incl: ^tightass$}
+- {excl: '', incl: ^pants-shittingly$}
+- {excl: '', incl: ^odpierdalajacy$}
+- {excl: '', incl: ^blbec$}
+- {excl: '', incl: ^pojebani$}
+- {excl: '', incl: ^fuckedupedness$}
+- {excl: '', incl: ^kurwić$}
+- {excl: '', incl: ^ojeb$}
+- {excl: '', incl: ^odpieprzy$}
+- {excl: '', incl: ^POOMA$}
+- {excl: '', incl: ^assload$}
+- {excl: '', incl: ^Arsch$}
+- {excl: '', incl: ^churra$}
+- {excl: '', incl: ^kutasa$}
+- {excl: '', incl: ^teabag$}
+- {excl: '', incl: ^assfucker$}
+- {excl: '', incl: ^mother$}
+- {excl: '', incl: ^tafiole$}
+- {excl: '', incl: ^píchat$}
+- {excl: '', incl: ^skurwiel$}
+- {excl: '', incl: ^gnoul$}
+- {excl: '', incl: ^fist-fuck$}
+- {excl: '', incl: ^dugland$}
+- {excl: '', incl: ^popierdalac$}
+- {excl: '', incl: ^nub$}
+- {excl: '', incl: ^jebnąć$}
+- {excl: '', incl: ^cipie$}
+- {excl: '', incl: ^chujsky$}
+- {excl: '', incl: ^gook$}
+- {excl: '', incl: ^kokotska$}
+- {excl: '', incl: ^bête$}
+- {excl: '', incl: ^cumstain$}
+- {excl: '', incl: ^hard$}
+- {excl: '', incl: ^koza$}
+- {excl: '', incl: ^bastard$}
+- {excl: '', incl: ^pig-fucker$}
+- {excl: '', incl: ^zkurveny$}
+- {excl: '', incl: ^fuckfriend$}
+- {excl: '', incl: ^wypierdolil$}
+- {excl: '', incl: ^humpability$}
+- {excl: '', incl: ^kurva$}
+- {excl: '', incl: ^tatomrd$}
+- {excl: '', incl: ^vaginalike$}
+- {excl: '', incl: ^hockle$}
+- {excl: '', incl: ^vysrat$}
+- {excl: '', incl: ^wkurwiac$}
+- {excl: '', incl: ^cumwhore$}
+- {excl: '', incl: ^apeshit$}
+- {excl: '', incl: ^gazomba$}
+- {excl: '', incl: ^couille$}
+- {excl: '', incl: ^porozpierdalać$}
+- {excl: '', incl: ^horny$}
+- {excl: '', incl: ^youd$}
+- {excl: '', incl: ^pizde$}
+- {excl: '', incl: ^niaiseux$}
+- {excl: '', incl: ^blow$}
+- {excl: '', incl: ^jebią$}
+- {excl: '', incl: ^motherfreaking$}
+- {excl: '', incl: ^DAFN$}
+- {excl: '', incl: ^fuckish$}
+- {excl: '', incl: ^boghouse$}
+- {excl: '', incl: ^yeule$}
+- {excl: '', incl: ^DAMF$}
+- {excl: '', incl: ^chiennasse$}
+- {excl: '', incl: ^robespierrot$}
+- {excl: '', incl: ^Opfer$}
+- {excl: '', incl: ^log$}
+- {excl: '', incl: ^pojebanemu$}
+- {excl: '', incl: ^čarák$}
+- {excl: '', incl: ^spieprzajcie$}
+- {excl: '', incl: ^BBC$}
+- {excl: '', incl: ^fucknose$}
+- {excl: '', incl: ^FDP$}
+- {excl: '', incl: ^wkurwią$}
+- {excl: '', incl: ^najebaną$}
+- {excl: '', incl: ^vymdrla$}
+- {excl: '', incl: ^wypierdolił$}
+- {excl: '', incl: ^inbred$}
+- {excl: '', incl: ^fook$}
+- {excl: '', incl: ^zapierdalać$}
+- {excl: '', incl: ^jebanymi$}
+- {excl: '', incl: ^przyjebac$}
+- {excl: '', incl: ^spierdolić$}
+- {excl: '', incl: ^childfucker$}
+- {excl: '', incl: ^buzerant$}
+- {excl: '', incl: ^unfuckwithable$}
+- {excl: '', incl: ^wyjebiesz$}
+- {excl: '', incl: ^popierdoli$}
+- {excl: '', incl: ^wkurwimy$}
+- {excl: '', incl: ^kokoti$}
+- {excl: '', incl: ^faşist$}
+- {excl: '', incl: ^jism$}
+- {excl: '', incl: ^christfag$}
+- {excl: '', incl: ^pierdzący$}
+- {excl: '', incl: ^zguègue$}
+- {excl: '', incl: ^flip$}
+- {excl: '', incl: ^pussybreath$}
+- {excl: '', incl: ^wank$}
+- {excl: '', incl: ^cumhungry$}
+- {excl: '', incl: ^jebię$}
+- {excl: '', incl: ^wyjebała$}
+- {excl: '', incl: ^zjebał$}
+- {excl: '', incl: ^cyp$}
+- {excl: '', incl: ^knobtwat$}
+- {excl: '', incl: ^kurwiący$}
+- {excl: '', incl: ^pierdoleniem$}
+- {excl: '', incl: ^piździe$}
+- {excl: '', incl: ^dopierdalała$}
+- {excl: '', incl: ^panchito$}
+- {excl: '', incl: ^orosbu$}
+- {excl: '', incl: ^craptabulous$}
+- {excl: '', incl: ^punaise$}
+- {excl: '', incl: ^pierdoleniu$}
+- {excl: '', incl: ^osrat$}
+- {excl: '', incl: ^well-hung$}
+- {excl: '', incl: ^popierdolic$}
+- {excl: '', incl: ^pierdoląca$}
+- {excl: '', incl: ^opierdola$}
+- {excl: '', incl: ^fuckbucket$}
+- {excl: '', incl: ^upierdoli$}
+- {excl: '', incl: ^cockshit$}
+- {excl: '', incl: ^dürzü$}
+- {excl: '', incl: ^chnoque$}
+- {excl: '', incl: ^ojebat$}
+- {excl: '', incl: ^naopierdalała$}
+- {excl: '', incl: ^pierdolicie$}
+- {excl: '', incl: ^cuntlessness$}
+- {excl: '', incl: ^gouilland$}
+- {excl: '', incl: ^cunted$}
+- {excl: '', incl: ^fuckest$}
+- {excl: '', incl: ^pédale$}
+- {excl: '', incl: ^morue$}
+- {excl: '', incl: ^unbullshit$}
+- {excl: '', incl: ^con$}
+- {excl: '', incl: ^minge$}
+- {excl: '', incl: ^dopierdolił$}
+- {excl: '', incl: ^odpieprzać$}
+- {excl: '', incl: ^tocard$}
+- {excl: '', incl: ^podpierdalajacy$}
+- {excl: '', incl: ^dopierdalający$}
+- {excl: '', incl: ^bordille$}
+- {excl: '', incl: ^pussylike$}
+- {excl: '', incl: ^jebiaca$}
+- {excl: '', incl: ^prickhead$}
+- {excl: '', incl: ^hate-fuck$}
+- {excl: '', incl: ^hovno$}
+- {excl: '', incl: ^balljuice$}
+- {excl: '', incl: ^raclure$}
+- {excl: '', incl: ^wpierdol$}
+- {excl: '', incl: ^crotté$}
+- {excl: '', incl: ^lâcheux$}
+- {excl: '', incl: ^zapierdalaj$}
+- {excl: '', incl: ^wypieprzał$}
+- {excl: '', incl: ^jebliwy$}
+- {excl: '', incl: ^srac$}
+- {excl: '', incl: ^jebną$}
+- {excl: '', incl: ^befuck$}
+- {excl: '', incl: ^wypierdolić$}
+- {excl: '', incl: ^ordure$}
+- {excl: '', incl: ^rozjebac$}
+- {excl: '', incl: ^pokurveny$}
+- {excl: '', incl: ^pouffiasse$}
+- {excl: '', incl: ^jebnąc$}
+- {excl: '', incl: ^maricona$}
+- {excl: '', incl: ^pigshit$}
+- {excl: '', incl: ^zajebane$}
+- {excl: '', incl: ^wankette$}
+- {excl: '', incl: ^emmerder$}
+- {excl: '', incl: ^fuckboy$}
+- {excl: '', incl: ^spastiker$}
+- {excl: '', incl: ^upierdolą$}
+- {excl: '', incl: ^rogering$}
+- {excl: '', incl: ^ball$}
+- {excl: '', incl: ^zapierdalajcie$}
+- {excl: '', incl: ^cumskin$}
+- {excl: '', incl: ^cheapshit$}
+- {excl: '', incl: ^feťák$}
+- {excl: '', incl: ^huje$}
+- {excl: '', incl: ^kokot$}
+- {excl: '', incl: ^kurevske$}
+- {excl: '', incl: ^lez$}
+- {excl: '', incl: ^ammına$}
+- {excl: '', incl: ^zjebane$}
+- {excl: '', incl: ^choad$}
+- {excl: '', incl: ^negrata$}
+- {excl: '', incl: ^Schwachmat$}
+- {excl: '', incl: ^cockteaser$}
+- {excl: '', incl: ^assholedom$}
+- {excl: '', incl: ^wpierdalac$}
+- {excl: '', incl: ^ebelerini$}
+- {excl: '', incl: ^odpieprzyła$}
+- {excl: '', incl: ^sukinsynom$}
+- {excl: '', incl: ^kurewska$}
+- {excl: '', incl: ^Himmler$}
+- {excl: '', incl: ^asswipe$}
+- {excl: '', incl: ^chienne$}
+- {excl: '', incl: ^jebiącego$}
+- {excl: '', incl: ^fatbutt$}
+- {excl: '', incl: ^asspussy$}
+- {excl: '', incl: ^dojebac$}
+- {excl: '', incl: ^pokurvit$}
+- {excl: '', incl: ^halouf$}
+- {excl: '', incl: ^napierdalajacy$}
+- {excl: '', incl: ^aq$}
+- {excl: '', incl: ^przepierdolic$}
+- {excl: '', incl: ^pleutre$}
+- {excl: '', incl: ^rozpierdala$}
+- {excl: '', incl: ^kurewsko$}
+- {excl: '', incl: ^antifag$}
+- {excl: '', incl: ^pierdolnięty$}
+- {excl: '', incl: ^kurwiki$}
+- {excl: '', incl: ^libshit$}
+- {excl: '', incl: ^FIA$}
+- {excl: '', incl: ^wyjebali$}
+- {excl: '', incl: ^ass-licker$}
+- {excl: '', incl: ^cumthirsty$}
+- {excl: '', incl: ^fucklet$}
+- {excl: '', incl: ^nutless$}
+- {excl: '', incl: ^rozpierdolić$}
+- {excl: '', incl: ^dopieprzać$}
+- {excl: '', incl: ^pussy$}
+- {excl: '', incl: ^naopierdalala$}
+- {excl: '', incl: ^orospular$}
+- {excl: '', incl: ^gayer$}
+- {excl: '', incl: ^oldass$}
+- {excl: '', incl: ^dylina$}
+- {excl: '', incl: ^cuntish$}
+- {excl: '', incl: ^Bitembois$}
+- {excl: '', incl: ^fuckability$}
+- {excl: '', incl: ^kutasów$}
+- {excl: '', incl: ^blbecek$}
+- {excl: '', incl: ^pierdolnij$}
+- {excl: '', incl: ^bellicole$}
+- {excl: '', incl: ^cockfag$}
+- {excl: '', incl: ^odpierdalac$}
+- {excl: '', incl: ^kedra$}
+- {excl: '', incl: ^cousinfucker$}
+- {excl: '', incl: ^assy$}
+- {excl: '', incl: ^pissnelke$}
+- {excl: '', incl: ^cunthead$}
+- {excl: '', incl: ^anani$}
+- {excl: '', incl: ^idiocie$}
+- {excl: '', incl: ^drouille$}
+- {excl: '', incl: ^homogayer$}
+- {excl: '', incl: ^Republicunt$}
+- {excl: '', incl: ^chujek$}
+- {excl: '', incl: ^zaprcat$}
+- {excl: '', incl: ^spierdalala$}
+- {excl: '', incl: ^assholishly$}
+- {excl: '', incl: ^jebani$}
+- {excl: '', incl: ^picou$}
+- {excl: '', incl: ^spieprzać$}
+- {excl: '', incl: ^dojebie$}
+- {excl: '', incl: ^ream$}
+- {excl: '', incl: ^pisshouse$}
+- {excl: '', incl: ^zapierdolil$}
+- {excl: '', incl: ^scaly$}
+- {excl: '', incl: ^kurewskiej$}
+- {excl: '', incl: ^pojebany$}
+- {excl: '', incl: ^craptastic$}
+- {excl: '', incl: ^puinsai$}
+- {excl: '', incl: ^carpet$}
+- {excl: '', incl: ^emmerdeur$}
+- {excl: '', incl: ^cuntservative$}
+- {excl: '', incl: ^turdbucket$}
+- {excl: '', incl: ^jas$}
+- {excl: '', incl: ^spierdalał$}
+- {excl: '', incl: ^wixxer$}
+- {excl: '', incl: ^jebnęła$}
+- {excl: '', incl: ^fucked-up$}
+- {excl: '', incl: ^fuckheadedness$}
+- {excl: '', incl: ^pierdolę$}
+- {excl: '', incl: ^scheiß$}
+- {excl: '', incl: ^przyjebie$}
+- {excl: '', incl: ^badger$}
+- {excl: '', incl: ^zapieprzycie$}
+- {excl: '', incl: ^kancık$}
+- {excl: '', incl: ^upierdalać$}
+- {excl: '', incl: ^pierdziec$}
+- {excl: '', incl: ^skurwysyny$}
+- {excl: '', incl: ^göt$}
+- {excl: '', incl: ^pizdą$}
+- {excl: '', incl: ^wankless$}
+- {excl: '', incl: ^pierdolec$}
+- {excl: '', incl: ^dementní$}
+- {excl: '', incl: ^kaltak$}
+- {excl: '', incl: ^assless$}
+- {excl: '', incl: ^mierda$}
+- {excl: '', incl: ^asswad$}
+- {excl: '', incl: ^Nigger$}
+- {excl: '', incl: ^pierdolila$}
+- {excl: '', incl: ^wypierdola$}
+- {excl: '', incl: ^Homofürst$}
+- {excl: '', incl: ^remasturbated$}
+- {excl: '', incl: ^pojebami$}
+- {excl: '', incl: ^POS$}
+- {excl: '', incl: ^wpierdolić$}
+- {excl: '', incl: ^prepiceny$}
+- {excl: '', incl: ^floater$}
+- {excl: '', incl: ^wypierdolila$}
+- {excl: '', incl: ^ROFLMMFAO$}
+- {excl: '', incl: ^pizdu$}
+- {excl: '', incl: ^ujebala$}
+- {excl: '', incl: ^dupy$}
+- {excl: '', incl: ^islamo$}
+- {excl: '', incl: ^coño$}
+- {excl: '', incl: ^BFE$}
+- {excl: '', incl: ^rozprcat$}
+- {excl: '', incl: ^sokayım$}
+- {excl: '', incl: ^turd$}
+- {excl: '', incl: ^udupić$}
 DomainNames: []
 Equivalents: {'!': l, $: s, +: t, '0': o, '1': l, '2': s, '3': e, '5': s, '6': g,
   '7': t, '9': q, '@': a, C: k, I: l, PH: f, Ph: f, U: v, W: v, Z: s, \(: k, c: k,
   i: l, pH: f, ph: f, u: v, w: v, z: s}
-NonAlphanumeric: '[\x00-\x1F!-/:-@\[-`\{-~]'
+Exceptions:
+- {excl: '', incl: "^am$"}
+- {excl: '', incl: "^fitted$"}
+- {excl: '', incl: "^classes$"}
+- {excl: '', incl: "^SPIC$"}
+- {excl: '', incl: "^Alecto$"}
+- {excl: '', incl: "^Du$"}
+- {excl: '', incl: "^Dicker$"}
+- {excl: '', incl: "(?-i)^Dick$"}
+- {excl: '', incl: "^Unique$"}
+- {excl: '', incl: "^included$"}
+- {excl: '', incl: "^kilt$"}
+- {excl: '', incl: "^passes$"}
+- {excl: '', incl: "^Typical$"}
+- {excl: '', incl: "^packing$"}
+- {excl: '', incl: "^Vancouver$"}
+- {excl: '', incl: "^masterbadge$"}
+- {excl: '', incl: "^overpriced$"}
+- {excl: '', incl: "^Paprika$"}
+- {excl: '', incl: "^Pizza$"}
+- {excl: '', incl: "^Dutch$"}
+- {excl: '', incl: "^Pierce$"}
+- {excl: '', incl: "^advance$"}
+- {excl: '', incl: "^Dice$"}
+- {excl: '', incl: "^ferd$"}
+- {excl: '', incl: "^Strategy$"}
+- {excl: '', incl: "^Hairy$"}
+- {excl: '', incl: "^Situation$"}
+- {excl: '', incl: "^filter$"}
+- {excl: '', incl: "^Lagging$"}
+- {excl: '', incl: "^you$"}
+- {excl: '', incl: "^Petition$"}
+- {excl: '', incl: "^Situation$"}
+- {excl: '', incl: "^luck$"}
+- {excl: '', incl: "^Pie$"}
+- {excl: '', incl: "^Bear$"}
+- {excl: '', incl: "^Circumstance$"}
+- {excl: '', incl: "^Sidescrape$"}
+- {excl: '', incl: "^Competitive$"}
+- {excl: '', incl: "^Attitude$"}
+- {excl: '', incl: "^Groggy$"}
+- {excl: '', incl: "^Shot$"}
+- {excl: '', incl: "^Dude$"}
+- {excl: '', incl: "^Competition$"}
+- {excl: '', incl: "^Title$"}
+- {excl: '', incl: "^chair$"}
+- {excl: '', incl: "^JG88$"}
+- {excl: '', incl: "^Inspector$"}
+- {excl: '', incl: "^plzz$"}
+- {excl: '', incl: "^XP$"}
+- {excl: '', incl: "^Apology$"}
+- {excl: '', incl: "^hahah$"}
+- {excl: '', incl: "^Popular$"}
+- {excl: '', incl: "^Penetration$"}
+- {excl: '', incl: "^Good$"}
+- {excl: '', incl: "^spike$"}
+- {excl: '', incl: "^Gym$"}
+- {excl: '', incl: "^Participation$"}
+- {excl: '', incl: "^68$"}
+- {excl: '', incl: "^titanic$"}
+- {excl: '', incl: "^farther$"}
+- {excl: '', incl: "^Canal$"}
+- {excl: '', incl: "^alecto$"}
+- {excl: '', incl: "^bitwa$"}
+- {excl: '', incl: "^pisać$"}
+- {excl: '', incl: "^pisze$"}
+- {excl: '', incl: "^spic$"}
+- {excl: '', incl: "^szukać$"}
+- {excl: '', incl: "^Polak$"}
+- {excl: '', incl: "^polaczenia$"}
+- {excl: '', incl: "^kojarzę$"}
+- {excl: '', incl: "^kojarzyć$"}
+- {excl: '', incl: "^du$"}
+- {excl: '', incl: "^spic$"}
+- {excl: '', incl: "^defender$"}
+- {excl: '', incl: "^tiefkühlpizza$"}
+- {excl: '', incl: "^Feierabend$"}
+- {excl: '', incl: "^schwankt$"}
+- {excl: '', incl: "^sidescraping$"}
+- {excl: '', incl: "^sprichst$"}
+- {excl: '', incl: "^déconnecter$"}
+- {excl: '', incl: "^comme$"}
+- {excl: '', incl: "^du$"}
+- {excl: '', incl: "^assez$"}
+- {excl: '', incl: "^douche$"}
+- {excl: '', incl: "^tard$"}
+- {excl: '', incl: "^petit$"}
+- {excl: '', incl: "^principal$"}
+- {excl: '', incl: "^technique$"}
+- {excl: '', incl: "^retard$"}
+- {excl: '', incl: "^accumuler$"}
+- {excl: '', incl: "^voient$"}
+- {excl: '', incl: "^voleur$"}
+- {excl: '', incl: "^depasser $"}
+- {excl: '', incl: "^classe$"}
+- {excl: '', incl: "^britannique$"}
+- {excl: '', incl: "^alecto$"}
+- {excl: '', incl: "^spic$"}
+- {excl: '', incl: "^unique$"}
+- {excl: '', incl: "^uniquement$"}
+- {excl: '', incl: "^niekdo$"}
+- {excl: '', incl: "^bitev$"}
+- {excl: '', incl: "^bitvy$"}
+- {excl: '', incl: "^Spic$"}
+- {excl: '', incl: "^peníze$"}
+- {excl: '', incl: "^puzzini$"}
+- {excl: '', incl: "^enemaci$"}
+- {excl: '', incl: "^osmicka$"}
+- {excl: '', incl: "^polak$"}
+- {excl: '', incl: "^nenasiel$"}
+- {excl: '', incl: "^nasledujem$"}
+- {excl: '', incl: "^jedu$"}
+- {excl: '', incl: "^kočka$"}
+- {excl: '', incl: "^snazim$"}
+- {excl: '', incl: "^sporne$"}
+- {excl: '', incl: "^sporny$"}
+- {excl: '', incl: "^sporna$"}
+- {excl: '', incl: "^sedmicka$"}
+- {excl: '', incl: "^sedmicky$"}
+- {excl: '', incl: "^osmicky$"}
+- {excl: '', incl: "^stahuji$"}
+- {excl: '', incl: "^Alecto$"}
+- {excl: '', incl: "^campus$"}
+- {excl: '', incl: "^bitva$"}
+- {excl: '', incl: "^dikes$"}
+NonAlphanumeric: '[\x00-\x1F!-,\./:-@\[-`\{-~]'
 Spacious:
-- {excl: '', incl: Du verdammtes Arschloch}
+- {excl: '', incl: Du kannst mich mal!}
 - {excl: '', incl: Du Weichei!}
 - {excl: '', incl: Du bist ein volltrottel}
 - {excl: '', incl: Du arschgefickter Hurensohn!}
-- {excl: '', incl: Du kannst mich mal!}
+- {excl: '', incl: Du verdammtes Arschloch}
 - {excl: '', incl: Du alte Kackbratze!}
+- {excl: '', incl: red +cunt +hair}
+- {excl: '', incl: bitch +goddess}
+- {excl: '', incl: holy +shit}
+- {excl: '', incl: pop +someone's +cherry}
+- {excl: '', incl: flog +the +log}
+- {excl: '', incl: fanny +batter}
+- {excl: '', incl: your +asses}
+- {excl: '', incl: give +someone +the +shits}
+- {excl: '', incl: oh +my +fuck}
+- {excl: '', incl: blow +jobber}
+- {excl: '', incl: bell +end}
+- {excl: '', incl: scissor +sister}
+- {excl: '', incl: take +a +shit}
+- {excl: '', incl: piss +money +up +the +wall}
+- {excl: '', incl: fuck +up}
+- {excl: '', incl: you +can't +polish +a +turd}
+- {excl: '', incl: kiss +arse}
+- {excl: '', incl: up +yours}
+- {excl: '', incl: twist +someone's +balls}
+- {excl: '', incl: curse +it}
+- {excl: '', incl: kiss +ass}
+- {excl: '', incl: talk +through +one's +ass}
+- {excl: '', incl: get +fucked}
+- {excl: '', incl: his +ass}
+- {excl: '', incl: get +one's +butt +somewhere}
+- {excl: '', incl: blow +it +out +one's +ass}
+- {excl: '', incl: tossed +salad}
+- {excl: '', incl: piss +down}
+- {excl: '', incl: rage +boner}
+- {excl: '', incl: tit +fuck}
+- {excl: '', incl: balls +on}
+- {excl: '', incl: posh +wank}
+- {excl: '', incl: limp +dick}
+- {excl: '', incl: horse's +ass}
+- {excl: '', incl: come +rabos}
+- {excl: '', incl: eat +a +dick}
+- {excl: '', incl: beat +it}
+- {excl: '', incl: go +to +shit}
+- {excl: '', incl: cunt +juice}
+- {excl: '', incl: clitty +litter}
+- {excl: '', incl: ass +sucker}
+- {excl: '', incl: piss +it +down}
+- {excl: '', incl: on +the +rag}
+- {excl: '', incl: eat +shit}
+- {excl: '', incl: horse +cock}
+- {excl: '', incl: rusty +trombone}
+- {excl: '', incl: pencil +dick}
+- {excl: '', incl: kangaroo +piss}
+- {excl: '', incl: piece +of +ass}
+- {excl: '', incl: beef +injection}
+- {excl: '', incl: rag +week}
+- {excl: '', incl: chase +tail}
+- {excl: '', incl: tits +up}
+- {excl: '', incl: Jew +York}
+- {excl: '', incl: arsy +varsy}
+- {excl: '', incl: orospu +çocuğu}
+- {excl: '', incl: horse +piss}
+- {excl: '', incl: fuck +about}
+- {excl: '', incl: pull +out +of +one's +ass}
+- {excl: '', incl: pussy +fart}
+- {excl: '', incl: cum +catcher}
+- {excl: '', incl: crack +a +fat}
+- {excl: '', incl: piss +oneself}
+- {excl: '', incl: piss +in +the +wind}
+- {excl: '', incl: axe +wound}
+- {excl: '', incl: bloody +hell}
+- {excl: '', incl: 'fuck +you, +Jack, +I''m +alright'}
+- {excl: '', incl: wanking +sock}
+- {excl: '', incl: fag +marriage}
+- {excl: '', incl: meat +flaps}
+- {excl: '', incl: arsy +versy}
+- {excl: '', incl: Hijo +de +puta}
+- {excl: '', incl: fucked +by +the +fickle +finger +of +fate}
+- {excl: '', incl: vaginal +flatulence}
+- {excl: '', incl: pussy +lips}
+- {excl: '', incl: beef +flaps}
+- {excl: '', incl: get +screwed}
+- {excl: '', incl: ginger +minger}
+- {excl: '', incl: fag +stag}
+- {excl: '', incl: batchelor's +fare}
+- {excl: '', incl: bearded +clam}
+- {excl: '', incl: poo +pirate}
+- {excl: '', incl: piss +off}
+- {excl: '', incl: hell +mend +someone}
+- {excl: '', incl: give +a +rat's +arse}
+- {excl: '', incl: tit +wank}
+- {excl: '', incl: wank +fodder}
+- {excl: '', incl: ass +crack +of +dawn}
+- {excl: '', incl: como +pollas}
+- {excl: '', incl: fuck-you +money}
+- {excl: '', incl: monton +de +mierda}
+- {excl: '', incl: cum +guzzler}
+- {excl: '', incl: tell +someone +where +to +shove +it}
+- {excl: '', incl: get +up +someone's +ass}
+- {excl: '', incl: like +fuck}
+- {excl: '', incl: scared +shitless}
+- {excl: '', incl: face +fucking}
+- {excl: '', incl: toss +salad}
+- {excl: '', incl: fuck +knows}
+- {excl: '', incl: pig +fucker}
+- {excl: '', incl: a +fuck +sight}
+- {excl: '', incl: top +bollocks}
+- {excl: '', incl: man +tit}
+- {excl: '', incl: come +penes}
+- {excl: '', incl: fuck +all}
+- {excl: '', incl: leather +cheerio}
+- {excl: '', incl: needle +dick}
+- {excl: '', incl: crock +of +shit}
+- {excl: '', incl: fuck +face}
+- {excl: '', incl: cross +swords}
+- {excl: '', incl: niece +fucker}
+- {excl: '', incl: lazy +ass}
+- {excl: '', incl: baby +dick}
+- {excl: '', incl: and +crap}
+- {excl: '', incl: the +fuck}
+- {excl: '', incl: eat +it}
+- {excl: '', incl: fuck +like +a +mink}
+- {excl: '', incl: holy +crap}
+- {excl: '', incl: fucketty +fuck}
+- {excl: '', incl: puss +out}
+- {excl: '', incl: frighten +the +piss +out +of}
+- {excl: '', incl: blow +out}
+- {excl: '', incl: with +one's +dick +in +one's +hand}
+- {excl: '', incl: give +a +shit}
+- {excl: '', incl: the +shits}
+- {excl: '', incl: one-eyed +snake}
+- {excl: '', incl: baby +batter}
+- {excl: '', incl: give +someone +one}
+- {excl: '', incl: fuckered +up}
+- {excl: '', incl: fuck +me}
+- {excl: '', incl: hot +shit}
+- {excl: '', incl: wanker's +cramp}
+- {excl: '', incl: fame +whore}
+- {excl: '', incl: fucking +A}
+- {excl: '', incl: bollock +sack}
+- {excl: '', incl: like +a +bitch +on +heat}
+- {excl: '', incl: fuck-you +finger}
+- {excl: '', incl: I +don't +care}
+- {excl: '', incl: piece +of +shit}
+- {excl: '', incl: bag +of +dicks}
+- {excl: '', incl: up +the +ass}
+- {excl: '', incl: push +shit +uphill}
+- {excl: '', incl: cock +pilot}
+- {excl: '', incl: fuck +that +noise}
+- {excl: '', incl: fart +sack}
+- {excl: '', incl: pissing +match}
+- {excl: '', incl: and +shit}
+- {excl: '', incl: ass +pounding}
+- {excl: '', incl: fanny +flaps}
+- {excl: '', incl: cinnamon +ring}
+- {excl: '', incl: couldn't +organise +a +piss-up +in +a +brewery}
+- {excl: '', incl: as +shit}
+- {excl: '', incl: bitch +off}
+- {excl: '', incl: holy +fuck}
+- {excl: '', incl: gang +bang}
+- {excl: '', incl: five-knuckle +shuffle}
+- {excl: '', incl: piss +on +someone's +bonfire}
+- {excl: '', incl: face +fuck}
+- {excl: '', incl: nephew +fucker}
+- {excl: '', incl: 'čůrák, +čurák'}
+- {excl: '', incl: toilet +paper}
+- {excl: '', incl: pussy +juice}
+- {excl: '', incl: bitch +fight}
+- {excl: '', incl: cock +tease}
+- {excl: '', incl: piss +in +someone's +cornflakes}
+- {excl: '', incl: give +a +fuck}
+- {excl: '', incl: kiss +my +ass}
+- {excl: '', incl: like +a +bitch}
+- {excl: '', incl: crotch +dumpling}
+- {excl: '', incl: cock +juice}
+- {excl: '', incl: make +shit +of}
+- {excl: '', incl: cunt +dropping}
+- {excl: '', incl: piece +of +piss}
+- {excl: '', incl: scissor +kick}
+- {excl: '', incl: cock +gobbler}
+- {excl: '', incl: hot +beef +injection}
+- {excl: '', incl: fuck +finger}
+- {excl: '', incl: titty +juice}
+- {excl: '', incl: blow +one's +load}
+- {excl: '', incl: aunt +fucker}
+- {excl: '', incl: fuck +you +very +much}
+- {excl: '', incl: piss +proud}
+- {excl: '', incl: choke +pear}
+- {excl: '', incl: fuck +it}
+- {excl: '', incl: baloney +pony}
+- {excl: '', incl: pissing +contest}
+- {excl: '', incl: polish +a +turd}
+- {excl: '', incl: 'Appendix:Gestures/middle +finger'}
+- {excl: '', incl: eat +my +shorts}
+- {excl: '', incl: 'if +my +aunt +had +balls, +she''d +be +my +uncle'}
+- {excl: '', incl: hand +shandy}
+- {excl: '', incl: our +asses}
+- {excl: '', incl: happy +as +a +pig +in +shit}
+- {excl: '', incl: lick +my +balls}
+- {excl: '', incl: for +fuck's +sake}
+- {excl: '', incl: fuck +truck}
+- {excl: '', incl: resting +bitch +face}
+- {excl: '', incl: golden +shower}
+- {excl: '', incl: arse +like +a +Japanese +flag}
+- {excl: '', incl: clacka +bags}
+- {excl: '', incl: flick +off}
+- {excl: '', incl: talk +out +of +one's +ass}
+- {excl: '', incl: take +a +dump}
+- {excl: '', incl: screw +you}
+- {excl: '', incl: King +Shit +of +Turd +Island}
+- {excl: '', incl: go +screw +yourself}
+- {excl: '', incl: batchelor's +son}
+- {excl: '', incl: ass +kissing}
+- {excl: '', incl: horned +up}
+- {excl: '', incl: hot-beef +injection}
+- {excl: '', incl: up +one's +own +ass}
+- {excl: '', incl: fuck +bunny}
+- {excl: '', incl: lick +someone's +balls}
+- {excl: '', incl: pissed +off}
+- {excl: '', incl: turd +burglar}
+- {excl: '', incl: lick +someone's +ass}
+- {excl: '', incl: go +fuck +yourself}
+- {excl: '', incl: blow +one's +wad}
+- {excl: '', incl: jizz +bucket}
+- {excl: '', incl: piss +around}
+- {excl: '', incl: fuck +you}
+- {excl: '', incl: up +the +wazoo}
+- {excl: '', incl: piss +like +a +racehorse}
+- {excl: '', incl: jack +off}
+- {excl: '', incl: bite +someone +in +the +arse}
+- {excl: '', incl: in +a +pig's +arse}
+- {excl: '', incl: turd +in +the +punchbowl}
+- {excl: '', incl: fuck-you +lizard}
+- {excl: '', incl: fuck +nugget}
+- {excl: '', incl: blow +smoke +up +someone's +ass}
+- {excl: '', incl: fuck +yeah}
+- {excl: '', incl: balls +about}
+- {excl: '', incl: the +shit}
+- {excl: '', incl: apple +dumpling +shop}
+- {excl: '', incl: tag +team}
+- {excl: '', incl: rip +ass}
+- {excl: '', incl: chocolate +starfish}
+- {excl: '', incl: pearl +necklace}
+- {excl: '', incl: go +bitchcakes}
+- {excl: '', incl: cabron +de +mierda}
+- {excl: '', incl: give +a +flying +fuck}
+- {excl: '', incl: like +a +spare +prick +at +a +wedding}
+- {excl: '', incl: flaming +Nora}
+- {excl: '', incl: basic +bitch}
+- {excl: '', incl: fuck +flu}
+- {excl: '', incl: take +the +pee}
+- {excl: '', incl: like +shit +through +a +goose}
+- {excl: '', incl: piss +be +upon +him}
+- {excl: '', incl: fuck +the +dog}
+- {excl: '', incl: frig +it}
+- {excl: '', incl: tough +shit}
+- {excl: '', incl: bee +up +one's +ass}
+- {excl: '', incl: cum +towel}
+- {excl: '', incl: 'no +shit, +Sherlock'}
+- {excl: '', incl: ass +juice}
+- {excl: '', incl: gods +damn}
+- {excl: '', incl: jerk +the +gherkin}
+- {excl: '', incl: eat +out}
+- {excl: '', incl: cum +dumpster}
+- {excl: '', incl: thank +fuck}
+- {excl: '', incl: San +Fagcisco}
+- {excl: '', incl: jam +rag}
+- {excl: '', incl: chin +omelette}
+- {excl: '', incl: fresh +fucked +fox +in +a +forest +fire}
+- {excl: '', incl: fucked +in +the +head}
+- {excl: '', incl: horse +dick}
+- {excl: '', incl: thick +as +pig +shit}
+- {excl: '', incl: bog +roll}
+- {excl: '', incl: tranny +chaser}
+- {excl: '', incl: lip +service}
+- {excl: '', incl: pimple +dick}
+- {excl: '', incl: thick +as +shit}
+- {excl: '', incl: the +hell}
+- {excl: '', incl: pull +off}
+- {excl: '', incl: fuck +off}
+- {excl: '', incl: give +two +shits}
+- {excl: '', incl: taking +it +up +the +ass}
+- {excl: '', incl: the +carpet +matches +the +drapes}
+- {excl: '', incl: trouser +snake}
+- {excl: '', incl: talk +shit}
+- {excl: '', incl: tit +juice}
+- {excl: '', incl: take +a +leak}
+- {excl: '', incl: have +a +wank}
+- {excl: '', incl: ring +sting}
+- {excl: '', incl: bollocks +up}
+- {excl: '', incl: chicks +before +dicks}
+- {excl: '', incl: ham +shank}
+- {excl: '', incl: fuck +and +chuck}
+- {excl: '', incl: rocking +horse +shit}
+- {excl: '', incl: with +one's +thumbs +up +one's +ass}
+- {excl: '', incl: pop +the +cherry}
+- {excl: '', incl: hate +fuck}
+- {excl: '', incl: bollocks +more +like}
+- {excl: '', incl: jill +off}
+- {excl: '', incl: bitch +seat}
+- {excl: '', incl: ass +crack}
+- {excl: '', incl: bitch +tits}
+- {excl: '', incl: fuck +juice}
+- {excl: '', incl: carpet +muncher}
+- {excl: '', incl: cunt +cap}
+- {excl: '', incl: piss +up +a +rope}
+- {excl: '', incl: pile +of +shit}
+- {excl: '', incl: get +one's +shit +together}
+- {excl: '', incl: pussy +eating}
+- {excl: '', incl: happy +ending}
+- {excl: '', incl: beat +one's +meat}
+- {excl: '', incl: fuck +buddy}
+- {excl: '', incl: chocolate +hot +dog}
+- {excl: '', incl: every +time +one +farts}
+- {excl: '', incl: fuck +over}
+- {excl: '', incl: as +all +fuck}
+- {excl: '', incl: ass +eating}
+- {excl: '', incl: grow +a +pair}
+- {excl: '', incl: yank +off}
+- {excl: '', incl: know +one's +ass +from +a +hole +in +the +ground}
+- {excl: '', incl: pimp +slap}
+- {excl: '', incl: carpet +munching}
+- {excl: '', incl: pecker +snot}
+- {excl: '', incl: cream +one's +jeans}
+- {excl: '', incl: fucking +hell}
+- {excl: '', incl: Jap's +eye}
+- {excl: '', incl: crack +whore}
+- {excl: '', incl: baby +gravy}
+- {excl: '', incl: cum +gutters}
+- {excl: '', incl: 'if +there''s +grass +on +the +pitch, +play +ball'}
+- {excl: '', incl: piss +water}
+- {excl: '', incl: fag +mag}
+- {excl: '', incl: cunt +lips}
+- {excl: '', incl: crap +oneself}
+- {excl: '', incl: give +a +damn}
+- {excl: '', incl: cream +in +one's +jeans}
+- {excl: '', incl: gypsy's +kiss}
+- {excl: '', incl: jack +shit}
+- {excl: '', incl: fuck +boy}
+- {excl: '', incl: 'Appendix:Gestures/reverse +V-sign'}
+- {excl: '', incl: ass +beating}
+- {excl: '', incl: beat +off}
+- {excl: '', incl: pull +a +train}
+- {excl: '', incl: wank +sock}
+- {excl: '', incl: wank +bank}
+- {excl: '', incl: hung +like +a +horse}
+- {excl: '', incl: beef +curtains}
+- {excl: '', incl: toss +off}
+- {excl: '', incl: talk +shite}
+- {excl: '', incl: man +pussy}
+- {excl: '', incl: cock +cheese}
+- {excl: '', incl: jerk +off}
+- {excl: '', incl: Gary +Glitter}
+- {excl: '', incl: arse +over +tit}
+- {excl: '', incl: arse +over +tip}
+- {excl: '', incl: tight +as +a +duck's +ass}
+- {excl: '', incl: the +shit +out +of}
+- {excl: '', incl: graphics +whore}
+- {excl: '', incl: fucked +up}
+- {excl: '', incl: pee +pot}
+- {excl: '', incl: faggot +marriage}
+- {excl: '', incl: lose +one's +shit}
+- {excl: '', incl: golden +showers}
+- {excl: '', incl: geri +zekalı}
+- {excl: '', incl: balloon +knot}
+- {excl: '', incl: pop +one's +cork}
+- {excl: '', incl: her +ass}
+- {excl: '', incl: bitch +slap}
+- {excl: '', incl: titty +fuck}
+- {excl: '', incl: get +to +fuck}
+- {excl: '', incl: damn +all}
+- {excl: '', incl: fag +rag}
+- {excl: '', incl: because +you +touch +yourself +at +night}
+- {excl: '', incl: fuck +with}
+- {excl: '', incl: circle +jerk}
+- {excl: '', incl: clit +tease}
+- {excl: '', incl: piss +away}
+- {excl: '', incl: mercy +fuck}
+- {excl: '', incl: piece +of +crap}
+- {excl: '', incl: whore's +paint}
+- {excl: '', incl: go +apeshit}
+- {excl: '', incl: what +the +hell}
+- {excl: '', incl: bloody +Nora}
+- {excl: '', incl: what +the +fuck}
+- {excl: '', incl: get +one's +ass +handed +to +one}
+- {excl: '', incl: tinker's +fart}
+- {excl: '', incl: polish +the +pearl}
+- {excl: '', incl: out +the +wazoo}
+- {excl: '', incl: have +a +hard-on +for}
+- {excl: '', incl: fucked +off}
+- {excl: '', incl: fuck +someone +over}
+- {excl: '', incl: take +the +piss}
+- {excl: '', incl: pussy +pass}
+- {excl: '', incl: chat +shit}
+- {excl: '', incl: calm +your +tits}
+- {excl: '', incl: no +shit}
+- {excl: '', incl: hair +pie}
+- {excl: '', incl: gump +stump}
+- {excl: '', incl: screw +it}
+- {excl: '', incl: fart +in +a +windstorm}
+- {excl: '', incl: like +shit}
+- {excl: '', incl: attention +whore}
+- {excl: '', incl: have +someone +by +the +balls}
+- {excl: '', incl: ass +in +a +sling}
+- {excl: '', incl: bollock +naked}
+- {excl: '', incl: cunt +fart}
+- {excl: '', incl: balls +up}
+- {excl: '', incl: man +cunt}
+- {excl: '', incl: hadaway +and +shite}
+- {excl: '', incl: fuck +trophy}
+- {excl: '', incl: their +asses}
+- {excl: '', incl: metric +shitload}
+- {excl: '', incl: flying +fuck}
+- {excl: '', incl: balls +deep}
+- {excl: '', incl: titty +twister}
+- {excl: '', incl: kiss +my +arse}
+- {excl: '', incl: as +fuck}
+- {excl: '', incl: pissing +war}
+- {excl: '', incl: monkey +humping +a +football}
+- {excl: '', incl: throat +fucking}
+- {excl: '', incl: fuck +around}
+- {excl: '', incl: piece +of +tail}
+- {excl: '', incl: not +have +a +pot +to +piss +in}
+- {excl: '', incl: whore +out}
+- {excl: '', incl: badly +packed +kebab}
+- {excl: '', incl: cumball +tree}
+- {excl: '', incl: fuck +like +rabbits}
+- {excl: '', incl: the +fucking +you +get +isn't +worth +the +fucking +you +get}
+- {excl: '', incl: piss +flap}
+- {excl: '', incl: fucked +over}
+- {excl: '', incl: knob +cheese}
+- {excl: '', incl: toss +someone's +salad}
+- {excl: '', incl: pussy +pounding}
+- {excl: '', incl: gypsie's +kiss}
+- {excl: '', incl: holy +damn}
+- {excl: '', incl: take +it +up +the +ass}
+- {excl: '', incl: cock +snot}
+- {excl: '', incl: your +ass}
+- {excl: '', incl: piss +about}
+- {excl: '', incl: whole +shitting +match}
+- {excl: '', incl: get +on +someone's +tits}
+- {excl: '', incl: pet +the +kitty}
+- {excl: '', incl: monkeys +might +fly +out +of +my +butt}

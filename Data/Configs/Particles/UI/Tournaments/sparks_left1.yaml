@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [3.000000, 3.000000]
     spin: 200.000000
     spinVariation: 300.000000
-    sprite: "../../../../Gfx/Particles/UI/Tournaments/sparks"
+    sprite: "../../../../../Data/Gfx/Particles/UI/Tournaments/sparks"
     startTime: 0.000000
     type: "layer"
     velocity: 200.000000

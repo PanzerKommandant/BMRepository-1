@@ -38,7 +38,7 @@ layer0:
     scaleVelocityBase: 0.000000
     scaleVelocityFactor: 0.000000
     size: [3.000000, 1.000000]
-    sprite: "../../../../Gfx/Particles/additive/gun_small_front"
+    sprite: "../../../../../Data/Gfx/Particles/additive/gun_small_front"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

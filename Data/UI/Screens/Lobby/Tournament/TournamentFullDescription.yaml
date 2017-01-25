@@ -1,11 +1,12 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Styles/DesktopStyles.yaml"
 - "~res:/UI/Screens/Common/StyledMenuButton.yaml"
 - "~res:/UI/Screens/Lobby/Tournament/IndependenceFonts.yaml"
+- "~res:/UI/Screens/Lobby/Tournament/TournamentBackButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "Screen"
@@ -260,13 +261,5 @@ Controls:
                         drawType: "DRAW_STRETCH_VERTICAL"
                         sprite: "~res:/Gfx/UI/CommonUIElements/VerticalScroll"
                         topBottomStretchCap: 2.000000
-    -   prototype: "StyledMenuButton/StyledMenuButton"
+    -   prototype: "TournamentBackButton/BackButton"
         name: "BackButton"
-        children:
-        -   path: "icon"
-            components:
-                Background:
-                    frame: 3
-        -   path: "UnreadNews"
-            visible: false
-            classes: "header3 bg-color=tournament-unread-bg"

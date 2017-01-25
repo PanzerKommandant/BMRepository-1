@@ -49,7 +49,7 @@ layer0:
     sizeVariation: [0.0300, 0.0300]
     spin: 400.0000
     spinVariation: 90.0000
-    sprite: "../../../Gfx/Particles/ground"
+    sprite: "../../../../Data/Gfx/Particles/ground"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -97,7 +97,7 @@ layer1:
     sizeVariation: [0.0300, 0.0300]
     spin: 400.0000
     spinVariation: 90.0000
-    sprite: "../../../Gfx/Particles/ground_one"
+    sprite: "../../../../Data/Gfx/Particles/ground_one"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -145,7 +145,7 @@ layer2:
     sizeVariation: [0.0500, 0.0500]
     spin: 400.0000
     spinVariation: 90.0000
-    sprite: "../../../Gfx/Particles/ground"
+    sprite: "../../../../Data/Gfx/Particles/ground"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"
@@ -193,7 +193,7 @@ layer3:
     sizeVariation: [0.0700, 0.0700]
     spin: 400.0000
     spinVariation: 90.0000
-    sprite: "../../../Gfx/Particles/rock"
+    sprite: "../../../../Data/Gfx/Particles/rock"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

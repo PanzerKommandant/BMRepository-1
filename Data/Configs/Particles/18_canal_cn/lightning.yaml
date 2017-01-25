@@ -37,7 +37,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [20.000000, 30.000000]
-    sprite: "../../../Gfx/Particles/18_canal_cn/lightning"
+    sprite: "../../../../Data/Gfx/Particles/18_canal_cn/lightning"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -71,6 +71,6 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [40.000000, 40.000000]
-    sprite: "../../../Gfx/Particles/alpha/blursnow"
+    sprite: "../../../../Data/Gfx/Particles/alpha/blursnow"
     startTime: 0.000000
     type: "layer"

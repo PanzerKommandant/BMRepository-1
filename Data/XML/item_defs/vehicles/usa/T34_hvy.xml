@@ -11,6 +11,7 @@
 		<fireEffectPathDead>FX/Fire_and_Smoke.sc2</fireEffectPathDead>
 		<collisionMesh>CollisionMeshes/usa-T34_hvy.sc2</collisionMesh>
 		<exclusionMask>Camouflages/usa/CamouflageMasks/T34_hvy_CM.tex</exclusionMask>
+		<shopIconPath>~res:/Gfx/UI/ShopScreen/prem_tanks_cards/USA_T34</shopIconPath>
 	</blitz>
 	<crew>
 		<commander/>
@@ -53,7 +54,7 @@
 	<hull>
 		<blitz>
 			<averageThickness>
-				<turret_02>181.484192</turret_02>
+				<turret_02>183.745346</turret_02>
 			</averageThickness>
 			<blitzPartName>hull</blitzPartName>
 			<bbox>

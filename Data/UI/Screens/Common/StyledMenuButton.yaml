@@ -1,13 +1,14 @@
 Header:
-    version: "4"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Common/IconButton.yaml"
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
 - "~res:/UI/Screens/Common/UnreadIcon.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
-Controls:
+Prototypes:
 -   prototype: "StyledBackButton/StyledBackButton"
     name: "StyledMenuButton"
+    size: [80.000000, 64.000000]
     children:
     -   path: "icon"
         components:
@@ -15,14 +16,10 @@ Controls:
                 frame: 0
     -   prototype: "UnreadIcon/UnreadIcon"
         name: "UnreadNews"
-        position: [59.000000, 0.000000]
-        size: [33.000000, 33.000000]
-        noInput: true
-        classes: "header3 bg-color=unread-icon-bg text-color-white"
-        shadowoffset: [0.000000, 1.000000]
-        shadowcolor: [0.000000, 0.000000, 0.000000, 0.752900]
-        fitting: ["REDUCE"]
+        size: [32.000000, 32.000000]
         components:
             Anchor:
                 rightAnchorEnabled: true
+                rightAnchor: -4.000000
                 topAnchorEnabled: true
+                topAnchor: -4.000000

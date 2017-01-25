@@ -1,0 +1,54 @@
+Header:
+    version: "5"
+Controls:
+-   class: "UIControl"
+    name: "VehicleInfo"
+    size: [32.000000, 32.000000]
+    noInput: true
+    children:
+    -   class: "UIControl"
+        name: "ClassIcon"
+        position: [4.000000, 5.000000]
+        size: [26.000000, 26.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesBig"
+                frame: 1
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "LevelIcon"
+        position: [32.000000, 1.000000]
+        size: [38.000000, 32.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 32.000000
+                topAnchorEnabled: true
+                topAnchor: 1.000000
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/TankLevelsNew"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+    -   class: "UIControl"
+        name: "EliteIcon"
+        position: [4.000000, 5.000000]
+        size: [26.000000, 26.000000]
+        noInput: true
+        components:
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 4.000000
+                topAnchorEnabled: true
+                topAnchor: 5.000000
+            Background:
+                sprite: "~res:/Gfx/UI/LobbyCommon/TankTypesBig"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

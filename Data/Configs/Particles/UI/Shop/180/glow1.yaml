@@ -40,7 +40,7 @@ layer0:
     size: [250.000000, 250.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [2.000000, 2.000000]]
     spin: -20.000000
-    sprite: "../../../../../Gfx/Particles/UI/glow3"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/glow3"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -77,7 +77,7 @@ layer1:
     size: [300.000000, 300.000000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [2.000000, 2.000000]]
     spin: -15.000000
-    sprite: "../../../../../Gfx/Particles/UI/glow_anim_min"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/glow_anim_min"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

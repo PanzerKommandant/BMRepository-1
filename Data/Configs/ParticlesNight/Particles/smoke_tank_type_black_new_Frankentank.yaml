@@ -65,7 +65,7 @@ layer0:
     spin: -90.000000
     spinOverLife: [0.000400, 1.000000, 1.000000, 0.000000]
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/additive/fire"
+    sprite: "../../../../Data/Gfx/Particles/additive/fire"
     startTime: 0.000000
     type: "layer"
     velocity:
@@ -129,7 +129,7 @@ layer1:
     spin: -90.000000
     spinOverLife: [0.000400, 1.000000, 1.000000, 0.000000]
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/fog"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog"
     startTime: 0.000000
     type: "layer"
     velocity:

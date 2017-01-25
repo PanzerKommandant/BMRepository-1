@@ -2,6 +2,8 @@ Header:
     version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Tutorial/TutorialCommon.yaml"
+- "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledMenuButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "overlay"
@@ -380,38 +382,23 @@ Controls:
             Background:
                 drawType: "DRAW_FILL"
                 color: [0.000000, 0.000000, 0.000000, 0.694100]
-    -   class: "UIButton"
+    -   prototype: "StyledMenuButton/StyledMenuButton"
         name: "menuButton"
-        position: [962.000000, 10.000000]
-        size: [52.000000, 52.000000]
         components:
             Anchor:
+                leftAnchorEnabled: false
+                leftAnchor: 0.000000
                 rightAnchorEnabled: true
-                rightAnchor: 10.000000
+                rightAnchor: 4.000000
                 topAnchorEnabled: true
-                topAnchor: 10.000000
-            Normal:
-                sprite: "~res:/Gfx/UI/Tutorial/button_menu"
-                frame: 0
-                spriteModification: []
-            PressedInside:
-                color: [1.000000, 1.000000, 1.000000, 0.502000]
-            NormalText:
-                font: "Font_default"
+                topAnchor: 4.000000
         children:
-        -   class: "UIControl"
-            name: "icon"
-            size: [52.000000, 52.000000]
-            noInput: true
+        -   path: "icon"
             components:
-                Anchor:
-                    hCenterAnchorEnabled: true
-                    hCenterAnchor: 0.000000
-                    vCenterAnchorEnabled: true
-                    vCenterAnchor: 0.000000
                 Background:
-                    sprite: "~res:/Gfx/UI/Tutorial/icon_menu"
-                    colorInherit: "COLOR_REPLACE_ALPHA_ONLY"
+                    frame: 2
+        -   path: "UnreadNews"
+            visible: false
     -   class: "UIControl"
         name: "keyboardJoypad"
         size: [200.000000, 150.000000]

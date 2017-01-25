@@ -1,0 +1,150 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/CommonStyles.yaml"
+- "~res:/UI/Screens/Lobby/Common/RewardSmall.yaml"
+- "~res:/UI/Styles/ButtonStyle.yaml"
+StyleSheets:
+-   selector: ".place-1"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/markOfMastery3"
+-   selector: ".place-2"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/markOfMastery2"
+-   selector: ".place-3"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Tournament/markOfMastery1"
+Controls:
+-   class: "UIListCell"
+    name: "LoadingCell"
+    size: [1024.000000, 67.000000]
+    noInput: true
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+    children:
+    -   class: "UIStaticText"
+        name: "LoadingLabel"
+        size: [1024.000000, 67.000000]
+        classes: "text1 text-color-blue"
+        text: "Loading..."
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "PercentOfParent"
+-   class: "UIListCell"
+    name: "RewardCell"
+    size: [512.000000, 67.000000]
+    noInput: true
+    components:
+        LinearLayout: {}
+        SizePolicy:
+            horizontalPolicy: "PercentOfParent"
+            verticalPolicy: "FixedSize"
+            verticalValue: 67.000000
+    children:
+    -   class: "UIListCell"
+        name: "Button"
+        size: [512.000000, 65.000000]
+        classes: "button"
+        components:
+            LinearLayout:
+                spacing: 2.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 65.000000
+        children:
+        -   class: "UIControl"
+            name: "PlaceBack"
+            size: [90.000000, 65.000000]
+            noInput: true
+            classes: "panel-background"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "FixedSize"
+                    horizontalValue: 90.000000
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "Place"
+                size: [90.000000, 65.000000]
+                noInput: true
+                classes: "place=place-3"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "FixedSize"
+                        horizontalValue: 90.000000
+                        verticalPolicy: "PercentOfParent"
+                children:
+                -   class: "UIStaticText"
+                    name: "TextPlace"
+                    size: [90.000000, 65.000000]
+                    classes: "header3 text-color-white"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfParent"
+        -   class: "UIControl"
+            name: "PersonalReward"
+            noInput: true
+            classes: "panel-background"
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfParent"
+                Background:
+                    drawType: "DRAW_FILL"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIControl"
+                name: "Content"
+                noInput: true
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                        dynamicPadding: true
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfParent"
+                    Anchor:
+                        leftAnchorEnabled: true
+                        leftAnchor: 20.000000
+                        rightAnchorEnabled: true
+                        rightAnchor: 20.000000
+                        topAnchorEnabled: true
+                        topAnchor: 5.000000
+                        vCenterAnchorEnabled: true
+                        bottomAnchorEnabled: true
+                        bottomAnchor: 5.000000
+                children:
+                -   class: "UIControl"
+                    name: "data"
+                    noInput: true
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfFirstChild"
+                        Anchor: {}
+                    children:
+                    -   prototype: "RewardSmall/RewardSmall"
+                        name: "RewardContainer"
+                        components:
+                            Anchor:
+                                rightAnchorEnabled: true
+                -   class: "UIStaticText"
+                    name: "Additional"
+                    size: [380.000000, 23.000000]
+                    classes: "text2 text-color-blue"
+                    textcolorInheritType: "COLOR_IGNORE_PARENT"
+                    textalign: ["RIGHT", "VCENTER"]
+                    text: "tournaments/TournamentRewardsScreen/ExtraRewards"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"

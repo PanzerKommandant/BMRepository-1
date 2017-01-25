@@ -41,7 +41,7 @@ layer0:
     size: [100.000000, 100.000000]
     spin: 20.000000
     spinVariation: 20.000000
-    sprite: "../../../../../../Gfx/Particles/UI/fog_white"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/fog_white"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"
@@ -80,7 +80,7 @@ layer1:
     size: [3.000000, 3.000000]
     spin: 100.000000
     spinVariation: 100.000000
-    sprite: "../../../../../../Gfx/Particles/UI/o2_expGlowB"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/o2_expGlowB"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

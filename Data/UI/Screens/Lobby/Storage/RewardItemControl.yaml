@@ -1,31 +1,19 @@
 Header:
-    version: "5"
+    version: "7"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
-- "~res:/UI/Styles/Lobby/Story/StoryCurrencyIconsStyles.yaml"
 - "~res:/UI/Screens/Lobby/Quests/QuestRewardImages.yaml"
 - "~res:/UI/Styles/Lobby/Storage/StorageStyles.yaml"
-Controls:
--   class: "UIControl"
-    name: "RewardItemIcon"
-    noInput: true
-    components:
-        SizePolicy:
-            horizontalPolicy: "FixedSize"
-            horizontalValue: 32.000000
-            verticalPolicy: "FixedSize"
-            verticalValue: 32.000000
-        Background:
-            drawType: "DRAW_SCALE_PROPORTIONAL"
-            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
--   prototype: "RewardItemIcon"
-    name: "RewardItemSmallIcon"
--   prototype: "RewardItemIcon"
-    name: "RewardItemBigIcon"
-    components:
-        SizePolicy:
-            horizontalValue: 48.000000
-            verticalValue: 48.000000
+StyleSheets:
+-   selector: ".item_icon.small"
+    properties:
+        sizePolicy-verticalValue: 32.000000
+        sizePolicy-horizontalValue: 32.000000
+-   selector: ".item_icon.big"
+    properties:
+        sizePolicy-verticalValue: 48.000000
+        sizePolicy-horizontalValue: 48.000000
+Prototypes:
 -   class: "UIControl"
     name: "RewardItem"
     size: [87.000000, 32.000000]
@@ -73,5 +61,17 @@ Controls:
                 drawType: "DRAW_SCALE_PROPORTIONAL"
                 sprite: "~res:/Gfx/UI/Storage/Items_back"
         children:
-        -   prototype: "RewardItemSmallIcon"
+        -   prototype: "RewardItemIcon"
             name: "Icon"
+            classes: "item_icon small"
+-   class: "UIControl"
+    name: "RewardItemIcon"
+    noInput: true
+    classes: "item_icon"
+    components:
+        SizePolicy:
+            horizontalPolicy: "FixedSize"
+            verticalPolicy: "FixedSize"
+        Background:
+            drawType: "DRAW_SCALE_PROPORTIONAL"
+            perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"

@@ -1,11 +1,12 @@
 Header:
-    version: "4"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 - "~res:/UI/Screens/Lobby/Common/BaseFooter.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
 - "~res:/UI/Screens/Lobby/Story/StoryCurrencyControl.yaml"
 - "~res:/UI/Screens/Common/IconButton.yaml"
+- "~res:/UI/Screens/Lobby/Storage/RewardItemControl.yaml"
 StyleSheets:
 -   selector: ".story_footer.enough #Caption #General #Label #Enough, .story_footer.not_enough #Caption #General #Label #NotEnough, .story_footer.enough_many #Caption #General #Label #EnoughMany"
     properties:
@@ -19,7 +20,7 @@ StyleSheets:
 -   selector: ".info_footer.step_completed #InfoContainer #CurrencyBarsContainer, .info_footer.no_selection #InfoButton, .info_footer #InfoContainer #Label ?, .info_footer #InfoContainer #CurrencyBarsContainer, .info_footer.step_completed #InfoButton"
     properties:
         visible: false
-Controls:
+Prototypes:
 -   class: "UIStaticText"
     name: "InfoLabel"
     classes: "text-color-blue text1"
@@ -30,6 +31,7 @@ Controls:
         SizePolicy:
             horizontalPolicy: "PercentOfContent"
             verticalPolicy: "PercentOfContent"
+Controls:
 -   prototype: "BaseFooter/BaseFooter"
     name: "StoryTreeFooter"
     classes: "story_footer"
@@ -51,7 +53,7 @@ Controls:
                     colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
     -   prototype: "StyledButton/StyledButton"
         name: "Button"
-        size: [250.000000, 70.000000]
+        size: [250.000000, 64.000000]
         classes: "button mode=button-payment"
         components:
             Anchor:
@@ -275,7 +277,7 @@ Controls:
                     frame: 26
 -   class: "UIControl"
     name: "CurrencyBar"
-    size: [320.000000, 33.000000]
+    size: [320.000000, 42.000000]
     components:
         LinearLayout:
             orientation: "TopDown"
@@ -309,7 +311,7 @@ Controls:
                     color: [0.960000, 0.650000, 0.140000, 1.000000]
     -   class: "UIControl"
         name: "Caption"
-        size: [85.000000, 23.000000]
+        size: [95.000000, 32.000000]
         components:
             LinearLayout:
                 spacing: 2.000000
@@ -366,8 +368,6 @@ Controls:
             size: [2.000000, 0.000000]
             visible: true
             noInput: true
-        -   prototype: "StoryCurrencyControl/CurrencySmallIcon"
+        -   prototype: "RewardItemControl/RewardItemIcon"
             name: "Icon"
-            components:
-                Anchor:
-                    vCenterAnchorEnabled: true
+            classes: "item_icon small"

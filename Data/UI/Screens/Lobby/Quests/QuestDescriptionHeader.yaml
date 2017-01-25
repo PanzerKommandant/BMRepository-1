@@ -22,11 +22,11 @@ Controls:
                 vCenterAnchorEnabled: true
     -   prototype: "StyledButton/StyledButton"
         name: "SkipButton"
-        classes: "button"
+        classes: "button button-color-gray"
         components:
             Anchor:
                 rightAnchorEnabled: true
-                rightAnchor: 2.000000
+                rightAnchor: 6.000000
                 vCenterAnchorEnabled: true
         children:
         -   path: "Caption"

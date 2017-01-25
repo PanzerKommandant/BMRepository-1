@@ -1,8 +1,9 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common/StyledBackButton.yaml"
 - "~res:/UI/Screens/Lobby/Storage/StorageHome.yaml"
+- "~res:/UI/Screens/Lobby/Common/StorageItem.yaml"
 Controls:
 -   class: "UIControl"
     name: "VerticalLayout"
@@ -21,7 +22,7 @@ Controls:
         name: "BackButton"
     -   class: "UIControl"
         name: "HorisontalLayout"
-        position: [102.399994, 256.000000]
+        position: [102.399994, 217.000000]
         components:
             LinearLayout:
                 spacing: 25.000000
@@ -33,7 +34,7 @@ Controls:
                 hCenterAnchorEnabled: true
                 vCenterAnchorEnabled: true
         children:
-        -   prototype: "StorageHome/ItemPrototype"
+        -   prototype: "StorageItem/ItemPrototype"
             name: "ItemPrototype"
             children:
             -   path: "Background"
@@ -100,6 +101,39 @@ Controls:
                     textalign: ["LEFT", "VCENTER"]
                     textUseRtlAlign: "USE_BY_SYSTEM"
                     text: "description"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                            verticalPolicy: "PercentOfContent"
+            -   class: "UIControl"
+                name: "FeaturesLayout"
+                components:
+                    LinearLayout:
+                        orientation: "TopDown"
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfParent"
+                        verticalPolicy: "PercentOfChildrenSum"
+                children:
+                -   class: "UIStaticText"
+                    name: "FeaturesHeader"
+                    position: [0.000000, 0.000000]
+                    size: [694.200012, 32.000000]
+                    classes: "text1 text-color-white"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "storage/Items/Features"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
+                -   class: "UIStaticText"
+                    name: "Features"
+                    position: [0.000000, 32.000000]
+                    size: [694.200012, 26.000000]
+                    classes: "text1 text-color-blue"
+                    multiline: "MULTILINE_ENABLED"
+                    textalign: ["LEFT", "VCENTER"]
+                    textUseRtlAlign: "USE_BY_SYSTEM"
+                    text: "features"
                     components:
                         SizePolicy:
                             horizontalPolicy: "PercentOfParent"

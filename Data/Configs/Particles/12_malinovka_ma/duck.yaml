@@ -36,7 +36,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 1.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -70,7 +70,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -104,7 +104,7 @@ layer10:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -138,7 +138,7 @@ layer2:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -172,7 +172,7 @@ layer3:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -206,7 +206,7 @@ layer4:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -240,7 +240,7 @@ layer5:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -274,7 +274,7 @@ layer6:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -308,7 +308,7 @@ layer7:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -342,7 +342,7 @@ layer8:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -376,7 +376,7 @@ layer9:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [1.000000, 1.000000]
-    sprite: "../../../Gfx/Particles/12_malinovka_ma/duck"
+    sprite: "../../../../Data/Gfx/Particles/12_malinovka_ma/duck"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000

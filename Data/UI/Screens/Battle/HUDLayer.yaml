@@ -1,5 +1,5 @@
 Header:
-    version: "5"
+    version: "6"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Battle/HotKey.yaml"
@@ -12,6 +12,7 @@ ImportedPackages:
 - "~res:/UI/Styles/Battle/BattleAmmoItem.yaml"
 - "~res:/UI/Screens/Battle/VehicleDestroyTimer.yaml"
 - "~res:/UI/Styles/Battle/BattleHUD.yaml"
+- "~res:/UI/Screens/Battle/FollowAimButton.yaml"
 StyleSheets:
 -   selector: ".postHeader"
     properties:
@@ -123,7 +124,7 @@ StyleSheets:
 -   selector: ".chat-command-base-f #BaseName"
     properties:
         bg-frame: 7
-Controls:
+Prototypes:
 -   class: "UIControl"
     name: "PanelsContainer"
     size: [0.000000, 194.000000]
@@ -548,79 +549,6 @@ Controls:
             sprite: "~res:/Gfx/UI/BattleScreenHUD/AmmoType"
             colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
 -   class: "UIControl"
-    name: "PostMortemButtons"
-    position: [300.000000, -50.000000]
-    size: [600.000000, 100.000000]
-    pivot: [0.500000, 0.000000]
-    noInput: true
-    classes: "hud-scale"
-    components:
-        LinearLayout:
-            padding: 30.000000
-            dynamicSpacing: true
-        Anchor:
-            hCenterAnchorEnabled: true
-            bottomAnchorEnabled: true
-            bottomAnchor: 50.000000
-    children:
-    -   prototype: "SpectatePlayerButton"
-        name: "PrevPlayerButton"
-        components:
-            Anchor:
-                vCenterAnchorEnabled: true
-    -   prototype: "StyledButton/StyledButton"
-        name: "BackToGarageButton"
-        size: [240.000000, 70.000000]
-        components:
-            Anchor:
-                vCenterAnchorEnabled: true
-        children:
-        -   path: "Caption"
-            text: "Exit to Hangar"
-    -   prototype: "SpectatePlayerButton"
-        name: "NextPlayerButton"
-        components:
-            Anchor:
-                vCenterAnchorEnabled: true
-        children:
-        -   path: "IconPrev"
-            components:
-                Background:
-                    spriteModification: ["FLIP_HORIZONTAL"]
--   class: "UIControl"
-    name: "PostMortemCaption"
-    size: [1000.000000, 100.000000]
-    scale: [1.000000, 1.000000]
-    pivot: [0.500000, 0.000000]
-    noInput: true
-    components:
-        Anchor:
-            hCenterAnchorEnabled: true
-            bottomAnchorEnabled: true
-            bottomAnchor: 0.000000
-    children:
-    -   class: "UIStaticText"
-        name: "modeText"
-        position: [200.000000, 0.000000]
-        size: [600.000000, 30.000000]
-        noInput: true
-        classes: "postHeader"
-        text: "#postbattle:SpectatorMode/Header"
-        components:
-            Anchor:
-                hCenterAnchorEnabled: true
-    -   class: "UIStaticText"
-        name: "hintText"
-        position: [200.000000, 35.000000]
-        size: [600.000000, 55.000000]
-        noInput: true
-        classes: "postText"
-        multiline: "MULTILINE_ENABLED"
-        text: "#postbattle:SpectatorMode/Comment"
-        components:
-            Anchor:
-                hCenterAnchorEnabled: true
--   class: "UIControl"
     customClass: "UIEquipmentItemControl"
     name: "EquipmentItemControl"
     size: [63.000000, 63.000000]
@@ -830,26 +758,6 @@ Controls:
         Background:
             colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
 -   class: "UIControl"
-    name: "iconNotificationPrototype"
-    size: [45.000000, 56.000000]
-    pivot: [0.500000, 0.500000]
-    noInput: true
-    components:
-        Background:
-            sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
-            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
-    children:
-    -   class: "UIControl"
-        name: "icon"
-        pivot: [0.500000, 0.500000]
-        noInput: true
-        components:
-            Anchor:
-                hCenterAnchorEnabled: true
-                vCenterAnchorEnabled: true
-            Background:
-                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
--   class: "UIControl"
     name: "Spacer"
     tag: 1
     components:
@@ -900,14 +808,11 @@ Controls:
             children:
             -   class: "UIStaticText"
                 name: "Message"
+                size: [1000.000000, 24.000000]
                 visible: false
                 classes: "header4"
                 shadowoffset: [1.000000, 1.000000]
-                fitting: ["ENLARGE"]
                 components:
-                    SizePolicy:
-                        horizontalPolicy: "PercentOfContent"
-                        verticalPolicy: "PercentOfContent"
                     Anchor:
                         hCenterAnchorEnabled: true
                         vCenterAnchorEnabled: true
@@ -1176,6 +1081,100 @@ Controls:
             orientation: "TopDown"
         Anchor:
             hCenterAnchorEnabled: true
+Controls:
+-   class: "UIControl"
+    name: "PostMortemButtons"
+    position: [300.000000, -50.000000]
+    size: [600.000000, 100.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    classes: "hud-scale"
+    components:
+        LinearLayout:
+            padding: 30.000000
+            dynamicSpacing: true
+        Anchor:
+            hCenterAnchorEnabled: true
+            bottomAnchorEnabled: true
+            bottomAnchor: 50.000000
+    children:
+    -   prototype: "SpectatePlayerButton"
+        name: "PrevPlayerButton"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+    -   prototype: "StyledButton/StyledButton"
+        name: "BackToGarageButton"
+        size: [240.000000, 70.000000]
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "Caption"
+            text: "Exit to Hangar"
+    -   prototype: "SpectatePlayerButton"
+        name: "NextPlayerButton"
+        components:
+            Anchor:
+                vCenterAnchorEnabled: true
+        children:
+        -   path: "IconPrev"
+            components:
+                Background:
+                    spriteModification: ["FLIP_HORIZONTAL"]
+-   class: "UIControl"
+    name: "PostMortemCaption"
+    size: [1000.000000, 100.000000]
+    scale: [1.000000, 1.000000]
+    pivot: [0.500000, 0.000000]
+    noInput: true
+    components:
+        Anchor:
+            hCenterAnchorEnabled: true
+            bottomAnchorEnabled: true
+            bottomAnchor: 0.000000
+    children:
+    -   class: "UIStaticText"
+        name: "modeText"
+        position: [200.000000, 0.000000]
+        size: [600.000000, 30.000000]
+        noInput: true
+        classes: "postHeader"
+        text: "#postbattle:SpectatorMode/Header"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+    -   class: "UIStaticText"
+        name: "hintText"
+        position: [200.000000, 35.000000]
+        size: [600.000000, 55.000000]
+        noInput: true
+        classes: "postText"
+        multiline: "MULTILINE_ENABLED"
+        text: "#postbattle:SpectatorMode/Comment"
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+-   class: "UIControl"
+    name: "iconNotificationPrototype"
+    size: [45.000000, 56.000000]
+    pivot: [0.500000, 0.500000]
+    noInput: true
+    components:
+        Background:
+            sprite: "~res:/Gfx/UI/BattleScreenHUD/skills_bg"
+            colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    children:
+    -   class: "UIControl"
+        name: "icon"
+        pivot: [0.500000, 0.500000]
+        noInput: true
+        components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                vCenterAnchorEnabled: true
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
 -   class: "UIControl"
     customClass: "HUDLayer"
     name: "HUDLayer"
@@ -1419,12 +1418,10 @@ Controls:
         children:
         -   path: "background"
             position: [32.000000, 130.000000]
-    -   class: "UIControl"
-        customClass: "UIFollowAimSwitchButton"
+    -   prototype: "FollowAimButton/FollowAimButton"
         name: "FollowAimSwitch"
         position: [50.000000, 412.000000]
-        size: [32.000000, 32.000000]
-        exclusiveInput: false
+        size: [72.000000, 72.000000]
     -   class: "UIControl"
         name: "PostMortemButtons"
         position: [480.000000, 490.000000]

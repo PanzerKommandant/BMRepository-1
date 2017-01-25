@@ -41,7 +41,7 @@ layer0:
     size: [1.000000, 1.000000]
     sizeOverLifeXY: [0.000000, [5.305300, 5.305300], 0.505100, [6.407100, 6.407100], 1.000000, [4.364100, 4.364100]]
     sizeVariation: [1.000000, 1.000000]
-    sprite: "../../../../../../Gfx/Particles/UI/glow_blur"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/glow_blur"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

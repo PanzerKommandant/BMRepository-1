@@ -47,7 +47,7 @@ layer0:
     sizeOverLifeXY: [0.0000, [1.0000, 1.0000], 1.0000, [4.0000, 4.0000]]
     spin: 20.0000
     spinVariation: 20.0000
-    sprite: "../../Gfx/Particles/fog"
+    sprite: "../../../Data/Gfx/Particles/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

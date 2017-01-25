@@ -627,13 +627,12 @@ Controls:
         children:
         -   prototype: "StyledButton/StyledButton"
             name: "StartBtn"
+            classes: "button button-color-green"
             components:
                 Anchor:
                     rightAnchorEnabled: true
                     rightAnchor: 40.000000
                     vCenterAnchorEnabled: true
-                Background:
-                    frame: 2
             children:
             -   path: "Caption"
                 text: "#select_tank:start"
@@ -695,7 +694,7 @@ Controls:
                     topAnchor: 60.000000
                     bottomAnchorEnabled: true
             children:
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "OkButton"
                 position: [0.000000, 10.000000]
                 components:
@@ -704,7 +703,7 @@ Controls:
                 children:
                 -   path: "Caption"
                     text: "#settings:Controls/ControlType/MouseKeyboard"
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "CancelButton"
                 position: [0.000000, 90.000000]
                 components:

@@ -1,0 +1,157 @@
+Header:
+    version: "7"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Common/ParamsPrototype.yaml"
+StyleSheets:
+-   selector: ".up ? #deltaValueUpDown"
+    properties:
+        visible: true
+        bg-frame: 0
+-   selector: ".down ? #deltaValueUpDown"
+    properties:
+        visible: true
+        bg-frame: 1
+-   selector: ".up.worse ? #deltaValueUpDown"
+    properties:
+        bg-frame: 1
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".down.better ? #deltaValueUpDown"
+    properties:
+        bg-frame: 0
+        bg-spriteModification: ["FLIP_VERTICAL"]
+-   selector: ".worse ? #deltaValue"
+    properties:
+        visible: true
+        text-textColor: [1.000000, 0.000000, 0.000000, 1.000000]
+-   selector: ".better ? #deltaValue"
+    properties:
+        visible: true
+        text-textColor: [0.000000, 1.000000, 0.000000, 1.000000]
+-   selector: "#deltaValueUpDown"
+    properties:
+        visible: false
+-   selector: "#deltaValue"
+    properties:
+        visible: false
+Prototypes:
+-   class: "UIControl"
+    name: "TableElement"
+    position: [0.000000, -36.500004]
+    size: [350.000000, 110.833000]
+    children:
+    -   class: "UIControl"
+        customClass: "UIHangarTankBaseParamBar"
+        name: "progressBar"
+        position: [17.500000, 67.833000]
+        size: [315.000000, 5.000000]
+        debugDraw: false
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                horizontalValue: 90.000000
+                verticalPolicy: "FixedSize"
+                verticalValue: 5.000000
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 38.000000
+    -   class: "UIStaticText"
+        name: "paramName"
+        position: [17.500000, 8.400045]
+        size: [181.700012, 52.433338]
+        classes: "text1"
+        multiline: "MULTILINE_ENABLED"
+        textalign: ["LEFT", "BOTTOM"]
+        text: "ParamName"
+    -   class: "UIControl"
+        name: "valueLayout"
+        position: [204.199997, 44.833401]
+        size: [128.300003, 16.000000]
+        components:
+            LinearLayout:
+                orientation: "RightToLeft"
+                spacing: 10.000000
+        children:
+        -   class: "UIStaticText"
+            name: "value"
+            size: [0.000000, 16.000000]
+            classes: "header3"
+            textalign: ["RIGHT", "VCENTER"]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+        -   class: "UIControl"
+            name: "deltaValueUpDown"
+            size: [10.000000, 16.000004]
+            noInput: true
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/CharacterArrow"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIStaticText"
+            name: "deltaValue"
+            size: [0.000000, 16.000000]
+            classes: "header3"
+            textalign: ["RIGHT", "VCENTER"]
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+    -   class: "UIStaticText"
+        name: "maxValue"
+        position: [238.054718, 75.833366]
+        size: [94.445328, 15.999998]
+        classes: "text2-small text-color-blue"
+        textalign: ["RIGHT", "VCENTER"]
+    -   prototype: "ParamsPrototype/Line"
+        name: "Line"
+        components:
+            Anchor:
+                bottomAnchorEnabled: true
+-   class: "UIControl"
+    name: "Table"
+    components:
+        LinearLayout:
+            orientation: "TopDown"
+        SizePolicy:
+            horizontalPolicy: "PercentOfMaxChild"
+            verticalPolicy: "PercentOfParent"
+        Background:
+            drawType: "DRAW_FILL"
+            color: [0.000000, 0.000000, 0.000000, 0.501961]
+    children:
+    -   prototype: "ParamsPrototype/HeaderPrototype"
+        name: "HeaderPrototype"
+        children:
+        -   path: "bg"
+            components:
+                Background:
+                    sprite: "~res:/Gfx/UI/Hangar/InfoGradients"
+            children: []
+        -   path: "bg/title"
+            text: "boosters/Impact/Title"
+    -   prototype: "TableElement"
+        name: "xpBoostFactor"
+        children:
+        -   path: "paramName"
+            text: "boosters/Impact/BattleXP"
+    -   prototype: "TableElement"
+        name: "xpFreeBoostFactor"
+        children:
+        -   path: "paramName"
+            text: "boosters/Impact/FreeXP"
+    -   prototype: "TableElement"
+        name: "xpAvBoostFactor"
+        children:
+        -   path: "paramName"
+            text: "boosters/Impact/CrewXP"
+    -   prototype: "TableElement"
+        name: "credistBoostFactor"
+        angle: 0.000000
+        children:
+        -   path: "paramName"
+            text: "boosters/Impact/Credits"
+    -   prototype: "TableElement"
+        name: "reloadEqFactor"
+        children:
+        -   path: "paramName"
+            text: "boosters/Impact/ReloadingTime"

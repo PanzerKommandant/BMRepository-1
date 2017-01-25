@@ -41,7 +41,7 @@ layer0:
     scaleVelocityFactor: 0.0000
     size: [0.0700, 0.0700]
     spin: 10.0000
-    sprite: "../../../Gfx/Particles/hangar/fog"
+    sprite: "../../../../Data/Gfx/Particles/hangar/fog"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.0000
     type: "layer"

@@ -43,7 +43,7 @@ layer0:
     sizeVariation: [2.000000, 2.000000]
     spin: 40.000000
     spinVariation: 40.000000
-    sprite: "../../../../../Gfx/Particles/UI/glow_blur"
+    sprite: "../../../../../../Data/Gfx/Particles/UI/glow_blur"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

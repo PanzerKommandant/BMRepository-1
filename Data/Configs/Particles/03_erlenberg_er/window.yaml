@@ -40,7 +40,7 @@ layer0:
     sizeVariation: [0.200000, 0.200000]
     spin: 360.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/Glass"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass"
     startTime: 0.000000
     type: "layer"
     velocity: 7.000000
@@ -79,7 +79,7 @@ layer1:
     sizeVariation: [0.100000, 0.100000]
     spin: 360.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/Glass_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/Glass_one"
     startTime: 0.000000
     type: "layer"
     velocity: 7.000000
@@ -119,7 +119,7 @@ layer2:
     sizeVariation: [0.100000, 0.100000]
     spin: 360.000000
     spinVariation: 60.000000
-    sprite: "../../../Gfx/Particles/alpha/flinders"
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders"
     startTime: 0.000000
     type: "layer"
     velocity: 7.000000

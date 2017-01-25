@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.010000
     size: [2.000000, 2.000000]
     sizeVariation: [0.010000, 0.025000]
-    sprite: "../../../../../../Gfx/Particles/UI/Iskr"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/Iskr"
     srcBlendFactor: "BLEND_SRC_ALPHA"
     startTime: 0.000000
     type: "layer"

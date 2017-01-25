@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Clan/ClanCommon.yaml"
 - "~res:/UI/Screens/Fonts.yaml"
@@ -51,7 +51,7 @@ Controls:
                 color: [1.000000, 0.400000, 0.000000, 1.000000]
 -   class: "UIStaticText"
     name: "ProgressLabelTemplate"
-    size: [166.000000, 24.000000]
+    size: [139.000000, 24.000000]
     classes: "text1"
     textColor: [0.862745, 0.807843, 0.729412, 1.000000]
     textalign: ["LEFT", "VCENTER"]
@@ -105,6 +105,7 @@ Controls:
             name: "CaptionContainer"
             size: [596.000000, 24.000000]
             components:
+                LinearLayout: {}
                 Anchor:
                     leftAnchorEnabled: true
                     rightAnchorEnabled: true
@@ -113,26 +114,44 @@ Controls:
                 name: "CaptionBar"
                 components:
                     SizePolicy:
-                        horizontalPolicy: "PercentOfMaxChild"
+                        horizontalPolicy: "PercentOfParent"
                         verticalPolicy: "PercentOfMaxChild"
                     Anchor:
                         vCenterAnchorEnabled: true
                 children:
                 -   prototype: "ProgressLabelTemplate"
                     name: "LabelExplored"
+                    fitting: ["REDUCE"]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
                 -   prototype: "ProgressLabelTemplate"
                     name: "LabelAvailable"
+                    fitting: ["REDUCE"]
                     text: "#clans:SupplyScreen/SupplyLevel/Available"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
                 -   prototype: "ProgressLabelTemplate"
                     name: "LabelNotExplored"
                     textColor: [0.627451, 0.725490, 0.800000, 1.000000]
+                    fitting: ["REDUCE"]
                     text: "#clans:SupplyScreen/SupplyLevel/NotExplored"
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
                 -   prototype: "ProgressLabelTemplate"
                     name: "LabelProgress"
                     textColor: [1.000000, 0.400000, 0.000000, 1.000000]
+                    fitting: ["REDUCE"]
+                    components:
+                        SizePolicy:
+                            horizontalPolicy: "PercentOfParent"
             -   class: "UIControl"
                 name: "ScoreBar"
                 components:
+                    LinearLayout:
+                        spacing: 10.000000
                     SizePolicy:
                         horizontalPolicy: "PercentOfChildrenSum"
                         verticalPolicy: "PercentOfMaxChild"
@@ -142,8 +161,8 @@ Controls:
                 children:
                 -   class: "UIStaticText"
                     name: "LabelValues"
-                    position: [-16.000000, 0.500000]
-                    size: [88.000000, 23.000000]
+                    position: [0.000000, 0.500000]
+                    size: [112.000000, 23.000000]
                     classes: "text2 text-color-blue"
                     textalign: ["RIGHT", "VCENTER"]
                     text: "1000 / 1000"

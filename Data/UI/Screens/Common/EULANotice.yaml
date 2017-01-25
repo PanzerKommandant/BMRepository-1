@@ -1,0 +1,7 @@
+Header:
+    version: "5"
+Controls:
+-   class: "UIControl"
+    customClass: "UIEULANotice"
+    name: "EULANotice"
+    size: [512.000000, 32.000000]

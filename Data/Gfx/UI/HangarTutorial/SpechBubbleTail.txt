@@ -2,4 +2,4 @@
 texture0.tex
 26 26
 1
-0 452 26 26 0 0 0 frame0
+0 319 26 26 0 0 0 frame0

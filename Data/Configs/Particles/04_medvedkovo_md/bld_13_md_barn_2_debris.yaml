@@ -1,0 +1,93 @@
+emitter:
+    size: [5.000000, 5.000000, 3.000000]
+    name: "debris"
+    type: "rect"
+    emissionVectorInverted: true
+    shortEffect: false
+    emissionAngle: 0.000000
+    emissionVector: [0.000000, 0.000000, 1.000000]
+    emissionRange: 90.000000
+layer0:
+    name: "debris1"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders_one"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    number: 250.000000
+    spinVariation: 40.000000
+    size: [0.050000, 0.250000]
+    sizeVariation: [0.100000, 1.250000]
+    velocity: 2.000000
+    velocityVariation: 2.000000
+    spin: 120.000000
+    randomSpinDirection: true
+    angleVariation: 90.000000
+    colorOverLife: [79.000000, 80.000000, 81.000000, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 6.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -3.000000]
+layer1:
+    name: "debris2"
+    enableFog: true
+    sprite: "../../../../Data/Gfx/Particles/alpha/flinders"
+    type: "layer"
+    isLong: false
+    layerType: "particles"
+    blending: 1
+    degradeStrategy: 0
+    pivotPoint: [0.000000, 0.000000]
+    loopVariation: 0.000000
+    angle: 0.000000
+    enableFrameBlend: false
+    scaleVelocityBase: 1.000000
+    forceCount: 1
+    scaleVelocityFactor: 0.000000
+    life: 5.000000
+    number: 250.000000
+    spinVariation: 40.000000
+    size: [0.050000, 0.250000]
+    sizeVariation: [0.100000, 1.250000]
+    velocity: 3.000000
+    velocityVariation: 2.000000
+    spin: 130.000000
+    randomSpinDirection: true
+    angleVariation: 90.000000
+    colorOverLife: [89.000000, 88.000000, 85.000000, 255.000000]
+    frameOverLifeEnabled: false
+    frameOverLifeFPS: 0.000000
+    randomFrameOnStart: false
+    loopSpriteAnimation: true
+    deltaTime: 0.000000
+    startTime: 0.000000
+    endTime: 0.100000
+    isLooped: false
+    deltaVariation: 0.000000
+    loopEndTime: 6.000000
+    inheritPosition: false
+    particleOrientation: 1
+    activeLODS: [1, 1, 0, 0]
+    effectFormat: 1
+    force0: [0.000000, 0.000000, -4.000000]

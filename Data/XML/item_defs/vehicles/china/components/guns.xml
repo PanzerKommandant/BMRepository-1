@@ -2,6 +2,7 @@
 	<ids>
 		<_100mm_59>0</_100mm_59>
 		<_85mm_Tip_62-85TS>1</_85mm_Tip_62-85TS>
+		<_122-mm_D25-TA>2</_122-mm_D25-TA>
 	</ids>
 	<shared>
 		<_85mm_Tip_62-85TS>
@@ -113,5 +114,59 @@
 				</_100mm_UOF-412>
 			</shots>
 		</_100mm_59>
+		<_122-mm_D25-TA>
+			<userString>#china_vehicles:_122-mm_D25-TA</userString>
+			<description>#china_vehicles:_122-mm_D25-TA</description>
+			<tags/>
+			<level>8</level>
+			<price>135000</price>
+			<notInShop>true</notInShop>
+			<impulse>0.62</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.62</amplitude>
+				<backoffTime>0.1</backoffTime>
+				<returnTime>0.58</returnTime>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<pitchLimits>-25 6</pitchLimits>
+			<rotationSpeed>26.25</rotationSpeed>
+			<reloadTime>12.34285714285710</reloadTime>
+			<maxAmmo>24</maxAmmo>
+			<aimingTime>3.42857142857143</aimingTime>
+			<weight>2590</weight>
+			<maxHealth>192</maxHealth>
+			<maxRegenHealth>96</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<shotDispersionRadius>0.45714285714286</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>0.16</turretRotation>
+				<afterShot>4.0</afterShot>
+				<whileGunDamaged>2.0</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_122mm_Type_57>
+					<defaultPortion>0.60</defaultPortion>
+					<speed>900</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>175 152</piercingPower>
+				</_122mm_Type_57>
+				<_122mm_Type_64>
+					<defaultPortion>0.0</defaultPortion>
+					<speed>720</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>270 270</piercingPower>
+				</_122mm_Type_64>
+				<_122mm_Type_68>
+					<defaultPortion>0.40</defaultPortion>
+					<speed>900</speed>
+					<gravity>9.81</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>61 61</piercingPower>
+				</_122mm_Type_68>
+			</shots>
+		</_122-mm_D25-TA>
 	</shared>
 </root>

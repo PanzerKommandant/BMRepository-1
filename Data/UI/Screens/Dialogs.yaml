@@ -1,8 +1,9 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
+- "~res:/UI/Screens/Common/StyledBackButton.yaml"
 Controls:
 -   class: "UIControl"
     name: "ErrorDialogNoButton"
@@ -69,13 +70,12 @@ Controls:
                     bottomAnchorEnabled: true
                     bottomAnchor: 20.000000
             children:
-            -   prototype: "StyledButton/Button"
+            -   prototype: "StyledButton/StyledButton"
                 name: "OkButton"
+                classes: "button button-color-green"
                 components:
                     SizePolicy:
                         horizontalPolicy: "PercentOfParent"
-                    Background:
-                        frame: 2
                 children:
                 -   path: "Caption"
                     text: "#common:DialogButton/OK"
@@ -102,7 +102,7 @@ Controls:
     children:
     -   path: "Dialog/Middle/ButtonHolder"
         children:
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "CancelButton"
             visible: true
             components:
@@ -135,28 +135,8 @@ Controls:
         Background:
             drawType: "DRAW_ALIGNED"
     children:
-    -   prototype: "Common/ButtonSmall"
+    -   prototype: "StyledBackButton/StyledBackButton"
         name: "CancelButton"
-        components:
-            Anchor:
-                leftAnchorEnabled: true
-                leftAnchor: 5.000000
-                topAnchorEnabled: true
-                topAnchor: 5.000000
-        children:
-        -   class: "UIControl"
-            name: "Icon"
-            noInput: true
-            components:
-                Anchor:
-                    leftAnchorEnabled: true
-                    rightAnchorEnabled: true
-                    topAnchorEnabled: true
-                    bottomAnchorEnabled: true
-                Background:
-                    sprite: "~res:/Gfx/UI/LobbyCommon/IconsSmall"
-                    frame: 3
-                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
 -   prototype: "ErrorDialog"
     name: "NotificationDialog"
     children:

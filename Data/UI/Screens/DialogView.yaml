@@ -116,7 +116,7 @@ Controls:
                     verticalValue: 40.000000
         -   class: "UIControl"
             name: "Buttons"
-            size: [460.000000, 70.000000]
+            size: [460.000000, 64.000000]
             noInput: true
             components:
                 LinearLayout:
@@ -127,9 +127,7 @@ Controls:
             children:
             -   prototype: "DialogButton"
                 name: "OkButton"
-                components:
-                    Background:
-                        frame: 2
+                classes: "button button-color-green"
                 children:
                 -   path: "Caption"
                     text: "#common:DialogButton/OK"

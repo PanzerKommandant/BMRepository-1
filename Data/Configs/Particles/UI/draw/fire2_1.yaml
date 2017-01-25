@@ -40,7 +40,7 @@ layer0:
     size: [50.000000, 50.000000]
     sizeOverLifeXY: [0.000000, [2.000000, 2.000000], 1.000000, [0.500000, 0.500000]]
     sizeVariation: [20.000000, 20.000000]
-    sprite: "../../../../Gfx/Particles/UI/fire"
+    sprite: "../../../../../Data/Gfx/Particles/UI/fire"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000
@@ -81,7 +81,7 @@ layer1:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../Gfx/Particles/UI/o2_fire_anim"
+    sprite: "../../../../../Data/Gfx/Particles/UI/o2_fire_anim"
     startTime: 0.000000
     type: "layer"
     velocity: 30.000000

@@ -39,7 +39,7 @@ layer0:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [6.000000, 6.000000]
-    sprite: "../../../Gfx/Particles/alpha/fog_white"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog_white"
     startTime: 0.000000
     type: "layer"
     velocity: 1.000000
@@ -77,7 +77,7 @@ layer1:
     scaleVelocityBase: 1.000000
     scaleVelocityFactor: 0.000000
     size: [6.000000, 6.000000]
-    sprite: "../../../Gfx/Particles/alpha/water_one"
+    sprite: "../../../../Data/Gfx/Particles/alpha/water_one"
     startTime: 0.000000
     type: "layer"
     velocity: 2.000000

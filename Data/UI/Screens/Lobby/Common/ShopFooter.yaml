@@ -1,12 +1,12 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Lobby/Common/FooterPriceControl.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
 StyleSheets:
 -   selector: ".button.button-payment:disabled, .button.button-sell:disabled"
     properties:
-        bg-frame: 0
+        bg-color: [1.000000, 1.000000, 1.000000, 0.501961]
 -   selector: ".checkbox"
     properties:
         bg-frame: 0

@@ -1,0 +1,21 @@
+Header:
+    version: "5"
+ImportedPackages:
+- "~res:/UI/Screens/Lobby/Story/Winter2016/Button_Buy.yaml"
+Controls:
+-   prototype: "Button_Buy/StoryButton"
+    name: "StoryButton"
+    children:
+    -   path: "Icon"
+        components:
+            Background:
+                sprite: "~res:/Gfx/UI/Story/NY_2016/lamp_1"
+        children:
+        -   class: "UIParticles"
+            name: "Particle"
+            position: [73.000000, 60.000000]
+            size: [32.000000, 32.000000]
+            pivot: [0.500000, 0.500000]
+            noInput: true
+            effectPath: "~res:/3d/FX/UI/glow_newyear2017.sc2"
+            autoStart: true

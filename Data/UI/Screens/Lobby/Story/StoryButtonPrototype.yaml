@@ -1,0 +1,188 @@
+Header:
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
+- "~res:/UI/Screens/Lobby/ExpireTimer.yaml"
+- "~res:/UI/Screens/Fonts.yaml"
+- "~res:/UI/Screens/Hangar/UIStrangeHMTimer.yaml"
+StyleSheets:
+-   selector: ".story-button.inform #Type"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Story/info_icon.txt"
+-   selector: ".story-button.process #Type"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Story/passing_icon.txt"
+-   selector: ".story-button.buy #Type"
+    properties:
+        bg-sprite: "~res:/Gfx/UI/Story/coins_icon.txt"
+-   selector: ".story-button.have-badge #Badge"
+    properties:
+        visible: true
+-   selector: ".story-button #Badge"
+    properties:
+        visible: false
+Prototypes:
+-   class: "UIControl"
+    name: "StoryButton"
+    size: [209.000000, 80.000000]
+    classes: "button story-button type=inform"
+    components:
+        SizePolicy:
+            horizontalPolicy: "PercentOfFirstChild"
+            verticalPolicy: "PercentOfFirstChild"
+    children:
+    -   class: "UIControl"
+        name: "Back"
+        position: [0.000000, 0.000000]
+        size: [209.000000, 80.000000]
+        noInput: true
+        classes: "button-color-gray"
+        components:
+            Background:
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                leftRightStretchCap: 4.000000
+    -   class: "UIControl"
+        name: "Icon"
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                hCenterAnchorEnabled: true
+                bottomAnchorEnabled: true
+                bottomAnchor: 25.000000
+            Background:
+                sprite: "~res:/Gfx/UI/Story/Halloween/pumpkin"
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                perPixelAccuracy: "PER_PIXEL_ACCURACY_ENABLED"
+                align: ["HCENTER", "BOTTOM"]
+    -   class: "UIControl"
+        customClass: "UIShopExpireTimer"
+        name: "ExpireTimer"
+        size: [56.000000, 0.000000]
+        noInput: true
+        components:
+            LinearLayout:
+                spacing: 5.000000
+            SizePolicy:
+                horizontalPolicy: "PercentOfChildrenSum"
+                verticalPolicy: "PercentOfFirstChild"
+            Anchor:
+                leftAnchorEnabled: true
+                leftAnchor: 1.000000
+                topAnchorEnabled: true
+                topAnchor: 2.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ON_PARENT"
+        children:
+        -   class: "UIControl"
+            name: "Icon"
+            position: [0.000000, 0.000000]
+            size: [56.000000, 22.000000]
+            noInput: true
+            components:
+                IgnoreLayout: {}
+                SizePolicy:
+                    horizontalPolicy: "PercentOfParent"
+                    verticalPolicy: "PercentOfContent"
+                Background:
+                    drawType: "DRAW_STRETCH_HORIZONTAL"
+                    sprite: "~res:/Gfx/UI/Story/counter"
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                    leftRightStretchCap: 18.000000
+        -   class: "UIControl"
+            name: "Control"
+            size: [18.000000, 0.000000]
+            noInput: true
+            components:
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+        -   class: "UIControl"
+            customClass: "UIStrangeHMTimer"
+            name: "Timer"
+            size: [40.000000, 23.000000]
+            visible: false
+            noInput: true
+            components:
+                LinearLayout:
+                    skipInvisible: false
+                SizePolicy:
+                    horizontalPolicy: "PercentOfChildrenSum"
+                    verticalPolicy: "PercentOfMaxChild"
+                Background:
+                    colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+            children:
+            -   class: "UIStaticText"
+                name: "Hours"
+                size: [17.000000, 23.000000]
+                classes: "header5"
+                text: "11"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+            -   class: "UIStaticText"
+                name: "ColonHM"
+                size: [6.000000, 23.000000]
+                classes: "header5"
+                text: ":"
+            -   class: "UIStaticText"
+                name: "Minutes"
+                size: [17.000000, 23.000000]
+                classes: "header5"
+                text: "47"
+                components:
+                    SizePolicy:
+                        horizontalPolicy: "PercentOfContent"
+        -   class: "UIStaticText"
+            name: "Label"
+            size: [33.000000, 21.000000]
+            classes: "header5"
+            text: "15 д."
+            components:
+                SizePolicy:
+                    horizontalPolicy: "PercentOfContent"
+                    verticalPolicy: "PercentOfContent"
+    -   class: "UIStaticText"
+        name: "Title"
+        size: [209.000000, 31.000000]
+        classes: "header1 text-color-gold"
+        fitting: ["REDUCE"]
+        text: "Хеллоуин"
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfParent"
+                verticalPolicy: "FixedSize"
+                verticalValue: 31.000000
+            Anchor:
+                bottomAnchorEnabled: true
+                bottomAnchor: 5.000000
+    -   class: "UIControl"
+        name: "Type"
+        size: [21.000000, 21.000000]
+        noInput: true
+        components:
+            SizePolicy:
+                horizontalPolicy: "PercentOfContent"
+                verticalPolicy: "PercentOfContent"
+            Anchor:
+                rightAnchorEnabled: true
+                rightAnchor: 6.000000
+                topAnchorEnabled: true
+                topAnchor: 7.000000
+            Background:
+                colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+    -   class: "UIControl"
+        name: "Badge"
+        position: [200.000000, -5.000000]
+        size: [16.000000, 16.000000]
+        noInput: true
+        components:
+            Background:
+                drawType: "DRAW_SCALE_PROPORTIONAL"
+                sprite: "~res:/Gfx/UI/CommonUIElements/IconUnread"
+                color: [1.000000, 0.000000, 0.000000, 1.000000]

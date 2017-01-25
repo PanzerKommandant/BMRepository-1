@@ -1,5 +1,7 @@
 Header:
-    version: "1"
+    version: "6"
+ImportedPackages:
+- "~res:/UI/Styles/ButtonStyle.yaml"
 StyleSheets:
 -   selector: ".button:pressed_inside"
     properties:
@@ -13,18 +15,26 @@ Controls:
     classes: "button"
     components:
         Background:
-            color: [0.388200, 0.494100, 0.741200, 1.000000]
             colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
     children:
     -   class: "UIControl"
         name: "Background"
-        position: [-1.000000, 0.000000]
-        size: [181.000000, 122.000000]
+        size: [174.000000, 112.000000]
         noInput: true
+        classes: "button-color-gray"
         components:
+            Anchor:
+                hCenterAnchorEnabled: true
+                topAnchorEnabled: true
+                topAnchor: 4.000000
             Background:
-                sprite: "~res:/Gfx/UI/LobbyCommon/TankSlot"
+                drawType: "DRAW_TILED_MULTILAYER"
+                mask: "~res:/Gfx/UI/CommonUIElements/Button/mask"
+                detail: "~res:/Gfx/UI/CommonUIElements/Button/detail"
+                gradientMode: "Overlay"
                 colorInherit: "COLOR_MULTIPLY_ALPHA_ONLY"
+                leftRightStretchCap: 20.000000
+                topBottomStretchCap: 20.000000
     -   class: "UIStaticText"
         name: "TitleText"
         position: [0.000000, 33.000000]

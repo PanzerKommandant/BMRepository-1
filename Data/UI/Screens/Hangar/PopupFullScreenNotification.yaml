@@ -320,21 +320,16 @@ Controls:
                             drawType: "DRAW_ALIGNED"
                             sprite: "~res:/Gfx/UI/LobbyCommon/CurrencyIconsBig"
                             frame: 0
-        -   prototype: "Common/DefaultButton"
+        -   prototype: "StyledButton/StyledButton"
             name: "QuestsButton"
             components:
                 Anchor:
                     hCenterAnchorEnabled: true
                     bottomAnchorEnabled: true
                     bottomAnchor: 10.000000
-                Normal:
-                    frame: 0
-                PressedInside:
-                    frame: 0
-                NormalText:
-                    text: "#quests:Hangar/ButtonTitle"
-                DisabledText:
-                    text: "#quests:Hangar/ButtonTitle"
+            children:
+            -   path: "Caption"
+                text: "#quests:Hangar/ButtonTitle"
 -   prototype: "BasePopup"
     name: "TankBirthday"
     children:
@@ -500,13 +495,12 @@ Controls:
                                 bottomAnchorEnabled: true
                                 bottomAnchor: 20.000000
                         children:
-                        -   prototype: "StyledButton/Button"
+                        -   prototype: "StyledButton/StyledButton"
                             name: "OkButton"
+                            classes: "button button-color-green"
                             components:
                                 SizePolicy:
                                     horizontalPolicy: "PercentOfParent"
-                                Background:
-                                    frame: 2
                             children:
                             -   path: "Caption"
                                 text: "#common:DialogButton/OK"

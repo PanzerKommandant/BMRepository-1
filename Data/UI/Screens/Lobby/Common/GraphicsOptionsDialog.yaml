@@ -1,5 +1,5 @@
 Header:
-    version: "2"
+    version: "4"
 ImportedPackages:
 - "~res:/UI/Screens/Common.yaml"
 - "~res:/UI/Screens/Common/StyledButton.yaml"
@@ -27,7 +27,7 @@ Controls:
                 vCenterAnchor: 0.000000
             Background:
                 drawType: "DRAW_STRETCH_BOTH"
-                sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                 leftRightStretchCap: 5.000000
                 topBottomStretchCap: 5.000000
         children:
@@ -66,7 +66,7 @@ Controls:
                     bottomAnchor: 100.000000
                 Background:
                     drawType: "DRAW_STRETCH_BOTH"
-                    sprite: "~res:/Gfx/UI/CommonUIElements/BackgroundNBorder"
+                    sprite: "~res:/Gfx/UI/CommonUIElements/PopupBackMiddle"
                     leftRightStretchCap: 5.000000
                     topBottomStretchCap: 5.000000
             children:
@@ -92,7 +92,7 @@ Controls:
                         topAnchor: 5.000000
                         bottomAnchorEnabled: true
                         bottomAnchor: 5.000000
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "cancelButton"
             components:
                 Anchor:
@@ -103,7 +103,7 @@ Controls:
             children:
             -   path: "Caption"
                 text: "Cancel"
-        -   prototype: "StyledButton/Button"
+        -   prototype: "StyledButton/StyledButton"
             name: "okButton"
             components:
                 Anchor:

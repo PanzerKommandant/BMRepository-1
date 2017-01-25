@@ -38,7 +38,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [10.000000, 10.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 0.990000, [3.000000, 3.000000]]
-    sprite: "../../../Gfx/Particles/alpha/o2_expGlowB"
+    sprite: "../../../../Data/Gfx/Particles/alpha/o2_expGlowB"
     startTime: 0.000000
     type: "layer"
 layer1:
@@ -75,7 +75,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [6.000000, 6.000000]]
-    sprite: "../../../Gfx/Particles/alpha/fog"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000
@@ -113,7 +113,7 @@ layer2:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [6.000000, 6.000000]]
-    sprite: "../../../Gfx/Particles/alpha/fog"
+    sprite: "../../../../Data/Gfx/Particles/alpha/fog"
     startTime: 0.000000
     type: "layer"
     velocity: 40.000000
@@ -150,7 +150,7 @@ layer3:
     scaleVelocityFactor: 0.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [6.000000, 6.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_fire"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_fire"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000
@@ -187,7 +187,7 @@ layer4:
     scaleVelocityFactor: 0.000000
     size: [3.000000, 3.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 40.000000
@@ -224,7 +224,7 @@ layer5:
     scaleVelocityFactor: 0.000000
     size: [4.000000, 4.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [4.000000, 4.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_L"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_L"
     startTime: 0.000000
     type: "layer"
     velocity: 60.000000
@@ -261,7 +261,7 @@ layer6:
     scaleVelocityFactor: 0.000000
     size: [2.000000, 2.000000]
     sizeOverLifeXY: [0.000000, [1.000000, 1.000000], 1.000000, [6.000000, 6.000000]]
-    sprite: "../../../Gfx/Particles/additive/exp_anim_fire"
+    sprite: "../../../../Data/Gfx/Particles/additive/exp_anim_fire"
     startTime: 0.100000
     type: "layer"
     velocity: 20.000000

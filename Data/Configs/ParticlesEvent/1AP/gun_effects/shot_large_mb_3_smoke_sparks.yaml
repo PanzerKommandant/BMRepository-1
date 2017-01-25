@@ -39,7 +39,7 @@ layer0:
     scaleVelocityFactor: 0.400000
     size: [0.005000, 0.025000]
     sizeVariation: [0.010000, 0.025000]
-    sprite: "../../../../Gfx/Particles/alpha/Iskr"
+    sprite: "../../../../../Data/Gfx/Particles/alpha/Iskr"
     startTime: 0.000000
     type: "layer"
     velocity: 20.000000
@@ -80,7 +80,7 @@ layer1:
     sizeVariation: [0.150000, 0.150000]
     spin: 200.000000
     spinVariation: 200.000000
-    sprite: "../../../../Gfx/Particles/1AP/treil"
+    sprite: "../../../../../Data/Gfx/Particles/1AP/treil"
     startTime: 0.000000
     type: "layer"
     velocity: 3.000000

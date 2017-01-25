@@ -42,7 +42,7 @@ layer0:
     scaleVelocityFactor: 0.000000
     size: [0.100000, 0.100000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [11.503397, 60.000000], 6.631300, [25.046000, 25.046000], 100.000000, [35.817402, 35.817402]]
-    sprite: "../../../Gfx/Particles/alpha/water"
+    sprite: "../../../../Data/Gfx/Particles/alpha/water"
     startTime: 7.000000
     type: "layer"
     velocity: 0.565400
@@ -81,7 +81,7 @@ layer1:
     scaleVelocityFactor: 0.000000
     size: [0.100000, 0.100000]
     sizeOverLifeXY: [0.000000, [0.000000, 0.000000], 1.000000, [11.503397, 60.000000], 6.631300, [25.046000, 25.046000], 100.000000, [35.817402, 35.817402]]
-    sprite: "../../../Gfx/Particles/alpha/water"
+    sprite: "../../../../Data/Gfx/Particles/alpha/water"
     startTime: 7.000000
     type: "layer"
     velocity: 0.565400

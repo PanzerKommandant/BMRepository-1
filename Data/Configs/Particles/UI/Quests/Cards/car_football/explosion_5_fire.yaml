@@ -44,7 +44,7 @@ layer0:
     sizeVariation: [20.000000, 20.000000]
     spin: 30.000000
     spinVariation: 30.000000
-    sprite: "../../../../../../Gfx/Particles/UI/smoke"
+    sprite: "../../../../../../../Data/Gfx/Particles/UI/smoke"
     startTime: 0.000000
     type: "layer"
     velocity: 15.000000

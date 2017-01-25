@@ -1,5 +1,5 @@
 Header:
-    version: "4"
+    version: "5"
 ImportedPackages:
 - "~res:/UI/Screens/Fonts.yaml"
 Controls:
@@ -7,13 +7,13 @@ Controls:
     name: "Button"
     position: [0.000000, 0.000000]
     size: [352.000000, 97.000000]
+    pivot: [0.000000, 0.500000]
     components:
         IgnoreLayout: {}
         Anchor:
             rightAnchorEnabled: true
             rightAnchor: -2.000000
-            topAnchorEnabled: true
-            topAnchor: 20.000000
+            vCenterAnchorEnabled: true
         Background:
             sprite: "~res:/Gfx/UI/BattleResultsScreen/offerPremium"
     children:
