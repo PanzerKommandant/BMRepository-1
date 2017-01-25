@@ -11,6 +11,13 @@
 			<key>Расширенное дерево исследований (без Франции):advanced_without_france</key>
 			<string>3.5.0:iawm</string>
 		</dict>
+		<key>GUI:gui</key>
+		<dict>
+			<key>Dev Options:dev_options</key>
+			<string>3.5.0:iawm</string>
+			<key>Multi-line name &amp; clan:multiline_name_clan</key>
+			<string>3.5.0:iawm</string>
+		</dict>
 	</dict>
 	<key>3D моды:3d</key>
 	<dict>

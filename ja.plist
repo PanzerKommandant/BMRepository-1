@@ -16,6 +16,13 @@
 			<key>追加国籍フィルタ (フランスなし):advanced_without_france</key>
 			<string>3.5.0:iawm</string>
 		</dict>
+		<key>GUI:gui</key>
+		<dict>
+			<key>開発者設定表示:dev_options</key>
+			<string>3.5.0:iawm</string>
+			<key>IGNとクラン名の複数行表示:multiline_name_clan</key>
+			<string>3.5.0:iawm</string>
+		</dict>
 	</dict>
 	<key>3D Mod:3d</key>
 	<dict>
