@@ -291,7 +291,7 @@
 			<key>Real GUI:realgui</key>
 			<string>3.5.0:iawm</string>
 		</dict>
-		<key>Voice (for English settings):voice_en</key>
+		<key>Voice (English environment):voice_en</key>
 		<dict>
 			<key>MW Voice:mw_default</key>
 			<string>3.5.0:iawm</string>
@@ -308,6 +308,8 @@
 			<key>PC Voice (Russian):pc_ru</key>
 			<string>3.5.0:iawm</string>
 			<key>PC Voice (German):pc_de</key>
+			<string>3.5.0:iawm</string>
+			<key>PC Voice (Swedish):pc_swe</key>
 			<string>3.5.0:iawm</string>
 			<key>Miho Voice:miho</key>
 			<string>3.5.0:iawm</string>
