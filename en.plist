@@ -7,9 +7,9 @@
 		<key>Garage Filter:garage_filter</key>
 		<dict>
 			<key>Advanced Filter:advanced_with_france</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Advanced Filter (No France):advanced_without_france</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 	</dict>
 	<key>3D Mod:3d</key>
@@ -23,7 +23,7 @@
 			<key>Pravda Winter:pravda_winter</key>
 			<string>3.5.0:iawm</string>
 			<key>BelTrup (Skelton Skin):beltrup</key>
-			<string>3.5.0:iawm</string>
+			<string>3.5.0:</string>
 			<key>Type59/Type62 Gold Skin:type59_62_gold</key>
 			<string>3.5.0:iawm</string>
 		</dict>
@@ -123,7 +123,7 @@
 			<key>NeXT VisibleRange (High Tier):next_visiblerange_high</key>
 			<string>3.5.0:iawm</string>
 			<key>Color Minimap:color_minimap</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 		<key>Tier Icon / Vehicle Icon:icon</key>
 		<dict>
@@ -138,9 +138,9 @@
 			<key>Ikon ver2:ikon2</key>
 			<string>3.5.0:iawm</string>
 			<key>Ikon ver3:ikon3</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Ikon ver4:ikon4</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Mini3D:mini3d</key>
 			<string>3.5.0:iawm</string>
 		</dict>
@@ -257,9 +257,9 @@
 			<key>New PC Gun Sound (9.16):pc_916</key>
 			<string>3.5.0:iawm</string>
 			<key>Real Cannons (HQ):realcannons_hq</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Real Cannons (LQ):realcannons_lq</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 		<key>Hit Sound:hit</key>
 		<dict>

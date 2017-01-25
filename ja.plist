@@ -12,9 +12,9 @@
 		<key>ガレージフィルタ:garage_filter</key>
 		<dict>
 			<key>追加国籍フィルタ:advanced_with_france</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>追加国籍フィルタ (フランスなし):advanced_without_france</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 	</dict>
 	<key>3D Mod:3d</key>
@@ -28,7 +28,7 @@
 			<key>冬のプラウダスキン:pravda_winter</key>
 			<string>3.5.0:iawm</string>
 			<key>白骨化スキン:beltrup</key>
-			<string>3.5.0:iawm</string>
+			<string>3.5.0:</string>
 			<key>Type59/Type62 金色スキン:type59_62_gold</key>
 			<string>3.5.0:iawm</string>
 		</dict>
@@ -128,7 +128,7 @@
 			<key>NeXT VisibleRange (高Tier):next_visiblerange_high</key>
 			<string>3.5.0:iawm</string>
 			<key>カラーミニマップ:color_minimap</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 		<key>Tierアイコン / 戦車アイコン:icon</key>
 		<dict>
@@ -143,9 +143,9 @@
 			<key>Ikon ver2:ikon2</key>
 			<string>3.5.0:iawm</string>
 			<key>Ikon ver3:ikon3</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Ikon ver4:ikon4</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>Mini3D:mini3d</key>
 			<string>3.5.0:iawm</string>
 		</dict>
@@ -262,9 +262,9 @@
 			<key>PC版 新砲撃音 (9.16):pc_916</key>
 			<string>3.5.0:iawm</string>
 			<key>リアル砲撃音 (HQ):realcannons_hq</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 			<key>リアル砲撃音 (LQ):realcannons_lq</key>
-			<string>3.4.2:iawm</string>
+			<string>3.5.0:iawm</string>
 		</dict>
 		<key>被弾音:hit</key>
 		<dict>
