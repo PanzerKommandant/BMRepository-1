@@ -7,9 +7,9 @@
 		<key>Дерево исследований:garage_filter</key>
 		<dict>
 			<key>Расширенное дерево исследований:advanced_with_france</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>Расширенное дерево исследований (без Франции):advanced_without_france</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 	</dict>
 	<key>3D моды:3d</key>
@@ -138,9 +138,9 @@
 			<key>Иконки танков ver2:ikon2</key>
 			<string>3.5.0:iawm</string>
 			<key>Иконки танков ver3:ikon3</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>Иконки танков ver4:ikon4</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>Иконки танков Mini3D:mini3d</key>
 			<string>3.5.0:iawm</string>
 		</dict>
@@ -257,9 +257,9 @@
 			<key>Старые звуки выстрелов орудий из ББ (9.16):pc_916</key>
 			<string>3.5.0:iawm</string>
 			<key>Реалистичные звуки выстрелов орудий (HQ):realcannons_hq</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 			<key>Реалистичные звуки выстрелов орудий (LQ):realcannons_lq</key>
-			<string>3.5.0:iawm</string>
+			<string>3.4.2:iawm</string>
 		</dict>
 		<key>Звуки попаданий:hit</key>
 		<dict>
