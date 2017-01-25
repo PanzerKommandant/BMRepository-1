@@ -284,7 +284,7 @@
 			<key>Радиопереговоры:realgui</key>
 			<string>3.5.0:iawm</string>
 		</dict>
-		<key>Озвучка экипажа (для Английской версии):voice_en</key>
+		<key>Озвучка экипажа (для Английской версии):voice_ru</key>
 		<dict>
 			<key>MW озвучка:mw_default</key>
 			<string>3.5.0:iawm</string>
