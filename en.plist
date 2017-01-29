@@ -7,16 +7,16 @@
 		<key>Garage Filter:garage_filter</key>
 		<dict>
 			<key>Advanced Filter:advanced_with_france</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Advanced Filter (No France):advanced_without_france</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>GUI:gui</key>
 		<dict>
 			<key>Dev Options:dev_options</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Multi-line name &amp; clan:multiline_name_clan</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 	</dict>
 	<key>3D Mod:3d</key>
@@ -24,43 +24,43 @@
 		<key>Tank Skin:tank_skin</key>
 		<dict>
 			<key>Anime Itasensha:itasensha</key>
-			<string>3.5.1:awm</string>
+			<string>3.5.2:awm</string>
 			<key>Girls und Panzer:gup</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Pravda Winter:pravda_winter</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>BelTrup (Skelton Skin):beltrup</key>
-			<string>3.5.1:</string>
+			<string>3.5.2:</string>
 			<key>Type59/Type62 Gold Skin:type59_62_gold</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Tank Camouflage:tank_camouflage</key>
 		<dict>
 			<key>Transparent Camouflage:transparent</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Hangar Skin:hangar</key>
 		<dict>
 			<key>MW Hangar Skin:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Exhaust Smoke:exhaust_smoke</key>
 		<dict>
 			<key>Flower(April Fool Joke):april_flower</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>IS-3D Electricity:defender_electricity</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Tankenstein Fire:tanken_fire</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Drive Arrow:drive_arrow</key>
 		<dict>
 			<key>Transparent Rate 50%:transparent50</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Transparent Rate 75%:transparent75</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Transparent Rate 100%:transparent100</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 	</dict>
 	<key>Gfx Mod:gfx</key>
@@ -68,180 +68,180 @@
 		<key>Mod Pack:modpack</key>
 		<dict>
 			<key>Projekt GuP:projekt_gup</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Reticle:reticle</key>
 		<dict>
 			<key>MW HUD:mw_hud</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW HUD Compact:mw_hud_compact</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW HUD Compact (Arrow):mw_hud_compact_arrow</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Circle Type 1:mw_circle1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Circle Type 2:mw_circle2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Circle Type 3:mw_circle3</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 1:mw_square1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 1 (Sniper):mw_square1_sniper</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 2:mw_square2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 2 (Sniper):mw_square2_sniper</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 3:mw_square3</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Square Type 3 (Sniper):mw_square3_sniper</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Circle Type Loading Gauge:circle_loading</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>AuC GunSight:auc_gunsight</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>M4 GunSight:m4_gunsight</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>M4 GunSight (No Shadow):m4_gunsight_no_shadow</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>WGL GunSight:wgl_gunsight</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>WcB GunSight:wcb_gunsight</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>No HUD:no_hud</key>
-			<string>3.5.1:iwm</string>
+			<string>3.5.2:iwm</string>
 			<key>kAEdE Type 1:kaede1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>kAEdE Type 2:kaede2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>kAEdE Type 3:kaede3</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Deegies Sight:deegies</key>
 			<string>3.4.1:iawm</string>
 		</dict>
 		<key>Minimap:minimap</key>
 		<dict>
 			<key>Visible Range (Middle Tier):visiblerange_middle</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Visible Range (High Tier):visiblerange_high</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>NeXT VisibleRange (Middle Tier):next_visiblerange_middle</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>NeXT VisibleRange (High Tier):next_visiblerange_high</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Color Minimap:color_minimap</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Tier Icon / Vehicle Icon:icon</key>
 		<dict>
 			<key>Colored Tier Icon:color_tier</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Colored and Numeric Tier Icon:color_numeric_tier</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Colored and Numeric Tier Icon (Skull):color_numeric_tier_skull</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Ikon ver1:ikon1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Ikon ver2:ikon2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Ikon ver3:ikon3</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Ikon ver4:ikon4</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Mini3D:mini3d</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Tracer:tracer</key>
 		<dict>
 			<key>MW Ballistic Skin:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Black:lazer_black</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Blue:lazer_blue</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Green:lazer_green</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Orange:lazer_orange</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Pink:lazer_pink</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Potato:lazer_potato</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Purple:lazer_purple</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Rainbow1:lazer_rainbow1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Rainbow2:lazer_rainbow2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Red:lazer_red</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer White:lazer_white</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lazer Yellow:lazer_yellow</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Sixth Sense:sixth_sense</key>
 		<dict>
 			<key>BlitzModder:blitzmodder</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Evangelion:evangelion</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>KanColle Bismark:kancolle_bismark</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Miho:miho</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>SAO Klein:sao_klein</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Quickybaby:quickybaby</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Danger Close:danger_close</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Admiral Ackbar:admiral_ackbar</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Login Keyart:login_keyart</key>
 		<dict>
 			<key>GuP All Schools:gup_all</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Anko Team Pz.IV:gup_anko</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Anzio Girls:gup_anzio</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Kuro Mori Mine Girls:gup_kuro</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Pravda 1:gup_pravda1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Pravda 2:gup_pravda2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP St.Gloriana Girls 1:gup_gloriana1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP St.Gloriana Girls 2:gup_gloriana2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Battle Loading Screen:battle_loading</key>
 		<dict>
 			<key>GuP Battle Loading Screen:gup</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Battle Loading Screen:pc</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Indicator:indicator</key>
 		<dict>
 			<key>MW Damage Direction:mw_damage</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>MW Enemy Direction:mw_enemy</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>DamgeIM:damage_im</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>UI:ui</key>
 		<dict>
 			<key>Old Type Joystick:old_joystick</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Flat UI Buttons:flat_button</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Colored Ammunition:color_ammo</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 	</dict>
 	<key>Sfx Mod:sfx</key>
@@ -249,181 +249,181 @@
 		<key>Mod Pack:modpack</key>
 		<dict>
 			<key>GUI-Sfx Mod:gui_sfx</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Gun Sound:gun</key>
 		<dict>
 			<key>MW Gun Sound:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>War Thunder Gun Sound:warthunder</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Old PC Gun Sound:pc_old</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>New PC Gun Sound (9.14):pc_914</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>New PC Gun Sound (9.16):pc_916</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Real Cannons (HQ):realcannons_hq</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Real Cannons (LQ):realcannons_lq</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Hit Sound:hit</key>
 		<dict>
 			<key>MW Hit Sound:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Old PC Hit Sound:pc_old</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Engine Sound:engine</key>
 		<dict>
 			<key>MW Engine Sound:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Sound Effect:effect</key>
 		<dict>
 			<key>MW Sound Effect:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Hangar Environmental Sound:hangar</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Lightweight Environmental Sound:lightweight</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Real GUI:realgui</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Voice (English environment):voice_en</key>
 		<dict>
 			<key>MW Voice:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>War Thunder Voice:warthunder</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Battle Field 4 Voice:bf4</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (Japanese):pc_ja</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (American English):pc_en</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (British English):pc_uk</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (Russian):pc_ru</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (German):pc_de</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Voice (Swedish):pc_swe</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Miho Voice:miho</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Yukari Voice:yukari</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Saori Voice:saori</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Hana Voice:hana</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Mako Voice:mako</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Nonna Voice:nonna</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Katyusha Voice:katyusha</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Nonna and Katyusha Voice:nonna_katyusha</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Maho Voice:maho</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Nishi Voice:nishi</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Nishi Voice (Modified):nishi_modified</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Anko Team Voice:anko</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Ahirusan Team Voice:ahirusan</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Kabasan Team Voice:kabasan</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Keizoku High School Voice:keizoku</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Pravda Voice (CV Tetsuo):pravda_tetsuo</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>E401 Voice:e401</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Mikakunin De Sinkoukei Voice:mikakunin</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Yuru Yuri Voice:yuruyuri</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Tomori Nao Voice:tomori_nao</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Eila-nya Voice:eila-nya</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Spot Timer:spot_timer</key>
 		<dict>
 			<key>MW Spot Timer:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Keizoku Spot Timer:keizoku</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>E401 Spot Timer:e401</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Bell Angel Spot Timer:bell_angel</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Rem Spot Timer:rem</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Metal Gear Sixth Sense:metal_gear</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>BGM:bgm</key>
 		<dict>
 			<key>MW BGM:mw_default</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>PC Music:pc_music</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>GuP Movie BGM:gup_movie</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Blue Steel BGM:blue_steel</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sakkijarven polkka Garage BGM:sakkijarven_polkka</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sakkijarven polkka (Remix) Garage BGM:sakkijarven_polkka_remix</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Projekt GuP Extra Garage Music:projekt_gup_extra</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 		<key>Loading Completion Sound:loaded</key>
 		<dict>
 			<key>Sound Type 1:sound1</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 2:sound2</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 3:sound3</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 4:sound4</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 5:sound5</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 6:sound6</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 7:sound7</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 8:sound8</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 9:sound9</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound Type 10:sound10</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound and Voice (Japanese):sound_voice_ja</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound and Voice (English):sound_voice_en</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound and Voice (Russian):sound_voice_ru</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Sound and Voice (German):sound_voice_de</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Voice (Japanese):voice_ja</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Voice (English):voice_en</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Voice (Russian):voice_ru</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 			<key>Voice (German):voice_de</key>
-			<string>3.5.1:iawm</string>
+			<string>3.5.2:iawm</string>
 		</dict>
 	</dict>
 </dict>
