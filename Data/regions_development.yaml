@@ -920,7 +920,7 @@ Regions:
         flag: "eu"
         hosts:
             STABLE_EU:
-                url: "login-st.wotblitz.eu:20020"
+                url: "fr2-v-dava-1.fe.core.pw:20017"
     STABLE_US:
         realm: "us"
         flag: "us"

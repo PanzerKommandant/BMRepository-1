@@ -4,12 +4,12 @@ keyedArchive:
     Framework:
         string: "release/3.5.0"
     BranchRev:
-        string: "603713"
+        string: "605421"
     FrameworkRev:
         string: "f5104ed551ed58d90a43bdfc717f0ad69f26edb3"
     BuildId:
-        string: "3.5.0.944"
+        string: "3.5.3.48"
     ConfigId:
         string: "dava_wotblitz_ToStable_350_Build_WotbIOS"
     Date:
-        string: "20170117"
+        string: "20170202"

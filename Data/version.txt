@@ -1,1 +1,1 @@
-3.5.0.944_3.5.0_1878120 wargaming  WOTB_iOS
+3.5.3.48_3.5.0_1887820 wargaming  WOTB_iOS
