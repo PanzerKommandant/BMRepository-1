@@ -47,6 +47,20 @@
 		<dict>
 			<key>透明迷彩:transparent</key>
 			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(ヴァン ヘイレン):wgl_vh</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(緑・紫):wgl_green_purple</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(赤・緑):wgl_red_green</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(赤・紫):wgl_red_purple</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(赤・黄):wgl_red_yellow</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(黄・緑):wgl_yellow_green</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL迷彩(黄・紫):wgl_yellow_purple</key>
+			<string>3.5.3:iawm</string>
 		</dict>
 		<key>ハンガースキン:hangar</key>
 		<dict>

@@ -42,6 +42,20 @@
 		<dict>
 			<key>Transparent Camouflage:transparent</key>
 			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Van Halen):wgl_vh</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Green & Purple):wgl_green_purple</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Red & Green):wgl_red_green</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Red & Purple):wgl_red_purple</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Red & Yellow):wgl_red_yellow</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Yellow & Green):wgl_yellow_green</key>
+			<string>3.5.3:iawm</string>
+			<key>WGL Camouflage(Yellow & Purple):wgl_yellow_purple</key>
+			<string>3.5.3:iawm</string>
 		</dict>
 		<key>Hangar Skin:hangar</key>
 		<dict>
